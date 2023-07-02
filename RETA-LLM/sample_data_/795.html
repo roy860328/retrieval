@@ -1,0 +1,411 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>中国人民大学 | RENMIN UNIVERSITY of CHINA</title>
+<link rel="shortcut icon" href="/wp-content/themes/rucweb/images/ruc.ico" type="image/x-icon" />
+<link rel="stylesheet" type="text/css" href="/wp-content/themes/rucweb/style.css" />
+<link rel="stylesheet" type="text/css" href="/wp-content/themes/rucweb/css/bgstretcher.css" />
+
+<link rel="stylesheet" type="text/css" href="/wp-content/themes/rucweb/css/style-1.css" />
+
+<script type="text/javascript" src="/wp-content/themes/rucweb/js/jquery-1.7.2.min.js"></script>
+<script type="text/javascript" src="/wp-content/themes/rucweb/js/bgstretcher.js"></script>
+<script type="text/javascript" src="https://api.map.baidu.com/api?v=1.3"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+        var storage = window.localStorage;
+	
+        //  Initialize Backgound Stretcher	   
+		$('BODY').bgStretcher({
+			images: ['http://rucweb-wordpress.stor.sinaapp.com/indexbg/detail.jpg'],
+			imageWidth: 1680, 
+			imageHeight: 1050
+		});
+		
+		$('.animate span').mouseenter(function(){
+			$('.animate-area div').stop(true, true);
+			$('.animate').removeClass('no-bg-color');
+			$('.animate span').removeClass('changebg');
+			$(this).addClass('changebg');
+			$('.aa-content').hide();
+			var box = $(this).parent();
+			box.removeClass('animate');
+			box.animate({
+				width: '300'
+			}, 200, function(){
+				box.addClass('no-bg-color');
+				box.children('.aa-content').slideDown(200);
+				box.addClass('animate');
+			});
+			$('.animate').animate({
+				width: '150'
+			}, 200);
+		});
+		
+		$('.aa-content').mouseleave(function(){
+			$('.animate-area div').stop(true, true);
+			$(this).slideUp(200);
+			$('.animate').animate({
+				width: '200'
+			},200, function(){
+				$(this).removeClass('no-bg-color');
+				$('.animate span').removeClass('changebg');
+			});
+		});
+		
+		$('#search').click(function(){
+			$('#searchbox').toggle();
+			$(this).css('font-weight','700');
+		});
+		
+		$('#s').focusin(function(){
+			var val = $(this).val();
+			if(val == '请输入搜索内容...'){
+				$(this).val('');
+			}
+		});
+		
+		$('#s').focusout(function(){
+			var val = $(this).val();
+			if(val == ''){
+				$(this).val('请输入搜索内容...');
+			}
+		});
+		
+		$(document).keypress(function(e) {
+			if (e.shiftKey && e.which == 70) $('#searchbox').toggle();
+			$('#search').css('font-weight','700');
+		});
+		
+		
+		if (storage.getItem("lastvisitURL") && storage.getItem("lastvisitSite")){ 
+			$('#lastvisitLink').html(storage.getItem("lastvisitSite"));
+			$('#lastvisitLink').attr('href',storage.getItem("lastvisitURL"));
+			$('.lastvisit').show();
+		};
+		
+	    window.map = new BMap.Map("service-map");
+	    map.centerAndZoom(new BMap.Point(116.318626,39.976482),17);
+	    map.enableScrollWheelZoom();
+	    
+	   function ComplexCustomOverlay(point, text, mouseoverText){
+	         this._point = point;
+	         this._text = text;
+	         this._overText = mouseoverText;
+	       }
+	       ComplexCustomOverlay.prototype = new BMap.Overlay();
+	       ComplexCustomOverlay.prototype.initialize = function(map){
+	         this._map = map;
+	         var div = this._div = document.createElement("div");
+	         div.style.position = "absolute";
+	         div.style.zIndex = BMap.Overlay.getZIndex(this._point.lat);
+	         div.style.backgroundColor = "#EE5D5B";
+	         div.style.border = "1px solid #BC3B3A";
+	         div.style.color = "white";
+	         div.style.height = "18px";
+	         div.style.padding = "2px";
+	         div.style.lineHeight = "18px";
+	         div.style.whiteSpace = "nowrap";
+	         div.style.MozUserSelect = "none";
+	         div.style.fontSize = "12px"
+	         var span = this._span = document.createElement("span");
+	         div.appendChild(span);
+	         span.appendChild(document.createTextNode(this._text));      
+	         var that = this;
+	   
+	         var arrow = this._arrow = document.createElement("div");
+	         arrow.style.background = "url(http://map.baidu.com/fwmap/upload/r/map/fwmap/static/house/images/label.png) no-repeat";
+	         arrow.style.position = "absolute";
+	         arrow.style.width = "11px";
+	         arrow.style.height = "10px";
+	         arrow.style.top = "22px";
+	         arrow.style.left = "10px";
+	         arrow.style.overflow = "hidden";
+	         div.appendChild(arrow);
+	        
+	         div.onmouseover = function(){
+	           this.style.backgroundColor = "#6BADCA";
+	           this.style.borderColor = "#0000ff";
+	           arrow.style.backgroundPosition = "0px -20px";
+	         }
+	   
+	         div.onmouseout = function(){
+	           this.style.backgroundColor = "#EE5D5B";
+	           this.style.borderColor = "#BC3B3A";
+	           arrow.style.backgroundPosition = "0px 0px";
+	         }
+	   
+	         map.getPanes().labelPane.appendChild(div);
+	         
+	         return div;
+	       }
+	       ComplexCustomOverlay.prototype.draw = function(){
+	         var map = this._map;
+	         var pixel = map.pointToOverlayPixel(this._point);
+	         this._div.style.left = pixel.x - parseInt(this._arrow.style.left) + "px";
+	         this._div.style.top  = pixel.y - 30 + "px";
+	       }
+	
+		$('#pointer a').click(function(){
+			var sw = $(this).attr('sw');
+			var ne = $(this).attr('ne');
+			var text = $(this).html();
+			if(sw){
+				var myCompOverlay = new ComplexCustomOverlay(new BMap.Point(sw,ne), text);
+				map.addOverlay(myCompOverlay);
+				map.panTo(new BMap.Point(sw,ne));
+			};
+		});
+		
+	});
+	
+</script>
+</head>
+<body>
+    <div id="detailpage">
+		<div class="top">
+			<div id="detail-top">
+				<div class="logo"><a href="/"><img src="/wp-content/themes/rucweb/images/logo.png" /></a></div>
+				<div class="top-links">
+					<div class="animate-area">
+						<div class="sum animate">
+							<span>学校概况</span>
+							<div class="sum-content aa-content">
+								<a href="/intro">学校简介</a>
+								<a href="/department">机构设置</a>
+								<a href="/history">历史沿革</a>
+                                                                <a href="/leaders">管理层</a>
+								<a href="/documentary">纪录片</a>
+							</div>
+						</div>
+						<div class="deps animate">
+							<span>院系机构</span>
+							<div class="deps-content aa-content">
+								<a href="/humanities">人文学部(7)</a>
+								<a href="/socialsciences">社会学部(6)</a>
+								<a href="/economics">经济学部(6)</a>
+								<a href="/lawandpolitics">法政学部(4)</a>
+								<a href="/scienceandtechnology">理工学部(3)</a>
+								<a href="/schools-az">全部(A~Z)</a>
+								<div class="lastvisit">
+									<label>最近访问</label><a id="lastvisitLink" href="#"></a>
+								</div>
+							</div>
+						</div>
+						<div class="serv animate">
+							<span>校园服务</span>
+							<div class="serv-content aa-content">
+								<a href="/calendar">人大校历</a>
+                                                          	<a href="http://www.lib.ruc.edu.cn/" target="_blank">图书馆</a>
+								<a href="http://museum.ruc.edu.cn/" target="_blank">博物馆</a>
+                                                                <div class="two"><a href="http://portal.ruc.edu.cn">数字人大</a><a>/</a><a href="http://ruc.edu.cn">邮箱</a></div>   
+                                                                <div class="two"><a href="/yellowpage">黄页</a><a>/</a><a href="/map">地图</a></div> 
+								<a href="mailto:xzxx@ruc.edu.cn">校长信箱</a>
+							</div>
+						</div>
+					</div>
+					<div class="links">
+						<a href="/resource-student" style="margin-left:54px;">学生</a><span>|</span>
+                                                <a href="/resource-staff">教职工</a><span>|</span>
+                                                <a href="http://alumni.ruc.edu.cn/">校友</a><span>|</span>
+                                                <a href="/resource-guest">考生及访客</a>
+                                                <a href="http://ruc.edu.cn" target="_blank"><img src="/wp-content/themes/rucweb/images/email.gif" /></a>
+						<div id="searchbox" class="searchbox">
+							<form action="/" method="get">
+								<input type="text" id="s" class="inputtext" name="s" value="请输入搜索内容..." />
+								<input type="image" id="search_btn" name="commit" class="submit" value=""  src="/wp-content/themes/rucweb/images/trans-bg.png" />
+							</form>
+							<span>按Shift+F可以关闭或打开搜索</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="content">
+			<div id="detail-content">
+				<div class="dc-left dc-left-service">
+					<span class="dcl-title">校园服务/Services</span>
+					<ul class="dcl-nav-1">
+						<li><a href="/calendar" class="dcl-ul-a-left">人大校历</a><a href="/calendar" class="dcl-ul-a-right">Calendar</a></li>
+                                                <li><a href="http://www.lib.ruc.edu.cn/" class="dcl-ul-a-left" target="_blank">图书馆</a><a target="_blank" href="http://www.lib.ruc.edu.cn/" class="dcl-ul-a-right">Lib</a></li> 
+                                                <li><a href="http://museum.ruc.edu.cn" class="dcl-ul-a-left" target="_blank">博物馆</a><a href="http://museum.ruc.edu.cn" class="dcl-ul-a-right" target="_blank">Museum</a></li> 
+                                                <li><a href="http://portal.ruc.edu.cn" class="dcl-ul-a-left" target="_blank">数字人大</a><a href="http://portal.ruc.edu.cn" class="dcl-ul-a-right"  target="_blank">Portal</a></li> 
+                                                <li><a href="http://ruc.edu.cn" class="dcl-ul-a-left">邮件系统</a><a href="http://ruc.edu.cn" class="dcl-ul-a-right">Mail</a></li>
+                                                <li><a href="/yellowpage" class="dcl-ul-a-left">人大黄页</a><a href="/yellowpage" class="dcl-ul-a-right">Directory</a></li>
+                                                <li class="active"><a href="/map" class="dcl-ul-a-left">校园地图</a><a href="/map" class="dcl-ul-a-right">Campus Map</a></li>
+                                                <li><a href="#" class="dcl-ul-a-left" target="_blank">校长信箱</a><a href="mailto:xzxx@ruc.edu.cn" class="dcl-ul-a-right">Email</a></li> 
+					</ul>
+					<ul class="dcl-nav-2">
+						<li><a href="/undergraduate" class="dcl-ul-a-jx">教学</a></li>
+						<li><a href="/keysubjects" class="dcl-ul-a-ky">科研</a></li>
+						<li><a href="http://xsc.ruc.edu.cn/" class="dcl-ul-a-zsjy">招生就业</a></li>
+						<li><a href="http://io.ruc.edu.cn/" class="dcl-ul-a-hzjl">交流合作</a></li>
+					</ul>
+				</div>
+				<div class="dc-middle dc-middle-rucmap">
+					<div class="dcm-fix left-line">
+						<div class="dcm-content">
+							<div class="dcmc-map" id="service-map"></div>
+							<div class="dcmc-link2netc">
+								<a href="http://hqjt.ruc.edu.cn/"><img src="/wp-content/themes/rucweb/images/link2hq.png" /></a><span>选择下面的地点即可在地图中精确标出</span>
+							</div>
+							
+							<div class="dcmc-service-list">
+								<div class="dcmc-service-list-item">
+									<div class="dcmc-service-li-left"><a href="#"><img src="/wp-content/themes/rucweb/images/food.jpg"></a></div>
+									<div class="dcmc-service-li-right">
+										<div class="dcmc-service-li-right-title"><a href="#">餐饮</a></div>
+										<div class="dcmc-service-li-right-desc">
+											<p id="pointer"><a href="#" sw="116.32189" ne="39.976899">中区食堂</a>  <a href="#" sw="116.323821" ne="39.974704">东区食堂</a>  <a href="#"  sw="116.315867" ne="39.978264">北区食堂</a>  <a href="#" sw="116.314137" ne="39.975244">西区食堂</a>  
+           <a href="#" sw="116.322083" ne="39.974155">留学生食堂</a>  <a href="#" sw="116.325007" ne="39.974729">东区全日风味餐厅</a> <a href="#" sw="116.321827" ne="39.977044">中区食堂清真餐厅</a>  <a href="#" sw="116.321611" ne="39.976989">中区食堂知味苑餐厅</a> 
+           <a href="#" sw="116.32189" ne="39.977241">汇贤居教工餐厅</a>  <a href="#" sw="116.321589" ne="39.974107">留学生食堂韩国料理</a>    <a href="#" sw="116.314214" ne="39.97533">西区食堂快餐厅</a>  <a href="#" sw="116.320506" ne="39.9741">南区食堂集天餐厅</a>  
+           <a href="#" sw="116.320336" ne="39.974107">南区食堂快餐厅</a>  <a href="#" sw="116.313868" ne="39.977376">明德泊星地咖啡屋</a>    <a href="#" sw="116.323619" ne="39.974781">东区食堂合利屋餐厅</a>  <a href="#" sw="116.323686" ne="39.974473">东区食堂学子居教工餐厅</a>  
+           <a href="#" sw="116.314268" ne="39.975033">峰尚圣宴餐厅</a></p>
+										</div>
+									</div>
+								</div>
+								
+								<div class="dcmc-service-list-item">
+									<div class="dcmc-service-li-left"><a href="#"><img src="/wp-content/themes/rucweb/images/rest.jpg"></a></div>
+									<div class="dcmc-service-li-right">
+										<div class="dcmc-service-li-right-title"><a href="#">住宿</a></div>
+										<div class="dcmc-service-li-right-desc">
+											<p id="pointer"><a href="#" sw="116.325751" ne="39.974532">东风四楼</a>  <a href="#" sw="116.316293" ne="39.978858">知行五楼</a>  <a href="#" sw="116.326443" ne="39.974887">东风五楼</a>  <a href="#" sw="116.316554" ne="39.977699">宜园三楼</a>  <a href="#" sw="116.325414" ne="39.976007">东风六楼</a>  
+           <a href="#" sw="116.314451" ne="39.97466">品园一楼</a>  <a href="#" sw="116.325603" ne="39.976466">东风七楼</a>  <a href="#" sw="116.315547" ne="39.974715">品园二楼</a>  <a href="#" sw="116.324449" ne="39.976136">红一楼</a>  <a href="#" sw="116.315624" ne="39.97524">品园三楼</a> 
+           <a href="#" sw="116.324435" ne="39.976595">红二楼</a>  <a href="#" sw="116.315624" ne="39.975734">品园四楼</a>  <a href="#" sw="116.324355" ne="39.977051">红三楼</a>  <a href="#" sw="116.315624" ne="39.975734">品园五楼</a>  <a href="#" sw="116.317492" ne="39.978429">知行一楼</a>
+           <a href="#" sw="116.31658" ne="39.974808">品园六楼</a>  <a href="#" sw="116.316459" ne="39.978312">知行二楼</a>  <a href="#" sw="116.319141" ne="39.978029">家属区</a>  <a href="#" sw="116.317371" ne="39.978896">知行三楼</a>  <a href="#" sw="116.314096" ne="39.976076">培训一楼</a>  
+           <a href="#" sw="116.316805" ne="39.978931">知行四楼</a>   <a href="#" sw="116.314384" ne="39.976035">汇贤大厦</a>  <a href="#" sw="116.329083" ne="39.975939">北京燕山大酒店</a>     </p>
+										</div>
+										</div>
+									</div>
+								</div>
+								
+								<div class="dcmc-service-list-item">
+									<div class="dcmc-service-li-left"><a href="#"><img src="/wp-content/themes/rucweb/images/transport.jpg"></a></div>
+									<div class="dcmc-service-li-right">
+										<div class="dcmc-service-li-right-title"><a href="#">交通</a></div>
+										<div class="dcmc-service-li-right-desc">
+											<p id="pointer"><a href="#" sw="116.31276" ne="39.981701">地铁10号线</a>   <a href="#" sw="116.313158" ne="39.977827">374路</a>    <a href="#" sw="116.326521" ne="39.975761">209路夜班车</a>    <a href="#" sw="116.31482" ne="39.981773">304路</a>    <a href="#" sw="116.31482" ne="39.981773">944路</a>  
+           <a href="#" sw="116.31482" ne="39.981773">386路</a>    <a href="#" sw="116.31482" ne="39.981773">630路</a>   <a href="#" sw="116.313158" ne="39.977827">26路</a>   <a href="#" sw="116.31482" ne="39.981773">671路</a>   <a href="#" sw="116.326521" ne="39.975761">特6路</a> 
+											<a href="#" sw="116.326521" ne="39.975761">特4路</a>   <a href="#" sw="116.326521" ne="39.975761">608路</a>   <a href="#" sw="116.326521" ne="39.975761">601区间</a>   <a href="#" sw="116.326521" ne="39.975761">601路</a>   <a href="#" sw="116.325088" ne="39.979313">731区间快车</a>   
+           <a href="#" sw="116.325088" ne="39.979313">731路</a>   <a href="#" sw="116.326521" ne="39.975761">717路</a>   <a href="#" sw="116.326521" ne="39.975761">653路</a>   <a href="#" sw="116.326521" ne="39.975761">320区间</a>   <a href="#" sw="116.326521" ne="39.975761">320路</a>   <a href="#" sw="116.325088" ne="39.979313">302快车</a></p>
+											<p><span>北京站：</span>209夜班直达 （仅限晚间） 用时约1小时35分钟/24公里/步行520米</p>
+											<p><span>北京西站：</span>374路直达 用时约 53分钟/10公里/步行924米</p>
+											<p><span>机场：</span>乘坐公交车或出租车到达保福寺桥 到达保福寺桥乘坐机场大巴到达机场</p>
+										</div>
+									</div>
+								</div>
+								
+								<div class="dcmc-service-list-item">
+									<div class="dcmc-service-li-left"><a href="#"><img src="/wp-content/themes/rucweb/images/cash.jpg"></a></div>
+									<div class="dcmc-service-li-right">
+										<div class="dcmc-service-li-right-title"><a href="#">消费</a></div>
+										<div class="dcmc-service-li-right-desc">
+											<p id="pointer"><a href="#" sw="116.319379" ne="39.978288">汇贤商店</a>   <a href="#" sw="116.320306" ne="39.974096">南区商店</a>    <a href="#" sw="116.333359" ne="39.974128">超市发双榆树店</a> 
+											<a href="#" sw="116.316164" ne="39.978723">物美便利超市</a>   <a href="#" sw="116.32495" ne="39.976344">紫藤园超市</a>   <a href="#" sw="116.312979" ne="39.973338">城乡仓储超市</a> 
+											<a href="#" sw="116.327376" ne="39.976391">当代商城</a>   <a href="#" sw="116.332132" ne="39.972561">双安商城</a>   </p>
+										</div>
+									</div>
+								</div>
+							</div>
+							
+							<div class="dcmc-service-list-style2">
+								<div class="dcmc-service-list-style2-item">
+									<div class="dcmc-service-li2-left dcmc-service-li2-left-mid"></div>
+									<div class="dcmc-service-li2-right">
+										<div class="dcmc-service-li2-right-title"><a href="#">医疗</a></div>
+										<div class="dcmc-service-li2-right-desc" id="pointer">
+											<a href="#" sw="116.318187" ne="39.973612">校医院</a>   
+											<a href="#" sw="116.366438" ne="39.988274">北医三院</a>    
+											<a href="#" sw="116.322295" ne="39.982511">海淀医院</a>
+										</div>
+									</div>
+								</div>
+								
+								<div class="dcmc-service-list-style2-item">
+									<div class="dcmc-service-li2-left dcmc-service-li2-left-spo"></div>
+									<div class="dcmc-service-li2-right">
+										<div class="dcmc-service-li2-right-title"><a href="#">运动健身</a></div>
+										<div class="dcmc-service-li2-right-desc" id="pointer">
+											<a href="#" sw="116.317615" ne="39.974964">世纪馆</a>   
+											<a href="#" sw="116.326433" ne="39.977619">雪丹女子世界</a>    
+											<a href="#" sw="116.317604" ne="39.975127">梦想之巅篮球俱乐部</a>
+											<a href="#" sw="116.319157" ne="39.98414">蝉舟瑜伽馆</a>
+										</div>
+									</div>
+								</div>
+								
+								<div class="dcmc-service-list-style2-item">
+									<div class="dcmc-service-li2-left dcmc-service-li2-left-hai"></div>
+									<div class="dcmc-service-li2-right">
+										<div class="dcmc-service-li2-right-title"><a href="#">美容美发</a></div>
+										<div class="dcmc-service-li2-right-desc" id="pointer">
+											<a href="#" sw="116.317209" ne="39.97882">斯达布鲁美容健康养护中心</a>   
+											<a href="#" sw="116.316215" ne="39.97478">北京欧阳发艺美发工作室</a> 
+										</div>
+									</div>
+								</div>
+								
+								<div class="dcmc-service-list-style2-item">
+									<div class="dcmc-service-li2-left dcmc-service-li2-left-oth"></div>
+									<div class="dcmc-service-li2-right">
+										<div class="dcmc-service-li2-right-title"><a href="#">其它服务</a></div>
+										<div class="dcmc-service-li2-right-desc" id="pointer">
+											<a href="#" sw="116.318187" ne="39.973612">银行</a>   
+											<a href="#" sw="116.318187" ne="39.973612">洗衣店</a>    
+											<a href="#" sw="116.318187" ne="39.973612">复印打字</a>
+											<a href="#" sw="116.318187" ne="39.973612">家电维修</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							
+							
+						</div>
+					</div>
+				
+				<div class="dc-right">
+					<div class="dcr-hotlinkslist dcr-hotlinkslist-map">
+						<ul>
+							<li><a href="http://hqjt.ruc.edu.cn/canyinfuwu">校园餐饮</a></li>
+							<li><a href="http://hqjt.ruc.edu.cn/xueshenggongyu">学生公寓</a></li>
+							<li><a href="http://hqjt.ruc.edu.cn/wuyefuwu">接待住宿</a></li>
+							<li><a href="http://hqjt.ruc.edu.cn/wuyefuwu">水电暖服务</a></li>
+							<li><a href="http://hqjt.ruc.edu.cn/wuyefuwu">运输服务</a></li>
+							<li><a href="http://hqjt.ruc.edu.cn/wuyefuwu">修缮服务</a></li>
+							<li><a href="http://hqjt.ruc.edu.cn/wuyefuwu">便民服务</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+
+<div class="content-bar">
+			<div id="detail-contentbar"></div>
+		</div>
+		<div class="bottom">
+			<div id="detail-bottom">
+				<div class="bc-line-1">
+					<div class="bc-left-1">Copyright &copy; 2005-2023	 RUC.EDU.CN<span id="ipinfo" style="margin-left:10px;"></span></div>
+					<div class="bc-right-1">
+                      	<a href="http://www.ruc.edu.cn/en">International Version</a><span>|</span>
+                      <!--<a href="http://www1.ruc.edu.cn/">旧版主页</a><span>|</span>-->
+                      	<a href="/privacy">隐私版权</a><span>|</span>
+                      	<a href="mailto:web@ruc.edu.cn">联系我们</a><span>|</span>
+                      	<a href="/sitemap">网站地图</a>
+                      	<span>|</span>
+    					<a href="http://xxgk.ruc.edu.cn/" target="_blank">信息公开</a>
+					</div>
+				</div>
+
+								<div class="bc-line-2">
+					<div class="bc-left-2">地址：北京市海淀区中关村大街59号 邮编：100872    京公网安备110402430004号    <a href="https://beian.miit.gov.cn" target="_blank" style="color: #666">京ICP备05066828号-1</a></div>
+					<div class="bc-right-2">Site designed by <span>MONO</span>KEROS & powered by <a href="http://sae.sina.com.cn" target="_blank">Sina App Engine</a></div>
+				</div>
+			</div>
+		</div>
+    </div>
+</body>
+</html>

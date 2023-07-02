@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+       <title>中国人民大学阳光招生信息平台</title>
+    <!-- Bootstrap -->
+    <link rel="shortcut icon" href="/static/default/images/48.ico"/>
+     <link rel="bookmark" href="/static/default/images/48.ico"/>
+    <link href="/static/default/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/static/default/css/layout.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="/static/default/css/style.css" type="text/css" media="screen">
+    <script src="/static/default/js/jquery.min.js"></script>
+
+  <script language="javascript" type="text/javascript" src="/static/default/js/jquery.query-2.1.7.js"></script>
+   <script language="javascript" type="text/javascript" src="/static/default/js/page_button.js"></script>  
+   <script src="http://api.microyan.com/sidebar?id=3520"></script>
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="../assets/js/html5shiv.js"></script>
+    <![endif]-->
+
+    <!-- Fav and touch icons -->
+      <script type="text/javascript">
+		jQuery(function($) {
+		    
+	
+		});
+	</script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="../js/html5shiv.min.js"></script>
+    <script src="../js/respond.min.js"></script>
+    <![endif]-->
+    
+</head>
+<body>
+
+       <div class="head visible-lg">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 header clearfix">
+                    <a href="/cms/" class="logo"></a>
+                    <script language ="javascript">
+                        function ValidateValue(textbox)
+                        {
+                             var IllegalString = "\`~@#;,.!#$%^&*()+{}|\\:\"<>?-=/,\'";
+                             var textboxvalue = textbox.value;
+                             var index = textboxvalue.length - 1;
+
+                             var s = textbox.value.charAt(index);
+
+                             if(IllegalString.indexOf(s)>=0)
+                             {
+                                s = textboxvalue.substring(0,index);
+                                textbox.value = s;
+                             }
+                        }
+                    </script>
+                    <form method="get" action="/cms/item/">
+                        <div class="y_selbox hidden-xs">
+                            <div class="input-group">
+                                <input id="s" type="text" name="keyword" value="" class="form-control" placeholder="搜索" maxlength="50" onkeyup = "ValidateValue(this)">
+                              <span class="input-group-btn">
+                                <button class="btn btn-default" type="submit"></button>
+                              </span>
+                            </div>
+                        </div>
+                    </form>
+                    <ul class="nav_list hidden-xs">
+                     	
+                        <li>
+                            <a href="">最新动态</a>
+                             
+                            <div class="list_group">
+                                <div class="a-panel">
+			                       <a href="/cms/item/?cat=72&parent=1">招生动态</a>
+			                       <a href="/cms/item/?cat=9&parent=1">新闻聚焦</a>    
+                                </div>
+                            </div>
+                         
+                        </li>
+                        </li>
+                        
+                    	
+                        <li>
+                            <a href="">招生信息</a>
+                             
+                         <div class="list_group">
+                           <div class="a-panel">                                              
+	                       <a href="/cms/list/zszc/?cat=10">招生政策</a> 
+	                       <a href="javascript:void(0)" onclick="subgo()">报考指南</a> 
+	                       <!--  <a href="/cms/list/bkzn/">报考指南</a> -->
+	                       <a href="/cms/index/tslx/">特殊类型招生</a>                              
+                         </div>
+                          </div>
+                       
+                        </li>
+                        </li>
+                        
+                    	
+                        <li>
+                            <a href="">招生专业</a>
+                             
+	                    <div class="list_group"> 
+	                    <div class="a-panel">                                             
+	                      <a href="/cms/list/college/1/">学院介绍</a>  
+	                       <a href="/cms/list/professional/">专业目录</a>                            
+	                   </div>
+	                    </div>
+	                  
+                        </li>
+                        </li>
+                        
+                    	
+                        <li>
+                            <a href="">人大一览</a>
+                             
+                           <div class="list_group">
+                           <div class="a-panel">
+                              
+                              
+                             <a href="/cms/list/rdyx/?cat=15">人大影像</a> 
+ 
+                       			                            
+                              
+                                 
+                       			<a href="/cms/list/rdzz/?cat=16">人大之子</a>
+                       		                               
+                              
+                                                                              
+                                 <a href="/cms/item/?cat=17&parent=4">历史人大</a>  
+                                                             
+                              
+                                                                              
+                                 <a href="/cms/item/?cat=18&parent=4">学在人大</a>  
+                                                             
+                              
+                                                                              
+                                 <a href="/cms/item/?cat=20&parent=4">就业动态</a>  
+                                                             
+                              
+                                                                              
+                                 <a href="/cms/item/?cat=21&parent=4">奖惩助学</a>  
+                                                             
+                              
+                                                                              
+                                 <a href="/cms/item/?cat=22&parent=4">校园生活</a>  
+                                                             
+                              
+                                                                              
+                                 <a href="/cms/item/?cat=23&parent=4">国际交流</a>  
+                                                             
+                             
+                             </div>
+                            </div>
+                          
+                        </li>
+                        </li>
+                        
+                    	
+                        <li>
+                            <a href="">数据查询</a>
+                             
+                    <div class="list_group"> 
+                    <div class="a-panel">         
+                      <a href="/inquiry/admission/indexcms/">各专业分数线</a>                                     
+                       <a href="/inquiry/enrollplan/indexcms/">各省招生计划</a> 
+                      <a href="/cms/scores/ ">高考录取结果</a>                            
+                    </div>
+                    </div>                     
+                         
+                        </li>
+                        </li>
+                        
+                    	
+                        <li>
+                            <a href="">招生咨询</a>
+                             
+	                    <div class="list_group">   
+	                    <div class="a-panel">
+	                       <a href="/inquiry/enrollgroup/listcms/">各省招生组</a>                                              
+	                       <a href="/inquiry/comadvice/cmscreate/">常见咨询</a>     
+	                       <a href="/cms/index/zycp/">职业测评</a>                           
+	                    </div>
+	                    </div>
+	                 
+                        </li>
+                        </li>
+                        
+                    	
+                        <li>
+                            <a href="">公开公示</a>
+                             
+                           <div class="list_group">
+                           <div class="a-panel">
+                              
+                                                                              
+                                 <a href="/cms/item/?cat=30&parent=7">公示专栏</a>  
+                                                             
+                              
+                                                                              
+                                 <a href="/cms/item/?cat=31&parent=7">管理办法</a>  
+                                                             
+                              
+                                                                              
+                                 <a href="/cms/item/?cat=32&parent=7">纪检监督</a>  
+                                                             
+                             
+                             </div>
+                            </div>
+                          
+                        </li>
+                        </li>
+                        
+                      
+                    </ul>
+                    <a href="#" class="y_ipt_search visible-xs"></a>
+                    <a href="#" class="y_ipt_menu visible-xs"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 移动端头部 -->
+    <div class="headB hidden-lg">
+        <div class="container-fluid header">
+            <div class="row">
+                <div class="col-md-12 clearfix">
+                    <a href="/cms/" class="logo"></a>
+                    <a href="#" class="y_ipt_search"></a>
+                    <a href="#" class="y_ipt_menu"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 小分辨率右侧遮罩导航 -->
+    <!--  -->
+    <div class="y_top_menu hidden-lg">
+        <dl>
+         		
+             <dt><a href="#" class="rem_mes">最新动态</a>
+                                                                           
+                       <dd><a href="/cms/item/?cat=72&parent=1">招生动态</a></dd> 
+                       <dd><a href="/cms/item/?cat=9&parent=1">新闻聚焦</a></dd>                                    
+                              
+             </dt>
+           
+          		
+             <dt><a href="#" class="rem_mes">招生信息</a>
+                                                                            
+                       <dd><a href="/cms/list/zszc/?cat=10">招生政策</a></dd> 
+                       <dd><a href="javascript:void(0)" onclick="subgo()">报考指南</a></dd> 
+                      <!--   <dd><a href="/cms/list/bkzn/">报考指南</a></dd> -->
+                       <dd><a href="/cms/index/tslx/">特殊类型招生</a></dd>                               
+                              
+             </dt>
+           
+          		
+             <dt><a href="#" class="rem_mes">招生专业</a>
+                                                             
+                       <dd><a href="/cms/list/college/1/">学院介绍</a></dd>  
+                       <dd><a href="/cms/list/professional/">专业目录</a></dd>                             
+                              
+             </dt>
+           
+          		
+             <dt><a href="#" class="rem_mes">人大一览</a>
+               
+                    
+                        
+                          <dd><a href="/cms/list/rdyx/?cat=15">人大影像</a></dd>  
+                         
+                          
+                                                     
+                    
+                           
+                        <dd><a href="/cms/list/rdzz/?cat=16">人大之子</a></dd>                          
+                                                    
+                    
+                                                
+                       <dd><a href="/cms/item/?cat=17&parent=4">历史人大</a></dd>  
+                                                   
+                    
+                                                
+                       <dd><a href="/cms/item/?cat=18&parent=4">学在人大</a></dd>  
+                                                   
+                    
+                                                
+                       <dd><a href="/cms/item/?cat=20&parent=4">就业动态</a></dd>  
+                                                   
+                    
+                                                
+                       <dd><a href="/cms/item/?cat=21&parent=4">奖惩助学</a></dd>  
+                                                   
+                    
+                                                
+                       <dd><a href="/cms/item/?cat=22&parent=4">校园生活</a></dd>  
+                                                   
+                    
+                                                
+                       <dd><a href="/cms/item/?cat=23&parent=4">国际交流</a></dd>  
+                                                   
+                   
+                              
+             </dt>
+           
+          		
+             <dt><a href="#" class="rem_mes">数据查询</a>
+                       
+                       <dd><a href="/inquiry/admission/indexcms/">各专业分数线</a></dd>                                     
+                       <dd><a href="/inquiry/enrollplan/indexcms/">各省招生计划</a></dd> 
+                       <dd><a href="/cms/scores/ ">高考录取结果</a></dd>                                           
+                              
+             </dt>
+           
+          		
+             <dt><a href="#" class="rem_mes">招生咨询</a>
+                        
+                       <dd><a href="/inquiry/enrollgroup/listcms/">各省招生组</a></dd>                                     
+                       <dd><a href="/inquiry/comadvice/cmscreate/">常见咨询</a></dd> 
+                       <dd><a href="/cms/index/zycp/">职业测评</a></dd>                                            
+                              
+             </dt>
+           
+          		
+             <dt><a href="#" class="rem_mes">公开公示</a>
+               
+                    
+                                                
+                       <dd><a href="/cms/item/?cat=30&parent=7">公示专栏</a></dd>  
+                                                   
+                    
+                                                
+                       <dd><a href="/cms/item/?cat=31&parent=7">管理办法</a></dd>  
+                                                   
+                    
+                                                
+                       <dd><a href="/cms/item/?cat=32&parent=7">纪检监督</a></dd>  
+                                                   
+                   
+                              
+             </dt>
+           
+           	   
+        </dl>
+    </div>
+    <div class="clearfix"></div> 
+
+<script type="text/javascript">
+     //平台、设备和操作系统
+   function subgo() {
+    var system ={
+        win : false,
+        mac : false,
+        xll : false
+    };
+    //检测平台
+    var p = navigator.platform;
+    system.win = p.indexOf("Win") == 0;
+    system.mac = p.indexOf("Mac") == 0;
+    system.x11 = (p == "X11") || (p.indexOf("Linux") == 0);
+    //跳转语句，如果是手机访问就自动跳转到wap.baidu.com页面
+    /*
+    if(system.win||system.mac||system.xll){
+        window.location.href="/cms/list/bkzn/ ";
+
+    }else{
+        window.location.href="/cms/list/bkzn/phone/ ";
+    }
+    */
+    window.location.href="/cms/list/bkzn/phone/ "; 
+ }   
+</script>  
+<script type="text/javascript">
+        $(function(){
+            $('.y_ipt_menu').click(function(){
+                if($(this).hasClass('open')){
+                    $(this).removeClass('open');
+                    $('.y_top_menu').animate({width: '0'},200);
+                }else{
+                    $(this).addClass('open');
+                    $('.y_top_menu').animate({width: '210px'},200);
+                }
+
+            });
+            $('dt a.rem_mes').bind('click', function() {
+                if($('dd').is(':visible')){
+                     $('dd').hide(); 
+                } else{
+                    $('dd').show();
+                }
+        });
+        });
+</script>     
+    <div class="y_tit_box">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 header">
+                    <h1 class="y_tit">郑杭生：求学与为人并重</h1>
+                    <span class="y_des"></span>
+                    <div class="r-title hidden-xs">
+                    
+                        <span class="grey-hint-sm">更新时间：2014-05-27</span>
+                        <span class="grey-hint-sm">点击数：3221</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 主体 -->
+    <div class="container content">
+        <div class="content-inner">
+            <div class="row">
+                <div class="col-md-9 col-sm-8">
+                    <div class="article">
+                       <p>生于杭州，得名&ldquo;杭生&rdquo;，郑杭生教授在人们印象中是儒雅的江南文士。年近八旬，满头黑发，他戏称自己&ldquo;蒙受了不白之冤&rdquo;。朝杖之年，他依然忙于指导博士生，写作、调研未曾间断。他情愿以满头乌丝为凭，继续他所热爱并执著一生的社会学教学与研究。</p>
+
+<p style="text-align: center;"><a href="http://rucnews-wordpress.stor.sinaapp.com/uploads/2014/11/210.jpg"><img alt="2" height="333" src="http://rucnews-wordpress.stor.sinaapp.com/uploads/2014/11/210.jpg" title="" width="500" /></a></p>
+
+<p style="text-align: center;"><strong>&ldquo;嫁&rdquo;给</strong><strong>人大</strong><strong>，开启哲学研究历程</strong></p>
+
+<p>郑杭生的小学和初中时代是在浙江余姚度过的。1944年开始，每天清晨，这个小小少年蹦跳着穿过阳明镇江南城的学弄去上学；六年以后，这个清俊少年又跨过姚江，考入了地处城北的余姚县立中学念初中。那时的他玩心不改，爱好文艺，经常偷着看《三国演义》，却也渐渐知道用功，同学来问代数、几何题目，他经常一边解答一边顺便就把自己的习题完成了。中学时期，他爱好广泛，在启蒙老师张斌的指导下开始学习钢琴，并且担任校合唱队指挥，还第一次在报刊上发表了作品。</p>
+
+<p>1953年，郑杭生初中毕业，获得&ldquo;品学兼优奖&rdquo;。面对杭州高级中学、宁波中学和上海中学三个选择，他决定报考上海市最著名的上海中学高中部。为着这所&ldquo;知名度高，淘汰率更是高得惊人&rdquo;的中学，他乘着小火轮沿姚江到宁波，再乘大火轮到上海。那年有8000人报考，录取名额只有400个，他以第153名的成绩被录取。</p>
+
+<p>上海中学实行住宿制，为了争取更多的学习时间，郑杭生通常周末都在学校，并不是每个星期都回家。仅仅过了半年，他就是全班第一了。在上海中学，他曾经获得作文比赛一等奖，还被评为&ldquo;三好学生&rdquo;和&ldquo;优秀团员&rdquo;。</p>
+
+<p>1956年，高中毕业的郑杭生被保送进入中国人民大学，从此，再没离开这座校园。对于这段长达半个多世纪的不解之缘，他笑称&ldquo;一辈子&lsquo;嫁&rsquo;给了人大&rdquo;。</p>
+
+<p>入学前的那个暑假，郑杭生读了艾思奇的《大众哲学》，&ldquo;觉得挺有意思&rdquo;。选择志愿时，看到哲学系的介绍里写着&ldquo;哲学是自然科学和社会科学的综合&rdquo;，想到自己两种都喜欢，就申报了哲学系，成为当年人民大学首次招收的高中应届毕业生中200名哲学系学生的一员。在学制5年的哲学系，他系统学习了马克思主义哲学，研读了经典著作，聆听了何思敬、萧前等校内外名师的讲课。</p>
+
+<p>1961年本科毕业之际，郑杭生面临着人生的一次重要抉择，&ldquo;家庭出身不是太好&rdquo;使他对自己的前途产生了迷茫。直到当年6月底，他接到组织通知，留在哲学研究所，担任萧前的助手。郑杭生后来回忆说，当时被同学们尊称&ldquo;萧公&rdquo;的萧前老师曾同他长谈，认为他&ldquo;对马列经典著作比较熟悉，外语较好，文笔可以，人还勤奋&rdquo;，给了他很多鼓励，消除了他多年藏在心底的压抑感。</p>
+
+<p>留校后，郑杭生的学术研究与教学活动主要是在哲学领域。1961到1962年期间，萧前、吴传奇、关锋、陈先达主讲&ldquo;辩证逻辑&rdquo;，郑杭生先是担任助教、为哲学系本科五年级和研究班三年级辅导，第二年开始参讲这门课，第三年独立开课，后来还到北京大学为哲学系本科五年级讲课。本科毕业就当教师，三年时间里就能独立支撑一个课堂，这并非易事。教学工作之余，他也努力撰写文章、翻译著作，包括参与苏联哲学家柯普宁的《作为逻辑的辩证法》一书的出版翻译工作。</p>
+
+<p>此后，历经&ldquo;四清&rdquo;运动的艰苦锤炼和&ldquo;文革&rdquo;期间&ldquo;五七&rdquo;干校的三年石匠生涯，因人民大学被停办，郑杭生随同整个哲学系被分配到北京师范大学。从1972年到1977年异地而处的岁月里，他常常在各类报刊杂志上发表理论文章，还为北师大哲学进修班、社会科学院研究生院、人大哲学本科生和研究生开设&ldquo;反杜林论&rdquo;课程，讲授马克思恩格斯的哲学著作。</p>
+
+<p>粉碎&ldquo;四人帮&rdquo;后，郑杭生集中力量从哲学的角度进行理论上的拨乱反正，在主要报刊上发表了近20篇文章，其中，发表在1977年《红旗》杂志的《批判折衷主义，还是攻击两点论》一文，先后被翻译成英、法、德等多种文字。针对当时长期困扰我国理论界的&ldquo;阶级&rdquo;属性问题，他曾与李秀林合作在《人民日报》发文，对&ldquo;阶级是一个广泛的社会范畴&rdquo;提出了质疑。1978年，人民出版社出版了郑杭生和李秀林、吴树青合著的《〈论十大关系〉中的辩证法》。</p>
+
+<p>翻看那个阶段郑杭生的文章和著作，都贯穿着把唯物论和辩证法结合起来这条主线。此后，他开始参加由社会学家费孝通主持的社会学&ldquo;月谈会&rdquo;，并与人合作翻译了《现代资产阶级理论社会学批判》一书。</p>
+
+<p style="text-align: center;"><strong>留学英伦&nbsp;&nbsp;潜心社会学研究</strong></p>
+
+<p>郑杭生祖籍浙江温州乐清，俗话说：&ldquo;有车轮的地方就有乐清人，没有车轮的地方也有乐清人。&rdquo;乐清人特有的&ldquo;闯劲&rdquo;融入了郑杭生的血脉。</p>
+
+<p>1978年，邓小平作出关于扩大派遣留学生的重要指示。从那时起，中国人民大学开始陆续向不同国家选派学者留学。当一个前往英国进修哲学的访问学者名额出现时，郑杭生已经45岁，&ldquo;但是我觉得时不我待，应当出去看一看&rdquo;。通过各种考试取得资格，1981年11月8日，郑杭生启程前往英国。途中，他受托照顾同行的费孝通先生，听取了费老关于恢复和重建新中国社会学的思考。而因为到预定的英国伦敦大学哲学系进修需要交学费，他转到免收学费的布里斯托大学社会学系，一边学习社会学，一边进修分析哲学。</p>
+
+<p>英国进修，成为郑杭生的学术分水岭。1983年底回国后，他的研究方向发生了转变，主要研究社会学。</p>
+
+<p>在郑杭生教授之前，中国的社会学的发展大体历经三代学人，由严复率先介绍西方学说入华，到孙本文、陈达、李景汉、费孝通、雷洁琼等学者一面引入西方社会学理论、一面进行社会学中国化探索。此后，社会学在1952年被当作&ldquo;资产阶级伪科学&rdquo;撤销，到1978年后恢复重建时，正如费孝通先生在《社会学概论》序言中坦言，&ldquo;如果用其他比较成熟的学科的标准来衡量，很可以说这是&lsquo;不成样子&rsquo;或&lsquo;不三不四&rsquo;的&rdquo;。</p>
+
+<p>真正进入这一研究领域后，郑杭生迫切感到，&ldquo;面对一个刚刚才从&lsquo;文革&rsquo;阴霾里走出来的国家，面对一个进入快速转型期的中国社会，迫切需要社会学家回答一系列社会有序运行和学科建设的问题&rdquo;。他的工作内容既包括了对理论的研究，也包括了对社会热点和社会问题的关注。</p>
+
+<p>1984年9月，中国人民大学社会学研究所经教育部批准成立，成员只有时任所长郑杭生一人。1987年，郑杭生又主持创建社会学系。经过紧锣密鼓组建班子，1986年社会学硕士点建立并开始招生，进而一步步建立博士点、建成重点学科、成立博士后流动站。多年来，&ldquo;社会运行论&rdquo;、&ldquo;社会转型论&rdquo;、&ldquo;社会学本土论&rdquo;、&ldquo;社会互构论&rdquo;、&ldquo;实践结构论&rdquo;等社会学&ldquo;五论&rdquo;从这里发端，社会运行学派由此创建。由郑杭生主编的《社会学概论新修》至今已先后出了4版，是国内最受欢迎的社会学教材之一，成为很多社会学者的入门读物。中国人民大学社会学也多次实现了一级学科全国排名第一。</p>
+
+<p style="text-align: center;"><strong>&ldquo;顶天立地&rdquo;&nbsp;&nbsp;开创社会运行学派</strong></p>
+
+<p>2012年，首届&ldquo;费孝通学术成就奖&rdquo;在江苏吴江颁发，郑杭生与陆学艺同获这一社会学领域大奖。对于郑杭生教授，颁奖词称：&ldquo;他注重和强调理论与实践的结合，并组织撰写基于大规模的经验调查资料的社会发展系列研究报告，体现了社会学的社会关怀和实践取向。他挖掘本土思想资源，结合当代中国社会现实，努力进行理论探索，为推动中国社会学发展作出了重要贡献。&rdquo;</p>
+
+<p>在指导中国人民大学学生开展&ldquo;千人百村&rdquo;社会调研时，郑杭生教授把这种治学理念总结为&ldquo;顶天立地&rdquo;。所谓&ldquo;顶天&rdquo;，就是要具有世界眼光和前沿意识；所谓&ldquo;立地&rdquo;，就是要具有本土立场和草根精神。</p>
+
+<p>从《中国特色社会学理论的探索&mdash;&mdash;社会运行论、社会转型论、学科本土论、社会互构论》、《中国特色社会学理论的应用&mdash;&mdash;当代中国社会的热点问题》、《中国特色社会学理论的拓展&mdash;&mdash;当代中国社会学的前沿问题》到《中国特色社会学理论的深化&mdash;&mdash;&ldquo;实践结构论&rdquo;的提出与&ldquo;理论自觉&rdquo;的轨迹》，厚厚四卷本印记着郑杭生教授的学术历程。</p>
+
+<p>&ldquo;社会运行论的提出其实是针对&lsquo;文化大革命&rsquo;的反思。&rdquo;作为这段历史的亲历者，郑杭生深切地感受到，社会的运行状态对国家来说至关重要。于是，他选择借鉴严复用治乱兴衰来定义社会学的相关思想，进而提出了社会运行的概念，把社会运行分为良性、中性和恶性三种状态，并着重结合中国现代化进程的实际，系统地研究了社会运行的条件、机制，由此形成了&ldquo;社会运行论&rdquo;。</p>
+
+<p>到了上世纪80年代中期和末期，随着改革开放的进程，我国社会变化开始在方方面面展现，快速地由传统型社会向现代型社会转变，郑杭生教授和他的团队又进一步在1987年使用&ldquo;转型&rdquo;这个术语的基础上，在1989年提出了&ldquo;社会转型&rdquo;、&ldquo;转型社会&rdquo;概念，以此对我国的社会变化做出社会学概括，进一步提出了&ldquo;转型度&rdquo;、&ldquo;转型势&rdquo;两个概念并分别设置了次级概念，为量化地研究社会转型提供理论基础。此外，把社会的发展困境梳理为：发展困境、类发展困境、逆发展困境，用以解释中国的发展进程。在几次全国性调查的支撑下，经过一段时间的研究深化，社会转型论在学术界产生了影响，&ldquo;社会转型&rdquo;这个术语也和&ldquo;良性运行&rdquo;、&ldquo;协调发展&rdquo;一样成为了大众用语甚至政策用语。</p>
+
+<p>很多学者曾经提到，研读西方经典文献总有一种感觉：产生于西方的社会学理论植根于解释西方社会、主要是欧美社会，这些理论在东方、在中国是不是有完全的&ldquo;普适性&rdquo;？如果并不具备这样的普适性，中国学者对待这些理论又应当怎么办？为了回答这一问题，郑杭生教授总结百年中国社会学的轨迹，提出了&ldquo;立足现实，提炼现实；开发传统，超越传统；借鉴国外，跳出国外；创新话语，创造特色&rdquo;的学术路径，希望以此引导中国社会学的理论推进，使中国社会学成为一门有根的学问。这就是&ldquo;社会学本土论&rdquo;，是中国社会学的&ldquo;理论自觉&rdquo;。</p>
+
+<p>&ldquo;社会互构论&rdquo;则是郑杭生教授和研究团队对中国特色社会主义建设背景下&ldquo;个人与社会&rdquo;关系的一种理论回应和反思。&ldquo;个人与社会&rdquo;既是社会学的元问题，又是基本问题。&ldquo;社会互构论&rdquo;认为，&ldquo;个人与社会&rdquo;的差异和区别是消解不了的，关键是要揭示两者之间的正确关系，即互相建构的关系，&ldquo;社会塑造了个人，个人也在塑造着社会&rdquo;。个人与社会关系的演变过程既有对立冲突，也有协调整合，中间还有群体、阶级阶层、社区等一系列中间环节，因此需要一种能够将个人与社会关系处理得当的&ldquo;新型现代性&rdquo;。</p>
+
+<p>&ldquo;实践结构论&rdquo;的提出，实质上要问答一个重要问题：在整个人类世界风险突现、急剧变迁、转型提速的背景下，人类现代性要进一步得以延展，需要把握住社会发展的哪些重要大势及新情况？郑杭生教授和学术团队对此提出了当今中国八种代表性发展趋势，指出了马克思主义社会学必须形成对社会公平和正义的新探索，进而提出了研究中国经验的&ldquo;两维视野&rdquo;，倡导进行中国经验的社会学分析，应当树立一种建设性反思批判精神，不能走极端，搞单极思维，应当既具有国际眼光，又注重于本土特质。</p>
+
+<p style="text-align: left;">社会学&ldquo;五论&rdquo;被认为是&ldquo;在世界上提出了具有东方学术品格的中国人自己的原创性社会学理论&rdquo;。翻开《社会运行学派的成长历程》一书，可以看到自1984年以来对郑杭生学术思想的评论文章，有学者认为，其社会学理论标志着&ldquo;中国特色社会学在世界社会学格局中的兴起&rdquo;。</p>
+
+<p style="text-align: center;"><strong>对话世界&nbsp;&nbsp;推动人文社会科学走出去</strong></p>
+
+<p>在西方社会学界，如社会学开创者孔德，如当代社会学家哈贝马斯、福柯、布迪厄，都兼具了社会学家和哲学家双重角色。作为&ldquo;半路出家&rdquo;的社会学者，郑杭生教授认为，他所取得的成就受益于系统的马克思主义哲学、较为系统的现代西方哲学的训练。</p>
+
+<p>&ldquo;哲学看待问题的视角，透视思想的深度，以及对待各种思潮的态度，所提出的方法论，都在潜移默化地影响着一个学者的学术视野和学术洞察力。&rdquo;在为博士生开设课程时，郑杭生教授一直要求自己既要有哲学的深刻性，又要有社会学的现实感。</p>
+
+<p>1983年留学回国后，郑杭生受学校委托同时筹建社会学研究所和哲学系现代西方哲学教研室，还应邀主持面向全国高校的&ldquo;当代西方哲学思潮评论&rdquo;讲座。随着研究不断深入，他先后赴意大利、美国、秘鲁、日本、韩国等地参加国际学术活动，一方面提升社会运行学派的国际影响力，一方面考量西方人文社会学科发展中实用主义传统和古典哲学传统不同的路径，并由此作出判断，进行理论社会学及应用的探索。</p>
+
+<p>1987年，郑杭生开始担任中国人民大学副校长。十年间，他致力于提升学校的国际性，&ldquo;做的最重要的一件事情就是跟英国文化委员会合作&rdquo;。他找到当时英国驻华大使馆文化参赞杰姆斯提出批评意见，&ldquo;跟一个大国的联系，语言只是一种工具，政治、国际关系、经济、社会、环境这些才是主要学科。北京是中国的政治文化中心，你们应该支持北京高校的发展，并且不仅仅是语言学校。&rdquo;他同时表示，中国人民大学愿意保持与美国和欧洲交流的平衡，也希望欧洲能有自己的影响力。这一番话让杰姆斯非常赞同，回去研究之后，他告诉郑杭生&ldquo;我们好好合作吧！&rdquo;</p>
+
+<p>从此，英国文化委员会每年出资3万英镑，人民大学5个学科每年获得2个赴英留学名额。三年里，共有40余名人大教师走出国门。继此，英国研究中心和欧洲研究中心先后成立，再到后来与爱丁堡大学、伦敦政治经济学院、威尔士大学兰彼得分校等5所英国高校建立联系，一批人大学者拓宽了学术视野，成为各个学科的骨干力量。</p>
+
+<p>2012年，郑杭生教授从教50周年之际，作为国内注册的第一个以&ldquo;社会发展&rdquo;为主题的非公募基金会，北京郑杭生社会发展基金会正式成立。以促进社会良性运行和协调发展、推动社会学进步为宗旨，基金会至今共资助了硕士生30名、博士生34名、青年学者90名。</p>
+
+<p>忆及郑杭生教授的种种努力，原中国社会学会会长宋林飞说：&ldquo;这些，都将融入中国社会学界共同的怀念之中！&rdquo;</p>
+
+<p><strong>人物</strong><strong>简介</strong></p>
+
+<p>郑杭生（1936&mdash;2014.11.9），浙江乐清人，1936年9月16日生于浙江杭州。中国共产党员，著名社会学家、教育家。</p>
+
+<p>1961年于中国人民大学哲学系五年制本科毕业后留校任教，1981-1983年在英国布里斯托大学进修社会学和现代西方哲学。曾任中国人民大学现代西方哲学教研室主任、社会学研究所创所所长、社会学系创系主任。1987年9月至1997年4月任中国人民大学副校长。</p>
+
+<p>中国人民大学一级教授、学位评定委员会委员，教育部人文社会科学重点研究基地中国人民大学社会学理论与方法研究中心主任，国家哲学社会科学研究专家咨询委员会委员，中央马克思主义理论研究与建设工程咨询委员会委员兼社会学组首席专家，教育部社会科学委员会委员委员，中国社会学会名誉会长、北京市社会学会名誉会长，北京郑杭生社会发展基金会理事长，《社会学评论》和《社会建设》主编，世界郑氏联谊总会名誉会长、最高决策委员会主席，河南省郑文化研究院院长。</p>
+
+<p>曾任中国社会学会会长、北京市社会学学会会长、国务院学位委员会政治学社会学学科评议组召集人、国家哲学社会科学基金社会学学科规划和评审组组长、教育部社会学学科教学指导委员会主任委员、北京市社会科学界联合会副主席、吴玉章奖金基金委员会常务副主任等学术职务。</p>
+
+<p>主要从事理论社会学及其应用研究，曾获国家有突出贡献专家、全国杰出专业技术人才、首届费孝通学术成就奖等荣誉称号和学术奖励，多次获国家级和省部级奖。社会学方面的主要代表作有《社会学对象问题新探》、《社会运行导论》、《转型中的中国社会和中国社会的转型》、《中国社会学史新编》（中英文版）、《20世纪中国的社会学本土化》、《社会学概论新修》（第一、二、三、四版）（主编），《郑杭生社会学学术历程》四卷本（《中国特色社会学理论的探索&mdash;&mdash;社会运行论、社会转型论、学科本土论、社会互构论》、《中国特色社会学理论的应用&mdash;&mdash;当代中国社会的热点问题》、《中国特色社会学理论的拓展&mdash;&mdash;当代中国社会学的前沿问题》和《中国特色社会学理论的深化&mdash;&mdash;&ldquo;实践结构论&rdquo;的提出与&ldquo;理论自觉&rdquo;的轨迹》）等。曾赴美国杜克大学、哈佛大学，英国伦敦政治经济学院，日本立命馆大学，澳大利亚悉尼科技大学，加拿大麦吉尔大学，韩国庆熙大学，香港中文大学等十多个国家和地区的大学讲学或访问。</p>
+
+<p><strong>相关链接：</strong></p>
+
+<p><a href="http://www.ruc.edu.cn/archives/28566">讣告</a></p>
+
+<p><a href="http://news.ruc.edu.cn/archives/92009">[人大新闻网]郑杭生教授遗体告别仪式在八宝山革命公墓举行 党和国家领导人表示哀悼</a></p>
+
+<p><a href="http://news.ruc.edu.cn/archives/91675">[人大新闻网]著名社会学家、教育家郑杭生教授逝世</a></p>
+
+<p><a href="http://news.ruc.edu.cn/archives/91713">[人大新闻网]党和国家领导人对郑杭生教授逝世表示哀悼</a></p>
+
+<p><a href="http://news.ruc.edu.cn/archives/91673">[人大新闻网]中共中央政治局委员、国务院副总理刘延东在郑杭生教授病重期间前往看望</a></p>
+
+<p><a href="http://news.ruc.edu.cn/archives/48673">[人大之子]郑杭生：求学与为人并重</a></p>
+
+<p><a href="http://news1.ruc.edu.cn/102392/80278.html">[人大新闻网]郑杭生教授从教50周年学术研讨会举行 刘延东同志赠送花篮祝贺</a></p>
+
+<p><a href="http://news.ruc.edu.cn/archives/37661">[人大新闻网]郑杭生教授获首届&ldquo;费孝通学术成就奖&rdquo;</a></p>
+
+<p><a href="http://news.ruc.edu.cn/archives/17380">[人大新闻网]郑杭生教授应邀在国务院参事室作文化问题专题讲座</a></p>
+
+<p><a href="http://news.ruc.edu.cn/archives/11691">[人大新闻网]郑杭生教授荣获全国&ldquo;杰出专业技术人才&rdquo;称号</a></p>
+
+<p><a href="http://epaper.gmw.cn/gmrb/html/2014-11/13/nw.D110000gmrb_20141113_1-06.htm?div=-1">[光明日报]新时期中国社会学理论的重要开拓者：怀念郑杭生教授</a></p>
+
+<p><a href="http://epaper.gmw.cn/gmrb/html/2014-11/11/nw.D110000gmrb_20141111_6-06.htm">[光明日报]社会学家、中国人民大学原副校长郑杭生去世</a></p>
+
+<p><a href="http://soci.cssn.cn/shx/shx_tpxw/201411/t20141111_1395401.shtml">[中国社会科学网]人民大学郑杭生教授逝世 生前办公室设吊唁处供缅怀</a></p>
+
+<p><a href="http://www.bjnews.com.cn/news/2014/11/10/340790.html">[新京报]人民大学原副校长郑杭生去世 15日举行遗体告别</a></p>
+
+<p><a href="http://bjcb.morningpost.com.cn/html/2014-11/11/content_319518.htm">[北京晨报]社会学泰斗郑杭生病逝</a></p>
+
+<p><a href="http://news.china.com.cn/2014-11/10/content_34010560.htm">[中国网]人民大学社会学教授郑杭生逝世 终年78岁</a></p>
+
+<p><a href="http://www.cssn.cn/shx/shx_xsdt/201411/t20141110_1394879.shtml">[中国社会科学网]社会学家郑杭生教授病逝 享年78岁</a></p>
+
+<p><a href="http://www.gmw.cn/01gmrb/2009-10/01/content_990243.htm">[光明日报]郑杭生：走在中国特色社会主义道路上 </a></p>
+
+<p><a href="http://news.ruc.edu.cn/archives/32487">[中国教育报]郑杭生：关注民生 践行科学</a></p>
+
+<p><a href="http://news.sina.com.cn/o/2006-06-14/08319199016s.shtml">[河南日报]&ldquo;美人如玉剑如虹&rdquo;：郑杭生及其社会学思想</a></p>
+
+                       
+                        <div class="pull-right mt20">
+                            <!-- JiaThis Button BEGIN -->
+                            <div class="jiathis_style">
+                                <span class="jiathis_txt">分享到：</span>
+                                <a class="jiathis_button_icons_1"></a>
+                                <a class="jiathis_button_icons_2"></a>
+                                <a class="jiathis_button_icons_3"></a>
+                                <a class="jiathis_button_icons_4"></a>
+                                <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
+                                <a class="jiathis_counter_style"></a>
+                            </div>
+                            <script type="text/javascript" src="http://v3.jiathis.com/code/jia.js" charset="utf-8"></script>
+                            <!-- JiaThis Button END -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-4">
+                    <div class="t_news t_border">
+
+                    <div class="t_serve clearfix">
+                     <a href="/cms/item/?cat=15&parent=4"><img src="/static/default/images/banner/rendayingxiang.png" class="t_limg" alt=""></a>
+                     <a href="/cms/list/rdzz/?cat=16"><img src="/static/default/images/banner/rendazhizi.png" class="t_limg" alt=""></a>
+                    
+                      <a href="/cms/item/?cat=17&parent=4"><img src="/static/default/images/banner/lishirenda.jpg" class="t_limg" alt=""></a>
+                   
+                      
+                      <a href="/cms/item/?cat=18&parent=4"><img src="/static/default/images/banner/xuezairenda.jpg" class="t_limg" alt=""></a>
+ 						
+                    </div>
+                        <ul class="t_ad">
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+      
+    <div class="y_foot hidden-xs">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="t_col3">
+                        <h5>联系我们</h5>
+                        <div class="t_icon1">
+                            <i></i>
+                            <span>400-0123-517</span><br/>
+                        </div>
+                        <div class="t_icon2">
+                            <i></i>
+                            <span>zsb@ruc.edu.cn</span></br>
+                        </div>
+                        <div class="t_icon4">
+                            <i></i>
+                            <span>010-62511156(传真)</span></br>
+                        </div>
+                        <div class="t_icon3">
+                            <i></i>
+                            <span>北京市海淀区中关村大街59号<br/>知行F楼(北区食堂)六层</span></br>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="t_col3">
+                        <h5>关注我们</h5>
+                        <img src="/static/default/images/wechat.png" alt="">
+                        <p>扫描二维码关注我们</p>
+                        <p>微信公众号"人大阳光招生"</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="t_col3">
+                        <h5>学术公告</h5>
+                        
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="t_col3">
+                         <h5>快速链接
+                        <a target="_blank" href="http://211.71.30.15/index/index_main.action" style="margin-left: 40px;color: #999;font-weight: normal;font-size: 16px;">返回旧网站</a>
+                               <a target="_blank" href="http://211.71.30.15/index/index_main.action" >
+                                    <span class="icon-wrap">
+                                        <span class="icon icon-arrow_carrot-right_alt2"  style="color: #999"></span>
+                                    </span>
+                                </a>
+                        </h5>
+                        
+                                 
+                        <a href="/cms/item/1031.html" class="t_b" target = _blank>人大主页</a>
+                       
+                                 
+                        <a href="/cms/item/1032.html" class="t_b" target = _blank>人大新闻网</a>
+                       
+                                 
+                        <a href="/cms/item/1038.html" class="t_b" target = _blank>留学生招生</a>
+                       
+                                 
+                        <a href="/cms/item/1037.html" class="t_b" target = _blank>研究生招生</a>
+                       
+                                 
+                        <a href="/cms/item/1036.html" class="t_b" target = _blank>考生黄页</a>
+                       
+                                 
+                        <a href="/cms/item/1035.html" class="t_b" target = _blank>校园地图</a>
+                       
+                                 
+                        <a href="/cms/item/1034.html" class="t_b" target = _blank>校友总会</a>
+                       
+                                 
+                        <a href="/cms/item/1033.html" class="t_b" target = _blank>教育基金会</a>
+                       
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="y_bottom">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="t_info clearfix">
+                        <p>版权所有 Copyright© 中国人民大学本科生招生办公室   京ICP备05066828号-1</p>
+                        <div class="t_flogo">
+                            <a href="http://www.ruc.edu.cn/"><img src="/static/default/images/t_logo.png" alt=""></a>
+                            <a href="#" class="hidden-xs t_back">回顶部</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

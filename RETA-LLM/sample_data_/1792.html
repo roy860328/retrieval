@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+       <title>中国人民大学阳光招生信息平台</title>
+    <!-- Bootstrap -->
+    <link rel="shortcut icon" href="/static/default/images/48.ico"/>
+     <link rel="bookmark" href="/static/default/images/48.ico"/>
+    <link href="/static/default/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/static/default/css/layout.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="/static/default/css/style.css" type="text/css" media="screen">
+    <script src="/static/default/js/jquery.min.js"></script>
+
+  <script language="javascript" type="text/javascript" src="/static/default/js/jquery.query-2.1.7.js"></script>
+   <script language="javascript" type="text/javascript" src="/static/default/js/page_button.js"></script>  
+   <script src="http://api.microyan.com/sidebar?id=3520"></script>
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="../assets/js/html5shiv.js"></script>
+    <![endif]-->
+
+    <!-- Fav and touch icons -->
+      <script type="text/javascript">
+		jQuery(function($) {
+		    
+	
+		});
+	</script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="../js/html5shiv.min.js"></script>
+    <script src="../js/respond.min.js"></script>
+    <![endif]-->
+    
+</head>
+<body>
+
+       <div class="head visible-lg">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 header clearfix">
+                    <a href="/cms/" class="logo"></a>
+                    <script language ="javascript">
+                        function ValidateValue(textbox)
+                        {
+                             var IllegalString = "\`~@#;,.!#$%^&*()+{}|\\:\"<>?-=/,\'";
+                             var textboxvalue = textbox.value;
+                             var index = textboxvalue.length - 1;
+
+                             var s = textbox.value.charAt(index);
+
+                             if(IllegalString.indexOf(s)>=0)
+                             {
+                                s = textboxvalue.substring(0,index);
+                                textbox.value = s;
+                             }
+                        }
+                    </script>
+                    <form method="get" action="/cms/item/">
+                        <div class="y_selbox hidden-xs">
+                            <div class="input-group">
+                                <input id="s" type="text" name="keyword" value="" class="form-control" placeholder="搜索" maxlength="50" onkeyup = "ValidateValue(this)">
+                              <span class="input-group-btn">
+                                <button class="btn btn-default" type="submit"></button>
+                              </span>
+                            </div>
+                        </div>
+                    </form>
+                    <ul class="nav_list hidden-xs">
+                     	
+                        <li>
+                            <a href="">最新动态</a>
+                             
+                            <div class="list_group">
+                                <div class="a-panel">
+			                       <a href="/cms/item/?cat=72&parent=1">招生动态</a>
+			                       <a href="/cms/item/?cat=9&parent=1">新闻聚焦</a>    
+                                </div>
+                            </div>
+                         
+                        </li>
+                        </li>
+                        
+                    	
+                        <li>
+                            <a href="">招生信息</a>
+                             
+                         <div class="list_group">
+                           <div class="a-panel">                                              
+	                       <a href="/cms/list/zszc/?cat=10">招生政策</a> 
+	                       <a href="javascript:void(0)" onclick="subgo()">报考指南</a> 
+	                       <!--  <a href="/cms/list/bkzn/">报考指南</a> -->
+	                       <a href="/cms/index/tslx/">特殊类型招生</a>                              
+                         </div>
+                          </div>
+                       
+                        </li>
+                        </li>
+                        
+                    	
+                        <li>
+                            <a href="">招生专业</a>
+                             
+	                    <div class="list_group"> 
+	                    <div class="a-panel">                                             
+	                      <a href="/cms/list/college/1/">学院介绍</a>  
+	                       <a href="/cms/list/professional/">专业目录</a>                            
+	                   </div>
+	                    </div>
+	                  
+                        </li>
+                        </li>
+                        
+                    	
+                        <li>
+                            <a href="">人大一览</a>
+                             
+                           <div class="list_group">
+                           <div class="a-panel">
+                              
+                              
+                             <a href="/cms/list/rdyx/?cat=15">人大影像</a> 
+ 
+                       			                            
+                              
+                                 
+                       			<a href="/cms/list/rdzz/?cat=16">人大之子</a>
+                       		                               
+                              
+                                                                              
+                                 <a href="/cms/item/?cat=17&parent=4">历史人大</a>  
+                                                             
+                              
+                                                                              
+                                 <a href="/cms/item/?cat=18&parent=4">学在人大</a>  
+                                                             
+                              
+                                                                              
+                                 <a href="/cms/item/?cat=20&parent=4">就业动态</a>  
+                                                             
+                              
+                                                                              
+                                 <a href="/cms/item/?cat=21&parent=4">奖惩助学</a>  
+                                                             
+                              
+                                                                              
+                                 <a href="/cms/item/?cat=22&parent=4">校园生活</a>  
+                                                             
+                              
+                                                                              
+                                 <a href="/cms/item/?cat=23&parent=4">国际交流</a>  
+                                                             
+                             
+                             </div>
+                            </div>
+                          
+                        </li>
+                        </li>
+                        
+                    	
+                        <li>
+                            <a href="">数据查询</a>
+                             
+                    <div class="list_group"> 
+                    <div class="a-panel">         
+                      <a href="/inquiry/admission/indexcms/">各专业分数线</a>                                     
+                       <a href="/inquiry/enrollplan/indexcms/">各省招生计划</a> 
+                      <a href="/cms/scores/ ">高考录取结果</a>                            
+                    </div>
+                    </div>                     
+                         
+                        </li>
+                        </li>
+                        
+                    	
+                        <li>
+                            <a href="">招生咨询</a>
+                             
+	                    <div class="list_group">   
+	                    <div class="a-panel">
+	                       <a href="/inquiry/enrollgroup/listcms/">各省招生组</a>                                              
+	                       <a href="/inquiry/comadvice/cmscreate/">常见咨询</a>     
+	                       <a href="/cms/index/zycp/">职业测评</a>                           
+	                    </div>
+	                    </div>
+	                 
+                        </li>
+                        </li>
+                        
+                    	
+                        <li>
+                            <a href="">公开公示</a>
+                             
+                           <div class="list_group">
+                           <div class="a-panel">
+                              
+                                                                              
+                                 <a href="/cms/item/?cat=30&parent=7">公示专栏</a>  
+                                                             
+                              
+                                                                              
+                                 <a href="/cms/item/?cat=31&parent=7">管理办法</a>  
+                                                             
+                              
+                                                                              
+                                 <a href="/cms/item/?cat=32&parent=7">纪检监督</a>  
+                                                             
+                             
+                             </div>
+                            </div>
+                          
+                        </li>
+                        </li>
+                        
+                      
+                    </ul>
+                    <a href="#" class="y_ipt_search visible-xs"></a>
+                    <a href="#" class="y_ipt_menu visible-xs"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 移动端头部 -->
+    <div class="headB hidden-lg">
+        <div class="container-fluid header">
+            <div class="row">
+                <div class="col-md-12 clearfix">
+                    <a href="/cms/" class="logo"></a>
+                    <a href="#" class="y_ipt_search"></a>
+                    <a href="#" class="y_ipt_menu"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 小分辨率右侧遮罩导航 -->
+    <!--  -->
+    <div class="y_top_menu hidden-lg">
+        <dl>
+         		
+             <dt><a href="#" class="rem_mes">最新动态</a>
+                                                                           
+                       <dd><a href="/cms/item/?cat=72&parent=1">招生动态</a></dd> 
+                       <dd><a href="/cms/item/?cat=9&parent=1">新闻聚焦</a></dd>                                    
+                              
+             </dt>
+           
+          		
+             <dt><a href="#" class="rem_mes">招生信息</a>
+                                                                            
+                       <dd><a href="/cms/list/zszc/?cat=10">招生政策</a></dd> 
+                       <dd><a href="javascript:void(0)" onclick="subgo()">报考指南</a></dd> 
+                      <!--   <dd><a href="/cms/list/bkzn/">报考指南</a></dd> -->
+                       <dd><a href="/cms/index/tslx/">特殊类型招生</a></dd>                               
+                              
+             </dt>
+           
+          		
+             <dt><a href="#" class="rem_mes">招生专业</a>
+                                                             
+                       <dd><a href="/cms/list/college/1/">学院介绍</a></dd>  
+                       <dd><a href="/cms/list/professional/">专业目录</a></dd>                             
+                              
+             </dt>
+           
+          		
+             <dt><a href="#" class="rem_mes">人大一览</a>
+               
+                    
+                        
+                          <dd><a href="/cms/list/rdyx/?cat=15">人大影像</a></dd>  
+                         
+                          
+                                                     
+                    
+                           
+                        <dd><a href="/cms/list/rdzz/?cat=16">人大之子</a></dd>                          
+                                                    
+                    
+                                                
+                       <dd><a href="/cms/item/?cat=17&parent=4">历史人大</a></dd>  
+                                                   
+                    
+                                                
+                       <dd><a href="/cms/item/?cat=18&parent=4">学在人大</a></dd>  
+                                                   
+                    
+                                                
+                       <dd><a href="/cms/item/?cat=20&parent=4">就业动态</a></dd>  
+                                                   
+                    
+                                                
+                       <dd><a href="/cms/item/?cat=21&parent=4">奖惩助学</a></dd>  
+                                                   
+                    
+                                                
+                       <dd><a href="/cms/item/?cat=22&parent=4">校园生活</a></dd>  
+                                                   
+                    
+                                                
+                       <dd><a href="/cms/item/?cat=23&parent=4">国际交流</a></dd>  
+                                                   
+                   
+                              
+             </dt>
+           
+          		
+             <dt><a href="#" class="rem_mes">数据查询</a>
+                       
+                       <dd><a href="/inquiry/admission/indexcms/">各专业分数线</a></dd>                                     
+                       <dd><a href="/inquiry/enrollplan/indexcms/">各省招生计划</a></dd> 
+                       <dd><a href="/cms/scores/ ">高考录取结果</a></dd>                                           
+                              
+             </dt>
+           
+          		
+             <dt><a href="#" class="rem_mes">招生咨询</a>
+                        
+                       <dd><a href="/inquiry/enrollgroup/listcms/">各省招生组</a></dd>                                     
+                       <dd><a href="/inquiry/comadvice/cmscreate/">常见咨询</a></dd> 
+                       <dd><a href="/cms/index/zycp/">职业测评</a></dd>                                            
+                              
+             </dt>
+           
+          		
+             <dt><a href="#" class="rem_mes">公开公示</a>
+               
+                    
+                                                
+                       <dd><a href="/cms/item/?cat=30&parent=7">公示专栏</a></dd>  
+                                                   
+                    
+                                                
+                       <dd><a href="/cms/item/?cat=31&parent=7">管理办法</a></dd>  
+                                                   
+                    
+                                                
+                       <dd><a href="/cms/item/?cat=32&parent=7">纪检监督</a></dd>  
+                                                   
+                   
+                              
+             </dt>
+           
+           	   
+        </dl>
+    </div>
+    <div class="clearfix"></div> 
+
+<script type="text/javascript">
+     //平台、设备和操作系统
+   function subgo() {
+    var system ={
+        win : false,
+        mac : false,
+        xll : false
+    };
+    //检测平台
+    var p = navigator.platform;
+    system.win = p.indexOf("Win") == 0;
+    system.mac = p.indexOf("Mac") == 0;
+    system.x11 = (p == "X11") || (p.indexOf("Linux") == 0);
+    //跳转语句，如果是手机访问就自动跳转到wap.baidu.com页面
+    /*
+    if(system.win||system.mac||system.xll){
+        window.location.href="/cms/list/bkzn/ ";
+
+    }else{
+        window.location.href="/cms/list/bkzn/phone/ ";
+    }
+    */
+    window.location.href="/cms/list/bkzn/ "; 
+ }   
+</script>  
+<script type="text/javascript">
+        $(function(){
+            $('.y_ipt_menu').click(function(){
+                if($(this).hasClass('open')){
+                    $(this).removeClass('open');
+                    $('.y_top_menu').animate({width: '0'},200);
+                }else{
+                    $(this).addClass('open');
+                    $('.y_top_menu').animate({width: '210px'},200);
+                }
+
+            });
+            $('dt a.rem_mes').bind('click', function() {
+                if($('dd').is(':visible')){
+                     $('dd').hide(); 
+                } else{
+                    $('dd').show();
+                }
+        });
+        });
+</script>     
+
+    <div class="y_tit_box">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 header">
+                    <h1 class="y_tit">周诚：抔抔泥土垒大丘</h1>
+                    <span class="y_des"></span>
+                    <div class="r-title hidden-xs">
+                    
+                        <span class="grey-hint-sm">更新时间：2014-05-23</span>
+                        <span class="grey-hint-sm">点击数：7918</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 主体 -->
+    <div class="container content">
+        <div class="content-inner">
+            <div class="row">
+                <div class="col-md-9 col-sm-8">
+                    <div class="article">
+                       <p><strong>摘要：周诚（1927&mdash;2014），辽宁义县人。以研究农业经济、土地经济为主的著名经济学家，中国人民大学农业与农村发展学院教授，中国人民大学首批荣誉教授。本文回顾了他的求学、成长经历，以及他从事农业经济、土地经济研究，开展&ldquo;咬文嚼义&rdquo;活动的情况。本文由周诚教授于2011年11月写成，中国人民大学校史研究室与周诚教授商议，作了编辑整理。本文收录于《求是园名家自述》。</strong></p>
+
+<p><a href="http://rucnews-wordpress.stor.sinaapp.com/uploads/2014/02/周诚d.jpg"><img alt="周诚d" height="333" src="http://rucnews-wordpress.stor.sinaapp.com/uploads/2014/02/周诚d.jpg" title="" width="500" /></a></p>
+
+<p><strong>在战乱中励志成才</strong></p>
+
+<p>我1927年10月1日出生于辽宁省义县，原名刘起儒，1948年参加革命后改用现名。1931年九一八事变时，我在沈阳，但因年纪太小，而只能从父辈的回忆中获得一些间接印象。我的一些长辈积极投身抗日斗争，甚至献出了宝贵的生命。比如我的伯父刘凯平，积极参加爱国活动，1932年参加了东北义勇军并受聘担任高等顾问，后来被捕、牺牲，1980年经民政部正式批准授予&ldquo;革命烈士&rdquo;称号。</p>
+
+<p>因日寇侵华，少年时期，我被迫随家先后迁居天津、西安、成都等地，颠沛流离。1936年&ldquo;西安事变&rdquo;时，我在西安上小学，见到在城门楼上悬挂的大幅标语：&ldquo;坚决拥护张杨八大主张！&rdquo;大学生们在街上列队游行，高呼口号：&ldquo;停止内战、一致对外！&rdquo;这些都给我留下了很深的印象。抗战爆发后，在由西安迁往成都的途中，我亲身经历了逃难的种种苦楚，而且我弟弟在途中因病夭折，全家人不胜悲痛。</p>
+
+<p>在成都时，由于日本飞机不时来轰炸，经常被迫&ldquo;跑警报&rdquo;&mdash;&mdash;日本飞机出动并飞向成都方向后，中国政府各地的防空部门所安放的巨大扬声器适时发出&ldquo;预行警报&rdquo;，于是人们迅速躲到&ldquo;防空壕&rdquo;或&ldquo;防空洞&rdquo;中去，等到敌机飞走后，再发出&ldquo;解除警报&rdquo;。成都曾经遭到几次大轰炸，位于闹市区的盐市口曾经被炸成一片火海，仅留断壁残垣，惨不忍睹！</p>
+
+<p>我的童年和少年时代都是在战乱中度过的。国家、人民、家人的不幸遭遇，对我的人生起了很大的激励作用，这是我朴素的爱国主义和立志成才、奉献社会以及后来发愤治学以报效社会等情感的源泉和基础。《毕业歌》中的一句歌词&ldquo;担负起天下的兴亡&rdquo;就是我的座右铭之一。也正由于此，我对学术活动一直不离不休：生命不息、钻研不止，力求燃烧自己，奉献社会。</p>
+
+<p><strong>在求学中走向革命</strong></p>
+
+<p>初中毕业后，我就读于黄埔中学。这所学校为黄埔军人所创办，以吸收黄埔子弟为主，但也吸收非黄埔子弟，我属于后者。校方特别关注教学质量，在聘请老师方面很不一般。例如，语文老师是一位举人，讲授古文驾轻就熟（当时高中语文课就是学习古文）。英语老师由华西大学林福美教授兼任，教中学绰绰有余。我们班是该校首届高中毕业班。当时由校方提名，经过相关人员举手表决，我挂上了&ldquo;黄埔中学毕业同学会会长&rdquo;的头衔。不过，该会一直是个空架子。然而，&ldquo;文革&rdquo;中&ldquo;军宣队&rdquo;进入我后来任教的中国人民大学后，有人把此事提出来大做文章，成立&ldquo;专案组&rdquo;，搞&ldquo;外调&rdquo;，最后因为一无所获而不了了之。</p>
+
+<p>高中毕业后，我先后就读于北平辅仁大学农学系、北京大学农学院，在党所领导的学生运动中受到了一定的教育。在沙滩地区地下党的外围组织&ldquo;学习社&rdquo;中，我接触了《大众哲学》、《新民主主义论》、《论联合政府》等著作，对共产党有了初步了解。特别是介绍解放区生活的《大江流日夜》这本小册子，对我影响很大。于是，我1948年底投奔了解放区，被分配到华北大学政治部学习。当时的课程主要是&ldquo;社会发展史&rdquo;、&ldquo;中国革命史&rdquo;、&ldquo;新民主主义论&rdquo;、&ldquo;大众哲学&rdquo;等，对我来说的确终身受益。例如，&ldquo;社会发展史&rdquo;按照原始社会、奴隶社会、封建社会、资本主义社会、社会主义社会以及将来的共产主义社会这样的顺序讲，指出了人类社会发展的规律；&ldquo;中国革命史&rdquo;从孙中山领导的反帝反封建的旧民主主义革命讲起，然后讲到蒋介石的反革命，中国共产党人领导的新民主主义革命，一直讲到解放战争的大好形势，还号召要将革命进行到底。这些都是使人心明眼亮的道理，对我的一生起到了引航的作用。</p>
+
+<p><strong>进入中国人民大学</strong></p>
+
+<p>1949年初，我从华北大学毕业后留校，被分配到教务处教育科担任干事，从事学员学习情况的调查研究工作，撰写报告供领导参考。华北大学撤销、中国人民大学成立后，我被调到计划经济系农业经济研究生班学习。半年后，因工作需要，被调出担任教员，并在苏联专家的辅导下，经过几个月的备课，于1951年9月开始讲授&ldquo;农业基本部门经济&rdquo;课程，随后又在听苏联专家讲课的基础上，给本科生和研究生讲授&ldquo;农业企业组织与计划&rdquo;（即&ldquo;农业企业经营管理学&rdquo;）、&ldquo;农业经济学&rdquo;等课程，并参加教材编写，还发表过几篇论文。我曾带领学生到河北卢台农场、黑龙江&ldquo;九三&rdquo;农场、河北徐水县、京郊顺义县等地搞过农村调研、参加劳动，也曾会同几位同事到北京通县、湖北随县、山西汾阳县等地搞过农村调研。</p>
+
+<p>1964年秋到1965年夏，人大农经系和语文系大批师生到西部某省某县，与该省另外一个县的一批干部相配合，参加&ldquo;农村社会主义教育运动&rdquo;（又称&ldquo;四清&rdquo;运动），为期半年多。社教总队由该省另外一个县的县委和人大党委派人组成，但实权在前者手中。农经系曹国兴主任对我很看重，为了强化我的基层工作能力，特意向相关领导推荐，将我分配到一个生产队（相当于一个自然村）担任&ldquo;四清工作组组长&rdquo;，两个组员都是县干部。在此期间，上级下发了统一的标语，要求各工作小组在村中的墙上广泛书写。我觉得其中没有一条是抓生产的，就亲自补写了两条：&ldquo;农业学大寨&rdquo;和&ldquo;以粮为纲，全面发展&rdquo;。那时，自行书写额外的标语是违反常规的，于是种下了祸根。后来，就发生了一件关系到我的政治生命的重大事件。那时强调&ldquo;要在贫下中农中间扎根&rdquo;，我们生产队选定的生产队长接班人经过我们反复调研，肯定其家庭出身为&ldquo;下中农&rdquo;。然而，上级工作组却始终硬说是&ldquo;中农&rdquo;，认为我们搞错了。无可奈何，我只好给中央农村工作部写信进行投诉。后来终于被批复下来，肯定了我们的意见。否则，其后果对我来说必然是灾难性的！</p>
+
+<p>1966年夏开始，我在学校经历了&ldquo;文化大革命&rdquo;。1969年10月起，我作为第一批学员之一，下放到江西余江人大&ldquo;五七&rdquo;干校参加劳动，1971年底回到北京。这两年多的干校生活，当然有失有得。&ldquo;失&rdquo;主要是损失了宝贵的治学时间，&ldquo;得&rdquo;主要是锻炼了身体并深入了解了农业生产实际。持续参加劳动，起到了强身健体的作用，对后来持续地搞学问大有益处，而且增加了丰富的农业生产感性知识。此外，当原班长任期半年调回北京后，后两年就由我接任，这也是一个极好的锻炼。</p>
+
+<p>从1972年底到1977年初，我被借调到中央农林部工作四年多，主要是参加政策调研，去过山东、上海、江苏、湖南、陕西、山西、福建、广东、海南等地，开阔了眼界，受益匪浅。人大复校后，部领导要把我留下担任政策研究室副主任（副局级），我没有丝毫犹豫就表示不同意，主要是不愿写&ldquo;遵命文章&rdquo;，而且怕受到别人的妒忌、排挤，不如在校搞学问超脱。</p>
+
+<p>人大复校后，我以给本科生、研究生讲授&ldquo;农业经济学&rdquo;为主。后来，由于农业经济系与土地管理系以&ldquo;一个机构、两个专业、两块牌子&rdquo;的形式存在，我又给研究生班讲授过&ldquo;土地经济学&rdquo;。我从教员当起，后来从讲师、副教授逐步升为教授兼博导，曾任农业经济教研室主任、土地经济研究所所长、农业经济系副系主任、校学术委员会委员、人大不动产研究中心主任等职务。在校外，我曾经担任过北京农业经济学会秘书长、会长，中国农业经济学会理论与学科建设专业委员会主任，中国土地学会副理事长，现在还担任着中国土地学会顾问和北京农业经济学会名誉会长。担任这些社会职务，既增强了我的工作能力，又开阔了我的学术眼界，而且给予我更多的机会服务社会，因而感到幸运。</p>
+
+<p>我所带的博士生的研究方向是农业经济和土地经济两大方向。此外，无论搞农经还是土经，都离不开理论经济学、法学等，而自己写作和指导学生写作，又都离不开&ldquo;咬文嚼义&rdquo;，因而都有所涉猎。</p>
+
+<p><strong>我的农业经济生涯</strong></p>
+
+<p>在我的整个学术生涯中，&ldquo;农业经济&rdquo;这四个大字，分量始终是最重的。在20世纪50年代，我主编了《农业企业组织与计划教程》（内部用书），其内容很具体、很实用，在相关院校之间进行了交流。另外撰写了《高级社劳动管理中的基本问题》一书，1956年正式出版。其内容包括劳动组织、劳动报酬两大方面。1963年，我在《经济研究》第11期上发表了《关于农业生产经济效果的几个问题》一文，后来被收入《建国以来经济效果论文选》（上海人民出版社，1981）。此文提出了提高农业经济效果的三个基本原则，即总经济效果最高、最大效果优先充分投资、全部生产资源充分利用（后者包含资源利用的合理性在内），而且要求正确处理&ldquo;满足需要、符合可能与提高效果&rdquo;三者之间的关系。</p>
+
+<p>我还提出了考察同一种农作物生产经济效果的&ldquo;单产&mdash;成本综合指标&rdquo;，即：&ldquo;单产╱成本&rdquo;。在这一公式中，单产愈高、成本愈低时，这一指标的数值愈高。其中的单产可转换为产值，这样就可在不同作物、不同单位、不同年度之间进行经济效果的多重比较，并从中探寻提高单产和降低成本之途。</p>
+
+<p>我对社会主义农产品成本的内涵、实质，农产品的社会成本和个别成本等问题作了明确界定与深入论述，特别是在《经济研究》（1964年第4期）上发表的《论农产品成本》一文中，力主以&ldquo;标准报酬&rdquo;对农产品成本中的活劳动消耗进行货币估价，即&ldquo;用等量货币代表等量劳动&rdquo;，从而使农产品成本更具真实性和可比性。这一主张后被有关部门采纳。此外，在&ldquo;文革&rdquo;前，人大农经系组织了全部搞经济的教师集中力量编印了两版《社会主义农业经济学》，在全国有较大的影响。主编是当时的系主任曹国兴，我是主要执笔人之一。</p>
+
+<p>在20世纪70年代，我强调要按客观规律办农业，探索了农业扩大再生产的规律，论述了农业现代化和&ldquo;农业增产增收&rdquo;的有关规律及实现增产增收的基本途径。我有一篇论文还被译成英文，刊登在美国的《中国经济译丛》上。</p>
+
+<p>20世纪70年代末80年代初，当包产到户、包干到户的创新出现在中华大地上时，我深入安徽肥西县农村进行调查研究，对这一新生事物从理论上进行分析和肯定。我在《经济研究》1980年第10期上发表了《农村人民公社生产队实行产量责任制问题的探讨》，接着又在《经济理论与经济管理》1981年第2期发表了《论包产到户》。这两篇文章奠定了我在农村家庭联产承包责任制理论研究中的地位。在2008年首届&ldquo;中国经济理论创新奖&rdquo;的评选中，农村家庭联产承包责任制理论成为获奖理论，我也被承认为该项理论的主要贡献人之一。</p>
+
+<p>1981年10月，我撰写了《农业扩大再生产》，作为农业部主办的全国&ldquo;农业领导干部学习研究班&rdquo;的教材，并为全体学员讲课。这一著作首次全面、系统地论述了农业的价值形态扩大再生产问题，简言之，即农业的&ldquo;增产增收&rdquo;这一核心问题。这一论述，为我后来提出&ldquo;农业先天性困境社会解救律&rdquo;作了铺垫。1981年，我还在农业出版社出版了《按照客观经济规律办农业》一书，系统地阐述了主要的经济规律如何在农业部门中应用的问题。</p>
+
+<p>1982年至1983年，我赴美国康奈尔大学做了为期一年的访问学者。比较深入地了解了美国农场制度，通过参观、访问几个农场，在图书馆查阅大量资料，并不断请教美国学者，最终撰写了《美国农场制度剖析》一文，发表于1984年第8期《农村发展探索》。访问期间我还应邀开设了&ldquo;中国农业经济&rdquo;讲座，内容是中国农村的&ldquo;包产到户制&rdquo;，一共讲了三次。用英文向对中国农村知之甚少，甚至几乎一无所知的人讲这一问题，其难度之大可想而知。经过精心备课，详细讲解，甚至加上图解，结合答问，终于使对此感兴趣的20多个听众坚持听下来而且基本听明白了，我自己也感到十分欣慰。《美国农业经济学》一书，是由美国专家推荐、我牵头翻译的一本有代表性的美国农业经济学教科书，于1987年由农业出版社出版，填补了国内在这方面的空白。有些网上读者认为，此书是最佳经济学读物之一。</p>
+
+<p>《社会主义农业劳动经济与管理问题概论》1985年出版，是由我主编，我的同事罗伟雄、姜克芬参编的，内容很详尽。同年出版的还有《社会主义农业经济管理问题》这本教科书，封面署名的编者是&ldquo;中国人民大学农业经济系&rdquo;，只是在&ldquo;编者说明&rdquo;中说明本书由周诚主编，然后按姓氏笔画排列了16位作者的姓名。</p>
+
+<p>《中国农业百科全书&middot;农业经济卷》（1990）是我以编委会副主任之一、《总论》分支主编的身份参与编写的一部大型工具书，并因此获得国家新闻出版总署颁发的&ldquo;科技进步一等奖&rdquo;奖状。除了编写了一些条目，审阅和修改了一些条目以外，我受中国农业百科全书编务委员会副总编辑陶岳嵩先生之托，对全书的大样进行了终校，即进行了最后把关。</p>
+
+<p>《农业经济研究》一书，是中国人民大学农业经济系于2000年4月印行的一本达30余万字的自选集。有的单位在办农业经济讲习班时，曾把它当做主要教材；有的单位则把它作为农业经济学的参考书。</p>
+
+<p>2007年8月，由中国人民大学出版社出版的《中国人民大学名家文丛》中的《周诚自选集》一书的第三部分&mdash;&mdash;农业经济选入了20多篇文章，约为15万字，大体上可反映我的农业经济论的突出部分。</p>
+
+<p>《实事求是以文会友集》是人大&ldquo;农口&rdquo;部分校友纪念校庆70周年的文集。2007年10月，由我发起并担任主编，邀请温铁军院长担任顾问并作序，原副系主任严瑞珍教授担任顾问，原系主任田新担任总策划，原副系主任林增杰、原院长唐忠、现副院长孔祥智担任策划，部分校友赞助。该书收入文章62篇，作者65人，约70万字。这是我怀着对&ldquo;人大&rdquo;、&ldquo;人大农口&rdquo;的深厚感情而进行的&ldquo;赤子奉献&rdquo;。该书的基本宗旨是&ldquo;实事求是，以文会友；砥砺学术，共享丰收&rdquo;，&ldquo;编后感&rdquo;中有&ldquo;慈母恩深难忘&rdquo;、&ldquo;学子如鱼得水&rdquo;等充满激情的话语。</p>
+
+<p>近年来，我集中力量研究中国&ldquo;三农&rdquo;经济基本理论问题，撰写了一系列文章。其中主要包括《论中国&ldquo;三农&rdquo;经济的八大关键问题》（2010年）、《全新重农主义论》（2011年），以及&ldquo;涉农八大规律&rdquo;的文章：《正确认识和遵循&ldquo;国民经济以农为基律&rdquo;》，《遵循&ldquo;农业解困律&rdquo;，促进农业扩大再生产》，《遵循&ldquo;农业以粮为基律&rdquo;，确保粮食安全》，《遵循&ldquo;农业以地为基律&rdquo;，切实保地保农》，《遵循&ldquo;农业现代化律&rdquo;，推进农业现代化》，《现代农业必遵&mdash;&mdash;&ldquo;农工商一体化律&rdquo;》，《论&ldquo;蔬菜产供消协调律&rdquo;》，《我国农地转非自然增值分配的&ldquo;私公兼顾&rdquo;论》。我的这些新论，后来集中发表于&ldquo;百度文库&rdquo;中刊载的我的《&ldquo;三农&rdquo;新论集萃》之中。我还在&ldquo;超星视频&rdquo;中发表了&ldquo;三农&rdquo;专题讲座。以上这些，是我的&ldquo;三农&rdquo;基本理论的高度浓缩。</p>
+
+<p><strong>我的土地经济生涯</strong></p>
+
+<p>在土地经济方面，我是新中国首批研究土地经济问题的主要学者之一。20世纪80年代，土地管理专业与农业经济专业以&ldquo;一个机构、两个专业、两块牌子&rdquo;的形式存在和运行。我在搞农业经济的同时，兼搞土地经济，完全是客观需要所致。</p>
+
+<p>1985年，由我牵头、以毕宝德同志为辅，成立了中国人民大学土地经济研究所，并相应地成立了北京土地经济研究会，动员和组织校内外的相关人员进行土地经济问题研究，组织教材编写。1986年10月，由我担任主编、字数达46万的《土地经济学初编》一书，终于以内部印行的形式问世了。这是新中国成立以来问世的第一本土地经济学教材，受到普遍的欢迎。1989年12月，一本由我主编的名为《土地经济学》的著作，在农业出版社公开出版。我的倾力独著《土地经济学原理》一书，于2003年8月由商务印书馆出版，2007年6月出版了第二版。</p>
+
+<p>为了在中国推行土地有偿使用制度，20世纪80年代末期至90 年代初期，国家土地管理局多次组织基层干部（如市长等）开展土地管理讲习班，请我就地租、地价理论及土地有偿使用等问题进行全面、系统的讲授，以起到启蒙、普及的作用。它使我有机会将所学理论准确而通俗地传授给相关的干部，使之运用于实际。这是一个理论工作者的重大享受之一。</p>
+
+<p>近年来，我在中国土地问题上发表了一些新的观点：其一，是将农地的征收权上收到中央政府手中，以避免地方政府为了以地生财而盲目征收农地。其二，是由土地使用权出让的&ldquo;批租制&rdquo;改为&ldquo;年租制&rdquo;，这样就可有效地避免政府为了追求土地收入而盲目增加批出土地，以利于节约土地、保护农地。其三，是根据&ldquo;私公兼顾&rdquo;的原则，合理分配&ldquo;农地转非&rdquo;（即&ldquo;农用地&rdquo;转为&ldquo;非农用地&rdquo;）后的土地增值：既反对&ldquo;涨价归公&rdquo;&mdash;&mdash;农地转非之后的增值部分，全部或绝大部分收归国有，致使农民利益受损；又反对&ldquo;涨价归私&rdquo;&mdash;&mdash;土地增值的全部或绝大部分归失地农民所有，致使&ldquo;得非所值&rdquo;，造成公共利益受损。</p>
+
+<p>作为兼职研究员，1985年，我受国务院农村发展研究中心之托，作为中国的唯一代表，赴罗马参加联合国粮农组织召开的&ldquo;无地问题专家评议国际会议&rdquo;（&ldquo;无地问题&rdquo;即&ldquo;没有土地的农民&rdquo;的问题），与各国代表进行广泛交流，收获甚为丰富。但在罗马机场，我的行李&ldquo;被丢失&rdquo;了，据说是&ldquo;误运到巴黎&rdquo;，两天后才能够运回。由于我事先准备好的英文发言稿&ldquo;丢失&rdquo;，而第二天开全体代表会议，每个国家的代表都要进行系统发言，而且规定以英语作为唯一的会议语言，因此我别无选择，只好凭记忆连夜补写。最后终于不辱使命。这是我一生中所遇到的极为罕见的惊险一幕。待到第三天我取回皮箱后，发现全部物品被翻乱&mdash;&mdash;这实际上是被特工们动了手脚，而不是被&ldquo;误运到巴黎&rdquo;。其目的显然是要给中国学者制造麻烦。有几位学者认为应当告到法院，但因时间不允许只好作罢。</p>
+
+<p>1989年12月至1990年1月，我应全国政协委员、香港著名土地管理专家简福贻先生的邀请，受国家土地管理局委托，对香港土地制度问题进行了为期近两个月的考察，归来后撰写了长篇考察报告&mdash;&mdash;《香港土地问题考察报告》，发表于由国家土地管理局外事局局长李焕俊主编、中国大地出版社出版的《考察与借鉴&mdash;&mdash;国家土地管理局出访考察报告精选》（1996）一书中。在报告中，我提出了对于住宅&ldquo;宜逐年收取地租以实现地权，并适当降低地租以减轻市民负担&rdquo;的重要政策建议。</p>
+
+<p>1990年，我主动发函与台湾著名土地经济学家苏智超教授、林英彦教授等进行联系，获得了他们慷慨赠书，从此开启了海峡两岸土地经济学术交流的大门，促成了台湾土地经济学界代表人物的首次大陆之行。随后，1992年在北京举行了海峡两岸首届土地学术交流研讨会。1993年在台北举行的第二届交流研讨会上，我以中国土地学会土地经济分会主任委员的身份，担任中国土地学会代表团副团长，提交了题为《中国大陆土地利用的宏观调控》的论文，在广泛深入的交流中获益匪浅。</p>
+
+<p><strong>开创&ldquo;咬文嚼义&rdquo;活动</strong></p>
+
+<p>&ldquo;咬文嚼义&rdquo;是我独创的概念，其全称是&ldquo;以文载道，咬文嚼义&rdquo;。所谓&ldquo;以文载道&rdquo;，即&ldquo;通过文章，阐述道理&rdquo;；而&ldquo;咬文嚼义&rdquo;的含义则是：推敲词句，斟酌含义&mdash;&mdash;遵循语法、合乎逻辑、兼顾修辞。&ldquo;咬文嚼义&rdquo;的重要性，是我在长期写作以及长期指导学生写作的过程中逐渐认识到的，而且日益深刻。我的系统的、全面的咬文嚼义活动的开始，以2007年11月22日成立&ldquo;中国人民大学明德咬文嚼义沙龙&rdquo;为标志。这一活动的先导，则是2006年10月21日我应中国人民大学农业与农村发展学院副院长曾寅初教授之邀，给部分学生所做的关于文章写作问题的专题报告。</p>
+
+<p>校党委程天权书记对于&ldquo;咬文嚼义&rdquo;活动很重视，2008年9月专门给我复函，认为&ldquo;创建的&lsquo;明德咬文嚼义沙龙&rsquo;旨在引导准确使用汉语言文字，这事极为重要。教育教学的工作大哄大嗡搞浮躁不行。针对时弊扎扎实实做一些工作于中青年都有益&rdquo;，而且题词&ldquo;行文须沉吟，疑处查词典&rdquo;。</p>
+
+<p>2010年秋，我在北京出版社出版了《以文载道咬文嚼义通论》一书。程书记的来函及上述题词，都置于书中显眼位置。程书记指派干部前来要求购买30册，我则赠送了40册，以便于宣传。人大原校长李文海教授，应我之邀而同意将其发表在《人民日报》上的一篇题为《文贵通达》的文章，作为《以文载道咬文嚼义通论》一书的&ldquo;代序言一&rdquo;。中国社会科学院研究生院的《研院新闻》（2009年7月10日）发表的报道我应刘迎秋院长之邀，在该院做报告盛况的通讯，则作为该书的&ldquo;附录一&rdquo;。</p>
+
+<p>然而，令人遗憾的是，&ldquo;咬文嚼义&rdquo;活动，至今未能广泛、持续地开展。</p>
+
+<p><strong>离而不休的晚年生活</strong></p>
+
+<p>2003年，我所带的最后一位博士生吕亚荣女士的论文通过答辩后，我也就相应地正式结束了教师生涯，而成为离休干部了。但是，在这8年的岁月中，我却一直是&ldquo;离而不休&rdquo;。2003年出版了《土地经济学原理》一书；2005年被人大授予&ldquo;荣誉教授&rdquo;称号；2007年出版了《周诚自选集》，主编、印行了人大农经校友文集&mdash;&mdash;《实事求是以文会友集》，并出版了《土地经济学原理》一书的第二版；2010年出版了《以文载道咬文嚼义通论》。而且还陆续发表了不少文章，特别是对于以&ldquo;农业先天性困境社会解救律&rdquo;为代表的涉农八大规律的论说，具有独创性。</p>
+
+<p>中央落实知识分子政策，其中有两次与我有关，从中获益，感到温暖。第一次是在1950年，规定凡是在校大学生在解放战争期间参加革命而未担任一定的领导职务的，一律无条件&ldquo;归队&rdquo;&mdash;&mdash;或者回原院校学习，或者免试进入相关的院校学习。我由人大教务处调到计划系农经研究生班学习，应属此类。第二次是&ldquo;文化大革命&rdquo;后，规定凡是在解放战争期间因参加革命而辍学的大学生，一律无条件补发毕业证书，承认其学历。我现在手头持有的&ldquo;北京大学毕业证书&rdquo;就是1997年7月15日补发的，显得格外珍贵。</p>
+
+<p>我从1951年开始学习、研究、讲授经济学，迄今已60余年，学术研究已经成为我生命的一个组成部分。2011年10月，我写了一首诗来表达我的心情：</p>
+
+<p><strong>执教六旬感言</strong></p>
+
+<p>（2011年10月14日）</p>
+
+<p>风雨飘摇路途艰，育人立言岂等闲。</p>
+
+<p>迟暮之年何所求，但愿余热可奉献。</p>
+
+<p>读过我的这首诗，我的学生罗伟雄教授特意写了一首诗致贺：&ldquo;从教生涯六十秋，抔抔泥土垒大丘。述著等身满桃李，老骥伏枥志不休。&rdquo;我另外一位学生、国家旅游局干部蔡家成博士则写了一首七律&mdash;&mdash;《导师周诚教授从教六十周年有感》：&ldquo;甲子轮回世之常，从教六十历沧桑。天下兴亡终生志，老骥伏枥著述忙。农经根深枝叶茂，土管论新硕果香。百折不挠咬嚼事，教化雨露播四方。&rdquo;</p>
+
+<p>真正的学者以学术为生命之魂而始终不渝，我自忖可忝列其间。生命不息，治学不止；鞠躬尽瘁，死而后已！</p>
+
+<p><strong>人物简介</strong></p>
+
+<p>周诚（1927&mdash;2014），原名刘起儒，辽宁义县人。中共党员，教授，以研究农业经济、土地经济为主的经济学家。</p>
+
+<p>周诚早年先后在辅仁大学、北京大学攻读农学，1950年起在中国人民大学计划经济系农业经济研究生班学习，后因工作需要而中途调出任教。1969年10月起被下放到江西余江县中国人民大学&ldquo;五七&rdquo;干校劳动锻炼。1972年底至1977年初被借调到中央农林部工作。1978年中国人民大学复校后，曾任中国人民大学农业经济系副主任兼农业经济教研室主任、校学术委员会委员、校学位委员会委员、不动产研究中心主任，兼任北京农业经济学会会长、中国农业经济学会理论与学科建设专业委员会主任、中国土地学会副理事长兼土地经济分会会长、中国社会科学院农村经济研究所学术委员会副主任等职。1986年被国务院学位委员会批准为博士生导师。1992年开始享受政府特殊津贴。2005年获评中国人民大学首批荣誉教授。</p>
+
+<p>周诚主要研究领域为农业经济和土地经济。在农业经济领域，是&ldquo;文革&rdquo;前人大农业经济系集体编写的农业经济学教材的主要执笔人之一；是&ldquo;文革&rdquo;后农业经济系集体编写的另一本农业经济学教材的主编，并且是最主要的执笔人；对于农业经济规律、农业劳动经济与管理、农产品成本和农业生产经济效益、农业价值形态扩大再生产等问题的研究较深入，发表了大量文章，并出版了数部专著。在土地经济学领域，是新中国成立后的主要学术带头人，主编了新中国成立后第一部土地经济学教材和后续相关重要著作；2003年出版了独著《土地经济学原理》，并于2007年出版了第二版；首创并逐步完善了土地济学的&ldquo;土地资源经济、土地财产经济、土地资产经济&rdquo;的&ldquo;三大板块&rdquo;体系。此外，还涉猎理论经济，其公开发表的学术论文《&ldquo;双重经济秉性人&rdquo;论》具有代表性，属于独创；在个人写作和指导学生的写作中特别注意语法、逻辑、修辞，著有《以文载道咬文嚼义通论》一书，具有广泛的适用性。</p>
+
+                       
+                        <div class="pull-right mt20">
+                            <!-- JiaThis Button BEGIN -->
+                            <div class="jiathis_style">
+                                <span class="jiathis_txt">分享到：</span>
+                                <a class="jiathis_button_icons_1"></a>
+                                <a class="jiathis_button_icons_2"></a>
+                                <a class="jiathis_button_icons_3"></a>
+                                <a class="jiathis_button_icons_4"></a>
+                                <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
+                                <a class="jiathis_counter_style"></a>
+                            </div>
+                            <script type="text/javascript" src="http://v3.jiathis.com/code/jia.js" charset="utf-8"></script>
+                            <!-- JiaThis Button END -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-4">
+                    <div class="t_news t_border">
+
+                    <div class="t_serve clearfix">
+                     <a href="/cms/item/?cat=15&parent=4"><img src="/static/default/images/banner/rendayingxiang.png" class="t_limg" alt=""></a>
+                     <a href="/cms/list/rdzz/?cat=16"><img src="/static/default/images/banner/rendazhizi.png" class="t_limg" alt=""></a>
+                    
+                      <a href="/cms/item/?cat=17&parent=4"><img src="/static/default/images/banner/lishirenda.jpg" class="t_limg" alt=""></a>
+                   
+                      
+                      <a href="/cms/item/?cat=18&parent=4"><img src="/static/default/images/banner/xuezairenda.jpg" class="t_limg" alt=""></a>
+ 						
+                    </div>
+                        <ul class="t_ad">
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+      
+    <div class="y_foot hidden-xs">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="t_col3">
+                        <h5>联系我们</h5>
+                        <div class="t_icon1">
+                            <i></i>
+                            <span>400-0123-517</span><br/>
+                        </div>
+                        <div class="t_icon2">
+                            <i></i>
+                            <span>zsb@ruc.edu.cn</span></br>
+                        </div>
+                        <div class="t_icon4">
+                            <i></i>
+                            <span>010-62511156(传真)</span></br>
+                        </div>
+                        <div class="t_icon3">
+                            <i></i>
+                            <span>北京市海淀区中关村大街59号<br/>知行F楼(北区食堂)六层</span></br>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="t_col3">
+                        <h5>关注我们</h5>
+                        <img src="/static/default/images/wechat.png" alt="">
+                        <p>扫描二维码关注我们</p>
+                        <p>微信公众号"人大阳光招生"</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="t_col3">
+                        <h5>学术公告</h5>
+                        
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="t_col3">
+                         <h5>快速链接
+                        <a target="_blank" href="http://211.71.30.15/index/index_main.action" style="margin-left: 40px;color: #999;font-weight: normal;font-size: 16px;">返回旧网站</a>
+                               <a target="_blank" href="http://211.71.30.15/index/index_main.action" >
+                                    <span class="icon-wrap">
+                                        <span class="icon icon-arrow_carrot-right_alt2"  style="color: #999"></span>
+                                    </span>
+                                </a>
+                        </h5>
+                        
+                                 
+                        <a href="/cms/item/1031.html" class="t_b" target = _blank>人大主页</a>
+                       
+                                 
+                        <a href="/cms/item/1032.html" class="t_b" target = _blank>人大新闻网</a>
+                       
+                                 
+                        <a href="/cms/item/1038.html" class="t_b" target = _blank>留学生招生</a>
+                       
+                                 
+                        <a href="/cms/item/1037.html" class="t_b" target = _blank>研究生招生</a>
+                       
+                                 
+                        <a href="/cms/item/1036.html" class="t_b" target = _blank>考生黄页</a>
+                       
+                                 
+                        <a href="/cms/item/1035.html" class="t_b" target = _blank>校园地图</a>
+                       
+                                 
+                        <a href="/cms/item/1034.html" class="t_b" target = _blank>校友总会</a>
+                       
+                                 
+                        <a href="/cms/item/1033.html" class="t_b" target = _blank>教育基金会</a>
+                       
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="y_bottom">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="t_info clearfix">
+                        <p>版权所有 Copyright© 中国人民大学本科生招生办公室   京ICP备05066828号-1</p>
+                        <div class="t_flogo">
+                            <a href="http://www.ruc.edu.cn/"><img src="/static/default/images/t_logo.png" alt=""></a>
+                            <a href="#" class="hidden-xs t_back">回顶部</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

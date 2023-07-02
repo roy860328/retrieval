@@ -1,0 +1,1374 @@
+<!DOCTYPE html >
+
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8" http-equiv="X-UA-Compatible" content="IE=9,IE=10,IE=11">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+    <title>
+        中国人民大学阳光招生信息平台
+    </title>
+    <link rel="shortcut icon" href="/static/default/images/48.ico"/>
+     <link rel="bookmark" href="/static/default/images/48.ico"/>
+    <link href="/static/default/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/static/default/css/jquery.bxslider.css">
+    <link rel="stylesheet" href="/static/default/css/layout.css">
+    <link rel="stylesheet" href="/static/default/css/add.css">
+    <script src="/static/default/js/jquery.min.js"></script>
+    <script src="/static/default/js/bootstrap.min.js"></script>
+    <script src="/static/default/js/jwplayer/jwplayer.js"></script>
+    <script type="text/javascript" src="/static/default/js/jquery.bxslider.min.js"></script>
+
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="/static/default/js/html5shiv.js"></script>
+    <script src="/static/default/js/respond.min.js"></script>
+    <![endif]-->
+
+    <script language ="javascript">
+        function ValidateValue(textbox)
+        {
+             var IllegalString = "\`~@#;,!#$%^&*()+{}|\\:\"<>?-=/,\'";
+             var textboxvalue = textbox.value;
+             var index = textboxvalue.length - 1;
+
+             var s = textbox.value.charAt(index);
+
+             if(IllegalString.indexOf(s)>=0)
+             {
+                s = textboxvalue.substring(0,index);
+                textbox.value = s;
+             }
+        }
+    </script>
+
+</head>
+<body>
+
+<div id="header" class='hidden-sm hidden-xs'>  
+                <div class="container mob-container">
+                <div>
+                        <nav class="navbar navbar-default" role="navigation">
+                            <div class="navbar-header check-search">
+                                <button type="button" class="navbar-toggle" data-toggle="collapse" 
+                                 data-target="#example-navbar-collapse">
+                                    <span class="sr-only">切换导航</span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </button>
+                                <span class="icon-search4 mob-search visible-xs"></span>
+                                <a href="/cms/" class="navbar-brand">
+                                    <img src="/static/default/images/logo_red.png">
+                                </a>
+                           </div>
+                            <div class="collapse navbar-collapse header-hr" id="example-navbar-collapse">
+                                <div class='headA' style="display: block;right: 0;top: 0;">
+                                    <div class="y_selbox hidden-xs">
+                                        <form method="get" action="/cms/item/">
+                                            <div class="input-group">
+                                                <input id="s" type="text" name="keyword" value="" class="form-control" placeholder="搜索" maxlength="50" onkeyup = "ValidateValue(this)"/>
+                                              <span class="input-group-btn">
+                                                <button class="btn btn-default" type="submit"></button>
+                                              </span>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div> 
+                           </div>
+                   <ul class="nav navbar-nav my-nav hidden-xs"> 
+                     		
+                        <li class='list-item'><a href="">最新动态</a>
+                      
+                    <ul class='subnav'>                                              
+                       <li><a href="/cms/item/?cat=72&parent=1">招生动态</a></li>
+                       <li><a href="/cms/item/?cat=9&parent=1">新闻聚焦</a></li> 
+					</ul>
+                         
+                        </li>
+                     		
+                        <li class='list-item'><a href="">招生信息</a>
+                      
+					  <ul class='subnav'>                                              
+	                        <li><a href="/cms/list/zszc/?cat=10">招生政策</a> </li> 
+	                        <li><a href="javascript:void(0)" onclick="subgo()">报考指南</a> </li> 
+	                       
+	                       <li> <a href="/cms/index/tslx/">特殊类型招生</a>  </li>                             
+						</ul>
+                          
+                       
+                        </li>
+                     		
+                        <li class='list-item'><a href="">招生专业</a>
+                      
+					    <ul class='subnav'>                                               
+	                      <li> <a href="/cms/list/college/1/">学院介绍</a> </li>  
+	                       <li> <a href="/cms/list/professional/">专业目录</a></li>                             
+						</ul>
+	                  
+                        </li>
+                     		
+                        <li class='list-item'><a href="">人大一览</a>
+                      
+					      <ul class='subnav'>  
+                              
+                              
+                             <li> <a href="/cms/list/rdyx/?cat=15">人大影像</a> </li> 
+ 
+                       			                            
+                              
+                                 
+                       			 <li><a href="/cms/list/rdzz/?cat=16">人大之子</a></li> 
+                       		                               
+                              
+                                                                              
+                                  <li><a href="/cms/item/?cat=17&parent=4">历史人大</a></li>   
+                                                             
+                              
+                                                                              
+                                  <li><a href="/cms/item/?cat=18&parent=4">学在人大</a></li>   
+                                                             
+                              
+                                                                              
+                                  <li><a href="/cms/item/?cat=20&parent=4">就业动态</a></li>   
+                                                             
+                              
+                                                                              
+                                  <li><a href="/cms/item/?cat=21&parent=4">奖惩助学</a></li>   
+                                                             
+                              
+                                                                              
+                                  <li><a href="/cms/item/?cat=22&parent=4">校园生活</a></li>   
+                                                             
+                              
+                                                                              
+                                  <li><a href="/cms/item/?cat=23&parent=4">国际交流</a></li>   
+                                                             
+                             
+                          </ul>   
+                          
+                        </li>
+                     		
+                        <li class='list-item'><a href="">数据查询</a>
+                      
+					  <ul class='subnav'>          
+                      <li><a href="/inquiry/admission/indexcms/">各专业分数线</a> </li>                                    
+                       <li><a href="/inquiry/enrollplan/indexcms/">各省招生计划</a> </li>
+                      <li><a href="/cms/scores/ ">高考录取结果</a> </li>                           
+						</ul>                   
+                         
+                        </li>
+                     		
+                        <li class='list-item'><a href="">招生咨询</a>
+                      
+					  <ul class='subnav'>    
+	                       <li><a href="/inquiry/enrollgroup/listcms/">各省招生组</a> </li>                                              
+	                       <li><a href="/inquiry/comadvice/cmscreate/">常见咨询</a> </li>     
+	                       <li><a href="/cms/index/zycp/">职业测评</a> </li>                           
+						</ul>
+	                 
+                        </li>
+                     		
+                        <li class='list-item'><a href="">公开公示</a>
+                      
+					      <ul class='subnav'>  
+                              
+                                                                              
+                                  <li><a href="/cms/item/?cat=30&parent=7">公示专栏</a></li>   
+                                                             
+                              
+                                                                              
+                                  <li><a href="/cms/item/?cat=31&parent=7">管理办法</a></li>   
+                                                             
+                              
+                                                                              
+                                  <li><a href="/cms/item/?cat=32&parent=7">纪检监督</a></li>   
+                                                             
+                             
+                          </ul>   
+                          
+                        </li>
+                                          
+                    </ul> 
+                            
+                        </nav>
+                    </div>
+                </div>
+</div>
+    <!-- 移动端头部 -->
+ <div class="headB hidden-lg">
+        <div class="container-fluid header">
+            <div class="row">
+                <div class="col-md-12 clearfix">
+                    <a href="/cms/" class="logo"></a>
+                    <a href="#" class="y_ipt_search"></a>
+                    <a href="#" class="y_ipt_menu"></a>
+                </div>
+            </div>
+        </div>
+  </div>
+    <!-- 小分辨率右侧遮罩导航 -->
+    <div class="y_top_menu hidden-lg">        
+        <dl>
+           		
+              <dt><a href="#"  class="rem_mes">最新动态</a>
+              <!--   <a href="/cms/item/?cat=72&parent=1" class="title"></a>-->
+               
+                                                               
+               <dd><a href="/cms/item/?cat=72&parent=1">招生动态</a></dd> 
+               <dd><a href="/cms/item/?cat=9&parent=1">新闻聚焦</a></dd>                               
+      
+                 
+              </dt>
+           		
+              <dt><a href="#"  class="rem_mes">招生信息</a>
+              <!--   <a href="/cms/item/?cat=72&parent=1" class="title"></a>-->
+               
+                                                           
+                       <dd><a href="/cms/list/zszc/?cat=10">招生政策</a></dd> 
+                       <dd><a href="javascript:void(0)" onclick="subgo()">报考指南</a></dd> 
+                      <!--   <dd><a href="/cms/list/bkzn/">报考指南</a></dd> -->
+                       <dd><a href="/cms/index/tslx/">特殊类型招生</a></dd>                               
+                  
+                 
+              </dt>
+           		
+              <dt><a href="#"  class="rem_mes">招生专业</a>
+              <!--   <a href="/cms/item/?cat=72&parent=1" class="title"></a>-->
+               
+                                                                
+                       <dd><a href="/cms/list/college/1/">学院介绍</a></dd>  
+                       <dd><a href="/cms/list/professional/">专业目录</a></dd>                             
+                  
+                 
+              </dt>
+           		
+              <dt><a href="#"  class="rem_mes">人大一览</a>
+              <!--   <a href="/cms/item/?cat=72&parent=1" class="title"></a>-->
+               
+               
+                    
+                        
+                          <dd><a href="/cms/list/rdyx/?cat=15">人大影像</a></dd>  
+                         
+                          
+                                                     
+                    
+                           
+                        <dd><a href="/cms/list/rdzz/?cat=16">人大之子</a></dd>                          
+                                                    
+                    
+                                                
+                       <dd><a href="/cms/item/?cat=17&parent=4">历史人大</a></dd>  
+                                                   
+                    
+                                                
+                       <dd><a href="/cms/item/?cat=18&parent=4">学在人大</a></dd>  
+                                                   
+                    
+                                                
+                       <dd><a href="/cms/item/?cat=20&parent=4">就业动态</a></dd>  
+                                                   
+                    
+                                                
+                       <dd><a href="/cms/item/?cat=21&parent=4">奖惩助学</a></dd>  
+                                                   
+                    
+                                                
+                       <dd><a href="/cms/item/?cat=22&parent=4">校园生活</a></dd>  
+                                                   
+                    
+                                                
+                       <dd><a href="/cms/item/?cat=23&parent=4">国际交流</a></dd>  
+                                                   
+                   
+                  
+                  
+              </dt>
+           		
+              <dt><a href="#"  class="rem_mes">数据查询</a>
+              <!--   <a href="/cms/item/?cat=72&parent=1" class="title"></a>-->
+               
+                           
+                       <dd><a href="/inquiry/admission/indexcms/">各专业分数线</a></dd>                                     
+                       <dd><a href="/inquiry/enrollplan/indexcms/">各省招生计划</a></dd> 
+                       <dd><a href="/cms/scores/ ">高考录取结果</a></dd>                             
+                               
+                 
+              </dt>
+           		
+              <dt><a href="#"  class="rem_mes">招生咨询</a>
+              <!--   <a href="/cms/item/?cat=72&parent=1" class="title"></a>-->
+               
+                            
+                       <dd><a href="/inquiry/enrollgroup/listcms/">各省招生组</a></dd>                                     
+                       <dd><a href="/inquiry/comadvice/cmscreate/">常见咨询</a></dd> 
+                       <dd><a href="/cms/index/zycp/">职业测评</a></dd>                             
+                                    
+                 
+              </dt>
+           		
+              <dt><a href="#"  class="rem_mes">公开公示</a>
+              <!--   <a href="/cms/item/?cat=72&parent=1" class="title"></a>-->
+               
+               
+                    
+                                                
+                       <dd><a href="/cms/item/?cat=30&parent=7">公示专栏</a></dd>  
+                                                   
+                    
+                                                
+                       <dd><a href="/cms/item/?cat=31&parent=7">管理办法</a></dd>  
+                                                   
+                    
+                                                
+                       <dd><a href="/cms/item/?cat=32&parent=7">纪检监督</a></dd>  
+                                                   
+                   
+                  
+                  
+              </dt>
+            	
+
+        </dl>        
+    </div> 
+    <div class="y_light_box diff-top">
+        <ul class="y_light_list">
+           
+           
+			
+			<li><a href="https://rdzs.ruc.edu.cn/cms/" target = '_blank'><img src="/media/images/2023/02/20230221110706_22.png"></a> </li>
+			
+		   
+			
+			<li><a href="https://mp.weixin.qq.com/s/iWZAImM4GyV87OjCG9CgKw" target = '_blank'><img src="/media/images/2022/07/20220715110257_10.jpg"></a> </li>
+			
+		   
+			
+			<li><a href="https://mp.weixin.qq.com/s/QbzX9_E946Vw8DPDNvMHhQ" target = '_blank'><img src="/media/images/2022/12/20221229183209_15.png"></a> </li>
+			
+		   
+		  
+		  
+		<!--
+            <li><img src="/static/default/images/home-1.png"></li>
+            <li><img src="/static/default/images/home-2.png"></li>
+            <li><img src="/static/default/images/home-3.png"></li>
+          -->
+        </ul>
+    </div>
+
+<!-- BANNER START -->
+<div class="banner-home">
+        <div class="img-area">
+            <div class="addon-area ">
+                <div class="backdrop visible-lg"></div>
+                <div class="container">
+                    <div class="right-area visible-lg">
+                        <div class="row">
+                            <div class="col-md-12 clearfix img-index-list" id="bx-pager">
+                             
+                               
+								 
+									<a href="javascript:void(0)" data-slide-index="0" href="" class="list-item">
+                                    <img src="/media/images/2023/02/20230221110638_47.png" alt="">
+                                    <i></i>
+                                     </a>
+								   
+		  					     
+								 
+									<a href="javascript:void(0)" data-slide-index="1" href="" class="list-item">
+                                    <img src="/media/images/2022/07/20220715110157_3.jpg" alt="">
+                                    <i></i>
+                                     </a>
+								   
+		  					     
+								 
+									<a href="javascript:void(0)" data-slide-index="2" href="" class="list-item">
+                                    <img src="/media/images/2022/12/20221229183001_4.png" alt="">
+                                    <i></i>
+                                     </a>
+								   
+		  					     
+                            </div>
+                        </div>
+                    </div>
+                    <div class="left-area hidden-xs">
+                        <div class="row">
+                            <div class="block-guide col-xs-12">
+                                <div class="block-title">
+                                    <ul class="nav nav-tabs nav-justified">
+                                        <li role="presentation" class="active"><a href="/cms/list/rmwd/?tag=1" target = '_blank'>最新公告</a></li>
+                                        <li role="presentation"><a href="/cms/scores/" target = '_blank'>高考录取结果查询</a></li>
+                                        <!--<li role="presentation"><a href="http://bkbm.ruc.edu.cn/" target = '_blank'>网上报名</a></li> -->
+                                        <li role="presentation"><a href="/inquiry/enrollgroup/listcms/" target = '_blank'>各省招生咨询</a></li>
+                                    </ul>
+                                </div>
+                                
+                                 <div class="block-content block-active">
+                                   
+                                   <div class="bc_date">
+                                        <span class="day">08</span>
+                                        <span class="year">2023-04</span>
+                                    </div>
+                                  <div  class="black"><a  href="/cms/item/1914.html" ><h4 >中国人民大学2023年强基计划招生简章</h4> </a></div>
+                                   <div class ='black' > 
+                                   <a  href="/cms/item/1914.html" > 
+                                     
+                                <p> 网上报名时间：即日起至4月30日12:00。</p>
+                                   
+                                   
+                                    </a> 
+                                  </div>   
+                                    
+                                </div>                                 
+                                
+                            </div>
+                        </div>
+                    </div>                  
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="gonggao visible-xs">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-12">
+                            <div class="block-content">
+                                   
+                                 <div  class="black"> <a  href="/cms/item/1914.html"  title ="中国人民大学2023年强基计划招生简章" ><h4 >中国人民大学2023年强基计划招生简章</h4> </a></div>
+                                    <span>2023-04-08</span>
+                                   <div class ='black' >
+                                    <a  href="/cms/item/1914.html" > 
+                                     
+                                   <p> 网上报名时间：即日起至4月30日12:00。</p>
+                                   
+                                    </a>
+                                 </div>
+                              
+                          </div>                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row year-line">
+                <div class="col-lg-1 col-lg-offset-6 col-md-2 col-md-offset-3 col-sm-3 col-sm-offset-2 col-xs-12 text-center-xs">
+                    <div class="year-title">
+                        <h5>历年各专业分数线查询</h5>
+                    </div>
+                </div>
+                <div class="col-lg-5 col-md-7 col-sm-7 col-xs-12 text-center-xs">
+                    <div class="year">
+                    
+                     <a class="label label-gray" href="/inquiry/admission/indexcms/?year=2022">2022年</a>
+                      
+                     <a class="label label-gray" href="/inquiry/admission/indexcms/?year=2021">2021年</a>
+                      
+                     <a class="label label-gray" href="/inquiry/admission/indexcms/?year=2020">2020年</a>
+                      
+                     <a class="label label-gray" href="/inquiry/admission/indexcms/?year=2019">2019年</a>
+                      
+                     <a class="label label-gray" href="/inquiry/admission/indexcms/?year=2018">2018年</a>
+                      
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>  
+    <div class="container visible-xs">
+        <hr class="hr"/>
+    </div>
+    <div class="result visible-xs" style="margin-bottom:20px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 add-con-margin">
+                    <a href="/cms/scores/" role="button" class="btn btn-default mybtn">高考录取结果查询</a>
+                </div>
+                <div class="col-xs-12 add-con-margin">
+                    <a href="http://zs.ruc.edu.cn/index_bmxt.asp" role="button" class="btn btn-default mybtn">网上报名</a>
+                </div>
+                <div class="col-xs-12 add-con-margin">
+                    <a href="/inquiry/enrollgroup/listcms/" role="button" class="btn btn-default mybtn">各省招生咨询</a>
+                </div>
+            </div>
+        </div>
+    </div> 
+    
+    <!-- BANNER END -->
+    <!-- MAIN START -->
+    <div class="main main-home" style="margin-bottom:20px;">
+        <div class="container">
+            <!-- PART ONE START -->
+            <div class="row">
+                <div class="col-md-4 col-sm-4 block-home">
+                    <div class="block-title">
+                        <a href="/cms/item/?cat=72&parent=1" class="title">
+                            <span>招生动态</span>
+                            
+                        </a>
+                        <a href="/cms/item/?cat=72&parent=1" class="more">全部<span class='icon icon-arrow_carrot-right_alt2'></span></a>
+                    </div>
+                  
+
+                    <div class="" style="margin: 10px 0 20px">
+                        <span class="hidden-xs pub_date" style="height: 14px"></span><a href="/cms/item/1914.html"  title ="中国人民大学2023年强基计划招生简章">中国人民大学2023年强基计划招生简章</a>
+
+
+                    </div>
+                   
+
+                    <div class="" style="margin: 10px 0 20px">
+                        <span class="hidden-xs pub_date" style="height: 14px"></span><a href="/cms/item/1916.html"  title ="中国人民大学2023年“新路引航专项计划” 招生简章">中国人民大学2023年“新路引航专项计划” 招生简章</a>
+
+
+                    </div>
+                   
+
+                    <div class="" style="margin: 10px 0 20px">
+                        <span class="hidden-xs pub_date" style="height: 14px"></span><a href="/cms/item/1875.html"  title ="中国人民大学关于警惕不实招生广告宣传的声明">中国人民大学关于警惕不实招生广告宣传的声明</a>
+
+
+                    </div>
+                   
+
+                    <div class="" style="margin: 10px 0 20px">
+                        <span class="hidden-xs pub_date" style="height: 14px"></span><a href="/cms/item/1904.html"  title ="关于寒假期间值班时间安排的通知">关于寒假期间值班时间安排的通知</a>
+
+
+                    </div>
+                   
+
+                    <div class="" style="margin: 10px 0 20px">
+                        <span class="hidden-xs pub_date" style="height: 14px"></span><a href="/cms/item/1903.html"  title ="中国人民大学2023年艺术类（音乐表演）专业招生简章">中国人民大学2023年艺术类（音乐表演）专业招生简章</a>
+
+
+                    </div>
+                   
+
+                    <div class="" style="margin: 10px 0 20px">
+                        <span class="hidden-xs pub_date" style="height: 14px"></span><a href="/cms/item/1895.html"  title ="中国人民大学2023年艺术类招生专业与省级统考子科类对照表">中国人民大学2023年艺术类招生专业与省级统考子科类对照表</a>
+
+
+                    </div>
+                   
+
+                    <div class="" style="margin: 10px 0 20px">
+                        <span class="hidden-xs pub_date" style="height: 14px"></span><a href="/cms/item/1893.html"  title ="关于调整咨询方式的通知">关于调整咨询方式的通知</a>
+
+
+                    </div>
+                   
+
+                    <div class="" style="margin: 10px 0 20px">
+                        <span class="hidden-xs pub_date" style="height: 14px"></span><a href="/cms/item/1892.html"  title ="关于停止我校高水平艺术团、高水平运动队招生的公告">关于停止我校高水平艺术团、高水平运动队招生的公告</a>
+
+
+                    </div>
+                   
+
+                    <div class="" style="margin: 10px 0 20px">
+                        <span class="hidden-xs pub_date" style="height: 14px"></span><a href="/cms/item/1867.html"  title ="关于暑假值班时间安排的通知">关于暑假值班时间安排的通知</a>
+
+
+                    </div>
+                   
+
+                    <div class="" style="margin: 10px 0 20px">
+                        <span class="hidden-xs pub_date" style="height: 14px"></span><a href="/cms/item/1860.html"  title ="2022年各省（区、市）录取分数线">2022年各省（区、市）录取分数线</a>
+
+
+                    </div>
+                   
+
+                    <div class="" style="margin: 10px 0 20px">
+                        <span class="hidden-xs pub_date" style="height: 14px"></span><a href="/cms/item/1858.html"  title ="中国人民大学2022年强基计划录取结果开放查询">中国人民大学2022年强基计划录取结果开放查询</a>
+
+
+                    </div>
+                   
+
+                    <div class="" style="margin: 10px 0 20px">
+                        <span class="hidden-xs pub_date" style="height: 14px"></span><a href="/cms/item/1856.html"  title ="中国人民大学2022年高水平运动队招生合格生名单公示（足球、武术及文化课单独考试）">中国人民大学2022年高水平运动队招生合格生名单公示（足球、武术...</a>
+
+
+                    </div>
+                   
+
+                    <div class="" style="margin: 10px 0 20px">
+                        <span class="hidden-xs pub_date" style="height: 14px"></span><a href="/cms/item/1854.html"  title ="@国家专项生、高校专项生 | 人民大学2022年咨询专线开启！">@国家专项生、高校专项生 | 人民大学2022年咨询专线开启！</a>
+
+
+                    </div>
+                   
+
+                    <div class="" style="margin: 10px 0 20px">
+                        <span class="hidden-xs pub_date" style="height: 14px"></span><a href="/cms/item/1835.html"  title ="中国人民大学关于调整2022年强基计划校考安排的公告">中国人民大学关于调整2022年强基计划校考安排的公告</a>
+
+
+                    </div>
+                   
+
+                    <div class="" style="margin: 10px 0 20px">
+                        <span class="hidden-xs pub_date" style="height: 14px"></span><a href="/cms/item/1837.html"  title ="2022年“圆梦计划”合格生公示及各省（区、市）“圆梦计划”招生计划公布">2022年“圆梦计划”合格生公示及各省（区、市）“圆梦计划”招生...</a>
+
+
+                    </div>
+                   
+                </div>
+                <div class="col-md-8 col-sm-8">
+                    <div class="col-md-12 block-home  padding-home  add-arrow">
+                        <div class="block-title dif-title">
+                            <a href="/cms/item/?cat=9&parent=1" class="title">
+                                <span>新闻聚焦</span>
+                               
+                            </a>
+                            <a href="/cms/item/?cat=9&parent=1" class="more">全部<span class='icon icon-arrow_carrot-right_alt2'></span></a>
+                        </div>
+
+                         
+                        <div class="col-md-6 col-sm-6 sub-faq">
+                             <span class="hidden-xs pub_date">04-26</span> <a href="/cms/item/1803.html"  class="pub_con" title ="[新华社]习近平在中国人民大学考察时强调 坚持党的领导传承红色基因扎根中国大地 走出一条建设中国特色世界一流大学新路 王沪宁陪同考察">[新华社]习近平在中国人民大学考察时强...</a> 
+                        </div>                        
+                          
+                        <div class="col-md-6 col-sm-6 sub-faq">
+                             <span class="hidden-xs pub_date">07-15</span> <a href="/cms/item/1861.html"  class="pub_con" title ="上新！人大“独树一帜”新版录取通知书首发！">上新！人大“独树一帜”新版录取通知书首...</a> 
+                        </div>                        
+                          
+                        <div class="col-md-6 col-sm-6 sub-faq">
+                             <span class="hidden-xs pub_date">04-26</span> <a href="/cms/item/1918.html"  class="pub_con" title ="走进中学300讲 | 钱明辉教授讲授“竞争分析与科学决策”">走进中学300讲 | 钱明辉教授讲授“...</a> 
+                        </div>                        
+                          
+                        <div class="col-md-6 col-sm-6 sub-faq">
+                             <span class="hidden-xs pub_date">01-11</span> <a href="/cms/item/1906.html"  class="pub_con" title ="中国人民大学启动2022—2023学年寒假及春季学期招生宣传工作">中国人民大学启动2022—2023学年...</a> 
+                        </div>                        
+                          
+                        <div class="col-md-6 col-sm-6 sub-faq">
+                             <span class="hidden-xs pub_date">11-02</span> <a href="/cms/item/1890.html"  class="pub_con" title ="有温度的人工智能：为科教兴国、人才强国贡献人大智慧！">有温度的人工智能：为科教兴国、人才强国...</a> 
+                        </div>                        
+                          
+                        <div class="col-md-6 col-sm-6 sub-faq">
+                             <span class="hidden-xs pub_date">04-14</span> <a href="/cms/item/1917.html"  class="pub_con" title ="招生就业处召开全处会传达学校学习贯彻习近平新时代中国特色社会主义思想主题教育动员大会精神">招生就业处召开全处会传达学校学习贯彻习...</a> 
+                        </div>                        
+                          
+                        <div class="col-md-6 col-sm-6 sub-faq">
+                             <span class="hidden-xs pub_date">10-26</span> <a href="/cms/item/1889.html"  class="pub_con" title ="尽锐出战！人大人助力全面推进乡村振兴、巩固拓展脱贫攻坚成果！">尽锐出战！人大人助力全面推进乡村振兴、...</a> 
+                        </div>                        
+                          
+                        <div class="col-md-6 col-sm-6 sub-faq">
+                             <span class="hidden-xs pub_date">10-22</span> <a href="/cms/item/1888.html"  class="pub_con" title ="始终引领！法治中国建设中的人大力量">始终引领！法治中国建设中的人大力量</a> 
+                        </div>                        
+                          
+                        <div class="col-md-6 col-sm-6 sub-faq">
+                             <span class="hidden-xs pub_date">10-21</span> <a href="/cms/item/1887.html"  class="pub_con" title ="修复西域古文书 掌握学术话语权 增强中华文明传播力影响力">修复西域古文书 掌握学术话语权 增强中...</a> 
+                        </div>                        
+                          
+                        <div class="col-md-6 col-sm-6 sub-faq">
+                             <span class="hidden-xs pub_date">10-20</span> <a href="/cms/item/1886.html"  class="pub_con" title ="走在前列！为谱写马克思主义中国化时代化新篇章源源不断贡献人大人的力量！">走在前列！为谱写马克思主义中国化时代化...</a> 
+                        </div>                        
+                         
+                        
+                        
+                    </div>
+                    
+                    <div class="col-md-12 block-home padding-home add-arrow hidden-xs">
+                        <div class="block-title  dif-title">
+	                        <a href="/cms/list/rmwd/?tag=1" class="title">
+	                            <span>最新公告</span>
+	                        </a>
+	                        <a href="/cms/list/rmwd/?tag=1" class="more">全部<span class='icon icon-arrow_carrot-right_alt2'></span></a>
+                        </div>
+                        <!--
+		                  
+		                    <div class="col-md-6 col-sm-6 sub-faq ">
+		                        <span class="hidden-xs pub_date">04-08</span> <a href="/cms/item/1914.html" title ="中国人民大学2023年强基计划招生简章">中国人民大学2023年强基计划招生简章</a>
+		                    </div>
+		                   
+		                    <div class="col-md-6 col-sm-6 sub-faq ">
+		                        <span class="hidden-xs pub_date">04-07</span> <a href="/cms/item/1916.html" title ="中国人民大学2023年“新路引航专项计划” 招生简章">中国人民大学2023年“新路引航专项计划” 招生简章</a>
+		                    </div>
+		                   
+		                    <div class="col-md-6 col-sm-6 sub-faq ">
+		                        <span class="hidden-xs pub_date">02-22</span> <a href="/cms/item/1875.html" title ="中国人民大学关于警惕不实招生广告宣传的声明">中国人民大学关于警惕不实招生广告宣传的声明</a>
+		                    </div>
+		                   
+		                    <div class="col-md-6 col-sm-6 sub-faq ">
+		                        <span class="hidden-xs pub_date">01-10</span> <a href="/cms/item/1904.html" title ="关于寒假期间值班时间安排的通知">关于寒假期间值班时间安排的通知</a>
+		                    </div>
+		                   
+                           -->
+                           
+                            
+                            <div class="col-md-6 col-sm-6 sub-faq ">
+                                <span class="hidden-xs pub_date">
+                                    04-08
+                                </span> 
+                                <a href="/cms/view/ztlm/1914/" title ="中国人民大学2023年强基计划招生简章">
+                                    中国人民大学2023年强基计划招生简章
+                                </a>
+                            </div>
+						    
+                            <div class="col-md-6 col-sm-6 sub-faq ">
+                                <span class="hidden-xs pub_date">
+                                    04-07
+                                </span> 
+                                <a href="/cms/view/ztlm/1916/" title ="中国人民大学2023年“新路引航专项计划” 招生简章">
+                                    中国人民大学2023年“新路引航专项计划” 招生简章
+                                </a>
+                            </div>
+						    
+                            <div class="col-md-6 col-sm-6 sub-faq ">
+                                <span class="hidden-xs pub_date">
+                                    06-26
+                                </span> 
+                                <a href="/cms/view/ztlm/1855/" title ="中国人民大学关于2022年强基计划入围校考名单的公告">
+                                    中国人民大学关于2022年强基计划入围校考名单的公告
+                                </a>
+                            </div>
+						    
+                            <div class="col-md-6 col-sm-6 sub-faq ">
+                                <span class="hidden-xs pub_date">
+                                    06-13
+                                </span> 
+                                <a href="/cms/view/ztlm/1828/" title ="2022年“圆梦计划”合格生公示及各省（区、市）“圆梦计划”招生计划公布">
+                                    2022年“圆梦计划”合格生公示及各省（区、市）“圆梦计划”招生...
+                                </a>
+                            </div>
+						    
+                    </div>
+
+                    <!--公开专栏-->
+                    <div class="col-md-12 block-home  padding-home add-arrow">
+	                    <div class="block-title dif-title">
+	                        <a href="/cms/item/?cat=30&parent=7" class="title">
+	                            <span>公示专栏</span>
+	                        </a>
+	                        <a href="/cms/item/?cat=30&parent=7" class="more">全部<span class='icon icon-arrow_carrot-right_alt2'></span></a>
+	                    </div>
+                        <div class="row">
+                         
+		                   <div class="col-md-6 col-sm-6 sub-faq ">
+		                      <span class="hidden-xs pub_date">06-26</span> <a href="/cms/item/1855.html" class="pub_con"  title ="中国人民大学关于2022年强基计划入围校考名单的公告">中国人民大学关于2022年强基计划入围校...</a>		                       
+		                   </div>
+		                  
+		                   <div class="col-md-6 col-sm-6 sub-faq ">
+		                      <span class="hidden-xs pub_date">06-13</span> <a href="/cms/item/1828.html" class="pub_con"  title ="2022年“圆梦计划”合格生公示及各省（区、市）“圆梦计划”招生计划公布">2022年“圆梦计划”合格生公示及各省（...</a>		                       
+		                   </div>
+		                  
+		                   <div class="col-md-6 col-sm-6 sub-faq ">
+		                      <span class="hidden-xs pub_date">04-27</span> <a href="/cms/item/1813.html" class="pub_con"  title ="2022年艺术类（音乐表演）校考合格生专业测试成绩分数线及视唱测试及格线">2022年艺术类（音乐表演）校考合格生专...</a>		                       
+		                   </div>
+		                  
+		                   <div class="col-md-6 col-sm-6 sub-faq ">
+		                      <span class="hidden-xs pub_date">06-13</span> <a href="/cms/item/1829.html" class="pub_con"  title ="2022年“圆梦计划”合格生公示名单">2022年“圆梦计划”合格生公示名单</a>		                       
+		                   </div>
+		                  
+                       
+                        </div>
+                    </div>                    
+                    <!--热门问答-->
+                    <div class="col-md-12 block-home fenge padding-home">
+                        <div class="block-title dif-title">
+                            <a href="/cms/list/rmwd/?tag=3" class="title">
+                                <span>热门问答</span>
+                               
+                            </a>
+                              <a href="/cms/list/rmwd/?tag=3" class="more ">全部<span class='icon icon-arrow_carrot-right_alt2'></span></a>
+                        </div>
+ 
+		               
+
+	                        <div class="col-md-6 col-sm-6 sub-faq ">
+	                            <a href="/cms/view/redian/1845/"   class="pub_con" target ='_black' title ="报考人大热点问题全景解析（2022年）">报考人大热点问题全景解析（2022年）</a>
+	                        </div>
+                          
+                        
+
+	                        <div class="col-md-6 col-sm-6 sub-faq ">
+	                            <a href="/cms/view/redian/1838/"   class="pub_con" target ='_black' title ="2022年中国人民大学中法学院招生咨询联系方式汇总">2022年中国人民大学中法学院招生咨询联...</a>
+	                        </div>
+                          
+                        
+
+	                        <div class="col-md-6 col-sm-6 sub-faq ">
+	                            <a href="/cms/view/redian/1822/"   class="pub_con" target ='_black' title ="2022年中国人民大学中法学院招生热点问答">2022年中国人民大学中法学院招生热点问...</a>
+	                        </div>
+                          
+                        
+
+	                        <div class="col-md-6 col-sm-6 sub-faq ">
+	                            <a href="/cms/view/redian/1832/"   class="pub_con" target ='_black' title ="中国人民大学2022年国家专项计划和“圆梦计划”热点解答">中国人民大学2022年国家专项计划和“圆...</a>
+	                        </div>
+                          
+                        
+
+	                        <div class="col-md-6 col-sm-6 sub-faq ">
+	                            <a href="/cms/view/redian/1833/"   class="pub_con" target ='_black' title ="2022年中国人民大学强基计划热点问答">2022年中国人民大学强基计划热点问答</a>
+	                        </div>
+                          
+                        
+
+	                        <div class="col-md-6 col-sm-6 sub-faq ">
+	                            <a href="/cms/view/redian/1763/"   class="pub_con" target ='_black' title ="2021年各省（区、市）录取分数线">2021年各省（区、市）录取分数线</a>
+	                        </div>
+                          
+                        
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div> 
+    <div class="main main-home gray-bg">
+        <div class="container">
+            <!-- PART TWO START -->
+            <div class="row">
+                <div class="col-md-12 block-home small-padding">
+                    <div class="block-title">
+                        <a href="/cms/index/tslx/" class="title">
+                            <span>特殊类型招生</span>
+                           
+                        </a>
+                    </div>
+                        <div class="row">
+                        
+                           
+                            <a href="/cms/item/?cat=79&parent=12" class="col-md-125 col-xs-6 showing">
+                              
+                            <div class="img-box">                               
+                                
+                                   <img src="/media/images/2020/08/20200813180408_22.png"  alt=""> 
+                                
+                            </div>
+                            <p class="block-img-title">强基计划</p>
+                           
+
+                            
+                            
+                        </a>
+                         
+                           
+                            <a href="/cms/item/?cat=50&parent=12" class="col-md-125 col-xs-6 showing">
+                              
+                            <div class="img-box">                               
+                                
+                                   <img src="/media/images/2016/03/20160331145848_92.png"  alt=""> 
+                                
+                            </div>
+                            <p class="block-img-title">保送生</p>
+                           
+
+                            
+                            
+                        </a>
+                         
+                           
+                            <a href="/cms/item/?cat=47&parent=12" class="col-md-125 col-xs-6 showing">
+                              
+                            <div class="img-box">                               
+                                
+                                   <img src="/media/images/2016/03/20160331145538_85.png"  alt=""> 
+                                
+                            </div>
+                            <p class="block-img-title">艺术类</p>
+                           
+
+                            
+                            
+                        </a>
+                         
+                           
+                            <a href="/cms/item/?cat=52&parent=12" class="col-md-125 col-xs-6 showing">
+                              
+                            <div class="img-box">                               
+                                
+                                   <img src="/media/images/2016/03/20160331150000_20.png"  alt=""> 
+                                
+                            </div>
+                            <p class="block-img-title">高水平艺术团</p>
+                           
+
+                            
+                            
+                        </a>
+                         
+                           
+                            <a href="/cms/item/?cat=53&parent=12" class="col-md-125 col-xs-6 showing">
+                              
+                            <div class="img-box">                               
+                                
+                                   <img src="/media/images/2016/03/20160331150035_23.png"  alt=""> 
+                                
+                            </div>
+                            <p class="block-img-title">高水平运动队</p>
+                           
+
+                            
+                            
+                        </a>
+                         
+                           
+                            <a href="/cms/item/?cat=62&parent=12" class="col-md-125 col-xs-6 showing">
+                              
+                            <div class="img-box">                               
+                                
+                                   <img src="/media/images/2016/03/20160331150210_50.png"  alt=""> 
+                                
+                            </div>
+                            <p class="block-img-title">港澳台侨招生</p>
+                           
+
+                            
+                            
+                        </a>
+                         
+                           
+                            <a href="/cms/item/?cat=54&parent=12" class="col-md-125 col-xs-6 showing">
+                              
+                            <div class="img-box">                               
+                                
+                                   <img src="/media/images/2016/03/20160331150100_99.png"  alt=""> 
+                                
+                            </div>
+                            <p class="block-img-title">内地新疆（西藏）班</p>
+                           
+
+                            
+                            
+                        </a>
+                         
+                           
+                            <a href="/cms/item/?cat=61&parent=12" class="col-md-125 col-xs-6 showing">
+                              
+                            <div class="img-box">                               
+                                
+                                   <img src="/media/images/2017/09/20170920113658_18.png"  alt=""> 
+                                
+                            </div>
+                            <p class="block-img-title">高校专项及国家专项</p>
+                           
+
+                            
+                            
+                        </a>
+                         
+                        </div>
+
+                    
+                </div>
+            </div>
+            <div class="array-left hidden-xs">
+                <img src="/static/default/images/left.png" alt="">
+            </div>
+            <div class="array-right hidden-xs">
+                <img src="/static/default/images/right.png" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="main main-home hidden-xs ">
+        <div class="container">
+            <!-- PART FIRST START -->
+            <div class="row">
+                 <div class="col-md-5 block-home padding-home clearfix">
+                    <div class="block-title">
+                        <a href="javascript:void(0);" class="title">
+                            <span>人大影像</span>                          
+                        </a>
+                        <div class="more_video more">
+                            <a href="/cms/list/rdyx/?cat=15" style="color: #999;">更多视频</a><span class="icon icon-arrow_carrot-right_alt2" ></span>
+
+                        </div>
+                    </div>
+
+                    <div class="video-ruc" style="margin-right: 20px;">
+                            <!-- <div id="video-ruc1" class="float:left"></div> -->
+                        <video src="/media/attachments/2022/10/20221027175304_70.mp4" controls="controls" width="210" height="130" poster="/media/images/2022/10/20221027180146_52.jpg"  style="width: 100%; height: 100%; object-fit: fill" ></video>
+                        <span>视频：中国人民大学2022年招生宣传片</span>
+                    </div>
+                    <div class="video-ruc">
+                            <!-- <div id="video-ruc2"></div> -->
+                            <video src="/media/attachments/2016/07/20160721160118_50.mp4" controls="controls" width="210" height="130" poster="/media/images/2016/07/20160721160627_6.JPG"  style="width: 100%; height: 100%; object-fit: fill" ></video>
+                            <span>视频：一封大学通知书是怎么被寄出的？</span>        
+                    </div>
+
+                </div>
+
+                 <div class="col-md-7 block-home padding-home">
+                        <div class="block-title bottom-border">
+                            <a href="/cms/list/ztlm/?cat=34"  class="title">
+                                <span>专题栏目</span>
+                                
+                            </a>
+                            <a href="/cms/list/ztlm/?cat=34"  class="more">全部<span class='icon icon-arrow_carrot-right_alt2'></span></a>
+                        </div>
+                        <div class="row">
+                            
+                            <div class="col-md-3 col-xs-6 subSelect">
+                                &gt;<a href="/cms/list/ztlm/?cat=76" >优势专业</a>
+                            </div>
+                            
+                            <div class="col-md-3 col-xs-6 subSelect">
+                                &gt;<a href="/cms/list/ztlm/?cat=35" >中法学院</a>
+                            </div>
+                            
+                            <div class="col-md-3 col-xs-6 subSelect">
+                                &gt;<a href="/cms/list/ztlm/?cat=36" >国防生</a>
+                            </div>
+                            
+                            <div class="col-md-3 col-xs-6 subSelect">
+                                &gt;<a href="/cms/list/ztlm/?cat=37" >商学院</a>
+                            </div>
+                            
+                            <div class="col-md-3 col-xs-6 subSelect">
+                                &gt;<a href="/cms/list/ztlm/?cat=38" >信息学院</a>
+                            </div>
+                            
+                            <div class="col-md-3 col-xs-6 subSelect">
+                                &gt;<a href="/cms/list/ztlm/?cat=39" >高礼英才直通车</a>
+                            </div>
+                            
+                            <div class="col-md-3 col-xs-6 subSelect">
+                                &gt;<a href="/cms/list/ztlm/?cat=40" >PPE实验班</a>
+                            </div>
+                            
+                            <div class="col-md-3 col-xs-6 subSelect">
+                                &gt;<a href="/cms/list/ztlm/?cat=41" >宽口径招生</a>
+                            </div>
+                            
+                            <div class="col-md-3 col-xs-6 subSelect">
+                                &gt;<a href="/cms/list/ztlm/?cat=43" >高考特别</a>
+                            </div>
+                            
+                            <div class="col-md-3 col-xs-6 subSelect">
+                                &gt;<a href="/cms/list/ztlm/?cat=42" >圆梦计划</a>
+                            </div>
+                            
+                            <div class="col-md-3 col-xs-6 subSelect">
+                                &gt;<a href="/cms/list/ztlm/?cat=44" >关注招考制度改革</a>
+                            </div>
+                            
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>    
+    <!-- 校园风光 -->
+    <div class="main main-home">
+        <div class="container">
+            <!-- PART ThREE START -->
+            <div class="row">
+                <div class="col-md-12 block-home">
+                    <div class="block-title">
+                        <a href="/cms/index/xydb/" class="title">
+                            <span>校园风光</span>
+                            
+                        </a>
+                        <a href="/cms/index/xydb/" class="more">全部<span class='icon icon-arrow_carrot-right_alt2'></span></a>
+                    </div>
+                </div>  
+            </div>
+        </div>
+    </div> 
+    <div class="list_photo">
+        <ul>
+
+         
+                   
+            <li><a href="/cms/item/1030.html" title ="国学馆"><div><img src="/media/images/2016/04/20160428142041_28.jpg"/></div>
+                <div class="lp_mask hidden-xs "><h5>国学馆</h5><p>国学馆占地面积11500平方米，总建筑面积28516平方米，是集...</p></div></a>
+            </li>
+              
+	        
+                   
+            <li><a href="/cms/item/1028.html" title ="一勺池"><div><img src="/media/images/2016/04/20160428141957_49.jpg"/></div>
+                <div class="lp_mask hidden-xs "><h5>一勺池</h5><p>一勺池，又名“人大海”，“七星池”（在毕业生中流传），为中国人民...</p></div></a>
+            </li>
+              
+	        
+                   
+            <li><a href="/cms/item/1027.html" title ="求是石"><div><img src="/media/images/2016/04/20160428141935_29.jpg"/></div>
+                <div class="lp_mask hidden-xs "><h5>求是石</h5><p>实事求是是人民大学的精神，体现人大人的风格，利用未经雕砌的汉白玉...</p></div></a>
+            </li>
+              
+	        
+                   
+            <li><a href="/cms/item/1026.html" title ="图书馆"><div><img src="/media/images/2016/04/20160428141901_18.jpg"/></div>
+                <div class="lp_mask hidden-xs "><h5>图书馆</h5><p>以“师生满意、业界一流”为目标，着力打造人图品牌，丰富人图收藏，...</p></div></a>
+            </li>
+              
+	        
+                   
+            <li><a href="/cms/item/1025.html" title ="人文楼"><div><img src="/media/images/2016/04/20160428141835_43.jpg"/></div>
+                <div class="lp_mask hidden-xs "><h5>人文楼</h5><p>位于人大中央地带，被各个教学楼环绕，是哲学院、历史学院、文学院、...</p></div></a>
+            </li>
+              
+	                    
+          
+        </ul>
+    </div>
+<!-- MAIN　END -->
+    <!-- FOOTER START -->
+    <div class="y_foot hidden-xs" style="margin-top:0;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="t_col3">
+                        <h5>联系我们</h5>
+                        <div class="t_icon1">
+                            <i></i>
+                            <span>400-0123-517</span><br/>
+                        </div>
+                        <div class="t_icon2">
+                            <i></i>
+                            <span>zsb@ruc.edu.cn</span><br>
+                        </div>
+                        <div class="t_icon4">
+                            <i></i>
+                            <span>010-62511156（传真）</span><br>
+                        </div>
+                        <div class="t_icon3">
+                            <i></i>
+                            <span>北京市海淀区中关村大街59号<br/>知行F楼（北区食堂）六层</span><br>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="t_col3">
+                        <h5>关注我们</h5>
+                        <img src="/static/default/images/wechat.png" alt="">
+                        <p>扫描二维码关注我们</p>
+                        <p>微信公众号"人大阳光招生"</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="t_col3">
+                        <a href="/cms/item/?cat=70"><h5>学术公告</h5></a>
+                        
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="t_col3">
+                         <h5>快速链接
+
+
+
+
+
+
+                        </h5>
+                        
+                        
+                                 
+                        <a href="/cms/item/1031.html" class="t_b" target = _blank>人大主页</a>
+                       
+                                 
+                        <a href="/cms/item/1032.html" class="t_b" target = _blank>人大新闻网</a>
+                       
+                                 
+                        <a href="/cms/item/1038.html" class="t_b" target = _blank>留学生招生</a>
+                       
+                                 
+                        <a href="/cms/item/1037.html" class="t_b" target = _blank>研究生招生</a>
+                       
+                                 
+                        <a href="/cms/item/1036.html" class="t_b" target = _blank>考生黄页</a>
+                       
+                                 
+                        <a href="/cms/item/1035.html" class="t_b" target = _blank>校园地图</a>
+                       
+                                 
+                        <a href="/cms/item/1034.html" class="t_b" target = _blank>校友总会</a>
+                       
+                                 
+                        <a href="/cms/item/1033.html" class="t_b" target = _blank>教育基金会</a>
+                       
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="y_bottom">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="t_info clearfix">
+                        <p>版权所有 Copyright? 中国人民大学本科生招生办公室   京ICP备05066828号-1</p>
+                        <div class="t_flogo">
+                            <a href=""><img src="/static/default/images/t_logo.png" alt=""></a>
+                            <a href="#" class="hidden-xs t_back">回顶部</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<script type="text/javascript">
+$(function(){
+    window.onload = window.onscroll = function(){
+
+        if(document.body.scrollTop>10) {
+           $('#defaultHeader1').show();
+           $('#defaultHeader').hide();
+           $('#defaultHeader1').css("position", "fixed");
+        } else {
+            $('#defaultHeader').show();
+           $('#defaultHeader1').hide();
+        }
+
+    };
+    $('dt a.rem_mes').bind('click', function() {
+        if($('dd').is(':visible')){
+             $('dd').hide(); 
+        } else{
+            $('dd').show();
+        }
+    });
+    $("#backTop").click(function(){
+        $("body,html").animate({
+            scrollTop:0
+        },500);
+        return false;
+    });
+});
+
+
+    $(document).ready(function(){
+        $('#s').focusin(function(){
+            var val = $(this).val();
+            if(val == '请输入关键字...'){
+                $(this).val('');
+            }
+        });
+        
+        $('#s').focusout(function(){
+            var val = $(this).val();
+            if(val == ''){
+                $(this).val('请输入关键字...');
+            }
+        });
+    });
+    $(function(){
+        $('.y_ipt_menu').click(function(){
+            if($(this).hasClass('open')){
+                $(this).removeClass('open');
+                $('.y_top_menu').animate({width: '0'},200);
+            }else{
+                $(this).addClass('open');
+                $('.y_top_menu').animate({width: '210px'},200);
+            }
+
+        });
+    });
+    $('.block-title ul.nav-tabs li a').bind('mouseover', function() {
+        var index = $(this).parent().addClass('active').index();
+        $(this).parent().siblings('li').removeClass('active');
+        $(".block-content").eq(index).addClass('block-active').siblings('.block-content').removeClass('block-active');
+    });
+    $(".array-right").bind('click', function(event) {
+        $(".showing").hide();
+        $(".not-show").show();
+    });
+    $(".array-left").bind('click', function(event) {
+        $(".showing").show();
+        $(".not-show").hide();
+    });
+
+
+    $('#marquee').bxSlider({ 
+        mode:'horizontal', //默认的是水平   
+        captions: true,//自动控制 
+        auto: true, 
+        autoHover: true,
+        controls: true,//隐藏左右按钮 
+        pager:false,
+        prevText: '&lt',
+        nextText: '&gt'
+    });
+    var slider = $('.y_light_list').bxSlider({
+        auto: true,
+        mode: 'fade',
+        autoHover: true,
+        pagerCustom: '#bx-pager'
+    });
+</script>
+
+<script type="text/javascript">
+// $(document).ready(function(){
+    // window.jwplayer('video-ruc1').setup({
+    // 	image: '/media/images/2022/10/20221027180146_52.jpg',
+    //     width: '100%',
+    //     height: 130,
+    //     file: '/media/attachments/2022/10/20221027175304_70.mp4',
+    //     bufferlength:2,
+    //     controls: true,
+    //     startparam: "start",
+    //     'modes': [
+    //         {type: 'flash', src: '/static/default/js/jwplayer/jwplayer.flash.swf'},
+    //         {type: 'html5', src: '/static/default/js/jwplayer/jwplayer.html5.js'}
+    //     ],
+    //     autostart: false,
+    //     captions: {
+    //         back: false,
+    //         color: 'ffffff',
+    //         fontsize: 16
+    //     }
+    // });
+
+    //  window.jwplayer('video-ruc2').setup({
+    //   image: '/media/images/2016/07/20160721160627_6.JPG',
+    //     width: '100%',
+    //     height: 130,
+    //     file: '/media/attachments/2016/07/20160721160118_50.mp4',
+    //     bufferlength:2,
+    //     controls: true,
+    //     startparam: "start",
+    //     'modes': [
+    //         {type: 'flash', src: '/static/default/js/jwplayer/jwplayer.flash.swf'},
+    //         {type: 'html5', src: '/static/default/js/jwplayer/jwplayer.html5.js'}
+    //     ],
+    //     autostart: false,
+    //     captions: {
+    //         back: false,
+    //         color: 'ffffff',
+    //         fontsize: 16
+    //     }
+    // });
+  // })
+</script>
+<!-- <script type="text/javascript">
+
+   
+</script> -->
+
+<script type="text/javascript">
+     //平台、设备和操作系统
+   function subgo() {
+    var system ={
+        win : false,
+        mac : false,
+        xll : false
+    };
+    //检测平台
+    var p = navigator.platform;
+    system.win = p.indexOf("Win") == 0;
+    system.mac = p.indexOf("Mac") == 0;
+    system.x11 = (p == "X11") || (p.indexOf("Linux") == 0);
+    //跳转语句，如果是手机访问就自动跳转到wap.baidu.com页面
+    
+  
+    if(system.win||system.mac||system.xll){
+        window.location.href="/cms/list/bkzn/ ";
+
+    }else{
+        window.location.href="/cms/list/bkzn/phone/ ";
+    }
+    
+    
+ }   
+</script>                       
+</body>
+</html>

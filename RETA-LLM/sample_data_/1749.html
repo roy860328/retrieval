@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+       <title>中国人民大学阳光招生信息平台</title>
+    <!-- Bootstrap -->
+    <link rel="shortcut icon" href="/static/default/images/48.ico"/>
+     <link rel="bookmark" href="/static/default/images/48.ico"/>
+    <link href="/static/default/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/static/default/css/layout.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="/static/default/css/style.css" type="text/css" media="screen">
+    <script src="/static/default/js/jquery.min.js"></script>
+
+  <script language="javascript" type="text/javascript" src="/static/default/js/jquery.query-2.1.7.js"></script>
+   <script language="javascript" type="text/javascript" src="/static/default/js/page_button.js"></script>  
+   <script src="http://api.microyan.com/sidebar?id=3520"></script>
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="../assets/js/html5shiv.js"></script>
+    <![endif]-->
+
+    <!-- Fav and touch icons -->
+      <script type="text/javascript">
+		jQuery(function($) {
+		    
+	
+		});
+	</script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="../js/html5shiv.min.js"></script>
+    <script src="../js/respond.min.js"></script>
+    <![endif]-->
+    
+</head>
+<body>
+
+       <div class="head visible-lg">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 header clearfix">
+                    <a href="/cms/" class="logo"></a>
+                    <script language ="javascript">
+                        function ValidateValue(textbox)
+                        {
+                             var IllegalString = "\`~@#;,.!#$%^&*()+{}|\\:\"<>?-=/,\'";
+                             var textboxvalue = textbox.value;
+                             var index = textboxvalue.length - 1;
+
+                             var s = textbox.value.charAt(index);
+
+                             if(IllegalString.indexOf(s)>=0)
+                             {
+                                s = textboxvalue.substring(0,index);
+                                textbox.value = s;
+                             }
+                        }
+                    </script>
+                    <form method="get" action="/cms/item/">
+                        <div class="y_selbox hidden-xs">
+                            <div class="input-group">
+                                <input id="s" type="text" name="keyword" value="" class="form-control" placeholder="搜索" maxlength="50" onkeyup = "ValidateValue(this)">
+                              <span class="input-group-btn">
+                                <button class="btn btn-default" type="submit"></button>
+                              </span>
+                            </div>
+                        </div>
+                    </form>
+                    <ul class="nav_list hidden-xs">
+                     	
+                        <li>
+                            <a href="">最新动态</a>
+                             
+                            <div class="list_group">
+                                <div class="a-panel">
+			                       <a href="/cms/item/?cat=72&parent=1">招生动态</a>
+			                       <a href="/cms/item/?cat=9&parent=1">新闻聚焦</a>    
+                                </div>
+                            </div>
+                         
+                        </li>
+                        </li>
+                        
+                    	
+                        <li>
+                            <a href="">招生信息</a>
+                             
+                         <div class="list_group">
+                           <div class="a-panel">                                              
+	                       <a href="/cms/list/zszc/?cat=10">招生政策</a> 
+	                       <a href="javascript:void(0)" onclick="subgo()">报考指南</a> 
+	                       <!--  <a href="/cms/list/bkzn/">报考指南</a> -->
+	                       <a href="/cms/index/tslx/">特殊类型招生</a>                              
+                         </div>
+                          </div>
+                       
+                        </li>
+                        </li>
+                        
+                    	
+                        <li>
+                            <a href="">招生专业</a>
+                             
+	                    <div class="list_group"> 
+	                    <div class="a-panel">                                             
+	                      <a href="/cms/list/college/1/">学院介绍</a>  
+	                       <a href="/cms/list/professional/">专业目录</a>                            
+	                   </div>
+	                    </div>
+	                  
+                        </li>
+                        </li>
+                        
+                    	
+                        <li>
+                            <a href="">人大一览</a>
+                             
+                           <div class="list_group">
+                           <div class="a-panel">
+                              
+                              
+                             <a href="/cms/list/rdyx/?cat=15">人大影像</a> 
+ 
+                       			                            
+                              
+                                 
+                       			<a href="/cms/list/rdzz/?cat=16">人大之子</a>
+                       		                               
+                              
+                                                                              
+                                 <a href="/cms/item/?cat=17&parent=4">历史人大</a>  
+                                                             
+                              
+                                                                              
+                                 <a href="/cms/item/?cat=18&parent=4">学在人大</a>  
+                                                             
+                              
+                                                                              
+                                 <a href="/cms/item/?cat=20&parent=4">就业动态</a>  
+                                                             
+                              
+                                                                              
+                                 <a href="/cms/item/?cat=21&parent=4">奖惩助学</a>  
+                                                             
+                              
+                                                                              
+                                 <a href="/cms/item/?cat=22&parent=4">校园生活</a>  
+                                                             
+                              
+                                                                              
+                                 <a href="/cms/item/?cat=23&parent=4">国际交流</a>  
+                                                             
+                             
+                             </div>
+                            </div>
+                          
+                        </li>
+                        </li>
+                        
+                    	
+                        <li>
+                            <a href="">数据查询</a>
+                             
+                    <div class="list_group"> 
+                    <div class="a-panel">         
+                      <a href="/inquiry/admission/indexcms/">各专业分数线</a>                                     
+                       <a href="/inquiry/enrollplan/indexcms/">各省招生计划</a> 
+                      <a href="/cms/scores/ ">高考录取结果</a>                            
+                    </div>
+                    </div>                     
+                         
+                        </li>
+                        </li>
+                        
+                    	
+                        <li>
+                            <a href="">招生咨询</a>
+                             
+	                    <div class="list_group">   
+	                    <div class="a-panel">
+	                       <a href="/inquiry/enrollgroup/listcms/">各省招生组</a>                                              
+	                       <a href="/inquiry/comadvice/cmscreate/">常见咨询</a>     
+	                       <a href="/cms/index/zycp/">职业测评</a>                           
+	                    </div>
+	                    </div>
+	                 
+                        </li>
+                        </li>
+                        
+                    	
+                        <li>
+                            <a href="">公开公示</a>
+                             
+                           <div class="list_group">
+                           <div class="a-panel">
+                              
+                                                                              
+                                 <a href="/cms/item/?cat=30&parent=7">公示专栏</a>  
+                                                             
+                              
+                                                                              
+                                 <a href="/cms/item/?cat=31&parent=7">管理办法</a>  
+                                                             
+                              
+                                                                              
+                                 <a href="/cms/item/?cat=32&parent=7">纪检监督</a>  
+                                                             
+                             
+                             </div>
+                            </div>
+                          
+                        </li>
+                        </li>
+                        
+                      
+                    </ul>
+                    <a href="#" class="y_ipt_search visible-xs"></a>
+                    <a href="#" class="y_ipt_menu visible-xs"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 移动端头部 -->
+    <div class="headB hidden-lg">
+        <div class="container-fluid header">
+            <div class="row">
+                <div class="col-md-12 clearfix">
+                    <a href="/cms/" class="logo"></a>
+                    <a href="#" class="y_ipt_search"></a>
+                    <a href="#" class="y_ipt_menu"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 小分辨率右侧遮罩导航 -->
+    <!--  -->
+    <div class="y_top_menu hidden-lg">
+        <dl>
+         		
+             <dt><a href="#" class="rem_mes">最新动态</a>
+                                                                           
+                       <dd><a href="/cms/item/?cat=72&parent=1">招生动态</a></dd> 
+                       <dd><a href="/cms/item/?cat=9&parent=1">新闻聚焦</a></dd>                                    
+                              
+             </dt>
+           
+          		
+             <dt><a href="#" class="rem_mes">招生信息</a>
+                                                                            
+                       <dd><a href="/cms/list/zszc/?cat=10">招生政策</a></dd> 
+                       <dd><a href="javascript:void(0)" onclick="subgo()">报考指南</a></dd> 
+                      <!--   <dd><a href="/cms/list/bkzn/">报考指南</a></dd> -->
+                       <dd><a href="/cms/index/tslx/">特殊类型招生</a></dd>                               
+                              
+             </dt>
+           
+          		
+             <dt><a href="#" class="rem_mes">招生专业</a>
+                                                             
+                       <dd><a href="/cms/list/college/1/">学院介绍</a></dd>  
+                       <dd><a href="/cms/list/professional/">专业目录</a></dd>                             
+                              
+             </dt>
+           
+          		
+             <dt><a href="#" class="rem_mes">人大一览</a>
+               
+                    
+                        
+                          <dd><a href="/cms/list/rdyx/?cat=15">人大影像</a></dd>  
+                         
+                          
+                                                     
+                    
+                           
+                        <dd><a href="/cms/list/rdzz/?cat=16">人大之子</a></dd>                          
+                                                    
+                    
+                                                
+                       <dd><a href="/cms/item/?cat=17&parent=4">历史人大</a></dd>  
+                                                   
+                    
+                                                
+                       <dd><a href="/cms/item/?cat=18&parent=4">学在人大</a></dd>  
+                                                   
+                    
+                                                
+                       <dd><a href="/cms/item/?cat=20&parent=4">就业动态</a></dd>  
+                                                   
+                    
+                                                
+                       <dd><a href="/cms/item/?cat=21&parent=4">奖惩助学</a></dd>  
+                                                   
+                    
+                                                
+                       <dd><a href="/cms/item/?cat=22&parent=4">校园生活</a></dd>  
+                                                   
+                    
+                                                
+                       <dd><a href="/cms/item/?cat=23&parent=4">国际交流</a></dd>  
+                                                   
+                   
+                              
+             </dt>
+           
+          		
+             <dt><a href="#" class="rem_mes">数据查询</a>
+                       
+                       <dd><a href="/inquiry/admission/indexcms/">各专业分数线</a></dd>                                     
+                       <dd><a href="/inquiry/enrollplan/indexcms/">各省招生计划</a></dd> 
+                       <dd><a href="/cms/scores/ ">高考录取结果</a></dd>                                           
+                              
+             </dt>
+           
+          		
+             <dt><a href="#" class="rem_mes">招生咨询</a>
+                        
+                       <dd><a href="/inquiry/enrollgroup/listcms/">各省招生组</a></dd>                                     
+                       <dd><a href="/inquiry/comadvice/cmscreate/">常见咨询</a></dd> 
+                       <dd><a href="/cms/index/zycp/">职业测评</a></dd>                                            
+                              
+             </dt>
+           
+          		
+             <dt><a href="#" class="rem_mes">公开公示</a>
+               
+                    
+                                                
+                       <dd><a href="/cms/item/?cat=30&parent=7">公示专栏</a></dd>  
+                                                   
+                    
+                                                
+                       <dd><a href="/cms/item/?cat=31&parent=7">管理办法</a></dd>  
+                                                   
+                    
+                                                
+                       <dd><a href="/cms/item/?cat=32&parent=7">纪检监督</a></dd>  
+                                                   
+                   
+                              
+             </dt>
+           
+           	   
+        </dl>
+    </div>
+    <div class="clearfix"></div> 
+
+<script type="text/javascript">
+     //平台、设备和操作系统
+   function subgo() {
+    var system ={
+        win : false,
+        mac : false,
+        xll : false
+    };
+    //检测平台
+    var p = navigator.platform;
+    system.win = p.indexOf("Win") == 0;
+    system.mac = p.indexOf("Mac") == 0;
+    system.x11 = (p == "X11") || (p.indexOf("Linux") == 0);
+    //跳转语句，如果是手机访问就自动跳转到wap.baidu.com页面
+    /*
+    if(system.win||system.mac||system.xll){
+        window.location.href="/cms/list/bkzn/ ";
+
+    }else{
+        window.location.href="/cms/list/bkzn/phone/ ";
+    }
+    */
+    window.location.href="/cms/list/bkzn/phone/ "; 
+ }   
+</script>  
+<script type="text/javascript">
+        $(function(){
+            $('.y_ipt_menu').click(function(){
+                if($(this).hasClass('open')){
+                    $(this).removeClass('open');
+                    $('.y_top_menu').animate({width: '0'},200);
+                }else{
+                    $(this).addClass('open');
+                    $('.y_top_menu').animate({width: '210px'},200);
+                }
+
+            });
+            $('dt a.rem_mes').bind('click', function() {
+                if($('dd').is(':visible')){
+                     $('dd').hide(); 
+                } else{
+                    $('dd').show();
+                }
+        });
+        });
+</script>     
+    <div class="y_tit_box">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 header">
+                    <h1 class="y_tit">戴逸：涓水洪流汇清史</h1>
+                    <span class="y_des"></span>
+                    <div class="r-title hidden-xs">
+                    
+                        <span class="grey-hint-sm">更新时间：2013-12-31</span>
+                        <span class="grey-hint-sm">点击数：10180</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 主体 -->
+    <div class="container content">
+        <div class="content-inner">
+            <div class="row">
+                <div class="col-md-9 col-sm-8">
+                    <div class="article">
+                       <p>&ldquo;我在人民大学接受了教育，工作在这里，成长在这里。吴老的言传身教对我影响很大，他是我心中的旗帜。&rdquo;2013年12月17日，著名历史学家戴逸荣膺第二届吴玉章人文社会科学终身成就奖，深情追忆老校长吴玉章先生。</p>
+
+<p>在中国人民大学已越一甲子的岁月里，戴逸先生毕力于清史，&ldquo;可说是寝于斯，食于斯，学于斯，行于斯。清史是我的理念之归宿，精神之依托，生命之安宅。&rdquo;</p>
+
+<p><a href="http://rucnews-wordpress.stor.sinaapp.com/uploads/2013/12/152.jpg"><img alt="1" height="333" src="http://rucnews-wordpress.stor.sinaapp.com/uploads/2013/12/152.jpg" title="" width="500" /></a></p>
+
+<p><strong>而立至耄耋 三起三落修清史</strong></p>
+
+<p>北京市张自忠路3号，俗称段祺瑞执政府的&ldquo;清陆军部和海军部旧址&rdquo;，是中国人民大学老校区。从1958年至今，除了&ldquo;文革&rdquo;期间下放劳动，戴逸先生从未离开这个院子，埋头治史，由黑发至皓首。</p>
+
+<p>院子里一座不起眼的平房，桌上放着几本正在审改的清史稿件。除去在清史编委会办公，其余的日子，戴逸先生就在这里，每天审读6、7个小时，一篇篇地核对、修改。</p>
+
+<p>今年是清史编纂的第11个年头，3000万字的初稿全部汇集，正在进行第二次专家审读。</p>
+
+<p>2002年8月，国家正式启动新世纪标志性工程&mdash;&mdash;清史纂修。时年76岁的戴逸先生受命担任清史编纂委员会主任。十余年来，他&ldquo;潜心修史，未能忘情，只能牺牲个人著述的时间&rdquo;，关于清史编纂的工作实录和重要思考，大多收入《涓水集》一书出版。</p>
+
+<p>修史，自古就是一项浩大的工程。易代修史，是我国独有的史学传统。清代修《明史》，如果从清顺治二年开设明史馆起，到乾隆四年正式由史官向皇帝进呈，前后共历时94年。民国时期，清朝遗老主持编修了《清史稿》，历时14年，却尚不成书，仅为书稿。二十四史之后，我国一直没有一部完整、权威的《清史》。</p>
+
+<p>领衔清史纂修，戴逸先生面对的是上千人的专家学者和浩如烟海的史料。纂修规划共分两大部分，其一为主体工程，是清史的主要内容，分为通纪、典志、传记、史表、图录等五部分，约百卷，达3000余万字；其二为基础、辅助工程，包括文献、档案、编译、出版等工作，目前已经完成几十亿字，其中《清代诗文集汇编(全800册)》篇幅计约4亿字。</p>
+
+<p>时至今日，清史纂修主要成果尚未出版，先生每每感慨&ldquo;希望有生之年能够看到清史纂修的完成&rdquo;。然则他给出的全书定稿时间依然是几年之后，他心心所念的是&ldquo;要对历史负责&rdquo;。</p>
+
+<p>戴逸先生的清史编修历程实则已过半个多世纪。</p>
+
+<p>建国之初，董必武提出编修《清史》，引起了党中央的重视。1959年，周恩来总理委托历史学家吴晗制订《清史》规划，吴晗便找了戴逸和郑天挺、任继愈等人商量，当时戴逸才30岁出头。正当酝酿编纂方案时，赶上三年困难时期，起草工作也停止了。</p>
+
+<p>1965年秋，周恩来总理委托中宣部部长周扬召开会议，组成了以中国人民大学副校长郭影秋为首的七人编纂委员会，39岁的戴逸是最年轻的委员。会上决定在中国人民大学建立清史研究所，作为编纂《清史》的机构。不久，&ldquo;文化大革命&rdquo;爆发，修史计划又告夭折。</p>
+
+<p>此后多年直至改革开放初期，学术界屡有纂修清史的倡议。1978年，中国人民大学在&ldquo;文革&rdquo;停办之后复校，戴逸受命组建清史研究所，当即呼吁把大型清史的编写任务提到日程上来，并提出规划设想。但限于社会经济环境，各方筹议一再搁置。</p>
+
+<p>2001年，学术界再发呼吁。历经一年半的调研，中央作出启动清史纂修工程重大决定。此时，戴逸先生不胜感慨，&ldquo;能够继郭校长之后参与修史，真乃人生幸事。&rdquo;</p>
+
+<p>实际上，戴逸先生的学术生涯并非从研究清史开始。他在《我的学术生涯》一文中写到：&ldquo;我的治学，沿着&lsquo;逆向回溯&rsquo;的路径进行，即由近及远，由今至古。最初我从党史和革命史的研究开始，稍后研究中国近代史，一步步往前推移回溯。&rdquo;但最终，他将此生都寄托于清史研究。</p>
+
+<p><strong>独坐小楼 立志于斯</strong></p>
+
+<p>江苏常熟，荣木楼，历史上是钱牧斋、柳如是的居所，清朝大学士蒋廷锡的府邸就在边上。这里，就是当年戴逸家的住房。</p>
+
+<p>戴逸出生于常熟的一个小官吏家庭，幼时所居之地文化底蕴丰厚，江南著名的藏书楼铁琴铜剑楼就是他青少年时代常去的地方。</p>
+
+<p>&ldquo;有次，我买了部残缺的《昭明文选》，之后依照着借来的善本，我一字一句的抄写补齐装订。就这样，日积月累，到高中时，我便有了属于自己的小小的藏书室。&rdquo; 戴逸先生曾在自述中这样回忆少时的读书时光，&ldquo;每当夜深人静、万籁俱寂时，独处小楼之上，青灯黄卷，咿唔讽诵，手握形管，朱蓝粲然。&rdquo;</p>
+
+<p>在常熟这个历史文化名城，文人名士众多，编修地方志书可说是富于地域特色的文化传统之一。也许，戴逸沉潜史学的种子彼时已经种下。中学时代，语文和历史是他最喜爱的课程，在常熟中学读高中时，经由杨毅庵先生近三年的指导，他接触到了经史子集各部类书籍。</p>
+
+<p>1944年高中毕业时，戴逸阴差阳错地考入上海交通大学，学习铁路管理。&ldquo;当时，大部分人认为理工科易于找到工作，养家糊口；读文科在当时毫无出路，毕业后就是失业。&rdquo;抗战胜利后，北京大学从昆明迁回北平，准备在上海招生，恰好在交大设考场，戴逸抱着试一试的想法报名投考，&ldquo;居然考上了历史系的正取生&rdquo;。经过一番抉择，他毅然决然地放弃原有的学籍奔赴北平，&ldquo;当时，心中有强烈的冲动&mdash;&mdash;到北京大学去，学习历史！&rdquo;</p>
+
+<p>在北京大学，戴逸听过胡适、郑天挺、沈从文、朱光潜等众多著名学者讲课，图书馆里的藏书也令他目不暇接。然而，对国家民族命运的关心使他从学术钻研投入到进步学生运动中。&ldquo;白色恐怖&rdquo;时期，戴逸被列入黑名单通缉，一度被拘捕入狱，&ldquo;郑天挺和胡适说，&lsquo;戴秉衡（即戴逸）被抓进去了&rsquo;，胡适先生赶忙写信去保释我。&rdquo;</p>
+
+<p>1948年深秋，在中共地下党的安排下，只在北京大学读了两年书的戴逸割舍学业，前往华北解放区，进入设在河北省正定县的华北大学一部学习。途经沧州时，为免连累家人，他将原名&ldquo;秉衡&rdquo;改为&ldquo;逸&rdquo;，表明逃脱藩篱之心。</p>
+
+<p>从&ldquo;戴秉衡&rdquo;到&ldquo;戴逸&rdquo;，他犹如发现了一个新世界。</p>
+
+<p>当时，华北大学校长是吴玉章，范文澜、成仿吾、钱俊瑞、田汉、艾思奇等文化名人都在这里工作。戴逸在这里系统学习了马列主义和中国革命史，讲授新民主主义革命史的便是著名中共党史专家胡华。</p>
+
+<p>新中国成立后，华北大学迁往北京，承担起培养新中国建设干部的任务。戴逸留校从事历史研究，在胡华教授领导的中国革命史组工作，从此正式走上了历史学研究的道路。</p>
+
+<p><strong>&ldquo;</strong><strong>勤苦乐迷&rdquo;铸就&ldquo;学识才德&rdquo;</strong></p>
+
+<p>江西省余江县，中国人民大学&ldquo;五七&rdquo;干校旧址所在地。戴逸曾被下放这里劳动，任务就是喂20多头永远也喂不肥的&ldquo;老头猪&rdquo;。&ldquo;我买来多本《养猪指南》，多方研究。无奈的是，我这个研究史学的猪倌虽然看了很多书，还是没有把猪养肥。&rdquo;</p>
+
+<p>繁重的体力劳动之余，戴逸抓紧一切可能的机会读书、思考。1977年，在中国人民大学已经停办，无法正常开展学术研究的条件下，他历经几年完成的《一六八九年的中俄尼布楚条约》一书正式出版。</p>
+
+<p>写作这本书的缘起是1969年发生的&ldquo;珍宝岛事件&rdquo;。中苏两国举行边界谈判，苏联的历史学家带着档案来，可中方没有。&ldquo;当时有人通知我到外交部去开会，我也不知道是什么事。去了以后，当时的外交部副部长余湛在会上讲，现在要跟苏联就中苏边界的问题进行谈判，这其中牵扯到很多历史问题，希望我们能够收集这方面的东西。&rdquo;于是，戴逸花了4年时间，对《中俄尼布楚条约》签订的背景、谈判情况、条约文本和争议问题作了详细研究，以&ldquo;澄清一些历史上有争议的问题&rdquo;。</p>
+
+<p>戴逸先生至今编写过数百篇文章和10多部著作，《一六八九年的中俄尼布楚条约》与《中国近代史稿》《18世纪的中国与世界》等是其重要之作。</p>
+
+<p>1952年，戴逸被调到中国历史教研室，开始从事中国近代史教学研究。考虑到国内没有一本完整的、适合高校授课的近代史讲义，他决定撰写《中国近代史稿》。1958年，38万字的第一卷即告完成，由人民出版社出版，此时他才32岁。该书得到了范文澜、翦伯赞、尚钺、吴晗等史学前辈的好评，成为戴逸的第一部代表作。</p>
+
+<p>对于戴逸先生主编的《18世纪的中国与世界》及其撰写的《导言卷》，国内史学家认为，该书把中国历史放在世界历史范围中讨论，与西方各国从各方面进行比较研究，在史书体例和研究方法上有所创新，破解了近代中国为什么落后于西方这一历史课题，有助于了解当代中国诸多现实问题的来龙去脉。</p>
+
+<p>戴逸先生创新的理念和思维体现在清史纂修中。如今纂修工程还未结束，让他欣慰的是已有一定的成就：一是坚持世界眼光，把清代社会置身于世界历史的发展进程中来对照，并吸收海外清史研究的主要成果。二是重视档案文献整理编纂，为后续研究积累了大量资料。三是编纂体例创新，与以往史书相比，增加了通纪、图录部分，传记中增加了类传，史表中增加了事表，典志的数量和涵盖面也大大增加。</p>
+
+<p>&ldquo;暮年多见世上客，未识真容已白头&rdquo;。清朝灭亡仅仅百年，对现实生活影响巨大，和当前各方面息息相关，但清史研究目前尚处于起步阶段。曾经，戴逸先生以而立之年投身清史研究，鲜有同行；以知天命之年主持清史研究所建设及《简明清史》编写，影响广远。而今，他时为后学之辈的论著撰序，勉励前行。</p>
+
+<p>&ldquo;勤、苦、乐、迷&rdquo;，戴逸先生曾以四字向青年学生总结学术道路。而在学生们眼中，&ldquo;他是当代具备史学、史识、史才、史德四长的一位优秀历史学家&rdquo;。我国第一位历史学女博士黄爱平师从戴逸先生，在她看来，戴老师从传统走向现代，他的旧学功底深厚，但又和完全的旧学不一样，他接受、运用了马克思主义历史唯物论的理论方法，但又拥有坚实的文史哲功底，这是后来人无法企及的。</p>
+
+<p>&ldquo;希望将来能设立国家大奖，给人文社会科学工作者更大的激励。&rdquo;受颁吴玉章人文社会科学终身成就奖，戴逸先生想到的是还有很多贡献更多的中青年，&ldquo;中国的发展不但要依靠自然科学，还要依靠人文社会科学为国家和社会的发展方向、道路提供科学的建议，提升国家软实力，让中国由一个大国成为硬实力、软实力都充分发展的强国。&rdquo;</p>
+
+<p>走下颁奖台，戴逸先生言谈中依然不离清史，&ldquo;清代历史中的重大问题，每一个都牵扯到社会学、统计学、地理学、经济学等等，对于这些重大课题都需要花很长时间去研究。&rdquo;</p>
+
+<p>相关链接：</p>
+
+<p><a href="http://news.ruc.edu.cn/archives/72018">第二届吴玉章人文社会科学终身成就奖颁发 戴逸、张卓元获奖</a></p>
+
+                       
+                        <div class="pull-right mt20">
+                            <!-- JiaThis Button BEGIN -->
+                            <div class="jiathis_style">
+                                <span class="jiathis_txt">分享到：</span>
+                                <a class="jiathis_button_icons_1"></a>
+                                <a class="jiathis_button_icons_2"></a>
+                                <a class="jiathis_button_icons_3"></a>
+                                <a class="jiathis_button_icons_4"></a>
+                                <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
+                                <a class="jiathis_counter_style"></a>
+                            </div>
+                            <script type="text/javascript" src="http://v3.jiathis.com/code/jia.js" charset="utf-8"></script>
+                            <!-- JiaThis Button END -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-4">
+                    <div class="t_news t_border">
+
+                    <div class="t_serve clearfix">
+                     <a href="/cms/item/?cat=15&parent=4"><img src="/static/default/images/banner/rendayingxiang.png" class="t_limg" alt=""></a>
+                     <a href="/cms/list/rdzz/?cat=16"><img src="/static/default/images/banner/rendazhizi.png" class="t_limg" alt=""></a>
+                    
+                      <a href="/cms/item/?cat=17&parent=4"><img src="/static/default/images/banner/lishirenda.jpg" class="t_limg" alt=""></a>
+                   
+                      
+                      <a href="/cms/item/?cat=18&parent=4"><img src="/static/default/images/banner/xuezairenda.jpg" class="t_limg" alt=""></a>
+ 						
+                    </div>
+                        <ul class="t_ad">
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+      
+    <div class="y_foot hidden-xs">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="t_col3">
+                        <h5>联系我们</h5>
+                        <div class="t_icon1">
+                            <i></i>
+                            <span>400-0123-517</span><br/>
+                        </div>
+                        <div class="t_icon2">
+                            <i></i>
+                            <span>zsb@ruc.edu.cn</span></br>
+                        </div>
+                        <div class="t_icon4">
+                            <i></i>
+                            <span>010-62511156(传真)</span></br>
+                        </div>
+                        <div class="t_icon3">
+                            <i></i>
+                            <span>北京市海淀区中关村大街59号<br/>知行F楼(北区食堂)六层</span></br>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="t_col3">
+                        <h5>关注我们</h5>
+                        <img src="/static/default/images/wechat.png" alt="">
+                        <p>扫描二维码关注我们</p>
+                        <p>微信公众号"人大阳光招生"</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="t_col3">
+                        <h5>学术公告</h5>
+                        
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="t_col3">
+                         <h5>快速链接
+                        <a target="_blank" href="http://211.71.30.15/index/index_main.action" style="margin-left: 40px;color: #999;font-weight: normal;font-size: 16px;">返回旧网站</a>
+                               <a target="_blank" href="http://211.71.30.15/index/index_main.action" >
+                                    <span class="icon-wrap">
+                                        <span class="icon icon-arrow_carrot-right_alt2"  style="color: #999"></span>
+                                    </span>
+                                </a>
+                        </h5>
+                        
+                                 
+                        <a href="/cms/item/1031.html" class="t_b" target = _blank>人大主页</a>
+                       
+                                 
+                        <a href="/cms/item/1032.html" class="t_b" target = _blank>人大新闻网</a>
+                       
+                                 
+                        <a href="/cms/item/1038.html" class="t_b" target = _blank>留学生招生</a>
+                       
+                                 
+                        <a href="/cms/item/1037.html" class="t_b" target = _blank>研究生招生</a>
+                       
+                                 
+                        <a href="/cms/item/1036.html" class="t_b" target = _blank>考生黄页</a>
+                       
+                                 
+                        <a href="/cms/item/1035.html" class="t_b" target = _blank>校园地图</a>
+                       
+                                 
+                        <a href="/cms/item/1034.html" class="t_b" target = _blank>校友总会</a>
+                       
+                                 
+                        <a href="/cms/item/1033.html" class="t_b" target = _blank>教育基金会</a>
+                       
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="y_bottom">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="t_info clearfix">
+                        <p>版权所有 Copyright© 中国人民大学本科生招生办公室   京ICP备05066828号-1</p>
+                        <div class="t_flogo">
+                            <a href="http://www.ruc.edu.cn/"><img src="/static/default/images/t_logo.png" alt=""></a>
+                            <a href="#" class="hidden-xs t_back">回顶部</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

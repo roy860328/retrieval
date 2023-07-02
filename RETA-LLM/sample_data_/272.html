@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+       <title>中国人民大学阳光招生信息平台</title>
+    <!-- Bootstrap -->
+    <link rel="shortcut icon" href="/static/default/images/48.ico"/>
+     <link rel="bookmark" href="/static/default/images/48.ico"/>
+    <link href="/static/default/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/static/default/css/layout.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="/static/default/css/style.css" type="text/css" media="screen">
+    <script src="/static/default/js/jquery.min.js"></script>
+
+  <script language="javascript" type="text/javascript" src="/static/default/js/jquery.query-2.1.7.js"></script>
+   <script language="javascript" type="text/javascript" src="/static/default/js/page_button.js"></script>  
+   <script src="http://api.microyan.com/sidebar?id=3520"></script>
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="../assets/js/html5shiv.js"></script>
+    <![endif]-->
+
+    <!-- Fav and touch icons -->
+      <script type="text/javascript">
+		jQuery(function($) {
+		    
+	
+		});
+	</script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="../js/html5shiv.min.js"></script>
+    <script src="../js/respond.min.js"></script>
+    <![endif]-->
+    
+</head>
+<body>
+
+       <div class="head visible-lg">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 header clearfix">
+                    <a href="/cms/" class="logo"></a>
+                    <script language ="javascript">
+                        function ValidateValue(textbox)
+                        {
+                             var IllegalString = "\`~@#;,.!#$%^&*()+{}|\\:\"<>?-=/,\'";
+                             var textboxvalue = textbox.value;
+                             var index = textboxvalue.length - 1;
+
+                             var s = textbox.value.charAt(index);
+
+                             if(IllegalString.indexOf(s)>=0)
+                             {
+                                s = textboxvalue.substring(0,index);
+                                textbox.value = s;
+                             }
+                        }
+                    </script>
+                    <form method="get" action="/cms/item/">
+                        <div class="y_selbox hidden-xs">
+                            <div class="input-group">
+                                <input id="s" type="text" name="keyword" value="" class="form-control" placeholder="搜索" maxlength="50" onkeyup = "ValidateValue(this)">
+                              <span class="input-group-btn">
+                                <button class="btn btn-default" type="submit"></button>
+                              </span>
+                            </div>
+                        </div>
+                    </form>
+                    <ul class="nav_list hidden-xs">
+                     	
+                        <li>
+                            <a href="">最新动态</a>
+                             
+                            <div class="list_group">
+                                <div class="a-panel">
+			                       <a href="/cms/item/?cat=72&parent=1">招生动态</a>
+			                       <a href="/cms/item/?cat=9&parent=1">新闻聚焦</a>    
+                                </div>
+                            </div>
+                         
+                        </li>
+                        </li>
+                        
+                    	
+                        <li>
+                            <a href="">招生信息</a>
+                             
+                         <div class="list_group">
+                           <div class="a-panel">                                              
+	                       <a href="/cms/list/zszc/?cat=10">招生政策</a> 
+	                       <a href="javascript:void(0)" onclick="subgo()">报考指南</a> 
+	                       <!--  <a href="/cms/list/bkzn/">报考指南</a> -->
+	                       <a href="/cms/index/tslx/">特殊类型招生</a>                              
+                         </div>
+                          </div>
+                       
+                        </li>
+                        </li>
+                        
+                    	
+                        <li>
+                            <a href="">招生专业</a>
+                             
+	                    <div class="list_group"> 
+	                    <div class="a-panel">                                             
+	                      <a href="/cms/list/college/1/">学院介绍</a>  
+	                       <a href="/cms/list/professional/">专业目录</a>                            
+	                   </div>
+	                    </div>
+	                  
+                        </li>
+                        </li>
+                        
+                    	
+                        <li>
+                            <a href="">人大一览</a>
+                             
+                           <div class="list_group">
+                           <div class="a-panel">
+                              
+                              
+                             <a href="/cms/list/rdyx/?cat=15">人大影像</a> 
+ 
+                       			                            
+                              
+                                 
+                       			<a href="/cms/list/rdzz/?cat=16">人大之子</a>
+                       		                               
+                              
+                                                                              
+                                 <a href="/cms/item/?cat=17&parent=4">历史人大</a>  
+                                                             
+                              
+                                                                              
+                                 <a href="/cms/item/?cat=18&parent=4">学在人大</a>  
+                                                             
+                              
+                                                                              
+                                 <a href="/cms/item/?cat=20&parent=4">就业动态</a>  
+                                                             
+                              
+                                                                              
+                                 <a href="/cms/item/?cat=21&parent=4">奖惩助学</a>  
+                                                             
+                              
+                                                                              
+                                 <a href="/cms/item/?cat=22&parent=4">校园生活</a>  
+                                                             
+                              
+                                                                              
+                                 <a href="/cms/item/?cat=23&parent=4">国际交流</a>  
+                                                             
+                             
+                             </div>
+                            </div>
+                          
+                        </li>
+                        </li>
+                        
+                    	
+                        <li>
+                            <a href="">数据查询</a>
+                             
+                    <div class="list_group"> 
+                    <div class="a-panel">         
+                      <a href="/inquiry/admission/indexcms/">各专业分数线</a>                                     
+                       <a href="/inquiry/enrollplan/indexcms/">各省招生计划</a> 
+                      <a href="/cms/scores/ ">高考录取结果</a>                            
+                    </div>
+                    </div>                     
+                         
+                        </li>
+                        </li>
+                        
+                    	
+                        <li>
+                            <a href="">招生咨询</a>
+                             
+	                    <div class="list_group">   
+	                    <div class="a-panel">
+	                       <a href="/inquiry/enrollgroup/listcms/">各省招生组</a>                                              
+	                       <a href="/inquiry/comadvice/cmscreate/">常见咨询</a>     
+	                       <a href="/cms/index/zycp/">职业测评</a>                           
+	                    </div>
+	                    </div>
+	                 
+                        </li>
+                        </li>
+                        
+                    	
+                        <li>
+                            <a href="">公开公示</a>
+                             
+                           <div class="list_group">
+                           <div class="a-panel">
+                              
+                                                                              
+                                 <a href="/cms/item/?cat=30&parent=7">公示专栏</a>  
+                                                             
+                              
+                                                                              
+                                 <a href="/cms/item/?cat=31&parent=7">管理办法</a>  
+                                                             
+                              
+                                                                              
+                                 <a href="/cms/item/?cat=32&parent=7">纪检监督</a>  
+                                                             
+                             
+                             </div>
+                            </div>
+                          
+                        </li>
+                        </li>
+                        
+                      
+                    </ul>
+                    <a href="#" class="y_ipt_search visible-xs"></a>
+                    <a href="#" class="y_ipt_menu visible-xs"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 移动端头部 -->
+    <div class="headB hidden-lg">
+        <div class="container-fluid header">
+            <div class="row">
+                <div class="col-md-12 clearfix">
+                    <a href="/cms/" class="logo"></a>
+                    <a href="#" class="y_ipt_search"></a>
+                    <a href="#" class="y_ipt_menu"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 小分辨率右侧遮罩导航 -->
+    <!--  -->
+    <div class="y_top_menu hidden-lg">
+        <dl>
+         		
+             <dt><a href="#" class="rem_mes">最新动态</a>
+                                                                           
+                       <dd><a href="/cms/item/?cat=72&parent=1">招生动态</a></dd> 
+                       <dd><a href="/cms/item/?cat=9&parent=1">新闻聚焦</a></dd>                                    
+                              
+             </dt>
+           
+          		
+             <dt><a href="#" class="rem_mes">招生信息</a>
+                                                                            
+                       <dd><a href="/cms/list/zszc/?cat=10">招生政策</a></dd> 
+                       <dd><a href="javascript:void(0)" onclick="subgo()">报考指南</a></dd> 
+                      <!--   <dd><a href="/cms/list/bkzn/">报考指南</a></dd> -->
+                       <dd><a href="/cms/index/tslx/">特殊类型招生</a></dd>                               
+                              
+             </dt>
+           
+          		
+             <dt><a href="#" class="rem_mes">招生专业</a>
+                                                             
+                       <dd><a href="/cms/list/college/1/">学院介绍</a></dd>  
+                       <dd><a href="/cms/list/professional/">专业目录</a></dd>                             
+                              
+             </dt>
+           
+          		
+             <dt><a href="#" class="rem_mes">人大一览</a>
+               
+                    
+                        
+                          <dd><a href="/cms/list/rdyx/?cat=15">人大影像</a></dd>  
+                         
+                          
+                                                     
+                    
+                           
+                        <dd><a href="/cms/list/rdzz/?cat=16">人大之子</a></dd>                          
+                                                    
+                    
+                                                
+                       <dd><a href="/cms/item/?cat=17&parent=4">历史人大</a></dd>  
+                                                   
+                    
+                                                
+                       <dd><a href="/cms/item/?cat=18&parent=4">学在人大</a></dd>  
+                                                   
+                    
+                                                
+                       <dd><a href="/cms/item/?cat=20&parent=4">就业动态</a></dd>  
+                                                   
+                    
+                                                
+                       <dd><a href="/cms/item/?cat=21&parent=4">奖惩助学</a></dd>  
+                                                   
+                    
+                                                
+                       <dd><a href="/cms/item/?cat=22&parent=4">校园生活</a></dd>  
+                                                   
+                    
+                                                
+                       <dd><a href="/cms/item/?cat=23&parent=4">国际交流</a></dd>  
+                                                   
+                   
+                              
+             </dt>
+           
+          		
+             <dt><a href="#" class="rem_mes">数据查询</a>
+                       
+                       <dd><a href="/inquiry/admission/indexcms/">各专业分数线</a></dd>                                     
+                       <dd><a href="/inquiry/enrollplan/indexcms/">各省招生计划</a></dd> 
+                       <dd><a href="/cms/scores/ ">高考录取结果</a></dd>                                           
+                              
+             </dt>
+           
+          		
+             <dt><a href="#" class="rem_mes">招生咨询</a>
+                        
+                       <dd><a href="/inquiry/enrollgroup/listcms/">各省招生组</a></dd>                                     
+                       <dd><a href="/inquiry/comadvice/cmscreate/">常见咨询</a></dd> 
+                       <dd><a href="/cms/index/zycp/">职业测评</a></dd>                                            
+                              
+             </dt>
+           
+          		
+             <dt><a href="#" class="rem_mes">公开公示</a>
+               
+                    
+                                                
+                       <dd><a href="/cms/item/?cat=30&parent=7">公示专栏</a></dd>  
+                                                   
+                    
+                                                
+                       <dd><a href="/cms/item/?cat=31&parent=7">管理办法</a></dd>  
+                                                   
+                    
+                                                
+                       <dd><a href="/cms/item/?cat=32&parent=7">纪检监督</a></dd>  
+                                                   
+                   
+                              
+             </dt>
+           
+           	   
+        </dl>
+    </div>
+    <div class="clearfix"></div> 
+
+<script type="text/javascript">
+     //平台、设备和操作系统
+   function subgo() {
+    var system ={
+        win : false,
+        mac : false,
+        xll : false
+    };
+    //检测平台
+    var p = navigator.platform;
+    system.win = p.indexOf("Win") == 0;
+    system.mac = p.indexOf("Mac") == 0;
+    system.x11 = (p == "X11") || (p.indexOf("Linux") == 0);
+    //跳转语句，如果是手机访问就自动跳转到wap.baidu.com页面
+    /*
+    if(system.win||system.mac||system.xll){
+        window.location.href="/cms/list/bkzn/ ";
+
+    }else{
+        window.location.href="/cms/list/bkzn/phone/ ";
+    }
+    */
+    window.location.href="/cms/list/bkzn/ "; 
+ }   
+</script>  
+<script type="text/javascript">
+        $(function(){
+            $('.y_ipt_menu').click(function(){
+                if($(this).hasClass('open')){
+                    $(this).removeClass('open');
+                    $('.y_top_menu').animate({width: '0'},200);
+                }else{
+                    $(this).addClass('open');
+                    $('.y_top_menu').animate({width: '210px'},200);
+                }
+
+            });
+            $('dt a.rem_mes').bind('click', function() {
+                if($('dd').is(':visible')){
+                     $('dd').hide(); 
+                } else{
+                    $('dd').show();
+                }
+        });
+        });
+</script>     
+
+    <div class="y_tit_box">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 header">
+                    <h1 class="y_tit">方立天：我选择佛教而又矢志不移</h1>
+                    <span class="y_des"></span>
+                    <div class="r-title hidden-xs">
+                    
+                        <span class="grey-hint-sm">更新时间：2013-12-31</span>
+                        <span class="grey-hint-sm">点击数：8676</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 主体 -->
+    <div class="container content">
+        <div class="content-inner">
+            <div class="row">
+                <div class="col-md-9 col-sm-8">
+                    <div class="article">
+                       <p><strong>方立天（1933&mdash;），浙江永康人。著名佛教研究专家、中国哲学史专家，中国人民大学哲学院教授，中国人民大学首批一级教授。本文回顾了他秉承&ldquo;立身有道、学有专长&rdquo;的人生信条，自强不息、刻苦钻研的治学历程及感悟。方立天自述本文由作者应校史研究室之约完成于2010年2月。本文收录于《求是园名家自述》。</strong></p>
+
+<p><a href="http://rucnews-wordpress.stor.sinaapp.com/uploads/2013/11/方立天1.jpg"><img alt="方立天" height="333" src="http://rucnews-wordpress.stor.sinaapp.com/uploads/2013/11/方立天1.jpg" title="" width="500" /></a></p>
+
+<p style="text-align: center;"><strong>三个重大转折决定我的生命历程</strong></p>
+
+<p>1933年3月，我出生于浙江省中部的一个农村：永康市四路口中村。我的家乡山清水秀，景色宜人。村落边上，有一条日夜流淌不息的小溪。童年时，我和伙伴们有时就在这条小溪里抓鱼。村子的周围，是起伏的丘陵，绿绿的农田，非常美丽。</p>
+
+<p>幼年时，我沉静少言，不贪玩耍，喜好读书。可是时运不佳，由于日寇的侵略，我的家乡屡遭践踏，致使小学上课时断时续，没能连续地把小学念下来。1946年春，我开始在永康县立初级中学读书。1949年毕业时，我国历史发生了翻天覆地的变化，我被时代车轮带进华东财政系统的干部学校学习、工作。新中国的成立，使我得以较早地投身革命，经受革命锻炼，这是我人生第一大转折。</p>
+
+<p>1956年，党中央号召&ldquo;向科学进军&rdquo;，鼓励在职青年报考高等院校。这一年的秋季，我幸运地考上了北京大学哲学系。这是我人生旅途中的第二大转折。从1956年入北京大学，到1961年大学毕业，可以说是我学术研究的&ldquo;准备时期&rdquo;。北大美丽的校园、雄厚的师资力量和丰富的藏书，使我感到只有奋发上进，才能无愧地面对这一切。我学的是哲学专业。北大哲学系有中外哲学史界一流的师资，冯友兰、汤用彤、张岱年、任继愈和郑昕、洪谦、任华等都是哲学史界的泰斗，能最大限度地满足学生的学习要求。在学习期间，我对中外哲学史产生了强烈的兴趣，中外哲学家的深邃睿智深深地打动了我。学习先哲的智慧，锻炼自己的思维能力，成为我最急切的需要和最大的乐趣。后来我感到中外哲学史齐头并进，有些困难，根据我自身的条件，就确定以中国哲学史为专攻重点。一度令人兴奋不已的是，冯友兰先生虽已年过花甲，还登台执教。先生深入浅出的讲授艺术、严密的逻辑论证，使我们受益匪浅；他幽默的讲课风格，至今仍历历在目。当时我是班上中国哲学史的课代表，与冯先生的接触较多，自然我对先生对待学术问题的态度、治学方法乃至精神气象，也更多了一层了解。这时，我也到历史系听了两年张政烺、田余庆等教授主讲的中国通史课，还自学了《中国文学史》等教科书。在北大的学习，为我以后从事中国哲学史的研究工作打下了初步的基础。由于政治运动的干扰，北大五年实际上课的时间不到一半。当时一有空，我就扎到文史楼阅览室看书，由此也养成了一个终生受益的习惯，这就是泡图书馆。后来到人大工作，几十年如一日，我端着一个水杯，背着一个书包，和大学生一起按时到图书馆查阅资料、学习备课、研究写作。</p>
+
+<p>1961年，从北大毕业，我被分配到中国人民大学哲学系中国哲学史教研室工作。这是我人生旅途的第三个也是最重要的转折点。自那时起，我在学术生涯的漫长道路上开始了艰难的跋涉。在一次讨论研究工作重点的分工会议上，我选择魏晋南北朝隋唐哲学作为重点研究的对象，这一段哲学包括了儒、道、佛三教，内容丰富，便于把长达七百年历史的佛教哲学和世俗哲学结合起来研究。我决心把中国哲学和中国佛教作为自己的专业研究方向，在这两块园地进行&ldquo;双耕&rdquo;，这成为我相当长岁月里学术活动的基本内容。</p>
+
+<p>决定研究佛教，这是我学术生涯中的一个重要选择。我之所以选择佛教而又矢志不移，主要考虑了以下这几点：一、从佛教的内容来看，佛教是人类历史上最庞大的思想体系，涉及人生、宇宙诸多方面的根本问题，内容丰富庞大，其理论思维、经验教训很值得总结。二、从佛教与中国文化的密切关系来看，佛教传入我国后，在和中国固有文化的冲突、融合的过程中，对中国哲学、伦理、文学、艺术、习俗等都产生了极其广泛而深刻的影响，研究佛教，对于研究中国文化的各种形态都有着重大的意义。可以说，不研究佛教，就难以全面研究中国文化史。三、从佛教哲学与中国哲学的相互关系来看，如果从哲学层面去研究佛教，尤其是中国佛教，又从整个中国哲学发展史的背景出发去探讨中国佛教哲学思想的形成和演变，就既能拓宽佛教的研究领域，揭示佛教哲学思维的丰富内容，把握中国佛教思想的根本特征，提高佛教研究的学术水平；又可以利用佛教哲学的研究成果来丰富中国哲学史的教学内容。这也就是把中国哲学与中国佛教研究结合起来，使两者互促互补，相得益彰。四、从中国佛教研究的现状来看，由于佛教研究的难度大，往往使人望而却步。同时，整个宗教研究都不太受重视，有的人甚至认为研究宗教就是信仰宗教，误解、排斥宗教研究。在&ldquo;文化大革命&rdquo;浩劫期间，甚至把宗教研究者视为牛鬼蛇神，研究宗教不仅不受重视，而且还有很大的压力。因此，研究佛教所得的成果和我国佛教的丰富内容是太不相称了。我想，正因为佛教研究被视为畏途，佛教研究几乎是一片处女地，所以投身其间，脚踏实地，埋头研究，也许是更有意义的事情。</p>
+
+<p>当然，决定研究佛教，绝不是一件简单的事。从理智、认识上肯定佛教研究是一回事，从意志、行动上最后坚定地从事佛教研究又是一回事。这是因为：首先，研究佛教的难度大。研究佛教需要具备语言、文字、宗教、哲学、历史等多学科的知识，而且，还需要对佛教的宗教生活实践有一定的体察和了解，这都不是容易做到的。至于研究佛教义理的三大难关&mdash;&mdash;概念术语的特定含义，佛教思维方式的独特内容，以及佛教整个思想体系的庞大复杂、歧异多义，也都是不容易掌握和驾驭的。再就是研究的条件比较差。这主要是指研究的客观条件，如资料不齐全，舆论气氛不太好，而且研究成果的发表有时也会受到种种制约。但我想，凡事都有它的另一面，困难多，条件差，成功的机会也可能更多些。本着这种想法，我就很有信心地研究起佛教来。</p>
+
+<p>大学毕业时，我的佛教基础知识是很有限的。为此，我于1962年到中国佛教协会主办的中国佛学院进修了八个月。我虚心地向法尊、正果、明真、观空诸位法师以及周叔迦副院长、虞愚教授等学习佛教的历史、理论、典籍。周叔迦副院长还亲自为我拟定阅读书目，嘱我定期向他报告阅读心得。在佛学院进修的时间虽然不长，但收获不小，主要是初步地掌握了佛教的历史和理论的基本知识，对僧人的生活实践也有了直接的了解和感受。</p>
+
+<p>回到中国人民大学后，结合中国哲学史的教学工作，我开始了佛教思想的研究，也取得了一定的进展。但不久便开始&ldquo;四清&rdquo;，后来又是&ldquo;文化大革命&rdquo;，刚刚开始的研究工作不得不因此而中断。我一向珍惜光阴，但&ldquo;文化大革命&rdquo;使我在无所适从、无所作为、无可奈何中度过了一生中最宝贵的黄金季节，这是我终生为之遗憾、又是无法弥补的。我不仅不能从事所挚爱的学术工作，而且连中国人民大学都在&ldquo;四人帮&rdquo;的破坏下被迫撤销了！从1969年到1972年，我和中国人民大学许多教师一道，被发配到江西省余江县&ldquo;五七&rdquo;干校劳动。这一段时间可以说是我学术生涯的&ldquo;蛰伏时期&rdquo;。即使在这样的命运安排下，我仍然争取机会读书。在余江，除了阅读马列毛的著作外，我还读遍了《鲁迅全集》，这在当时是允许的。现在看很难说我从这部中国现代文化经典中具体学到了什么，也许后来有人对我&ldquo;冷峻严肃&rdquo;的气质评价，就是在这段蛰伏期中得到强化的。</p>
+
+<p>&ldquo;文革&rdquo;后，在改革开放的宽松环境下，我的佛教研究工作又得以继续，按原来的设想并结合实际的需要而有计划地进行，先后经历了&ldquo;拓展时期&rdquo;和&ldquo;专攻时期&rdquo;。回顾昔日人生历程，我一直生活在社会不断大变革的不平凡的岁月里，深感个人命运与历史演变密切相连，个人的学术活动也深深打上了时代的烙印。我工作了50年的中国人民大学，如今已经成为国内外知名的宗教学研究重镇。是中国人民大学为我提供了研究的机会，早在&ldquo;文化大革命&rdquo;前，有关领导对我的佛教研究价值就有深刻体认，记得1964年中国科学院在毛泽东同志的指示下创立世界宗教研究所，并在全国选调人才，我的老师任继愈所长想调我过去工作，但是中国人民大学领导没有同意。多年来，我朝着理想努力工作，终于在21世纪初被教育部选中为佛教与宗教学理论研究基地的带头人，后获得了&ldquo;全国先进工作者&rdquo;等各种荣誉，2009年被学校聘为一级教授。</p>
+
+<p style="text-align: center;"><strong>五方面体现佛教研究轨迹，十五年著成《中国佛教哲学要义》</strong></p>
+
+<p>迄今为止，我着意研究的佛教主要有以下几个方面：中国佛教思想家哲学思想的个案研究，中国佛教典籍的整理、校点、注释、今译，佛教哲学思想的宏观研究，中国佛教文化的探索，中国佛教哲学思想的系统、整体研究。这五个方面的研究大体上反映了我的佛教研究的轨迹。</p>
+
+<p>(一)中国佛教思想家哲学思想的个案研究</p>
+
+<p>如何根据现实的主客观条件展开佛教研究，如何选择突破口，使研究确有成效，我思索良久。最后我确定从魏晋南北朝的佛教思想家开始进行逐个研究，逐个突破。我首先选取的是当时最有代表性的几个佛教思想家：道安、支遁、慧远、僧肇、道生和梁武帝萧衍等作为研究对象。至于隋唐时代，我对华严宗和禅宗的思想有兴趣。在我看来，中国佛教对中国哲学影响最大的是华严宗和禅宗，所以，隋唐时代的佛教思想家我选取法藏、慧能等作为研究对象。</p>
+
+<p>我比较注意从中国传统哲学文化思想和佛教思想发展的广阔历史背景出发，去揭示佛教思想家的哲学内涵和思想特色，评价他们在佛教史、哲学史乃至思想史上的地位、作用和影响；同时又通过佛教思想家的典型思想，凸显当时的佛教思潮和整个佛教思想的发展脉络。我研究的具体方法和步骤是：尽可能地&ldquo;竭泽而渔&rdquo;，即搜集研究对象的全部著作和有关传记等原始资料，不惜花费大量的时间，尽可能无一遗漏地反复阅读史料。在阅读时特别注意文中的哲学思想观点及其内部结构，力求较准确地体会作者的原意和精神，随时勾勒出文中的观点、见解，并记下读后的感想、疑问、评论，以便形成对研究对象的独特看法。在此基础上，再参考阅读他人的研究成果，细心比较，取其长，补己短；略他人之所详，详他人之所略，精心撰写论文。</p>
+
+<p>1978年后，我抓紧时间，继续按十多年前的设想，进行魏晋南北朝时期佛教思想家的个案研究，先后写出支遁、僧肇、萧衍等人佛教思想的论文。中华书局于1982年出版了我的《魏晋南北朝佛教论丛》。后来，考虑到慧远是一位着力于融合印度佛教思想和中国传统文化的典型人物，在中国佛教思想史上占有重要的地位，于是又撰成《慧远及其佛学》一书，由中国人民大学出版社于1984年出版。此外，我还撰成《法藏》一书，1991年由台湾东大图书公司出版。</p>
+
+<p>在上述的专文与专著中，我注意努力挖掘佛教思想家的哲学意蕴，在揭示佛教思想发展规律方面作了某些尝试，并重视总结佛教理论思维的经验教训。</p>
+
+<p>(二)中国佛教典籍的整理</p>
+
+<p>要科学地研究佛教思想，最重要的是要读懂佛教典籍，深知其意，这是研究的基础和前提。读懂佛典，把握其中所包含的意蕴，绝非易事。要读懂佛典，我的体会：一、先要懂得佛教术语的含义，了解佛教的理路、体系和历史。二、要真正读懂佛典，没有捷径、窍门可寻，而是要老老实实地多读、反复地读。要设身处地地思考：佛教为什么提出这样的问题，为什么这样论证，要解决的是什么问题等等，如此认真思索，深入体会，以求达到真正的理解。三、认真做一点佛典的整理工作，这是有助于提高阅读效果的一种极为重要的方法，因为它能逼迫自己全神贯注地去弄懂原意，并通过动手整理，收到非眼看口读所能收到的效果。基于此，我做了一点佛教典籍的整理工作。如，和几位师友就中国佛教的重要典籍进行了比较系统的整理、标点，由中华书局出版了多卷本《中国佛教思想资料选编》。我个人还对华严宗的重要著作《华严金师子章》进行了校释，撰写了《华严金师子章校释》一书，由中华书局出版。后来又应约在原来校释的基础上，将原文译为现代汉语，撰成《华严金师子章今译》，由巴蜀书社出版。佛教典籍的整理工作，是一种重要的专业训练，在切实把握佛教思想方面，对我产生了良好而持久的作用。</p>
+
+<p>(三)佛教哲学现代化研究的尝试</p>
+
+<p>1986年，我的《佛教哲学》一书问世，后经扩充于1991年出版了增订本。1997年，中国人民大学出版社又将它列入&ldquo;人文丛书&rdquo;再版。当时我写《佛教哲学》，主要是出于这几种考虑：一、近四十年来，我国的佛教研究著作以佛教通史和断代史居多，而介绍不同历史时代、不同地区、不同宗派的佛教共性的东西，即佛学的基本思想，却不多见，这难以适应一般读者的需要；二、一些已有的佛学概论著作，多数是依据佛教论旨，用佛教术语组织和论述的，一般读者不易读懂。如何用现代哲学论题和术语介绍佛学的基本理论，提供一本学习佛教思想的入门书，是我长期积蓄心头的愿望。我写《佛教哲学》一书，在内容方面是着重于如实地勾勒出佛教哲学的传统体系。我认为，佛教哲学主要是由人生观、宇宙观、伦理学和认识论等方面构成，这几个方面又是密切联系、不可分割的。佛教的宇宙观和认识论为解脱论提供依据，包融于人生观和伦理学之中，而人生观和伦理学又是融为一体的。佛教哲学可以说是一种人生哲学，而佛教宇宙观、认识论比起佛教人生观则更具有浓郁的哲学思辨色彩，也较多地包含和积淀了人类认识史上一些理论思维的经验教训。为此，我在书中突出的是佛教宇宙观的论述，并在增订本中增添了佛教认识论的内容。</p>
+
+<p>是否善于运用多元化的正确方法，对佛教哲学现代化的成功研究有着重大关系。我在撰写过程中，注意运用的方法主要是：首先，从实际出发，力求适应现代人的需要，这包括两个方面：一是从佛教文献中筛选出现代一般读者应当了解的哲学思想诸层面；二是力求用现代汉语表述佛教哲学思想，这又主要表现在标题的现代化用语、佛教术语的现代化语言解说以及佛教哲学内容的现代化阐释等方面。其次，运用历史与逻辑相统一的方法。佛教哲学的发展，从小乘到大乘，从空宗到有宗，从显教到密教，由天竺而中华，由亚洲而欧美，蔚为茂林。面对这无比繁复的演变过程，我着重依据其发展轨迹，筛选其积淀着理论思维成果的主要概念、范畴、命题和论纲，依其固有的逻辑，阐释佛教哲学的思想内涵。最后，实事求是的分析、评述方法。佛教发展两千五百多年，三藏典籍浩如烟海，拥有数亿信徒，在历史与现实中都有很大影响。对这种世界性的宗教，作为一种严肃的学术研究，应当如实地把它作为世界文明史上的宝贵思想财富，同情了解，谨慎对待，认真阐释，细心分析。我在论述中，竭力排除主观好恶，淡化情感色彩，努力多作客观平实的分析和叙述，并且着重挖掘其特殊的价值和贡献，认真揭示其失误与流弊，力求做到辩证分析，实事求是，合情合理。</p>
+
+<p>(四)佛教文化研究的开拓</p>
+
+<p>20世纪80年代以来，随着改革开放的深入推进，不可避免地与现今人们观念深处的传统文化劈面相撞。学术界的历史使命感和探索精神在中华大地上升华，于是一股强劲的关于传统文化的反思热潮随之兴起。在这种思潮的影响下，我也产生了探索佛教与中国传统文化关系的强烈冲动，撰写了《中国佛教与传统文化》一书，于1988年由上海人民出版社出版，后又由长春出版社、三联书店（香港）有限公司、中国人民大学出版社相继出版。我在书中指出：&ldquo;把佛教作为一种文化现象来考察、研究，是十分必要的。&rdquo;为此，我用层次和结构的观念来理解、把握佛教，强调佛教文化不仅仅是一种无形的观念形态，也是一种有形的物质实体，它的内涵和外延都是极其丰富的。</p>
+
+<p>对于中国佛教与传统文化关系的探索，我主要是运用文化比较学的观点，着力揭示中国佛教与传统文化各种重要形态的联系。在《中国佛教与传统文化》一书中，分章论述了佛教与中国政治、伦理、哲学、文学、艺术、民俗的相互关系。</p>
+
+<p>(五)中国佛教哲学思想的系统、整体研究</p>
+
+<p>约自1987年以来，我开始集中研究中国佛教哲学思想。与内容偏于印度佛教的《佛教哲学》不同，本书从中国人的佛教著作出发，力图从中梳理出中国佛教的重要哲学问题，阐释中国佛教哲学思想的历史演变，勾画中国佛教哲学体系；在此基础上，又与印度佛教哲学思想以及中国固有的儒、道哲学思想加以比较，以凸显其独具的异彩。撰写专著《中国古代哲学问题发展史》的姊妹篇，即在思路和体裁方面与它近似的中国佛教哲学著作，是我长期以来的又一个心愿。我想，对中国佛教文化核心的哲学思想进行系统的整理研究，必将有助于从根本上把握中国传统文化的重要组成部分&mdash;&mdash;中国佛教文化，也有助于更全面地总结中国哲学，进而丰富中国哲学史的教学内涵。</p>
+
+<p>经过约15年持续的专攻、研究、撰写，我完成了90多万字的《中国佛教哲学要义》(上、下卷)一书，于2002年由中国人民大学出版社出版。全书除&ldquo;绪论&rdquo;和&ldquo;结语&rdquo;外，设五编三十二章。&ldquo;总论&rdquo;编阐述中国佛教哲学的形成、演变和思想体系。&ldquo;人生论&rdquo;编分别阐述中国佛教的因果报应论、神不灭论、涅槃观念的演变和发展、佛的含义的转换与拓展，以及净土观念的类别与转型。&ldquo;心性论&rdquo;编着重阐明中国佛教心性论的哲学范畴网络、南北朝时期佛教三大心性论思潮、天台宗的性具善恶说、华严宗的自性清净圆明说、三论、唯识和密诸宗的心性论。&ldquo;宇宙论&rdquo;编论述中国佛教的宇宙结构论、现象论和本体论。&ldquo;实践论&rdquo;编分别论述中国佛教的伦理观、禅修观、直觉论、语言观和真理观。此书先后获第六届国家图书奖、中华文化优秀著作一等奖、北京市第八届哲学社会科学优秀成果特等奖，并列入&ldquo;中国文库&rdquo;和&ldquo;经典中国&rdquo;国际出版工程出版。全书韩文译本已于2006年出版，日文和英文的翻译正在进行中。</p>
+
+<p style="text-align: center;"><strong>阐发中国哲学，弘扬中华智慧</strong></p>
+
+<p>中国哲学上下数千年，源远流长。历代哲学名家，群星灿烂，学派林立，内涵丰富。中国哲学有着自己独特的自然、社会环境和漫长的历史形成、发展过程，蕴藏着精湛的中华智慧，是世界哲学之林中颇具特色、影响深远的一个哲学类型。我一直认为，努力阐明中国传统哲学的思想价值，是我们人文学者的一项义不容辞的责任。上世纪80年代，我在从事中国哲学史的教学工作的同时，还撰写了专著《中国古代哲学问题发展史》(上、下册，中华书局1990年出版)。</p>
+
+<p>我采用问题解析体来写中国哲学史，是有见于近几十年来，通史体的中国哲学史著作已为数不少。这类著作，是以年代为经、以人物为纬来阐述中国哲学思想的发展过程。其长处是，人物思想突出，脉络清晰，有助于读者了解特定时期哲学家的总体思想。但也有其局限，这就是不容易从总体上把握中国哲学重要问题的基本内容、逻辑发展和主要特色。问题解析体也有局限，就是具体人物思想不突出，但利于叙述哲学重要问题的源流演变，这个长处正好可以弥补通史体的不足，通史体和问题解析体两种体裁互补，就能更有效地阐述中国哲学史的丰富内容，更便于读者。</p>
+
+<p>《中国古代哲学问题发展史》以问题为纲统领全书，将中国哲学的浩繁史料和诸多头绪，化约为十二个问题：宇宙生成论、本体论、时空观、常变观、矛盾观、形神观、人性论、人生理想观、历史观、名实观、知行观、真理观。每个问题编为一章，每章分别由引言、基本内容和结语三部分组成。引言是对该专题的概念、范畴的界定，对有关哲学理论问题的介绍，以及与西方哲学关系的厘定。基本内容是依据历史发展顺序，选择有代表性的人物或重要哲学著作的观点，探求本源，阐明其发展演变，给予客观描述和价值评判。结语是总结该专题的演变、类型、特点和理论思维经验教训。本书取材于儒、道、墨、法、名、阴阳诸家的学说，以及玄学、道教和佛教的思想，提要钩玄，客观评述，力争做到博中见约、由约显博的史料梳理与理论提炼。</p>
+
+<p style="text-align: center;"><strong>探求中华文化精神，探讨中国宗教理论</strong></p>
+
+<p>20世纪90年代以来，随着社会发展和时代前进步伐，我的学术视野有所扩大，研究领域也有所延伸。在中国佛教和中国哲学&ldquo;双耕&rdquo;的基础上，我对中华文化精神和中国宗教理论产生了兴趣，并结合工作需要，作了某些探求性和探讨性的研究。</p>
+
+<p>探求中华文化精神，是为了彰显中华民族精神，提高国民素质，建设共有精神家园。为此，我着重探求中华文化的传统和核心问题，提出对中华文化三大传统(人本主义、自然主义和解脱主义)的看法，并认为人生价值观是中华传统文化的核心，人文精神是中国国学之魂，自强不息是中华民族的主要精神，也强调思维方式对一个民族进步的重要意义。</p>
+
+<p>此外，儒、道、佛三教关系是我长期以来的学术兴趣所在，我重视三教关系的探索和比较研究，认为这是推进中国传统文化研究的关键性环节，但是受制于诸多因素，我的相关研究进展缓慢，成果有限。</p>
+
+<p>在中国宗教理论领域，我近年来一直在思考，正确研究和总结马克思主义宗教观、中国传统宗教观和中国化马克思主义宗教观，有着特殊重要的意义。经过初步研究，我发现当代中国化马克思主义宗教观对于马克思主义宗教观和中国传统宗教观都有重大的创新和发展，也体悟到遵循中国化马克思主义宗教观的指导，是做好我国宗教工作的关键。宗教不是社会上的孤立现象，也不是文化领域中的绝缘形态，对于宗教必须与影响它的相关因素联系起来进行研究，才能显现其独特的本质与价值。我撰写的宗教与和谐社会、经济社会、科学、文化教育等关系的小文，就是这种观念的产物。</p>
+
+<p style="text-align: center;"><strong>五十年&ldquo;仰望崇高&rdquo;，积累治学心得体会</strong></p>
+
+<p>五十年来我孜孜以求的治学生涯中，撰写了一些专著、论文。我的文章有一个共同点，一条主线，就是阐释中国传统文化的根本精神。这种精神就是追求人心向上、人性完善、人格完美，追求人际和睦、社会和谐、世界太平，也就是追求理想境界，追求崇高精神。这是我著作的宗旨，也是对自己的要求。</p>
+
+<p>纪宝成校长最近看望我时，再次提到了治学&ldquo;板凳须坐十年冷&rdquo;、静心读书、潜心治学的精神，我对此体悟较多，深知淡泊宁静对于一个学者和学校的重要性。回顾自己半个世纪的学术生涯，我积累了一些心得体会，与有志于学术研究的同志们共勉：</p>
+
+<p>一、树立志向。我根据自身的条件，确定以从事教育和学术研究为自己的职业。治学贵在立言，重在创新，即要在学术上作出新贡献。治学是一项严肃的科学工作，从事人文科学工作关乎人的精神世界构建问题，更需要适应时代要求，承担相应的社会责任，肩负起历史使命。为此我要求自己要有一份良知和真诚，以回报祖国、人民对自己成长的培育之恩。</p>
+
+<p>二、不畏困难。如，佛学自古号称难治，要求具备较多学科的知识和相应的条件，而且有时候舆论氛围又不好，成果发表也受到一定的限制。但我认为任何事情都有它的另一面，正是由于研究有难度和不利条件，研究才会更有意义，而且成功的机会也许更大。我的佛教论著可以说就是排除和克服困难后取得的一些成果。</p>
+
+<p>三、勤奋不怠。治学不仅要不畏困难，而且还要勤奋努力，有恒心，有毅力，甘于寂寞，耐于坐冷板凳。《荀子&middot;劝学》云：&ldquo;锲而舍之，朽木不折；锲而不舍，金石可镂。&rdquo;只有常堪精进，百倍用功，才能天道酬勤，有所收获。</p>
+
+<p>四、好学深思。要步入中国哲学和中国佛学的殿堂，研读有关古典著作是基础性环节，为此我要求自己虚心体会并反复琢磨古典著作探索宇宙奥秘、人生真谛的苦心深虑，以理解其内在意蕴，力避望文生义、生吞活剥。司马迁说的&ldquo;好学深思，心知其意&rdquo;，是我治学的座右铭。</p>
+
+<p>五、独立思考。独立思考是治学的生命。学术创新离不开独立思考，学术创新也离不开实事求是，而只有独立思考才能实事求是，也只有实事求是才是真正的独立思考，两者相辅相成。每当我反思以往的学术生涯时，深感有时因画地为牢，作茧自缚，而给自己带来窒息思维、桎梏思想的困境，影响了自己学术研究的开展，这种深刻教训是值得自己永远记取的。</p>
+
+<p><strong>人物简介</strong></p>
+
+<p>方立天（1933&mdash; )，浙江省永康市人。中共党员，教授，哲学家、中国哲学史专家。</p>
+
+<p>方立天1950年参加工作。1956年入北京大学哲学系学习，毕业后在中国人民大学哲学系任助教、讲师。1984年被国务院学位委员会特批为教授，1992年开始享受政府特殊津贴，2005年获全国先进工作者称号，2007年获第五届吴玉章优秀科研奖，2009年被聘为中国人民大学首批一级教授。历任中国宗教学会副会长、顾问，中国哲学史学会常务副会长、顾问，《中国哲学史》杂志主编，教育部社会科学委员会哲学学部委员，中央文史研究馆馆员。现任教育部人文社会科学重点研究基地中国人民大学佛教与宗教学理论研究所所长、宗教高等研究院院长。</p>
+
+<p>方立天主要从事中国佛教、中国哲学和中国文化的教学与研究。专著有《魏晋南北朝佛教论丛》、《华严金师子章校释》、《慧远及其佛学》、《法藏》、《佛教哲学》、《中国佛教与传统文化》、《中国古代哲学问题发展史》(上、下册)、《中国佛教哲学要义》（上、下卷）和《方立天文集》（六卷本）、《寻觅性灵：从文化到禅宗》。《佛教哲学》获1986年中国图书荣誉奖、1995年国家教委全国首届人文社会科学优秀成果一等奖，是当时国内影响最大的佛教普及读物之一。《中国佛教哲学要义》获第六届国家图书奖、第八届北京市哲学社会科学优秀成果特等奖、首届中华文化优秀著作一等奖，被誉为&ldquo;中国佛教哲学研究里程碑式的成果&rdquo;。发表文章350余篇，其中有30篇发表于《中国社会科学》和《哲学研究》。论文《论中国化马克思主义宗教观》获北京市第九届哲学社会科学优秀成果一等奖。</p>
+
+                       
+                        <div class="pull-right mt20">
+                            <!-- JiaThis Button BEGIN -->
+                            <div class="jiathis_style">
+                                <span class="jiathis_txt">分享到：</span>
+                                <a class="jiathis_button_icons_1"></a>
+                                <a class="jiathis_button_icons_2"></a>
+                                <a class="jiathis_button_icons_3"></a>
+                                <a class="jiathis_button_icons_4"></a>
+                                <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
+                                <a class="jiathis_counter_style"></a>
+                            </div>
+                            <script type="text/javascript" src="http://v3.jiathis.com/code/jia.js" charset="utf-8"></script>
+                            <!-- JiaThis Button END -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-4">
+                    <div class="t_news t_border">
+
+                    <div class="t_serve clearfix">
+                     <a href="/cms/item/?cat=15&parent=4"><img src="/static/default/images/banner/rendayingxiang.png" class="t_limg" alt=""></a>
+                     <a href="/cms/list/rdzz/?cat=16"><img src="/static/default/images/banner/rendazhizi.png" class="t_limg" alt=""></a>
+                    
+                      <a href="/cms/item/?cat=17&parent=4"><img src="/static/default/images/banner/lishirenda.jpg" class="t_limg" alt=""></a>
+                   
+                      
+                      <a href="/cms/item/?cat=18&parent=4"><img src="/static/default/images/banner/xuezairenda.jpg" class="t_limg" alt=""></a>
+ 						
+                    </div>
+                        <ul class="t_ad">
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+      
+    <div class="y_foot hidden-xs">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="t_col3">
+                        <h5>联系我们</h5>
+                        <div class="t_icon1">
+                            <i></i>
+                            <span>400-0123-517</span><br/>
+                        </div>
+                        <div class="t_icon2">
+                            <i></i>
+                            <span>zsb@ruc.edu.cn</span></br>
+                        </div>
+                        <div class="t_icon4">
+                            <i></i>
+                            <span>010-62511156(传真)</span></br>
+                        </div>
+                        <div class="t_icon3">
+                            <i></i>
+                            <span>北京市海淀区中关村大街59号<br/>知行F楼(北区食堂)六层</span></br>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="t_col3">
+                        <h5>关注我们</h5>
+                        <img src="/static/default/images/wechat.png" alt="">
+                        <p>扫描二维码关注我们</p>
+                        <p>微信公众号"人大阳光招生"</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="t_col3">
+                        <h5>学术公告</h5>
+                        
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="t_col3">
+                         <h5>快速链接
+                        <a target="_blank" href="http://211.71.30.15/index/index_main.action" style="margin-left: 40px;color: #999;font-weight: normal;font-size: 16px;">返回旧网站</a>
+                               <a target="_blank" href="http://211.71.30.15/index/index_main.action" >
+                                    <span class="icon-wrap">
+                                        <span class="icon icon-arrow_carrot-right_alt2"  style="color: #999"></span>
+                                    </span>
+                                </a>
+                        </h5>
+                        
+                                 
+                        <a href="/cms/item/1031.html" class="t_b" target = _blank>人大主页</a>
+                       
+                                 
+                        <a href="/cms/item/1032.html" class="t_b" target = _blank>人大新闻网</a>
+                       
+                                 
+                        <a href="/cms/item/1038.html" class="t_b" target = _blank>留学生招生</a>
+                       
+                                 
+                        <a href="/cms/item/1037.html" class="t_b" target = _blank>研究生招生</a>
+                       
+                                 
+                        <a href="/cms/item/1036.html" class="t_b" target = _blank>考生黄页</a>
+                       
+                                 
+                        <a href="/cms/item/1035.html" class="t_b" target = _blank>校园地图</a>
+                       
+                                 
+                        <a href="/cms/item/1034.html" class="t_b" target = _blank>校友总会</a>
+                       
+                                 
+                        <a href="/cms/item/1033.html" class="t_b" target = _blank>教育基金会</a>
+                       
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="y_bottom">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="t_info clearfix">
+                        <p>版权所有 Copyright© 中国人民大学本科生招生办公室   京ICP备05066828号-1</p>
+                        <div class="t_flogo">
+                            <a href="http://www.ruc.edu.cn/"><img src="/static/default/images/t_logo.png" alt=""></a>
+                            <a href="#" class="hidden-xs t_back">回顶部</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>中国人民大学阳光招生信息平台</title>
+    <!-- Bootstrap -->
+    <link rel="shortcut icon" href="/static/default/images/48.ico"/>
+     <link rel="bookmark" href="/static/default/images/48.ico"/>
+    <link href="/static/default/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/static/default/css/layout.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="/static/default/css/style.css" type="text/css" media="screen">
+    <script src="/static/default/js/jquery.min.js"></script>
+	<script src="http://api.microyan.com/sidebar?id=3520"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="../js/html5shiv.min.js"></script>
+    <script src="../js/respond.min.js"></script>
+    <![endif]-->
+    
+</head>
+<body>
+
+       <div class="head visible-lg">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 header clearfix">
+                    <a href="/cms/" class="logo"></a>
+                    <script language ="javascript">
+                        function ValidateValue(textbox)
+                        {
+                             var IllegalString = "\`~@#;,.!#$%^&*()+{}|\\:\"<>?-=/,\'";
+                             var textboxvalue = textbox.value;
+                             var index = textboxvalue.length - 1;
+
+                             var s = textbox.value.charAt(index);
+
+                             if(IllegalString.indexOf(s)>=0)
+                             {
+                                s = textboxvalue.substring(0,index);
+                                textbox.value = s;
+                             }
+                        }
+                    </script>
+                    <form method="get" action="/cms/item/">
+                        <div class="y_selbox hidden-xs">
+                            <div class="input-group">
+                                <input id="s" type="text" name="keyword" value="" class="form-control" placeholder="搜索" maxlength="50" onkeyup = "ValidateValue(this)">
+                              <span class="input-group-btn">
+                                <button class="btn btn-default" type="submit"></button>
+                              </span>
+                            </div>
+                        </div>
+                    </form>
+                    <ul class="nav_list hidden-xs">
+                     	
+                        <li>
+                            <a href="">最新动态</a>
+                             
+                            <div class="list_group">
+                                <div class="a-panel">
+			                       <a href="/cms/item/?cat=72&parent=1">招生动态</a>
+			                       <a href="/cms/item/?cat=9&parent=1">新闻聚焦</a>    
+                                </div>
+                            </div>
+                         
+                        </li>
+                        </li>
+                        
+                    	
+                        <li>
+                            <a href="">招生信息</a>
+                             
+                         <div class="list_group">
+                           <div class="a-panel">                                              
+	                       <a href="/cms/list/zszc/?cat=10">招生政策</a> 
+	                       <a href="javascript:void(0)" onclick="subgo()">报考指南</a> 
+	                       <!--  <a href="/cms/list/bkzn/">报考指南</a> -->
+	                       <a href="/cms/index/tslx/">特殊类型招生</a>                              
+                         </div>
+                          </div>
+                       
+                        </li>
+                        </li>
+                        
+                    	
+                        <li>
+                            <a href="">招生专业</a>
+                             
+	                    <div class="list_group"> 
+	                    <div class="a-panel">                                             
+	                      <a href="/cms/list/college/1/">学院介绍</a>  
+	                       <a href="/cms/list/professional/">专业目录</a>                            
+	                   </div>
+	                    </div>
+	                  
+                        </li>
+                        </li>
+                        
+                    	
+                        <li>
+                            <a href="">人大一览</a>
+                             
+                           <div class="list_group">
+                           <div class="a-panel">
+                              
+                              
+                             <a href="/cms/list/rdyx/?cat=15">人大影像</a> 
+ 
+                       			                            
+                              
+                                 
+                       			<a href="/cms/list/rdzz/?cat=16">人大之子</a>
+                       		                               
+                              
+                                                                              
+                                 <a href="/cms/item/?cat=17&parent=4">历史人大</a>  
+                                                             
+                              
+                                                                              
+                                 <a href="/cms/item/?cat=18&parent=4">学在人大</a>  
+                                                             
+                              
+                                                                              
+                                 <a href="/cms/item/?cat=20&parent=4">就业动态</a>  
+                                                             
+                              
+                                                                              
+                                 <a href="/cms/item/?cat=21&parent=4">奖惩助学</a>  
+                                                             
+                              
+                                                                              
+                                 <a href="/cms/item/?cat=22&parent=4">校园生活</a>  
+                                                             
+                              
+                                                                              
+                                 <a href="/cms/item/?cat=23&parent=4">国际交流</a>  
+                                                             
+                             
+                             </div>
+                            </div>
+                          
+                        </li>
+                        </li>
+                        
+                    	
+                        <li>
+                            <a href="">数据查询</a>
+                             
+                    <div class="list_group"> 
+                    <div class="a-panel">         
+                      <a href="/inquiry/admission/indexcms/">各专业分数线</a>                                     
+                       <a href="/inquiry/enrollplan/indexcms/">各省招生计划</a> 
+                      <a href="/cms/scores/ ">高考录取结果</a>                            
+                    </div>
+                    </div>                     
+                         
+                        </li>
+                        </li>
+                        
+                    	
+                        <li>
+                            <a href="">招生咨询</a>
+                             
+	                    <div class="list_group">   
+	                    <div class="a-panel">
+	                       <a href="/inquiry/enrollgroup/listcms/">各省招生组</a>                                              
+	                       <a href="/inquiry/comadvice/cmscreate/">常见咨询</a>     
+	                       <a href="/cms/index/zycp/">职业测评</a>                           
+	                    </div>
+	                    </div>
+	                 
+                        </li>
+                        </li>
+                        
+                    	
+                        <li>
+                            <a href="">公开公示</a>
+                             
+                           <div class="list_group">
+                           <div class="a-panel">
+                              
+                                                                              
+                                 <a href="/cms/item/?cat=30&parent=7">公示专栏</a>  
+                                                             
+                              
+                                                                              
+                                 <a href="/cms/item/?cat=31&parent=7">管理办法</a>  
+                                                             
+                              
+                                                                              
+                                 <a href="/cms/item/?cat=32&parent=7">纪检监督</a>  
+                                                             
+                             
+                             </div>
+                            </div>
+                          
+                        </li>
+                        </li>
+                        
+                      
+                    </ul>
+                    <a href="#" class="y_ipt_search visible-xs"></a>
+                    <a href="#" class="y_ipt_menu visible-xs"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 移动端头部 -->
+    <div class="headB hidden-lg">
+        <div class="container-fluid header">
+            <div class="row">
+                <div class="col-md-12 clearfix">
+                    <a href="/cms/" class="logo"></a>
+                    <a href="#" class="y_ipt_search"></a>
+                    <a href="#" class="y_ipt_menu"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 小分辨率右侧遮罩导航 -->
+    <!--  -->
+    <div class="y_top_menu hidden-lg">
+        <dl>
+         		
+             <dt><a href="#" class="rem_mes">最新动态</a>
+                                                                           
+                       <dd><a href="/cms/item/?cat=72&parent=1">招生动态</a></dd> 
+                       <dd><a href="/cms/item/?cat=9&parent=1">新闻聚焦</a></dd>                                    
+                              
+             </dt>
+           
+          		
+             <dt><a href="#" class="rem_mes">招生信息</a>
+                                                                            
+                       <dd><a href="/cms/list/zszc/?cat=10">招生政策</a></dd> 
+                       <dd><a href="javascript:void(0)" onclick="subgo()">报考指南</a></dd> 
+                      <!--   <dd><a href="/cms/list/bkzn/">报考指南</a></dd> -->
+                       <dd><a href="/cms/index/tslx/">特殊类型招生</a></dd>                               
+                              
+             </dt>
+           
+          		
+             <dt><a href="#" class="rem_mes">招生专业</a>
+                                                             
+                       <dd><a href="/cms/list/college/1/">学院介绍</a></dd>  
+                       <dd><a href="/cms/list/professional/">专业目录</a></dd>                             
+                              
+             </dt>
+           
+          		
+             <dt><a href="#" class="rem_mes">人大一览</a>
+               
+                    
+                        
+                          <dd><a href="/cms/list/rdyx/?cat=15">人大影像</a></dd>  
+                         
+                          
+                                                     
+                    
+                           
+                        <dd><a href="/cms/list/rdzz/?cat=16">人大之子</a></dd>                          
+                                                    
+                    
+                                                
+                       <dd><a href="/cms/item/?cat=17&parent=4">历史人大</a></dd>  
+                                                   
+                    
+                                                
+                       <dd><a href="/cms/item/?cat=18&parent=4">学在人大</a></dd>  
+                                                   
+                    
+                                                
+                       <dd><a href="/cms/item/?cat=20&parent=4">就业动态</a></dd>  
+                                                   
+                    
+                                                
+                       <dd><a href="/cms/item/?cat=21&parent=4">奖惩助学</a></dd>  
+                                                   
+                    
+                                                
+                       <dd><a href="/cms/item/?cat=22&parent=4">校园生活</a></dd>  
+                                                   
+                    
+                                                
+                       <dd><a href="/cms/item/?cat=23&parent=4">国际交流</a></dd>  
+                                                   
+                   
+                              
+             </dt>
+           
+          		
+             <dt><a href="#" class="rem_mes">数据查询</a>
+                       
+                       <dd><a href="/inquiry/admission/indexcms/">各专业分数线</a></dd>                                     
+                       <dd><a href="/inquiry/enrollplan/indexcms/">各省招生计划</a></dd> 
+                       <dd><a href="/cms/scores/ ">高考录取结果</a></dd>                                           
+                              
+             </dt>
+           
+          		
+             <dt><a href="#" class="rem_mes">招生咨询</a>
+                        
+                       <dd><a href="/inquiry/enrollgroup/listcms/">各省招生组</a></dd>                                     
+                       <dd><a href="/inquiry/comadvice/cmscreate/">常见咨询</a></dd> 
+                       <dd><a href="/cms/index/zycp/">职业测评</a></dd>                                            
+                              
+             </dt>
+           
+          		
+             <dt><a href="#" class="rem_mes">公开公示</a>
+               
+                    
+                                                
+                       <dd><a href="/cms/item/?cat=30&parent=7">公示专栏</a></dd>  
+                                                   
+                    
+                                                
+                       <dd><a href="/cms/item/?cat=31&parent=7">管理办法</a></dd>  
+                                                   
+                    
+                                                
+                       <dd><a href="/cms/item/?cat=32&parent=7">纪检监督</a></dd>  
+                                                   
+                   
+                              
+             </dt>
+           
+           	   
+        </dl>
+    </div>
+    <div class="clearfix"></div> 
+
+<script type="text/javascript">
+     //平台、设备和操作系统
+   function subgo() {
+    var system ={
+        win : false,
+        mac : false,
+        xll : false
+    };
+    //检测平台
+    var p = navigator.platform;
+    system.win = p.indexOf("Win") == 0;
+    system.mac = p.indexOf("Mac") == 0;
+    system.x11 = (p == "X11") || (p.indexOf("Linux") == 0);
+    //跳转语句，如果是手机访问就自动跳转到wap.baidu.com页面
+    /*
+    if(system.win||system.mac||system.xll){
+        window.location.href="/cms/list/bkzn/ ";
+
+    }else{
+        window.location.href="/cms/list/bkzn/phone/ ";
+    }
+    */
+    window.location.href="/cms/list/bkzn/ "; 
+ }   
+</script>  
+<script type="text/javascript">
+        $(function(){
+            $('.y_ipt_menu').click(function(){
+                if($(this).hasClass('open')){
+                    $(this).removeClass('open');
+                    $('.y_top_menu').animate({width: '0'},200);
+                }else{
+                    $(this).addClass('open');
+                    $('.y_top_menu').animate({width: '210px'},200);
+                }
+
+            });
+            $('dt a.rem_mes').bind('click', function() {
+                if($('dd').is(':visible')){
+                     $('dd').hide(); 
+                } else{
+                    $('dd').show();
+                }
+        });
+        });
+</script>     
+
+    <div class="y_tit_box">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 header">
+                    <h1 class="y_tit">中国人民大学2020年澳门保送生招生简章</h1>
+                    <span class="y_des"></span>
+                    <div class="r-title hidden-xs">
+                    
+                        <span class="grey-hint-sm">更新时间：2019-10-16</span>
+                        <span class="grey-hint-sm">点击数：27885</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 主体 -->
+    <div class="container content" >
+        <div class="content-inner">
+            <div class="row">
+                <div class="col-md-9 col-sm-8">
+                    <div class="article">
+                       <p style="text-align: left; line-height: normal;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 16px;"><strong style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; text-indent: 36px;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;;">&nbsp; &nbsp; &nbsp; &nbsp; <span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">一、学校简介</span></span></strong><br/></span></p><p style="text-indent: 36px; line-height: normal;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">中国人民大学（Renmin University of China）是一所以人文社会科学为主，兼有理工学科的综合性研究型全国重点大学，位于北京市海淀区中关村大街，直属于教育部。在长期的办学实践中，中国人民大学以“立学为民、治学报国”为办学宗旨，积极探索，求真务实，使学校成为我国人文社会科学高等教育和研究的重要基地，被誉为“我国人文社会科学高等教育领域的一面旗帜”。</span></p><p style="text-indent: 36px; line-height: normal;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">在最新的一次学科评估中，中国人民大学理论经济学、应用经济学、法学、社会学、马克思主义理论、新闻传播学、统计学、工商管理、公共管理9个学科获评A+，哲学、政治学2个学科获评A，中国史、中国语言文学、图书情报与档案管理3个学科获评A-。在人文社会科学专业排名中，人民大学A+学科数量为8个，A类学科数量为13个，均居全国第二。2017年，中国人民大学入选“双一流”建设高校，哲学、理论经济学、应用经济学、法学、政治学、社会学、马克思主义理论、新闻传播学、中国史、统计学、工商管理、农林经济管理、公共管理、图书情报与档案管理共14个学科入选“双一流”建设学科。</span></p><p style="text-indent: 36px; line-height: normal;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px; text-indent: 43px;">长期以来，中国人民大学高度重视本科人才培养工作，推出本科人才培养路线图，坚持“立德树人”的人才培养理念，着眼于“研究型学习制度”建设，确立精实课程、国际研学、名师沙龙、拓展支持、全员导师、研究实践、双选认证、公益服务等8项制度，完善人才培养方式，促进学生学习真知识、发现真问题、开展真研究、提出真见解，为承担使命、奉献社会并逐步成长为未来的“国民表率、社会栋梁”打下扎实的基础。</span></p><p style="text-indent: 36px; line-height: normal;"><strong style="font-size: 14px; font-family: 微软雅黑, &quot;Microsoft YaHei&quot;;">二、报名条件</strong></p><p style="text-indent: 36px; line-height: normal;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">1、符合教育部及澳门高等教育局关于《2020年中国普通高等学校联合招收澳门保送生保送须知》中的基本要求。</span></p><p style="text-indent: 36px; line-height: normal;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">2、德智体美劳全面发展，学习成绩位于年级前列。</span></p><p style="text-indent: 36px; line-height: normal;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">3、身体健康，符合教育部相关体检标准。</span></p><p style="text-indent: 36px; line-height: normal;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">4、学历档案材料真实齐全。</span></p><p style="text-indent: 36px; line-height: normal;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">5、原则上应具有2年（含）以上在澳门地区学习经历。</span></p><p style="text-indent: 36px; line-height: normal;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;"><strong>三、录取办法</strong></span></p><p style="text-indent: 36px; line-height: normal;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">1、澳门高等教育局统一组织报名。</span></p><p style="text-indent: 36px; line-height: normal;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">2、中国人民大学本科生招生办公室组织选拔考试。</span></p><p style="text-indent: 36px; line-height: normal;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">3、中国人民大学招生工作领导小组择优确定录取名单。</span></p><p style="margin-bottom: 10px; text-indent: 36px; line-height: normal;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;"><strong><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;;">四、招生专业</span></strong></span></p><table cellspacing="0" cellpadding="0" width="666" align="center"><thead><tr style=";height:8px" class="firstRow"><td width="57" style="border-width: 1px; border-color: windowtext; padding: 0px 7px; border-style: solid;" height="8"><p style="text-align: center; line-height: normal;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">序号</span></p></td><td width="127" style="border-width: 1px; border-top-color: windowtext; border-right-color: windowtext; border-bottom-color: windowtext; border-style: solid; border-left-color: initial; padding: 0px 7px;" height="8"><p style="text-align: center; line-height: normal;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">招生专业</span></p></td><td width="168" style="border-width: 1px; border-top-color: windowtext; border-right-color: windowtext; border-bottom-color: windowtext; border-style: solid; border-left-color: initial; padding: 0px 7px;" height="8"><p style="text-align: center; line-height: normal;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">所属学院</span></p></td><td width="313" style="border-width: 1px; border-top-color: windowtext; border-right-color: windowtext; border-bottom-color: windowtext; border-style: solid; border-left-color: initial; padding: 0px 7px;" height="8"><p style="text-align: center; line-height: normal;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">教学环节专业</span></p></td></tr></thead><tbody><tr style=";height:21px"><td width="57" rowspan="5" style="border-width: 1px; border-right-color: windowtext; border-bottom-color: windowtext; border-left-color: windowtext; border-style: solid; border-top-color: initial; padding: 0px 7px;" height="21"><p style="text-align: center; line-height: normal;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">1</span></p></td><td width="127" rowspan="5" style="border-width: 1px; border-style: solid; border-top-color: initial; border-left-color: initial; border-bottom-color: windowtext; border-right-color: windowtext; padding: 0px 7px;" height="21"><p style="line-height: normal;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">人文科学试验班</span></p></td><td width="168" style="border-width: 1px; border-style: solid; border-top-color: initial; border-left-color: initial; border-bottom-color: windowtext; border-right-color: windowtext; padding: 0px 7px;" height="21"><p style="line-height: normal;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">文学院</span></p></td><td width="313" style="border-width: 1px; border-style: solid; border-top-color: initial; border-left-color: initial; border-bottom-color: windowtext; border-right-color: windowtext; padding: 0px 7px;" height="21"><p style="line-height: normal;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">汉语言文学</span></p><p style="line-height: normal;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">汉语言</span></p></td></tr><tr style=";height:21px"><td width="168" style="border-width: 1px; border-style: solid; border-top-color: initial; border-left-color: initial; border-bottom-color: windowtext; border-right-color: windowtext; padding: 0px 7px;" height="21"><p style="line-height: normal;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">历史学院</span></p></td><td width="313" style="border-width: 1px; border-style: solid; border-top-color: initial; border-left-color: initial; border-bottom-color: windowtext; border-right-color: windowtext; padding: 0px 7px;" height="21"><p style="line-height: normal;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">历史学</span></p><p style="line-height: normal;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">世界史</span></p><p style="line-height: normal;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">考古学</span></p></td></tr><tr style=";height:21px"><td width="168" style="border-width: 1px; border-style: solid; border-top-color: initial; border-left-color: initial; border-bottom-color: windowtext; border-right-color: windowtext; padding: 0px 7px;" height="21"><p style="line-height: normal;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">哲学院</span></p></td><td width="313" style="border-width: 1px; border-style: solid; border-top-color: initial; border-left-color: initial; border-bottom-color: windowtext; border-right-color: windowtext; padding: 0px 7px;" height="21"><p style="line-height: normal;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">哲学</span></p><p style="line-height: normal;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">宗教学</span></p><p style="line-height: normal;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">伦理学</span></p><p style="line-height: normal;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">政治学、经济学与哲学（PPE实验班）</span></p></td></tr><tr style=";height:21px"><td width="168" style="border-width: 1px; border-style: solid; border-top-color: initial; border-left-color: initial; border-bottom-color: windowtext; border-right-color: windowtext; padding: 0px 7px;" height="21"><p style="line-height: normal;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">国学院</span></p></td><td width="313" style="border-width: 1px; border-style: solid; border-top-color: initial; border-left-color: initial; border-bottom-color: windowtext; border-right-color: windowtext; padding: 0px 7px;" height="21"><p style="line-height: normal;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">国学</span></p></td></tr><tr style=";height:21px"><td width="168" style="border-width: 1px; border-style: solid; border-top-color: initial; border-left-color: initial; border-bottom-color: windowtext; border-right-color: windowtext; padding: 0px 7px;" height="21"><p style="line-height: normal;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">马克思主义学院</span></p></td><td width="313" style="border-width: 1px; border-style: solid; border-top-color: initial; border-left-color: initial; border-bottom-color: windowtext; border-right-color: windowtext; padding: 0px 7px;" height="21"><p style="line-height: normal;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">中国共产党历史</span></p><p style="line-height: normal;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">马克思主义理论</span></p></td></tr><tr style=";height:42px"><td width="57" rowspan="2" style="border-width: 1px; border-right-color: windowtext; border-bottom-color: windowtext; border-left-color: windowtext; border-style: solid; border-top-color: initial; padding: 0px 7px;" height="42"><p style="text-align: center; line-height: normal;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">2</span></p></td><td width="127" rowspan="2" style="border-width: 1px; border-style: solid; border-top-color: initial; border-left-color: initial; border-bottom-color: windowtext; border-right-color: windowtext; padding: 0px 7px;" height="42"><p style="line-height: normal;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">经济学类</span></p></td><td width="168" style="border-width: 1px; border-style: solid; border-top-color: initial; border-left-color: initial; border-bottom-color: windowtext; border-right-color: windowtext; padding: 0px 7px;" height="42"><p style="line-height: normal;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">经济学院</span></p></td><td width="313" style="border-width: 1px; border-style: solid; border-top-color: initial; border-left-color: initial; border-bottom-color: windowtext; border-right-color: windowtext; padding: 0px 7px;" height="42"><p style="line-height: normal;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">经济学</span></p><p style="line-height: normal;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">国际经济与贸易</span></p></td></tr><tr style=";height:42px"><td width="168" style="border-width: 1px; border-style: solid; border-top-color: initial; border-left-color: initial; border-bottom-color: windowtext; border-right-color: windowtext; padding: 0px 7px;" height="42"><p style="line-height: normal;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">应用经济学院</span></p></td><td width="313" style="border-width: 1px; border-style: solid; border-top-color: initial; border-left-color: initial; border-bottom-color: windowtext; border-right-color: windowtext; padding: 0px 7px;" height="42"><p style="line-height: normal;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">国民经济管理</span></p><p style="line-height: normal;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">能源经济</span></p></td></tr><tr style=";height:42px"><td width="57" style="border-width: 1px; border-right-color: windowtext; border-bottom-color: windowtext; border-left-color: windowtext; border-style: solid; border-top-color: initial; padding: 0px 7px;" height="42"><p style="text-align: center; line-height: normal;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">3</span></p></td><td width="127" style="border-width: 1px; border-style: solid; border-top-color: initial; border-left-color: initial; border-bottom-color: windowtext; border-right-color: windowtext; padding: 0px 7px;" height="42"><p style="line-height: normal;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">金融学类</span></p></td><td width="168" rowspan="2" style="border-width: 1px; border-style: solid; border-top-color: initial; border-left-color: initial; border-bottom-color: windowtext; border-right-color: windowtext; padding: 0px 7px;" height="42"><p style="line-height: normal;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">财政金融学院</span></p></td><td width="313" style="border-width: 1px; border-style: solid; border-top-color: initial; border-left-color: initial; border-bottom-color: windowtext; border-right-color: windowtext; padding: 0px 7px;" height="42"><p style="line-height: normal;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">金融学</span></p><p style="line-height: normal;"><span style="font-size: 14px; font-family: 微软雅黑, &quot;Microsoft YaHei&quot;;">○金融工程</span></p><p style="line-height: normal;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">保险学</span></p><p style="line-height: normal;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">信用管理</span></p></td></tr><tr style=";height:42px"><td width="57" style="border-width: 1px; border-right-color: windowtext; border-bottom-color: windowtext; border-left-color: windowtext; border-style: solid; border-top-color: initial; padding: 0px 7px;" height="42"><p style="text-align: center; line-height: normal;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">4</span></p></td><td width="127" style="border-width: 1px; border-style: solid; border-top-color: initial; border-left-color: initial; border-bottom-color: windowtext; border-right-color: windowtext; padding: 0px 7px;" height="42"><p style="line-height: normal;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">财政学类</span></p></td><td width="313" style="border-width: 1px; border-style: solid; border-top-color: initial; border-left-color: initial; border-bottom-color: windowtext; border-right-color: windowtext; padding: 0px 7px;" height="42"><p style="line-height: normal;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">财政学</span></p><p style="line-height: normal;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">税收学</span></p></td></tr><tr style=";height:31px"><td width="57" style="border-width: 1px; border-right-color: windowtext; border-bottom-color: windowtext; border-left-color: windowtext; border-style: solid; border-top-color: initial; padding: 0px 7px;" height="31"><p style="text-align: center; line-height: normal;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">5</span></p></td><td width="127" style="border-width: 1px; border-style: solid; border-top-color: initial; border-left-color: initial; border-bottom-color: windowtext; border-right-color: windowtext; padding: 0px 7px;" height="31"><p style="line-height: normal;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">法学</span></p></td><td width="168" style="border-width: 1px; border-style: solid; border-top-color: initial; border-left-color: initial; border-bottom-color: windowtext; border-right-color: windowtext; padding: 0px 7px;" height="31"><p style="line-height: normal;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">法学院</span></p></td><td width="313" style="border-width: 1px; border-style: solid; border-top-color: initial; border-left-color: initial; border-bottom-color: windowtext; border-right-color: windowtext; padding: 0px 7px;" height="31"><p style="line-height: normal;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">法学</span></p></td></tr><tr style=";height:13px"><td width="57" style="border-width: 1px; border-right-color: windowtext; border-bottom-color: windowtext; border-left-color: windowtext; border-style: solid; border-top-color: initial; padding: 0px 7px;" height="13"><p style="text-align: center; line-height: normal;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">6</span></p></td><td width="127" style="border-width: 1px; border-style: solid; border-top-color: initial; border-left-color: initial; border-bottom-color: windowtext; border-right-color: windowtext; padding: 0px 7px;" height="13"><p style="line-height: normal;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">社会学类</span></p></td><td width="168" style="border-width: 1px; border-style: solid; border-top-color: initial; border-left-color: initial; border-bottom-color: windowtext; border-right-color: windowtext; padding: 0px 7px;" height="13"><p style="line-height: normal;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">社会与人口学院</span></p></td><td width="313" style="border-width: 1px; border-style: solid; border-top-color: initial; border-left-color: initial; border-bottom-color: windowtext; border-right-color: windowtext; padding: 0px 7px;" height="13"><p style="line-height: normal;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">社会学</span></p><p style="line-height: normal;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">社会工作</span></p><p style="line-height: normal;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">公共事业管理（公共政策与人口管理）</span></p></td></tr><tr style=";height:21px"><td width="57" style="border-width: 1px; border-right-color: windowtext; border-bottom-color: windowtext; border-left-color: windowtext; border-style: solid; border-top-color: initial; padding: 0px 7px;" height="21"><p style="text-align: center; line-height: normal;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">7</span></p></td><td width="127" style="border-width: 1px; border-style: solid; border-top-color: initial; border-left-color: initial; border-bottom-color: windowtext; border-right-color: windowtext; padding: 0px 7px;" height="21"><p style="line-height: normal;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">国际政治</span></p></td><td width="168" style="border-width: 1px; border-style: solid; border-top-color: initial; border-left-color: initial; border-bottom-color: windowtext; border-right-color: windowtext; padding: 0px 7px;" height="21"><p style="line-height: normal;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">国际关系学院</span></p></td><td width="313" style="border-width: 1px; border-style: solid; border-top-color: initial; border-left-color: initial; border-bottom-color: windowtext; border-right-color: windowtext; padding: 0px 7px;" height="21"><p style="line-height: normal;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">政治学与行政学</span></p><p style="line-height: normal;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">国际政治</span></p><p style="line-height: normal;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">外交学</span></p></td></tr><tr style=";height:21px"><td width="57" style="border-width: 1px; border-right-color: windowtext; border-bottom-color: windowtext; border-left-color: windowtext; border-style: solid; border-top-color: initial; padding: 0px 7px;" height="21"><p style="text-align: center; line-height: normal;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">8</span></p></td><td width="127" style="border-width: 1px; border-style: solid; border-top-color: initial; border-left-color: initial; border-bottom-color: windowtext; border-right-color: windowtext; padding: 0px 7px;" height="21"><p style="line-height: normal;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">新闻传播学类</span></p></td><td width="168" style="border-width: 1px; border-style: solid; border-top-color: initial; border-left-color: initial; border-bottom-color: windowtext; border-right-color: windowtext; padding: 0px 7px;" height="21"><p style="line-height: normal;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">新闻学院</span></p></td><td width="313" style="border-width: 1px; border-style: solid; border-top-color: initial; border-left-color: initial; border-bottom-color: windowtext; border-right-color: windowtext; padding: 0px 7px;" height="21"><p style="line-height: normal;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">新闻学</span></p><p style="line-height: normal;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">广播电视学</span></p><p style="line-height: normal;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">广告学</span></p><p style="line-height: normal;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">传播学</span></p></td></tr><tr style=";height:20px"><td width="57" rowspan="3" style="border-width: 1px; border-right-color: windowtext; border-bottom-color: windowtext; border-left-color: windowtext; border-style: solid; border-top-color: initial; padding: 0px 7px;" height="20"><p style="text-align: center; line-height: normal;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">9</span></p></td><td width="127" rowspan="3" style="border-width: 1px; border-style: solid; border-top-color: initial; border-left-color: initial; border-bottom-color: windowtext; border-right-color: windowtext; padding: 0px 7px;" height="20"><p style="line-height: normal;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">社会科学试验班（管理学科类）</span></p></td><td width="168" style="border-width: 1px; border-style: solid; border-top-color: initial; border-left-color: initial; border-bottom-color: windowtext; border-right-color: windowtext; padding: 0px 7px;" height="20"><p style="line-height: normal;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">农业与农村发展学院</span></p></td><td width="313" style="border-width: 1px; border-style: solid; border-top-color: initial; border-left-color: initial; border-bottom-color: windowtext; border-right-color: windowtext; padding: 0px 7px;" height="20"><p style="line-height: normal;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">农林经济管理</span></p><p style="line-height: normal;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">农村区域发展</span></p></td></tr><tr style=";height:20px"><td width="168" style="border-width: 1px; border-style: solid; border-top-color: initial; border-left-color: initial; border-bottom-color: windowtext; border-right-color: windowtext; padding: 0px 7px;" height="20"><p style="line-height: normal;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">公共管理学院</span></p></td><td width="313" style="border-width: 1px; border-style: solid; border-top-color: initial; border-left-color: initial; border-bottom-color: windowtext; border-right-color: windowtext; padding: 0px 7px;" height="20"><p style="line-height: normal;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">行政管理</span></p><p style="line-height: normal;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">土地资源管理</span></p><p style="line-height: normal;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">城市管理</span></p></td></tr><tr style=";height:20px"><td width="168" style="border-width: 1px; border-style: solid; border-top-color: initial; border-left-color: initial; border-bottom-color: windowtext; border-right-color: windowtext; padding: 0px 7px;" height="20"><p style="line-height: normal;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">信息资源管理学院</span></p></td><td width="313" style="border-width: 1px; border-style: solid; border-top-color: initial; border-left-color: initial; border-bottom-color: windowtext; border-right-color: windowtext; padding: 0px 7px;" height="20"><p style="line-height: normal;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">信息管理与信息系统（政务信息管理）</span></p><p style="line-height: normal;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">档案学</span></p><p style="line-height: normal;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">信息资源管理</span></p></td></tr><tr style=";height:41px"><td width="57" rowspan="7" style="border-width: 1px; border-right-color: windowtext; border-bottom-color: windowtext; border-left-color: windowtext; border-style: solid; border-top-color: initial; padding: 0px 7px;" height="41"><p style="text-align: center; line-height: normal;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">10</span></p></td><td width="127" rowspan="7" style="border-width: 1px; border-style: solid; border-top-color: initial; border-left-color: initial; border-bottom-color: windowtext; border-right-color: windowtext; padding: 0px 7px;" height="41"><p style="line-height: normal;"><span style="font-size: 14px; font-family: 微软雅黑, &quot;Microsoft YaHei&quot;;">○理科试验班</span></p></td><td width="168" style="border-width: 1px; border-style: solid; border-top-color: initial; border-left-color: initial; border-bottom-color: windowtext; border-right-color: windowtext; padding: 0px 7px;" height="41"><p style="line-height: normal;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">统计学院</span></p></td><td width="313" style="border-width: 1px; border-style: solid; border-top-color: initial; border-left-color: initial; border-bottom-color: windowtext; border-right-color: windowtext; padding: 0px 7px;" height="41"><p style="line-height: normal;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">○经济统计学</span></p><p style="line-height: normal;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">○统计学</span></p><p style="line-height: normal;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">○应用统计学</span></p><p style="line-height: normal;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">○数据科学与大数据技术</span></p></td></tr><tr style=";height:47px"><td width="168" style="border-width: 1px; border-style: solid; border-top-color: initial; border-left-color: initial; border-bottom-color: windowtext; border-right-color: windowtext; padding: 0px 7px;" height="47"><p style="line-height: normal;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">环境学院</span></p></td><td width="313" style="border-width: 1px; border-style: solid; border-top-color: initial; border-left-color: initial; border-bottom-color: windowtext; border-right-color: windowtext; padding: 0px 7px;" height="47"><p style="line-height: normal;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">○资源与环境经济学</span></p><p style="line-height: normal;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">○环境科学</span></p><p style="line-height: normal;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">○环境工程</span></p><p style="line-height: normal;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">○公共事业管理（环境与资源管理）</span></p></td></tr><tr style=";height:63px"><td width="168" style="border-width: 1px; border-style: solid; border-top-color: initial; border-left-color: initial; border-bottom-color: windowtext; border-right-color: windowtext; padding: 0px 7px;" height="63"><p style="line-height: normal;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">信息学院</span></p></td><td width="313" style="border-width: 1px; border-style: solid; border-top-color: initial; border-left-color: initial; border-bottom-color: windowtext; border-right-color: windowtext; padding: 0px 7px;" height="63"><p style="line-height: normal;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">○计算机科学与技术</span></p><p style="line-height: normal;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">○软件工程</span></p><p style="line-height: normal;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">○信息安全</span></p><p style="line-height: normal;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">○信息管理与信息系统</span></p><p style="line-height: normal;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">○数据科学与大数据技术</span></p></td></tr><tr style=";height:22px"><td width="168" style="border-width: 1px; border-style: solid; border-top-color: initial; border-left-color: initial; border-bottom-color: windowtext; border-right-color: windowtext; padding: 0px 7px;" height="22"><p style="line-height: normal;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">数学学院</span></p></td><td width="313" style="border-width: 1px; border-style: solid; border-top-color: initial; border-left-color: initial; border-bottom-color: windowtext; border-right-color: windowtext; padding: 0px 7px;" height="22"><p style="line-height: normal;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">○数学与应用数学</span></p></td></tr><tr style=";height:21px"><td width="168" style="border-width: 1px; border-style: solid; border-top-color: initial; border-left-color: initial; border-bottom-color: windowtext; border-right-color: windowtext; padding: 0px 7px;" height="21"><p style="line-height: normal;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">物理学系</span></p></td><td width="313" style="border-width: 1px; border-style: solid; border-top-color: initial; border-left-color: initial; border-bottom-color: windowtext; border-right-color: windowtext; padding: 0px 7px;" height="21"><p style="line-height: normal;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">○物理学</span></p><p style="line-height: normal;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">○材料物理</span></p></td></tr><tr style=";height:22px"><td width="168" style="border-width: 1px; border-style: solid; border-top-color: initial; border-left-color: initial; border-bottom-color: windowtext; border-right-color: windowtext; padding: 0px 7px;" height="22"><p style="line-height: normal;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">化学系</span></p></td><td width="313" style="border-width: 1px; border-style: solid; border-top-color: initial; border-left-color: initial; border-bottom-color: windowtext; border-right-color: windowtext; padding: 0px 7px;" height="22"><p style="line-height: normal;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">○化学</span></p></td></tr><tr style=";height:22px"><td width="168" style="border-width: 1px; border-style: solid; border-top-color: initial; border-left-color: initial; border-bottom-color: windowtext; border-right-color: windowtext; padding: 0px 7px;" height="22"><p style="line-height: normal;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">心理学系</span></p></td><td width="313" style="border-width: 1px; border-style: solid; border-top-color: initial; border-left-color: initial; border-bottom-color: windowtext; border-right-color: windowtext; padding: 0px 7px;" height="22"><p style="line-height: normal;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">○应用心理学</span></p></td></tr><tr style=";height:147px"><td width="57" style="border-width: 1px; border-right-color: windowtext; border-bottom-color: windowtext; border-left-color: windowtext; border-style: solid; border-top-color: initial; padding: 0px 7px;" height="147"><p style="text-align: center; line-height: normal;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">11</span></p></td><td width="127" style="border-width: 1px; border-style: solid; border-top-color: initial; border-left-color: initial; border-bottom-color: windowtext; border-right-color: windowtext; padding: 0px 7px;" height="147"><p style="line-height: normal;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">工商管理类</span></p></td><td width="168" style="border-width: 1px; border-style: solid; border-top-color: initial; border-left-color: initial; border-bottom-color: windowtext; border-right-color: windowtext; padding: 0px 7px;" height="147"><p style="line-height: normal;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">商学院</span></p></td><td width="313" style="border-width: 1px; border-style: solid; border-top-color: initial; border-left-color: initial; border-bottom-color: windowtext; border-right-color: windowtext; padding: 0px 7px;" height="147"><p style="line-height: normal;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">贸易经济</span></p><p style="line-height: normal;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">管理科学</span></p><p style="line-height: normal;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">工商管理</span></p><p style="line-height: normal;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">市场营销</span></p><p style="line-height: normal;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">会计学</span></p><p style="line-height: normal;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">财务管理</span></p></td></tr><tr style=";height:22px"><td width="57" style="border-width: 1px; border-right-color: windowtext; border-bottom-color: windowtext; border-left-color: windowtext; border-style: solid; border-top-color: initial; padding: 0px 7px;" height="22"><p style="text-align: center; line-height: normal;"><span style="letter-spacing: -1px; font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">12</span></p></td><td width="127" style="border-width: 1px; border-style: solid; border-top-color: initial; border-left-color: initial; border-bottom-color: windowtext; border-right-color: windowtext; padding: 0px 7px;" height="22"><p style="line-height: normal;"><span style="letter-spacing: -1px; font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">人力资源管理</span></p></td><td width="168" style="border-width: 1px; border-style: solid; border-top-color: initial; border-left-color: initial; border-bottom-color: windowtext; border-right-color: windowtext; padding: 0px 7px;" height="22"><p style="line-height: normal;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">劳动人事学院</span></p></td><td width="313" style="border-width: 1px; border-style: solid; border-top-color: initial; border-left-color: initial; border-bottom-color: windowtext; border-right-color: windowtext; padding: 0px 7px;" height="22"><p style="line-height: normal;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">劳动经济学</span></p><p style="line-height: normal;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">人力资源管理</span></p><p style="line-height: normal;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">劳动关系</span></p><p style="line-height: normal;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">劳动与社会保障</span></p></td></tr></tbody></table><p style="text-indent: 43px; line-height: normal;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">注：带○的专业只招理工类学生，其余的专业文理兼收。以上招生专业学制均为4年。</span></p><p style="text-indent: 36px; line-height: normal;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;"><strong>五、招生计划</strong></span></p><p style="text-indent: 36px; line-height: normal;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">20人（根据生源情况确定最终名额，宁缺毋滥）。</span></p><p style="text-indent: 36px; line-height: normal;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;"><strong>六、报名材料</strong></span></p><p style="text-indent: 36px; line-height: normal;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">1、考生个人简历一份，要求如实反映学生本人学习成长经历，并附报考中国人民大学的个人陈述一份（全面展示考生本人的报考理由、性格特点、爱好特长、报考专业相关学习研究经历、学习能力、未来规划等各方面情况。由考生本人手书，不超过1500字，无固定格式要求）。</span></p><p style="text-indent: 36px; line-height: normal;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">2、考生学籍档案材料复印件一份，其中必须包括学习成绩的档案材料复印件，并在复印件上加盖推荐单位印章。</span></p><p style="text-indent: 36px; line-height: normal;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">3、个人身份证明复印件一份。</span></p><p style="text-indent: 36px; line-height: normal;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">4、考生所在学校的推荐信一份，推荐信要求学校注明保证所推荐考生材料的真实性字样。</span></p><p style="text-indent: 36px; line-height: normal;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;"><strong>七、联系方式</strong></span></p><p style="text-indent: 36px; line-height: normal;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">电话：86-10-62511340</span></p><p style="text-indent: 36px; line-height: normal;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">传真：86-10-62511156</span></p><p style="text-indent: 36px; line-height: normal;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">网址：http://</span><a href="http://www.ruc.edu.cn/" style="text-decoration: underline; color: windowtext; font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;"><span style="color: windowtext; font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">www.ruc.edu.cn</span></a><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">(中国人民大学主页)</span></p><p style="text-indent: 36px; line-height: normal;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; http://rdzs.ruc.edu.cn（阳光招生信息平台）</span></p><p style="text-indent: 36px; line-height: normal;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">电子邮箱：</span><a href="mailto:zsbgsss@ruc.edu.cn" style="text-decoration: underline; color: windowtext; font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;"><span style="color: windowtext; font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">zsb@ruc.edu.cn</span></a></p><p style="text-indent: 36px; line-height: normal;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">校址：北京市海淀区中关村大街59号</span></p><p style="text-indent: 36px; line-height: normal;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">邮政编码：100872</span></p><p style="text-align: start; text-indent: 36px; line-height: normal;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; text-align: right; text-indent: 245px; font-size: 14px;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;中国人民大学本科生招生办公室</span></p><p style="margin-right: 85px; text-indent: 352px; line-height: normal;"><span style="font-family: 仿宋; font-size: 14px;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span style="font-size: 16px; font-family: 微软雅黑, &quot;Microsoft YaHei&quot;;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">2019年10月&nbsp;&nbsp;</span></span></span></p><p><br/></p>
+                       
+                        <div class="pull-right mt20">
+                            <!-- JiaThis Button BEGIN -->
+                            <div class="jiathis_style">
+                                <span class="jiathis_txt">分享到：</span>
+                                <a class="jiathis_button_icons_1"></a>
+                                <a class="jiathis_button_icons_2"></a>
+                                <a class="jiathis_button_icons_3"></a>
+                                <a class="jiathis_button_icons_4"></a>
+                                <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
+                                <a class="jiathis_counter_style"></a>
+                            </div>
+                            <script type="text/javascript" src="http://v3.jiathis.com/code/jia.js" charset="utf-8"></script>
+                            <!-- JiaThis Button END -->
+                        </div>
+                    </div>
+                </div>
+            <div class="col-lg-3 col-md-4 col-sm-5 col-xs-12" style="margin-bottom:70px;">
+                <div class="t_news">
+                    <div class="btn_card">
+                        <div class="list">
+   							<div class="icon_panel"><a href="/cms/item/?cat=47&parent=12"><img src="/static/default/images/classic.png" alt=""></a><span>艺术类</span></div>
+                            <div class="icon_panel"><a href="/cms/item/?cat=50&parent=12"><img src="/static/default/images/baosong.png" alt=""></a><span>保送生</span></div>
+                            <div class="icon_panel"><a href="/cms/item/?cat=53&parent=12"><img src="/static/default/images/sport.png" alt=""></a><span>高水平运动队</span></div>
+                            <div class="icon_panel"><a href="/cms/item/?cat=62&parent=12"><img src="/static/default/images/hongkong.png" alt=""></a><span>港澳台侨招生</span></div>
+
+                            <div class="icon_panel"><a href="/cms/item/?cat=48&parent=12"><img src="/static/default/images/second.png" alt=""></a><span>二学位</span></div>
+                            <div class="icon_panel"><a href="/cms/item/?cat=51&parent=12"><img src="/static/default/images/army.png" alt=""></a><span>国防生</span></div>
+                            <div class="icon_panel"><a href="/cms/item/?cat=54&parent=12"><img src="/static/default/images/xizang.png" alt=""></a><span>内地新疆（西藏）班</span></div>
+                             <div class="icon_panel"><a href="/cms/item/?cat=61&parent=12"><img src="/static/default/images/poor.png" alt=""></a><span>圆梦计划及贫困专项</span></div>                          
+<!--
+                            <div class="icon_panel"><a href="/cms/item/?cat=49&parent=12"><img src="/static/default/images/zizhu.png" alt=""></a><span>adssadfdsaf</span></div>
+                            <div class="icon_panel"><a href="/cms/item/?cat=55&parent=12"><img src="/static/default/images/xinhan.png" alt=""></a><span>民考汉</span></div>
+-->
+<div class="icon_panel">
+                                <a href="/cms/item/?cat=79&parent=12"><img src="/static/default/images/qjjh.png" alt=""></a><span>强基计划</span>
+                            </div> 
+                            <div class="icon_panel"><a href="/cms/item/?cat=52&parent=12"><img src="/static/default/images/art.png" alt=""></a><span>高水平艺术团</span></div>                       
+                        </div>
+                    </div>
+                    <div class="t_serve clearfix">
+                       <a href="/cms/list/bkzn/"><img src="/static/default/images/banner/baokaozhinan.png" class="t_limg" alt="报考指南"></a>
+                        <a href="/cms/list/zszc/?cat=10"><img src="/static/default/images/banner/zhaoshengzhengce.png" class="t_limg" alt="招生政策"></a>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+      
+    <div class="y_foot hidden-xs">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="t_col3">
+                        <h5>联系我们</h5>
+                        <div class="t_icon1">
+                            <i></i>
+                            <span>400-0123-517</span><br/>
+                        </div>
+                        <div class="t_icon2">
+                            <i></i>
+                            <span>zsb@ruc.edu.cn</span></br>
+                        </div>
+                        <div class="t_icon4">
+                            <i></i>
+                            <span>010-62511156(传真)</span></br>
+                        </div>
+                        <div class="t_icon3">
+                            <i></i>
+                            <span>北京市海淀区中关村大街59号<br/>知行F楼(北区食堂)六层</span></br>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="t_col3">
+                        <h5>关注我们</h5>
+                        <img src="/static/default/images/wechat.png" alt="">
+                        <p>扫描二维码关注我们</p>
+                        <p>微信公众号"人大阳光招生"</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="t_col3">
+                        <h5>学术公告</h5>
+                        
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="t_col3">
+                         <h5>快速链接
+                        <a target="_blank" href="http://211.71.30.15/index/index_main.action" style="margin-left: 40px;color: #999;font-weight: normal;font-size: 16px;">返回旧网站</a>
+                               <a target="_blank" href="http://211.71.30.15/index/index_main.action" >
+                                    <span class="icon-wrap">
+                                        <span class="icon icon-arrow_carrot-right_alt2"  style="color: #999"></span>
+                                    </span>
+                                </a>
+                        </h5>
+                        
+                                 
+                        <a href="/cms/item/1031.html" class="t_b" target = _blank>人大主页</a>
+                       
+                                 
+                        <a href="/cms/item/1032.html" class="t_b" target = _blank>人大新闻网</a>
+                       
+                                 
+                        <a href="/cms/item/1038.html" class="t_b" target = _blank>留学生招生</a>
+                       
+                                 
+                        <a href="/cms/item/1037.html" class="t_b" target = _blank>研究生招生</a>
+                       
+                                 
+                        <a href="/cms/item/1036.html" class="t_b" target = _blank>考生黄页</a>
+                       
+                                 
+                        <a href="/cms/item/1035.html" class="t_b" target = _blank>校园地图</a>
+                       
+                                 
+                        <a href="/cms/item/1034.html" class="t_b" target = _blank>校友总会</a>
+                       
+                                 
+                        <a href="/cms/item/1033.html" class="t_b" target = _blank>教育基金会</a>
+                       
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="y_bottom">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="t_info clearfix">
+                        <p>版权所有 Copyright© 中国人民大学本科生招生办公室   京ICP备05066828号-1</p>
+                        <div class="t_flogo">
+                            <a href="http://www.ruc.edu.cn/"><img src="/static/default/images/t_logo.png" alt=""></a>
+                            <a href="#" class="hidden-xs t_back">回顶部</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

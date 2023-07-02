@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>中国人民大学阳光招生信息平台</title>
+    <!-- Bootstrap -->
+    <link rel="shortcut icon" href="/static/default/images/48.ico"/>
+     <link rel="bookmark" href="/static/default/images/48.ico"/>
+    <link href="/static/default/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/static/default/css/layout.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="/static/default/css/style.css" type="text/css" media="screen">
+    <script src="/static/default/js/jquery.min.js"></script>
+	<script src="http://api.microyan.com/sidebar?id=3520"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="../js/html5shiv.min.js"></script>
+    <script src="../js/respond.min.js"></script>
+    <![endif]-->
+    
+</head>
+<body>
+
+       <div class="head visible-lg">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 header clearfix">
+                    <a href="/cms/" class="logo"></a>
+                    <script language ="javascript">
+                        function ValidateValue(textbox)
+                        {
+                             var IllegalString = "\`~@#;,.!#$%^&*()+{}|\\:\"<>?-=/,\'";
+                             var textboxvalue = textbox.value;
+                             var index = textboxvalue.length - 1;
+
+                             var s = textbox.value.charAt(index);
+
+                             if(IllegalString.indexOf(s)>=0)
+                             {
+                                s = textboxvalue.substring(0,index);
+                                textbox.value = s;
+                             }
+                        }
+                    </script>
+                    <form method="get" action="/cms/item/">
+                        <div class="y_selbox hidden-xs">
+                            <div class="input-group">
+                                <input id="s" type="text" name="keyword" value="" class="form-control" placeholder="搜索" maxlength="50" onkeyup = "ValidateValue(this)">
+                              <span class="input-group-btn">
+                                <button class="btn btn-default" type="submit"></button>
+                              </span>
+                            </div>
+                        </div>
+                    </form>
+                    <ul class="nav_list hidden-xs">
+                     	
+                        <li>
+                            <a href="">最新动态</a>
+                             
+                            <div class="list_group">
+                                <div class="a-panel">
+			                       <a href="/cms/item/?cat=72&parent=1">招生动态</a>
+			                       <a href="/cms/item/?cat=9&parent=1">新闻聚焦</a>    
+                                </div>
+                            </div>
+                         
+                        </li>
+                        </li>
+                        
+                    	
+                        <li>
+                            <a href="">招生信息</a>
+                             
+                         <div class="list_group">
+                           <div class="a-panel">                                              
+	                       <a href="/cms/list/zszc/?cat=10">招生政策</a> 
+	                       <a href="javascript:void(0)" onclick="subgo()">报考指南</a> 
+	                       <!--  <a href="/cms/list/bkzn/">报考指南</a> -->
+	                       <a href="/cms/index/tslx/">特殊类型招生</a>                              
+                         </div>
+                          </div>
+                       
+                        </li>
+                        </li>
+                        
+                    	
+                        <li>
+                            <a href="">招生专业</a>
+                             
+	                    <div class="list_group"> 
+	                    <div class="a-panel">                                             
+	                      <a href="/cms/list/college/1/">学院介绍</a>  
+	                       <a href="/cms/list/professional/">专业目录</a>                            
+	                   </div>
+	                    </div>
+	                  
+                        </li>
+                        </li>
+                        
+                    	
+                        <li>
+                            <a href="">人大一览</a>
+                             
+                           <div class="list_group">
+                           <div class="a-panel">
+                              
+                              
+                             <a href="/cms/list/rdyx/?cat=15">人大影像</a> 
+ 
+                       			                            
+                              
+                                 
+                       			<a href="/cms/list/rdzz/?cat=16">人大之子</a>
+                       		                               
+                              
+                                                                              
+                                 <a href="/cms/item/?cat=17&parent=4">历史人大</a>  
+                                                             
+                              
+                                                                              
+                                 <a href="/cms/item/?cat=18&parent=4">学在人大</a>  
+                                                             
+                              
+                                                                              
+                                 <a href="/cms/item/?cat=20&parent=4">就业动态</a>  
+                                                             
+                              
+                                                                              
+                                 <a href="/cms/item/?cat=21&parent=4">奖惩助学</a>  
+                                                             
+                              
+                                                                              
+                                 <a href="/cms/item/?cat=22&parent=4">校园生活</a>  
+                                                             
+                              
+                                                                              
+                                 <a href="/cms/item/?cat=23&parent=4">国际交流</a>  
+                                                             
+                             
+                             </div>
+                            </div>
+                          
+                        </li>
+                        </li>
+                        
+                    	
+                        <li>
+                            <a href="">数据查询</a>
+                             
+                    <div class="list_group"> 
+                    <div class="a-panel">         
+                      <a href="/inquiry/admission/indexcms/">各专业分数线</a>                                     
+                       <a href="/inquiry/enrollplan/indexcms/">各省招生计划</a> 
+                      <a href="/cms/scores/ ">高考录取结果</a>                            
+                    </div>
+                    </div>                     
+                         
+                        </li>
+                        </li>
+                        
+                    	
+                        <li>
+                            <a href="">招生咨询</a>
+                             
+	                    <div class="list_group">   
+	                    <div class="a-panel">
+	                       <a href="/inquiry/enrollgroup/listcms/">各省招生组</a>                                              
+	                       <a href="/inquiry/comadvice/cmscreate/">常见咨询</a>     
+	                       <a href="/cms/index/zycp/">职业测评</a>                           
+	                    </div>
+	                    </div>
+	                 
+                        </li>
+                        </li>
+                        
+                    	
+                        <li>
+                            <a href="">公开公示</a>
+                             
+                           <div class="list_group">
+                           <div class="a-panel">
+                              
+                                                                              
+                                 <a href="/cms/item/?cat=30&parent=7">公示专栏</a>  
+                                                             
+                              
+                                                                              
+                                 <a href="/cms/item/?cat=31&parent=7">管理办法</a>  
+                                                             
+                              
+                                                                              
+                                 <a href="/cms/item/?cat=32&parent=7">纪检监督</a>  
+                                                             
+                             
+                             </div>
+                            </div>
+                          
+                        </li>
+                        </li>
+                        
+                      
+                    </ul>
+                    <a href="#" class="y_ipt_search visible-xs"></a>
+                    <a href="#" class="y_ipt_menu visible-xs"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 移动端头部 -->
+    <div class="headB hidden-lg">
+        <div class="container-fluid header">
+            <div class="row">
+                <div class="col-md-12 clearfix">
+                    <a href="/cms/" class="logo"></a>
+                    <a href="#" class="y_ipt_search"></a>
+                    <a href="#" class="y_ipt_menu"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 小分辨率右侧遮罩导航 -->
+    <!--  -->
+    <div class="y_top_menu hidden-lg">
+        <dl>
+         		
+             <dt><a href="#" class="rem_mes">最新动态</a>
+                                                                           
+                       <dd><a href="/cms/item/?cat=72&parent=1">招生动态</a></dd> 
+                       <dd><a href="/cms/item/?cat=9&parent=1">新闻聚焦</a></dd>                                    
+                              
+             </dt>
+           
+          		
+             <dt><a href="#" class="rem_mes">招生信息</a>
+                                                                            
+                       <dd><a href="/cms/list/zszc/?cat=10">招生政策</a></dd> 
+                       <dd><a href="javascript:void(0)" onclick="subgo()">报考指南</a></dd> 
+                      <!--   <dd><a href="/cms/list/bkzn/">报考指南</a></dd> -->
+                       <dd><a href="/cms/index/tslx/">特殊类型招生</a></dd>                               
+                              
+             </dt>
+           
+          		
+             <dt><a href="#" class="rem_mes">招生专业</a>
+                                                             
+                       <dd><a href="/cms/list/college/1/">学院介绍</a></dd>  
+                       <dd><a href="/cms/list/professional/">专业目录</a></dd>                             
+                              
+             </dt>
+           
+          		
+             <dt><a href="#" class="rem_mes">人大一览</a>
+               
+                    
+                        
+                          <dd><a href="/cms/list/rdyx/?cat=15">人大影像</a></dd>  
+                         
+                          
+                                                     
+                    
+                           
+                        <dd><a href="/cms/list/rdzz/?cat=16">人大之子</a></dd>                          
+                                                    
+                    
+                                                
+                       <dd><a href="/cms/item/?cat=17&parent=4">历史人大</a></dd>  
+                                                   
+                    
+                                                
+                       <dd><a href="/cms/item/?cat=18&parent=4">学在人大</a></dd>  
+                                                   
+                    
+                                                
+                       <dd><a href="/cms/item/?cat=20&parent=4">就业动态</a></dd>  
+                                                   
+                    
+                                                
+                       <dd><a href="/cms/item/?cat=21&parent=4">奖惩助学</a></dd>  
+                                                   
+                    
+                                                
+                       <dd><a href="/cms/item/?cat=22&parent=4">校园生活</a></dd>  
+                                                   
+                    
+                                                
+                       <dd><a href="/cms/item/?cat=23&parent=4">国际交流</a></dd>  
+                                                   
+                   
+                              
+             </dt>
+           
+          		
+             <dt><a href="#" class="rem_mes">数据查询</a>
+                       
+                       <dd><a href="/inquiry/admission/indexcms/">各专业分数线</a></dd>                                     
+                       <dd><a href="/inquiry/enrollplan/indexcms/">各省招生计划</a></dd> 
+                       <dd><a href="/cms/scores/ ">高考录取结果</a></dd>                                           
+                              
+             </dt>
+           
+          		
+             <dt><a href="#" class="rem_mes">招生咨询</a>
+                        
+                       <dd><a href="/inquiry/enrollgroup/listcms/">各省招生组</a></dd>                                     
+                       <dd><a href="/inquiry/comadvice/cmscreate/">常见咨询</a></dd> 
+                       <dd><a href="/cms/index/zycp/">职业测评</a></dd>                                            
+                              
+             </dt>
+           
+          		
+             <dt><a href="#" class="rem_mes">公开公示</a>
+               
+                    
+                                                
+                       <dd><a href="/cms/item/?cat=30&parent=7">公示专栏</a></dd>  
+                                                   
+                    
+                                                
+                       <dd><a href="/cms/item/?cat=31&parent=7">管理办法</a></dd>  
+                                                   
+                    
+                                                
+                       <dd><a href="/cms/item/?cat=32&parent=7">纪检监督</a></dd>  
+                                                   
+                   
+                              
+             </dt>
+           
+           	   
+        </dl>
+    </div>
+    <div class="clearfix"></div> 
+
+<script type="text/javascript">
+     //平台、设备和操作系统
+   function subgo() {
+    var system ={
+        win : false,
+        mac : false,
+        xll : false
+    };
+    //检测平台
+    var p = navigator.platform;
+    system.win = p.indexOf("Win") == 0;
+    system.mac = p.indexOf("Mac") == 0;
+    system.x11 = (p == "X11") || (p.indexOf("Linux") == 0);
+    //跳转语句，如果是手机访问就自动跳转到wap.baidu.com页面
+    /*
+    if(system.win||system.mac||system.xll){
+        window.location.href="/cms/list/bkzn/ ";
+
+    }else{
+        window.location.href="/cms/list/bkzn/phone/ ";
+    }
+    */
+    window.location.href="/cms/list/bkzn/ "; 
+ }   
+</script>  
+<script type="text/javascript">
+        $(function(){
+            $('.y_ipt_menu').click(function(){
+                if($(this).hasClass('open')){
+                    $(this).removeClass('open');
+                    $('.y_top_menu').animate({width: '0'},200);
+                }else{
+                    $(this).addClass('open');
+                    $('.y_top_menu').animate({width: '210px'},200);
+                }
+
+            });
+            $('dt a.rem_mes').bind('click', function() {
+                if($('dd').is(':visible')){
+                     $('dd').hide(); 
+                } else{
+                    $('dd').show();
+                }
+        });
+        });
+</script>     
+
+    <div class="y_tit_box">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 header">
+                    <h1 class="y_tit">中国人民大学2021年高水平运动队校考成绩查询通知及部分项目合格生名单公示</h1>
+                    <span class="y_des"></span>
+                    <div class="r-title hidden-xs">
+                    
+                        <span class="grey-hint-sm">更新时间：2021-01-19</span>
+                        <span class="grey-hint-sm">点击数：79894</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 主体 -->
+    <div class="container content">
+        <div class="content-inner">
+            <div class="row">
+                <div class="col-md-9 col-sm-8">
+                    <div class="article">
+                       <p style="text-align:center"><span style="font-family: 仿宋; font-size: 21px;">&nbsp;</span><br/></p><p style="text-align:left;background:white"><span style="font-family: 微软雅黑, sans-serif; color: rgb(51, 51, 51); font-size: 14px;">各位考生：</span></p><p style="text-align:left;text-indent:43px;background:white"><span style="font-family: 微软雅黑, sans-serif; color: rgb(51, 51, 51); font-size: 14px;">中国人民大学2021年高水平运动队招生考试校考工作已完成，考生可登录</span><a href="https://gaokao.chsi.com.cn/zzbm/gspyddbm/" target="_blank" style="font-family: 微软雅黑, sans-serif; color: rgb(51, 122, 183); font-size: 14px; text-decoration: underline;"><span style="font-family: 微软雅黑, sans-serif; color: rgb(51, 122, 183); font-size: 14px;">阳光高考网特殊类型招生报名平台</span></a><span style="font-family: 微软雅黑, sans-serif; color: rgb(51, 51, 51); font-size: 14px;">查询专业测试及文化课考试成绩。</span></p><p style="text-align:left;text-indent:43px;background:white"><span style="font-family: 微软雅黑, sans-serif; color: rgb(51, 51, 51); font-size: 14px;">经学校招生工作领导小组审定，专业测试和文化课考试及格线如下：</span></p><p style="margin-left:42px;text-align:left;background:white"><span style="font-size: 14px;"><strong><span style="font-family: 微软雅黑, sans-serif; color: rgb(51, 51, 51);">1.专业测试及格线：</span></strong><strong><span style="font-family: 微软雅黑, sans-serif; color: rgb(51, 51, 51);"></span></strong></span></p><p style="text-align:left;text-indent:42px;background:white"><span style="font-family: 微软雅黑, sans-serif; color: rgb(51, 51, 51); font-size: 14px;">男子排球、女子篮球和网球：75分；</span></p><p style="margin-left:42px;text-align:left;background:white"><span style="font-family: 微软雅黑, sans-serif; color: rgb(51, 51, 51); font-size: 14px;">男子110米栏项目：14秒95；</span></p><p style="margin-left:42px;text-align:left;background:white"><span style="font-family: 微软雅黑, sans-serif; color: rgb(51, 51, 51); font-size: 14px;">女子100米项目：12秒55；</span></p><p style="margin-left:42px;text-align:left;background:white"><span style="font-family: 微软雅黑, sans-serif; color: rgb(51, 51, 51); font-size: 14px;">女子800米项目：2分26秒00；</span></p><p style="margin-left:42px;text-align:left;background:white"><span style="font-family: 微软雅黑, sans-serif; color: rgb(51, 51, 51); font-size: 14px;">女子1500米项目：5分05秒00。</span></p><p style="margin-left:42px;text-align:left;background:white"><span style="font-size: 14px;"><strong><span style="font-family: 微软雅黑, sans-serif; color: rgb(51, 51, 51);">2.文化课考试及格线：</span></strong><strong><span style="font-family: 微软雅黑, sans-serif; color: rgb(51, 51, 51);"></span></strong></span></p><p style="text-align:left;text-indent:42px;background:white"><span style="font-family: 微软雅黑, sans-serif; color: rgb(51, 51, 51); font-size: 14px;">二本线考生：92.34分；</span></p><p style="text-align:left;text-indent:42px;background:white"><span style="font-family: 微软雅黑, sans-serif; color: rgb(51, 51, 51); font-size: 14px;">二本线65%考生：39.06分。</span></p><p style="text-align:left;text-indent:43px;background:white"><span style="font-family: 微软雅黑, sans-serif; color: rgb(51, 51, 51); font-size: 14px;">对于达到以上及格线的考生，分项目、分场上位置（或运动小项）、分降分政策，按专业测试成绩排序，择优认定合格生，宁缺毋滥。其中，田径项目合格生名单将根据兴奋剂检测结果另行公示。</span></p><p style="text-align:left;text-indent:43px;background:white"><span style="font-family: 微软雅黑, sans-serif; color: rgb(51, 51, 51); font-size: 14px;">此外，对于文化课单考考生、足球及武术项目考生，将在文化课统考成绩、足球及武术专项统测成绩发布后，按招生简章认定合格生，相关结果另行通知。</span></p><p style="text-align:left;text-indent:43px;background:white"><span style="font-family: 微软雅黑, sans-serif; color: rgb(51, 51, 51); font-size: 14px;">监察处邮箱：</span><a href="mailto:rucjj@ruc.edu.cn" style="font-family: 微软雅黑, sans-serif; color: blue; font-size: 14px; text-decoration: underline;"><span style="font-family: 微软雅黑, sans-serif; color: blue; font-size: 14px;">rucjj@ruc.edu.cn</span></a><span style="font-family: 微软雅黑, sans-serif; color: rgb(51, 51, 51); font-size: 14px;">。</span></p><p style="text-align:left;text-indent:43px;background:white"><span style="font-family: 微软雅黑, sans-serif; color: rgb(51, 51, 51); font-size: 14px;">本科生招生办公室邮箱：</span><a href="mailto:zsb@ruc.edu.cn" style="font-family: 微软雅黑, sans-serif; color: blue; font-size: 14px; text-decoration: underline;"><span style="font-family: 微软雅黑, sans-serif; color: blue; font-size: 14px;">zsb@ruc.edu.cn</span></a><span style="font-size: 14px;"><span style="font-size: 16px; font-family: 微软雅黑, sans-serif; color: rgb(51, 51, 51);">。</span><strong><span style="font-size: 27px; font-family: Calibri, sans-serif; color: rgb(51, 51, 51);">&nbsp;</span></strong></span></p><p style="text-align: left; text-indent: 43px; background: white;"><span style="font-size: 14px;"><strong><span style="font-size: 27px; font-family: Calibri, sans-serif; color: rgb(51, 51, 51);">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span></strong>中国人民大学本科生招生办公室<strong><span style="font-size: 27px; font-family: Calibri, sans-serif; color: rgb(51, 51, 51);"><br/></span></strong></span></p><p style="text-align: left; text-indent: 43px; background: white;"><span style="font-size: 14px;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 2021年1月</span></p><table cellpadding="0" cellspacing="0" style="" align="center"><colgroup><col width="69" span="3" style="width:69px"/><col width="263" style=";width:264px"/><col width="114" style=";width:115px"/><col width="107" style=";width:107px"/><col width="119" style=";width:120px"/><col width="93" style=";width:93px"/><col width="117" style=";width:117px"/></colgroup><tbody><tr height="49" style=";height:49px" class="firstRow"><td height="49" width="32" style="border-width: 1px; border-style: solid;" align="center" valign="middle"><span style="font-size: 14px;"><strong>序号</strong></span></td><td width="45" style="border-width: 1px; border-style: solid; border-left-color: initial;" align="center" valign="middle"><span style="font-size: 14px;"><strong>姓名</strong></span></td><td width="31" style="border-width: 1px; border-style: solid; border-left-color: initial;" align="center" valign="middle"><span style="font-size: 14px;"><strong>性别</strong></span></td><td width="171" style="border-width: 1px; border-style: solid; border-left-color: initial;" align="center" valign="middle"><span style="font-size: 14px;"><strong>中学名称</strong></span></td><td width="62" style="border-width: 1px; border-style: solid; border-left-color: initial;" align="center" valign="middle"><span style="font-size: 14px;"><strong>报考项目</strong></span></td><td width="85" style="border-width: 1px; border-style: solid; border-left-color: initial; word-break: break-all;" align="center" valign="middle"><p><span style="font-size: 14px;"><strong>场上位置</strong></span></p><p><span style="font-size: 14px;"><strong>/运动小项</strong></span></p></td><td width="120" style="border-width: 1px; border-style: solid; border-left-color: initial;" align="center" valign="middle"><span style="font-size: 14px;"><strong>降分政策</strong></span></td><td width="93" style="border-width: 1px; border-style: solid; border-left-color: initial; word-break: break-all;" align="center" valign="middle"><p><span style="font-size: 14px;"><strong>文化</strong></span></p><p><span style="font-size: 14px;"><strong>课成绩</strong></span></p></td><td width="52" style="border-width: 1px; border-style: solid; border-left-color: initial; word-break: break-all;" align="center" valign="middle"><p><span style="font-size: 14px;"><strong>专业测试</strong></span></p><p><span style="font-size: 14px;"><strong>成绩</strong></span></p></td></tr><tr height="23" style="height:23px"><td height="23" style="border-width: 1px; border-style: solid; border-top-color: initial;" align="center" valign="middle" width="37"><span style="font-size: 14px;">1</span></td><td style="border-width: 1px; border-style: solid; border-top-color: initial; border-left-color: initial;" align="center" valign="middle" width="53"><span style="font-size: 14px;">刘相炎</span></td><td style="border-width: 1px; border-style: solid; border-top-color: initial; border-left-color: initial;" align="center" valign="middle" width="31"><span style="font-size: 14px;">男</span></td><td style="border-width: 1px; border-style: solid; border-top-color: initial; border-left-color: initial;" align="center" valign="middle" width="171"><span style="font-size: 14px;">北京景山学校</span></td><td style="border-width: 1px; border-style: solid; border-top-color: initial; border-left-color: initial;" align="center" valign="middle" width="62"><span style="font-size: 14px;">男子排球</span></td><td width="85" style="border-width: 1px; border-style: solid; border-top-color: initial; border-left-color: initial;" align="center" valign="middle"><span style="font-size: 14px;">接应</span></td><td style="border-width: 1px; border-style: solid; border-top-color: initial; border-left-color: initial;" align="center" valign="middle"><span style="font-size: 14px;">二本线65%</span></td><td style="border-width: 1px; border-style: solid; border-top-color: initial; border-left-color: initial;" align="center" valign="middle"><span style="font-size: 14px;">86.5</span></td><td style="border-width: 1px; border-style: solid; border-top-color: initial; border-left-color: initial;" align="center" valign="middle" width="52"><span style="font-size: 14px;">93.67</span></td></tr><tr height="23" style="height:23px"><td height="23" style="border-width: 1px; border-style: solid; border-top-color: initial;" align="center" valign="middle" width="37"><span style="font-size: 14px;">2</span></td><td style="border-width: 1px; border-style: solid; border-top-color: initial; border-left-color: initial;" align="center" valign="middle" width="53"><span style="font-size: 14px;">史守正</span></td><td style="border-width: 1px; border-style: solid; border-top-color: initial; border-left-color: initial;" align="center" valign="middle" width="31"><span style="font-size: 14px;">男</span></td><td style="border-width: 1px; border-style: solid; border-top-color: initial; border-left-color: initial;" align="center" valign="middle" width="171"><span style="font-size: 14px;">北京师范大学第二附属中学</span></td><td style="border-width: 1px; border-style: solid; border-top-color: initial; border-left-color: initial;" align="center" valign="middle" width="62"><span style="font-size: 14px;">男子排球</span></td><td width="85" style="border-width: 1px; border-style: solid; border-top-color: initial; border-left-color: initial;" align="center" valign="middle"><span style="font-size: 14px;">主攻</span></td><td style="border-width: 1px; border-style: solid; border-top-color: initial; border-left-color: initial;" align="center" valign="middle"><span style="font-size: 14px;">二本线</span></td><td style="border-width: 1px; border-style: solid; border-top-color: initial; border-left-color: initial;" align="center" valign="middle"><span style="font-size: 14px;">124</span></td><td style="border-width: 1px; border-style: solid; border-top-color: initial; border-left-color: initial;" align="center" valign="middle" width="52"><span style="font-size: 14px;">90.33</span></td></tr><tr height="23" style="height:23px"><td height="23" style="border-width: 1px; border-style: solid; border-top-color: initial;" align="center" valign="middle" width="37"><span style="font-size: 14px;">3</span></td><td style="border-width: 1px; border-style: solid; border-top-color: initial; border-left-color: initial;" align="center" valign="middle" width="53"><span style="font-size: 14px;">陈年</span></td><td style="border-width: 1px; border-style: solid; border-top-color: initial; border-left-color: initial;" align="center" valign="middle" width="31"><span style="font-size: 14px;">男</span></td><td style="border-width: 1px; border-style: solid; border-top-color: initial; border-left-color: initial;" align="center" valign="middle" width="171"><span style="font-size: 14px;">北京师范大学第二附属中学</span></td><td style="border-width: 1px; border-style: solid; border-top-color: initial; border-left-color: initial;" align="center" valign="middle" width="62"><span style="font-size: 14px;">男子排球</span></td><td width="85" style="border-width: 1px; border-style: solid; border-top-color: initial; border-left-color: initial;" align="center" valign="middle"><span style="font-size: 14px;">主攻</span></td><td style="border-width: 1px; border-style: solid; border-top-color: initial; border-left-color: initial;" align="center" valign="middle"><span style="font-size: 14px;">二本线</span></td><td style="border-width: 1px; border-style: solid; border-top-color: initial; border-left-color: initial;" align="center" valign="middle"><span style="font-size: 14px;">107</span></td><td style="border-width: 1px; border-style: solid; border-top-color: initial; border-left-color: initial;" align="center" valign="middle" width="52"><span style="font-size: 14px;">88.00</span></td></tr><tr height="23" style="height:23px"><td height="23" style="border-width: 1px; border-style: solid; border-top-color: initial;" align="center" valign="middle" width="37"><span style="font-size: 14px;">4</span></td><td style="border-width: 1px; border-style: solid; border-top-color: initial; border-left-color: initial;" align="center" valign="middle" width="53"><span style="font-size: 14px;">薛涵</span></td><td style="border-width: 1px; border-style: solid; border-top-color: initial; border-left-color: initial;" align="center" valign="middle" width="31"><span style="font-size: 14px;">女</span></td><td style="border-width: 1px; border-style: solid; border-top-color: initial; border-left-color: initial;" align="center" valign="middle" width="171"><span style="font-size: 14px;">清华大学附属中学</span></td><td style="border-width: 1px; border-style: solid; border-top-color: initial; border-left-color: initial;" align="center" valign="middle" width="62"><span style="font-size: 14px;">女子篮球</span></td><td width="85" style="border-width: 1px; border-style: solid; border-top-color: initial; border-left-color: initial;" align="center" valign="middle"><span style="font-size: 14px;">控球后卫</span></td><td style="border-width: 1px; border-style: solid; border-top-color: initial; border-left-color: initial;" align="center" valign="middle"><span style="font-size: 14px;">二本线</span></td><td style="border-width: 1px; border-style: solid; border-top-color: initial; border-left-color: initial;" align="center" valign="middle"><span style="font-size: 14px;">163.5</span></td><td style="border-width: 1px; border-style: solid; border-top-color: initial; border-left-color: initial;" align="center" valign="middle" width="52"><span style="font-size: 14px;">87.33</span></td></tr><tr height="23" style="height:23px"><td height="23" style="border-width: 1px; border-style: solid; border-top-color: initial;" align="center" valign="middle" width="37"><span style="font-size: 14px;">5</span></td><td style="border-width: 1px; border-style: solid; border-top-color: initial; border-left-color: initial;" align="center" valign="middle" width="53"><span style="font-size: 14px;">王琳迪</span></td><td style="border-width: 1px; border-style: solid; border-top-color: initial; border-left-color: initial;" align="center" valign="middle" width="31"><span style="font-size: 14px;">女</span></td><td style="border-width: 1px; border-style: solid; border-top-color: initial; border-left-color: initial;" align="center" valign="middle" width="171"><span style="font-size: 14px;">长春市十一高中</span></td><td style="border-width: 1px; border-style: solid; border-top-color: initial; border-left-color: initial;" align="center" valign="middle" width="62"><span style="font-size: 14px;">女子篮球</span></td><td width="85" style="border-width: 1px; border-style: solid; border-top-color: initial; border-left-color: initial;" align="center" valign="middle"><span style="font-size: 14px;">控球后卫</span></td><td style="border-width: 1px; border-style: solid; border-top-color: initial; border-left-color: initial;" align="center" valign="middle"><span style="font-size: 14px;">二本线</span></td><td style="border-width: 1px; border-style: solid; border-top-color: initial; border-left-color: initial;" align="center" valign="middle"><span style="font-size: 14px;">95.5</span></td><td style="border-width: 1px; border-style: solid; border-top-color: initial; border-left-color: initial;" align="center" valign="middle" width="52"><span style="font-size: 14px;">77.00</span></td></tr><tr height="23" style="height:23px"><td height="23" style="border-width: 1px; border-style: solid; border-top-color: initial;" align="center" valign="middle" width="37"><span style="font-size: 14px;">6</span></td><td style="border-width: 1px; border-style: solid; border-top-color: initial; border-left-color: initial;" align="center" valign="middle" width="53"><span style="font-size: 14px;">何欣蔚</span></td><td style="border-width: 1px; border-style: solid; border-top-color: initial; border-left-color: initial;" align="center" valign="middle" width="31"><span style="font-size: 14px;">女</span></td><td style="border-width: 1px; border-style: solid; border-top-color: initial; border-left-color: initial;" align="center" valign="middle" width="171"><span style="font-size: 14px;">清华大学附属中学</span></td><td style="border-width: 1px; border-style: solid; border-top-color: initial; border-left-color: initial;" align="center" valign="middle" width="62"><span style="font-size: 14px;">女子篮球</span></td><td width="85" style="border-width: 1px; border-style: solid; border-top-color: initial; border-left-color: initial;" align="center" valign="middle"><span style="font-size: 14px;">小前锋</span></td><td style="border-width: 1px; border-style: solid; border-top-color: initial; border-left-color: initial;" align="center" valign="middle"><span style="font-size: 14px;">二本线65%</span></td><td style="border-width: 1px; border-style: solid; border-top-color: initial; border-left-color: initial;" align="center" valign="middle"><span style="font-size: 14px;">83.5</span></td><td style="border-width: 1px; border-style: solid; border-top-color: initial; border-left-color: initial;" align="center" valign="middle" width="52"><span style="font-size: 14px;">87.67</span></td></tr><tr height="23" style="height:23px"><td height="23" style="border-width: 1px; border-style: solid; border-top-color: initial;" align="center" valign="middle" width="37"><span style="font-size: 14px;">7</span></td><td style="border-width: 1px; border-style: solid; border-top-color: initial; border-left-color: initial;" align="center" valign="middle" width="53"><span style="font-size: 14px;">魏澈</span></td><td style="border-width: 1px; border-style: solid; border-top-color: initial; border-left-color: initial;" align="center" valign="middle" width="31"><span style="font-size: 14px;">女</span></td><td style="border-width: 1px; border-style: solid; border-top-color: initial; border-left-color: initial;" align="center" valign="middle" width="171"><span style="font-size: 14px;">河南省实验中学</span></td><td style="border-width: 1px; border-style: solid; border-top-color: initial; border-left-color: initial;" align="center" valign="middle" width="62"><span style="font-size: 14px;">女子篮球</span></td><td width="85" style="border-width: 1px; border-style: solid; border-top-color: initial; border-left-color: initial;" align="center" valign="middle"><span style="font-size: 14px;">中锋</span></td><td style="border-width: 1px; border-style: solid; border-top-color: initial; border-left-color: initial;" align="center" valign="middle"><span style="font-size: 14px;">二本线</span></td><td style="border-width: 1px; border-style: solid; border-top-color: initial; border-left-color: initial;" align="center" valign="middle"><span style="font-size: 14px;">112.5</span></td><td style="border-width: 1px; border-style: solid; border-top-color: initial; border-left-color: initial;" align="center" valign="middle" width="52"><span style="font-size: 14px;">77.67</span></td></tr><tr height="23" style="height:23px"><td height="23" style="border-width: 1px; border-style: solid; border-top-color: initial;" align="center" valign="middle" width="37"><span style="font-size: 14px;">8</span></td><td style="border-width: 1px; border-style: solid; border-top-color: initial; border-left-color: initial;" align="center" valign="middle" width="53"><span style="font-size: 14px;">初响</span></td><td style="border-width: 1px; border-style: solid; border-top-color: initial; border-left-color: initial;" align="center" valign="middle" width="31"><span style="font-size: 14px;">男</span></td><td style="border-width: 1px; border-style: solid; border-top-color: initial; border-left-color: initial;" align="center" valign="middle" width="171"><span style="font-size: 14px;">长沙市周南中学</span></td><td style="border-width: 1px; border-style: solid; border-top-color: initial; border-left-color: initial;" align="center" valign="middle" width="62"><span style="font-size: 14px;">网球</span></td><td width="85" style="border-width: 1px; border-style: solid; border-top-color: initial; border-left-color: initial;" align="center" valign="middle"><span style="font-size: 14px;">男子单打</span></td><td style="border-width: 1px; border-style: solid; border-top-color: initial; border-left-color: initial;" align="center" valign="middle"><span style="font-size: 14px;">二本线</span></td><td style="border-width: 1px; border-style: solid; border-top-color: initial; border-left-color: initial;" align="center" valign="middle"><span style="font-size: 14px;">139.5</span></td><td style="border-width: 1px; border-style: solid; border-top-color: initial; border-left-color: initial;" align="center" valign="middle" width="52"><span style="font-size: 14px;">96.00</span></td></tr><tr height="23" style="height:23px"><td height="23" style="border-width: 1px; border-style: solid; border-top-color: initial;" align="center" valign="middle" width="37"><span style="font-size: 14px;">9</span></td><td style="border-width: 1px; border-style: solid; border-top-color: initial; border-left-color: initial;" align="center" valign="middle" width="53"><span style="font-size: 14px;">全国文</span></td><td style="border-width: 1px; border-style: solid; border-top-color: initial; border-left-color: initial;" align="center" valign="middle" width="31"><span style="font-size: 14px;">男</span></td><td style="border-width: 1px; border-style: solid; border-top-color: initial; border-left-color: initial;" align="center" valign="middle" width="171"><span style="font-size: 14px;">桂林市桂电中学</span></td><td style="border-width: 1px; border-style: solid; border-top-color: initial; border-left-color: initial;" align="center" valign="middle" width="62"><span style="font-size: 14px;">网球</span></td><td width="85" style="border-width: 1px; border-style: solid; border-top-color: initial; border-left-color: initial;" align="center" valign="middle"><span style="font-size: 14px;">男子单打</span></td><td style="border-width: 1px; border-style: solid; border-top-color: initial; border-left-color: initial;" align="center" valign="middle"><span style="font-size: 14px;">二本线</span></td><td style="border-width: 1px; border-style: solid; border-top-color: initial; border-left-color: initial;" align="center" valign="middle"><span style="font-size: 14px;">138.5</span></td><td style="border-width: 1px; border-style: solid; border-top-color: initial; border-left-color: initial;" align="center" valign="middle" width="52"><span style="font-size: 14px;">88.50</span></td></tr><tr height="23" style="height:23px"><td height="23" style="border-width: 1px; border-style: solid; border-top-color: initial;" align="center" valign="middle" width="37"><span style="font-size: 14px;">10</span></td><td style="border-width: 1px; border-style: solid; border-top-color: initial; border-left-color: initial;" align="center" valign="middle" width="53"><span style="font-size: 14px;">陆茲宏</span></td><td style="border-width: 1px; border-style: solid; border-top-color: initial; border-left-color: initial;" align="center" valign="middle" width="31"><span style="font-size: 14px;">女</span></td><td style="border-width: 1px; border-style: solid; border-top-color: initial; border-left-color: initial;" align="center" valign="middle" width="171"><span style="font-size: 14px;">广州市第二中学</span></td><td style="border-width: 1px; border-style: solid; border-top-color: initial; border-left-color: initial;" align="center" valign="middle" width="62"><span style="font-size: 14px;">网球</span></td><td width="85" style="border-width: 1px; border-style: solid; border-top-color: initial; border-left-color: initial;" align="center" valign="middle"><span style="font-size: 14px;">女子单打</span></td><td style="border-width: 1px; border-style: solid; border-top-color: initial; border-left-color: initial;" align="center" valign="middle"><span style="font-size: 14px;">二本线</span></td><td style="border-width: 1px; border-style: solid; border-top-color: initial; border-left-color: initial;" align="center" valign="middle"><span style="font-size: 14px;">144</span></td><td style="border-width: 1px; border-style: solid; border-top-color: initial; border-left-color: initial;" align="center" valign="middle" width="52"><span style="font-size: 14px;">95.43</span></td></tr><tr height="23" style="height:23px"><td height="23" style="border-width: 1px; border-style: solid; border-top-color: initial;" align="center" valign="middle" width="37"><span style="font-size: 14px;">11</span></td><td style="border-width: 1px; border-style: solid; border-top-color: initial; border-left-color: initial;" align="center" valign="middle" width="53"><span style="font-size: 14px;">束钰菲</span></td><td style="border-width: 1px; border-style: solid; border-top-color: initial; border-left-color: initial;" align="center" valign="middle" width="31"><span style="font-size: 14px;">女</span></td><td style="border-width: 1px; border-style: solid; border-top-color: initial; border-left-color: initial;" align="center" valign="middle" width="171"><span style="font-size: 14px;">江苏省丹阳高级中学</span></td><td style="border-width: 1px; border-style: solid; border-top-color: initial; border-left-color: initial;" align="center" valign="middle" width="62"><span style="font-size: 14px;">网球</span></td><td width="85" style="border-width: 1px; border-style: solid; border-top-color: initial; border-left-color: initial;" align="center" valign="middle"><span style="font-size: 14px;">女子单打</span></td><td style="border-width: 1px; border-style: solid; border-top-color: initial; border-left-color: initial;" align="center" valign="middle"><span style="font-size: 14px;">二本线</span></td><td style="border-width: 1px; border-style: solid; border-top-color: initial; border-left-color: initial;" align="center" valign="middle"><span style="font-size: 14px;">149.5</span></td><td style="border-width: 1px; border-style: solid; border-top-color: initial; border-left-color: initial;" align="center" valign="middle" width="52"><span style="font-size: 14px;">88.07</span></td></tr></tbody></table><p style="text-align: left; text-indent: 43px; background: white;"><br/></p>
+                       
+                        <div class="pull-right mt20">
+                            <!-- JiaThis Button BEGIN -->
+                            <div class="jiathis_style">
+                                <span class="jiathis_txt">分享到：</span>
+                                <a class="jiathis_button_icons_1"></a>
+                                <a class="jiathis_button_icons_2"></a>
+                                <a class="jiathis_button_icons_3"></a>
+                                <a class="jiathis_button_icons_4"></a>
+                                <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
+                                <a class="jiathis_counter_style"></a>
+                            </div>
+                            <script type="text/javascript" src="http://v3.jiathis.com/code/jia.js" charset="utf-8"></script>
+                            <!-- JiaThis Button END -->
+                        </div>
+                    </div>
+                </div>
+            <div class="col-md-3 col-sm-4" style="margin-bottom:15px;">
+                <div class="t_news">
+                    <div class="t_serve clearfix">
+                       <a href="/cms/item/?cat=30&parent=7"><img src="/static/default/images/banner/gongshizhuanlan.png" class="t_limg" alt=""></a>
+                        <a href="/cms/item/?cat=31&parent=7"><img src="/static/default/images/banner/guanlibanfa.png" class="t_limg" alt=""></a>
+                        <a href="/cms/item/?cat=32&parent=7"><img src="/static/default/images/banner/jijianjiandu.png" class="t_limg" alt=""></a>
+                        
+                    </div>
+                    <ul class="t_ad">
+                    </ul>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+      
+    <div class="y_foot hidden-xs">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="t_col3">
+                        <h5>联系我们</h5>
+                        <div class="t_icon1">
+                            <i></i>
+                            <span>400-0123-517</span><br/>
+                        </div>
+                        <div class="t_icon2">
+                            <i></i>
+                            <span>zsb@ruc.edu.cn</span></br>
+                        </div>
+                        <div class="t_icon4">
+                            <i></i>
+                            <span>010-62511156(传真)</span></br>
+                        </div>
+                        <div class="t_icon3">
+                            <i></i>
+                            <span>北京市海淀区中关村大街59号<br/>知行F楼(北区食堂)六层</span></br>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="t_col3">
+                        <h5>关注我们</h5>
+                        <img src="/static/default/images/wechat.png" alt="">
+                        <p>扫描二维码关注我们</p>
+                        <p>微信公众号"人大阳光招生"</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="t_col3">
+                        <h5>学术公告</h5>
+                        
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="t_col3">
+                         <h5>快速链接
+                        <a target="_blank" href="http://211.71.30.15/index/index_main.action" style="margin-left: 40px;color: #999;font-weight: normal;font-size: 16px;">返回旧网站</a>
+                               <a target="_blank" href="http://211.71.30.15/index/index_main.action" >
+                                    <span class="icon-wrap">
+                                        <span class="icon icon-arrow_carrot-right_alt2"  style="color: #999"></span>
+                                    </span>
+                                </a>
+                        </h5>
+                        
+                                 
+                        <a href="/cms/item/1031.html" class="t_b" target = _blank>人大主页</a>
+                       
+                                 
+                        <a href="/cms/item/1032.html" class="t_b" target = _blank>人大新闻网</a>
+                       
+                                 
+                        <a href="/cms/item/1038.html" class="t_b" target = _blank>留学生招生</a>
+                       
+                                 
+                        <a href="/cms/item/1037.html" class="t_b" target = _blank>研究生招生</a>
+                       
+                                 
+                        <a href="/cms/item/1036.html" class="t_b" target = _blank>考生黄页</a>
+                       
+                                 
+                        <a href="/cms/item/1035.html" class="t_b" target = _blank>校园地图</a>
+                       
+                                 
+                        <a href="/cms/item/1034.html" class="t_b" target = _blank>校友总会</a>
+                       
+                                 
+                        <a href="/cms/item/1033.html" class="t_b" target = _blank>教育基金会</a>
+                       
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="y_bottom">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="t_info clearfix">
+                        <p>版权所有 Copyright© 中国人民大学本科生招生办公室   京ICP备05066828号-1</p>
+                        <div class="t_flogo">
+                            <a href="http://www.ruc.edu.cn/"><img src="/static/default/images/t_logo.png" alt=""></a>
+                            <a href="#" class="hidden-xs t_back">回顶部</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

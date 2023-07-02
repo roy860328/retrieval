@@ -1,0 +1,1305 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>中国人民大学 | RENMIN UNIVERSITY of CHINA</title>
+<link rel="shortcut icon" href="/wp-content/themes/rucweb/images/ruc.ico" type="image/x-icon" />
+<link rel="stylesheet" type="text/css" href="/wp-content/themes/rucweb/style.css" />
+<link rel="stylesheet" type="text/css" href="/wp-content/themes/rucweb/css/bgstretcher.css" />
+<link rel="stylesheet" type="text/css" href="/wp-content/themes/rucweb/css/jquery.fancybox.css" />
+<link rel="stylesheet" type="text/css" href="/wp-content/themes/rucweb/css/style-1.css" />
+
+<script type="text/javascript" src="//apps.bdimg.com/libs/jquery/1.8.1/jquery.min.js"></script>
+<script type="text/javascript" src="/wp-content/themes/rucweb/js/bgstretcher.js"></script>
+<script type="text/javascript" src="/wp-content/themes/rucweb/js/jquery.fancybox.pack.js"></script>
+
+<script type="text/javascript">
+	$(document).ready(function(){
+		var storage = window.localStorage;
+        //  Initialize Backgound Stretcher	   
+		$('BODY').bgStretcher({
+        images: ['/wp-content/themes/rucweb/images/ruc_bg_619.jpg','/wp-content/themes/rucweb/images/ruc_bg_618.jpg','/wp-content/themes/rucweb/images/ruc_bg_617.jpg','/wp-content/themes/rucweb/images/ruc_bg_611.jpg','/wp-content/themes/rucweb/images/ruc_bg_613.jpg','/wp-content/themes/rucweb/images/ruc_bg_605.jpg','/wp-content/themes/rucweb/images/ruc_bg_603.jpg','/wp-content/themes/rucweb/images/ruc_bg_502.jpg','/wp-content/themes/rucweb/images/ruc_bg_503.jpg','/wp-content/themes/rucweb/images/ruc_bg_506.jpg'],
+        imageWidth: 1680, 
+        imageHeight: 1050,
+        transitionEffect: 'fade',
+        sequenceMode: 'normal',
+        buttonPrev: '#cclb-btn-prev',
+        buttonNext: '#cclb-btn-next',
+        nextSlideDelay: '3000',
+        preloadImg: true 
+  //pagination: '#nav'
+});		
+		$('.animate span').mouseenter(function(){
+                	$('#searchbox').slideUp();
+			$('.animate-area div').stop(true, true);
+			$('.animate').removeClass('no-bg-color');
+			$('.animate span').removeClass('changebg');
+			$(this).addClass('changebg');
+			$('.aa-content').hide();
+			var box = $(this).parent();
+			box.removeClass('animate');
+			box.animate({
+				width: '300'
+			}, 200, function(){
+				box.addClass('no-bg-color');
+				box.children('.aa-content').slideDown(200);
+				box.addClass('animate');
+			});
+			$('.animate').animate({
+				width: '150'
+			}, 200);
+		});
+		
+		$('.aa-content').mouseleave(function(){
+			$('.animate-area div').stop(true, true);
+			$(this).slideUp(200);
+			$('.animate').animate({
+				width: '200'
+			},200, function(){
+				$(this).removeClass('no-bg-color');
+				$('.animate span').removeClass('changebg');
+			});
+		});
+
+		
+		$('#search').click(function(){
+			$('#searchbox').toggle();
+			$(this).css('font-weight','700');
+		});
+		
+		$('#s').focusin(function(){
+			var val = $(this).val();
+			if(val == '请输入搜索内容...'){
+				$(this).val('');
+			}
+		});
+		
+		$('#s').focusout(function(){
+			var val = $(this).val();
+			if(val == ''){
+				$(this).val('请输入搜索内容...');
+			}
+		});
+		
+		$(document).keypress(function(e) {
+			if (e.shiftKey && e.which == 70) $('#searchbox').toggle();
+			$('#search').css('font-weight','700');
+		});
+                
+		if (storage.getItem("lastvisitURL") && storage.getItem("lastvisitSite")){ 
+			$('#lastvisitLink').html(storage.getItem("lastvisitSite"));
+			$('#lastvisitLink').attr('href',storage.getItem("lastvisitURL"));
+			$('.lastvisit').show();
+		};
+		
+		$('.f1').click(function(){
+			$('.dcm-content p').css('font-size','12px').css('line-height','20px');
+		});
+		$('.f2').click(function(){
+			$('.dcm-content p').css('font-size','14px').css('line-height','24px');
+		});
+		$('.f3').click(function(){
+			$('.dcm-content p').css('font-size','16px').css('line-height','28px');
+		});
+                
+                 $('.links').hover(function(){
+          	$('#searchbox').show();
+		$('.serv-content').slideUp(200);
+                $('.serv').removeClass('no-bg-color');;
+         	 });
+	});
+	
+</script>
+    
+</head>
+<body>
+    <div id="detailpage">
+		<div class="top">
+			<div id="detail-top">
+				<div class="logo"><a href="/"><img src="/wp-content/themes/rucweb/images/logo.png" /></a></div>
+				<div class="top-links">
+					<div class="animate-area">
+						<div class="sum animate">
+							<span>学校概况</span>
+							<div class="sum-content aa-content">
+								<a href="/intro">学校简介</a>
+								<a href="/department">机构设置</a>
+								<a href="/history">历史沿革</a>
+                                <a href="/leaders">管理层</a>
+								<a href="/documentary">纪录片</a>
+							</div>
+						</div>
+						<div class="deps animate">
+							<span>学部机构</span>
+							<div class="deps-content aa-content">
+								<a href="/humanities">人文学部</a>
+				                <a href="/economics">经济学部</a>
+				                <a href="/lawandpolitics">法政学部</a>
+				                <a href="/management">管理学部</a>
+				                <a href="/scienceandtechnology">理工学部</a>
+				                <a href="/department">其他教学科研单位</a>
+								<div class="lastvisit">
+									<label>最近访问</label><a id="lastvisitLink" href="#"></a>
+								</div>
+							</div>
+						</div>
+						<div class="serv animate">
+							<span>校园服务</span>
+							<div class="serv-content aa-content">
+                                <a href="http://service.ruc.edu.cn">服务中心</a>
+                                                          	<div class="two"><a href="http://www.lib.ruc.edu.cn/" target="_blank">图书馆</a><a>/</a><a href="http://museum.ruc.edu.cn/" target="_blank">博物馆</a></div>
+                                <a href="http://xxgk.ruc.edu.cn/" target="_blank">信息公开</a>
+                                                                <div class="two"><a href="http://v.ruc.edu.cn" target="_blank">微人大</a><a>/</a><a href="http://mail.ruc.edu.cn">邮箱</a></div>   
+                                                                <div class="two"><a href="/calendar">校历</a><a>/</a><a href="/yellowpage">黄页</a><a>/</a><a href="/map">地图</a></div> 
+                                <div class="two"><!-- <a>信箱:</a> --><a href="mailto:sjxx@ruc.edu.cn" class="hover-qipao">书记信箱
+								<div class="qipao">sjxx@ruc.edu.cn</div>
+								</a><a>/</a><a class="hover-qipao" href="mailto:xzxx@ruc.edu.cn">校长信箱<div class="qipao">xzxx@ruc.edu.cn</div></a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="links">
+                                                <a href="/resource-student" style="margin-left:54px;">学生</a><span>|</span>
+                                                <a href="/resource-staff">教职工</a><span>|</span>
+                                                <a href="http://alumni.ruc.edu.cn/" target="_blank">校友</a><span>|</span>
+                                                <a href="/resource-guest">考生及访客</a>
+                                                <!--<a href="http://media.ruc.edu.cn" target="_blank" title="网络电视" class="link2tv"></a>-->
+						<div id="searchbox" class="searchbox">
+							<form action="http://www.ruc.edu.cn/" method="get">
+								<input type="text" id="s" class="inputtext" name="s" value="请输入搜索内容..." />
+								<input type="image" id="search_btn" name="commit" class="submit" value=""  src="/wp-content/themes/rucweb/images/trans-bg.png" />
+							</form>
+							<div class="help">Shift+F可以关闭或打开</div>
+							<a href="/archives/18395" class="help">帮助</a>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+<div class="content">
+	<div id="detail-content">
+		<div class="dc-left dc-left-service">
+			<span class="dcl-title">校园服务/Services</span>
+			<ul class="dcl-nav-1">
+				<li><a href="/calendar" class="dcl-ul-a-left">人大校历</a><a href="/calendar" class="dcl-ul-a-right">Calendar</a></li>
+                                <li><a href="http://www.lib.ruc.edu.cn/" class="dcl-ul-a-left" target="_blank">图书馆</a><a target="_blank" href="http://www.lib.ruc.edu.cn/" class="dcl-ul-a-right">Lib</a></li> 
+                                <li><a href="http://museum.ruc.edu.cn/" class="dcl-ul-a-left" target="_blank">博物馆</a><a href="http://museum.ruc.edu.cn/" class="dcl-ul-a-right" target="_blank">Museum</a></li> 
+                                <li><a href="http://portal.ruc.edu.cn" class="dcl-ul-a-left" target="_blank">数字人大</a><a href="http://portal.ruc.edu.cn" class="dcl-ul-a-right"  target="_blank">Portal</a></li> 
+                                <li><a href="http://mail.ruc.edu.cn" class="dcl-ul-a-left">邮件系统</a><a href="http://ruc.edu.cn" class="dcl-ul-a-right">Mail</a></li>
+                                <li class="active"><a href="/yellowpage" class="dcl-ul-a-left">人大黄页</a><a href="/yellowpage" class="dcl-ul-a-right">Directory</a></li>
+                                <li><a href="/map" class="dcl-ul-a-left">校园地图</a><a href="/map" class="dcl-ul-a-right">Campus Map</a></li>
+                                <li><a href="mailto:xzxx@ruc.edu.cn" class="dcl-ul-a-left" target="_blank">校长信箱</a><a href="mailto:xzxx@ruc.edu.cn" class="dcl-ul-a-right">Email</a></li> 
+			</ul>
+			<ul class="dcl-nav-2">
+				<li><a href="http://rucweb.sinaapp.com/undergraduate" class="dcl-ul-a-jx">教学</a></li>
+				<li><a href="http://rucweb.sinaapp.com/keysubjects" class="dcl-ul-a-ky">科研</a></li>
+				<li><a href="http://xsc.ruc.edu.cn" class="dcl-ul-a-zsjy">招生就业</a></li>
+				<li><a href="http://io.ruc.edu.cn" class="dcl-ul-a-hzjl">交流合作</a></li>
+			</ul>
+		</div>
+		<div class="dc-middle dc-middle-yellowpage">
+			<div class="dcm-fix left-line">
+				<div class="dcm-content">
+                                	<div class="dcmc-teacherinfo-searchhelp">
+                                                想找哪个单位？试试右上角的搜索功能吧！(Shift+F)<br />
+                                          如果要反馈网站的相关问题，请发送邮件到<a href="mailto:web@ruc.edu.cn">web@ruc.edu.cn</a>
+                                            </div>
+					<div class="yellowpage-ruc">
+						<div class="yp-ruc-top">
+							<div class="yp-ruc-top-left">查号台：114  火警：119  匪警：110   急救中心：120    交通事故： 122</div>
+							<div class="yp-ruc-top-right"></div>
+						</div>
+						<div class="yp-ruc-info">
+							<img class="yp-ruc-info-logo" src="/wp-content/themes/rucweb/images/rucinfo-logo.jpg" />
+							<div class="yp-ruc-infobox">
+								<h3>中国人民大学</h3>
+								<p>中国  北京市海淀区中关村大街59号 邮编：100872</p>
+								<p>电话：010-6251-1083 传真：010-6251-3144</p>
+								<p>Email：webmaster@ruc.edu.cn</p>
+								<p>网址：www.ruc.edu.cn</p>
+							</div>
+						</div>
+					</div>
+                                        
+					<div class="yellowpage-az">
+						<ul id="az-nav">
+							<li class="az"><a href="#" class="cur" tag="all">A~Z</a></li>
+							
+							<li><a href="#" tag="sort-b">B</a></li>
+							<li><a href="#" tag="sort-c">C</a></li>
+							<li><a href="#" tag="sort-d">D</a></li>
+							
+							<li><a href="#" tag="sort-f">F</a></li>
+							<li><a href="#" tag="sort-g">G</a></li>
+							<li><a href="#" tag="sort-h">H</a></li>
+							<li><a href="#" tag="sort-j">J</a></li>
+							<li><a href="#" tag="sort-k">K</a></li>
+							<li><a href="#" tag="sort-l">L</a></li>
+							<li><a href="#" tag="sort-m">M</a></li>
+                                                        <li><a href="#" tag="sort-n">N</a></li>
+                                                        <li><a href="#" tag="sort-p">P</a></li>
+                                                        <li><a href="#" tag="sort-q">Q</a></li>
+							<li><a href="#" tag="sort-r">R</a></li>
+							<li><a href="#" tag="sort-s">S</a></li>
+							<li><a href="#" tag="sort-t">T</a></li>
+							<li><a href="#" tag="sort-w">W</a></li>
+							<li><a href="#" tag="sort-x">X</a></li>
+							<li><a href="#" tag="sort-y">Y</a></li>
+							<li><a href="#" tag="sort-z">Z</a></li>
+						</ul>
+					</div>
+
+					
+					<div class="yellowpage-list">
+						                                                                                                        <ul class="sort-b">
+<li><img class="yellowpage-list-logo" src="/wp-content/themes/rucweb/images/rucinfo-logo.jpg" alt="" />
+<div class="yellowpage-list-infobox">
+<h3>保卫处</h3>
+<p>中国人民大学 游泳馆配楼3层</p>
+<p>电话：010-62511073</p>
+<p>传真：010-62511073</p>
+<p>邮箱：<a href="mailto:bwb@ruc.edu.cn">bwb@ruc.edu.cn</a></p>
+<p>网址：<a href="http://bwb.ruc.edu.cn/" target="_blank" rel="noopener">http://bwb.ruc.edu.cn/</a></p>
+</div>
+</li>
+<li><img class="yellowpage-list-logo" src="/wp-content/themes/rucweb/images/rucinfo-logo.jpg" alt="" />
+<div class="yellowpage-list-infobox">
+<h3><a style="color: #593939;" href="http://museum.ruc.edu.cn/">博物馆</a></h3>
+<p>中国人民大学 博物馆（艺术学院楼）</p>
+<p>电话：010-62515691</p>
+<p>传真：010-62515691</p>
+<p>邮箱：<a href="mailto:bwg@ruc.edu.cn">bwg@ruc.edu.cn</a></p>
+<p>网址：<a href="http://museum.ruc.edu.cn/" target="_blank" rel="noopener">http://museum.ruc.edu.cn/</a></p>
+</div>
+</li>
+<li></li>
+</ul>
+<ul class="sort-b">
+<li><img class="yellowpage-list-logo" src="/wp-content/themes/rucweb/images/rucinfo-logo.jpg" alt="" />
+<div class="yellowpage-list-infobox">
+<h3>北京世纪明德物业管理有限公司</h3>
+<p>中国人民大学 明德堂303室</p>
+<p>电话：010-62514305</p>
+<p>传真：010-62514305</p>
+<p>邮箱：<a href="mailto:sjmd@ruc.edu.cn">sjmd@ruc.edu.cn</a></p>
+<p>网址：<a href="http://www.bjsjmd.cn" target="_blank" rel="noopener">http://www.bjsjmd.cn</a></p>
+</div>
+</li>
+</ul>
+<ul class="sort-c">
+<li><img class="yellowpage-list-logo" src="/wp-content/themes/rucweb/images/rucinfo-logo.jpg" alt="" />
+<div class="yellowpage-list-infobox">
+<h3>财务处</h3>
+<p>中国人民大学 科研楼B座0204室</p>
+<p>电话：010-62511618</p>
+<p>传真：010-62511618</p>
+<p>邮箱：<a href="mailto:caiwuchu@ruc.edu.cn">caiwuchu@ruc.edu.cn</a></p>
+</div>
+</li>
+<li><img class="yellowpage-list-logo" src="/wp-content/themes/rucweb/images/rucinfo-logo.jpg" alt="" />
+<div class="yellowpage-list-infobox">
+<h3>财政金融学院</h3>
+<p>中国人民大学 明德主楼604室</p>
+<p>电话：010-82509260</p>
+<p>传真：010-82509261</p>
+<p>邮箱：<a href="mailto:cjban@ruc.edu.cn">cjban@ruc.edu.cn</a></p>
+<p>网址：<a href="http://sf.ruc.edu.cn/" target="_blank" rel="noopener">http://sf.ruc.edu.cn/</a></p>
+</div>
+</li>
+</ul>
+<ul class="sort-c">
+<li><img class="yellowpage-list-logo" src="/wp-content/themes/rucweb/images/rucinfo-logo.jpg" alt="" />
+<div class="yellowpage-list-infobox">
+<h3>产业管理处</h3>
+<p>中国人民大学 科研楼B座9层</p>
+<p>电话：010-62516999</p>
+<p>传真：010-62516999</p>
+<p>邮箱：<a href="mailto:rucchanyechu@126.com">rucchanyechu@126.com</a></p>
+<p>网址：<a href="http://industry.ruc.edu.cn/" target="_blank" rel="noopener">http://industry.ruc.edu.cn/</a></p>
+</div>
+</li>
+<li><img class="yellowpage-list-logo" src="/wp-content/themes/rucweb/images/rucinfo-logo.jpg" alt="" />
+<div class="yellowpage-list-infobox">
+<h3>出版社</h3>
+<p>海淀区中关村大街31号出版社编辑业务楼</p>
+<p>电话：010-62516586</p>
+<p>传真：010-62516586</p>
+<p>邮箱：<a href="mailto:rdcbs@crup.com.cn">rdcbs@crup.com.cn</a></p>
+</div>
+</li>
+</ul>
+<ul class="sort-d">
+<li><img class="yellowpage-list-logo" src="/wp-content/themes/rucweb/images/rucinfo-logo.jpg" alt="" />
+<div class="yellowpage-list-infobox">
+<h3>档案馆</h3>
+<p>中国人民大学 档案馆（藏书馆1层）</p>
+<p>电话： 010-62512934</p>
+<p>传真： 010-62512934</p>
+<p>邮箱：<a href="mailto:dag@ruc.edu.cn">dag@ruc.edu.cn</a></p>
+<p>网址：<a href="http://dag.ruc.edu.cn/" target="_blank" rel="noopener">http://dag.ruc.edu.cn/</a></p>
+</div>
+</li>
+<li><img class="yellowpage-list-logo" src="/wp-content/themes/rucweb/images/rucinfo-logo.jpg" alt="" />
+<div class="yellowpage-list-infobox">
+<h3>党委统战部</h3>
+<p>中国人民大学 明德主楼1203室</p>
+<p>电话：010-62511077</p>
+<p>传真：010-62511077</p>
+<p>邮箱：<a href="mailto:tzb@ruc.edu.cn">tzb@ruc.edu.cn</a></p>
+<p>网址：<a href="http://tzb.ruc.edu.cn/" target="_blank" rel="noopener">http://tzb.ruc.edu.cn/</a></p>
+</div>
+</li>
+</ul>
+<ul class="sort-d">
+<li><img class="yellowpage-list-logo" src="/wp-content/themes/rucweb/images/rucinfo-logo.jpg" alt="" />
+<div class="yellowpage-list-infobox">
+<h3 style="font-size: 12px;">党委宣传部（新闻中心、校报编辑部）</h3>
+<p>中国人民大学 明德主楼1218室</p>
+<p>电话：010-62515253</p>
+<p>传真：010-82509820</p>
+<p>邮箱：<a href="mailto:rucxcb@yeah.net">rucxcb@yeah.net</a></p>
+<p>网址：<a href="http://xcb.ruc.edu.cn" target="_blank" rel="noopener">http://xcb.ruc.edu.cn</a></p>
+</div>
+</li>
+<li><img class="yellowpage-list-logo" src="/wp-content/themes/rucweb/images/rucinfo-logo.jpg" alt="" />
+<div class="yellowpage-list-infobox">
+<h3>党委组织部</h3>
+<p>中国人民大学 明德主楼1217室</p>
+<p>电话：010-62511406</p>
+<p>传真：010-62512008<br />
+邮箱：<a href="mailto:zzb@ruc.edu.cn">zzb@ruc.edu.cn</a><br />
+网址：<a href="http://zzb.ruc.edu.cn" target="_blank" rel="noopener">http://zzb.ruc.edu.cn</a></p>
+</div>
+</li>
+</ul>
+<ul class="sort-d">
+<li><img class="yellowpage-list-logo" src="/wp-content/themes/rucweb/images/rucinfo-logo.jpg" alt="" />
+<div class="yellowpage-list-infobox">
+<h3>党委教师工作部</h3>
+<p>中国人民大学 明德主楼1301室</p>
+<p>电话：010-62518080</p>
+<p>邮箱：<a href="mailto:zzb@ruc.edu.cn">jsgzb@ruc.edu.cn</a><br />
+网址：<a href="http://jsgzb.ruc.edu.cn" target="_blank" rel="noopener">http://jsgzb.ruc.edu.cn</a></p>
+</div>
+</li>
+</ul>
+<ul class="sort-f">
+<li><img class="yellowpage-list-logo" src="/wp-content/themes/rucweb/images/rucinfo-logo.jpg" alt="" />
+<div class="yellowpage-list-infobox">
+<h3>发展规划处</h3>
+<p>中国人民大学 明德主楼1118b室</p>
+<p>电话：010-62511425</p>
+<p>传真：010-62511425</p>
+<p>邮箱：<a href="mailto:fzghc@ruc.edu.cn">fzghc@ruc.edu.cn</a></p>
+<p>网址：<a href="http://plan.ruc.edu.cn/" target="_blank" rel="noopener">http://plan.ruc.edu.cn/</a></p>
+</div>
+</li>
+<li><img class="yellowpage-list-logo" src="/wp-content/themes/rucweb/images/rucinfo-logo.jpg" alt="" />
+<div class="yellowpage-list-infobox">
+<h3>法学院</h3>
+<p>中国人民大学 明德法学楼612室</p>
+<p>电话：010-82509220</p>
+<p>传真：010-62514365</p>
+<p>邮箱：<a href="mailto:law912@126.com">law912@126.com</a></p>
+<p>网址：<a href="http://www.law.ruc.edu.cn/" target="_blank" rel="noopener">http://www.law.ruc.edu.cn/</a></p>
+</div>
+</li>
+</ul>
+<ul class="sort-f">
+<li><img class="yellowpage-list-logo" src="/wp-content/themes/rucweb/images/rucinfo-logo.jpg" alt="" />
+<div class="yellowpage-list-infobox">
+<h3>附属小学</h3>
+<p>北京市海淀区蓝靛厂路 18号</p>
+<p>电话：010-88863978</p>
+<p>传真：010-88872399</p>
+<p>邮箱：<a href="mailto:rdfx2010@sina.com">rdfx2010@sina.com</a></p>
+<p>网址：<a href="http://www.rdfx.net/" target="_blank" rel="noopener">http://www.rdfx.net/</a></p>
+</div>
+</li>
+<li><img class="yellowpage-list-logo" src="/wp-content/themes/rucweb/images/rucinfo-logo.jpg" alt="" />
+<div class="yellowpage-list-infobox">
+<h3>附属中学</h3>
+<p>北京市海淀区中关村大街37号</p>
+<p>电话：010-62513463</p>
+<p>传真：010-62514291</p>
+<p>邮箱：<a href="mailto:xb@rdfz.cn">xb@rdfz.cn</a></p>
+<p>网址：<a href="http://www.rdfz.cn/" target="_blank" rel="noopener">http://www.rdfz.cn/</a></p>
+</div>
+</li>
+</ul>
+<ul class="sort-g">
+<li><img class="yellowpage-list-logo" src="/wp-content/themes/rucweb/images/rucinfo-logo.jpg" alt="" />
+<div class="yellowpage-list-infobox">
+<h3>高等教育研究室</h3>
+<p>中国人民大学 国学馆337室</p>
+<p>电话：010-82509612</p>
+<p>传真：010-82509612</p>
+<p>邮箱：<a href="mailto:heso@ruc.edu.cn">heso@ruc.edu.cn</a></p>
+<p>网址：<a href="http://heso.ruc.edu.cn/" target="_blank" rel="noopener">http://heso.ruc.edu.cn/</a></p>
+</div>
+</li>
+<li><img class="yellowpage-list-logo" src="/wp-content/themes/rucweb/images/rucinfo-logo.jpg" alt="" />
+<div class="yellowpage-list-infobox">
+<h3>高瓴人工智能学院</h3>
+<p>中国人民大学 信息学院257室</p>
+<p>电话：010-62511257</p>
+<p>传真：010-6251257</p>
+<p>邮箱：<a href="mailto:ai@ruc.edu.cn">ai@ruc.edu.cn </a></p>
+<p>网址：<a href="http://ai.ruc.edu.cn/" target="_blank" rel="noopener">http://ai.ruc.edu.cn/</a></p>
+</div>
+</li>
+</ul>
+<ul class="sort-g">
+<li><img class="yellowpage-list-logo" src="/wp-content/themes/rucweb/images/rucinfo-logo.jpg" alt="" />
+<div class="yellowpage-list-infobox">
+<h3>公共管理学院</h3>
+<p>中国人民大学 求是楼1层</p>
+<p>电话：010-62511122</p>
+<p>传真：010-62516240</p>
+<p>邮箱：<a href="mailto:spa@mparuc.edu.cn">spa@mparuc.edu.cn </a></p>
+<p>网址：<a href="http://spap.ruc.edu.cn/" target="_blank" rel="noopener">http://spap.ruc.edu.cn/</a></p>
+</div>
+</li>
+<li><img class="yellowpage-list-logo" src="/wp-content/themes/rucweb/images/rucinfo-logo.jpg" alt="" />
+<div class="yellowpage-list-infobox">
+<h3>国际关系学院</h3>
+<p>中国人民大学 明德国际楼8层</p>
+<p>电话：010-62511350</p>
+<p>传真：010-62511350</p>
+<p>邮箱：<a href="mailto:sis@ruc.edu.cn">sis@ruc.edu.cn</a></p>
+<p>网址：<a href="http://sis.ruc.edu.cn/" target="_blank" rel="noopener">http://sis.ruc.edu.cn/</a></p>
+</div>
+</li>
+</ul>
+<ul class="sort-g">
+<li><img class="yellowpage-list-logo" src="/wp-content/themes/rucweb/images/rucinfo-logo.jpg" alt="" />
+<div class="yellowpage-list-infobox">
+<h3>国际交流处</h3>
+<p>中国人民大学 明德主楼1115室</p>
+<p>电话：010-82509597</p>
+<p>传真：010-62515329</p>
+<p>邮箱：<a href="mailto:international@ruc.edu.cn">international@ruc.edu.cn</a></p>
+<p>网址：<a href="http://io.ruc.edu.cn/" target="_blank" rel="noopener">http://io.ruc.edu.cn/</a></p>
+</div>
+</li>
+<li><img class="yellowpage-list-logo" src="/wp-content/themes/rucweb/images/rucinfo-logo.jpg" alt="" />
+<div class="yellowpage-list-infobox">
+<h3>国际学院（苏州研究院）</h3>
+<p>江苏省苏州工业园区仁爱路158号</p>
+<p>电话：0512-62605239</p>
+<p>传真：0512-62602193</p>
+<p>邮箱：<a href="mailto:law606@163.com">law606@163.com</a></p>
+<p>网址：<a href="http://sc.ruc.edu.cn/" target="_blank" rel="noopener">http://sc.ruc.edu.cn/</a></p>
+</div>
+</li>
+</ul>
+<ul class="sort-g">
+<li><img class="yellowpage-list-logo" src="/wp-content/themes/rucweb/images/rucinfo-logo.jpg" alt="" />
+<div class="yellowpage-list-infobox">
+<h3>国学院</h3>
+<p>中国人民大学 国学馆121室</p>
+<p>电话：010-62515652</p>
+<p>传真：010-62511085</p>
+<p>邮箱：<a href="mailto:guoxueyuan@ruc.edu.cn">guoxueyuan@ruc.edu.cn</a></p>
+<p>网址：<a href="http://guoxue.ruc.edu.cn/" target="_blank" rel="noopener">http://guoxue.ruc.edu.cn/</a></p>
+</div>
+</li>
+</ul>
+<ul class="sort-h"><!--
+ 	
+
+<li><img class="yellowpage-list-logo" src="/wp-content/themes/rucweb/images/rucinfo-logo.jpg" alt="" />
+
+
+<div class="yellowpage-list-infobox">
+
+
+<h3>汉青经济与金融高级研究院</h3>
+
+
+中国人民大学 明德主楼518室
+
+电话：010-62511138
+
+传真：010-62511343
+
+邮箱：<a href="mailto:rendahanqing@gmail.com">rendahanqing@gmail.com</a>
+
+网址：<a href="http://www.hanqing.ruc.edu.cn/" target="_blank">http://www.hanqing.ruc.edu.cn/</a>
+
+</div>
+
+</li>
+
+
+--></p>
+<li><img class="yellowpage-list-logo" src="/wp-content/themes/rucweb/images/rucinfo-logo.jpg" alt="" />
+<div class="yellowpage-list-infobox">
+<h3>化学系</h3>
+<p>中国人民大学 理工楼206室</p>
+<p>电话：010-62512822</p>
+<p>传真：010-62516444</p>
+<p>邮箱：<a href="mailto:zhukeran@ruc.edu.cn@ruc.edu.cn">zhukeran@ruc.edu.cn</a></p>
+<p>网址：<a href="http://chem.ruc.edu.cn/" target="_blank" rel="noopener">http://chem.ruc.edu.cn/</a></p>
+</div>
+</li>
+</ul>
+<ul class="sort-h">
+<li><img class="yellowpage-list-logo" src="/wp-content/themes/rucweb/images/rucinfo-logo.jpg" alt="" />
+<div class="yellowpage-list-infobox">
+<h3>环境学院</h3>
+<p>中国人民大学 科研楼A座801室</p>
+<p>电话：010-62511042</p>
+<p>传真：010-62511645</p>
+<p>邮箱：<a href="mailto:env2@ruc.edu.cn">env2@ruc.edu.cn</a></p>
+<p>网址：<a href="http://envi.ruc.edu.cn/newcn/" target="_blank" rel="noopener">http://envi.ruc.edu.cn/newcn/</a></p>
+</div>
+</li>
+<li><img class="yellowpage-list-logo" src="/wp-content/themes/rucweb/images/rucinfo-logo.jpg" alt="" />
+<div class="yellowpage-list-infobox">
+<h3>后勤集团</h3>
+<p>中国人民大学 后勤集团小院（学生活动中心东侧）</p>
+<p>电话：010-62511355</p>
+<p>传真：010-62511355</p>
+<p>邮箱：<a href="mailto:houqinxinxi@ruc.edu.cn">houqinxinxi@ruc.edu.cn</a></p>
+<p>网址：<a href="http://hqjt.ruc.edu.cn/" target="_blank" rel="noopener">http://hqjt.ruc.edu.cn/</a></p>
+</div>
+</li>
+</ul>
+<ul class="sort-j">
+<li><img class="yellowpage-list-logo" src="/wp-content/themes/rucweb/images/rucinfo-logo.jpg" alt="" />
+<div class="yellowpage-list-infobox">
+<h3>机关党委</h3>
+<p>中国人民大学 明德主楼1319室</p>
+<p>电话：010-62511069</p>
+<p>传真：010-62511069</p>
+<p>邮箱：<a href="mailto:d_xb@ruc.edu.cn">d_xb@ruc.edu.cn</a></p>
+<p>网址：<a href="http://jgdw.ruc.edu.cn/">http://jgdw.ruc.edu.cn/</a></p>
+</div>
+</li>
+<li><img class="yellowpage-list-logo" src="/wp-content/themes/rucweb/images/rucinfo-logo.jpg" alt="" />
+<div class="yellowpage-list-infobox">
+<h3>纪委办公室（监察处）</h3>
+<p>中国人民大学 明德主楼1219室</p>
+<p>电话：010-62511075</p>
+<p>传真：010-62511075</p>
+<p>邮箱：<a href="mailto:jijian@ruc.edu.cn">jijian@ruc.edu.cn</a></p>
+<p>网址：<a href="http://jwjcc.ruc.edu.cn/" target="_blank" rel="noopener">http://jwjcc.ruc.edu.cn/</a></p>
+</div>
+</li>
+</ul>
+<ul class="sort-j">
+<li><img class="yellowpage-list-logo" src="/wp-content/themes/rucweb/images/rucinfo-logo.jpg" alt="" />
+<div class="yellowpage-list-infobox">
+<h3>继续教育学院</h3>
+<p>北京市海淀区清华东路甲7号</p>
+<p>成教部：62511052</p>
+<p>网教部：53261777</p>
+<p>邮箱：<a href="mailto:jxjyxy@ruc.edu.cn">jxjyxy@ruc.edu.cn</a></p>
+<p>网址：<a href="http://sce.ruc.edu.cn" target="_blank" rel="noopener">http://sce.ruc.edu.cn</a></p>
+</div>
+</li>
+<li><img class="yellowpage-list-logo" src="/wp-content/themes/rucweb/images/rucinfo-logo.jpg" alt="" />
+<div class="yellowpage-list-infobox">
+<h3>教务处</h3>
+<p>中国人民大学 科研楼B座502室</p>
+<p>电话：010-62515217</p>
+<p>传真：010-62511276</p>
+<p>邮箱：<a href="mailto:jwc@ruc.edu.cn">jwc@ruc.edu.cn</a></p>
+<p>网址：<a href="http://jiaowu.ruc.edu.cn/" target="_blank" rel="noopener">http://jiaowu.ruc.edu.cn/</a></p>
+</div>
+</li>
+</ul>
+<ul class="sort-j">
+<li><img class="yellowpage-list-logo" src="/wp-content/themes/rucweb/images/rucinfo-logo.jpg" alt="" />
+<div class="yellowpage-list-infobox">
+<h3>教育学院</h3>
+<p>中国人民大学 国学馆307室</p>
+<p>电话：010-82509612</p>
+<p>传真：010-82509612</p>
+<p>邮箱：<a href="mailto:jyxy@ruc.edu.cn">jyxy@ruc.edu.cn</a></p>
+<p>网址：<a href="http://soe.ruc.edu.cn/" target="_blank" rel="noopener">http://soe.ruc.edu.cn/</a></p>
+</div>
+</li>
+<li><img class="yellowpage-list-logo" src="/wp-content/themes/rucweb/images/rucinfo-logo.jpg" alt="" />
+<div class="yellowpage-list-infobox">
+<h3>经济学院</h3>
+<p>中国人民大学 明德主楼611a室</p>
+<p>电话：010-62511102</p>
+<p>传真：010-62511091</p>
+<p>邮箱：<a href="mailto:jjxybgs@163.com">jjxybgs@163.com</a></p>
+<p>网址：<a href="http://econ.ruc.edu.cn/" target="_blank" rel="noopener">http://econ.ruc.edu.cn/</a></p>
+</div>
+</li>
+</ul>
+<ul class="sort-k">
+<li><img class="yellowpage-list-logo" src="/wp-content/themes/rucweb/images/rucinfo-logo.jpg" alt="" />
+<div class="yellowpage-list-infobox">
+<h3>科研处</h3>
+<p>中国人民大学 明德主楼1108室</p>
+<p>电话：010-82509386</p>
+<p>传真：010-82509386</p>
+<p>邮箱：<a href="mailto:kycruc@ruc.edu.cn">kycruc@ruc.edu.cn</a></p>
+<p>网址：<a href="http://keyan.ruc.edu.cn/" target="_blank" rel="noopener">http://keyan.ruc.edu.cn/</a></p>
+</div>
+</li>
+</ul>
+<ul class="sort-l">
+<li><img class="yellowpage-list-logo" src="/wp-content/themes/rucweb/images/rucinfo-logo.jpg" alt="" />
+<div class="yellowpage-list-infobox">
+<h3>劳动人事学院</h3>
+<p>中国人民大学 求是楼西侧349室</p>
+<p>电话：010-62513013</p>
+<p>传真：010-62513427</p>
+<p>邮箱：<a href="mailto:laorenyuan@qq.com">laorenyuan@qq.com</a></p>
+<p>网址：<a href="http://slhr.ruc.edu.cn/" target="_blank" rel="noopener">http://slhr.ruc.edu.cn/</a></p>
+</div>
+</li>
+<li><img class="yellowpage-list-logo" src="/wp-content/themes/rucweb/images/rucinfo-logo.jpg" alt="" />
+<div class="yellowpage-list-infobox">
+<h3>理工学科建设处</h3>
+<p>中国人民大学 明德主楼1122b室</p>
+<p>电话：010-62513381</p>
+<p>传真：010-62513381</p>
+<p>邮箱：<a href="mailto:ligongchu@ruc.edu.cn">ligongchu@ruc.edu.cn</a></p>
+<p>网址：<a href="http://se-office.ruc.edu.cn/" target="_blank" rel="noopener">http://se-office.ruc.edu.cn/</a></p>
+</div>
+</li>
+</ul>
+<ul class="sort-l">
+<li><img class="yellowpage-list-logo" src="/wp-content/themes/rucweb/images/rucinfo-logo.jpg" alt="" />
+<div class="yellowpage-list-infobox">
+<h3>历史学院</h3>
+<p>中国人民大学 人文楼3层</p>
+<p>电话：010-82502722</p>
+<p>传真：010-62511856</p>
+<p>邮箱：<a href="mailto:ruclswz@gmail.com">ruclswz@gmail.com</a></p>
+<p>网址：<a href="http://www.lishixueyuan.com/" target="_blank" rel="noopener">http://www.lishixueyuan.com/</a></p>
+</div>
+</li>
+<li><img class="yellowpage-list-logo" src="/wp-content/themes/rucweb/images/rucinfo-logo.jpg" alt="" />
+<div class="yellowpage-list-infobox">
+<h3>离退休工作处（离退休党委）</h3>
+<p>中国人民大学 原幼儿园北楼1层</p>
+<p>电话： 010-62513720</p>
+<p>传真： 010-62513720</p>
+<p>邮箱：<a href="mailto:ltx@ruc.edu.cn">ltx@ruc.edu.cn</a></p>
+<p>网址：<a href="http://ltx.ruc.edu.cn" target="_blank" rel="noopener">http://ltx.ruc.edu.cn</a></p>
+</div>
+</li>
+</ul>
+<ul class="sort-l">
+<li><img class="yellowpage-list-logo" src="/wp-content/themes/rucweb/images/rucinfo-logo.jpg" alt="" />
+<div class="yellowpage-list-infobox">
+<h3>理学院</h3>
+<p>中国人民大学 理工楼204室</p>
+<p>电话：010-62513171</p>
+<p>传真：010-62516667</p>
+<p>邮箱：<a href="mailto:science_stu@ruc.edu.cn">science_stu@ruc.edu.cn</a></p>
+</div>
+</li>
+<li><img class="yellowpage-list-logo" src="/wp-content/themes/rucweb/images/rucinfo-logo.jpg" alt="" />
+<div class="yellowpage-list-infobox">
+<h3>律师学院</h3>
+<p>中国人民大学 明德法学楼618室</p>
+<p>电话：010-62516187</p>
+<p>传真：010-82509230</p>
+<p>邮箱：<a href="mailto:lawyerschool@163.com">lawyerschool@163.com</a></p>
+<p>网址：<a href="http://lawyer.ruc.edu.cn/" target="_blank" rel="noopener">http://lawyer.ruc.edu.cn/</a></p>
+</div>
+</li>
+</ul>
+<ul class="sort-m">
+<li><img class="yellowpage-list-logo" src="/wp-content/themes/rucweb/images/rucinfo-logo.jpg" alt="" />
+<div class="yellowpage-list-infobox">
+<h3>马克思主义学院</h3>
+<p>中国人民大学 人文楼8层</p>
+<p>电话：010-62513807</p>
+<p>传真：010-62513807</p>
+<p>邮箱：<a href="mailto:marx2@ruc.edu.cn">marx2@ruc.edu.cn</a></p>
+<p>网址：<a href="http://marx.ruc.edu.cn/" target="_blank" rel="noopener">http://marx.ruc.edu.cn/</a></p>
+</div>
+</li>
+</ul>
+<ul class="sort-n">
+<li><img class="yellowpage-list-logo" src="/wp-content/themes/rucweb/images/rucinfo-logo.jpg" alt="" />
+<div class="yellowpage-list-infobox">
+<h3>农业与农村发展学院</h3>
+<p>中国人民大学 明德主楼916室</p>
+<p>电话：010-62511061</p>
+<p>传真：010-62511064</p>
+<p>邮箱：<a href="mailto:xyq@ruc.edu.cn">xyq@ruc.edu.cn</a></p>
+<p>网址：<a href="http://www.sard.ruc.edu.cn" target="_blank" rel="noopener">http://www.sard.ruc.edu.cn</a></p>
+</div>
+</li>
+<li><img class="yellowpage-list-logo" src="/wp-content/themes/rucweb/images/rucinfo-logo.jpg" alt="" />
+<div class="yellowpage-list-infobox">
+<h3 style="height: auto;">宁夏国际学院筹建工作领导小组办公室</h3>
+<p>中国人民大学 国学馆404室</p>
+<p>电话：010-82507967、010-82507968</p>
+<p>邮箱：<a href="mailto:nxgjxy@ruc.edu.cn">nxgjxy@ruc.edu.cn</a></p>
+</div>
+</li>
+</ul>
+<ul class="sort-r">
+<li><img class="yellowpage-list-logo" src="/wp-content/themes/rucweb/images/rucinfo-logo.jpg" alt="" />
+<div class="yellowpage-list-infobox">
+<h3>人大文化科技园建设发展有限公司</h3>
+<p>中国人民大学 原幼儿园南楼203室</p>
+<p>电话：010-82503001</p>
+<p>传真：010-82509959</p>
+<p>邮箱：<a href="mailto:cspruc@ruc.edu.cn">cspruc@ruc.edu.cn</a></p>
+<p>网址：<a href="http://www.cspruc.com/indxe.jsp" target="_blank" rel="noopener">http://www.cspruc.com/indxe.jsp</a></p>
+</div>
+</li>
+<li><img class="yellowpage-list-logo" src="/wp-content/themes/rucweb/images/rucinfo-logo.jpg" alt="" />
+<div class="yellowpage-list-infobox">
+<h3>人大资产经营管理公司</h3>
+<p>中国人民大学 科研楼B座901</p>
+<p>电话：010-82503027</p>
+<p>传真：010-62516999</p>
+<p>邮箱：<a href="mailto:rdzcgs@126.com">rdzcgs@126.com</a></p>
+<p>网址：<a href="http://industry.ruc.edu.cn/" target="_blank" rel="noopener">http://industry.ruc.edu.cn/</a></p>
+</div>
+</li>
+</ul>
+<ul class="sort-r">
+<li><img class="yellowpage-list-logo" src="/wp-content/themes/rucweb/images/rucinfo-logo.jpg" alt="" />
+<div class="yellowpage-list-infobox">
+<h3>人事处</h3>
+<p>中国人民大学 明德主楼1126室</p>
+<p>电话：010-62512807</p>
+<p>传真：010-82509722</p>
+<p>邮箱：<a href="mailto:rsc@ruc.edu.cn">rsc@ruc.edu.cn</a></p>
+<p>网址：<a href="http://hr.ruc.edu.cn" target="_blank" rel="noopener">http://hr.ruc.edu.cn</a></p>
+</div>
+</li>
+<li><img class="yellowpage-list-logo" src="/wp-content/themes/rucweb/images/rucinfo-logo.jpg" alt="" />
+<div class="yellowpage-list-infobox">
+<h3>人才工作领导小组办公室</h3>
+<p>地址：中国人民大学明德主楼1133室</p>
+<p>电话：010-82501029</p>
+<p>传真：010-62513718</p>
+<p>邮箱：<a href="mailto:rcb@ruc.edu.cn">rcb@ruc.edu.cn</a></p>
+<p>网址：<a href="http://rcb.ruc.edu.cn" target="_blank" rel="noopener">http://rcb.ruc.edu.cn</a></p>
+</div>
+</li>
+</ul>
+<ul class="sort-s">
+<li><img class="yellowpage-list-logo" src="/wp-content/themes/rucweb/images/rucinfo-logo.jpg" alt="" />
+<div class="yellowpage-list-infobox">
+<h3>商学院</h3>
+<p>中国人民大学 明商楼610室</p>
+<p>电话：010-82509170</p>
+<p>传真：010-82509169</p>
+<p>邮箱：<a href="mailto:jinxueyan@rmbs.ruc.edu.cn">jinxueyan@rmbs.ruc.edu.cn</a></p>
+<p>网址：<a href="http://www.rmbs.ruc.edu.cn" target="_blank" rel="noopener">http://www.rmbs.ruc.edu.cn/</a></p>
+</div>
+</li>
+<li><img class="yellowpage-list-logo" src="/wp-content/themes/rucweb/images/rucinfo-logo.jpg" alt="" />
+<div class="yellowpage-list-infobox">
+<h3>社会与人口学院</h3>
+<p>中国人民大学 科研楼A座303室</p>
+<p>电话：010-62514984</p>
+<p>传真：010-62515213</p>
+<p>邮箱：<a href="mailto:yanyurui@ruc.edu.cn">yanyurui@ruc.edu.cn</a></p>
+<p>网址：<a href="http://ssps.ruc.edu.cn/" target="_blank" rel="noopener">http://ssps.ruc.edu.cn/</a></p>
+</div>
+</li>
+</ul>
+<ul class="sort-s">
+<li><img class="yellowpage-list-logo" src="/wp-content/themes/rucweb/images/rucinfo-logo.jpg" alt="" />
+<div class="yellowpage-list-infobox">
+<h3>审计处</h3>
+<p>中国人民大学 明德主楼1225室</p>
+<p>电话：010-62513019</p>
+<p>传真：010-82509361</p>
+<p>邮箱：<a href="mailto:shenjichu@ruc.edu.cn">shenjichu@ruc.edu.cn</a></p>
+<p>网址：<a href="http://shenji.ruc.edu.cn/" target="_blank" rel="noopener">http://shenji.ruc.edu.cn/</a></p>
+</div>
+</li>
+<li><img class="yellowpage-list-logo" src="/wp-content/themes/rucweb/images/rucinfo-logo.jpg" alt="" />
+<div class="yellowpage-list-infobox">
+<h3>深圳研究院</h3>
+<p>深圳市南山区科技园南区虚拟大学园楼A304</p>
+<p>电话：0755-26548581</p>
+<p>传真：0755-26548553</p>
+<p>邮箱：<a href="mailto:zhaoling@szruc.net">zhaoling@szruc.net</a></p>
+<p>网址：<a href="http://sz.ruc.edu.cn" target="_blank" rel="noopener">http://sz.ruc.edu.cn</a></p>
+</div>
+</li>
+</ul>
+<ul class="sort-s">
+<li><img class="yellowpage-list-logo" src="/wp-content/themes/rucweb/images/rucinfo-logo.jpg" alt="" />
+<div class="yellowpage-list-infobox">
+<h3>实验室管理与教学条件保障处</h3>
+<p>中国人民大学 崇德东楼908</p>
+<p>电话：</p>
+<p>传真：</p>
+<p>邮箱：<a href="mailto:heyan_ruc@ruc.edu.cn">heyan_ruc@ruc.edu.cn</a></p>
+<p>网址：<a href="https://sysb.ruc.edu.cn/" target="_blank" rel="noopener">https://sysb.ruc.edu.cn/</a></p>
+</div>
+</li>
+<li><img class="yellowpage-list-logo" src="/wp-content/themes/rucweb/images/rucinfo-logo.jpg" alt="" />
+<div class="yellowpage-list-infobox">
+<h3>书报资料中心</h3>
+<p>中国人民大学 文化大厦13、14层</p>
+<p>电话：010-82504550</p>
+<p>传真：010-62515819</p>
+<p>邮箱：<a href="mailto:center@zlzx.org">center@zlzx.org</a></p>
+<p>网址：<a href="http://www.zlzx.org/" target="_blank" rel="noopener">http://www.zlzx.org/</a></p>
+</div>
+</li>
+<li><img class="yellowpage-list-logo" src="/wp-content/themes/rucweb/images/rucinfo-logo.jpg" alt="" />
+<div class="yellowpage-list-infobox">
+<h3>数学科学研究院</h3>
+<p>中国人民大学 原校医院317室（学生活动中心西侧）</p>
+<p>电话：010-62519572</p>
+<p>传真：010-62519572</p>
+<p>邮箱：<a href="mailto:math@ruc.edu.cn">math@ruc.edu.cn</a></p>
+<p>网址：<a href="http://ims.ruc.edu.cn/" target="_blank" rel="noopener">http://ims.ruc.edu.cn/</a></p>
+</div>
+</li>
+</ul>
+<ul class="sort-t">
+<li><img class="yellowpage-list-logo" src="/wp-content/themes/rucweb/images/rucinfo-logo.jpg" alt="" />
+<div class="yellowpage-list-infobox">
+<h3>体育部</h3>
+<p>中国人民大学 体育部办公楼1层（原公共教学五楼）</p>
+<p>电话：010-62511047</p>
+<p>传真：010-62511047</p>
+<p>邮箱：<a href="mailto:tiyubu@ruc.edu.cn">tiyubu@ruc.edu.cn</a></p>
+<p>网址：<a href="http://tiyu.ruc.edu.cn" target="_blank" rel="noopener">http://tiyu.ruc.edu.cn</a></p>
+</div>
+</li>
+<li><img class="yellowpage-list-logo" src="/wp-content/themes/rucweb/images/rucinfo-logo.jpg" alt="" />
+<div class="yellowpage-list-infobox">
+<h3>统计学院</h3>
+<p>中国人民大学 明德主楼1036室</p>
+<p>电话：010-62511318</p>
+<p>传真：010-62515246</p>
+<p>邮箱：<a href="mailto:statruc@ruc.edu.cn">statruc@ruc.edu.cn</a></p>
+<p>网址：<a href="http://stat.ruc.edu.cn" target="_blank" rel="noopener">http://stat.ruc.edu.cn</a></p>
+</div>
+</li>
+</ul>
+<ul class="sort-t">
+<li><img class="yellowpage-list-logo" src="/wp-content/themes/rucweb/images/rucinfo-logo.jpg" alt="" />
+<div class="yellowpage-list-infobox">
+<h3>图书馆</h3>
+<p>中国人民大学 图书馆新馆411室</p>
+<p>电话：010-62514996</p>
+<p>传真：010-62512992</p>
+<p>邮箱：<a href="mailto:tsg@ruc.edu.cn">tsg@ruc.edu.cn</a></p>
+<p>网址：<a href="http://www.lib.ruc.edu.cn/" target="_blank" rel="noopener">http://www.lib.ruc.edu.cn/</a></p>
+</div>
+</li>
+</ul>
+<ul class="sort-w">
+<li><img class="yellowpage-list-logo" src="/wp-content/themes/rucweb/images/rucinfo-logo.jpg" alt="" />
+<div class="yellowpage-list-infobox">
+<h3>文学院</h3>
+<p>中国人民大学 人文楼1层</p>
+<p>电话：010-62512966</p>
+<p>传真：010-82501024</p>
+<p>邮箱：<a href="mailto:sla_office@ruc.edu.cn">sla_office@ruc.edu.cn</a></p>
+<p>网址：<a href="http://wenxueyuan.ruc.edu.cn/" target="_blank" rel="noopener">http://wenxueyuan.ruc.edu.cn/</a></p>
+</div>
+</li>
+<li><img class="yellowpage-list-logo" src="/wp-content/themes/rucweb/images/rucinfo-logo.jpg" alt="" />
+<div class="yellowpage-list-infobox">
+<h3>物理学系</h3>
+<p>中国人民大学 理工楼807室</p>
+<p>电话：010-62517997</p>
+<p>传真：010-62517887</p>
+<p>邮箱：<a href="mailto:sgmh@ruc.edu.cn">sgmh@ruc.edu.cn</a></p>
+<p>网址：<a href="http://www.phys.ruc.edu.cn/" target="_blank" rel="noopener">http://www.phys.ruc.edu.cn/</a></p>
+</div>
+</li>
+</ul>
+<ul class="sort-x">
+<li><img class="yellowpage-list-logo" src="/wp-content/themes/rucweb/images/rucinfo-logo.jpg" alt="" />
+<div class="yellowpage-list-infobox">
+<h3>校工会</h3>
+<p>中国人民大学 明德主楼1230室</p>
+<p>电话：010-62515301</p>
+<p>传真：010-62515301</p>
+<p>邮箱：<a href="mailto:rucgh@ruc.edu.cn">rucgh@ruc.edu.cn</a></p>
+<p>网址：<a href="http://gh.ruc.edu.cn" target="_blank" rel="noopener">http://gh.ruc.edu.cn</a></p>
+</div>
+</li>
+<li><img class="yellowpage-list-logo" src="/wp-content/themes/rucweb/images/rucinfo-logo.jpg" alt="" />
+<div class="yellowpage-list-infobox">
+<h3>校团委</h3>
+<p>中国人民大学 学生活动中心2层</p>
+<p>电话：010-62512971</p>
+<p>传真：010-62512971</p>
+<p>邮箱：<a href="mailto:ruc62512971@163.com">ruc62512971@163.com</a></p>
+<p>网址：<a href="http://youth.ruc.edu.cn/" target="_blank" rel="noopener">http://youth.ruc.edu.cn/</a></p>
+</div>
+</li>
+</ul>
+<ul class="sort-x">
+<li><img class="yellowpage-list-logo" src="/wp-content/themes/rucweb/images/rucinfo-logo.jpg" alt="" />
+<div class="yellowpage-list-infobox">
+<h3>校医院</h3>
+<p>中国人民大学 新校医院大楼（游泳馆西侧）</p>
+<p>电话：010-62513390</p>
+<p>传真：010-62513390</p>
+<p>邮箱：<a href="mailto:ruchospital@sina.com">ruchospital@sina.com</a></p>
+<p>网址：<a href="http://xyy.ruc.edu.cn/" target="_blank" rel="noopener">http://xyy.ruc.edu.cn/</a></p>
+</div>
+</li>
+<li><img class="yellowpage-list-logo" src="/wp-content/themes/rucweb/images/rucinfo-logo.jpg" alt="" />
+<div class="yellowpage-list-infobox">
+<h3>校友工作办公室</h3>
+<p>中国人民大学 科研楼B座801室</p>
+<p>电话：010-62511422</p>
+<p>传真：010-62511422</p>
+<p>邮箱：<a href="mailto:aaruc@ruc.edu.cn">aaruc@ruc.edu.cn</a></p>
+<p>网址：<a href="http://alumni.ruc.edu.cn/" target="_blank" rel="noopener">http://alumni.ruc.edu.cn/</a></p>
+</div>
+</li>
+</ul>
+<ul class="sort-x">
+<li><img class="yellowpage-list-logo" src="/wp-content/themes/rucweb/images/rucinfo-logo.jpg" alt="" />
+<div class="yellowpage-list-infobox">
+<h3>校园建设处</h3>
+<p>中国人民大学 科研楼B座1102室</p>
+<p>电话：010-62513159</p>
+<p>传真：010-62511380</p>
+<p>邮箱：<a href="mailto:huilincao@ruc.edu.cn">huilincao@ruc.edu.cn</a></p>
+<p>网址：<a href="http://jjc.ruc.edu.cn/" target="_blank" rel="noopener">http://jjc.ruc.edu.cn/</a></p>
+</div>
+</li>
+<li><img class="yellowpage-list-logo" src="/wp-content/themes/rucweb/images/rucinfo-logo.jpg" alt="" />
+<div class="yellowpage-list-infobox">
+<h3>心理学系</h3>
+<p>中国人民大学 汇贤大厦D座10层</p>
+<p>电话：010-82509716</p>
+<p>传真：010-82509716</p>
+<p>邮箱：<a href="mailto:psych@ruc.edu.cn">psych@ruc.edu.cn</a></p>
+<p>网址：<a href="http://psy.ruc.edu.cn/" target="_blank" rel="noopener">http://psy.ruc.edu.cn/</a></p>
+</div>
+</li>
+</ul>
+<ul class="sort-x">
+<li><img class="yellowpage-list-logo" src="/wp-content/themes/rucweb/images/rucinfo-logo.jpg" alt="" />
+<div class="yellowpage-list-infobox">
+<h3>新闻学院</h3>
+<p>中国人民大学 明德新闻楼6层</p>
+<p>电话：010-62514835</p>
+<p>传真：010-62514835</p>
+<p>邮箱：<a href="mailto:xwxy@ruc.edu.cn">xwxy@ruc.edu.cn</a></p>
+<p>网址：<a href="http://jcr.ruc.edu.cn/" target="_blank" rel="noopener">http://jcr.ruc.edu.cn/</a></p>
+</div>
+</li>
+<li><img class="yellowpage-list-logo" src="/wp-content/themes/rucweb/images/rucinfo-logo.jpg" alt="" />
+<div class="yellowpage-list-infobox">
+<h3>信息学院</h3>
+<p>中国人民大学 信息楼0239室</p>
+<p>电话：010-62511184</p>
+<p>传真：010-62511184</p>
+<p>邮箱：<a href="mailto:xinxi@ruc.edu.cn">xinxi@ruc.edu.cn</a></p>
+<p>网址：<a href="http://info.ruc.edu.cn/" target="_blank" rel="noopener">http://info.ruc.edu.cn/</a></p>
+</div>
+</li>
+</ul>
+<ul class="sort-x">
+<li><img class="yellowpage-list-logo" src="/wp-content/themes/rucweb/images/rucinfo-logo.jpg" alt="" />
+<div class="yellowpage-list-infobox">
+<h3>信息资源管理学院</h3>
+<p>中国人民大学 信息资源管理学院楼1层</p>
+<p>电话：010-62511461</p>
+<p>传真：010-62511463</p>
+<p>邮箱：<a href="mailto:irm2012@126.com">irm2012@126.com</a></p>
+<p>网址：<a href="http://irm.ruc.edu.cn/" target="_blank" rel="noopener">http://irm.ruc.edu.cn/</a></p>
+</div>
+</li>
+<li><img class="yellowpage-list-logo" src="/wp-content/themes/rucweb/images/rucinfo-logo.jpg" alt="" />
+<div class="yellowpage-list-infobox">
+<h3>学生工作部（学生处）</h3>
+<p>中国人民大学 北区食堂513室</p>
+<p>电话：010-62513855</p>
+<p>传真：010-62513855</p>
+<p>邮箱：<a href="mailto:xxc@ruc.edu.cn">xxc@ruc.edu.cn</a></p>
+<p>网址：<a href="http://xsc.ruc.edu.cn/" target="_blank" rel="noopener">http://xsc.ruc.edu.cn/</a></p>
+</div>
+</li>
+</ul>
+<ul class="sort-x">
+<li><img class="yellowpage-list-logo" src="/wp-content/themes/rucweb/images/rucinfo-logo.jpg" alt="" />
+<div class="yellowpage-list-infobox">
+<h3>学术期刊社</h3>
+<p>中国人民大学 科研楼A座11层</p>
+<p>电话：010-62516825</p>
+<p>传真：010-62516825</p>
+<p>邮箱：<a href="mailto:zhaiwz@ruc.edu.cn">xsqks@ruc.edu.cn</a></p>
+<p>网址：<a href="http://xsqks.ruc.edu.cn/CN/volumn/home.shtml" target="_blank" rel="noopener">http://xsqks.ruc.edu.cn/CN/volumn/home.shtml</a></p>
+</div>
+</li>
+<li><img class="yellowpage-list-logo" src="/wp-content/themes/rucweb/images/rucinfo-logo.jpg" alt="" />
+<div class="yellowpage-list-infobox">
+<h3>学校办公室</h3>
+<p>中国人民大学 明德主楼1314室</p>
+<p>电话：010-62511083</p>
+<p>传真：010-62515263</p>
+<p>邮箱：<a href="mailto:xbwenshu@ruc.edu.cn">xbwenshu@ruc.edu.cn</a></p>
+</div>
+</li>
+</ul>
+<ul class="sort-y">
+<li><img class="yellowpage-list-logo" src="/wp-content/themes/rucweb/images/rucinfo-logo.jpg" alt="" />
+<div class="yellowpage-list-infobox">
+<h3>研究生院</h3>
+<p>中国人民大学 科研楼B座302室</p>
+<p>电话：010-62511219</p>
+<p>传真：010-62511775</p>
+<p>邮箱：<a href="mailto:yjsyleader@ruc.edu.cn">yjsyleader@ruc.edu.cn</a></p>
+<p>网址：<a href="http://grs.ruc.edu.cn/" target="_blank" rel="noopener">http://grs.ruc.edu.cn/</a></p>
+</div>
+</li>
+<li><img class="yellowpage-list-logo" src="/wp-content/themes/rucweb/images/rucinfo-logo.jpg" alt="" />
+<div class="yellowpage-list-infobox">
+<h3>艺术学院</h3>
+<p>中国人民大学 科研楼A座1002室</p>
+<p>电话：010-62513859</p>
+<p>传真：010-62513859</p>
+<p>邮箱：<a href="mailto:xbh1@ruc.edu.cn">xbh1@ruc.edu.cn</a></p>
+<p>网址：<a href="http://art.ruc.edu.cn" target="_blank" rel="noopener">http://art.ruc.edu.cn</a></p>
+</div>
+</li>
+</ul>
+<ul class="sort-x">
+<li><img class="yellowpage-list-logo" src="/wp-content/themes/rucweb/images/rucinfo-logo.jpg" alt="" />
+<div class="yellowpage-list-infobox">
+<h3>外国语学院</h3>
+<p>中国人民大学 明德国际楼4层</p>
+<p>电话：010-62510115</p>
+<p>传真：010-62510115</p>
+<p>邮箱：<a href="mailto:waiyuruc@ruc.edu.cn">waiyuruc@ruc.edu.cn</a></p>
+<p>网址：<a href="http://fl.ruc.edu.cn/" target="_blank" rel="noopener">http://fl.ruc.edu.cn/</a></p>
+</div>
+</li>
+<li><img class="yellowpage-list-logo" src="/wp-content/themes/rucweb/images/rucinfo-logo.jpg" alt="" />
+<div class="yellowpage-list-infobox">
+<h3>信息技术中心</h3>
+<p>中国人民大学 游泳馆配楼4层</p>
+<p>电话：010-62511361</p>
+<p>传真：010-62516997</p>
+<p>邮箱：<a href="mailto:web@ruc.edu.cn">web@ruc.edu.cn</a></p>
+<p>网址：<a href="http://it.ruc.edu.cn/" target="_blank" rel="noopener">http://it.ruc.edu.cn/</a></p>
+</div>
+</li>
+</ul>
+<ul class="sort-y">
+<li><img class="yellowpage-list-logo" src="/wp-content/themes/rucweb/images/rucinfo-logo.jpg" alt="" />
+<div class="yellowpage-list-infobox">
+<h3>应用经济学院</h3>
+<p>中国人民大学 明德主楼617B</p>
+<p>电话：010-82500257</p>
+<p>传真：010-82500257</p>
+<p>邮箱：<a href="mailto:appliedecon@ruc.edu.cn" target="_blank" rel="noopener">appliedecon@ruc.edu.cn</a></p>
+<p>网址：<a href="http://ae.ruc.edu.cn/" target="_blank" rel="noopener">http://ae.ruc.edu.cn/</a></p>
+</div>
+</li>
+<li><img class="yellowpage-list-logo" src="/wp-content/themes/rucweb/images/rucinfo-logo.jpg" alt="" />
+<div class="yellowpage-list-infobox">
+<h3>印刷厂</h3>
+<p>北京市西城区鼓楼西大街大石桥胡同61号</p>
+<p>电话：010-64040703</p>
+<p>传真：010-64013351</p>
+</div>
+</li>
+</ul>
+<ul class="sort-z">
+<li><img class="yellowpage-list-logo" src="/wp-content/themes/rucweb/images/rucinfo-logo.jpg" alt="" />
+<div class="yellowpage-list-infobox">
+<h3>招生就业处</h3>
+<p>中国人民大学 北区食堂603室</p>
+<p>电话：010-62512141</p>
+<p>传真：010-62512141</p>
+<p>邮箱：<a href="mailto:zjc@ruc.edu.cn">zjc@ruc.edu.cn</a></p>
+<p>网址：<a href="http://zsjyc.ruc.edu.cn/" target="_blank" rel="noopener">http://zsjyc.ruc.edu.cn/</a></p>
+</div>
+</li>
+<li><img class="yellowpage-list-logo" src="/wp-content/themes/rucweb/images/rucinfo-logo.jpg" alt="" />
+<div class="yellowpage-list-infobox">
+<h3>哲学院</h3>
+<p>中国人民大学 人文楼5层</p>
+<p>电话：010-62515163</p>
+<p>传真：010-62515303</p>
+<p>邮箱：<a href="mailto:philosophy@ruc.edu.cn">philosophy@ruc.edu.cn</a></p>
+<p>网址：<a href="http://phi.ruc.edu.cn/" target="_blank" rel="noopener">http://phi.ruc.edu.cn/</a></p>
+</div>
+</li>
+</ul>
+<ul class="sort-z">
+<li><img class="yellowpage-list-logo" src="/wp-content/themes/rucweb/images/rucinfo-logo.jpg" alt="" />
+<div class="yellowpage-list-infobox">
+<h3>知识产权学院</h3>
+<p>中国人民大学 明德法学楼612室</p>
+<p>电话：010-82500369</p>
+<p>传真：010-62514365</p>
+<p>邮箱：<a href="mailto:law912@126.com">law912@126.com</a></p>
+<p>网址：<a href="http://www.law.ruc.edu.cn/" target="_blank" rel="noopener">http://www.law.ruc.edu.cn/</a></p>
+</div>
+</li>
+<li><img class="yellowpage-list-logo" src="/wp-content/themes/rucweb/images/rucinfo-logo.jpg" alt="" />
+<div class="yellowpage-list-infobox">
+<h3 style="height: auto;">资产与后勤管理处（国有资产管理办公室）</h3>
+<p>中国人民大学 科研楼B座1001室</p>
+<p>电话：综合科010-62512855</p>
+<p>传真：综合科010-62511226</p>
+<p>邮箱：<a href="mailto:zichanchu@ruc.edu.cn">zichanchu@ruc.edu.cn</a></p>
+<p>网址：<a href="http://assets.ruc.edu.cn/" target="_blank" rel="noopener">资产与后勤管理处、</a><a href="http://gzb.ruc.edu.cn/" target="_blank" rel="noopener">国有资产管理办公室</a></p>
+</div>
+</li>
+<li><img class="yellowpage-list-logo" src="/wp-content/themes/rucweb/images/rucinfo-logo.jpg" alt="" />
+<div class="yellowpage-list-infobox">
+<h3>中法学院</h3>
+<p>江苏省苏州工业园区仁爱路158号</p>
+<p>电话：0512-62605262</p>
+<p>传真：0512-62602193</p>
+<p>邮箱：<a href="mailto:zhongfa@ruc.edu.cn">zhongfa@ruc.edu.cn</a></p>
+<p>网址：<a href="http://sc.ruc.edu.cn/" target="_blank" rel="noopener">http://sc.ruc.edu.cn/</a></p>
+</div>
+</li>
+</ul>
+                                                                                                
+                                                					</div>
+					
+
+				</div>
+			</div>
+		</div>
+		<div class="dc-right">
+			<div class="dcr-hotlinkslist dcr-hotlinkslist-links">
+	<ul>
+		<span class="p1">
+                  <li><a href="http://news.ruc.edu.cn">人大新闻网</a></li>
+                  <li><a href="http://pgs.ruc.edu.cn">研究生招生</a></li>
+		<li><a href="http://xuebao.ruc.edu.cn">中国人民大学学报 </a></li>
+		<li><a href="http://io.ruc.edu.cn/">国际交流</a></li>
+		<li><a href="http://rdjy.ruc.edu.cn/">就业指导中心</a></li>
+		<li><a href="http://jjll.ruc.edu.cn">经济理论与经济管理</a></li>
+		</span>
+		<span class="p2">
+		<li><a href="javascript:;">EMBA招生 </a></li>
+		<li><a href="https://rdzs.ruc.edu.cn/cms/">本科生招生</a></li>
+		<li><a href="http://iso.ruc.edu.cn/">留学生事务</a></li>
+		<li><a href="http://www.lib.ruc.edu.cn/">人大数字图书馆</a></li>
+		<li><a href="http://museum.ruc.edu.cn/">人大博物馆</a></li>
+		<li><a href="http://alumni.ruc.edu.cn/">人大校友网</a></li>
+		</span>
+		
+		<span class="p3" style="display: none;">
+			<li><a href="http://jxyyj.ruc.edu.cn">教学与研究</a></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+		</span>
+
+		<li class="nav">
+			<a class="prev" id="prev1"><img src="/wp-content/themes/rucweb/images/hotlinkslist-nav-arrow-left.png" />上一页</a>
+			<a class="prev" style="display: none;" id="prev2"><img src="/wp-content/themes/rucweb/images/hotlinkslist-nav-arrow-left.png" />上一页</a>
+			<a class="next" id="next1">下一页<img src="/wp-content/themes/rucweb/images/hotlinkslist-nav-arrow-right.png" /></a>
+			<a class="next" style="display: none;" id="next2">下一页<img src="/wp-content/themes/rucweb/images/hotlinkslist-nav-arrow-right.png" /></a>
+		</li>
+	</ul>
+</div>
+
+<script type="text/javascript">
+$('.next').click(function(){
+	var id = $(this).attr('id');
+	$(this).hide();
+	if (id == 'next1') {
+		$("#next2").show();
+		$('.dcr-hotlinkslist ul span.p1').hide();
+        $('.dcr-hotlinkslist ul span.p2').show();
+        $('.dcr-hotlinkslist ul span.p3').hide();
+        $('.prev').show();
+        $('#prev2').hide();
+
+	} else {
+		$(".next").hide();
+		$('.dcr-hotlinkslist ul span.p1').hide();
+        $('.dcr-hotlinkslist ul span.p2').hide();
+        $('.dcr-hotlinkslist ul span.p3').show();
+        $('.prev').show();
+        $('#prev1').hide();
+        
+	}
+
+        
+});
+
+$('.prev').click(function(){
+    
+    var id = $(this).attr('id');
+	$(this).hide();
+	$(".next").hide();
+	if (id == 'prev1') {
+		$("#next1").show();
+		$('.dcr-hotlinkslist ul span.p1').show();
+        $('.dcr-hotlinkslist ul span.p2').hide();
+        $('.dcr-hotlinkslist ul span.p3').hide();
+        $('#prev2').hide();
+
+	} else {
+		$('.dcr-hotlinkslist ul span.p1').hide();
+        $('.dcr-hotlinkslist ul span.p2').show();
+        $('.dcr-hotlinkslist ul span.p3').hide();
+        $('#prev1').show();
+        $("#next2").show();
+	}
+});
+
+
+</script>		</div>
+	</div>
+</div>
+<script type="text/javascript">
+var target;
+  $('#az-nav li a').click(function(){
+  	$('#az-nav li a').removeClass('cur');
+        $(this).addClass('cur');
+  	target = $(this).attr('tag');
+    if(target == 'all'){
+    	$('.yellowpage-list ul').show();
+    }else{
+  	$('.yellowpage-list ul').hide();
+        $('.'+target).show();
+    };
+  });
+</script>
+<div class="content-bar">
+			<div id="detail-contentbar"></div>
+		</div>
+		<div class="bottom">
+			<div id="detail-bottom">
+				<div class="bc-line-1">
+					<div class="bc-left-1">Copyright &copy; 2005-2023	 RUC.EDU.CN<span id="ipinfo" style="margin-left:10px;"></span></div>
+					<div class="bc-right-1">
+                      	<a href="http://www.ruc.edu.cn/en">International Version</a><span>|</span>
+                      <!--<a href="http://www1.ruc.edu.cn/">旧版主页</a><span>|</span>-->
+                      	<a href="/privacy">隐私版权</a><span>|</span>
+                      	<a href="mailto:web@ruc.edu.cn">联系我们</a><span>|</span>
+                      	<a href="/sitemap">网站地图</a>
+                      	<span>|</span>
+    					<a href="http://xxgk.ruc.edu.cn/" target="_blank">信息公开</a>
+					</div>
+				</div>
+
+								<div class="bc-line-2">
+					<div class="bc-left-2">地址：北京市海淀区中关村大街59号 邮编：100872    京公网安备110402430004号    <a href="https://beian.miit.gov.cn" target="_blank" style="color: #666">京ICP备05066828号-1</a></div>
+					<div class="bc-right-2">Site designed by <span>MONO</span>KEROS & powered by <a href="http://sae.sina.com.cn" target="_blank">Sina App Engine</a></div>
+				</div>
+			</div>
+		</div>
+    </div>
+</body>
+</html>

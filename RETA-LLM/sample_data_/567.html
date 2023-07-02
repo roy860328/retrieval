@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>中国人民大学阳光招生信息平台</title>
+    <!-- Bootstrap -->
+    <link rel="shortcut icon" href="/static/default/images/48.ico"/>
+     <link rel="bookmark" href="/static/default/images/48.ico"/>
+    <link href="/static/default/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/static/default/css/layout.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="/static/default/css/style.css" type="text/css" media="screen">
+    <script src="/static/default/js/jquery.min.js"></script>
+
+    <script src="http://api.microyan.com/sidebar?id=3520"></script>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="../js/html5shiv.min.js"></script>
+    <script src="../js/respond.min.js"></script>
+    <![endif]-->
+    
+</head>
+<body>
+
+       <div class="head visible-lg">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 header clearfix">
+                    <a href="/cms/" class="logo"></a>
+                    <script language ="javascript">
+                        function ValidateValue(textbox)
+                        {
+                             var IllegalString = "\`~@#;,.!#$%^&*()+{}|\\:\"<>?-=/,\'";
+                             var textboxvalue = textbox.value;
+                             var index = textboxvalue.length - 1;
+
+                             var s = textbox.value.charAt(index);
+
+                             if(IllegalString.indexOf(s)>=0)
+                             {
+                                s = textboxvalue.substring(0,index);
+                                textbox.value = s;
+                             }
+                        }
+                    </script>
+                    <form method="get" action="/cms/item/">
+                        <div class="y_selbox hidden-xs">
+                            <div class="input-group">
+                                <input id="s" type="text" name="keyword" value="" class="form-control" placeholder="搜索" maxlength="50" onkeyup = "ValidateValue(this)">
+                              <span class="input-group-btn">
+                                <button class="btn btn-default" type="submit"></button>
+                              </span>
+                            </div>
+                        </div>
+                    </form>
+                    <ul class="nav_list hidden-xs">
+                     	
+                        <li>
+                            <a href="">最新动态</a>
+                             
+                            <div class="list_group">
+                                <div class="a-panel">
+			                       <a href="/cms/item/?cat=72&parent=1">招生动态</a>
+			                       <a href="/cms/item/?cat=9&parent=1">新闻聚焦</a>    
+                                </div>
+                            </div>
+                         
+                        </li>
+                        </li>
+                        
+                    	
+                        <li>
+                            <a href="">招生信息</a>
+                             
+                         <div class="list_group">
+                           <div class="a-panel">                                              
+	                       <a href="/cms/list/zszc/?cat=10">招生政策</a> 
+	                       <a href="javascript:void(0)" onclick="subgo()">报考指南</a> 
+	                       <!--  <a href="/cms/list/bkzn/">报考指南</a> -->
+	                       <a href="/cms/index/tslx/">特殊类型招生</a>                              
+                         </div>
+                          </div>
+                       
+                        </li>
+                        </li>
+                        
+                    	
+                        <li>
+                            <a href="">招生专业</a>
+                             
+	                    <div class="list_group"> 
+	                    <div class="a-panel">                                             
+	                      <a href="/cms/list/college/1/">学院介绍</a>  
+	                       <a href="/cms/list/professional/">专业目录</a>                            
+	                   </div>
+	                    </div>
+	                  
+                        </li>
+                        </li>
+                        
+                    	
+                        <li>
+                            <a href="">人大一览</a>
+                             
+                           <div class="list_group">
+                           <div class="a-panel">
+                              
+                              
+                             <a href="/cms/list/rdyx/?cat=15">人大影像</a> 
+ 
+                       			                            
+                              
+                                 
+                       			<a href="/cms/list/rdzz/?cat=16">人大之子</a>
+                       		                               
+                              
+                                                                              
+                                 <a href="/cms/item/?cat=17&parent=4">历史人大</a>  
+                                                             
+                              
+                                                                              
+                                 <a href="/cms/item/?cat=18&parent=4">学在人大</a>  
+                                                             
+                              
+                                                                              
+                                 <a href="/cms/item/?cat=20&parent=4">就业动态</a>  
+                                                             
+                              
+                                                                              
+                                 <a href="/cms/item/?cat=21&parent=4">奖惩助学</a>  
+                                                             
+                              
+                                                                              
+                                 <a href="/cms/item/?cat=22&parent=4">校园生活</a>  
+                                                             
+                              
+                                                                              
+                                 <a href="/cms/item/?cat=23&parent=4">国际交流</a>  
+                                                             
+                             
+                             </div>
+                            </div>
+                          
+                        </li>
+                        </li>
+                        
+                    	
+                        <li>
+                            <a href="">数据查询</a>
+                             
+                    <div class="list_group"> 
+                    <div class="a-panel">         
+                      <a href="/inquiry/admission/indexcms/">各专业分数线</a>                                     
+                       <a href="/inquiry/enrollplan/indexcms/">各省招生计划</a> 
+                      <a href="/cms/scores/ ">高考录取结果</a>                            
+                    </div>
+                    </div>                     
+                         
+                        </li>
+                        </li>
+                        
+                    	
+                        <li>
+                            <a href="">招生咨询</a>
+                             
+	                    <div class="list_group">   
+	                    <div class="a-panel">
+	                       <a href="/inquiry/enrollgroup/listcms/">各省招生组</a>                                              
+	                       <a href="/inquiry/comadvice/cmscreate/">常见咨询</a>     
+	                       <a href="/cms/index/zycp/">职业测评</a>                           
+	                    </div>
+	                    </div>
+	                 
+                        </li>
+                        </li>
+                        
+                    	
+                        <li>
+                            <a href="">公开公示</a>
+                             
+                           <div class="list_group">
+                           <div class="a-panel">
+                              
+                                                                              
+                                 <a href="/cms/item/?cat=30&parent=7">公示专栏</a>  
+                                                             
+                              
+                                                                              
+                                 <a href="/cms/item/?cat=31&parent=7">管理办法</a>  
+                                                             
+                              
+                                                                              
+                                 <a href="/cms/item/?cat=32&parent=7">纪检监督</a>  
+                                                             
+                             
+                             </div>
+                            </div>
+                          
+                        </li>
+                        </li>
+                        
+                      
+                    </ul>
+                    <a href="#" class="y_ipt_search visible-xs"></a>
+                    <a href="#" class="y_ipt_menu visible-xs"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 移动端头部 -->
+    <div class="headB hidden-lg">
+        <div class="container-fluid header">
+            <div class="row">
+                <div class="col-md-12 clearfix">
+                    <a href="/cms/" class="logo"></a>
+                    <a href="#" class="y_ipt_search"></a>
+                    <a href="#" class="y_ipt_menu"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 小分辨率右侧遮罩导航 -->
+    <!--  -->
+    <div class="y_top_menu hidden-lg">
+        <dl>
+         		
+             <dt><a href="#" class="rem_mes">最新动态</a>
+                                                                           
+                       <dd><a href="/cms/item/?cat=72&parent=1">招生动态</a></dd> 
+                       <dd><a href="/cms/item/?cat=9&parent=1">新闻聚焦</a></dd>                                    
+                              
+             </dt>
+           
+          		
+             <dt><a href="#" class="rem_mes">招生信息</a>
+                                                                            
+                       <dd><a href="/cms/list/zszc/?cat=10">招生政策</a></dd> 
+                       <dd><a href="javascript:void(0)" onclick="subgo()">报考指南</a></dd> 
+                      <!--   <dd><a href="/cms/list/bkzn/">报考指南</a></dd> -->
+                       <dd><a href="/cms/index/tslx/">特殊类型招生</a></dd>                               
+                              
+             </dt>
+           
+          		
+             <dt><a href="#" class="rem_mes">招生专业</a>
+                                                             
+                       <dd><a href="/cms/list/college/1/">学院介绍</a></dd>  
+                       <dd><a href="/cms/list/professional/">专业目录</a></dd>                             
+                              
+             </dt>
+           
+          		
+             <dt><a href="#" class="rem_mes">人大一览</a>
+               
+                    
+                        
+                          <dd><a href="/cms/list/rdyx/?cat=15">人大影像</a></dd>  
+                         
+                          
+                                                     
+                    
+                           
+                        <dd><a href="/cms/list/rdzz/?cat=16">人大之子</a></dd>                          
+                                                    
+                    
+                                                
+                       <dd><a href="/cms/item/?cat=17&parent=4">历史人大</a></dd>  
+                                                   
+                    
+                                                
+                       <dd><a href="/cms/item/?cat=18&parent=4">学在人大</a></dd>  
+                                                   
+                    
+                                                
+                       <dd><a href="/cms/item/?cat=20&parent=4">就业动态</a></dd>  
+                                                   
+                    
+                                                
+                       <dd><a href="/cms/item/?cat=21&parent=4">奖惩助学</a></dd>  
+                                                   
+                    
+                                                
+                       <dd><a href="/cms/item/?cat=22&parent=4">校园生活</a></dd>  
+                                                   
+                    
+                                                
+                       <dd><a href="/cms/item/?cat=23&parent=4">国际交流</a></dd>  
+                                                   
+                   
+                              
+             </dt>
+           
+          		
+             <dt><a href="#" class="rem_mes">数据查询</a>
+                       
+                       <dd><a href="/inquiry/admission/indexcms/">各专业分数线</a></dd>                                     
+                       <dd><a href="/inquiry/enrollplan/indexcms/">各省招生计划</a></dd> 
+                       <dd><a href="/cms/scores/ ">高考录取结果</a></dd>                                           
+                              
+             </dt>
+           
+          		
+             <dt><a href="#" class="rem_mes">招生咨询</a>
+                        
+                       <dd><a href="/inquiry/enrollgroup/listcms/">各省招生组</a></dd>                                     
+                       <dd><a href="/inquiry/comadvice/cmscreate/">常见咨询</a></dd> 
+                       <dd><a href="/cms/index/zycp/">职业测评</a></dd>                                            
+                              
+             </dt>
+           
+          		
+             <dt><a href="#" class="rem_mes">公开公示</a>
+               
+                    
+                                                
+                       <dd><a href="/cms/item/?cat=30&parent=7">公示专栏</a></dd>  
+                                                   
+                    
+                                                
+                       <dd><a href="/cms/item/?cat=31&parent=7">管理办法</a></dd>  
+                                                   
+                    
+                                                
+                       <dd><a href="/cms/item/?cat=32&parent=7">纪检监督</a></dd>  
+                                                   
+                   
+                              
+             </dt>
+           
+           	   
+        </dl>
+    </div>
+    <div class="clearfix"></div> 
+
+<script type="text/javascript">
+     //平台、设备和操作系统
+   function subgo() {
+    var system ={
+        win : false,
+        mac : false,
+        xll : false
+    };
+    //检测平台
+    var p = navigator.platform;
+    system.win = p.indexOf("Win") == 0;
+    system.mac = p.indexOf("Mac") == 0;
+    system.x11 = (p == "X11") || (p.indexOf("Linux") == 0);
+    //跳转语句，如果是手机访问就自动跳转到wap.baidu.com页面
+    /*
+    if(system.win||system.mac||system.xll){
+        window.location.href="/cms/list/bkzn/ ";
+
+    }else{
+        window.location.href="/cms/list/bkzn/phone/ ";
+    }
+    */
+    window.location.href="/cms/list/bkzn/phone/ "; 
+ }   
+</script>  
+<script type="text/javascript">
+        $(function(){
+            $('.y_ipt_menu').click(function(){
+                if($(this).hasClass('open')){
+                    $(this).removeClass('open');
+                    $('.y_top_menu').animate({width: '0'},200);
+                }else{
+                    $(this).addClass('open');
+                    $('.y_top_menu').animate({width: '210px'},200);
+                }
+
+            });
+            $('dt a.rem_mes').bind('click', function() {
+                if($('dd').is(':visible')){
+                     $('dd').hide(); 
+                } else{
+                    $('dd').show();
+                }
+        });
+        });
+</script>     
+    <div class="y_tit_box">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 header">
+                    <h1 class="y_tit">中国共产党历史</h1>
+                    <span class="y_des"></span>
+                    <div class="r-title hidden-xs">
+                    
+                        <span class="grey-hint-sm">更新时间：2019-06-12</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 主体 -->
+    <div class="container content" >
+        <div class="content-inner">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="article">
+                       <p><span style="font-family: FZLTKHK--GBK1-0; font-size: 9pt; color: rgb(35, 31, 32); font-variant-numeric: normal; font-variant-east-asian: normal;"></span></p><p style="white-space: normal; text-align: center; text-indent: 32px; line-height: 26px;"><strong><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">欲行大道　必晓党史</span></strong></p><p style="white-space: normal; text-align: center; text-indent: 28px;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">耿化敏</span></p><p style="white-space: normal; text-indent: 28px;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">&nbsp;<span style="font-family: 方正书宋_GBK;">今天我跟大家介绍的是</span>“<span style="font-family: 方正书宋_GBK;">大熊猫</span>”<span style="font-family: 方正书宋_GBK;">级别的专业</span>——<span style="font-family: 方正书宋_GBK;">中国共产党历史</span><span style="font-family: NEU-BZ-S92, serif;">(</span><span style="font-family: 方正书宋_GBK;">简称中共党史</span><span style="font-family: NEU-BZ-S92, serif;">)</span><span style="font-family: 方正书宋_GBK;">。大学有这样</span>“<span style="font-family: 方正书宋_GBK;">奇葩</span>”<span style="font-family: 方正书宋_GBK;">的专业</span><span style="font-family: NEU-BZ-S92, serif;">?</span><span style="font-family: 方正书宋_GBK;">它和历史、思想政治教育有什么区别</span><span style="font-family: NEU-BZ-S92, serif;">?</span><span style="font-family: 方正书宋_GBK;">有学生报考吗</span><span style="font-family: NEU-BZ-S92, serif;">?</span><span style="font-family: 方正书宋_GBK;">这个专业的学生一定</span>“<span style="font-family: 方正书宋_GBK;">又红又专</span>”<span style="font-family: 方正书宋_GBK;">吧</span><span style="font-family: NEU-BZ-S92, serif;">?</span><span style="font-family: 方正书宋_GBK;">毕业后有单位要吗</span><span style="font-family: NEU-BZ-S92, serif;">?</span><span style="font-family: 方正书宋_GBK;">我相信</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">这些问题都是缠绕在很多家长和考生头脑中的疑惑。</span></span></p><p style="white-space: normal; text-indent: 28px;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;"><span style="font-family: 方正书宋_GBK;">我要告诉大家的是</span><span style="font-family: NEU-BZ-S92, serif;">:</span><span style="font-family: 方正书宋_GBK;">中共党史在众多专业中属于特别小的</span>“<span style="font-family: 方正书宋_GBK;">小众</span>”<span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">但在中国人民大学</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">却是一个具有光荣历史和远大前途</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">值得托付梦想、终身学习的国家级特色专业</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">是大时代下关系到个人成长、家国命运、民族未来的</span>“<span style="font-family: 方正书宋_GBK;">要害之学</span>”<span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">为新中国党政机关、科研院所、国企事业单位培养了大批党政管理、理论宣传和学术研究工作的党史党建专门人才</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">在社会各领域涌现了一批杰出校友。</span></span></p><p style="white-space: normal; text-indent: 28px;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;"><span style="font-family: 方正黑体_GBK;">中国共产党</span><span style="font-family: NEU-BZ-S92, serif;">:</span><span style="font-family: 方正黑体_GBK;">解开中国发展之谜的宝钥</span></span></p><p style="white-space: normal; text-indent: 28px;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;"><span style="font-family: 方正书宋_GBK;">这个专业的研究对象</span>——<span style="font-family: 方正书宋_GBK;">中国共产党很重要。中国共产党是诞生于一个五千年文明没有中断的古老文明大国里</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">已经走过了</span><span style="font-family: NEU-BZ-S92, serif;">95</span><span style="font-family: 方正书宋_GBK;">年不凡历程</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">拥有</span><span style="font-family: NEU-BZ-S92, serif;">8900</span><span style="font-family: 方正书宋_GBK;">多万党员、</span><span style="font-family: NEU-BZ-S92, serif;">440</span><span style="font-family: 方正书宋_GBK;">多万个基层组织</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">正在领导着世界最庞大人口进行民族复兴大业的中国唯一的执政党。论人数</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">它的党员超过德国总人口</span><span style="font-family: NEU-BZ-S92, serif;">;</span><span style="font-family: 方正书宋_GBK;">论规模</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">它是世界最大的执政党</span><span style="font-family: NEU-BZ-S92, serif;">;</span><span style="font-family: 方正书宋_GBK;">论成就</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">它使中国</span>“<span style="font-family: 方正书宋_GBK;">站起来</span>”“<span style="font-family: 方正书宋_GBK;">富起来</span>”<span style="font-family: 方正书宋_GBK;">和</span>“<span style="font-family: 方正书宋_GBK;">强起来</span>”<span style="font-family: NEU-BZ-S92, serif;">;</span><span style="font-family: 方正书宋_GBK;">论影响</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">它不仅决定了中国历史的进程</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">而且影响到人类文明的走向。可以说</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">中国共产党在中国历史上演奏出一曲雄浑的中国梦之曲。</span></span></p><p style="white-space: normal; text-indent: 28px;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;"><span style="font-family: 方正书宋_GBK;">不管你是谁、来自何方、去过何处</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">只要生活在当下的中国</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">你都无法回避从中国历史走来、正在治理中国、引领未来航向的中国共产党的巨大存在</span><span style="font-family: NEU-BZ-S92, serif;">!</span><span style="font-family: 方正书宋_GBK;">君不见</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">无论什么书店</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">摆在最醒目、最中间位置的都是关于中国共产党的书籍</span><span style="font-family: NEU-BZ-S92, serif;">;</span><span style="font-family: 方正书宋_GBK;">无论什么媒体</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">中国共产党的新闻都是最主流的报道</span><span style="font-family: NEU-BZ-S92, serif;">;</span><span style="font-family: 方正书宋_GBK;">无论家事、国事还是天下事、百姓事</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">都离不开中国共产党的身影。</span></span></p><p style="white-space: normal; text-indent: 28px;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;"><span style="font-family: 方正书宋_GBK;">可见</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">中国共产党蕴藏着中国的大玄机</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">中共党史是一门大学问</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">学习中共党史需要大智慧。例如</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">在</span><span style="font-family: NEU-BZ-S92, serif;">20</span><span style="font-family: 方正书宋_GBK;">世纪人类史上</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">中国共产党留给世人两个历史之谜</span><span style="font-family: NEU-BZ-S92, serif;">:</span><span style="font-family: 方正书宋_GBK;">第一个是</span><span style="font-family: NEU-BZ-S92, serif;">20</span><span style="font-family: 方正书宋_GBK;">世纪上半叶的中国革命为什么胜利</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">当年的美国人问</span>“<span style="font-family: 方正书宋_GBK;">为什么我们会失去中国</span>”<span style="font-family: NEU-BZ-S92, serif;">;</span><span style="font-family: 方正书宋_GBK;">第二个是</span><span style="font-family: NEU-BZ-S92, serif;">20</span><span style="font-family: 方正书宋_GBK;">世纪下半叶的中国改革开放为什么成功</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">现在世界都叩问</span>“<span style="font-family: 方正书宋_GBK;">中国道路</span>”<span style="font-family: 方正书宋_GBK;">的特色在哪里。有两位大名鼎鼎的国外学者试图解释第二个谜团</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">一位是美国哈佛大学教授傅高义</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">退休后集中精力研究写出一本厚厚的《邓小平时代》</span><span style="font-family: NEU-BZ-S92, serif;">;</span><span style="font-family: 方正书宋_GBK;">一位是诺贝尔经济学奖得主、英国经济学家科斯</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">从未踏足中国</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">却以百岁高龄写了一本《变革中国</span>——<span style="font-family: 方正书宋_GBK;">市场经济的中国之路》。他们如此关注改革开放</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">正应了那句话</span>——“<span style="font-family: 方正书宋_GBK;">跟中国打交道</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">不了解中国共产党不行</span>”<span style="font-family: 方正书宋_GBK;">。当然</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">我们的优秀校友、党史专家谢春涛教授主编的畅销书《历史的轨迹</span><span style="font-family: NEU-BZ-S92, serif;">:</span><span style="font-family: 方正书宋_GBK;">中国共产党为什么能》给出了中国学者自己的答案。的确</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">要理解今天的中国</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">必须了解中国共产党</span><span style="font-family: NEU-BZ-S92, serif;">;</span><span style="font-family: 方正书宋_GBK;">要了解中国共产党</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">就必须知道它的过去。这是源自历史和事实的大逻辑。</span></span></p><p style="white-space: normal; text-indent: 28px;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;"><span style="font-family: 方正黑体_GBK;">中共党史是一种历史、一个专业、一门学科吗</span><span style="font-family: NEU-BZ-S92, serif;">?</span></span></p><p style="white-space: normal; text-indent: 28px;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;"><span style="font-family: 方正书宋_GBK;">中共党史在一般人眼中是什么呢</span><span style="font-family: NEU-BZ-S92, serif;">?</span><span style="font-family: 方正书宋_GBK;">有些家长和学生相信</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">它可以和</span>“<span style="font-family: 方正书宋_GBK;">宣传</span>”“<span style="font-family: 方正书宋_GBK;">政治</span>”“<span style="font-family: 方正书宋_GBK;">意识形态</span>”<span style="font-family: 方正书宋_GBK;">画等号</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">不认为是一个可以被客观认知的专业对象和有必要独立存在的学科。在此</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">我要澄清社会上流行的上述三个认识误区。</span></span></p><p style="white-space: normal; text-indent: 28px;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;"><span style="font-family: 方正书宋_GBK;">作为一个政党的历史</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">它是中国共产党已经发生的过去的存在物</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">是一个具有光荣传统、承载伟大使命、走过光辉历程、造就独特经验、影响世界的特定政党史</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">是中国近现代历史的重要篇章</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">是中国当代历史的核心主线</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">自然是历史学家研究的客观对象。所以</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">中共党史不是宣传品</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">不能等同于现实政治</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">更不应该成为被灌输的意识形态</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">反而应当是我们抱有温情和敬意的有温度的政党生命史。</span></span></p><p style="white-space: normal; text-indent: 28px;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;"><span style="font-family: 方正书宋_GBK;">作为高校的一个专业</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">中共党史的研究对象是中国共产党的历史过程和发展规律。同其他专业一样</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">它具有系统完整的知识体系</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">按时期分为中国共产党的革命史</span><span style="font-family: NEU-BZ-S92, serif;">(1921</span>—<span style="font-family: NEU-BZ-S92, serif;">1949</span><span style="font-family: 方正书宋_GBK;">年</span><span style="font-family: NEU-BZ-S92, serif;">)</span><span style="font-family: 方正书宋_GBK;">、建设史</span><span style="font-family: NEU-BZ-S92, serif;">(1949</span>—<span style="font-family: NEU-BZ-S92, serif;">1978</span><span style="font-family: 方正书宋_GBK;">年</span><span style="font-family: NEU-BZ-S92, serif;">)</span><span style="font-family: 方正书宋_GBK;">和改革开放史</span><span style="font-family: NEU-BZ-S92, serif;">(1978</span><span style="font-family: 方正书宋_GBK;">年至今</span><span style="font-family: NEU-BZ-S92, serif;">),</span><span style="font-family: 方正书宋_GBK;">按结构分为中国共产党的历史、党的理论、党的建设</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">按部门领域分为中国共产党的经济、政治、文化、社会、外交等专门史</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">按内容包括中国共产党的人物、事件、制度、组织、思想观念等基本要素。可以说</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">中共党史专业的学习内容丰富多彩、包罗万象</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">集国族史、政党史和普罗大众史于一身。</span></span></p><p style="white-space: normal; text-indent: 28px;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;"><span style="font-family: 方正书宋_GBK;">作为哲学社会科学的一门学科</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">中共党史是一门以中国共产党的过去事实为基础的学科</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">也是唯一一门对中国共产党进行全面研究、综合观察、多层次逼近的不可替代的学科。它形成于毛泽东领导的延安整风时期</span><span style="font-family: NEU-BZ-S92, serif;">,20</span><span style="font-family: 方正书宋_GBK;">世纪</span><span style="font-family: NEU-BZ-S92, serif;">50</span><span style="font-family: 方正书宋_GBK;">年代作为新中国政治理论课程被纳入高等教育体系后</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">具有了专门的课程支撑、教研机构和师资队伍</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">改革开放时期建立了较为系统完善的学科体系、学术体系、话语体系</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">已经步入学科化、学术化、国际化的发展轨道</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">至今已是当代中国一门特色学科、特殊学科、显要学科。说</span>“<span style="font-family: 方正书宋_GBK;">特色</span>”<span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">因为国外没有</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">中国独有</span><span style="font-family: NEU-BZ-S92, serif;">;</span><span style="font-family: 方正书宋_GBK;">说</span>“<span style="font-family: 方正书宋_GBK;">特殊</span>”<span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">研究对象是中国执政党</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">不是普通的一般的历史</span><span style="font-family: NEU-BZ-S92, serif;">;</span><span style="font-family: 方正书宋_GBK;">说</span>“<span style="font-family: 方正书宋_GBK;">显要</span>”<span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">上至执政党和国家</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">下至黎民苍生</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">内有国人</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">外有国际人士</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">都非常关注。</span></span></p><p style="white-space: normal; text-indent: 28px;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;"><span style="font-family: 方正书宋_GBK;">尤其在中外历史上</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">还不曾有一个政党像中国共产党那样</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">如此重视对于自身历史的建构。中共中央制定了两个</span>“<span style="font-family: 方正书宋_GBK;">历史决议</span>”<span style="font-family: NEU-BZ-S92, serif;">,1942</span><span style="font-family: 方正书宋_GBK;">年毛泽东亲撰《如何研究中共党史》的文章</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">中共中央党史研究室编撰有《中国共产党历史》</span><span style="font-family: NEU-BZ-S92, serif;">(</span><span style="font-family: 方正书宋_GBK;">第</span><span style="font-family: NEU-BZ-S92, serif;">1</span><span style="font-family: 方正书宋_GBK;">、</span><span style="font-family: NEU-BZ-S92, serif;">2</span><span style="font-family: 方正书宋_GBK;">卷</span><span style="font-family: NEU-BZ-S92, serif;">)</span><span style="font-family: 方正书宋_GBK;">和《中国共产党的九十年》</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">习近平总书记还作出学习党史国史是</span>“<span style="font-family: 方正书宋_GBK;">必修课</span>”<span style="font-family: 方正书宋_GBK;">的重要论述。可见</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">中国共产党对自身历史的学习和总结是一以贯之的。如果大家想了解国际社会如何看待中共</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">可以看一下我的同事路克利</span><span style="font-family: NEU-BZ-S92, serif;">2016</span><span style="font-family: 方正书宋_GBK;">年</span><span style="font-family: NEU-BZ-S92, serif;">6</span><span style="font-family: 方正书宋_GBK;">月发表在《北京日报》上的文章《政党奇迹</span>　<span style="font-family: 方正书宋_GBK;">刮目相看</span>——<span style="font-family: 方正书宋_GBK;">海外中共学</span><span style="font-family: NEU-BZ-S92, serif;">:</span><span style="font-family: 方正书宋_GBK;">国际社会了解中国的一个重要窗口》。</span></span></p><p style="white-space: normal; text-indent: 28px;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;"><span style="font-family: 方正书宋_GBK;">作为法学学科门类的一员</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">中共党史具有自己鲜明的学科特性</span><span style="font-family: NEU-BZ-S92, serif;">:</span><span style="font-family: 方正书宋_GBK;">一是历史的客观性</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">以中国共产党历史为学习和研究的对象</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">主要学习中共历史及其影响下的中国现当代历史变迁</span><span style="font-family: NEU-BZ-S92, serif;">;</span><span style="font-family: 方正书宋_GBK;">二是强烈的现实性</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">涉及中国共产党的理论政策</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">尤其是党的建设</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">与中国执政党和当代中国的发展具有直接的关联</span><span style="font-family: NEU-BZ-S92, serif;">;</span><span style="font-family: 方正书宋_GBK;">三是跨学科的开放性</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">兼具历史学、政治学、马克思主义理论等学科的某些特性</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">既有求真求实的要求</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">又有资政育人的社会功能。它不同于以塑造人们形成正确思想行为为目标的思想政治教育</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">不同于以追溯过往为基本任务的历史学</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">也不同于关注政治运行及其规律的政治学</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">具有独一无二的特质。如果你对往事感兴趣</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">可以研究中国共产党的历史</span><span style="font-family: NEU-BZ-S92, serif;">;</span><span style="font-family: 方正书宋_GBK;">如果你关注现实</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">可以研究中国共产党的现在</span><span style="font-family: NEU-BZ-S92, serif;">;</span><span style="font-family: 方正书宋_GBK;">如果你关怀未来</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">可以研究中国共产党的</span>“<span style="font-family: 方正书宋_GBK;">党治</span>”<span style="font-family: 方正书宋_GBK;">与</span>“<span style="font-family: 方正书宋_GBK;">治党</span>”<span style="font-family: 方正书宋_GBK;">的规律。套用</span>“<span style="font-family: 方正书宋_GBK;">问题意识</span>”<span style="font-family: 方正书宋_GBK;">的语言</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">中共问题就是最大的中国问题</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">中国问题就是最大的世界问题。</span></span></p><p style="white-space: normal; text-indent: 28px;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;"><span style="font-family: 方正书宋_GBK;">如果你想了解作为历史、专业、学科的中共党史的风采</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">不妨报考人民大学</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">因为有一门</span>“<span style="font-family: 方正书宋_GBK;">中国共产党历史入门</span>”<span style="font-family: 方正书宋_GBK;">课程将与你相遇。它是根据我校本科人才培养模式改革创新的要求</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">从</span><span style="font-family: NEU-BZ-S92, serif;">2015</span><span style="font-family: 方正书宋_GBK;">年开始</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">面向人文科学试验班新生开设的一门以介绍中国共产党的历史脉络和结构分析为基本内容</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">以专业化视角提供学习中共历史的方法论</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">培植历史理性和理论批判精神为宗旨的入门级课程。按照纵横结合的原则</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">分为两个版块</span><span style="font-family: NEU-BZ-S92, serif;">:</span><span style="font-family: 方正书宋_GBK;">一是以历史时段的纵向顺序为线索的历史版块</span><span style="font-family: NEU-BZ-S92, serif;">(</span><span style="font-family: 方正书宋_GBK;">第</span><span style="font-family: NEU-BZ-S92, serif;">1~8</span><span style="font-family: 方正书宋_GBK;">讲</span><span style="font-family: NEU-BZ-S92, serif;">),</span><span style="font-family: 方正书宋_GBK;">涵盖中共革命、建设和改革三个时期</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">旨在引导学生形成认识中共的历史感</span><span style="font-family: NEU-BZ-S92, serif;">;</span><span style="font-family: 方正书宋_GBK;">二是以横向结构为线索的专题版块</span><span style="font-family: NEU-BZ-S92, serif;">(</span><span style="font-family: 方正书宋_GBK;">第</span><span style="font-family: NEU-BZ-S92, serif;">9~14</span><span style="font-family: 方正书宋_GBK;">讲</span><span style="font-family: NEU-BZ-S92, serif;">),</span><span style="font-family: 方正书宋_GBK;">涵盖中国共产党与比较政党和政党政治、国家现代化发展模式、当代中国外交和国家统一、中国特色意识形态理论构造以及海外中共学等重要议题</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">旨在引导学生形成认识中共的理论感。从两届学生的上课效果来看</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">此前对中共党史抱有的成见或偏见</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">中学教科书强力灌入的中共历史观</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">已经得到修正</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">大家从中学习到了历史知识、提升了视野、管窥了研究方法</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">甚至有的学生改变了原来的想法</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">加入中共党史专业。这个时代已经不再是靠专业谋生</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">而是根据兴趣、爱好选择专业的时代了</span><span style="font-family: NEU-BZ-S92, serif;">!</span></span></p><p style="white-space: normal; text-indent: 28px;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;"><span style="font-family: 方正黑体_GBK;">中国人民大学中共党史专业的优势何在</span><span style="font-family: NEU-BZ-S92, serif;">?</span></span></p><p style="white-space: normal; text-indent: 28px;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;"><span style="font-family: 方正书宋_GBK;">中共党史在中国人民大学乃至全国高校已经形成了深厚的学科优势</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">已经发展成为在全国同类学科中处于领先地位</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">并在国内外学界享有良好声誉和一定影响力的优势和特色学科</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">是全国高校规模最大、学术影响和社会影响最大的中共党史的教学、科研、人才培养和学术交流中心</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">被誉为高校党史党建专业人才成长的摇篮。</span></span></p><p style="white-space: normal;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">　　<span style="font-size: 7px;">●</span>&nbsp;<span style="font-family: 方正书宋_GBK;">体现人大历史的传统优势学科。它是从陕北公学、华北联合大学、华北大学到中国人民大学一直沿革下来的具有光荣历史和办学传统的学科</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">在以何干之、胡华为代表的几代学者的开拓下</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">已有</span><span style="font-family: NEU-BZ-S92, serif;">60</span><span style="font-family: 方正书宋_GBK;">年历史积淀</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">是体现人大校史底蕴、社会主义新型大学特征的重要学科</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">不仅</span><span style="font-family: NEU-BZ-S92, serif;">20</span><span style="font-family: 方正书宋_GBK;">世纪</span><span style="font-family: NEU-BZ-S92, serif;">50</span><span style="font-family: 方正书宋_GBK;">年代成为享誉全国的人大</span>“<span style="font-family: 方正书宋_GBK;">四大名旦</span>”<span style="font-family: 方正书宋_GBK;">之一</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">而且也是改革开放新时期体现人大办学特色和优势的一块</span>“<span style="font-family: 方正书宋_GBK;">金字招牌</span>”<span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">至今仍然在国内外同等同类学科中保持重要影响力</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">是全国普通高校党史学科中唯一的国家级重点二级学科</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">是高校党史党建学科的奠基者和领军者。</span></span></p><p style="white-space: normal;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">　　<span style="font-size: 7px;">●</span>&nbsp;<span style="font-family: 方正书宋_GBK;">表现中国特色的独门学科。它是以当代中国唯一的执政党</span>——<span style="font-family: 方正书宋_GBK;">中国共产党历史为研究对象的专门学科</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">全国高校仅有人大、湘潭大学、广西民族大学、延安大学、井冈山大学</span><span style="font-family: NEU-BZ-S92, serif;">5</span><span style="font-family: 方正书宋_GBK;">所学校招生。我校中共党史专业已有</span><span style="font-family: NEU-BZ-S92, serif;">60</span><span style="font-family: 方正书宋_GBK;">年的历史</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">是高校同类招生历史最悠久、教学体系最系统、人才培养层次最完整的专门学科</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">是我校</span><span style="font-family: NEU-BZ-S92, serif;">8</span><span style="font-family: 方正书宋_GBK;">个国家重点二级学科之一</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">是全国高校系统唯一的中共党史国家级重点二级学科</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">业已形成从学士、硕士到博士</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">并接受国内外访问学者和招收博士后的系统完整的教学工作和人才培养体系</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">积累了丰富的专业教学和人才培养经验。以中共党史专业为依托</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">党史学科逐渐发展出一些新的生长点和增长极</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">初步形成一个包括中共党史、党的建设与党的学说、马克思主义中国化、中国近现代史基本问题研究、当代中国史在内的大党史学科群。</span></span></p><p style="white-space: normal;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">　　<span style="font-size: 7px;">●</span>&nbsp;<span style="font-family: 方正书宋_GBK;">相对独立完整的学科建制。作为马克思主义学院下设的</span>“<span style="font-family: 方正书宋_GBK;">一系两所</span>”<span style="font-family: 方正书宋_GBK;">之一</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">依托中国共产党历史与理论研究院</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">保持相对独立的学科建制和建设平台。中共党史系在职专业教师</span><span style="font-family: NEU-BZ-S92, serif;">20</span><span style="font-family: 方正书宋_GBK;">人</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">下设中共党史、党的建设、中国近现代史、当代中国四个教研室</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">承担中共党史、党的建设、马克思主义中国化、中国近现代史基本问题研究、当代中国史</span><span style="font-family: NEU-BZ-S92, serif;">5</span><span style="font-family: 方正书宋_GBK;">个学科</span><span style="font-family: NEU-BZ-S92, serif;">(</span><span style="font-family: 方正书宋_GBK;">方向</span><span style="font-family: NEU-BZ-S92, serif;">)</span><span style="font-family: 方正书宋_GBK;">的建设任务</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">构成我校马克思主义理论、政治学、历史学三个一级学科的重要支撑</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">为本专业的学习和研究提供了多学科交叉互渗的复合型的发展空间。</span></span></p><p style="white-space: normal;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">　　<span style="font-size: 7px;">●</span>&nbsp;<span style="font-family: 方正书宋_GBK;">搭建宽广多元的人才成长平台。坚持专业特色和综合素质并重</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">按照</span>“<span style="font-family: 方正书宋_GBK;">以历史学为根基、以政治学和马克思主义理论为两翼</span>”<span style="font-family: 方正书宋_GBK;">的专业建设思路</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">把历史与现实、理论与实践的结合贯穿学生培养的全过程、各环节</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">使学生具备宽广的学术视野、系统完善的知识体系和扎实的理论功底</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">造就一批党政管理、理论宣传、决策咨询和学术研究的精英人才。设有校级的中国共产党历史与理论研究院、当代中国研究中心、台港澳研究中心等培养平台。近年</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">探索开展的人才培养举措主要有</span><span style="font-family: NEU-BZ-S92, serif;">:</span><span style="font-family: 方正书宋_GBK;">一是实行</span>“<span style="font-family: 方正书宋_GBK;">一对一</span>”<span style="font-family: 方正书宋_GBK;">的本科生导师制</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">师生共同开展研究性、参与式的教学研究活动</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">为学生打造具有个性化的培养方案</span><span style="font-family: NEU-BZ-S92, serif;">;</span><span style="font-family: 方正书宋_GBK;">二是开展丰富多彩的社会活动</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">如</span>“<span style="font-family: 方正书宋_GBK;">五四杯</span>”<span style="font-family: 方正书宋_GBK;">党史本科生论文竞赛锻炼学生的科研能力</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">定期在延安、井冈山、湘潭等地进行党史专业教学实践和毕业实习活动</span><span style="font-family: NEU-BZ-S92, serif;">;</span><span style="font-family: 方正书宋_GBK;">三是推进课程改革</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">不断丰富完善以中共党史为核心的课程体系</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">重视新生研讨课、</span>“<span style="font-family: 方正书宋_GBK;">中国共产党历史入门</span>”<span style="font-family: 方正书宋_GBK;">等本科新生课程的讲授</span><span style="font-family: NEU-BZ-S92, serif;">;</span><span style="font-family: 方正书宋_GBK;">四是走出校门、服务社会</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">本专业教师先后应邀在中央政治局集体学习</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">以及解放军总后勤部、空军总部、大军区、中央部委、省市自治区党委、央企党委</span><span style="font-family: NEU-BZ-S92, serif;">(</span><span style="font-family: 方正书宋_GBK;">组</span><span style="font-family: NEU-BZ-S92, serif;">)</span><span style="font-family: 方正书宋_GBK;">理论中心组学习中作辅导报告</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">组织学生围绕党史党建的重大纪念活动开展宣讲活动</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">参与中央有关部门委托的重要课题研究</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">等等。</span></span></p><p style="white-space: normal; text-indent: 28px;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;"><span style="font-family: 方正书宋_GBK;">据不完全统计</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">我校中共党史专业历届毕业生逾</span><span style="font-family: NEU-BZ-S92, serif;">5000</span><span style="font-family: 方正书宋_GBK;">人</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">为中共党史的教育与研究做出了重要贡献。其中</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">涌现出一批国内外知名的专家学者</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">不少人还担任了重要的领导职务。曾经走出</span><span style="font-family: NEU-BZ-S92, serif;">3</span><span style="font-family: 方正书宋_GBK;">位中共中央委员</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">杰出校友代表如中央政策研究室原主任、中央文献研究室原主任滕文生</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">全国政协原副主席张怀西</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">中共浙江省委原书记李泽民</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">国家工商行政管理总局局长张茅</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">等等。在学界</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">培养了一批以杨奎松</span><span style="font-family: NEU-BZ-S92, serif;">(</span><span style="font-family: 方正书宋_GBK;">华东师范大学教授</span><span style="font-family: NEU-BZ-S92, serif;">)</span><span style="font-family: 方正书宋_GBK;">、牛军</span><span style="font-family: NEU-BZ-S92, serif;">(</span><span style="font-family: 方正书宋_GBK;">北京大学教授</span><span style="font-family: NEU-BZ-S92, serif;">)</span><span style="font-family: 方正书宋_GBK;">、谢春涛</span><span style="font-family: NEU-BZ-S92, serif;">(</span><span style="font-family: 方正书宋_GBK;">中央党校教授</span><span style="font-family: NEU-BZ-S92, serif;">)</span><span style="font-family: 方正书宋_GBK;">等为代表的在全国有重要影响的党史党建国史专家。</span></span></p><p style="white-space: normal; text-indent: 28px;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;"><span style="font-family: 方正书宋_GBK;">本专业荣获学校就业先进单位。历年来</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">中共党史专业毕业生尤其是研究生</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">在各高校同一专业中水平是最高的。近</span><span style="font-family: NEU-BZ-S92, serif;">5</span><span style="font-family: 方正书宋_GBK;">年来</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">中共党史专业的本科学子毕业后选择留学深造的平均比率为</span><span style="font-family: NEU-BZ-S92, serif;">18%,</span><span style="font-family: 方正书宋_GBK;">选择国内深造的比率约为</span><span style="font-family: NEU-BZ-S92, serif;">60%,</span><span style="font-family: 方正书宋_GBK;">到政府机关工作的比率约</span><span style="font-family: NEU-BZ-S92, serif;">5%,</span><span style="font-family: 方正书宋_GBK;">在企事业单位工作的比率约</span><span style="font-family: NEU-BZ-S92, serif;">15%,</span><span style="font-family: 方正书宋_GBK;">选择自由职业的比率约为</span><span style="font-family: NEU-BZ-S92, serif;">2%,</span><span style="font-family: 方正书宋_GBK;">总体就业率近</span><span style="font-family: NEU-BZ-S92, serif;">100%</span><span style="font-family: 方正书宋_GBK;">。</span></span></p><p style="white-space: normal; text-indent: 28px;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;"><span style="font-family: 方正书宋_GBK;">最后</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">欢迎大家报考我校</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">期待你与中共党史专业相遇相识。</span></span></p><p><span style="font-family: FZLTKHK--GBK1-0; font-size: 9pt; color: rgb(35, 31, 32); font-variant-numeric: normal; font-variant-east-asian: normal;"><span style="font-size: 9pt; font-variant-numeric: normal; font-variant-east-asian: normal;"><span style="font-size: 9pt; font-variant-numeric: normal; font-variant-east-asian: normal;"><span style="font-size: 9pt; font-variant-numeric: normal; font-variant-east-asian: normal;"><span style="font-size: 9pt; font-variant-numeric: normal; font-variant-east-asian: normal;"></span></span></span></span><br style="font-variant-numeric: normal; font-variant-east-asian: normal; line-height: normal; text-align: -webkit-auto; white-space: normal; text-size-adjust: auto;"/></span><br/></p>
+                       
+                        <div class="pull-right mt20">
+                            <!-- JiaThis Button BEGIN -->
+                            <div class="jiathis_style">
+                                <span class="jiathis_txt">分享到：</span>
+                                <a class="jiathis_button_icons_1"></a>
+                                <a class="jiathis_button_icons_2"></a>
+                                <a class="jiathis_button_icons_3"></a>
+                                <a class="jiathis_button_icons_4"></a>
+                                <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
+                                <a class="jiathis_counter_style"></a>
+                            </div>
+                            <script type="text/javascript" src="http://v3.jiathis.com/code/jia.js" charset="utf-8"></script>
+                            <!-- JiaThis Button END -->
+                        </div>
+                    </div>
+                </div>
+                <!--  
+	            <div class="col-md-3 col-sm-4">
+                    <ul class="grey-ul">
+                      
+                    </ul>
+	
+	             </div>
+	           -->
+            </div>
+        </div>
+    </div>
+      
+    <div class="y_foot hidden-xs">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="t_col3">
+                        <h5>联系我们</h5>
+                        <div class="t_icon1">
+                            <i></i>
+                            <span>400-0123-517</span><br/>
+                        </div>
+                        <div class="t_icon2">
+                            <i></i>
+                            <span>zsb@ruc.edu.cn</span></br>
+                        </div>
+                        <div class="t_icon4">
+                            <i></i>
+                            <span>010-62511156(传真)</span></br>
+                        </div>
+                        <div class="t_icon3">
+                            <i></i>
+                            <span>北京市海淀区中关村大街59号<br/>知行F楼(北区食堂)六层</span></br>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="t_col3">
+                        <h5>关注我们</h5>
+                        <img src="/static/default/images/wechat.png" alt="">
+                        <p>扫描二维码关注我们</p>
+                        <p>微信公众号"人大阳光招生"</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="t_col3">
+                        <h5>学术公告</h5>
+                        
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="t_col3">
+                         <h5>快速链接
+                        <a target="_blank" href="http://211.71.30.15/index/index_main.action" style="margin-left: 40px;color: #999;font-weight: normal;font-size: 16px;">返回旧网站</a>
+                               <a target="_blank" href="http://211.71.30.15/index/index_main.action" >
+                                    <span class="icon-wrap">
+                                        <span class="icon icon-arrow_carrot-right_alt2"  style="color: #999"></span>
+                                    </span>
+                                </a>
+                        </h5>
+                        
+                                 
+                        <a href="/cms/item/1031.html" class="t_b" target = _blank>人大主页</a>
+                       
+                                 
+                        <a href="/cms/item/1032.html" class="t_b" target = _blank>人大新闻网</a>
+                       
+                                 
+                        <a href="/cms/item/1038.html" class="t_b" target = _blank>留学生招生</a>
+                       
+                                 
+                        <a href="/cms/item/1037.html" class="t_b" target = _blank>研究生招生</a>
+                       
+                                 
+                        <a href="/cms/item/1036.html" class="t_b" target = _blank>考生黄页</a>
+                       
+                                 
+                        <a href="/cms/item/1035.html" class="t_b" target = _blank>校园地图</a>
+                       
+                                 
+                        <a href="/cms/item/1034.html" class="t_b" target = _blank>校友总会</a>
+                       
+                                 
+                        <a href="/cms/item/1033.html" class="t_b" target = _blank>教育基金会</a>
+                       
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="y_bottom">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="t_info clearfix">
+                        <p>版权所有 Copyright© 中国人民大学本科生招生办公室   京ICP备05066828号-1</p>
+                        <div class="t_flogo">
+                            <a href="http://www.ruc.edu.cn/"><img src="/static/default/images/t_logo.png" alt=""></a>
+                            <a href="#" class="hidden-xs t_back">回顶部</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

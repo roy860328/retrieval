@@ -1,0 +1,1500 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+    <title>
+        中国人民大学校友网-中国人民大学校友网    </title>
+    <!-- Bootstrap -->
+    <link rel="shortcut icon" href="/ruc.ico" type="image/x-icon" />
+
+    <link rel="stylesheet" href="https://alumni.ruc.edu.cn/wp-content/themes/alumni/style.css" type="text/css" media="screen">
+    <link href="https://alumni.ruc.edu.cn/wp-content/themes/alumni/lib/bootstrap.min.css?v=1" rel="stylesheet">
+    <link rel="stylesheet" href="https://alumni.ruc.edu.cn/wp-content/themes/alumni/css/style.css?v=12" type="text/css" media="screen">
+
+    
+    <link rel="stylesheet" href="https://alumni.ruc.edu.cn/wp-content/themes/alumni/css/font.css" type="text/css">
+    <link rel="stylesheet" href="https://alumni.ruc.edu.cn/wp-content/themes/alumni/css/share.min.css" type="text/css">
+    <link rel="stylesheet" href="https://alumni.ruc.edu.cn/wp-content/themes/alumni/css/pgwslideshow.min.css" type="text/css">
+    <script src="https://alumni.ruc.edu.cn/wp-content/themes/alumni/lib/jquery.min.js"></script>
+
+    <script src="https://alumni.ruc.edu.cn/wp-content/themes/alumni/js/jquery.easing.1.3.js"></script>
+    <script type="text/javascript" src="https://alumni.ruc.edu.cn/wp-content/themes/alumni/lib/jquery.SuperSlide.2.1.1.js"></script>
+    <script src="https://alumni.ruc.edu.cn/wp-content/themes/alumni/lib/bootstrap.min.js"></script>
+    <script src="https://alumni.ruc.edu.cn/wp-content/themes/alumni/js/jquery.share.min.js"></script>
+    <script src="https://alumni.ruc.edu.cn/wp-content/themes/alumni/js/jquery.qrcode.min.js"></script>
+    <script src="https://alumni.ruc.edu.cn/wp-content/themes/alumni/js/jqpaginator.min.js"></script>
+    <script src="https://alumni.ruc.edu.cn/wp-content/themes/alumni/js/moment.min.js"></script>
+    <script src="https://alumni.ruc.edu.cn/wp-content/themes/alumni/js/moment-with-locales.min.js"></script>
+    <!--[if lte IE 9]> 
+    <script>
+        FileAPI = {
+            jsUrl: 'https://alumni.ruc.edu.cn/wp-content/themes/alumni/lib/FileAPI.min.js',
+            flashUrl: 'https://alumni.ruc.edu.cn/wp-content/themes/alumni/lib/FileAPI.flash.swf',
+       
+        }
+    </script>
+    
+    <![endif]-->
+    <script src="https://alumni.ruc.edu.cn/wp-content/themes/alumni/lib/ng-file-upload-shim.min.js"></script>
+    <script src="https://alumni.ruc.edu.cn/wp-content/themes/alumni/lib/angular.min.js"></script>
+    
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+        <script src="https://alumni.ruc.edu.cn/wp-content/themes/alumni/lib/html5shiv.min.js"></script>
+        <script src="https://alumni.ruc.edu.cn/wp-content/themes/alumni/lib/respond.min.js"></script>
+        <![endif]-->
+</head>
+<body>
+<div class="myContents">
+   <div class="tab-pane">
+        <div id="school-header">
+            <div id="header">  
+                <div class="container mob-container">
+                <div>
+                        <nav class="navbar navbar-default" role="navigation">
+                            <div class="navbar-header check-search">
+                                <button type="button" class="navbar-toggle" data-toggle="collapse" 
+                                 data-target="#example-navbar-collapse">
+                                    <span class="sr-only">切换导航</span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </button>
+                                <span class="icon-search4 mob-search visible-xs"></span>
+                                <a class="navbar-brand" href="https://alumni.ruc.edu.cn">
+                                    <img src="https://alumni.ruc.edu.cn/wp-content/themes/alumni/images/logo.png" style="width:100%;height:auto;" class='hidden-xs' class='remove'>
+                                    <img src="https://alumni.ruc.edu.cn/wp-content/themes/alumni/images/red_logo.png" style="width:100%;height:auto;" class='visible-xs'>
+                                </a>
+                           </div>
+                           <!-- 搜索 -->
+                           <div class="navbar-header row mob-search-head">
+                               <div class='col-xs-10' style="height: 30px">
+                                   <form action="https://alumni.ruc.edu.cn" method="get">
+                                   <input   value='请输入关键字' name="s">
+                                   </form>
+                                </div>
+                               <div class='col-xs-2' style="height: 30px;padding-left: 0;"><p class='action_check'>取消</p></div>
+                            </div>
+                            <div class="collapse navbar-collapse header-hr" id="example-navbar-collapse">
+                                <form class="navbar-form navbar-right my-nav-form" role="search" action="https://alumni.ruc.edu.cn" method="get" >
+
+                                    <!-- pc -->
+                                    <div class='hidden-xs'>
+                                        <div class="form-group my-serach-posi">
+                                            <input  class="form-control header-search radius-none" value="搜索" name="s" >
+                                            <span class="icon-search4 my-serach"></span>
+                                        </div>
+                                        <a class="header-login" href="/app/auth/login">
+                                            登录
+                                        </a>
+                                    </div>
+
+                                   <!-- mob -->
+                                    <div class='visible-xs'>
+                                        <div class='mob-login'>
+                                            <img class='user-logo' src="https://secure.gravatar.com/avatar/197c79ccd2dd1386cea242cfa76b49d9?s=96&d=mm&r=g">
+                                            <p class='mob-name user-name'>这是姓名</p>
+                                            <span><a href="javascript:void(0)" class="smrz"><b></b></a></span>
+                                            <!-- <p class='p-login'>请登录</p> -->
+                                        </div>
+                                        
+                                        <ul id="menu-main" class="nav navbar-nav"><li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="/xybl/gnxyh#?id=1">校友部落<span class="icon-arrow_carrot-right"></span></a>
+<ul class="dropdown-menu two-menu">
+	<li class="dropdown"><a  href="/xybl/gnxyh#?id=1">国内校友会</a></li>
+	<li class="dropdown"><a  href="/xybl/gnxyh#?id=2">海外校友会</a></li>
+	<li class="dropdown"><a  href="/xybl/gnxyh#?id=3">院系校友会</a></li>
+</ul>
+</li>
+<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="/archives/category/xjmx/znfx-xjmx">相聚母校<span class="icon-arrow_carrot-right"></span></a>
+<ul class="dropdown-menu two-menu">
+	<li class="dropdown"><a  href="https://alumni.ruc.edu.cn/archives/category/xjmx/xq-xjmx">校庆</a></li>
+	<li class="dropdown"><a  href="https://alumni.ruc.edu.cn/archives/category/xjmx/yq-xjmx">院庆</a></li>
+</ul>
+</li>
+<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="/xyhd#?id=1">校友活动<span class="icon-arrow_carrot-right"></span></a>
+<ul class="dropdown-menu two-menu">
+	<li class="dropdown"><a  href="/xyhd#?id=2">最新活动</a></li>
+	<li class="dropdown"><a  href="/xyhd#?id=3">最热活动</a></li>
+	<li class="dropdown"><a  href="/xyhd#?id=4">即将开始</a></li>
+	<li class="dropdown"><a  href="/xyhd#?id=5">即将截止</a></li>
+	<li class="dropdown"><a  href="/fxhd">活动预告</a></li>
+</ul>
+</li>
+<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="https://alumni.ruc.edu.cn/archives/category/news">新闻动态<span class="icon-arrow_carrot-right"></span></a>
+<ul class="dropdown-menu two-menu">
+	<li class="dropdown"><a href="https://alumni.ruc.edu.cn/archives/category/news">新闻动态</a><hr class="dh"  /><a  href="https://alumni.ruc.edu.cn/archives/category/news/jzmx">聚焦母校</a></li>
+	<li class="dropdown"><a  href="https://alumni.ruc.edu.cn/archives/category/news/alumni-news">校友会快讯</a></li>
+	<li class="dropdown"><a  href="https://alumni.ruc.edu.cn/archives/category/news/alumni-trends">校友动态</a></li>
+	<li class="dropdown"><a  href="https://alumni.ruc.edu.cn/archives/category/news/alumni-story">校友故事</a></li>
+	<li class="dropdown"><a  href="https://alumni.ruc.edu.cn/archives/category/news/pic-news">校友图集</a></li>
+	<li class="dropdown"><a  href="https://alumni.ruc.edu.cn/archives/category/news/video-news">校友视频</a></li>
+</ul>
+</li>
+<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="/xykw-xyfw">校友服务<span class="icon-arrow_carrot-right"></span></a>
+<ul class="dropdown-menu two-menu">
+	<li class="dropdown"><a  href="https://alumni.ruc.edu.cn/archives/5918">校友卡</a></li>
+	<li class="dropdown"><a  href="https://alumni.ruc.edu.cn/xyfw/download-xyfw">下载专区</a></li>
+	<li class="dropdown"><a  href="https://alumni.ruc.edu.cn/archives/category/xyfw/xyqy-xyfw">校友企业</a></li>
+	<li class="dropdown"><a  href="https://alumni.ruc.edu.cn/archives/category/xyfw/zpqz-xyfw">求职招聘</a></li>
+	<li class="dropdown"><a  href="http://zsjyc.ruc.edu.cn/">招生就业</a></li>
+	<li class="dropdown"><a  href="http://dag.ruc.edu.cn/">档案查阅</a></li>
+	<li class="dropdown"><a  href="https://www.ruc.edu.cn/map">校园地图</a></li>
+</ul>
+</li>
+<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="/hbmx/jjhjj-hbmx">回报母校<span class="icon-arrow_carrot-right"></span></a>
+<ul class="dropdown-menu two-menu">
+	<li class="dropdown"><a  href="https://alumni.ruc.edu.cn/jjhjj-hbmx">基金会介绍</a></li>
+	<li class="dropdown"><a  href="https://alumni.ruc.edu.cn/archives/category/hbmx/jzdt-hbmx">捐赠动态</a></li>
+	<li class="dropdown"><a  href="https://alumni.ruc.edu.cn/archives/category/hbmx/jzxm-hbmx">捐赠项目</a></li>
+	<li class="dropdown"><a  href="https://alumni.ruc.edu.cn/jzzn-hbmx">捐赠指南</a></li>
+	<li class="dropdown"><a  href="https://alumni.ruc.edu.cn/jzms-hbmx">捐赠免税</a></li>
+</ul>
+</li>
+<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="/about/alumni-intro">关于我们<span class="icon-arrow_carrot-right"></span></a>
+<ul class="dropdown-menu two-menu">
+	<li class="dropdown"><a  href="https://alumni.ruc.edu.cn/about/alumni-intro">校友会简介</a></li>
+	<li class="dropdown"><a  href="https://alumni.ruc.edu.cn/about/organize">组织架构</a></li>
+	<li class="dropdown"><a  href="https://alumni.ruc.edu.cn/archives/category/about/gzzd-about">规章制度</a></li>
+</ul>
+</li>
+</ul>                                        <ul class="nav navbar-nav userinfo-head">
+                                            <li class="dropdown">
+                                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                                    个人中心 <span class='icon-arrow_carrot-right'></span>
+                                                </a>
+                                                <ul class="dropdown-menu two-menu">
+                                                    <li class="dropdown"><a href="/profile?action=userinfo">基本信息</a></li>
+                                                    <li class="dropdown"><a href="/profile?action=mmxg">账户安全</a></li>
+                                                    <li class="dropdown"><a href="/profile?action=znxs">站内信</a></li>
+                                                    <li class="dropdown"><a href="/profile?action=xybl">参与动态</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+
+                                    </form>
+                                        <div class='login-out'>
+                                            <a class='btn' href="/app/auth/logout">退出</a>
+                                        </div>
+                                        <div class='mob-login-down'>
+
+                                            <a class="btn" href="/app/auth/login">登录</a>
+                                            <p>没有帐号，立即 <a href="/register-2">注册</a></p>
+                                        </div>
+                                    </div>
+                                
+                           </div>
+                           <!-- <ul class="nav navbar-nav my-nav hidden-xs">
+                                    <li ><a href="#">校友部落</a>
+                                    <ul class="subnav">
+                                        <li><a href="#">HTML</a></li>
+                                        <li><a href="#">CSS</a></li>
+                                        <li><a href="#">JavaScript</a></li>
+                                    </ul>
+                                    </li>
+                                    <li><a href="#">相聚母校</a></li>
+                                    <li><a href="#">校友活动</a></li>
+                                    <li><a href="">新闻动态</a></li>
+                                    <li><a href="#">校友服务</a></li>
+                                    <li><a href="#">回报母校</a></li>
+                                    <li><a href="/about">关于我们</a></li> 
+                                    <li> 
+                                    </li>
+                            </ul> -->
+                            <ul id="menu-main-1" class="nav navbar-nav my-nav hidden-xs"><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-535"><a href="/xybl/gnxyh#?id=1">校友部落</a>
+<ul class="subnav">
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-751"><a href="/xybl/gnxyh#?id=1">国内校友会</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-752"><a href="/xybl/gnxyh#?id=2">海外校友会</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-812"><a href="/xybl/gnxyh#?id=3">院系校友会</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-589"><a href="/archives/category/xjmx/znfx-xjmx">相聚母校</a>
+<ul class="subnav">
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-758"><a href="https://alumni.ruc.edu.cn/archives/category/xjmx/xq-xjmx">校庆</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-759"><a href="https://alumni.ruc.edu.cn/archives/category/xjmx/yq-xjmx">院庆</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-628"><a href="/xyhd#?id=1">校友活动</a>
+<ul class="subnav">
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-880"><a href="/xyhd#?id=2">最新活动</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-881"><a href="/xyhd#?id=3">最热活动</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-878"><a href="/xyhd#?id=4">即将开始</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-879"><a href="/xyhd#?id=5">即将截止</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1928"><a href="/fxhd">活动预告</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-481"><a href="https://alumni.ruc.edu.cn/archives/category/news">新闻动态</a>
+<ul class="subnav">
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-482"><a href="https://alumni.ruc.edu.cn/archives/category/news/jzmx">聚焦母校</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-485"><a href="https://alumni.ruc.edu.cn/archives/category/news/alumni-news">校友会快讯</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-484"><a href="https://alumni.ruc.edu.cn/archives/category/news/alumni-trends">校友动态</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-486"><a href="https://alumni.ruc.edu.cn/archives/category/news/alumni-story">校友故事</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-599"><a href="https://alumni.ruc.edu.cn/archives/category/news/pic-news">校友图集</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-600"><a href="https://alumni.ruc.edu.cn/archives/category/news/video-news">校友视频</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-606"><a href="/xykw-xyfw">校友服务</a>
+<ul class="subnav">
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-5946"><a href="https://alumni.ruc.edu.cn/archives/5918">校友卡</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-605"><a href="https://alumni.ruc.edu.cn/xyfw/download-xyfw">下载专区</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-755"><a href="https://alumni.ruc.edu.cn/archives/category/xyfw/xyqy-xyfw">校友企业</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-982"><a href="https://alumni.ruc.edu.cn/archives/category/xyfw/zpqz-xyfw">求职招聘</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3111"><a href="http://zsjyc.ruc.edu.cn/">招生就业</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3112"><a href="http://dag.ruc.edu.cn/">档案查阅</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3113"><a href="https://www.ruc.edu.cn/map">校园地图</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-661"><a href="/hbmx/jjhjj-hbmx">回报母校</a>
+<ul class="subnav">
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-765"><a href="https://alumni.ruc.edu.cn/jjhjj-hbmx">基金会介绍</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-763"><a href="https://alumni.ruc.edu.cn/archives/category/hbmx/jzdt-hbmx">捐赠动态</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-764"><a href="https://alumni.ruc.edu.cn/archives/category/hbmx/jzxm-hbmx">捐赠项目</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-785"><a href="https://alumni.ruc.edu.cn/jzzn-hbmx">捐赠指南</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-784"><a href="https://alumni.ruc.edu.cn/jzms-hbmx">捐赠免税</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-635"><a href="/about/alumni-intro">关于我们</a>
+<ul class="subnav">
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-633"><a href="https://alumni.ruc.edu.cn/about/alumni-intro">校友会简介</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-688"><a href="https://alumni.ruc.edu.cn/about/organize">组织架构</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-975"><a href="https://alumni.ruc.edu.cn/archives/category/about/gzzd-about">规章制度</a></li>
+</ul>
+</li>
+</ul>                        </nav>
+                    </div>
+                </div>
+            </div>
+            
+           
+            <script type="text/javascript">
+            $(function(){
+                $("body").scroll(function(){
+                    var width = $(window).width();
+
+                    if (width < 768) {
+                        autoMobTop();
+                    } else {
+                        autoTop();
+                    }
+                   
+                });
+
+                function autoTop(){
+                    //console.log(document.body.scrollTop)
+                        var top = $("#school-header").offset().top;
+                        //console.log(top);
+                        if (top < 0){
+                            $("#header").css({"position":"fixed","top":"0",'height':'42px'})
+                            $(".navbar-brand").hide();
+                            // $("#example-navbar-collapse").hide();
+                            $(".my-nav-form").hide();
+                            $(".header-hr").css("border-bottom","none");
+                            $("#school-header #myCarousel").css("padding-top",'0px');
+                        } else {
+                            $("#header").removeAttr("style");
+                            $(".navbar-brand").show();
+                            // $("#example-navbar-collapse").hide();
+                            $("#school-header #myCarousel").removeAttr("style");
+                            $(".my-nav-form").show();
+                            $(".header-hr").removeAttr("style");
+                        };
+                }
+
+                function autoMobTop(){
+                    //console.log(document.body.scrollTop)
+                        $(".navbar-brand").show();
+                        $("#header").removeAttr("style");
+                        $("#school-header #myCarousel").removeAttr("style");
+                        $(".my-nav-form").show();
+                        $(".header-hr").removeAttr("style");
+                        var top = $("#school-header").offset().top;
+                        if (top < 0){
+                            $("#header").css({"position":"fixed","top":"0"})
+                           
+                        } else {
+                            $("#header").removeAttr("style");
+                            
+                        };
+                }
+
+                function mobHeader(){
+                    var width = $(window).width();
+                    if (width < 768) {
+                        var height = $(window).height();
+                        $(".my-nav-form").css("height",height - 54);
+                    } else {
+                        $(".my-nav-form").css("height","auto");
+                    }
+                    
+                }
+                mobHeader();
+                $(window).resize(function(){
+                    var width = $(window).width();
+                    if (width > 768) {
+                        $(".check-search").show();
+                        $(".mob-search-head").hide();
+                        
+                    } else{
+                        autoMobTop();
+                    }
+                    mobHeader();
+                    
+
+                })
+                $(window).ready(function(){
+                    mobHeader();
+                })
+
+                $(".mob-search").on("click",function(){
+                    $(".check-search").hide();
+                    $(".mob-search-head").show();
+                })
+
+                $(".action_check").on("click",function(){
+                    $(".check-search").show();
+                    $(".mob-search-head").hide();
+                })
+
+                
+                
+            })
+            </script><link rel="stylesheet" href="https://alumni.ruc.edu.cn/wp-content/themes/alumni/css/viewer.css" type="text/css">
+<script src="https://alumni.ruc.edu.cn/wp-content/themes/alumni/js/viewer.js"></script>
+<style type="text/css">
+    .width100{
+        width:100px;
+        height:120px
+    }
+    .width28{
+        width: 28%;
+    }
+    .width22{
+        width: 22%;
+    }
+    @media (max-width: 768px) {
+        .width28{
+            width: 60%;
+            margin-bottom: 20px;
+        }
+        .width22{
+            width: 40%;
+            margin-bottom: 20px;
+        }
+    }
+    #video-ruc video {
+        width: 360px;
+        height: auto;
+        text-align: center;
+        box-shadow: rgba(0, 0, 0, 0.1) 5px 5px 7px, rgba(255, 255, 255, 0.3) 0px 1px 0px inset !important;
+    }
+    @media only screen and (max-width: 768px) {
+        #video-ruc video {
+            width: 100%;
+        }
+    }
+</style>
+<!-- main-content -->
+<div class="modal fade " id="identifier" style='margin-top: 100px;' tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog" style="width: 400px;">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                    &times;
+                </button>
+                <h4 class="modal-title" id="myModalLabel">
+                   提示
+                </h4>
+            </div>
+            <div class="modal-body">
+                <p class="tishi" style="margin: 0"></p>
+            </div>
+            
+        </div>
+    </div>
+</div>
+<div id="myCarousel" class="carousel slide">
+                <!-- 轮播（Carousel）指标 -->
+                <div class="small-pic hidden-xs">
+                    <div class="container">
+                        <ol class="my-carousel-indicators">
+                                                        <li data-target="#myCarousel" data-slide-to="0" class="active">
+                                <div class="img-wrap dif-img">
+                                    <div style="background:url(https://alumni.ruc.edu.cn/wp-content/uploads/2023/03/微信图片_20230421100859.jpg)no-repeat;width: 120px;height: 70px;position: relative;top: 5px;background-size:cover; "></div>
+                                    <div class="mask"></div>
+                                </div>
+                            </li>
+                                                        <li data-target="#myCarousel" data-slide-to="1" >
+                                <div class="img-wrap dif-img">
+                                    <div style="background:url(https://alumni.ruc.edu.cn/wp-content/uploads/2023/03/微信图片_20230420081423.jpg)no-repeat;width: 120px;height: 70px;position: relative;top: 5px;background-size:cover; "></div>
+                                    <div class="mask"></div>
+                                </div>
+                            </li>
+                                                    </ol> 
+                    </div> 
+                </div> 
+               <!-- 轮播（Carousel）项目 -->
+                <div class="carousel-inner school-banner">
+                                        <div class="item active">
+                        <a class='img-cover' style='position: relative;display: block;' href="https://alumni.ruc.edu.cn/archives/10620">
+                        <div class='image-wrapper' style="background:url(https://alumni.ruc.edu.cn/wp-content/uploads/2023/03/微信图片_20230421100859.jpg); background-size: cover;background-repeat: no-repeat;background-position: center;" ></div>
+                        </a>
+			            <div class="bottom-text hidden-xs">
+                            <div class="container">
+			                    <h3 class='index-h3'><a href="https://alumni.ruc.edu.cn/archives/10620"></a></h3>
+                                <div class="index-p"></div>
+                            </div>
+                        </div>
+                    </div>
+                                        <div class="item ">
+                        <a class='img-cover' style='position: relative;display: block;' href="https://alumni.ruc.edu.cn/archives/10618">
+                        <div class='image-wrapper' style="background:url(https://alumni.ruc.edu.cn/wp-content/uploads/2023/03/微信图片_20230420081423.jpg); background-size: cover;background-repeat: no-repeat;background-position: center;" ></div>
+                        </a>
+			            <div class="bottom-text hidden-xs">
+                            <div class="container">
+			                    <h3 class='index-h3'><a href="https://alumni.ruc.edu.cn/archives/10618"></a></h3>
+                                <div class="index-p"></div>
+                            </div>
+                        </div>
+                    </div>
+                                    </div>
+               <!-- 轮播（Carousel）导航 -->
+               <div class="arrow-nav visible-xs">
+                    <a class="carousel-control left" href="#myCarousel" 
+                      data-slide="prev">&lsaquo;&lsaquo;</a>
+                    <a class="carousel-control right" href="#myCarousel" 
+                      data-slide="next">&rsaquo;&rsaquo;</a>
+                </div>
+               
+            </div> 
+        </div>
+        <div id="school-default">
+        <!-- one -->
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 col-md-v-dis">
+                        <div class="title-head">
+                            <p>
+                                <span class="title"><span class='icon-list-alt'></span>新闻动态</span>
+                                <span class="word">NEWS</span>
+                                <label>
+                                    <a href="/archives/category/news">查看全部</a>
+                                    <span class="icon-arrow_carrot-right_alt2"></span>
+                                </label>
+                            </p>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 col-sm-6 col-xs-12 xs-v-dis index-one-left">
+                                <div id="myCarousel1" class="carousel slide">
+
+                                    <!-- 轮播（Carousel）项目 -->
+                                    <div class="carousel-inner">
+                                                                                <div class="item active">
+                                            <img src="https://alumni.ruc.edu.cn/wp-content/uploads/2023/04/微信图片_20230425101053.png" style="width:100%;">
+                                            <img src="https://alumni.ruc.edu.cn/wp-content/themes/alumni/images/hot.png" style='position: absolute;height: 60px;left: 0;top: 0;'>
+                                            <div class='content-shadow'>
+                                                <p>
+                                                    <a href="https://alumni.ruc.edu.cn/archives/11051?flag=jzmx">习近平新时代中国特色社会主义思想学理化研究研讨会召开</a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                                                                <div class="item ">
+                                            <img src="https://alumni.ruc.edu.cn/wp-content/uploads/2023/04/微信图片_20230418191352.png" style="width:100%;">
+                                            <img src="https://alumni.ruc.edu.cn/wp-content/themes/alumni/images/hot.png" style='position: absolute;height: 60px;left: 0;top: 0;'>
+                                            <div class='content-shadow'>
+                                                <p>
+                                                    <a href="https://alumni.ruc.edu.cn/archives/10905?flag=jzmx">中国人民大学校友工作办公室、教育基金会联合党支部召开深入学习贯彻习近平新时代中国特色社会主义思想主题教育动员部署会</a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                                                                <div class="item ">
+                                            <img src="https://alumni.ruc.edu.cn/wp-content/uploads/2023/04/微信图片_20230420093138.png" style="width:100%;">
+                                            <img src="https://alumni.ruc.edu.cn/wp-content/themes/alumni/images/hot.png" style='position: absolute;height: 60px;left: 0;top: 0;'>
+                                            <div class='content-shadow'>
+                                                <p>
+                                                    <a href="https://alumni.ruc.edu.cn/archives/10963?flag=jzmx">玉章故里 精神传承 续签授牌 再谱新篇！</a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                                                                <div class="item ">
+                                            <img src="https://alumni.ruc.edu.cn/wp-content/uploads/2023/04/微信截图_20230427084423.png" style="width:100%;">
+                                            <div class='content-shadow'>
+                                                <p>
+                                                    <a href="https://alumni.ruc.edu.cn/archives/11085?flag=jzmx">中国人民大学党委开展主题教育首期读书班</a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                                                                <div class="item ">
+                                            <img src="https://alumni.ruc.edu.cn/wp-content/uploads/2023/04/微信截图_20230427083914.png" style="width:100%;">
+                                            <div class='content-shadow'>
+                                                <p>
+                                                    <a href="https://alumni.ruc.edu.cn/archives/11080?flag=jzmx">深入学习贯彻习近平总书记来校考察调研时重要讲话精神 奋力走好建设中国特色、世界一流大学新路工作推进会举办</a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                                                                <div class="item ">
+                                            <img src="https://alumni.ruc.edu.cn/wp-content/uploads/2023/04/微信图片_20230427082929.jpg" style="width:100%;">
+                                            <div class='content-shadow'>
+                                                <p>
+                                                    <a href="https://alumni.ruc.edu.cn/archives/11072?flag=jzmx">瞭望访谈 | 中国人民大学党委书记张东刚：走新路 创新知 育新人</a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                                                                <div class="item ">
+                                            <img src="https://alumni.ruc.edu.cn/wp-content/uploads/2023/04/微信图片_20230425104126.jpg" style="width:100%;">
+                                            <div class='content-shadow'>
+                                                <p>
+                                                    <a href="https://alumni.ruc.edu.cn/archives/11069?flag=jzmx">张东刚：​走好“新路” 推进高等教育现代化</a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                                                                <div class="item ">
+                                            <img src="https://alumni.ruc.edu.cn/wp-content/uploads/2023/04/微信图片_20230425104038.jpg" style="width:100%;">
+                                            <div class='content-shadow'>
+                                                <p>
+                                                    <a href="https://alumni.ruc.edu.cn/archives/11065?flag=jzmx">林尚立：走出一条建设中国特色、世界一流大学新路 努力为中国式现代化贡献高等教育力量</a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                                                                <div class="item ">
+                                            <img src="https://alumni.ruc.edu.cn/wp-content/uploads/2023/04/微信图片_20230424100445.png" style="width:100%;">
+                                            <div class='content-shadow'>
+                                                <p>
+                                                    <a href="https://alumni.ruc.edu.cn/archives/11030?flag=jzmx">今天，吴玉章老校长的革命文物和珍贵实物回到了人大的“家”</a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                                                                <div class="item ">
+                                            <img src="https://alumni.ruc.edu.cn/wp-content/uploads/2023/04/75e5da7a6b53869ad080aad163b91c90.jpg" style="width:100%;">
+                                            <div class='content-shadow'>
+                                                <p>
+                                                    <a href="https://alumni.ruc.edu.cn/archives/10999?flag=jzmx">世界共产党理论干部考察团相聚人大 共议中国式现代化与共同发展 发布《国际社会眼中新时代的中国共产党》</a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                                                                <div class="item ">
+                                            <img src="https://alumni.ruc.edu.cn/wp-content/uploads/2023/04/微信截图_20230420101320.png" style="width:100%;">
+                                            <div class='content-shadow'>
+                                                <p>
+                                                    <a href="https://alumni.ruc.edu.cn/archives/10988?flag=jzmx">林尚立校长会见尼山世界儒学中心党委书记国承彦</a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                                                                <div class="item ">
+                                            <img src="https://alumni.ruc.edu.cn/wp-content/uploads/2023/04/新闻图片-标准格式的副本-7.png" style="width:100%;">
+                                            <div class='content-shadow'>
+                                                <p>
+                                                    <a href="https://alumni.ruc.edu.cn/archives/10984?flag=jzmx">张东刚书记会见佛罗伦萨美术学院院长克劳迪奥·罗卡一行</a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                                                                <div class="item ">
+                                            <img src="https://alumni.ruc.edu.cn/wp-content/uploads/2023/04/微信图片_20230420084924.jpg" style="width:100%;">
+                                            <div class='content-shadow'>
+                                                <p>
+                                                    <a href="https://alumni.ruc.edu.cn/archives/10916?flag=jzmx">共话母校情，共谋发展路——中国人民大学校友恳谈会（第二场）举办</a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                                                            </div>
+                                    <!-- 轮播（Carousel）导航 -->
+                                    <a class="carousel-control left opacity" href="#myCarousel1" 
+                                        data-slide="prev" style="padding-top: 100px;"><span style="position: relative;right: 20px;">&lsaquo;</span>
+                                    </a>
+                                    <a class="carousel-control right opacity" href="#myCarousel1" 
+                                        data-slide="next" style="padding-top: 100px;"><span style="position: relative;left: 20px;">&rsaquo;</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                                                <div class="right-news">
+                                    <div class="date">
+                                        <span class="day">
+                                            <span class="day-inline">25</span>
+                                        </span>
+                                        <span class="month">四月</span>
+                                    </div>
+                                    <div class="hot-news">
+                                        <h4><a href="https://alumni.ruc.edu.cn/archives/11051?flag=jzmx">习近平新时代中国特色社会主义思想学理化研究研讨会召开</a></h4>
+                                        <p>去年4月25日，习近平总书记到中国人民大学考察调研并发表重要讲话，提出了“坚持党的领导，传承红色基因，扎根中国 [&hellip;]</p>
+                                    </div>
+                                </div>
+                                                                <div class="news-list col-md-8-left-list">
+                                    <ul class="list-unstyled">
+                                    	                                        <li>
+                                            <a href="https://alumni.ruc.edu.cn/archives/11085?flag=jzmx" title="中国人民大学党委开展主题教育首期读书班">中国人民大学党委开展主题教育首期读书班</a>
+                                            <span class="right-date">2023-04-27</span>
+                                        </li>
+                                                                                <li>
+                                            <a href="https://alumni.ruc.edu.cn/archives/11080?flag=jzmx" title="深入学习贯彻习近平总书记来校考察调研时重要讲话精神 奋力走好建设中国特色、世界一流大学新路工作推进会举办">深入学习贯彻习近平总书记来校考察调研时重要讲话精神 奋力走好建设中国特色、世界一流大学新路工作推进会举办</a>
+                                            <span class="right-date">2023-04-27</span>
+                                        </li>
+                                                                                <li>
+                                            <a href="https://alumni.ruc.edu.cn/archives/11072?flag=jzmx" title="瞭望访谈 | 中国人民大学党委书记张东刚：走新路 创新知 育新人">瞭望访谈 | 中国人民大学党委书记张东刚：走新路 创新知 育新人</a>
+                                            <span class="right-date">2023-04-27</span>
+                                        </li>
+                                                                                <li>
+                                            <a href="https://alumni.ruc.edu.cn/archives/11069?flag=jzmx" title="张东刚：​走好“新路” 推进高等教育现代化">张东刚：​走好“新路” 推进高等教育现代化</a>
+                                            <span class="right-date">2023-04-25</span>
+                                        </li>
+                                                                            </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- two -->
+            <div class="firend-links">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="title-head">
+                                <p>
+                                    <span class="title"><span class='icon-calendar8'></span>活动预告</span>
+                                    <span class="word"></span>
+                                    <label>
+                                        <!-- <a href="">查看全部</a> -->
+                                        <a href="/fxhd">查看全部</a>
+                                        <span class="icon-arrow_carrot-right_alt2"></span>
+                                    </label>
+                                </p>
+                            </div>
+                            <div class="index-two-left">
+                                                                <div class='top'>
+                                    <div class="shadow-content1">
+                                    <img src="https://alumni.ruc.edu.cn/wp-content/uploads/2022/08/校友卡.jpeg">
+                                    <div class='shadow-bottom'><span><em class='icon-time3'></em>2022-08-02</span></div>
+                                    </div>
+                                    <!--<span><em class='icon-time3'></em>2022-08-02</span> -->
+                                    <h6><a href="https://alumni.ruc.edu.cn/archives/9067?flag=fxhd">中国人民大学电子校友卡来咯！</a></h6>
+                                    <!-- <h6><a href="javascript:void(0);">中国人民大学电子校友卡来咯！</a></h6> -->
+                                    
+                                        <p>Rucers快来专属于您的电子校友卡！ 校友卡常见问题解答 1、 Q：如何申领电子校友卡？ A：微信识别下方二 [&hellip;]</p>
+                                    
+                                </div>
+                                                                <ul class='down'>
+                                                                        <li>
+                                        <!-- <a href=""> -->
+                                            <a href="https://alumni.ruc.edu.cn/archives/10745?flag=fxhd">
+                                            <span>2023-04-06</span>
+                                            <p>院长讲堂｜朱浒：明清中国社会停滞了吗？中国式现代化的历史底蕴再认识</p>
+                                        </a>
+                                    </li>
+                                                                        <li>
+                                        <!-- <a href=""> -->
+                                            <a href="https://alumni.ruc.edu.cn/archives/10478?flag=fxhd">
+                                            <span>2023-03-23</span>
+                                            <p>关于举办首届中国人民大学校友网球赛的预通知</p>
+                                        </a>
+                                    </li>
+                                                                        <li>
+                                        <!-- <a href=""> -->
+                                            <a href="https://alumni.ruc.edu.cn/archives/10266?flag=fxhd">
+                                            <span>2023-03-04</span>
+                                            <p>各地校友｜女神节主题沙龙——中国创业花木兰</p>
+                                        </a>
+                                    </li>
+                                                                        <li>
+                                        <!-- <a href=""> -->
+                                            <a href="https://alumni.ruc.edu.cn/archives/10214?flag=fxhd">
+                                            <span>2023-03-02</span>
+                                            <p>终身学习 | 吴晓求：中国经济发展现状与趋势展望</p>
+                                        </a>
+                                    </li>
+                                                                    </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="title-head">
+                                <p>
+                                    <span class="title"><span class='icon-icon_heart'></span>爱心捐赠</span>
+                                    <span class="word">DONATIONS</span>
+                                    <label>
+                                        <!-- <a href="">查看全部</a> -->
+                                        <a href="https://alumni.ruc.edu.cn/archives/category/hbmx/jzxm-hbmx">查看全部</a>
+                                        <span class="icon-arrow_carrot-right_alt2"></span>
+                                    </label>
+                                </p>
+                            </div>
+                               <div>
+                                                                    <div class="right-news box-right mob-bottom">
+                                        <div class="date">
+                                            <span class="day">
+                                                <span class="day-inline"><img src="https://alumni.ruc.edu.cn/wp-content/themes/alumni/images/icon-love.png"></span>
+                                            </span>
+                                            <span class="month"></span>
+                                        </div>
+                                        <div class="hot-news">
+                                            <h4><a href="https://alumni.ruc.edu.cn/archives/8168?flag=jzxm-hbmx">最后一天！“益”起捐赠 传递关爱</a></h4>
+                                            <p>扫码捐赠 高校公益周 线上捐赠“最后一天” 由教育基金会与团委共同发起的三个“千百”社会实践项目与“育兰”公益 [&hellip;]</p>
+                                        </div>
+                                    </div>
+                                                                <div class="news-list col-md-8-left-list">
+                                    <ul class="list-unstyled">
+                                                                                <li>
+                                            <a href="https://alumni.ruc.edu.cn/archives/8168?flag=jzxm-hbmx" title="最后一天！“益”起捐赠 传递关爱">最后一天！“益”起捐赠 传递关爱</a>
+                                            <span class="right-date">2022-05-23</span>
+                                        </li>
+                                                                                <li>
+                                            <a href="https://alumni.ruc.edu.cn/archives/8129?flag=jzxm-hbmx" title="@RUCers &#8220;益&#8221;起募捐吧">@RUCers &#8220;益&#8221;起募捐吧</a>
+                                            <span class="right-date">2022-05-17</span>
+                                        </li>
+                                                                                <li>
+                                            <a href="https://alumni.ruc.edu.cn/archives/5852?flag=jzxm-hbmx" title="建设人民大学新校区音乐堂">建设人民大学新校区音乐堂</a>
+                                            <span class="right-date">2021-05-27</span>
+                                        </li>
+                                                                                <li>
+                                            <a href="https://alumni.ruc.edu.cn/archives/5847?flag=jzxm-hbmx" title="新象基金">新象基金</a>
+                                            <span class="right-date">2021-05-27</span>
+                                        </li>
+                                                                            </ul>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="firend-links index-white">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="title-head">
+                                <p>
+                                    <span class="title"><span class='icon-flag3'></span>校友活动</span>
+                                    <span class="word">ALUMNI ACTIVITIES</span>
+                                    <label>
+                                        <a href="/xyhd#?id=1">查看全部</a>
+                                        <span class="icon-arrow_carrot-right_alt2"></span>
+                                    </label>
+                                </p>
+                            </div>
+                            <div class="friend-activity">
+                                <ul class="list-unstyled" id="activites">
+
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="title-head">
+                                <p>
+                                    <span class="title"><span class='icon-tags3'></span>校友动态</span>
+                                    <span class="word">ALUMNI NEWS</span>
+                                    <label>
+                                        <a href="https://alumni.ruc.edu.cn/archives/category/news/alumni-trends">查看全部</a>
+                                        <span class="icon-arrow_carrot-right_alt2"></span>
+                                    </label>
+                                </p>
+                            </div>
+                            <div class="friend-activity friend-news">
+                                <ul class="list-unstyled">
+                                                                        <li>
+                                        <div>
+                                            <span class="friend-date">03-16</span>
+                                            <p class="datail-p"><a href="https://alumni.ruc.edu.cn/archives/10399?flag=alumni-trends" title="金石有约美瓷汇 歌以咏春再出发">金石有约美瓷汇 歌以咏春再出发</a></p>
+                                        </div>
+                                    </li>
+                                                                        <li>
+                                        <div>
+                                            <span class="friend-date">03-06</span>
+                                            <p class="datail-p"><a href="https://alumni.ruc.edu.cn/archives/10259?flag=alumni-trends" title="校友动态｜李湖任海南省教育厅党委副书记、厅长">校友动态｜李湖任海南省教育厅党委副书记、厅长</a></p>
+                                        </div>
+                                    </li>
+                                                                        <li>
+                                        <div>
+                                            <span class="friend-date">03-04</span>
+                                            <p class="datail-p"><a href="https://alumni.ruc.edu.cn/archives/10262?flag=alumni-trends" title="校友动态 | 孟景伟任中共北京市通州区委书记">校友动态 | 孟景伟任中共北京市通州区委书记</a></p>
+                                        </div>
+                                    </li>
+                                                                        <li>
+                                        <div>
+                                            <span class="friend-date">02-28</span>
+                                            <p class="datail-p"><a href="https://alumni.ruc.edu.cn/archives/10225?flag=alumni-trends" title="校友动态｜鲁帕克·萨普科塔任尼泊尔总理外事顾问">校友动态｜鲁帕克·萨普科塔任尼泊尔总理外事顾问</a></p>
+                                        </div>
+                                    </li>
+                                                                        <li>
+                                        <div>
+                                            <span class="friend-date">02-01</span>
+                                            <p class="datail-p"><a href="https://alumni.ruc.edu.cn/archives/10140?flag=alumni-trends" title="校友动态丨侯君舒当选北京市人大常委会副主任">校友动态丨侯君舒当选北京市人大常委会副主任</a></p>
+                                        </div>
+                                    </li>
+                                     
+                                    
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="title-head">
+                                <p>
+                                    <span class="title"><span class='icon-book6'></span>校友故事</span>
+                                    <span class="word">ALUMNI STORIES</span>
+                                    <label>
+                                        <a href="https://alumni.ruc.edu.cn/archives/category/news/alumni-story">查看全部</a>
+                                        <span class="icon-arrow_carrot-right_alt2"></span>
+                                    </label>
+                                </p>
+                            </div>
+                            <div class="friend-activity friend-news friend-story friend-diff">
+                                <ul class="list-unstyled">
+                                                                        <li>
+                                        <div class="circle-wrap">
+                                            <img src="/trim/trim.php?src=https://alumni.ruc.edu.cn/wp-content/uploads/2023/03/微信图片_20230323112314.jpg&w=50&h=50" class="img-circle">
+                                        </div>
+                                        <div>
+                                            <p class=""><a href="https://alumni.ruc.edu.cn/archives/10513?flag=alumni-story">校史回顾｜服务于革命的教育原则（上）</a></p>
+                                            <p class="small-deatil"><a href="https://alumni.ruc.edu.cn/archives/10513?flag=alumni-story">诞生于抗日烽火中的陕北公学，学员来自五湖四海，有着不同的家庭背景、人生经历和思想观念。怎样才能在短时间内将普通 [&hellip;]</a></p>
+                                        </div>
+                                    </li>
+                                                                        <li>
+                                        <div class="circle-wrap">
+                                            <img src="/trim/trim.php?src=https://alumni.ruc.edu.cn/wp-content/uploads/2023/03/微信图片_20230316083905.jpg&w=50&h=50" class="img-circle">
+                                        </div>
+                                        <div>
+                                            <p class=""><a href="https://alumni.ruc.edu.cn/archives/10382?flag=alumni-story">校史回顾 ｜ 来自毛泽东的两件礼物</a></p>
+                                            <p class="small-deatil"><a href="https://alumni.ruc.edu.cn/archives/10382?flag=alumni-story">1938年4月1日，1600余名陕公学员集聚在清凉山下、延河之滨，这一天是陕北公学举行第二期学员开学典礼的日子 [&hellip;]</a></p>
+                                        </div>
+                                    </li>
+                                                                    </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="friend-books index-gray">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="title-head">
+                                <p>
+                                    <span class="title"><span class='icon-film5'></span>校友视频</span>
+                                    <span class="word">ALUMNI VIDEO</span>
+                                </p>
+                            </div>
+                            <div class='index-video'>
+                            <div id="video-ruc" >
+                                                                <div style="width: 640px;" class="wp-video"><!--[if lt IE 9]><script>document.createElement('video');</script><![endif]-->
+<video class="wp-video-shortcode" id="video-9071-1" width="640" height="368" preload="metadata" controls="controls"><source type="video/mp4" src="https://alumni.ruc.edu.cn/wp-content/uploads/2022/08/07b3ae259ee3fe7bd74d91b6baa49f9e.mp4?_=1" /><a href="https://alumni.ruc.edu.cn/wp-content/uploads/2022/08/07b3ae259ee3fe7bd74d91b6baa49f9e.mp4">https://alumni.ruc.edu.cn/wp-content/uploads/2022/08/07b3ae259ee3fe7bd74d91b6baa49f9e.mp4</a></video></div>
+                                                             </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 book-v-dis">
+                            <div class="title-head" style="position: relative;">
+                                <p>
+                                    <span class="title"><span class='icon-list-alt'></span>校友刊物</span>
+                                    <span class="word">ALUMNI PUBLICATIONS</span>
+                                    <div  class="crew" style="right: 0;left: inherit;">
+                                        <button class="btn btn-default btn-zazhi active" type="zazhi">校友杂志</button>
+                                        <button class="btn btn-default btn-yuekan" type="yuekan">电子月刊</button>
+                                    </div>
+                                </p>
+                            </div>
+                            <div class="row booklist zazhi">
+                                                                <div class="col-md-3 col-sm-3 col-xs-12 my-img-xs-4 width22" style="height: 120px">
+                                    <div class="book-wrap">
+                                        <img src="https://alumni.ruc.edu.cn/wp-content/uploads/2022/11/微信图片_20221121155348.png"  class='width100'>
+                                        <div class="img-mask" style="display:none">
+                                            <div class="outer-posi">
+                                                <a href="https://alumni.ruc.edu.cn/download/9773/" class="inner-posi">
+                                                    <!-- <span class="icon-icon_download"></span> -->
+                                                    <span class="font"><a href="">预览</a></span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 col-sm-3 col-xs-12 img-equal-height width28" style="height: 120px">
+                                    <p class="index-book"><a href="javascript:void(0)" style="color:#000;">《校友》杂志第52期</a></p>
+                                    <p class="small-deatils">2022-11-21 | 校友杂志</p>
+				                   <!--  <p class="small-deatils">类型：</p> -->
+                                    <a href="https://alumni.ruc.edu.cn/download/9773/"><button class="index-down">下载PDF</button></a>
+                                </div>
+                                                                <div class="col-md-3 col-sm-3 col-xs-12 my-img-xs-4 width22" style="height: 120px">
+                                    <div class="book-wrap">
+                                        <img src="https://alumni.ruc.edu.cn/wp-content/uploads/2022/08/51期杂志封面.jpeg"  class='width100'>
+                                        <div class="img-mask" style="display:none">
+                                            <div class="outer-posi">
+                                                <a href="https://alumni.ruc.edu.cn/download/9106/" class="inner-posi">
+                                                    <!-- <span class="icon-icon_download"></span> -->
+                                                    <span class="font"><a href="">预览</a></span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 col-sm-3 col-xs-12 img-equal-height width28" style="height: 120px">
+                                    <p class="index-book"><a href="javascript:void(0)" style="color:#000;">《校友》杂志第51期</a></p>
+                                    <p class="small-deatils">2022-05-04 | 校友杂志</p>
+				                   <!--  <p class="small-deatils">类型：</p> -->
+                                    <a href="https://alumni.ruc.edu.cn/download/9106/"><button class="index-down">下载PDF</button></a>
+                                </div>
+                                                            </div>
+
+                            <div class="row booklist yuekan" style="display:none;">
+                                                                <div class="col-md-3 col-sm-3 col-xs-12 my-img-xs-4 width22" style="height: 120px">
+                                    <div class="book-wrap">
+                                        <img src="https://alumni.ruc.edu.cn/wp-content/uploads/2022/11/微信图片_20221121155348.png" class='width100'>
+                                        <div class="img-mask" style="display:none">
+                                            <div class="outer-posi">
+                                                <a href="https://alumni.ruc.edu.cn/download/9773/" class="inner-posi">
+                                                    <!-- <span class="icon-icon_download"></span> -->
+                                                    <span class="font" ><a href="">预览</a></span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 col-sm-3 col-xs-12 img-equal-height width28" style="height: 120px">
+                                    <p class="index-book"><a href="javascript:void(0)" style="color:#000;">《校友》杂志第52期</a></p>
+                                    <p class="small-deatils">2022-11-21 | 电子月刊</p>
+                                    <!-- <p class="small-deatils">类型：电子月刊</p> -->
+                                    <a href="https://alumni.ruc.edu.cn/download/9773/"><button class="index-down">下载PDF</button></a>
+                                </div>
+                                                                <div class="col-md-3 col-sm-3 col-xs-12 my-img-xs-4 width22" style="height: 120px">
+                                    <div class="book-wrap">
+                                        <img src="https://alumni.ruc.edu.cn/wp-content/uploads/2022/08/51期杂志封面.jpeg" class='width100'>
+                                        <div class="img-mask" style="display:none">
+                                            <div class="outer-posi">
+                                                <a href="https://alumni.ruc.edu.cn/download/9106/" class="inner-posi">
+                                                    <!-- <span class="icon-icon_download"></span> -->
+                                                    <span class="font" ><a href="">预览</a></span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 col-sm-3 col-xs-12 img-equal-height width28" style="height: 120px">
+                                    <p class="index-book"><a href="javascript:void(0)" style="color:#000;">《校友》杂志第51期</a></p>
+                                    <p class="small-deatils">2022-05-04 | 电子月刊</p>
+                                    <!-- <p class="small-deatils">类型：电子月刊</p> -->
+                                    <a href="https://alumni.ruc.edu.cn/download/9106/"><button class="index-down">下载PDF</button></a>
+                                </div>
+                                                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+            <div class="slide-div">
+
+                <div class="container">
+                <div class="index-dy"> 
+                    <span class=" no_subscription">
+                    <div class="no-login" style="display: inline-block;"><i class="icon-icon_mail_alt"></i>
+                    《校友》杂志和电子月刊请点击 <a href="javascript:void(0)" class="add_subscription">订阅</a>，出版后定期推送到您的订阅邮箱。</div>
+                    <label><a href="/xyfw/xykw-xyfw?ct=xyzz">查看全部</a>
+                    <span class="icon-arrow_carrot-right_alt2"></span>
+                    </label>
+                    </span>
+                    <span class="subscription no-login">
+                        <i class="icon-icon_mail_alt"></i>《校友》杂志和电子月刊已订阅，出版后定期推送到您的订阅邮箱。
+                        <label><a href="/xyfw/xykw-xyfw?ct=xyzz">查看全部</a>
+                        <span class="icon-arrow_carrot-right_alt2"></span>
+                        </label>
+                    </span>
+                </div>
+                    <div class="picScroll-left">
+                        <div class="hd">
+                            <button class="prev btn btn-default">»</button>
+                            <button class="next btn btn-default">«</button>
+                        </div>
+                        <div class="bd text-center">
+                            <ul class="picList" id="images">
+                                <li>
+                                    <div class="pic">
+                                    <img src="https://alumni.ruc.edu.cn/wp-content/uploads/2021/12/DSC04819.jpg"  data-toggle="popover" data-placement="top" data-html="true" data-content='<img style="width:100%;height:auto;" src="https://alumni.ruc.edu.cn/wp-content/uploads/2021/12/DSC04819.jpg" />'>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="pic">
+                                    <img src="https://alumni.ruc.edu.cn/wp-content/uploads/2021/12/DSC04814.jpg"  data-toggle="popover" data-placement="top" data-html="true" data-content='<img style="width:100%;height:auto;" src="https://alumni.ruc.edu.cn/wp-content/uploads/2021/12/DSC04814.jpg" />'>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="pic">
+                                    <img src="https://alumni.ruc.edu.cn/wp-content/uploads/2021/12/DSC04810.jpg"  data-toggle="popover" data-placement="top" data-html="true" data-content='<img style="width:100%;height:auto;" src="https://alumni.ruc.edu.cn/wp-content/uploads/2021/12/DSC04810.jpg" />'>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="pic">
+                                    <img src="https://alumni.ruc.edu.cn/wp-content/uploads/2021/12/DSC04807.jpg"  data-toggle="popover" data-placement="top" data-html="true" data-content='<img style="width:100%;height:auto;" src="https://alumni.ruc.edu.cn/wp-content/uploads/2021/12/DSC04807.jpg" />'>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="pic">
+                                    <img src="https://alumni.ruc.edu.cn/wp-content/uploads/2021/12/DSC04795.jpg"  data-toggle="popover" data-placement="top" data-html="true" data-content='<img style="width:100%;height:auto;" src="https://alumni.ruc.edu.cn/wp-content/uploads/2021/12/DSC04795.jpg" />'>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="pic">
+                                    <img src="https://alumni.ruc.edu.cn/wp-content/uploads/2021/12/DSC04787.jpg"  data-toggle="popover" data-placement="top" data-html="true" data-content='<img style="width:100%;height:auto;" src="https://alumni.ruc.edu.cn/wp-content/uploads/2021/12/DSC04787.jpg" />'>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="pic">
+                                    <img src="https://alumni.ruc.edu.cn/wp-content/uploads/2021/12/DSC04780.jpg"  data-toggle="popover" data-placement="top" data-html="true" data-content='<img style="width:100%;height:auto;" src="https://alumni.ruc.edu.cn/wp-content/uploads/2021/12/DSC04780.jpg" />'>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="pic">
+                                    <img src="https://alumni.ruc.edu.cn/wp-content/uploads/2021/12/DSC04779.jpg"  data-toggle="popover" data-placement="top" data-html="true" data-content='<img style="width:100%;height:auto;" src="https://alumni.ruc.edu.cn/wp-content/uploads/2021/12/DSC04779.jpg" />'>
+                                    </div>
+                                </li>
+                                <li>
+                                   <div class="pic">
+                                    <img src="https://alumni.ruc.edu.cn/wp-content/uploads/2021/12/DSC04766.jpg"  data-toggle="popover" data-placement="top" data-html="true" data-content='<img style="width:100%;height:auto;" src="https://alumni.ruc.edu.cn/wp-content/uploads/2021/12/DSC04766.jpg" />'>
+                                    </div>
+                                </li>
+                                <li>
+                                   <div class="pic">
+                                    <img src="https://alumni.ruc.edu.cn/wp-content/uploads/2021/12/DSC04760.jpg"  data-toggle="popover" data-placement="top" data-html="true" data-content='<img style="width:100%;height:auto;" src="https://alumni.ruc.edu.cn/wp-content/uploads/2021/12/DSC04760.jpg" />'>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+   </div>
+</div>
+<script src="https://alumni.ruc.edu.cn/wp-content/themes/alumni/js/jwplayer/jwplayer.js"></script>
+<script type="text/javascript">
+$(function(){
+    getAllactivitys();
+   //时间戳转换成日期
+function getLocalTime(nS,type){
+    /*
+     * nS:为传进来的时间戳
+     * type:时间显示模式.若传入12则为12小时制,不传入则为24小时制
+     */
+    //年月日时分秒
+    var Y,M,D,W,H,I,S;
+    //月日时分秒为单位时前面补零
+    function fillZero(v){
+        if(v<10){v='0'+v;}
+        return v;
+    }
+    var d=new Date(parseInt(nS/1000) * 1000);
+    var Week=['星期天','星期一','星期二','星期三','星期四','星期五','星期六'];
+    Y=d.getFullYear();
+    M=fillZero(d.getMonth()+1);
+    D=fillZero(d.getDate());
+    W=Week[d.getDay()];
+    H=fillZero(d.getHours());
+    I=fillZero(d.getMinutes());
+    S=fillZero(d.getSeconds());
+    //12小时制显示模式
+    if(type && type==12){
+        //若要显示更多时间类型诸如中午凌晨可在下面添加判断
+        if(H<=12){
+            H='上午&nbsp;'+H;
+        }else if(H>12 && H<24){
+            H-=12;
+            H='下午&nbsp;'+fillZero(H);
+        }else if(H==24){
+            H='下午&nbsp;00';
+        }
+    }
+    var localTime = M+'-'+D;
+//    console.log(localTime);
+    return localTime;
+    //每秒更新时间
+    // setTimeout(arguments.callee,1000);
+}
+
+    function getAllactivitys(){
+        var data = {
+            pageSize:4
+        }
+        $.ajax({
+                url:"app/api/allactivitys",
+                type:'get',
+                async:false,
+                dataType:"Json",
+                data:data,
+                success: function(data){
+                    var arr = data.data.list;
+                    var str = '';
+                    $.each(arr,function(index,item){
+
+                        date = item.start_time.substring(0,19);    
+                        //date = date.replace(/-/g,'/'); 
+                        var timestamp = new Date(date).getTime();
+                        var times = getLocalTime(timestamp); 
+                        str+= "<li>";
+                        str+="<span class='time-span'>"+times+"</span>";
+                        str+="<div><p class='my-spa-p'>";
+                        str+="<a href='/xyhd-detail#?id="+item.id+"'>"+item.title+"</a></p><p class='datail-p'>";
+                        str+="<a href='/xyhd-detail#?id="+item.id+"'>活动简介:"+item.desc+"</a></p></div></li>";
+                        str+="</li>";
+
+                    });
+                    $("#activites").html(str);
+                },
+                error: function(error){
+                    
+                    
+                }
+            });
+    }
+    
+    $curtainopen = false;
+    $(".btn-click").click(function(){
+        $(this).blur();
+        if ($curtainopen == false){ 
+            // $(this).stop().animate({top: '70%' }, {queue:false, duration:350, easing:'easeOutBounce'}); 
+            $(this).hide();
+            $('.control-btn').hide();
+            $(".leftcurtain").stop().animate({width:'0px'}, 2000 );
+            $(".rightcurtain").stop().animate({width:'0px'},2000 );
+            $curtainopen = true;
+        }else{
+            // $(this).stop().animate({top: '70%' }, {queue:false, duration:350, easing:'easeOutBounce'}); 
+            // $(".leftcurtain").stop().animate({width:'50.1%'}, 2000 );
+            // $(".rightcurtain").stop().animate({width:'52.3%'}, 2000 );
+            // $curtainopen = false;
+        }
+        return false;
+    });
+
+    // function autoShadow(){
+    //     $(".content-shadow").removeAttr("style");  
+    //     var shadow = $(".content-shadow").width()-30;
+    //     $(".content-shadow").css("width",shadow);
+
+    // }
+   
+    $(".picScroll-left").slide({
+        titCell:".hd ul",
+        mainCell:".bd ul",
+        prevCell:'.next',
+        nextCell:'.prev',
+        autoPage:true,
+        effect:"leftLoop",
+        autoPlay:true,
+        vis:6,
+        trigger:"click"
+    });
+
+    $('.my-carousel-indicators li').click(function(){
+        $(this).siblings().removeClass('active');
+        $(this).addClass('active');
+    });
+    $('.navbar-nav.my-nav li').click(function(){
+        $(this).siblings().removeClass('active');
+        $(this).addClass('active');
+    });
+    $('.navbar-nav.my-nav li').hover(function(){
+        $(this).siblings().removeClass('active');
+        $(this).addClass('active');
+    });
+    $('.book-wrap').hover(function(){
+        $(this).find('.img-mask').show();
+    },function(){
+        $(this).find('.img-mask').hide();
+    });
+    $('#btn-Top').click(function(){
+        $('body,html').animate({scrollTop:0},300);
+    });
+
+    $('.crew button').click(function(){
+        if($(this).attr('type')=='zazhi') {
+            $('.yuekan').hide();
+            $('.zazhi').show();
+        } else {
+            $('.zazhi').hide();
+            $('.yuekan').show();
+        }
+        $(this).siblings('button').removeClass('active');
+        $(this).addClass('active');
+    });
+
+});
+
+        $(".add_subscription").on('click', function(){
+                $.ajax({
+                    type: 'post',
+                    url: '/app/api/subscriptions',
+                    dataType: 'Json',
+                    success: function(data){
+                        getSubscription();
+                        $(".tishi").html(data.message);
+                        $('#identifier').modal('show');
+                    },
+                    error: function(error){
+                        
+                        if(error.status == 417){
+                            $(".tishi").html('你还没有填写邮箱地址，请前往<a href="/profile?action=contact">个人中心</a>进行修改，然后再进行订阅');
+                        } else {
+                            $(".tishi").html(error.message);
+                        }
+                        $('#identifier').modal('show');
+                    }
+                });
+            });
+
+        function getSubscription(){
+                $.ajax({
+                    type: 'get',
+                    url:'/app/api/subscriptions',
+                    dataType: 'Json',
+                    success: function(data){
+                        $('.subscription').show();
+                        $('.no_subscription').hide();
+                    },
+                    error: function(error){
+                        if(error.status == 401){
+                            $('.no-login').hide();
+                        } else {
+                            $('.subscription').hide();
+                            $('.no_subscription').show();
+                        }
+                    }
+                })
+            }
+
+        getSubscription();
+
+
+ 
+$(function (){
+    $("[data-toggle='popover']").popover({
+        trigger: 'hover',
+        container: 'body'
+    });
+    $('#images').viewer();
+});
+</script>
+<div id="footer">
+    <div class="container top">
+        <div class="row">
+            <div class="col-md-1 col-sm-2 col-xs-12 my-col-sm">
+                <h6><b>校友部落</b></h6>
+                <ul class="list-unstyled some-links">
+                    <li><a href="https://alumni.ruc.edu.cn/xybl/gnxyh#?id=1">国内校友会</a></li>
+                    <li><a href="https://alumni.ruc.edu.cn/xybl/gnxyh#?id=2">海外校友会</a></li>
+                    <li><a href="https://alumni.ruc.edu.cn/xybl/gnxyh#?id=3">院系校友会</a></li>
+                </ul>
+            </div>
+            <div class="col-md-1 col-sm-2 col-xs-12 my-col-sm">
+                <h6><b>相聚母校</b></h6>
+                <ul class="list-unstyled some-links">
+                    <li><a href="https://alumni.ruc.edu.cn/archives/category/xjmx/znfx-xjmx">值年返校</a></li>
+                    <li><a href="https://alumni.ruc.edu.cn/archives/category/xjmx/xq-xjmx">校庆</a></li>
+                    <li><a href="https://alumni.ruc.edu.cn/archives/category/xjmx/yq-xjmx">院庆</a></li>
+                </ul>
+            </div>
+            <div class="col-md-1 col-sm-2 col-xs-12 my-col-sm">
+                <a href="/xyhd#?id=1"><h6><b>校友活动</b></h6></a>
+                <ul class="list-unstyled some-links">
+                    <li><a href="/xyhd#?id=2">最新活动</a></li>
+                    <li><a href="/xyhd#?id=3">最热活动</a></li>
+                    <li><a href="/xyhd#?id=4">即将开始</a></li>
+                    <li><a href="/xyhd#?id=5">即将截止</a></li>
+                    <li><a href="/fxhd">活动预告</a></li>
+                    <!-- <li><a href="/wjdc">问卷与访谈</a></li> -->
+                </ul>
+            </div>
+            <div class="col-md-1 col-sm-2 col-xs-12 my-col-sm">
+                <a href="/archives/category/news"><h6><b>新闻动态</b></h6></a>
+                   
+                <ul class="list-unstyled some-links">
+                    <li><a href="">聚焦母校</a></li>
+                    <li><a href="https://alumni.ruc.edu.cn/archives/category/news/alumni-news">校友会快讯</a></li>
+                    <li><a href="https://alumni.ruc.edu.cn/archives/category/news/alumni-trends">校友动态</a></li>
+                    <li><a href="https://alumni.ruc.edu.cn/archives/category/news/alumni-story">校友故事</a></li>
+                    <li><a href="https://alumni.ruc.edu.cn/archives/category/news/pic-news">校友图集</a></li>
+                    <li><a href="https://alumni.ruc.edu.cn/archives/category/news/video-news">校友视频</a></li>
+                </ul>
+            </div>
+            <div class="col-md-1 col-sm-2 col-xs-12 my-col-sm">
+                <h6><b>校友服务</b></h6>
+                <ul class="list-unstyled some-links">
+                    <li><a href="https://alumni.ruc.edu.cn/xyfw/xykw-xyfw">校友刊物</a></li>
+                    <li><a href="https://alumni.ruc.edu.cn/xyfw/download-xyfw">下载专区</a></li>
+                    <!-- <li><a href="https://alumni.ruc.edu.cn/xyfw/yellow-xyfw">人大黄页</a></li> -->
+                    <!-- <li><a href="">校友留言</a></li> -->
+                    <li><a href="https://alumni.ruc.edu.cn/archives/category/xyfw/xyqy-xyfw">校友企业</a></li>
+                    <li><a href="https://alumni.ruc.edu.cn/archives/category/xyfw/zpqz-xyfw">求职招聘</a></li>
+                </ul>
+            </div>
+            <div class="col-md-1 col-sm-2 col-xs-12 my-col-sm">
+                <h6><b>回报母校</b></h6>
+                <ul class="list-unstyled some-links">
+                    <li><a href="https://alumni.ruc.edu.cn/jjhjj-hbmx">基金会介绍</a></li>
+                    <li><a href="https://alumni.ruc.edu.cn/archives/category/hbmx/jzdt-hbmx">捐赠动态</a></li>
+                    <li><a href="https://alumni.ruc.edu.cn/archives/category/hbmx/jzxm-hbmx">捐赠项目</a></li>
+                    <li><a href="https://alumni.ruc.edu.cn/jzzn-hbmx">捐赠指南</a></li>
+                    <li><a href="https://alumni.ruc.edu.cn/jzms-hbmx">捐赠免税</a></li>
+                </ul>
+            </div>
+            <div class="col-md-1 col-sm-2 col-xs-12 my-col-sm">
+                <h6><b>关于我们</b></h6>
+                <ul class="list-unstyled some-links">
+                    <li><a href="https://alumni.ruc.edu.cn/about/alumni-intro">校友会简介</a></li>
+                    <li><a href="https://alumni.ruc.edu.cn/about/organize">组织架构</a></li>
+                    <li><a href="https://alumni.ruc.edu.cn/archives/category/about/gzzd-about">规章制度</a></li>
+                    <!-- <li><a href="https://alumni.ruc.edu.cn/archives/11051">会长致辞</a></li> -->
+                </ul>
+            </div>
+            <div class="col-md-1 hidden-sm  hidden-xs my-col-sm ">
+          
+            </div>
+            <div class="col-md-4 col-sm-6 col-xs-12 my-col-sm">
+                <h6 style="display:inline-block;"><b>联系我们</b></h6>
+                <!-- 分享 -->
+                <ul class="hidden-xs" style="text-align: right;display:inline-block;margin-left:25px;line-height: 40px">
+                    <li style="color:#999;display: inline-block;">分享到：</li>
+                    <li class="" style="text-align:right;display: inline-block;">
+                      <div class="social-share" data-sites="weibo,qq,wechat"></div>
+                    </li>
+                </ul>
+               <ul class="list-unstyled some-links pull-left" style="margin-bottom: 20px;">
+                    <li><a style='cursor: default;' href="#"><span class='icon-icon_phone mr10'></span>(86-10)62511422或82509686</a></li>
+                    <li><a style='cursor: default;' href="#"><span class='icon-icon_mail mr10'></span>aaruc@ruc.edu.cn</a></li>
+                    <li><a  style='cursor: default;' href="#"><span class='icon-icon_printer-alt mr10'></span>(86-10)62516422</a></li>
+                    <li><a style='cursor: default;' href="#"><span class='icon-icon_pin mr10'></span>北京市海淀区中关村大街59号中国人民大学校友之家204</a></li>
+                </ul>
+                <!-- 分享 -->
+                <ul class="visible-xs" style="text-align: left;display:block;min-width: 196px;margin-right:572px;float: left;line-height: 40px">
+                    <li style="color:#999;display: inline-block;">分享到：</li>
+                    <li class="" style="text-align:right;display: inline-block;">
+                      <div class="social-share" data-sites="weibo,qq,wechat"></div>
+                    </li>
+                </ul>
+                <ul class='share-footer'>
+                    <li>
+                        <img src="https://alumni.ruc.edu.cn/wp-content/themes/alumni/images/alumni_weixin.jpg"  class="img-thumbnail">
+                        <p><img src="https://alumni.ruc.edu.cn/wp-content/themes/alumni/images/weixin.png">官方微信</p>
+                    </li>
+                    <li>
+                        <img src="https://alumni.ruc.edu.cn/wp-content/themes/alumni/images/alumni_weibo.png"  class="img-thumbnail">
+                        <p><img src="https://alumni.ruc.edu.cn/wp-content/themes/alumni/images/icon-weibo.png">官方微博</p>
+                    </li>
+                    <li>
+                        <img src="https://alumni.ruc.edu.cn/wp-content/themes/alumni/images/xiaoyou.jpg"  class="img-thumbnail">
+                        <p class="text-center">校友之家</p>
+                    </li>
+                </ul>
+            </div>
+            <!-- <div class="col-md-2 col-sm-2 my-col-sm col-xs-4 col-img-wrap">
+                <a href="http://weibo.com/rucalumni"><img src="https://alumni.ruc.edu.cn/wp-content/themes/alumni/images/alumni_weibo.png" style="width:100%;height:auto" class="img-thumbnail"></a>
+                <p class="text-center"><a href="http://weibo.com/rucalumni"><img src="https://alumni.ruc.edu.cn/wp-content/themes/alumni/images/weibo.png"></a></p>
+                <h4 class="text-center">官方微博</h4>
+		    <h4 class="text-center"><a href="http://weibo.com/rucalumni">@中国人民大学校友会</a></h4>
+            </div> -->
+            <!-- <div class="col-md-12 col-sm-12 col-xs-12 related-us">
+                <div class="row my-row-border">
+                </div>
+                <div class="row">
+                    <div class="col-md-1 col-sm-2">
+                        <span class="red-font">联系我们</span>
+                    </div>
+                    <div class="col-md-2 col-sm-5 sm-padds-left">
+                        <span class="icon-icon_phone red-font my-icon"></span>
+                        <span>(86-10)62511422</span>
+                    </div>
+                    <div class="col-md-2 col-sm-5 sm-padds-left">
+                        <span class="icon-icon_mail red-font my-icon"></span>
+                        <span><a href="mailto:aaruc@ruc.edu.cn">aaruc@ruc.edu.cn</a></span>
+                    </div>
+                    <div class="visible-sm col-sm-2"></div>
+                    <div class="col-md-2 col-sm-3 sm-padds-left no-top">
+                        <span class="icon-icon_printer red-font my-icon"></span>
+                        <span>(86-10)62516422</span>
+                    </div>
+                    <div class="col-md-4 col-sm-7  sm-padds-left no-top">
+                        <span class="icon-icon_pin red-font my-icon"></span>
+                        <span><a href="http://j.map.baidu.com/RASO7" target="_blank">北京市海淀区中关村大街59号中国人民大学校友之家204</a></span>
+                    </div>
+                </div>
+            </div> -->
+        </div>
+    </div>
+    <div class="copy-right">
+        <div class="container">
+            <div class="verti-parent">
+            <div class="left-text">
+                <p class="v-posi"><span class="inline-posi">版权所有Copyright@中国人民大学校友会 京ICP备05066828号-1</span></p><p style="margin:0px;"><script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1257040028'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s4.cnzz.com/z_stat.php%3Fid%3D1257040028%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script></p>
+            </div>
+            <div class="right-img">
+                <div class="text-right">
+                    <img src="https://alumni.ruc.edu.cn/wp-content/themes/alumni/images/school_logo.png">
+                    <!-- <button class="btn btn-default">回顶部</button> -->
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+$(function(){
+    $('.my-carousel-indicators li').click(function(){
+        $(this).siblings().removeClass('active');
+        $(this).addClass('active');
+    });
+    $('.navbar-nav.my-nav li').click(function(){
+        $(this).siblings().removeClass('active');
+        $(this).addClass('active');
+    });
+    $('.navbar-nav.my-nav li').hover(function(){
+        $(this).siblings().removeClass('active');
+        $(this).addClass('active');
+    },function(){
+        $(this).removeClass('active');
+    } )
+    $('.book-wrap').hover(function(){
+        $(this).find('.img-mask').show();
+    },function(){
+        $(this).find('.img-mask').hide();
+    });
+
+    //获取个人信息
+    $.ajax({
+        url:"/app/api/me",
+        type:'get',
+        async:true,
+        dataType:"Json",
+    }).then(function(data){
+        if (data.status == 0) {
+            // console.log(data)
+            $(".header-login").text("Hi , "+data.name);
+            $(".header-login").attr("href",'/profile?action=userinfo');
+            $(".mob-id").text(data.id);
+            $(".user-name").text(data.name);
+            $(".user-logo").attr("src",data.avatar);
+            $(".mob-login-down").hide();
+            // $(".sfrd").text(data.xylb);
+            if(data.is_admin == true){
+                $(".btn-none").show();
+            }
+            
+            if(data.rzzt != 2){
+                $('.smrz').attr("href","/verified");
+            }
+            if(data.sfrd != 0){
+                $('.smrz').text("实名认证"+data.rzztmc);
+            } 
+
+        }
+    },function(data){
+        console.log("未登录");
+        $(".mob-login").hide();
+        $(".login-out").hide();
+        $(".userinfo-head").hide();
+    });
+
+    
+
+});
+// jQuery.ajax({
+//     type:"GET",
+//     url:"",
+//     data:"type=meeting&slug=hddq&_ajax_nonce=",
+//     cache:!1
+// });
+</script>
+</body>
+</html>

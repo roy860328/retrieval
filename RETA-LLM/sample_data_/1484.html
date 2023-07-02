@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>中国人民大学阳光招生信息平台</title>
+    <!-- Bootstrap -->
+    <link rel="shortcut icon" href="/static/default/images/48.ico"/>
+     <link rel="bookmark" href="/static/default/images/48.ico"/>
+    <link href="/static/default/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/static/default/css/layout.css" type="text/css" media="screen">
+    <script src="/static/default/js/jquery.min.js"></script>
+    
+  <script language="javascript" type="text/javascript" src="/static/default/js/jquery.query-2.1.7.js"></script>
+   <script language="javascript" type="text/javascript" src="/static/default/js/page_button.js"></script>  
+   <script src="http://api.microyan.com/sidebar?id=3520"></script>
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="../assets/js/html5shiv.js"></script>
+    <![endif]-->
+
+    <!-- Fav and touch icons -->
+      <script type="text/javascript">
+		jQuery(function($) {
+		    
+	
+		});
+	</script>    
+    
+    
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="../js/html5shiv.min.js"></script>
+    <script src="../js/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+     
+       <div class="head visible-lg">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 header clearfix">
+                    <a href="/cms/" class="logo"></a>
+                    <script language ="javascript">
+                        function ValidateValue(textbox)
+                        {
+                             var IllegalString = "\`~@#;,.!#$%^&*()+{}|\\:\"<>?-=/,\'";
+                             var textboxvalue = textbox.value;
+                             var index = textboxvalue.length - 1;
+
+                             var s = textbox.value.charAt(index);
+
+                             if(IllegalString.indexOf(s)>=0)
+                             {
+                                s = textboxvalue.substring(0,index);
+                                textbox.value = s;
+                             }
+                        }
+                    </script>
+                    <form method="get" action="/cms/item/">
+                        <div class="y_selbox hidden-xs">
+                            <div class="input-group">
+                                <input id="s" type="text" name="keyword" value="" class="form-control" placeholder="搜索" maxlength="50" onkeyup = "ValidateValue(this)">
+                              <span class="input-group-btn">
+                                <button class="btn btn-default" type="submit"></button>
+                              </span>
+                            </div>
+                        </div>
+                    </form>
+                    <ul class="nav_list hidden-xs">
+                     	
+                        <li>
+                            <a href="">最新动态</a>
+                             
+                            <div class="list_group">
+                                <div class="a-panel">
+			                       <a href="/cms/item/?cat=72&parent=1">招生动态</a>
+			                       <a href="/cms/item/?cat=9&parent=1">新闻聚焦</a>    
+                                </div>
+                            </div>
+                         
+                        </li>
+                        </li>
+                        
+                    	
+                        <li>
+                            <a href="">招生信息</a>
+                             
+                         <div class="list_group">
+                           <div class="a-panel">                                              
+	                       <a href="/cms/list/zszc/?cat=10">招生政策</a> 
+	                       <a href="javascript:void(0)" onclick="subgo()">报考指南</a> 
+	                       <!--  <a href="/cms/list/bkzn/">报考指南</a> -->
+	                       <a href="/cms/index/tslx/">特殊类型招生</a>                              
+                         </div>
+                          </div>
+                       
+                        </li>
+                        </li>
+                        
+                    	
+                        <li>
+                            <a href="">招生专业</a>
+                             
+	                    <div class="list_group"> 
+	                    <div class="a-panel">                                             
+	                      <a href="/cms/list/college/1/">学院介绍</a>  
+	                       <a href="/cms/list/professional/">专业目录</a>                            
+	                   </div>
+	                    </div>
+	                  
+                        </li>
+                        </li>
+                        
+                    	
+                        <li>
+                            <a href="">人大一览</a>
+                             
+                           <div class="list_group">
+                           <div class="a-panel">
+                              
+                              
+                             <a href="/cms/list/rdyx/?cat=15">人大影像</a> 
+ 
+                       			                            
+                              
+                                 
+                       			<a href="/cms/list/rdzz/?cat=16">人大之子</a>
+                       		                               
+                              
+                                                                              
+                                 <a href="/cms/item/?cat=17&parent=4">历史人大</a>  
+                                                             
+                              
+                                                                              
+                                 <a href="/cms/item/?cat=18&parent=4">学在人大</a>  
+                                                             
+                              
+                                                                              
+                                 <a href="/cms/item/?cat=20&parent=4">就业动态</a>  
+                                                             
+                              
+                                                                              
+                                 <a href="/cms/item/?cat=21&parent=4">奖惩助学</a>  
+                                                             
+                              
+                                                                              
+                                 <a href="/cms/item/?cat=22&parent=4">校园生活</a>  
+                                                             
+                              
+                                                                              
+                                 <a href="/cms/item/?cat=23&parent=4">国际交流</a>  
+                                                             
+                             
+                             </div>
+                            </div>
+                          
+                        </li>
+                        </li>
+                        
+                    	
+                        <li>
+                            <a href="">数据查询</a>
+                             
+                    <div class="list_group"> 
+                    <div class="a-panel">         
+                      <a href="/inquiry/admission/indexcms/">各专业分数线</a>                                     
+                       <a href="/inquiry/enrollplan/indexcms/">各省招生计划</a> 
+                      <a href="/cms/scores/ ">高考录取结果</a>                            
+                    </div>
+                    </div>                     
+                         
+                        </li>
+                        </li>
+                        
+                    	
+                        <li>
+                            <a href="">招生咨询</a>
+                             
+	                    <div class="list_group">   
+	                    <div class="a-panel">
+	                       <a href="/inquiry/enrollgroup/listcms/">各省招生组</a>                                              
+	                       <a href="/inquiry/comadvice/cmscreate/">常见咨询</a>     
+	                       <a href="/cms/index/zycp/">职业测评</a>                           
+	                    </div>
+	                    </div>
+	                 
+                        </li>
+                        </li>
+                        
+                    	
+                        <li>
+                            <a href="">公开公示</a>
+                             
+                           <div class="list_group">
+                           <div class="a-panel">
+                              
+                                                                              
+                                 <a href="/cms/item/?cat=30&parent=7">公示专栏</a>  
+                                                             
+                              
+                                                                              
+                                 <a href="/cms/item/?cat=31&parent=7">管理办法</a>  
+                                                             
+                              
+                                                                              
+                                 <a href="/cms/item/?cat=32&parent=7">纪检监督</a>  
+                                                             
+                             
+                             </div>
+                            </div>
+                          
+                        </li>
+                        </li>
+                        
+                      
+                    </ul>
+                    <a href="#" class="y_ipt_search visible-xs"></a>
+                    <a href="#" class="y_ipt_menu visible-xs"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 移动端头部 -->
+    <div class="headB hidden-lg">
+        <div class="container-fluid header">
+            <div class="row">
+                <div class="col-md-12 clearfix">
+                    <a href="/cms/" class="logo"></a>
+                    <a href="#" class="y_ipt_search"></a>
+                    <a href="#" class="y_ipt_menu"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 小分辨率右侧遮罩导航 -->
+    <!--  -->
+    <div class="y_top_menu hidden-lg">
+        <dl>
+         		
+             <dt><a href="#" class="rem_mes">最新动态</a>
+                                                                           
+                       <dd><a href="/cms/item/?cat=72&parent=1">招生动态</a></dd> 
+                       <dd><a href="/cms/item/?cat=9&parent=1">新闻聚焦</a></dd>                                    
+                              
+             </dt>
+           
+          		
+             <dt><a href="#" class="rem_mes">招生信息</a>
+                                                                            
+                       <dd><a href="/cms/list/zszc/?cat=10">招生政策</a></dd> 
+                       <dd><a href="javascript:void(0)" onclick="subgo()">报考指南</a></dd> 
+                      <!--   <dd><a href="/cms/list/bkzn/">报考指南</a></dd> -->
+                       <dd><a href="/cms/index/tslx/">特殊类型招生</a></dd>                               
+                              
+             </dt>
+           
+          		
+             <dt><a href="#" class="rem_mes">招生专业</a>
+                                                             
+                       <dd><a href="/cms/list/college/1/">学院介绍</a></dd>  
+                       <dd><a href="/cms/list/professional/">专业目录</a></dd>                             
+                              
+             </dt>
+           
+          		
+             <dt><a href="#" class="rem_mes">人大一览</a>
+               
+                    
+                        
+                          <dd><a href="/cms/list/rdyx/?cat=15">人大影像</a></dd>  
+                         
+                          
+                                                     
+                    
+                           
+                        <dd><a href="/cms/list/rdzz/?cat=16">人大之子</a></dd>                          
+                                                    
+                    
+                                                
+                       <dd><a href="/cms/item/?cat=17&parent=4">历史人大</a></dd>  
+                                                   
+                    
+                                                
+                       <dd><a href="/cms/item/?cat=18&parent=4">学在人大</a></dd>  
+                                                   
+                    
+                                                
+                       <dd><a href="/cms/item/?cat=20&parent=4">就业动态</a></dd>  
+                                                   
+                    
+                                                
+                       <dd><a href="/cms/item/?cat=21&parent=4">奖惩助学</a></dd>  
+                                                   
+                    
+                                                
+                       <dd><a href="/cms/item/?cat=22&parent=4">校园生活</a></dd>  
+                                                   
+                    
+                                                
+                       <dd><a href="/cms/item/?cat=23&parent=4">国际交流</a></dd>  
+                                                   
+                   
+                              
+             </dt>
+           
+          		
+             <dt><a href="#" class="rem_mes">数据查询</a>
+                       
+                       <dd><a href="/inquiry/admission/indexcms/">各专业分数线</a></dd>                                     
+                       <dd><a href="/inquiry/enrollplan/indexcms/">各省招生计划</a></dd> 
+                       <dd><a href="/cms/scores/ ">高考录取结果</a></dd>                                           
+                              
+             </dt>
+           
+          		
+             <dt><a href="#" class="rem_mes">招生咨询</a>
+                        
+                       <dd><a href="/inquiry/enrollgroup/listcms/">各省招生组</a></dd>                                     
+                       <dd><a href="/inquiry/comadvice/cmscreate/">常见咨询</a></dd> 
+                       <dd><a href="/cms/index/zycp/">职业测评</a></dd>                                            
+                              
+             </dt>
+           
+          		
+             <dt><a href="#" class="rem_mes">公开公示</a>
+               
+                    
+                                                
+                       <dd><a href="/cms/item/?cat=30&parent=7">公示专栏</a></dd>  
+                                                   
+                    
+                                                
+                       <dd><a href="/cms/item/?cat=31&parent=7">管理办法</a></dd>  
+                                                   
+                    
+                                                
+                       <dd><a href="/cms/item/?cat=32&parent=7">纪检监督</a></dd>  
+                                                   
+                   
+                              
+             </dt>
+           
+           	   
+        </dl>
+    </div>
+    <div class="clearfix"></div> 
+
+<script type="text/javascript">
+     //平台、设备和操作系统
+   function subgo() {
+    var system ={
+        win : false,
+        mac : false,
+        xll : false
+    };
+    //检测平台
+    var p = navigator.platform;
+    system.win = p.indexOf("Win") == 0;
+    system.mac = p.indexOf("Mac") == 0;
+    system.x11 = (p == "X11") || (p.indexOf("Linux") == 0);
+    //跳转语句，如果是手机访问就自动跳转到wap.baidu.com页面
+    /*
+    if(system.win||system.mac||system.xll){
+        window.location.href="/cms/list/bkzn/ ";
+
+    }else{
+        window.location.href="/cms/list/bkzn/phone/ ";
+    }
+    */
+    window.location.href="/cms/list/bkzn/phone/ "; 
+ }   
+</script>  
+<script type="text/javascript">
+        $(function(){
+            $('.y_ipt_menu').click(function(){
+                if($(this).hasClass('open')){
+                    $(this).removeClass('open');
+                    $('.y_top_menu').animate({width: '0'},200);
+                }else{
+                    $(this).addClass('open');
+                    $('.y_top_menu').animate({width: '210px'},200);
+                }
+
+            });
+            $('dt a.rem_mes').bind('click', function() {
+                if($('dd').is(':visible')){
+                     $('dd').hide(); 
+                } else{
+                    $('dd').show();
+                }
+        });
+        });
+</script>       
+    <div class="clearfix"></div>    
+    <div class="y_tit_box">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 header">
+                    <h1 class="y_tit">2022年中国人民大学中法学院招生咨询联系方式汇总</h1>
+                    <span class="y_des"></span>
+                    
+                    <div class="r-title hidden-xs">
+                        <span class="grey-hint-sm">更新时间：2022-06-14</span>
+                    </div>
+                    
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 主体 -->
+    <div class="container content">
+        <div class="content-inner">
+            <div class="row">
+                <div class="col-md-9 col-sm-8">
+                    <div class="article">
+                       <p><span style="font-size: 14px; font-family: 微软雅黑, &quot;Microsoft YaHei&quot;;">2022届高考考生：</span></p><p style="text-indent:37px"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">祝贺你们取得好成绩，欢迎报考中国人民大学中法学院！</span></p><p style="text-indent:37px"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">中法学院是经教育部批准，由中国人民大学与法国索邦大学、保罗-瓦莱里大学、KEDGE商学院共建的中外合作办学机构，是隶属于我校的非独立法人办学单位，按照单独学校<span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">代码<span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px; background-color: rgb(255, 255, 255);"><strong><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;">（中国人民大学苏州校区）</span></strong></span></span>招生，办学地点在我校苏州校区，地址为江苏省苏州市仁爱路158号，邮编215123。</span></p><p style="text-indent:37px"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">为保证您的问题能得到有效答复，进一步提高招生咨询效率，在联系招生老师之前，敬请提前了解以下内容：</span></p><p style="text-indent:37px"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">一、高考志愿填报期间，咨询量较大，招生老师可能无法及时接听手机。请耐心等候或者以短信方式进行咨询，招生老师将尽快回复。</span></p><p style="text-indent:37px"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">二、强烈建议考生及家长在咨询前，登录<strong>人大阳光招生信息平台</strong>：</span><a href="http://rdzs.ruc.edu.cn/" style="text-decoration: underline; font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">http://rdzs.ruc.edu.cn</span></a><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">（提前了解招生章程、各省招生计划、历年录取分数线）、<strong>中法学院官网</strong>：</span><a href="http://ifc.ruc.edu.cn/" style="text-decoration: underline; font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">http://ifc.ruc.edu.cn/</span></a><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">（招生信息栏目）查询信息。</span></p><p style="text-indent:37px"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">同时，敬请关注<strong>“人大江南”“中国人民大学苏州校区”</strong>官方微信公众平台，通过“招生专栏”内容，提前了解学院介绍、招生热点问答、毕业生就业质量报告、学生就读体验及毕业去向等内容。</span></p><p style="text-indent:37px"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">中法学院派往各省招生组老师的行程信息将陆续公布，欢迎您关注上述网站及公众号，获取最新信息。</span></p><p style="text-indent:37px"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;"></span></p><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 10px; color: rgb(57, 57, 57); font-family: &quot;Open Sans&quot;; font-size: 13px; white-space: normal; background-color: rgb(255, 255, 255); text-align: center;"><span style="box-sizing: border-box; font-weight: 700; font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px; text-align: center;">&nbsp; &nbsp;<img src="https://rdzs.ruc.edu.cn/media/rte/image/2021/06/08/20210608203309200.png" title="阳光招生微信二维码.png" alt="阳光招生微信二维码.png" width="120" height="120" border="0" vspace="0" style="box-sizing: border-box; border: 0px; vertical-align: middle; width: 120px; height: 120px;"/>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<img src="https://rdzs.ruc.edu.cn/media/rte/image/2020/07/10/20200710173116438.jpg" title="" alt="苏州校区.jpg" width="123" height="120" style="box-sizing: border-box; border: 0px; vertical-align: middle; width: 123px; height: 120px;"/>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span style=""><img src="https://rdzs.ruc.edu.cn/media/rte/image/2020/07/10/20200710173130991.jpg" title="" alt="人大江南.jpg" style="box-sizing: border-box; border: 0px; vertical-align: middle;"/></span></span></p><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 10px; color: rgb(57, 57, 57); font-family: &quot;Open Sans&quot;; font-size: 13px; white-space: normal; background-color: rgb(255, 255, 255); text-align: center;"><span style="box-sizing: border-box; font-size: 14px; font-family: 微软雅黑, &quot;Microsoft YaHei&quot;;"><span style="text-align: center;">&nbsp;&nbsp;<span style="box-sizing: border-box; font-family: 微软雅黑, sans-serif;">人大阳光招生</span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</span><span style="text-align: center;">中国人民大学苏州校区&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<span style="box-sizing: border-box;">人大江南</span></span></span></p><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 10px; color: rgb(57, 57, 57); font-family: &quot;Open Sans&quot;; font-size: 13px; white-space: normal; background-color: rgb(255, 255, 255);"><br/></p><p style="text-indent:37px"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">感谢您的理解和支持！</span></p><p><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">&nbsp;</span></p><p style="text-align:right"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">中国人民大学中法学院</span></p><p style="text-align:right"><span style="font-size: 14px; font-family: 微软雅黑, &quot;Microsoft YaHei&quot;;">2022年6月</span></p><p><br/></p><table cellspacing="0" cellpadding="0" width="603" align="center"><tbody><tr style=";height:40px" class="firstRow"><td width="115" style="border: 1px solid windowtext; padding: 0px 7px;" height="40"><p style="text-align:center"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;"><strong><span style="font-size: 14px; font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; color: black;">省份</span></strong></span></p></td><td width="215" style="border-top: 1px solid windowtext; border-right: 1px solid windowtext; border-bottom: 1px solid windowtext; border-image: initial; border-left: none; padding: 0px 7px;" height="40"><p style="text-align:center"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;"><strong><span style="font-size: 14px; font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; color: black;">负责人</span></strong></span></p></td><td width="273" style="border-top: 1px solid windowtext; border-right: 1px solid windowtext; border-bottom: 1px solid windowtext; border-image: initial; border-left: none; padding: 0px 7px;" height="40"><p style="text-align:center"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;"><strong><span style="font-size: 14px; font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; color: black;">手机号</span></strong></span></p></td></tr><tr style=";height:53px"><td width="115" style="border-right: 1px solid windowtext; border-bottom: 1px solid windowtext; border-left: 1px solid windowtext; border-image: initial; border-top: none; padding: 0px 7px;" height="53"><p style="text-align:center"><span style="color: black; font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">北京</span></p></td><td width="215" style="border-top: none; border-left: none; border-bottom: 1px solid windowtext; border-right: 1px solid windowtext; padding: 0px 7px;" height="53"><p style="text-align:center"><span style="color: black; font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">汤老师</span></p><p style="text-align:center"><span style="color: black; font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">万老师</span></p><p style="text-align:center"><span style="color: black; font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">王老师</span></p></td><td width="273" style="border-top: none; border-left: none; border-bottom: 1px solid windowtext; border-right: 1px solid windowtext; padding: 0px 7px;" height="53"><p style="text-align:center"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">15995757594</span></p><p style="text-align:center"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">15062394574</span></p><p style="text-align:center"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">13506219703</span></p></td></tr><tr style=";height:40px"><td width="115" style="border-right: 1px solid windowtext; border-bottom: 1px solid windowtext; border-left: 1px solid windowtext; border-image: initial; border-top: none; padding: 0px 7px;" height="40"><p style="text-align:center"><span style="color: black; font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">河北</span></p></td><td width="215" style="border-top: none; border-left: none; border-bottom: 1px solid windowtext; border-right: 1px solid windowtext; padding: 0px 7px;" height="40"><p style="text-align:center"><span style="color: black; font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">杨老师</span></p></td><td width="273" style="border-top: none; border-left: none; border-bottom: 1px solid windowtext; border-right: 1px solid windowtext; padding: 0px 7px;" height="40"><p style="text-align:center"><span style="color: black; font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">15995750344</span></p></td></tr><tr style=";height:40px"><td width="115" style="border-right: 1px solid windowtext; border-bottom: 1px solid windowtext; border-left: 1px solid windowtext; border-image: initial; border-top: none; padding: 0px 7px;" height="40"><p style="text-align:center"><span style="color: black; font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">山西</span></p></td><td width="215" style="border-top: none; border-left: none; border-bottom: 1px solid windowtext; border-right: 1px solid windowtext; padding: 0px 7px;" height="40"><p style="text-align:center"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">窦老师</span></p><p style="text-align:center"><span style="color: black; font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">曹老师</span></p></td><td width="273" style="border-top: none; border-left: none; border-bottom: 1px solid windowtext; border-right: 1px solid windowtext; padding: 0px 7px;" height="40"><p style="text-align:center"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">15062394614</span></p><p style="text-align:center"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">15006212574</span></p></td></tr><tr style=";height:40px"><td width="115" style="border-right: 1px solid windowtext; border-bottom: 1px solid windowtext; border-left: 1px solid windowtext; border-image: initial; border-top: none; padding: 0px 7px;" height="40"><p style="text-align:center"><span style="color: black; font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">内蒙古</span></p></td><td width="215" style="border-top: none; border-left: none; border-bottom: 1px solid windowtext; border-right: 1px solid windowtext; padding: 0px 7px;" height="40"><p style="text-align:center"><span style="color: black; font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">赵老师</span></p></td><td width="273" style="border-top: none; border-left: none; border-bottom: 1px solid windowtext; border-right: 1px solid windowtext; padding: 0px 7px;" height="40"><p style="text-align:center"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">15995751934</span></p></td></tr><tr style=";height:40px"><td width="115" style="border-right: 1px solid windowtext; border-bottom: 1px solid windowtext; border-left: 1px solid windowtext; border-image: initial; border-top: none; padding: 0px 7px;" height="40"><p style="text-align:center"><span style="color: black; font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">辽宁</span></p></td><td width="215" style="border-top: none; border-left: none; border-bottom: 1px solid windowtext; border-right: 1px solid windowtext; padding: 0px 7px;" height="40"><p style="text-align:center"><span style="color: black; font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">王老师</span></p><p style="text-align:center"><span style="color: black; font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">刘老师</span></p></td><td width="273" style="border-top: none; border-left: none; border-bottom: 1px solid windowtext; border-right: 1px solid windowtext; padding: 0px 7px;" height="40"><p style="text-align:center"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">15995755421</span></p><p style="text-align:center"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">15062396294</span></p></td></tr><tr style=";height:40px"><td width="115" style="border-right: 1px solid windowtext; border-bottom: 1px solid windowtext; border-left: 1px solid windowtext; border-image: initial; border-top: none; padding: 0px 7px;" height="40"><p style="text-align:center"><span style="color: black; font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">吉林</span></p></td><td width="215" style="border-top: none; border-left: none; border-bottom: 1px solid windowtext; border-right: 1px solid windowtext; padding: 0px 7px;" height="40"><p style="text-align:center"><span style="color: black; font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">夏老师</span></p><p style="text-align:center"><span style="color: black; font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">信老师</span></p></td><td width="273" style="border-top: none; border-left: none; border-bottom: 1px solid windowtext; border-right: 1px solid windowtext; padding: 0px 7px;" height="40"><p style="text-align:center"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">15006202541</span></p><p style="text-align:center"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">13451988725</span></p></td></tr><tr style=";height:40px"><td width="115" style="border-right: 1px solid windowtext; border-bottom: 1px solid windowtext; border-left: 1px solid windowtext; border-image: initial; border-top: none; padding: 0px 7px;" height="40"><p style="text-align:center"><span style="color: black; font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">黑龙江</span></p></td><td width="215" style="border-top: none; border-left: none; border-bottom: 1px solid windowtext; border-right: 1px solid windowtext; padding: 0px 7px;" height="40"><p style="text-align:center"><span style="color: black; font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">袁老师</span></p><p style="text-align:center"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">段老师</span></p></td><td width="273" style="border-top: none; border-left: none; border-bottom: 1px solid windowtext; border-right: 1px solid windowtext; padding: 0px 7px;" height="40"><p style="text-align:center"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">15995754593</span></p><p style="text-align:center"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">13451988750</span></p></td></tr><tr style=";height:40px"><td width="115" style="border-right: 1px solid windowtext; border-bottom: 1px solid windowtext; border-left: 1px solid windowtext; border-image: initial; border-top: none; padding: 0px 7px;" height="40"><p style="text-align:center"><span style="color: black; font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">江苏</span></p></td><td width="215" style="border-top: none; border-left: none; border-bottom: 1px solid windowtext; border-right: 1px solid windowtext; padding: 0px 7px;" height="40"><p style="text-align:center"><span style="color: black; font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">杨老师</span></p><p style="text-align:center"><span style="color: black; font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">朱老师</span></p></td><td width="273" style="border-top: none; border-left: none; border-bottom: 1px solid windowtext; border-right: 1px solid windowtext; padding: 0px 7px;" height="40"><p style="text-align:center"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">15995751824</span></p><p style="text-align:center"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">15995750847</span></p></td></tr><tr style=";height:40px"><td width="115" style="border-right: 1px solid windowtext; border-bottom: 1px solid windowtext; border-left: 1px solid windowtext; border-image: initial; border-top: none; padding: 0px 7px;" height="40"><p style="text-align:center"><span style="color: black; font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">浙江</span></p></td><td width="215" style="border-top: none; border-left: none; border-bottom: 1px solid windowtext; border-right: 1px solid windowtext; padding: 0px 7px;" height="40"><p style="text-align:center"><span style="color: black; font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">庞老师</span></p><p style="text-align:center"><span style="color: black; font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">沈老师</span></p></td><td width="273" style="border-top: none; border-left: none; border-bottom: 1px solid windowtext; border-right: 1px solid windowtext; padding: 0px 7px;" height="40"><p style="text-align:center"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">15995754929</span></p><p style="text-align:center"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">15995750448</span></p></td></tr><tr style=";height:40px"><td width="115" style="border-right: 1px solid windowtext; border-bottom: 1px solid windowtext; border-left: 1px solid windowtext; border-image: initial; border-top: none; padding: 0px 7px;" height="40"><p style="text-align:center"><span style="color: black; font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">上海</span></p></td><td width="215" style="border-top: none; border-left: none; border-bottom: 1px solid windowtext; border-right: 1px solid windowtext; padding: 0px 7px;" height="40"><p style="text-align:center"><span style="color: black; font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">闫老师</span></p></td><td width="273" style="border-top: none; border-left: none; border-bottom: 1px solid windowtext; border-right: 1px solid windowtext; padding: 0px 7px;" height="40"><p style="text-align:center"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">15995751142</span></p></td></tr><tr style=";height:40px"><td width="115" style="border-right: 1px solid windowtext; border-bottom: 1px solid windowtext; border-left: 1px solid windowtext; border-image: initial; border-top: none; padding: 0px 7px;" height="40"><p style="text-align:center"><span style="color: black; font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">安徽</span></p></td><td width="215" style="border-top: none; border-left: none; border-bottom: 1px solid windowtext; border-right: 1px solid windowtext; padding: 0px 7px;" height="40"><p style="text-align:center"><span style="color: black; font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">杨老师</span></p><p style="text-align:center"><span style="color: black; font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">张老师</span></p></td><td width="273" style="border-top: none; border-left: none; border-bottom: 1px solid windowtext; border-right: 1px solid windowtext; padding: 0px 7px;" height="40"><p style="text-align:center"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">15995751273</span></p><p style="text-align:center"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">13451988971</span></p></td></tr><tr style=";height:40px"><td width="115" style="border-right: 1px solid windowtext; border-bottom: 1px solid windowtext; border-left: 1px solid windowtext; border-image: initial; border-top: none; padding: 0px 7px;" height="40"><p style="text-align:center"><span style="color: black; font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">福建</span></p></td><td width="215" style="border-top: none; border-left: none; border-bottom: 1px solid windowtext; border-right: 1px solid windowtext; padding: 0px 7px;" height="40"><p style="text-align:center"><span style="color: black; font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">任老师</span></p><p style="text-align:center"><span style="color: black; font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">王老师</span></p></td><td width="273" style="border-top: none; border-left: none; border-bottom: 1px solid windowtext; border-right: 1px solid windowtext; padding: 0px 7px;" height="40"><p style="text-align:center"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">15062414247</span></p><p style="text-align:center"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">13584830884</span></p></td></tr><tr style=";height:40px"><td width="115" style="border-right: 1px solid windowtext; border-bottom: 1px solid windowtext; border-left: 1px solid windowtext; border-image: initial; border-top: none; padding: 0px 7px;" height="40"><p style="text-align:center"><span style="color: black; font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">山东</span></p></td><td width="215" style="border-top: none; border-left: none; border-bottom: 1px solid windowtext; border-right: 1px solid windowtext; padding: 0px 7px;" height="40"><p style="text-align:center"><span style="color: black; font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">张老师</span></p></td><td width="273" style="border-top: none; border-left: none; border-bottom: 1px solid windowtext; border-right: 1px solid windowtext; padding: 0px 7px;" height="40"><p style="text-align:center"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">15995751425</span></p></td></tr><tr style=";height:40px"><td width="115" style="border-right: 1px solid windowtext; border-bottom: 1px solid windowtext; border-left: 1px solid windowtext; border-image: initial; border-top: none; padding: 0px 7px;" height="40"><p style="text-align:center"><span style="color: black; font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">河南</span></p></td><td width="215" style="border-top: none; border-left: none; border-bottom: 1px solid windowtext; border-right: 1px solid windowtext; padding: 0px 7px;" height="40"><p style="text-align:center"><span style="color: black; font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">曹老师</span></p></td><td width="273" style="border-top: none; border-left: none; border-bottom: 1px solid windowtext; border-right: 1px solid windowtext; padding: 0px 7px;" height="40"><p style="text-align:center"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">15995757745</span></p></td></tr><tr style=";height:53px"><td width="115" style="border-right: 1px solid windowtext; border-bottom: 1px solid windowtext; border-left: 1px solid windowtext; border-image: initial; border-top: none; padding: 0px 7px;" height="53"><p style="text-align:center"><span style="color: black; font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">湖北</span></p></td><td width="215" style="border-top: none; border-left: none; border-bottom: 1px solid windowtext; border-right: 1px solid windowtext; padding: 0px 7px;" height="53"><p style="text-align:center"><span style="color: black; font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">胡老师</span></p><p style="text-align:center"><span style="color: black; font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">黄老师</span></p><p style="text-align:center"><span style="color: black; font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">朱老师</span></p></td><td width="273" style="border-top: none; border-left: none; border-bottom: 1px solid windowtext; border-right: 1px solid windowtext; padding: 0px 7px;" height="53"><p style="text-align:center"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">15062411263</span></p><p style="text-align:center"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">15062417493<br/> &nbsp; 15629635419</span></p></td></tr><tr style=";height:40px"><td width="115" style="border-right: 1px solid windowtext; border-bottom: 1px solid windowtext; border-left: 1px solid windowtext; border-image: initial; border-top: none; padding: 0px 7px;" height="40"><p style="text-align:center"><span style="color: black; font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">湖南</span></p></td><td width="215" style="border-top: none; border-left: none; border-bottom: 1px solid windowtext; border-right: 1px solid windowtext; padding: 0px 7px;" height="40"><p style="text-align:center"><span style="color: black; font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">曾老师</span></p></td><td width="273" style="border-top: none; border-left: none; border-bottom: 1px solid windowtext; border-right: 1px solid windowtext; padding: 0px 7px;" height="40"><p style="text-align:center"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">15995754492</span></p></td></tr><tr style=";height:40px"><td width="115" style="border-right: 1px solid windowtext; border-bottom: 1px solid windowtext; border-left: 1px solid windowtext; border-image: initial; border-top: none; padding: 0px 7px;" height="40"><p style="text-align:center"><span style="color: black; font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">广东</span></p></td><td width="215" style="border-top: none; border-left: none; border-bottom: 1px solid windowtext; border-right: 1px solid windowtext; padding: 0px 7px;" height="40"><p style="text-align:center"><span style="color: black; font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">付老师</span></p></td><td width="273" style="border-top: none; border-left: none; border-bottom: 1px solid windowtext; border-right: 1px solid windowtext; padding: 0px 7px;" height="40"><p style="text-align:center"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">15962101564</span></p></td></tr><tr style=";height:40px"><td width="115" style="border-right: 1px solid windowtext; border-bottom: 1px solid windowtext; border-left: 1px solid windowtext; border-image: initial; border-top: none; padding: 0px 7px;" height="40"><p style="text-align:center"><span style="color: black; font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">重庆</span></p></td><td width="215" style="border-top: none; border-left: none; border-bottom: 1px solid windowtext; border-right: 1px solid windowtext; padding: 0px 7px;" height="40"><p style="text-align:center"><span style="color: black; font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">金老师</span></p></td><td width="273" style="border-top: none; border-left: none; border-bottom: 1px solid windowtext; border-right: 1px solid windowtext; padding: 0px 7px;" height="40"><p style="text-align:center"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">15995751624</span></p></td></tr><tr style=";height:40px"><td width="115" style="border-right: 1px solid windowtext; border-bottom: 1px solid windowtext; border-left: 1px solid windowtext; border-image: initial; border-top: none; padding: 0px 7px;" height="40"><p style="text-align:center"><span style="color: black; font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">四川</span></p></td><td width="215" style="border-top: none; border-left: none; border-bottom: 1px solid windowtext; border-right: 1px solid windowtext; padding: 0px 7px;" height="40"><p style="text-align:center"><span style="color: black; font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">晏老师</span></p><p style="text-align:center"><span style="color: black; font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">张老师</span></p></td><td width="273" style="border-top: none; border-left: none; border-bottom: 1px solid windowtext; border-right: 1px solid windowtext; padding: 0px 7px;" height="40"><p style="text-align:center"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">15995750469</span></p><p style="text-align:center"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">13511609312</span></p></td></tr><tr style=";height:40px"><td width="115" style="border-right: 1px solid windowtext; border-bottom: 1px solid windowtext; border-left: 1px solid windowtext; border-image: initial; border-top: none; padding: 0px 7px;" height="40"><p style="text-align:center"><span style="color: black; font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">江西</span></p></td><td width="215" style="border-top: none; border-left: none; border-bottom: 1px solid windowtext; border-right: 1px solid windowtext; padding: 0px 7px;" height="40"><p style="text-align:center"><span style="color: black; font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">布老师</span></p></td><td width="273" style="border-top: none; border-left: none; border-bottom: 1px solid windowtext; border-right: 1px solid windowtext; padding: 0px 7px;" height="40"><p style="text-align:center"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">15995752504</span></p></td></tr><tr style=";height:40px"><td width="115" style="border-right: 1px solid windowtext; border-bottom: 1px solid windowtext; border-left: 1px solid windowtext; border-image: initial; border-top: none; padding: 0px 7px;" height="40"><p style="text-align:center"><span style="color: black; font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">陕西</span></p></td><td width="215" style="border-top: none; border-left: none; border-bottom: 1px solid windowtext; border-right: 1px solid windowtext; padding: 0px 7px;" height="40"><p style="text-align:center"><span style="color: black; font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">仲老师</span></p></td><td width="273" style="border-top: none; border-left: none; border-bottom: 1px solid windowtext; border-right: 1px solid windowtext; padding: 0px 7px;" height="40"><p style="text-align:center"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">15995751546</span></p></td></tr><tr style=";height:40px"><td width="115" style="border-right: 1px solid windowtext; border-bottom: 1px solid windowtext; border-left: 1px solid windowtext; border-image: initial; border-top: none; padding: 0px 7px;" height="40"><p style="text-align:center"><span style="color: black; font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">天津</span></p></td><td width="215" style="border-top: none; border-left: none; border-bottom: 1px solid windowtext; border-right: 1px solid windowtext; padding: 0px 7px;" height="40"><p style="text-align:center"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">王老师</span></p></td><td width="273" style="border-top: none; border-left: none; border-bottom: 1px solid windowtext; border-right: 1px solid windowtext; padding: 0px 7px;" height="40"><p style="text-align:center"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">15962106459</span></p></td></tr><tr style=";height:40px"><td width="115" style="border-right: 1px solid windowtext; border-bottom: 1px solid windowtext; border-left: 1px solid windowtext; border-image: initial; border-top: none; padding: 0px 7px;" height="40"><p style="text-align:center"><span style="color: black; font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">云南</span></p></td><td width="215" style="border-top: none; border-left: none; border-bottom: 1px solid windowtext; border-right: 1px solid windowtext; padding: 0px 7px;" height="40"><p style="text-align:center"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">王老师</span></p></td><td width="273" style="border-top: none; border-left: none; border-bottom: 1px solid windowtext; border-right: 1px solid windowtext; padding: 0px 7px;" height="40"><p style="text-align:center"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">15995756831</span></p></td></tr><tr style=";height:40px"><td width="115" rowspan="2" style="border-top: none; border-left: 1px solid windowtext; border-bottom: 1px solid black; border-right: 1px solid windowtext; padding: 0px 7px;" height="40"><p style="text-align:center"><span style="color: black; font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">苏州校区<br/> &nbsp; 咨询电话</span></p></td><td width="215" nowrap="" style="border-top: none; border-left: none; border-bottom: 1px solid windowtext; border-right: 1px solid windowtext; padding: 0px 7px;" height="40"><p style="text-align:center"><span style="color: black; font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">王老师</span></p></td><td width="273" style="border-top: none; border-left: none; border-bottom: 1px solid windowtext; border-right: 1px solid windowtext; padding: 0px 7px;" height="40"><p style="text-align:center"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">0512-62605251</span></p></td></tr><tr style=";height:40px"><td width="215" nowrap="" style="border-top: none; border-left: none; border-bottom: 1px solid windowtext; border-right: 1px solid windowtext; padding: 0px 7px;" height="40"><p style="text-align:center"><span style="color: black; font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">王老师</span></p></td><td width="273" style="border-top: none; border-left: none; border-bottom: 1px solid windowtext; border-right: 1px solid windowtext; padding: 0px 7px;" height="40"><p style="text-align:center"><span style="color: black; font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">0512-62558600</span></p></td></tr></tbody></table><p><br/></p>
+                       
+                        
+                        
+                            <div class="pull-right mt20">
+                                <!-- JiaThis Button BEGIN -->
+                                <div class="jiathis_style">
+                                    <span class="jiathis_txt">分享到：</span>
+                                    <a class="jiathis_button_icons_1"></a>
+                                    <a class="jiathis_button_icons_2"></a>
+                                    <a class="jiathis_button_icons_3"></a>
+                                    <a class="jiathis_button_icons_4"></a>
+                                    <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
+                                    <a class="jiathis_counter_style"></a>
+                                </div>
+                                <script type="text/javascript" src="http://v3.jiathis.com/code/jia.js" charset="utf-8"></script>
+                                <!-- JiaThis Button END -->
+                            </div>
+                        
+                    </div>
+
+
+                                        <a href="/inquiry/enrollgroup/listcms/?pid=39&pg=3" style="margin-left: 35%">
+                                            <button class="btn btn-color">查看全国招生组相关动态</button>
+                                        </a>
+
+                </div>
+
+                <div class="col-md-3 col-sm-4" style="margin-bottom:15px;">
+                    <div class="t_news t_normal">
+                        <h4>常见问答<a class="sm_link" href="/admin/inquiry/comadvice/create/">更多</a></h4>
+                        <ul class=" t_nlist_color">
+                         
+                            <li><a href="/inquiry/comadvice/24739/cmsview/">人大哪些专业对考生身体条件有特殊要求？</a></li>
+                          
+                            <li><a href="/inquiry/comadvice/24738/cmsview/">人大哪些专业对单科成绩有要求？</a></li>
+                          
+                            <li><a href="/inquiry/comadvice/24737/cmsview/">人大的调档比例是多少？会不会退档？</a></li>
+                          
+                            <li><a href="/inquiry/comadvice/24736/cmsview/">人大如何录取专业？是否设置专业志愿分数级差？</a></li>
+                          
+                            <li><a href="/inquiry/comadvice/24735/cmsview/">人大如何进档和录取？政策性加分怎么算？</a></li>
+                          
+                            <li><a href="/inquiry/comadvice/24732/cmsview/">艺术类考生咨询专线是什么？</a></li>
+                          
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="high-my-consultant">
+                <a href="javascript:void(0);" class="btn-consultant fold-btn">
+                    <div class="user">
+                        <img src="/static/default/images/tmp/user1.png" alt="">
+                    </div>
+                    <p class="">
+                        我要咨询
+                    </p>
+                </a>
+                <div class="my-consultant">
+                    <div class="my-chart">
+                        <div class="title">
+                            我要咨询
+                            <a href="javascript:void(0);" class="pull-right fold-btn"><img src="/static/default/images/page_arrow_right.png" alt=""></a>
+                        </div>
+                           <form  id = "comadvice" action="" method="post" class="form-horizontal"  enctype="multipart/form-data">
+                                <input type='hidden' name='csrfmiddlewaretoken' value='oet7pJXdsTEDgZbK3b7s9z8SUeYWhXPC' />
+                                <div class="form-group">
+                                    <div class="col-sm-12">
+                                        <textarea class="form-control" cols="40" id="id_question" maxlength="100" name="question" placeholder="请输入要咨询的问题" rows="6">
+</textarea>
+	                                 
+	                                
+	                            
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="col-sm-12">
+                                       <input class="form-control" id="id_contact" maxlength="50" name="contact" placeholder="联系方式（请输入邮箱）" type="text" />
+                                  	
+	                                
+	                            
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="col-sm-12">
+                                        <button class="btn btn-color form-control" onClick="return success()">提交咨询</button>
+                                    </div>
+                                </div>
+                            </form>
+                    </div>
+                    <div class="user">
+                        <img src="/static/default/images/tmp/user1.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        
+    <div class="y_foot hidden-xs">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="t_col3">
+                        <h5>联系我们</h5>
+                        <div class="t_icon1">
+                            <i></i>
+                            <span>400-0123-517</span><br/>
+                        </div>
+                        <div class="t_icon2">
+                            <i></i>
+                            <span>zsb@ruc.edu.cn</span></br>
+                        </div>
+                        <div class="t_icon4">
+                            <i></i>
+                            <span>010-62511156(传真)</span></br>
+                        </div>
+                        <div class="t_icon3">
+                            <i></i>
+                            <span>北京市海淀区中关村大街59号<br/>知行F楼(北区食堂)六层</span></br>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="t_col3">
+                        <h5>关注我们</h5>
+                        <img src="/static/default/images/wechat.png" alt="">
+                        <p>扫描二维码关注我们</p>
+                        <p>微信公众号"人大阳光招生"</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="t_col3">
+                        <h5>学术公告</h5>
+                        
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="t_col3">
+                         <h5>快速链接
+                        <a target="_blank" href="http://211.71.30.15/index/index_main.action" style="margin-left: 40px;color: #999;font-weight: normal;font-size: 16px;">返回旧网站</a>
+                               <a target="_blank" href="http://211.71.30.15/index/index_main.action" >
+                                    <span class="icon-wrap">
+                                        <span class="icon icon-arrow_carrot-right_alt2"  style="color: #999"></span>
+                                    </span>
+                                </a>
+                        </h5>
+                        
+                                 
+                        <a href="/cms/item/1031.html" class="t_b" target = _blank>人大主页</a>
+                       
+                                 
+                        <a href="/cms/item/1032.html" class="t_b" target = _blank>人大新闻网</a>
+                       
+                                 
+                        <a href="/cms/item/1038.html" class="t_b" target = _blank>留学生招生</a>
+                       
+                                 
+                        <a href="/cms/item/1037.html" class="t_b" target = _blank>研究生招生</a>
+                       
+                                 
+                        <a href="/cms/item/1036.html" class="t_b" target = _blank>考生黄页</a>
+                       
+                                 
+                        <a href="/cms/item/1035.html" class="t_b" target = _blank>校园地图</a>
+                       
+                                 
+                        <a href="/cms/item/1034.html" class="t_b" target = _blank>校友总会</a>
+                       
+                                 
+                        <a href="/cms/item/1033.html" class="t_b" target = _blank>教育基金会</a>
+                       
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="y_bottom">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="t_info clearfix">
+                        <p>版权所有 Copyright© 中国人民大学本科生招生办公室   京ICP备05066828号-1</p>
+                        <div class="t_flogo">
+                            <a href="http://www.ruc.edu.cn/"><img src="/static/default/images/t_logo.png" alt=""></a>
+                            <a href="#" class="hidden-xs t_back">回顶部</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script type="text/javascript">
+        $(function(){
+            $('.y_ipt_menu').click(function(){
+                if($(this).hasClass('open')){
+                    $(this).removeClass('open');
+                    $('.y_top_menu').animate({width: '0'},200);
+                }else{
+                    $(this).addClass('open');
+                    $('.y_top_menu').animate({width: '210px'},200);
+                }
+
+            });
+            $('.fold-btn').on('click', function(){
+                if ($('.my-consultant').is(':visible')) {
+                    $('.my-consultant').hide();
+                    $('.btn-consultant').show();
+                } else {
+                    $('.my-consultant').show();
+                    $('.btn-consultant').hide();
+                }
+            });
+        });
+</script>
+
+<script language="javascript">
+function success(){
+	var question = document.forms["comadvice"]["question"].value;
+	var contact = document.forms["comadvice"]["contact"].value;
+	if (!(question == null || contact==null ) )
+    {
+	alert("提交成功,我们会尽快回复");
+	document.getElementById("comadvice").submit();
+
+    }
+}
+</script> 
+</html>

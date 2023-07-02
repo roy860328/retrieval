@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>中国人民大学阳光招生信息平台</title>
+    <!-- Bootstrap -->
+    <link rel="shortcut icon" href="/static/default/images/48.ico"/>
+     <link rel="bookmark" href="/static/default/images/48.ico"/>
+    <link href="/static/default/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="/static/default/css/layout.css" type="text/css" media="screen">
+    <script src="/static/default/js/jquery.min.js"></script>
+    <link rel="stylesheet" href="/static/default/css/style.css" type="text/css" media="screen">
+    <script src="http://api.microyan.com/sidebar?id=3520"></script>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="../js/html5shiv.min.js"></script>
+    <script src="../js/respond.min.js"></script>
+    <![endif]-->
+    
+</head>
+<body>
+
+       <div class="head visible-lg">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 header clearfix">
+                    <a href="/cms/" class="logo"></a>
+                    <script language ="javascript">
+                        function ValidateValue(textbox)
+                        {
+                             var IllegalString = "\`~@#;,.!#$%^&*()+{}|\\:\"<>?-=/,\'";
+                             var textboxvalue = textbox.value;
+                             var index = textboxvalue.length - 1;
+
+                             var s = textbox.value.charAt(index);
+
+                             if(IllegalString.indexOf(s)>=0)
+                             {
+                                s = textboxvalue.substring(0,index);
+                                textbox.value = s;
+                             }
+                        }
+                    </script>
+                    <form method="get" action="/cms/item/">
+                        <div class="y_selbox hidden-xs">
+                            <div class="input-group">
+                                <input id="s" type="text" name="keyword" value="" class="form-control" placeholder="搜索" maxlength="50" onkeyup = "ValidateValue(this)">
+                              <span class="input-group-btn">
+                                <button class="btn btn-default" type="submit"></button>
+                              </span>
+                            </div>
+                        </div>
+                    </form>
+                    <ul class="nav_list hidden-xs">
+                     	
+                        <li>
+                            <a href="">最新动态</a>
+                             
+                            <div class="list_group">
+                                <div class="a-panel">
+			                       <a href="/cms/item/?cat=72&parent=1">招生动态</a>
+			                       <a href="/cms/item/?cat=9&parent=1">新闻聚焦</a>    
+                                </div>
+                            </div>
+                         
+                        </li>
+                        </li>
+                        
+                    	
+                        <li>
+                            <a href="">招生信息</a>
+                             
+                         <div class="list_group">
+                           <div class="a-panel">                                              
+	                       <a href="/cms/list/zszc/?cat=10">招生政策</a> 
+	                       <a href="javascript:void(0)" onclick="subgo()">报考指南</a> 
+	                       <!--  <a href="/cms/list/bkzn/">报考指南</a> -->
+	                       <a href="/cms/index/tslx/">特殊类型招生</a>                              
+                         </div>
+                          </div>
+                       
+                        </li>
+                        </li>
+                        
+                    	
+                        <li>
+                            <a href="">招生专业</a>
+                             
+	                    <div class="list_group"> 
+	                    <div class="a-panel">                                             
+	                      <a href="/cms/list/college/1/">学院介绍</a>  
+	                       <a href="/cms/list/professional/">专业目录</a>                            
+	                   </div>
+	                    </div>
+	                  
+                        </li>
+                        </li>
+                        
+                    	
+                        <li>
+                            <a href="">人大一览</a>
+                             
+                           <div class="list_group">
+                           <div class="a-panel">
+                              
+                              
+                             <a href="/cms/list/rdyx/?cat=15">人大影像</a> 
+ 
+                       			                            
+                              
+                                 
+                       			<a href="/cms/list/rdzz/?cat=16">人大之子</a>
+                       		                               
+                              
+                                                                              
+                                 <a href="/cms/item/?cat=17&parent=4">历史人大</a>  
+                                                             
+                              
+                                                                              
+                                 <a href="/cms/item/?cat=18&parent=4">学在人大</a>  
+                                                             
+                              
+                                                                              
+                                 <a href="/cms/item/?cat=20&parent=4">就业动态</a>  
+                                                             
+                              
+                                                                              
+                                 <a href="/cms/item/?cat=21&parent=4">奖惩助学</a>  
+                                                             
+                              
+                                                                              
+                                 <a href="/cms/item/?cat=22&parent=4">校园生活</a>  
+                                                             
+                              
+                                                                              
+                                 <a href="/cms/item/?cat=23&parent=4">国际交流</a>  
+                                                             
+                             
+                             </div>
+                            </div>
+                          
+                        </li>
+                        </li>
+                        
+                    	
+                        <li>
+                            <a href="">数据查询</a>
+                             
+                    <div class="list_group"> 
+                    <div class="a-panel">         
+                      <a href="/inquiry/admission/indexcms/">各专业分数线</a>                                     
+                       <a href="/inquiry/enrollplan/indexcms/">各省招生计划</a> 
+                      <a href="/cms/scores/ ">高考录取结果</a>                            
+                    </div>
+                    </div>                     
+                         
+                        </li>
+                        </li>
+                        
+                    	
+                        <li>
+                            <a href="">招生咨询</a>
+                             
+	                    <div class="list_group">   
+	                    <div class="a-panel">
+	                       <a href="/inquiry/enrollgroup/listcms/">各省招生组</a>                                              
+	                       <a href="/inquiry/comadvice/cmscreate/">常见咨询</a>     
+	                       <a href="/cms/index/zycp/">职业测评</a>                           
+	                    </div>
+	                    </div>
+	                 
+                        </li>
+                        </li>
+                        
+                    	
+                        <li>
+                            <a href="">公开公示</a>
+                             
+                           <div class="list_group">
+                           <div class="a-panel">
+                              
+                                                                              
+                                 <a href="/cms/item/?cat=30&parent=7">公示专栏</a>  
+                                                             
+                              
+                                                                              
+                                 <a href="/cms/item/?cat=31&parent=7">管理办法</a>  
+                                                             
+                              
+                                                                              
+                                 <a href="/cms/item/?cat=32&parent=7">纪检监督</a>  
+                                                             
+                             
+                             </div>
+                            </div>
+                          
+                        </li>
+                        </li>
+                        
+                      
+                    </ul>
+                    <a href="#" class="y_ipt_search visible-xs"></a>
+                    <a href="#" class="y_ipt_menu visible-xs"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 移动端头部 -->
+    <div class="headB hidden-lg">
+        <div class="container-fluid header">
+            <div class="row">
+                <div class="col-md-12 clearfix">
+                    <a href="/cms/" class="logo"></a>
+                    <a href="#" class="y_ipt_search"></a>
+                    <a href="#" class="y_ipt_menu"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 小分辨率右侧遮罩导航 -->
+    <!--  -->
+    <div class="y_top_menu hidden-lg">
+        <dl>
+         		
+             <dt><a href="#" class="rem_mes">最新动态</a>
+                                                                           
+                       <dd><a href="/cms/item/?cat=72&parent=1">招生动态</a></dd> 
+                       <dd><a href="/cms/item/?cat=9&parent=1">新闻聚焦</a></dd>                                    
+                              
+             </dt>
+           
+          		
+             <dt><a href="#" class="rem_mes">招生信息</a>
+                                                                            
+                       <dd><a href="/cms/list/zszc/?cat=10">招生政策</a></dd> 
+                       <dd><a href="javascript:void(0)" onclick="subgo()">报考指南</a></dd> 
+                      <!--   <dd><a href="/cms/list/bkzn/">报考指南</a></dd> -->
+                       <dd><a href="/cms/index/tslx/">特殊类型招生</a></dd>                               
+                              
+             </dt>
+           
+          		
+             <dt><a href="#" class="rem_mes">招生专业</a>
+                                                             
+                       <dd><a href="/cms/list/college/1/">学院介绍</a></dd>  
+                       <dd><a href="/cms/list/professional/">专业目录</a></dd>                             
+                              
+             </dt>
+           
+          		
+             <dt><a href="#" class="rem_mes">人大一览</a>
+               
+                    
+                        
+                          <dd><a href="/cms/list/rdyx/?cat=15">人大影像</a></dd>  
+                         
+                          
+                                                     
+                    
+                           
+                        <dd><a href="/cms/list/rdzz/?cat=16">人大之子</a></dd>                          
+                                                    
+                    
+                                                
+                       <dd><a href="/cms/item/?cat=17&parent=4">历史人大</a></dd>  
+                                                   
+                    
+                                                
+                       <dd><a href="/cms/item/?cat=18&parent=4">学在人大</a></dd>  
+                                                   
+                    
+                                                
+                       <dd><a href="/cms/item/?cat=20&parent=4">就业动态</a></dd>  
+                                                   
+                    
+                                                
+                       <dd><a href="/cms/item/?cat=21&parent=4">奖惩助学</a></dd>  
+                                                   
+                    
+                                                
+                       <dd><a href="/cms/item/?cat=22&parent=4">校园生活</a></dd>  
+                                                   
+                    
+                                                
+                       <dd><a href="/cms/item/?cat=23&parent=4">国际交流</a></dd>  
+                                                   
+                   
+                              
+             </dt>
+           
+          		
+             <dt><a href="#" class="rem_mes">数据查询</a>
+                       
+                       <dd><a href="/inquiry/admission/indexcms/">各专业分数线</a></dd>                                     
+                       <dd><a href="/inquiry/enrollplan/indexcms/">各省招生计划</a></dd> 
+                       <dd><a href="/cms/scores/ ">高考录取结果</a></dd>                                           
+                              
+             </dt>
+           
+          		
+             <dt><a href="#" class="rem_mes">招生咨询</a>
+                        
+                       <dd><a href="/inquiry/enrollgroup/listcms/">各省招生组</a></dd>                                     
+                       <dd><a href="/inquiry/comadvice/cmscreate/">常见咨询</a></dd> 
+                       <dd><a href="/cms/index/zycp/">职业测评</a></dd>                                            
+                              
+             </dt>
+           
+          		
+             <dt><a href="#" class="rem_mes">公开公示</a>
+               
+                    
+                                                
+                       <dd><a href="/cms/item/?cat=30&parent=7">公示专栏</a></dd>  
+                                                   
+                    
+                                                
+                       <dd><a href="/cms/item/?cat=31&parent=7">管理办法</a></dd>  
+                                                   
+                    
+                                                
+                       <dd><a href="/cms/item/?cat=32&parent=7">纪检监督</a></dd>  
+                                                   
+                   
+                              
+             </dt>
+           
+           	   
+        </dl>
+    </div>
+    <div class="clearfix"></div> 
+
+<script type="text/javascript">
+     //平台、设备和操作系统
+   function subgo() {
+    var system ={
+        win : false,
+        mac : false,
+        xll : false
+    };
+    //检测平台
+    var p = navigator.platform;
+    system.win = p.indexOf("Win") == 0;
+    system.mac = p.indexOf("Mac") == 0;
+    system.x11 = (p == "X11") || (p.indexOf("Linux") == 0);
+    //跳转语句，如果是手机访问就自动跳转到wap.baidu.com页面
+    /*
+    if(system.win||system.mac||system.xll){
+        window.location.href="/cms/list/bkzn/ ";
+
+    }else{
+        window.location.href="/cms/list/bkzn/phone/ ";
+    }
+    */
+    window.location.href="/cms/list/bkzn/ "; 
+ }   
+</script>  
+<script type="text/javascript">
+        $(function(){
+            $('.y_ipt_menu').click(function(){
+                if($(this).hasClass('open')){
+                    $(this).removeClass('open');
+                    $('.y_top_menu').animate({width: '0'},200);
+                }else{
+                    $(this).addClass('open');
+                    $('.y_top_menu').animate({width: '210px'},200);
+                }
+
+            });
+            $('dt a.rem_mes').bind('click', function() {
+                if($('dd').is(':visible')){
+                     $('dd').hide(); 
+                } else{
+                    $('dd').show();
+                }
+        });
+        });
+</script>     
+
+    <div class="y_tit_box">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 header">
+                    <h1 class="y_tit">经济学院</h1>
+                    <span class="y_des"></span>
+                    <div class="r-title hidden-xs">
+                    
+                        <span class="grey-hint-sm">更新时间：2016-03-04</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 主体 -->
+    <div class="container content" >
+        <div class="content-inner">
+            <div class="row">
+                <div class="col-md-9 col-sm-8">
+                    <div class="article">
+                       <p><br/></p><p><br/></p><p style="margin-top:5px;margin-right:0;margin-bottom:5px;margin-left:0;text-align:center;line-height:24px"><span style="font-size: 24px;font-family:&#39;微软雅黑&#39;,sans-serif">经济学院</span></p><p style="margin-top:5px;margin-right:0;margin-bottom:5px;margin-left: 0;line-height:24px">&nbsp;</p><p style="margin-top:5px;margin-right:0;margin-bottom:5px;margin-left: 0;text-indent:32px;line-height:24px"><span style="font-size:14px;font-family:&#39;微软雅黑&#39;,sans-serif">中国人民大学经济学院于1998年正式组建，是新中国经济学科的重要奠基者和开拓者。学院以马克思主义政治经济学为支撑，重点构建宏观经济理论与政策、微观经济理论与政策、新兴学科三大学科集群，长期以来雄踞国内第一、世界一流的优势地位。</span></p><p style="margin-top:5px;margin-right:0;margin-bottom:5px;margin-left: 0">&nbsp;</p><p style="margin-top:5px;margin-right:0;margin-bottom:5px;margin-left: 0;text-indent:32px;line-height:24px"><span style="color: rgb(255, 0, 0);"><strong><span style="font-size: 18px; font-family: 微软雅黑, sans-serif;">专业剖析</span></strong></span></p><p style="margin-top:5px;margin-right:0;margin-bottom:5px;margin-left: 0">&nbsp;</p><p style="margin-top:5px;margin-right:0;margin-bottom:5px;margin-left: 0;text-indent:32px;line-height:24px"><strong><span style="font-size:14px;font-family:&#39;微软雅黑&#39;,sans-serif">经济学专业</span></strong></p><p style="margin-top:5px;margin-right:0;margin-bottom:5px;margin-left: 0;text-indent:32px;line-height:24px"><span style="font-size:14px;font-family:&#39;微软雅黑&#39;,sans-serif">本专业以马克思主义为指导，基于“厚基础、宽口径”的培养理念，培养熟悉现代经济学理论、熟练掌握现代数量分析方法与数字技术分析工具，理论分析与社会实践相结合，扎根中国大地、兼具国际视野全面发展的社会主义合格建设者和可靠接班人。</span></p><p style="margin-top:5px;margin-right:0;margin-bottom:5px;margin-left: 0;text-indent:32px;line-height:24px"><span style="font-size: 14px;font-family:&#39;微软雅黑&#39;,sans-serif">&nbsp;</span></p><p style="margin-top:5px;margin-right:0;margin-bottom:5px;margin-left: 0;text-indent:32px;line-height:24px"><strong><span style="font-size:14px;font-family:&#39;微软雅黑&#39;,sans-serif">国际经济与贸易专业</span></strong></p><p style="margin-top:5px;margin-right:0;margin-bottom:5px;margin-left: 0;text-indent:32px;line-height:24px"><span style="font-size:14px;font-family:&#39;微软雅黑&#39;,sans-serif">本专业以服务“百年未有之大变局”下中国经济发展和高水平对外开放实践为目标，面向我国构建新发展格局的新要求，通过国际经济学、国际贸易、国际金融、世界经济和国际经济关系等专业课程的学习、社会实践和国际交流，培养了解世界经济运行特征和规律、扎根中国大地的国际化人才。</span></p><p style="margin-top:5px;margin-right:0;margin-bottom:5px;margin-left: 0;text-indent:32px;line-height:24px"><span style="font-size: 14px;font-family:&#39;微软雅黑&#39;,sans-serif">&nbsp;</span></p><p style="margin-top:5px;margin-right:0;margin-bottom:5px;margin-left: 0;text-indent:32px;line-height:24px"><strong><span style="font-size:14px;font-family:&#39;微软雅黑&#39;,sans-serif">数字经济专业</span></strong></p><p style="margin-top:5px;margin-right:0;margin-bottom:5px;margin-left: 0;text-indent:32px;line-height:24px"><span style="font-size: 14px;font-family:&#39;微软雅黑&#39;,sans-serif">2022年我校在全国率先设立数字经济本科专业。以经济学类课程为基础，结合计算机、数据科学等技术课 程，设立数字经济理论、应用和方法等专业核心课程，使学生既掌握现代经济学，也了解数字经济专业知识， 既了解中国国情，也具有国际视野，且能够熟悉运用数字经济方法和技术解决数字经济理论与应用问题。能够适应国家政府机构、国际组织、高校与科研院所、大型数字企业、金融机构以及咨询公司等用人要求。</span></p><p style="margin-top:5px;margin-right:0;margin-bottom:5px;margin-left: 0">&nbsp;</p><p style="margin-top:5px;margin-right:0;margin-bottom:5px;margin-left: 0;text-indent:32px;line-height:24px"><span style="color: rgb(255, 0, 0);"><strong><span style="font-size: 18px; font-family: 微软雅黑, sans-serif;">培养特色</span></strong></span></p><p style="margin-top:5px;margin-right:0;margin-bottom:5px;margin-left: 0">&nbsp;</p><p style="margin-top:5px;margin-right:0;margin-bottom:5px;margin-left: 0;text-indent:32px;line-height:24px"><span style="font-size: 14px;font-family:&#39;微软雅黑&#39;,sans-serif">2020年中国经济学项目入选基础学科拔尖学生培养计划2.0基地，项目采用校内二次选拔，依托“经济学-数学”双学士学位复合型人才培养项目与经济学专业(中国特色经济学方向)项目建设。</span></p><p style="margin-top:5px;margin-right:0;margin-bottom:5px;margin-left: 0">&nbsp;</p><p style="margin-top:5px;margin-right:0;margin-bottom:5px;margin-left: 0;text-indent:32px;line-height:24px"><strong><span style="font-size:14px;font-family:&#39;微软雅黑&#39;,sans-serif">“经济学-数学”双学士学位复合型人才培养项目</span></strong></p><p style="margin-top:5px;margin-right:0;margin-bottom:5px;margin-left: 0;text-indent:32px;line-height:24px"><span style="font-size:14px;font-family:&#39;微软雅黑&#39;,sans-serif">通过经济学核心课程、数学课程，结合计算机、数据科学等技术课程，实现跨学科复合人才培养，造就熟练掌握经济学理论知识和量化分析工具，既了解中国现实、又具有国际化方法的高端经济学人才。该项目学生本科毕业获得经济学学士学位、理学学士学位。</span></p><p style="margin-top:5px;margin-right:0;margin-bottom:5px;margin-left: 0">&nbsp;</p><p style="margin-top:5px;margin-right:0;margin-bottom:5px;margin-left: 0;text-indent:32px;line-height:24px"><strong><span style="font-size:14px;font-family:&#39;微软雅黑&#39;,sans-serif">经济学专业(中国特色经济学方向)</span></strong></p><p style="margin-top:5px;margin-right:0;margin-bottom:5px;margin-left: 0;text-indent:32px;line-height:24px"><span style="font-size:14px;font-family:&#39;微软雅黑&#39;,sans-serif">全国第一家也是唯一 一家以“中国特色经济学”命名的 实验班。以“扎根中国大地”为宗旨，采用本硕博有机衔接的课程体系，培养熟悉政治经济学与现代经济学基础理论、经济思想史和经济史涵养深厚、质性与量化分析相结合，契合国家重大战略需求，引领中国特色经济学自主创新，有理想、有本领、有担当的拔尖创新人才。</span></p><p style="margin-top:5px;margin-right:0;margin-bottom:5px;margin-left: 0">&nbsp;</p><p style="margin-top:5px;margin-right:0;margin-bottom:5px;margin-left: 0;text-indent:32px;line-height:24px"><span style="color: rgb(255, 0, 0);"><strong><span style="font-size: 18px; font-family: 微软雅黑, sans-serif;">国际交流</span></strong></span></p><p style="margin-top:5px;margin-right:0;margin-bottom:5px;margin-left: 0">&nbsp;</p><p style="margin-top:5px;margin-right:0;margin-bottom:5px;margin-left: 0;text-indent:32px;line-height:24px"><span style="font-size:14px;font-family:&#39;微软雅黑&#39;,sans-serif">目前，学院与欧美日澳俄等全球10余个国家的30多所知名顶级学府建立了合作伙伴关系。学院与美国伊利诺伊大学香槟分校、英国曼彻斯特大学、九州大学、威斯康星大学麦迪逊分校等多所高校有联合人才培养项目。每年多名经院学子获得赴斯坦福大学、普林斯顿大学、伯克利大学、 剑桥大学、东京大学等著名高校的交流交换、深造机会。</span></p><p style="margin-top:5px;margin-right:0;margin-bottom:5px;margin-left: 0">&nbsp;</p><p style="margin-top:5px;margin-right:0;margin-bottom:5px;margin-left: 0;text-indent:32px;line-height:24px"><span style="color: rgb(255, 0, 0);"><strong><span style="font-size: 18px; font-family: 微软雅黑, sans-serif;">未来发展</span></strong></span></p><p style="margin-top:5px;margin-right:0;margin-bottom:5px;margin-left: 0">&nbsp;</p><p style="margin-top:5px;margin-right:0;margin-bottom:5px;margin-left: 0;text-indent:32px;line-height:24px"><span style="font-size:14px;font-family:&#39;微软雅黑&#39;,sans-serif">经济学院毕业生近三年就业率100%，就业质量属国内领先水平。其中本科生深造率高达62%，毕业生 国外深造院校包括哈佛大学、耶鲁大学、麻省理工学院、哥伦比亚大学、芝加哥大学、伦敦大学学院等世界一流顶尖高校;国内深造主要有中国人民大学、北京大学、清华大学等国内头部名校。毕业生就业签约单位中，有国家发展和改革委员会、中国人民银行、外交部、商务部等中央部委和地方党政机关；中国建设银行、中国工商银行、中信证券等大型国有企业；华为技术有限公司、苏宁易购集团、腾讯等知名民营企业。</span></p><p style="margin-top:5px;margin-right:0;margin-bottom:5px;margin-left: 0">&nbsp;</p><p style="margin-top:5px;margin-right:0;margin-bottom:5px;margin-left: 0;text-indent:32px;line-height:24px"><span style="font-size: 14px;font-family:&#39;微软雅黑&#39;,sans-serif">8多年来，从经济学院走出了万余名经济学英才，他们德才兼备、大有作为，为社会经济发展做出宝贵贡献，是经济学院跻身世界一流经济学院进程中不可或缺的重要力量。</span></p><p style="margin-top:5px;margin-right:0;margin-bottom:5px;margin-left: 0;text-indent:32px;line-height:24px"><span style="font-size: 14px;font-family:&#39;微软雅黑&#39;,sans-serif"><br/></span></p><table cellspacing="0" cellpadding="0" width="534"><tbody><tr style=";height:19px" class="firstRow"><td width="54" style="border: 1px solid windowtext; background: rgb(0, 176, 240); padding: 0px 7px;" height="19"><p><a name="RANGE!A1"></a><span style="font-size:12px;font-family:&#39;微软雅黑&#39;,sans-serif;color:black">马凯</span></p></td><td width="480" style="border-top: 1px solid windowtext; border-right: 1px solid windowtext; border-bottom: 1px solid windowtext; border-image: initial; border-left: none; background: rgb(255, 217, 102); padding: 0px 7px;" height="19"><p><span style="font-size:15px;color:black">原中央政治局委员，原国务院副总理</span></p></td></tr><tr style=";height:38px"><td width="54" style="border-right: 1px solid windowtext; border-bottom: 1px solid windowtext; border-left: 1px solid windowtext; border-image: initial; border-top: none; background: rgb(0, 176, 240); padding: 0px 7px;" height="38"><p><span style="font-size:12px;font-family:&#39;微软雅黑&#39;,sans-serif;color:black">骆惠宁</span></p></td><td width="480" style="border-top: none; border-left: none; border-bottom: 1px solid windowtext; border-right: 1px solid windowtext; background: rgb(255, 217, 102); padding: 0px 7px;" height="38"><p><span style="font-size:15px;color:black">中央政府驻港联络办主任，国务院港澳事务办公室副主任(兼任)，香港特别行政区维护国家安全委员会国家安全事务顾问</span></p></td></tr><tr style=";height:19px"><td width="54" style="border-right: 1px solid windowtext; border-bottom: 1px solid windowtext; border-left: 1px solid windowtext; border-image: initial; border-top: none; background: rgb(0, 176, 240); padding: 0px 7px;" height="19"><p><span style="font-size:12px;font-family:&#39;微软雅黑&#39;,sans-serif;color:black">潘功胜</span></p></td><td width="480" style="border-top: none; border-left: none; border-bottom: 1px solid windowtext; border-right: 1px solid windowtext; background: rgb(255, 217, 102); padding: 0px 7px;" height="19"><p><span style="font-size:15px;color:black">中国人民银行党委委员、副行长，国家外汇管理局党组书记、局长</span></p></td></tr><tr style=";height:19px"><td width="54" style="border-right: 1px solid windowtext; border-bottom: 1px solid windowtext; border-left: 1px solid windowtext; border-image: initial; border-top: none; background: rgb(0, 176, 240); padding: 0px 7px;" height="19"><p><span style="font-size:12px;font-family:&#39;微软雅黑&#39;,sans-serif;color:black">李波</span></p></td><td width="480" style="border-top: none; border-left: none; border-bottom: 1px solid windowtext; border-right: 1px solid windowtext; background: rgb(255, 217, 102); padding: 0px 7px;" height="19"><p><span style="font-size:15px;color:black">国际货币基金组织副总裁</span></p></td></tr><tr style=";height:19px"><td width="54" style="border-right: 1px solid windowtext; border-bottom: 1px solid windowtext; border-left: 1px solid windowtext; border-image: initial; border-top: none; background: rgb(0, 176, 240); padding: 0px 7px;" height="19"><p><span style="font-size:12px;font-family:&#39;微软雅黑&#39;,sans-serif;color:black">阎庆民</span></p></td><td width="480" style="border-top: none; border-left: none; border-bottom: 1px solid windowtext; border-right: 1px solid windowtext; background: rgb(255, 217, 102); padding: 0px 7px;" height="19"><p><span style="font-size:15px;color:black">中国证券监督管理委员会副主席、党委委员</span></p></td></tr><tr style=";height:19px"><td width="54" style="border-right: 1px solid windowtext; border-bottom: 1px solid windowtext; border-left: 1px solid windowtext; border-image: initial; border-top: none; background: rgb(0, 176, 240); padding: 0px 7px;" height="19"><p><span style="font-size:12px;font-family:&#39;微软雅黑&#39;,sans-serif;color:black">洪银兴</span></p></td><td width="480" style="border-top: none; border-left: none; border-bottom: 1px solid windowtext; border-right: 1px solid windowtext; background: rgb(255, 217, 102); padding: 0px 7px;" height="19"><p><span style="font-size:15px;color:black">南京大学文科资深教授，原南京大学党委书记</span></p></td></tr><tr style=";height:19px"><td width="54" style="border-right: 1px solid windowtext; border-bottom: 1px solid windowtext; border-left: 1px solid windowtext; border-image: initial; border-top: none; background: rgb(0, 176, 240); padding: 0px 7px;" height="19"><p><span style="font-size:12px;font-family:&#39;微软雅黑&#39;,sans-serif;color:black">黄宝印</span></p></td><td width="480" style="border-top: none; border-left: none; border-bottom: 1px solid windowtext; border-right: 1px solid windowtext; background: rgb(255, 217, 102); padding: 0px 7px;" height="19"><p><span style="font-size:15px;color:black">对外经济贸易大学党委书记</span></p></td></tr><tr style=";height:19px"><td width="54" style="border-right: 1px solid windowtext; border-bottom: 1px solid windowtext; border-left: 1px solid windowtext; border-image: initial; border-top: none; background: rgb(0, 176, 240); padding: 0px 7px;" height="19"><p><span style="font-size:12px;font-family:&#39;微软雅黑&#39;,sans-serif;color:black">张晓晶</span></p></td><td width="480" style="border-top: none; border-left: none; border-bottom: 1px solid windowtext; border-right: 1px solid windowtext; background: rgb(255, 217, 102); padding: 0px 7px;" height="19"><p><span style="font-size:15px;color:black">中国社会科学院金融研究所所长</span></p></td></tr><tr style=";height:19px"><td width="54" style="border-right: 1px solid windowtext; border-bottom: 1px solid windowtext; border-left: 1px solid windowtext; border-image: initial; border-top: none; background: rgb(0, 176, 240); padding: 0px 7px;" height="19"><p><span style="font-size:12px;font-family:&#39;微软雅黑&#39;,sans-serif;color:black">李涛</span></p></td><td width="480" style="border-top: none; border-left: none; border-bottom: 1px solid windowtext; border-right: 1px solid windowtext; background: rgb(255, 217, 102); padding: 0px 7px;" height="19"><p><span style="font-size:15px;color:black">中央财经大学校长助理</span></p></td></tr><tr style=";height:19px"><td width="54" style="border-right: 1px solid windowtext; border-bottom: 1px solid windowtext; border-left: 1px solid windowtext; border-image: initial; border-top: none; background: rgb(0, 176, 240); padding: 0px 7px;" height="19"><p><span style="font-size:12px;font-family:&#39;微软雅黑&#39;,sans-serif;color:black">肖志杰</span></p></td><td width="480" style="border-top: none; border-left: none; border-bottom: 1px solid windowtext; border-right: 1px solid windowtext; background: rgb(255, 217, 102); padding: 0px 7px;" height="19"><p><span style="font-size:15px;color:black">美国波士顿学院经济系教授</span></p></td></tr><tr style=";height:19px"><td width="54" style="border-right: 1px solid windowtext; border-bottom: 1px solid windowtext; border-left: 1px solid windowtext; border-image: initial; border-top: none; background: rgb(0, 176, 240); padding: 0px 7px;" height="19"><p><span style="font-size:12px;font-family:&#39;微软雅黑&#39;,sans-serif;color:black">吴利军</span></p></td><td width="480" style="border-top: none; border-left: none; border-bottom: 1px solid windowtext; border-right: 1px solid windowtext; background: rgb(255, 217, 102); padding: 0px 7px;" height="19"><p><span style="font-size:15px;color:black">中国光大集团股份公司党委副书记副董事长、总经理</span></p></td></tr><tr style=";height:19px"><td width="54" style="border-right: 1px solid windowtext; border-bottom: 1px solid windowtext; border-left: 1px solid windowtext; border-image: initial; border-top: none; background: rgb(0, 176, 240); padding: 0px 7px;" height="19"><p><span style="font-size:12px;font-family:&#39;微软雅黑&#39;,sans-serif;color:black">段永平</span></p></td><td width="480" style="border-top: none; border-left: none; border-bottom: 1px solid windowtext; border-right: 1px solid windowtext; background: rgb(255, 217, 102); padding: 0px 7px;" height="19"><p><span style="font-size:15px;color:black">步步高集团董事长</span></p></td></tr><tr style=";height:19px"><td width="54" style="border-right: 1px solid windowtext; border-bottom: 1px solid windowtext; border-left: 1px solid windowtext; border-image: initial; border-top: none; background: rgb(0, 176, 240); padding: 0px 7px;" height="19"><p><span style="font-size:12px;font-family:&#39;微软雅黑&#39;,sans-serif;color:black">吴迪</span></p></td><td width="480" style="border-top: none; border-left: none; border-bottom: 1px solid windowtext; border-right: 1px solid windowtext; background: rgb(255, 217, 102); padding: 0px 7px;" height="19"><p><span style="font-size:15px;color:black">福信集团总裁</span></p></td></tr><tr style=";height:19px"><td width="54" style="border-right: 1px solid windowtext; border-bottom: 1px solid windowtext; border-left: 1px solid windowtext; border-image: initial; border-top: none; background: rgb(0, 176, 240); padding: 0px 7px;" height="19"><p><span style="font-size:12px;font-family:&#39;微软雅黑&#39;,sans-serif;color:black">汪涛</span></p></td><td width="480" style="border-top: none; border-left: none; border-bottom: 1px solid windowtext; border-right: 1px solid windowtext; background: rgb(255, 217, 102); padding: 0px 7px;" height="19"><p><span style="font-size:15px;color:black">瑞银证券中国首席经济学家</span></p></td></tr><tr style=";height:19px"><td width="54" style="border-right: 1px solid windowtext; border-bottom: 1px solid windowtext; border-left: 1px solid windowtext; border-image: initial; border-top: none; background: rgb(0, 176, 240); padding: 0px 7px;" height="19"><p><span style="font-size:12px;font-family:&#39;微软雅黑&#39;,sans-serif;color:black">乔虹</span></p></td><td width="480" style="border-top: none; border-left: none; border-bottom: 1px solid windowtext; border-right: 1px solid windowtext; background: rgb(255, 217, 102); padding: 0px 7px;" height="19"><p><span style="font-size:15px;color:black">摩根斯丹利大中华区首席经济学家</span></p></td></tr><tr style=";height:19px"><td width="54" style="border-right: 1px solid windowtext; border-bottom: 1px solid windowtext; border-left: 1px solid windowtext; border-image: initial; border-top: none; background: rgb(0, 176, 240); padding: 0px 7px;" height="19"><p><span style="font-size:12px;font-family:&#39;微软雅黑&#39;,sans-serif;color:black">张威</span></p></td><td width="480" style="border-top: none; border-left: none; border-bottom: 1px solid windowtext; border-right: 1px solid windowtext; background: rgb(255, 217, 102); padding: 0px 7px;" height="19"><p><span style="font-size:15px;color:black">广发证券股份有限公司副总经理</span></p></td></tr></tbody></table><p style="margin-top:5px;margin-right:0;margin-bottom:5px;margin-left: 0;text-indent:32px;line-height:24px">&nbsp;</p><p style="margin-top:5px;margin-right:0;margin-bottom:5px;margin-left: 0;text-indent:32px;line-height:24px">&nbsp;</p><p style="margin-top:5px;margin-right:0;margin-bottom:5px;margin-left:0;text-align:right;line-height:24px"><span style="font-size: 14px;font-family:&#39;微软雅黑&#39;,sans-serif">官方网站: <a href="http://econ.ruc.edu.cn" target="_blank">http://econ.ruc.edu.cn</a></span></p><p style="margin-top:5px;margin-right:0;margin-bottom:5px;margin-left:0;text-align:right;line-height:24px"><span style="font-size: 14px;font-family:&#39;MS Gothic&#39;"></span><span style="font-size:14px;font-family:&#39;微软雅黑&#39;,sans-serif">办公地址: 中国人民大学明德主楼6层</span></p><p style="margin-top:5px;margin-right:0;margin-bottom:5px;margin-left:0;text-align:right;line-height:24px"><span style="font-size: 14px;font-family:&#39;微软雅黑&#39;,sans-serif">联系邮箱: econ@ruc.edu.cn</span></p><p style="margin-top:5px;margin-right:0;margin-bottom:5px;margin-left:0;text-align:right;line-height:24px"><span style="font-size: 14px;font-family:&#39;微软雅黑&#39;,sans-serif">办公电话: 010-62511102</span></p><p><br/></p>
+                       
+                        <div class="pull-right mt20">
+                            <!-- JiaThis Button BEGIN -->
+                            <div class="jiathis_style">
+                                <span class="jiathis_txt">分享到：</span>
+                                <a class="jiathis_button_icons_1"></a>
+                                <a class="jiathis_button_icons_2"></a>
+                                <a class="jiathis_button_icons_3"></a>
+                                <a class="jiathis_button_icons_4"></a>
+                                <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
+                                <a class="jiathis_counter_style"></a>
+                            </div>
+                            <script type="text/javascript" src="http://v3.jiathis.com/code/jia.js" charset="utf-8"></script>
+                            <!-- JiaThis Button END -->
+                        </div>
+                    </div>
+                </div>
+	            <div class="col-md-3 col-sm-4">
+                    <ul class="grey-ul">
+                    
+                        <li><a href="/cms/list/college/1/" >  人文学部</a></li>
+
+                     
+                        <li><a href="/cms/list/college/2/" >  社会学部</a></li>
+
+                     
+                        <li><a href="/cms/list/college/3/"  class="cur"   >  经济学部</a></li>
+
+                     
+                        <li><a href="/cms/list/college/4/" >  法政学部</a></li>
+
+                     
+                        <li><a href="/cms/list/college/5/" >  理工学部</a></li>
+
+                     
+                        <li><a href="/cms/list/college/6/" >  其它</a></li>
+
+                       
+                    </ul>
+	
+	             </div>
+            </div>
+        </div>
+    </div>
+      
+    <div class="y_foot hidden-xs">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="t_col3">
+                        <h5>联系我们</h5>
+                        <div class="t_icon1">
+                            <i></i>
+                            <span>400-0123-517</span><br/>
+                        </div>
+                        <div class="t_icon2">
+                            <i></i>
+                            <span>zsb@ruc.edu.cn</span></br>
+                        </div>
+                        <div class="t_icon4">
+                            <i></i>
+                            <span>010-62511156(传真)</span></br>
+                        </div>
+                        <div class="t_icon3">
+                            <i></i>
+                            <span>北京市海淀区中关村大街59号<br/>知行F楼(北区食堂)六层</span></br>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="t_col3">
+                        <h5>关注我们</h5>
+                        <img src="/static/default/images/wechat.png" alt="">
+                        <p>扫描二维码关注我们</p>
+                        <p>微信公众号"人大阳光招生"</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="t_col3">
+                        <h5>学术公告</h5>
+                        
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="t_col3">
+                         <h5>快速链接
+                        <a target="_blank" href="http://211.71.30.15/index/index_main.action" style="margin-left: 40px;color: #999;font-weight: normal;font-size: 16px;">返回旧网站</a>
+                               <a target="_blank" href="http://211.71.30.15/index/index_main.action" >
+                                    <span class="icon-wrap">
+                                        <span class="icon icon-arrow_carrot-right_alt2"  style="color: #999"></span>
+                                    </span>
+                                </a>
+                        </h5>
+                        
+                                 
+                        <a href="/cms/item/1031.html" class="t_b" target = _blank>人大主页</a>
+                       
+                                 
+                        <a href="/cms/item/1032.html" class="t_b" target = _blank>人大新闻网</a>
+                       
+                                 
+                        <a href="/cms/item/1038.html" class="t_b" target = _blank>留学生招生</a>
+                       
+                                 
+                        <a href="/cms/item/1037.html" class="t_b" target = _blank>研究生招生</a>
+                       
+                                 
+                        <a href="/cms/item/1036.html" class="t_b" target = _blank>考生黄页</a>
+                       
+                                 
+                        <a href="/cms/item/1035.html" class="t_b" target = _blank>校园地图</a>
+                       
+                                 
+                        <a href="/cms/item/1034.html" class="t_b" target = _blank>校友总会</a>
+                       
+                                 
+                        <a href="/cms/item/1033.html" class="t_b" target = _blank>教育基金会</a>
+                       
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="y_bottom">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="t_info clearfix">
+                        <p>版权所有 Copyright© 中国人民大学本科生招生办公室   京ICP备05066828号-1</p>
+                        <div class="t_flogo">
+                            <a href="http://www.ruc.edu.cn/"><img src="/static/default/images/t_logo.png" alt=""></a>
+                            <a href="#" class="hidden-xs t_back">回顶部</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
