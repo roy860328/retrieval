@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>中国人民大学阳光招生信息平台</title>
+    <!-- Bootstrap -->
+    <link rel="shortcut icon" href="/static/default/images/48.ico"/>
+     <link rel="bookmark" href="/static/default/images/48.ico"/>
+    <link href="/static/default/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/static/default/css/layout.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="/static/default/css/style.css" type="text/css" media="screen">
+    <script src="/static/default/js/jquery.min.js"></script>
+
+    <script src="http://api.microyan.com/sidebar?id=3520"></script>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="../js/html5shiv.min.js"></script>
+    <script src="../js/respond.min.js"></script>
+    <![endif]-->
+    
+</head>
+<body>
+
+       <div class="head visible-lg">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 header clearfix">
+                    <a href="/cms/" class="logo"></a>
+                    <script language ="javascript">
+                        function ValidateValue(textbox)
+                        {
+                             var IllegalString = "\`~@#;,.!#$%^&*()+{}|\\:\"<>?-=/,\'";
+                             var textboxvalue = textbox.value;
+                             var index = textboxvalue.length - 1;
+
+                             var s = textbox.value.charAt(index);
+
+                             if(IllegalString.indexOf(s)>=0)
+                             {
+                                s = textboxvalue.substring(0,index);
+                                textbox.value = s;
+                             }
+                        }
+                    </script>
+                    <form method="get" action="/cms/item/">
+                        <div class="y_selbox hidden-xs">
+                            <div class="input-group">
+                                <input id="s" type="text" name="keyword" value="" class="form-control" placeholder="搜索" maxlength="50" onkeyup = "ValidateValue(this)">
+                              <span class="input-group-btn">
+                                <button class="btn btn-default" type="submit"></button>
+                              </span>
+                            </div>
+                        </div>
+                    </form>
+                    <ul class="nav_list hidden-xs">
+                     	
+                        <li>
+                            <a href="">最新动态</a>
+                             
+                            <div class="list_group">
+                                <div class="a-panel">
+			                       <a href="/cms/item/?cat=72&parent=1">招生动态</a>
+			                       <a href="/cms/item/?cat=9&parent=1">新闻聚焦</a>    
+                                </div>
+                            </div>
+                         
+                        </li>
+                        </li>
+                        
+                    	
+                        <li>
+                            <a href="">招生信息</a>
+                             
+                         <div class="list_group">
+                           <div class="a-panel">                                              
+	                       <a href="/cms/list/zszc/?cat=10">招生政策</a> 
+	                       <a href="javascript:void(0)" onclick="subgo()">报考指南</a> 
+	                       <!--  <a href="/cms/list/bkzn/">报考指南</a> -->
+	                       <a href="/cms/index/tslx/">特殊类型招生</a>                              
+                         </div>
+                          </div>
+                       
+                        </li>
+                        </li>
+                        
+                    	
+                        <li>
+                            <a href="">招生专业</a>
+                             
+	                    <div class="list_group"> 
+	                    <div class="a-panel">                                             
+	                      <a href="/cms/list/college/1/">学院介绍</a>  
+	                       <a href="/cms/list/professional/">专业目录</a>                            
+	                   </div>
+	                    </div>
+	                  
+                        </li>
+                        </li>
+                        
+                    	
+                        <li>
+                            <a href="">人大一览</a>
+                             
+                           <div class="list_group">
+                           <div class="a-panel">
+                              
+                              
+                             <a href="/cms/list/rdyx/?cat=15">人大影像</a> 
+ 
+                       			                            
+                              
+                                 
+                       			<a href="/cms/list/rdzz/?cat=16">人大之子</a>
+                       		                               
+                              
+                                                                              
+                                 <a href="/cms/item/?cat=17&parent=4">历史人大</a>  
+                                                             
+                              
+                                                                              
+                                 <a href="/cms/item/?cat=18&parent=4">学在人大</a>  
+                                                             
+                              
+                                                                              
+                                 <a href="/cms/item/?cat=20&parent=4">就业动态</a>  
+                                                             
+                              
+                                                                              
+                                 <a href="/cms/item/?cat=21&parent=4">奖惩助学</a>  
+                                                             
+                              
+                                                                              
+                                 <a href="/cms/item/?cat=22&parent=4">校园生活</a>  
+                                                             
+                              
+                                                                              
+                                 <a href="/cms/item/?cat=23&parent=4">国际交流</a>  
+                                                             
+                             
+                             </div>
+                            </div>
+                          
+                        </li>
+                        </li>
+                        
+                    	
+                        <li>
+                            <a href="">数据查询</a>
+                             
+                    <div class="list_group"> 
+                    <div class="a-panel">         
+                      <a href="/inquiry/admission/indexcms/">各专业分数线</a>                                     
+                       <a href="/inquiry/enrollplan/indexcms/">各省招生计划</a> 
+                      <a href="/cms/scores/ ">高考录取结果</a>                            
+                    </div>
+                    </div>                     
+                         
+                        </li>
+                        </li>
+                        
+                    	
+                        <li>
+                            <a href="">招生咨询</a>
+                             
+	                    <div class="list_group">   
+	                    <div class="a-panel">
+	                       <a href="/inquiry/enrollgroup/listcms/">各省招生组</a>                                              
+	                       <a href="/inquiry/comadvice/cmscreate/">常见咨询</a>     
+	                       <a href="/cms/index/zycp/">职业测评</a>                           
+	                    </div>
+	                    </div>
+	                 
+                        </li>
+                        </li>
+                        
+                    	
+                        <li>
+                            <a href="">公开公示</a>
+                             
+                           <div class="list_group">
+                           <div class="a-panel">
+                              
+                                                                              
+                                 <a href="/cms/item/?cat=30&parent=7">公示专栏</a>  
+                                                             
+                              
+                                                                              
+                                 <a href="/cms/item/?cat=31&parent=7">管理办法</a>  
+                                                             
+                              
+                                                                              
+                                 <a href="/cms/item/?cat=32&parent=7">纪检监督</a>  
+                                                             
+                             
+                             </div>
+                            </div>
+                          
+                        </li>
+                        </li>
+                        
+                      
+                    </ul>
+                    <a href="#" class="y_ipt_search visible-xs"></a>
+                    <a href="#" class="y_ipt_menu visible-xs"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 移动端头部 -->
+    <div class="headB hidden-lg">
+        <div class="container-fluid header">
+            <div class="row">
+                <div class="col-md-12 clearfix">
+                    <a href="/cms/" class="logo"></a>
+                    <a href="#" class="y_ipt_search"></a>
+                    <a href="#" class="y_ipt_menu"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 小分辨率右侧遮罩导航 -->
+    <!--  -->
+    <div class="y_top_menu hidden-lg">
+        <dl>
+         		
+             <dt><a href="#" class="rem_mes">最新动态</a>
+                                                                           
+                       <dd><a href="/cms/item/?cat=72&parent=1">招生动态</a></dd> 
+                       <dd><a href="/cms/item/?cat=9&parent=1">新闻聚焦</a></dd>                                    
+                              
+             </dt>
+           
+          		
+             <dt><a href="#" class="rem_mes">招生信息</a>
+                                                                            
+                       <dd><a href="/cms/list/zszc/?cat=10">招生政策</a></dd> 
+                       <dd><a href="javascript:void(0)" onclick="subgo()">报考指南</a></dd> 
+                      <!--   <dd><a href="/cms/list/bkzn/">报考指南</a></dd> -->
+                       <dd><a href="/cms/index/tslx/">特殊类型招生</a></dd>                               
+                              
+             </dt>
+           
+          		
+             <dt><a href="#" class="rem_mes">招生专业</a>
+                                                             
+                       <dd><a href="/cms/list/college/1/">学院介绍</a></dd>  
+                       <dd><a href="/cms/list/professional/">专业目录</a></dd>                             
+                              
+             </dt>
+           
+          		
+             <dt><a href="#" class="rem_mes">人大一览</a>
+               
+                    
+                        
+                          <dd><a href="/cms/list/rdyx/?cat=15">人大影像</a></dd>  
+                         
+                          
+                                                     
+                    
+                           
+                        <dd><a href="/cms/list/rdzz/?cat=16">人大之子</a></dd>                          
+                                                    
+                    
+                                                
+                       <dd><a href="/cms/item/?cat=17&parent=4">历史人大</a></dd>  
+                                                   
+                    
+                                                
+                       <dd><a href="/cms/item/?cat=18&parent=4">学在人大</a></dd>  
+                                                   
+                    
+                                                
+                       <dd><a href="/cms/item/?cat=20&parent=4">就业动态</a></dd>  
+                                                   
+                    
+                                                
+                       <dd><a href="/cms/item/?cat=21&parent=4">奖惩助学</a></dd>  
+                                                   
+                    
+                                                
+                       <dd><a href="/cms/item/?cat=22&parent=4">校园生活</a></dd>  
+                                                   
+                    
+                                                
+                       <dd><a href="/cms/item/?cat=23&parent=4">国际交流</a></dd>  
+                                                   
+                   
+                              
+             </dt>
+           
+          		
+             <dt><a href="#" class="rem_mes">数据查询</a>
+                       
+                       <dd><a href="/inquiry/admission/indexcms/">各专业分数线</a></dd>                                     
+                       <dd><a href="/inquiry/enrollplan/indexcms/">各省招生计划</a></dd> 
+                       <dd><a href="/cms/scores/ ">高考录取结果</a></dd>                                           
+                              
+             </dt>
+           
+          		
+             <dt><a href="#" class="rem_mes">招生咨询</a>
+                        
+                       <dd><a href="/inquiry/enrollgroup/listcms/">各省招生组</a></dd>                                     
+                       <dd><a href="/inquiry/comadvice/cmscreate/">常见咨询</a></dd> 
+                       <dd><a href="/cms/index/zycp/">职业测评</a></dd>                                            
+                              
+             </dt>
+           
+          		
+             <dt><a href="#" class="rem_mes">公开公示</a>
+               
+                    
+                                                
+                       <dd><a href="/cms/item/?cat=30&parent=7">公示专栏</a></dd>  
+                                                   
+                    
+                                                
+                       <dd><a href="/cms/item/?cat=31&parent=7">管理办法</a></dd>  
+                                                   
+                    
+                                                
+                       <dd><a href="/cms/item/?cat=32&parent=7">纪检监督</a></dd>  
+                                                   
+                   
+                              
+             </dt>
+           
+           	   
+        </dl>
+    </div>
+    <div class="clearfix"></div> 
+
+<script type="text/javascript">
+     //平台、设备和操作系统
+   function subgo() {
+    var system ={
+        win : false,
+        mac : false,
+        xll : false
+    };
+    //检测平台
+    var p = navigator.platform;
+    system.win = p.indexOf("Win") == 0;
+    system.mac = p.indexOf("Mac") == 0;
+    system.x11 = (p == "X11") || (p.indexOf("Linux") == 0);
+    //跳转语句，如果是手机访问就自动跳转到wap.baidu.com页面
+    /*
+    if(system.win||system.mac||system.xll){
+        window.location.href="/cms/list/bkzn/ ";
+
+    }else{
+        window.location.href="/cms/list/bkzn/phone/ ";
+    }
+    */
+    window.location.href="/cms/list/bkzn/phone/ "; 
+ }   
+</script>  
+<script type="text/javascript">
+        $(function(){
+            $('.y_ipt_menu').click(function(){
+                if($(this).hasClass('open')){
+                    $(this).removeClass('open');
+                    $('.y_top_menu').animate({width: '0'},200);
+                }else{
+                    $(this).addClass('open');
+                    $('.y_top_menu').animate({width: '210px'},200);
+                }
+
+            });
+            $('dt a.rem_mes').bind('click', function() {
+                if($('dd').is(':visible')){
+                     $('dd').hide(); 
+                } else{
+                    $('dd').show();
+                }
+        });
+        });
+</script>     
+    <div class="y_tit_box">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 header">
+                    <h1 class="y_tit">英语</h1>
+                    <span class="y_des"></span>
+                    <div class="r-title hidden-xs">
+                    
+                        <span class="grey-hint-sm">更新时间：2019-06-12</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 主体 -->
+    <div class="container content" >
+        <div class="content-inner">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="article">
+                       <p><span style="font-family: FZLTKHK--GBK1-0; font-size: 9pt; color: rgb(35, 31, 32); font-variant-numeric: normal; font-variant-east-asian: normal;"></span></p><p style="text-align: center; text-indent: 32px; line-height: 26px;"><strong><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">作为人文学科之一的英语语言文学专业</span></strong></p><p style="text-align: center; text-indent: 28px;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">陈世丹</span></p><p style="text-indent: 28px;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">　　<span style="font-family: 方正书宋_GBK;">高考前选报专业志愿时</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">人们一提到英语专业</span><span style="font-family: NEU-BZ-S92, serif;">(</span><span style="font-family: 方正书宋_GBK;">其全称是</span>“<span style="font-family: 方正书宋_GBK;">英语语言文学专业</span>”<span style="font-family: NEU-BZ-S92, serif;">),</span><span style="font-family: 方正书宋_GBK;">就想当然地不把它看作一个专业</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">而只把它当成一种语言</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">似乎学英语专业只是为了会说英语</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">教英语专业的老师只懂得如何教英语。殊不知英语语言文学专业也是人文学科的重要学科之一</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">它与其他人文学科一样</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">承载着丰富的人文知识。人文学科是研究人本身或与个体的精神直接相关的文化世界的学问</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">是以人的情感、心态、理想、信仰、文化、价值等作为研究对象的学科</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">它大致可以包括语言学、历史学、文学、哲学、宗教学、艺术等大的学科。人文学科着眼于培养通才</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">或者说使任何专业的人才都有一种广博的眼光和胸襟</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">有专业以外的知识和对文学、艺术、道德的较高鉴别力。人文学科与语言文学密切相关</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">不仅注重智慧和能力的培养</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">更注重紧张和有创造性的探讨过程而非固定的结论</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">使个人的独创性有更广大的空间和更多样的表现形式。人文学科培养的专业人才</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">是人文知识和人文精神的传承者和创造者。人文学科专业人才的培养</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">是社会传续人文知识的有力保证</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">是提高人口素质的重要手段</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">是反思和把握人类社会发展和人类自身发展方向的必要指南</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">还是中华民族伟大复兴事业的文化基础。人文学科专业人才培养是具有战略意义的宏观课题。根据学科分类</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">外国语言文学为一级学科</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">所有按语种分类的学科</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">如英语语言文学、法语语言文学、德语语言文学等</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">都属于外国语言文学学科下面的二级学科。作为人文学科之一</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">英语语言文学专业的学生要学习、研究哪些内容呢</span><span style="font-family: NEU-BZ-S92, serif;">?</span></span></p><p style="text-indent: 28px;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">一、语言学</span></p><p style="text-indent: 28px;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;"><span style="font-family: 方正书宋_GBK;">传统的语言学称为语文学</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">以研究古代文献和书面语为主。现代语言学则以当代语言和口语为主</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">而且研究的范围大大拓宽。语文学是为其他学科服务的。现代语言学是一门独立的学科</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">有其客观的研究对象、有自己的研究方法、有系统的学科理论。顾名思义</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">语言学是研究语言的本质、结构和发展规律的实证科学。</span></span></p><p style="text-indent: 28px;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;"><span style="font-family: 方正书宋_GBK;">广义的语言学包括语文学</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">研究语言在某一时期的情况</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">叫作共时语言学</span><span style="font-family: NEU-BZ-S92, serif;">;</span><span style="font-family: 方正书宋_GBK;">研究语言在不同时期所经历的变化</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">叫作历时语言学</span><span style="font-family: NEU-BZ-S92, serif;">;</span><span style="font-family: 方正书宋_GBK;">对多种语言作语言学概论综合研究</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">试图找出其中的共同规律</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">叫作普通语言学</span><span style="font-family: NEU-BZ-S92, serif;">;</span><span style="font-family: 方正书宋_GBK;">把语言学知识运用于实际工作</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">叫作应用语言学</span><span style="font-family: NEU-BZ-S92, serif;">;</span><span style="font-family: 方正书宋_GBK;">通过语音和词形的比较</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">追溯某些语言的亲属关系</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">叫作历史比较语言学</span><span style="font-family: NEU-BZ-S92, serif;">;</span><span style="font-family: 方正书宋_GBK;">用比较的方法发现人类各种语言的某些共同现象</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">叫作类型语言学</span><span style="font-family: NEU-BZ-S92, serif;">;</span><span style="font-family: 方正书宋_GBK;">为了解决教学或翻译问题而对比两种语言的异同</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">叫作对比语言学。</span></span></p><p style="text-indent: 28px;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;"><span style="font-family: 方正书宋_GBK;">语音、语法、词汇及文字这些学科都聚焦于语言的结构本身</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">是语言学的中心</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">有人叫微观语言学。研究语音的物理属性、人类的发音方法、语音感知的生理过程等的是语音学。研究一种语言有多少个不同的音</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">彼此之间有何区别和关系的是音系学或音位学。研究词的构成方式和屈折方式的是形态学</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">也叫词法</span><span style="font-family: NEU-BZ-S92, serif;">;</span><span style="font-family: 方正书宋_GBK;">研究如何把词组成短语或句子的是造句学</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">也叫句法学。按传统语法</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">形态学和造句学合起来就是语法学。研究词汇项目、词汇意义、词语演变的是词汇学</span><span style="font-family: NEU-BZ-S92, serif;">;</span><span style="font-family: 方正书宋_GBK;">追溯词的来源和历史的是词源学</span><span style="font-family: NEU-BZ-S92, serif;">;</span><span style="font-family: 方正书宋_GBK;">搜集许多词项</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">把它们分类、比较、注释的是词典学。研究词项与概念及指称对象的关系</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">揣摩各种词义的异同、正反、上下、交叉等关系</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">剖析整个句子或其中某些成分的意义</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">这是语义学。研究文字的形状、体系、起源、演变和发展的是文字学。</span></span></p><p style="text-indent: 28px;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;"><span style="font-family: 方正书宋_GBK;">语言是人类特有的沟通方式</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">在生物或心理层面上反映人类高度演化的心智能力</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">在社会文化层面上反映人类文明进步。语言学就是要研究人类最核心本能的语言能力</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">通过对口语、书面语甚至手语进行分析和研究</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">进而了解人类的本质。</span></span></p><p style="text-indent: 28px;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;"><span style="font-family: 方正书宋_GBK;">除了认识人类语言本质外</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">语言学研究还具有多种应用价值。在语言教育方面</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">通过对语言本身的了解</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">编成各种词典、文法书、教科书供人学习语言</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">也有助于改善应对语言学习过程中遇到的困难与错误的能力。在不同语言翻译方面</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">语言学理论对于笔译和口译有更多具体的指导</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">也有助于利用科技来进行机器翻译。现代语言学的主要研究对象就是语言和文字。语言学的工作就是研究语言结构、语音、构词、句法、语意、言谈篇章、语言应用、语用、语言学习及教育、翻译、文字学、声韵学等。</span></span></p><p style="text-indent: 28px;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">二、文学</span></p><p style="text-indent: 28px;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;"><span style="font-family: 方正书宋_GBK;">从文学的基本特性来说</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">文学是一种特殊的意识形态</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">是社会生活的审美反应</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">是语言的艺术。它与其他社会意识形态相比</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">虽然都是社会生活的反映</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">有其共同性</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">但也有其特殊性。就其特殊性而言</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">文学有着强烈的审美性</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">这是作为语言艺术的文学与哲学等的根本区别。比如说</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">哲学可以概括世界的一些定理规律等</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">但它却不能给人产生美感</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">即使是喜悦</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">那也只能是获得真理的一种满足感</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">而好的文学作品是能给读者留下强烈的美感的。例如</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">英国浪漫主义诗人雪莱的《西风颂》中的头三行</span>“<span style="font-family: 方正书宋_GBK;">啊</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">狂野的西风</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">你是秋天生命的呼吸</span><span style="font-family: NEU-BZ-S92, serif;">/</span><span style="font-family: 方正书宋_GBK;">你无形的存在驱散了枯叶</span><span style="font-family: NEU-BZ-S92, serif;">/</span><span style="font-family: 方正书宋_GBK;">就像巫师赶走了鬼魂</span>”<span style="font-family: 方正书宋_GBK;">和最后三行</span>“<span style="font-family: 方正书宋_GBK;">啊</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">西风</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">愿通过我的嘴唇向沉睡的大地</span><span style="font-family: NEU-BZ-S92, serif;">/</span><span style="font-family: 方正书宋_GBK;">吹响预言的号角</span><span style="font-family: NEU-BZ-S92, serif;">/</span><span style="font-family: 方正书宋_GBK;">如果冬天来了</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">春天还会远吗</span><span style="font-family: NEU-BZ-S92, serif;">?</span>”<span style="font-family: 方正书宋_GBK;">雪莱用西风象征摧枯拉朽的革命力量。这首诗很特别</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">具有哲学意境</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">可是当你吟诵它时</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">却有一种美的享受。这是因为作者既勾勒了西风扫落叶的壮观情境</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">又融进了感受并揭示了哲理。这说明</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">文学作为话语具有</span>“<span style="font-family: 方正书宋_GBK;">蕴藉</span>”<span style="font-family: 方正书宋_GBK;">的特点。话语蕴藉是指文学活动蕴蓄深厚而又余味深长的语言与意义状况</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">表明文学作为社会话语实践</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">蕴含着丰富的意义生成的可能性</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">是一门博大精深的语言艺术。从欣赏的角度看</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">文学实质上是一种美</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">是艺术美、社会美、自然美能动的艺术反映。文学具有情感性</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">文学创作离不开情感活动</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">情以物迁</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">辞以情发。</span></span></p><p style="text-indent: 28px;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;"><span style="font-family: 方正书宋_GBK;">文学作品与其他事物一样</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">有其内容和形式。事物的内容和形式的划分是绝对与相对的统一。就以艺术形象为例</span><span style="font-family: NEU-BZ-S92, serif;">:</span><span style="font-family: 方正书宋_GBK;">在意识形态系统中</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">它是形式</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">正是以形象这一特殊形式反映社会生活</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">艺术才与哲学、法学、科学等划清了界线。但是</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">在艺术本身这个系统中</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">形象却是内容</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">而文学、音乐、舞蹈、绘画、雕塑、戏剧、电影等</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">则是它不同的表现形式。也就是说</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">在具体的文学作品中</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">形象既是形式又是内容</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">是内容与形式的有机统一。但形式与内容的发展并不是同步的</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">与形式相比</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">内容的发展与变化要迅速得多。这是因为文学描写的对象是永远常新的</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">作家对于生活的感受也是随时随地变化着的。文学作品的内容要素分为题材与主题、人物与环境、故事与情节。文学作品的形式要素可分为语言、结构、题材、表现手法。体裁的分类可分为诗歌、散文、小说、戏剧文学、影视文学。文学体裁的分类可以是多样的</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">这样的分类有其重要的意义</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">可以方便我们的文学创作和欣赏、评论和教学。了解和掌握其类别</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">可以增强文学作品教育和陶冶人的社会作用。</span></span></p><p style="text-indent: 28px;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;"><span style="font-family: 方正书宋_GBK;">文学创作是一种特殊的精神劳作</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">文学作品是作家创造性的精神产品。创作的基本条件是要具备丰富的生活经验、深刻的思想观点和熟练的艺术技巧</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">在此过程中</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">作家要把对社会生活现象的知觉、感悟、理解、体验、思想等审美经验传递给读者</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">所以文学创作需要主客体相统一。要理解文学的本质规律和特点</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">必须科学地理解文学创作的主客体及相关联系。形象思维是创作的主要思维方式</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">与抽象思维相比</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">形象思维具体于物质</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">想象是其基本的因素</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">想象不是生活的奴隶</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">它有判断、推理和洞见的作用。而抽象思维也可以理解为逻辑思维</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">起到的是辅助作用。生活活动导致人与对象之间的诗意情感关系</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">导致人的自觉能动的文学创作</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">使文学成为人的本质力量的确证。而文学活动由世界、作者、作品和读者构成。文学欣赏活动比创作要广得多</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">文学作品中的形象愈广阔</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">读者的欣赏再创造就愈丰富。文学欣赏是一个重要的过程</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">其实质是将世界、作者、作品和读者联系在一起。</span></span></p><p style="text-indent: 28px;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;"><span style="font-family: 方正书宋_GBK;">英语专业文学课讨论研究的对象是英国文学和美国文学。对英国文学的研究涉及以英国史诗《贝奥武甫》为代表的古代文学</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">以杰弗里</span>·<span style="font-family: 方正书宋_GBK;">乔叟为代表的中世纪文学</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">以威廉</span>·<span style="font-family: 方正书宋_GBK;">莎士比亚为代表的文艺复兴时期文学</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">以约翰</span>·<span style="font-family: 方正书宋_GBK;">弥尔顿和约翰</span>·<span style="font-family: 方正书宋_GBK;">班杨为代表的十七世纪资产阶级革命与王政复辟时期文学</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">以乔纳森</span>·<span style="font-family: 方正书宋_GBK;">斯威夫特、亨利</span>·<span style="font-family: 方正书宋_GBK;">菲尔丁、奥利弗</span>·<span style="font-family: 方正书宋_GBK;">戈尔德史密斯、威廉</span>·<span style="font-family: 方正书宋_GBK;">布雷克为代表的十八世纪启蒙运动时期文学</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">以威廉</span>·<span style="font-family: 方正书宋_GBK;">华兹华斯、乔治</span>·<span style="font-family: 方正书宋_GBK;">戈登</span>·<span style="font-family: 方正书宋_GBK;">拜伦、珀西</span>·<span style="font-family: 方正书宋_GBK;">贝什</span>·<span style="font-family: 方正书宋_GBK;">雪莱、约翰</span>·<span style="font-family: 方正书宋_GBK;">济慈、简</span>·<span style="font-family: 方正书宋_GBK;">奥斯丁等为代表的十九世纪浪漫主义文学</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">以查尔斯</span>·<span style="font-family: 方正书宋_GBK;">狄更斯、乔治</span>·<span style="font-family: 方正书宋_GBK;">艾略特、博朗蒂姐妹等为代表的批判现实主义文学</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">以</span><span style="font-family: NEU-BZ-S92, serif;">D.H.</span><span style="font-family: 方正书宋_GBK;">劳伦斯、弗吉尼亚</span>·<span style="font-family: 方正书宋_GBK;">伍尔夫、詹姆斯</span>·<span style="font-family: 方正书宋_GBK;">乔伊斯等为代表的二十世纪现代主义文学</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">以约翰</span>·<span style="font-family: 方正书宋_GBK;">福尔斯、大卫</span>·<span style="font-family: 方正书宋_GBK;">洛奇等为代表的后现代主义文学</span><span style="font-family: NEU-BZ-S92, serif;">;</span><span style="font-family: 方正书宋_GBK;">而对美国文学的研究则主要涉及以埃德加艾伦</span>·<span style="font-family: 方正书宋_GBK;">坡、拉尔夫</span>·<span style="font-family: 方正书宋_GBK;">沃尔多</span>·<span style="font-family: 方正书宋_GBK;">爱默生、亨利</span>·<span style="font-family: 方正书宋_GBK;">大卫</span>·<span style="font-family: 方正书宋_GBK;">梭罗、纳撒尼尔</span>·<span style="font-family: 方正书宋_GBK;">霍桑、赫尔曼</span>·<span style="font-family: 方正书宋_GBK;">麦尔维尔等为代表的十九世纪浪漫主义文学</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">以沃特</span>·<span style="font-family: 方正书宋_GBK;">惠特曼、艾米丽</span>·<span style="font-family: 方正书宋_GBK;">迪金森、马克</span>·<span style="font-family: 方正书宋_GBK;">吐温、亨利</span>·<span style="font-family: 方正书宋_GBK;">詹姆斯、杰克</span>·<span style="font-family: 方正书宋_GBK;">伦敦、西奥多</span>·<span style="font-family: 方正书宋_GBK;">德莱塞等为代表的现实主义与自然主义文学</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">以埃兹拉</span>·<span style="font-family: 方正书宋_GBK;">庞德、华莱士</span>·<span style="font-family: 方正书宋_GBK;">史蒂文斯、</span><span style="font-family: NEU-BZ-S92, serif;">T.S.</span><span style="font-family: 方正书宋_GBK;">艾略特、</span><span style="font-family: NEU-BZ-S92, serif;">F.</span><span style="font-family: 方正书宋_GBK;">司各特</span>·<span style="font-family: 方正书宋_GBK;">菲茨杰拉德、厄纳斯特</span>·<span style="font-family: 方正书宋_GBK;">海明威、威廉</span>·<span style="font-family: 方正书宋_GBK;">福克纳等为代表的二十世纪现代主义文学</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">以罗伯特</span>·<span style="font-family: 方正书宋_GBK;">洛厄尔、查尔斯</span>·<span style="font-family: 方正书宋_GBK;">奥尔森、约瑟夫</span>·<span style="font-family: 方正书宋_GBK;">海勒、唐纳德</span>·<span style="font-family: 方正书宋_GBK;">巴塞尔姆、托马斯</span>·<span style="font-family: 方正书宋_GBK;">品钦、约翰</span>·<span style="font-family: 方正书宋_GBK;">巴思、约翰</span>·<span style="font-family: 方正书宋_GBK;">霍克斯、库尔特</span>·<span style="font-family: 方正书宋_GBK;">冯内古特、</span><span style="font-family: NEU-BZ-S92, serif;">E.L.</span><span style="font-family: 方正书宋_GBK;">多克特罗、弗拉基米尔</span>·<span style="font-family: 方正书宋_GBK;">纳博科夫、罗伯特</span>·<span style="font-family: 方正书宋_GBK;">库弗、托尼</span>·<span style="font-family: 方正书宋_GBK;">莫里森等为代表的后现代主义文学。在文学课中</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">学生将学会阅读、欣赏、评论文学作品。研究的方法是站在时代的高度</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">将文学批评理论研讨与文学文本分析结合起来</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">提出并论证具有时代特色的创新性见解。</span></span></p><p style="text-indent: 28px;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">三、文化</span></p><p style="text-indent: 28px;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;"><span style="font-family: 方正书宋_GBK;">文化是智慧群族的一切群族社会现象与群族内在精神的既有、传承、创造、发展的总和。它涵括智慧群族从过去到未来的历史</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">是群族基于自然的所有活动内容</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">是群族所有物质表象与精神内在的整体。</span></span></p><p style="text-indent: 28px;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;"><span style="font-family: 方正书宋_GBK;">具体的人类文化内容包括群族的历史、地理、风土人情、传统习俗、工具、附属物、生活方式、宗教信仰、文学艺术、规范、律法、制度、思维方式、价值观念、审美情趣、精神图腾等</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">分为物质文化和哲学思想</span><span style="font-family: NEU-BZ-S92, serif;">(</span><span style="font-family: 方正书宋_GBK;">制度文化和心理文化</span><span style="font-family: NEU-BZ-S92, serif;">)</span><span style="font-family: 方正书宋_GBK;">。文化大致可以表述为</span><span style="font-family: NEU-BZ-S92, serif;">:(1)</span><span style="font-family: 方正书宋_GBK;">广泛的知识并能将之活学活用</span><span style="font-family: NEU-BZ-S92, serif;">;(2)</span><span style="font-family: 方正书宋_GBK;">内心的精神和修养。传统的观念认为</span><span style="font-family: NEU-BZ-S92, serif;">:</span><span style="font-family: 方正书宋_GBK;">文化是人类在社会历史发展过程中所创造的物质财富和精神财富的总和。它包括物质文化、制度文化和心理文化三个方面。物质文化是指人类创造的物质文明</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">包括交通工具、服饰、日常用品等</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">它是一种可见的显性文化</span><span style="font-family: NEU-BZ-S92, serif;">;</span><span style="font-family: 方正书宋_GBK;">制度文化和心理文化分别指生活制度、家庭制度、社会制度以及思维方式、宗教信仰、审美情趣</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">它们属于不可见的隐性文化</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">包括文学、哲学、政治等方面的内容。人类所创造的精神财富包括宗教信仰、风俗习惯、道德情操、学术思想、文学艺术、科学技术、各种制度等。</span></span></p><p style="text-indent: 28px;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;"><span style="font-family: 方正书宋_GBK;">广义的文化既着眼于人类与生命系统</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">又着眼于人类社会与自然界的本质区别</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">其涵盖面非常广泛</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">故又被称为大文化。随着人类科学技术的发展</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">人类认识世界的方法和观点也在发生着根本改变。对文化的界定也越来越趋于开放和合理。狭义的文化既指社会的意识形态以及与之相适应的制度和组织机构</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">也指人们普遍的社会习惯</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">如衣食住行、风俗习惯、生活方式、行为规范等。</span></span></p><p style="text-indent: 28px;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;"><span style="font-family: 方正书宋_GBK;">英语专业的文化研究对象主要是讲英语的国家的文化</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">如英国、美国、加拿大、澳大利亚、新西兰、爱尔兰等国家的文化。</span></span></p><p style="text-indent: 28px;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">四、翻译</span></p><p style="text-indent: 28px;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;"><span style="font-family: 方正书宋_GBK;">翻译是在准确、通顺的基础上</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">把一种语言信息转变成另一种语言信息的行为。翻译是将一种相对陌生的表达方式</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">转换成相对熟悉的表达方式的过程。其内容有语言、文字、图形、符号的翻译。其中</span><span style="font-family: NEU-BZ-S92, serif;">,</span>“<span style="font-family: 方正书宋_GBK;">翻</span>”<span style="font-family: 方正书宋_GBK;">是指对交谈的语言转换</span><span style="font-family: NEU-BZ-S92, serif;">,</span>“<span style="font-family: 方正书宋_GBK;">译</span>”<span style="font-family: 方正书宋_GBK;">是指对单向陈述的语言转换。</span>“<span style="font-family: 方正书宋_GBK;">翻</span>”<span style="font-family: 方正书宋_GBK;">是指对交谈中的两种语言进行即时的、一句对一句的转换</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">即先把一句甲语转换为一句乙语</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">然后再把一句乙语转换为甲语。这是一种轮流的、交替的语言或信息转换。</span>“<span style="font-family: 方正书宋_GBK;">译</span>”<span style="font-family: 方正书宋_GBK;">是指单向陈述</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">即说者只说不问</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">听者只听不答</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">中间为双语人士</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">只为说者作语言转换。翻译主要包括口译</span><span style="font-family: NEU-BZ-S92, serif;">(interpretation)</span><span style="font-family: 方正书宋_GBK;">或进行口译的人</span><span style="font-family: NEU-BZ-S92, serif;">(interpreter)(</span><span style="font-family: 方正书宋_GBK;">口译又称口语翻译</span><span style="font-family: NEU-BZ-S92, serif;">)</span><span style="font-family: 方正书宋_GBK;">和笔译</span><span style="font-family: NEU-BZ-S92, serif;">(translation)</span><span style="font-family: 方正书宋_GBK;">或进行笔译的人</span><span style="font-family: NEU-BZ-S92, serif;">(translator)</span><span style="font-family: 方正书宋_GBK;">。</span></span></p><p style="text-indent: 28px;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;"><span style="font-family: 方正书宋_GBK;">翻译过程从逻辑上可以分为两个阶段</span><span style="font-family: NEU-BZ-S92, serif;">:</span><span style="font-family: 方正书宋_GBK;">首先</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">你必须从源语言中确定译码含义</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">然后把信息重新编码成目标语言。这两步都要求译者具有语言语义学的知识以及了解语言使用者的文化背景。除了要保留原有的意思外</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">对于目标语言的使用者来说</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">好的翻译应该要能像是以母语使用者说或写得那般流畅</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">并要符合译入语的习惯</span><span style="font-family: NEU-BZ-S92, serif;">(</span><span style="font-family: 方正书宋_GBK;">除非是在特殊情况下</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">演说者并不打算像一个本语言使用者那样说话</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">例如在戏剧中</span><span style="font-family: NEU-BZ-S92, serif;">)</span><span style="font-family: 方正书宋_GBK;">。</span></span></p><p style="text-indent: 28px;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;"><span style="font-family: 方正书宋_GBK;">翻译有口译、笔译、机器翻译、同声传译、影视译配、网站汉化、图书翻译等形式。随着</span><span style="font-family: NEU-BZ-S92, serif;">IT</span><span style="font-family: 方正书宋_GBK;">技术、通信技术的发展和成熟</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">最后又诞生了真人服务的</span>“<span style="font-family: 方正书宋_GBK;">电话翻译</span>”<span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">所以形式越来越多</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">服务也越来越便捷。从翻译的物质形态来说</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">它表现为各类符号系统的选择组合</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">具体可分为四类</span><span style="font-family: NEU-BZ-S92, serif;">:(1)</span><span style="font-family: 方正书宋_GBK;">有声语言符号</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">即自然语言的口头语言</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">其表现形式为电话通信、内外谈判和接待外宾等</span><span style="font-family: NEU-BZ-S92, serif;">;(2)</span><span style="font-family: 方正书宋_GBK;">无声语言符号</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">包括文字符号和图像符号</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">其表现形式为谈判决议、社交书信、电文、通信及各种文学作品等印刷品</span><span style="font-family: NEU-BZ-S92, serif;">;(3)</span><span style="font-family: 方正书宋_GBK;">有声非语言符号</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">即传播过程中所谓的有声而不分音节的</span>“<span style="font-family: 方正书宋_GBK;">类语言</span>”<span style="font-family: 方正书宋_GBK;">符号</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">其常见形式为</span><span style="font-family: NEU-BZ-S92, serif;">:</span><span style="font-family: 方正书宋_GBK;">说话时的特殊重读、语调变化、笑声和掌声</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">这类符号无具体的音节可分</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">语义也不是固定不变的</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">其信息是在一定的语言环境中得以传播的</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">比如笑声可能负载着正信息</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">也可能负载着负信息</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">又如掌声可以传播欢迎、赞成、高兴等信息</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">也可以表达一种礼貌的否定信息</span><span style="font-family: NEU-BZ-S92, serif;">;(4)</span><span style="font-family: 方正书宋_GBK;">无声非语言符号</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">即各种人体语言符号</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">表现为人的动作、表情和服饰等无声伴随语言符号</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">这类符号具有鲜明的民族文化性</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">比如人的有些动作</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">在不同的民族文化中所表示的语义信息完全不同</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">不仅如此</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">它还能强化有声语言的传播效果</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">比如在交谈时</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">如果伴有适当的人体语言</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">会明显增强口头语言的表达效果。这四大类符号既可以表达翻译的原码</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">也可以表达翻译出的译码</span><span style="font-family: NEU-BZ-S92, serif;">;</span><span style="font-family: 方正书宋_GBK;">既可以单独作为原码或译码的物质载体</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">也可以由两种、三种、四种共同组成译码或原码的载体。</span></span></p><p style="text-indent: 28px;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;"><span style="font-family: 方正书宋_GBK;">翻译程序包括理解、转换、表达三个环节</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">理解是分析原码</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">准确地掌握原码所表达的信息</span><span style="font-family: NEU-BZ-S92, serif;">;</span><span style="font-family: 方正书宋_GBK;">转换是运用多种方法</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">如口译或笔译的形式</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">各类符号系统的选择、组合</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">引申、浓缩等翻译技巧的运用等</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">将原码所表达的信息转换成译码中的等值信息</span><span style="font-family: NEU-BZ-S92, serif;">;</span><span style="font-family: 方正书宋_GBK;">表达是用一种新的语言系统进行准确表达。</span></span></p><p style="text-indent: 28px;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;"><span style="font-family: 方正书宋_GBK;">诸多翻译形式可以归纳为一点</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">翻译实际上是一种特殊形式的信息传播。整个翻译活动实际上表现为一种社会信息的传递</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">表现为传播者、传播渠道、受者之间的一系列互动关系。与普通传播过程不同的是</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">翻译是在两种文化之间进行的</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">操纵者所选择的符号不再是原来的符号系统</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">而是产生了文化换码</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">但其原理却是与普通传播相同的。</span></span></p><p style="text-indent: 28px;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;"><span style="font-family: 方正书宋_GBK;">翻译是语际交流过程中沟通不同语言的桥梁。一般来说</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">翻译的标准主要有两条</span><span style="font-family: NEU-BZ-S92, serif;">:</span><span style="font-family: 方正书宋_GBK;">忠实和通顺。忠实是指忠实于原文所要传递的信息</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">也就是说</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">把原文的信息完整而准确地表达出来</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">使译文读者得到的信息与原文读者得到的信息大致相同。通顺是指译文规范、明白易懂</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">没有文理不通、结构混乱、逻辑不清的现象。</span></span></p><p style="text-indent: 28px;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">英语专业的翻译主要研究的是英译汉和汉译英的理论与实践。</span></p><p style="text-indent: 28px;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;"><span style="font-family: 方正书宋_GBK;">综上所述</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">作为人文学科之一的英语专业是关于语言、文学、文化、翻译理论研究与实践的重要学科。像其他人文学科一样</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">它也承担着为人类文明进步、为实现中国梦培养高素质、复合型、创新型拔尖人才的重要任务。因此</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">我们可以得出结论</span><span style="font-family: NEU-BZ-S92, serif;">:</span><span style="font-family: 方正书宋_GBK;">英语语言文学专业是与哲学、历史学、语言学、文学、宗教学、艺术等学科同等重要的人文学科</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">这个学科所培养的人才也是人类社会非常需要的建设人才。</span></span></p><p><br style="white-space: normal;"/></p><p><span style="font-family: FZLTKHK--GBK1-0; font-size: 9pt; color: rgb(35, 31, 32); font-variant-numeric: normal; font-variant-east-asian: normal;"><span style="font-size: 9pt; font-variant-numeric: normal; font-variant-east-asian: normal;"><span style="font-size: 9pt; font-variant-numeric: normal; font-variant-east-asian: normal;"><span style="font-size: 9pt; font-variant-numeric: normal; font-variant-east-asian: normal;"><span style="font-size: 9pt; font-variant-numeric: normal; font-variant-east-asian: normal;"><span style="font-size: 9pt; font-variant-numeric: normal; font-variant-east-asian: normal;"><span style="font-size: 9pt; font-variant-numeric: normal; font-variant-east-asian: normal;"></span></span></span></span></span></span><br style="font-variant-numeric: normal; font-variant-east-asian: normal; line-height: normal; text-align: -webkit-auto; white-space: normal; text-size-adjust: auto;"/></span><br/></p>
+                       
+                        <div class="pull-right mt20">
+                            <!-- JiaThis Button BEGIN -->
+                            <div class="jiathis_style">
+                                <span class="jiathis_txt">分享到：</span>
+                                <a class="jiathis_button_icons_1"></a>
+                                <a class="jiathis_button_icons_2"></a>
+                                <a class="jiathis_button_icons_3"></a>
+                                <a class="jiathis_button_icons_4"></a>
+                                <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
+                                <a class="jiathis_counter_style"></a>
+                            </div>
+                            <script type="text/javascript" src="http://v3.jiathis.com/code/jia.js" charset="utf-8"></script>
+                            <!-- JiaThis Button END -->
+                        </div>
+                    </div>
+                </div>
+                <!--  
+	            <div class="col-md-3 col-sm-4">
+                    <ul class="grey-ul">
+                      
+                    </ul>
+	
+	             </div>
+	           -->
+            </div>
+        </div>
+    </div>
+      
+    <div class="y_foot hidden-xs">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="t_col3">
+                        <h5>联系我们</h5>
+                        <div class="t_icon1">
+                            <i></i>
+                            <span>400-0123-517</span><br/>
+                        </div>
+                        <div class="t_icon2">
+                            <i></i>
+                            <span>zsb@ruc.edu.cn</span></br>
+                        </div>
+                        <div class="t_icon4">
+                            <i></i>
+                            <span>010-62511156(传真)</span></br>
+                        </div>
+                        <div class="t_icon3">
+                            <i></i>
+                            <span>北京市海淀区中关村大街59号<br/>知行F楼(北区食堂)六层</span></br>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="t_col3">
+                        <h5>关注我们</h5>
+                        <img src="/static/default/images/wechat.png" alt="">
+                        <p>扫描二维码关注我们</p>
+                        <p>微信公众号"人大阳光招生"</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="t_col3">
+                        <h5>学术公告</h5>
+                        
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="t_col3">
+                         <h5>快速链接
+                        <a target="_blank" href="http://211.71.30.15/index/index_main.action" style="margin-left: 40px;color: #999;font-weight: normal;font-size: 16px;">返回旧网站</a>
+                               <a target="_blank" href="http://211.71.30.15/index/index_main.action" >
+                                    <span class="icon-wrap">
+                                        <span class="icon icon-arrow_carrot-right_alt2"  style="color: #999"></span>
+                                    </span>
+                                </a>
+                        </h5>
+                        
+                                 
+                        <a href="/cms/item/1031.html" class="t_b" target = _blank>人大主页</a>
+                       
+                                 
+                        <a href="/cms/item/1032.html" class="t_b" target = _blank>人大新闻网</a>
+                       
+                                 
+                        <a href="/cms/item/1038.html" class="t_b" target = _blank>留学生招生</a>
+                       
+                                 
+                        <a href="/cms/item/1037.html" class="t_b" target = _blank>研究生招生</a>
+                       
+                                 
+                        <a href="/cms/item/1036.html" class="t_b" target = _blank>考生黄页</a>
+                       
+                                 
+                        <a href="/cms/item/1035.html" class="t_b" target = _blank>校园地图</a>
+                       
+                                 
+                        <a href="/cms/item/1034.html" class="t_b" target = _blank>校友总会</a>
+                       
+                                 
+                        <a href="/cms/item/1033.html" class="t_b" target = _blank>教育基金会</a>
+                       
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="y_bottom">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="t_info clearfix">
+                        <p>版权所有 Copyright© 中国人民大学本科生招生办公室   京ICP备05066828号-1</p>
+                        <div class="t_flogo">
+                            <a href="http://www.ruc.edu.cn/"><img src="/static/default/images/t_logo.png" alt=""></a>
+                            <a href="#" class="hidden-xs t_back">回顶部</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

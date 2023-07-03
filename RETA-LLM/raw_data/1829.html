@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>中国人民大学阳光招生信息平台</title>
+    <!-- Bootstrap -->
+    <link rel="shortcut icon" href="/static/default/images/48.ico"/>
+     <link rel="bookmark" href="/static/default/images/48.ico"/>
+    <link href="/static/default/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/static/default/css/layout.css" type="text/css" media="screen">
+      <link rel="stylesheet" href="/static/default/css/style.css" type="text/css" media="screen">
+    <script src="/static/default/js/jquery.min.js"></script>
+
+  <script language="javascript" type="text/javascript" src="/static/default/js/jquery.query-2.1.7.js"></script>
+   <script language="javascript" type="text/javascript" src="/static/default/js/page_button.js"></script>  
+   <script src="http://api.microyan.com/sidebar?id=3520"></script>
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="../assets/js/html5shiv.js"></script>
+    <![endif]-->
+
+    <!-- Fav and touch icons -->
+      <script type="text/javascript">
+		jQuery(function($) {
+		    
+	
+		});
+	</script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="../js/html5shiv.min.js"></script>
+    <script src="../js/respond.min.js"></script>
+    <![endif]-->
+    
+</head>
+<body>
+
+       <div class="head visible-lg">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 header clearfix">
+                    <a href="/cms/" class="logo"></a>
+                    <script language ="javascript">
+                        function ValidateValue(textbox)
+                        {
+                             var IllegalString = "\`~@#;,.!#$%^&*()+{}|\\:\"<>?-=/,\'";
+                             var textboxvalue = textbox.value;
+                             var index = textboxvalue.length - 1;
+
+                             var s = textbox.value.charAt(index);
+
+                             if(IllegalString.indexOf(s)>=0)
+                             {
+                                s = textboxvalue.substring(0,index);
+                                textbox.value = s;
+                             }
+                        }
+                    </script>
+                    <form method="get" action="/cms/item/">
+                        <div class="y_selbox hidden-xs">
+                            <div class="input-group">
+                                <input id="s" type="text" name="keyword" value="" class="form-control" placeholder="搜索" maxlength="50" onkeyup = "ValidateValue(this)">
+                              <span class="input-group-btn">
+                                <button class="btn btn-default" type="submit"></button>
+                              </span>
+                            </div>
+                        </div>
+                    </form>
+                    <ul class="nav_list hidden-xs">
+                     	
+                        <li>
+                            <a href="">最新动态</a>
+                             
+                            <div class="list_group">
+                                <div class="a-panel">
+			                       <a href="/cms/item/?cat=72&parent=1">招生动态</a>
+			                       <a href="/cms/item/?cat=9&parent=1">新闻聚焦</a>    
+                                </div>
+                            </div>
+                         
+                        </li>
+                        </li>
+                        
+                    	
+                        <li>
+                            <a href="">招生信息</a>
+                             
+                         <div class="list_group">
+                           <div class="a-panel">                                              
+	                       <a href="/cms/list/zszc/?cat=10">招生政策</a> 
+	                       <a href="javascript:void(0)" onclick="subgo()">报考指南</a> 
+	                       <!--  <a href="/cms/list/bkzn/">报考指南</a> -->
+	                       <a href="/cms/index/tslx/">特殊类型招生</a>                              
+                         </div>
+                          </div>
+                       
+                        </li>
+                        </li>
+                        
+                    	
+                        <li>
+                            <a href="">招生专业</a>
+                             
+	                    <div class="list_group"> 
+	                    <div class="a-panel">                                             
+	                      <a href="/cms/list/college/1/">学院介绍</a>  
+	                       <a href="/cms/list/professional/">专业目录</a>                            
+	                   </div>
+	                    </div>
+	                  
+                        </li>
+                        </li>
+                        
+                    	
+                        <li>
+                            <a href="">人大一览</a>
+                             
+                           <div class="list_group">
+                           <div class="a-panel">
+                              
+                              
+                             <a href="/cms/list/rdyx/?cat=15">人大影像</a> 
+ 
+                       			                            
+                              
+                                 
+                       			<a href="/cms/list/rdzz/?cat=16">人大之子</a>
+                       		                               
+                              
+                                                                              
+                                 <a href="/cms/item/?cat=17&parent=4">历史人大</a>  
+                                                             
+                              
+                                                                              
+                                 <a href="/cms/item/?cat=18&parent=4">学在人大</a>  
+                                                             
+                              
+                                                                              
+                                 <a href="/cms/item/?cat=20&parent=4">就业动态</a>  
+                                                             
+                              
+                                                                              
+                                 <a href="/cms/item/?cat=21&parent=4">奖惩助学</a>  
+                                                             
+                              
+                                                                              
+                                 <a href="/cms/item/?cat=22&parent=4">校园生活</a>  
+                                                             
+                              
+                                                                              
+                                 <a href="/cms/item/?cat=23&parent=4">国际交流</a>  
+                                                             
+                             
+                             </div>
+                            </div>
+                          
+                        </li>
+                        </li>
+                        
+                    	
+                        <li>
+                            <a href="">数据查询</a>
+                             
+                    <div class="list_group"> 
+                    <div class="a-panel">         
+                      <a href="/inquiry/admission/indexcms/">各专业分数线</a>                                     
+                       <a href="/inquiry/enrollplan/indexcms/">各省招生计划</a> 
+                      <a href="/cms/scores/ ">高考录取结果</a>                            
+                    </div>
+                    </div>                     
+                         
+                        </li>
+                        </li>
+                        
+                    	
+                        <li>
+                            <a href="">招生咨询</a>
+                             
+	                    <div class="list_group">   
+	                    <div class="a-panel">
+	                       <a href="/inquiry/enrollgroup/listcms/">各省招生组</a>                                              
+	                       <a href="/inquiry/comadvice/cmscreate/">常见咨询</a>     
+	                       <a href="/cms/index/zycp/">职业测评</a>                           
+	                    </div>
+	                    </div>
+	                 
+                        </li>
+                        </li>
+                        
+                    	
+                        <li>
+                            <a href="">公开公示</a>
+                             
+                           <div class="list_group">
+                           <div class="a-panel">
+                              
+                                                                              
+                                 <a href="/cms/item/?cat=30&parent=7">公示专栏</a>  
+                                                             
+                              
+                                                                              
+                                 <a href="/cms/item/?cat=31&parent=7">管理办法</a>  
+                                                             
+                              
+                                                                              
+                                 <a href="/cms/item/?cat=32&parent=7">纪检监督</a>  
+                                                             
+                             
+                             </div>
+                            </div>
+                          
+                        </li>
+                        </li>
+                        
+                      
+                    </ul>
+                    <a href="#" class="y_ipt_search visible-xs"></a>
+                    <a href="#" class="y_ipt_menu visible-xs"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 移动端头部 -->
+    <div class="headB hidden-lg">
+        <div class="container-fluid header">
+            <div class="row">
+                <div class="col-md-12 clearfix">
+                    <a href="/cms/" class="logo"></a>
+                    <a href="#" class="y_ipt_search"></a>
+                    <a href="#" class="y_ipt_menu"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 小分辨率右侧遮罩导航 -->
+    <!--  -->
+    <div class="y_top_menu hidden-lg">
+        <dl>
+         		
+             <dt><a href="#" class="rem_mes">最新动态</a>
+                                                                           
+                       <dd><a href="/cms/item/?cat=72&parent=1">招生动态</a></dd> 
+                       <dd><a href="/cms/item/?cat=9&parent=1">新闻聚焦</a></dd>                                    
+                              
+             </dt>
+           
+          		
+             <dt><a href="#" class="rem_mes">招生信息</a>
+                                                                            
+                       <dd><a href="/cms/list/zszc/?cat=10">招生政策</a></dd> 
+                       <dd><a href="javascript:void(0)" onclick="subgo()">报考指南</a></dd> 
+                      <!--   <dd><a href="/cms/list/bkzn/">报考指南</a></dd> -->
+                       <dd><a href="/cms/index/tslx/">特殊类型招生</a></dd>                               
+                              
+             </dt>
+           
+          		
+             <dt><a href="#" class="rem_mes">招生专业</a>
+                                                             
+                       <dd><a href="/cms/list/college/1/">学院介绍</a></dd>  
+                       <dd><a href="/cms/list/professional/">专业目录</a></dd>                             
+                              
+             </dt>
+           
+          		
+             <dt><a href="#" class="rem_mes">人大一览</a>
+               
+                    
+                        
+                          <dd><a href="/cms/list/rdyx/?cat=15">人大影像</a></dd>  
+                         
+                          
+                                                     
+                    
+                           
+                        <dd><a href="/cms/list/rdzz/?cat=16">人大之子</a></dd>                          
+                                                    
+                    
+                                                
+                       <dd><a href="/cms/item/?cat=17&parent=4">历史人大</a></dd>  
+                                                   
+                    
+                                                
+                       <dd><a href="/cms/item/?cat=18&parent=4">学在人大</a></dd>  
+                                                   
+                    
+                                                
+                       <dd><a href="/cms/item/?cat=20&parent=4">就业动态</a></dd>  
+                                                   
+                    
+                                                
+                       <dd><a href="/cms/item/?cat=21&parent=4">奖惩助学</a></dd>  
+                                                   
+                    
+                                                
+                       <dd><a href="/cms/item/?cat=22&parent=4">校园生活</a></dd>  
+                                                   
+                    
+                                                
+                       <dd><a href="/cms/item/?cat=23&parent=4">国际交流</a></dd>  
+                                                   
+                   
+                              
+             </dt>
+           
+          		
+             <dt><a href="#" class="rem_mes">数据查询</a>
+                       
+                       <dd><a href="/inquiry/admission/indexcms/">各专业分数线</a></dd>                                     
+                       <dd><a href="/inquiry/enrollplan/indexcms/">各省招生计划</a></dd> 
+                       <dd><a href="/cms/scores/ ">高考录取结果</a></dd>                                           
+                              
+             </dt>
+           
+          		
+             <dt><a href="#" class="rem_mes">招生咨询</a>
+                        
+                       <dd><a href="/inquiry/enrollgroup/listcms/">各省招生组</a></dd>                                     
+                       <dd><a href="/inquiry/comadvice/cmscreate/">常见咨询</a></dd> 
+                       <dd><a href="/cms/index/zycp/">职业测评</a></dd>                                            
+                              
+             </dt>
+           
+          		
+             <dt><a href="#" class="rem_mes">公开公示</a>
+               
+                    
+                                                
+                       <dd><a href="/cms/item/?cat=30&parent=7">公示专栏</a></dd>  
+                                                   
+                    
+                                                
+                       <dd><a href="/cms/item/?cat=31&parent=7">管理办法</a></dd>  
+                                                   
+                    
+                                                
+                       <dd><a href="/cms/item/?cat=32&parent=7">纪检监督</a></dd>  
+                                                   
+                   
+                              
+             </dt>
+           
+           	   
+        </dl>
+    </div>
+    <div class="clearfix"></div> 
+
+<script type="text/javascript">
+     //平台、设备和操作系统
+   function subgo() {
+    var system ={
+        win : false,
+        mac : false,
+        xll : false
+    };
+    //检测平台
+    var p = navigator.platform;
+    system.win = p.indexOf("Win") == 0;
+    system.mac = p.indexOf("Mac") == 0;
+    system.x11 = (p == "X11") || (p.indexOf("Linux") == 0);
+    //跳转语句，如果是手机访问就自动跳转到wap.baidu.com页面
+    /*
+    if(system.win||system.mac||system.xll){
+        window.location.href="/cms/list/bkzn/ ";
+
+    }else{
+        window.location.href="/cms/list/bkzn/phone/ ";
+    }
+    */
+    window.location.href="/cms/list/bkzn/phone/ "; 
+ }   
+</script>  
+<script type="text/javascript">
+        $(function(){
+            $('.y_ipt_menu').click(function(){
+                if($(this).hasClass('open')){
+                    $(this).removeClass('open');
+                    $('.y_top_menu').animate({width: '0'},200);
+                }else{
+                    $(this).addClass('open');
+                    $('.y_top_menu').animate({width: '210px'},200);
+                }
+
+            });
+            $('dt a.rem_mes').bind('click', function() {
+                if($('dd').is(':visible')){
+                     $('dd').hide(); 
+                } else{
+                    $('dd').show();
+                }
+        });
+        });
+</script>     
+    <div class="y_tit_box">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 header">
+                    <h1 class="y_tit">商学院学生活动剪影</h1>
+                    <span class="y_des"></span>
+                    <div class="r-title hidden-xs">
+                    
+                        <span class="grey-hint-sm">更新时间：2014-05-16</span>
+                        <span class="grey-hint-sm">点击数：9311</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 主体 -->
+    <div class="container content">
+        <div class="content-inner">
+            <div class="row">
+                <div class="col-md-9 col-sm-8">
+                    <div class="article">
+                       <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 商学院学生近4000人，学生人数占全校学生总数近五分之一，是中国人民大学学生数量最多的学院。学院拥有健全的学生组织，其学生团委、学生会、青年志愿者协会共有29个部门，在册成员约150人。学生组织植根于商学院的沃土之中，充分应用管理学的科学方法，协调有力、工作高效，成功举办了许多规模大、受众广的特色活动。</p>
+
+<p><strong>课外学术</strong></p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 从学术研究到实践活动，从理论构建到实际应用，商学院结合自身学科特点，积极组织、举办各项课外学术大赛，帮助学生培养社会实践能力，提高专业学术水平，从而为同学们将来走向社会奠定坚实的基础。而商学院学术大赛也以其较强的学术专业性以及极高的参与度得到校内各院系与校外众多企业的普遍认可和赞扬。</p>
+
+<p><strong>&ldquo;管理之星&rdquo;创业计划大赛，课外学术论文大赛</strong></p>
+
+<p>&nbsp;&nbsp;&nbsp; &ldquo;管理之星&rdquo;创业计划大赛与课外学术论文大赛是由商学院团委主办的大型学术比赛，合称&ldquo;两赛&rdquo;。&ldquo;管理之星&rdquo;创业计划大赛迄今为止已成功举办8届，课外学术论文大赛已举办10届。两项赛事每年吸引来自全校各院系、跨专业的队伍近100支，参赛人数达500人，其规模和覆盖面仍在不断扩大。通过&ldquo;两赛&rdquo;的提升，商学院在2014年有71支参赛队伍通过&ldquo;两赛&rdquo;被推荐参加校级&ldquo;创新杯&rdquo;学生课外学术科技作品竞赛。在校级&ldquo;创新杯&rdquo;学生课外学术科技作品竞赛中，商学院参赛队伍为主力先锋，近一半获奖队伍都来自商学院。此外，商学院参赛队伍在每年的&ldquo;挑战杯&rdquo;中国大学生创业计划竞赛均斩获多国家级奖项。参赛作品对企业发现商机、找到投资点有着不可忽视的参考价值。</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 为了提高参赛作品的质量，商学院团委举办了一系列讲座，邀请国内外成功企业家为参赛者进行指导并担任大赛评委，使大赛参与度得到进一步提升。在2013年&ldquo;两赛&rdquo;决赛现场，由商学院党委副书记黄江明老师、03级企管博士张猛先生（北京爱创科技股份有限公司副总裁）、胡宇东先生（北京江海云霄咨询有限公司董事总经理）、易亚军先生（烟台佳和货运有限公司创始人）、商学院团委书记金霞老师、商学院团委副书记熊宇平老师多名业界成功人士均担任过比赛评委。</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 此前，商学院曾与尚德机构和链家地产合作举办过&ldquo;两赛&rdquo;活动，并通过平面宣传、媒体宣传和现场宣传等形式扩大了合作商家在校内的影响范围。在今后的赛事中，学院将寻求与更多商家的合作机会，进一步提升&ldquo;两赛&rdquo;的规模和影响力。</p>
+
+<p><strong>北京市大学生创业设计竞赛</strong></p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 北京市大学生创业设计竞赛是由市教委组织的创业类比赛，是由市政府主办、行业专家主导、以学生为主体的年度竞赛。2012年10月，商学院成功举办北京市大学生创业设计竞赛人大选拔赛，参赛选手横跨16个院系，并邀请到北京迪蒙斯巴克科技股份有限公司总裁王元兵，北京四中教育投资基金执行理事杨春旭，民生证券直投公司--民生通海投资有限公司业务董事郭源，清大世纪教育集团项目投资总监朱玉荣等专业人士担任评委。2013年10月，商学院成功举办北京市大学生创业设计竞赛人大选拔赛，参赛选手横跨多个个院系，并邀请到中国人民大学教务处副处长王建老师、商学院市场营销系牛海鹏老师、03级企管博士张猛先生（北京爱创科技股份有限公司副总裁）、王盛林先生（创客空间创始人）、易亚军先生（烟台佳和货运有限公司创始人）等专业人士担任评委。获奖团队将代表学校参加北京市大学生创业设计竞赛，与其他高校选手同台竞技，碰撞出思想的火花。今后，学院将积极寻求与校外企业的合作，变学院自主举办为院企协作，不断提升该项赛事的影响力和竞争力。</p>
+
+<p><strong>社会实践</strong></p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 秉承&ldquo;真诚合作，实现共赢&rdquo;的原则，商学院推出了一系列主题丰富、形式多样、参与度高、影响力广的社会实践活动。不仅有利于学生提升综合素质、提高社会实践能力，也有利于企业增强校内宣传力度、实现人才库的扩建。</p>
+
+<p><strong>社会实践</strong></p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 商学院鼓励学生利用课余时间，深入地方和企业进行调研和学习，并将实践成果形成论文和报告。每年，社会实践的参与团队数量都超过100支，它们所进行的实践课题覆盖了从公益事业的发展到商业盈利模式的探索等多个社会热点话题，实践地域从北京到云南分布全国各地。近年来，商学院与北京稻香春食品有限责任公司，北京红螺食品有限公司，北京便宜坊烤鸭集团有限公司，北京聚德华天控股有限公司，北京翔达投资管理有限公司，北京隆福寺餐饮有限公司等企业合作开展留学生美食节活动，创新实践形式，拓宽实践范围。</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 商学院学生的社会实践成果丰硕。每年，均有数十支队伍被评为全国优秀团队、北京市优秀团队以及校级优秀团队；近十份调研报告被评为首都优秀成果以及北京市优秀成果，近三十份调研报告被评为校级最佳成果；多人获得首都先进个人、校级最佳实践团员等称号；商学院团委多次获得中国人民大学社会实践工作优秀组织奖。这些优秀实践成果最终会经由学校呈递给相关公共部门和企业，为他们工作的改进和发展提供有效建议。</p>
+
+<p><strong>企业文化行</strong></p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 商学院团委积极与更多企业建立良好的合作关系，逐步&ldquo;走出去&rdquo;，开展了企业文化行等活动，组织商院学子参观了可口可乐、北京现代、苹果、汇源、蒙牛、龙徽葡萄酒、北京创客空间等众多知名企业，并先后与20多家北京&ldquo;老字号&rdquo;企业、吉林亚东集团达成协议，建立了实习基地，并在此基础上每年定期派送学生去实习基地实习。同时，学院将众多知名校友及其丰富的管理经验&ldquo;引进来&rdquo;，成功邀请it168网站创始人、现任澳洲电信旗下盛拓传媒集团董事与管理营销顾问宋钢，北京智鼎管理咨询公司董事长兼首席咨询师田效勋，北京世纪明德教育科技有限公司副总裁黎明等知名校友参与学院讲座，为同学进行指导。这些活动不仅为商院学子提供了广阔的社会实践平台，让他们直接感悟企业文化与吸引力，为以后进入职场打下良好的基础，也使企业收获了良好的社会效益，实现了双方的互利共赢。</p>
+
+<p><strong>企业校园俱乐部</strong></p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 学院与众多企业合作创立了相关的企业校园俱乐部、协会，例如腾讯职场精英发展协会、万学职业精英发展中心等。商学院团委学生会及学生组织各部门积极协助企业俱乐部进行宣传和运作，曾合作开展QQ管家校园行等活动，从而进一步提升了资源的共享性，使会员们能够充分参与市场竞争、项目管理、团队领导、创新策划、用户需求和体验、运营、服务等丰富多彩的商业实战活动。近年来，协会更加积极地寻找各类社会资源，进一步提升协会规模，为合作企业提供良好的人才战略实施平台，实现双方互利共赢。</p>
+
+<p><strong>文艺活动</strong></p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 商学院团委以&ldquo;才华平台，服务中心，实践基地&rdquo;为理念，结合学院特色，积极组织开展文化艺术活动。商学院主办的&ldquo;风载我歌行&rdquo;校园音乐大赛已创办20余年，并已经成功走向全国。学院专业的学生艺术团、辩论队在各项校级比赛中均成绩斐然，同时，学生艺术团、辩论队正在进一步提高自身专业素质，不仅在校级比赛中屡创佳绩，还扩大了扩大专场演出规模，寻求更多商演合作的机会。针对各项艺术活动，商学院通过合作宣传、冠名赞助等多种形式与企业建立了友好合作关系。</p>
+
+<p><strong>&ldquo;风载我歌行&rdquo;校园音乐大赛</strong></p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &ldquo;风载我歌行&rdquo;音乐大赛作为商学院最具品牌影响力的活动，自1991年开始举办以来，已成功举办22届。它逐渐从一个简单的校园学生音乐晚会发展成为了一个走向全国的乃至国际的大型音乐系列活动，是一个展现大学生音乐才华的舞台。&nbsp;&ldquo;风载我歌行&rdquo;不仅与贵人鸟、北京音乐台、海蝶音乐、太合麦田公司、SMG上海文广集团、必胜客、中国人民大学文化科技园、上海新汇文化娱乐集团、中国原创音乐基地等十多家单位建立了友好合作关系，还得到了腾讯微博、Sohu视频、《北京青年报》、新浪网、光明网、网易教育等多家媒体的大力支持，并且曾成功邀请到周星驰、五月天、腾格尔、蔡明、韩雪、羽&middot;泉、沙宝亮、叶蓓、伊扬、老狼、张含韵、张芸京、牛奶咖啡、小柯、孙浩、王子鸣、刘海波、爱乐团、丁少华等众多明星莅临现场。通过&ldquo;风载&rdquo;的舞台，商学院与全国众多高校保持着紧密的联系，在大学生群体中掀起了一股流行音乐的浪潮。</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &ldquo;风载我歌行&rdquo;主要以校园歌手大赛的形式开展，每年都会突出新的主题和内涵，在延续以往优秀传统的同时，在形式和内容上都有新的突破和发展，散发着强烈的时代气息。&ldquo;风载&rdquo;曾与&ldquo;彩虹助学基金&rdquo;合作，举办了&ldquo;风载-彩虹音乐志愿者&rdquo;招募、&ldquo;风载&rdquo;彩虹助学基金募捐活动，将公益、梦想、志愿服务等元素有机结合。2011年，&ldquo;风载&rdquo;开始关注原创音乐，面向全国征集&ldquo;新民谣&rdquo;原创音乐作品。2012年，&ldquo;风载&rdquo;的视角扩展到国际的舞台，与国际大学生原创音乐大赛相结合。而2013年第22届&ldquo;风载我歌行&rdquo;暨2013&ldquo;我的青春我的梦&rdquo;首都校园歌手大赛则立足京内高校，深度挖掘优秀校园歌手。此次比赛共吸引京内23所高校的94名选手参加，共收到126首作品，官网投票共计74253，成为首都高校间的一场盛世。在20余年的发展中，&ldquo;风载&rdquo;不断探索校园音乐的前进道路，融入时代元素并赋予全新的意义，它为为真正有音乐爱好和才华的年轻人打造一个实现音乐梦想、彰显青春个性的舞台，记录了中国校园歌曲和流行音乐的发展历程与导向。</p>
+
+<p><strong>学生艺术团、辩论队系列活动</strong></p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 商学院作为少数拥有学生艺术团的学院之一，积极参加院、校文艺活动，并取得优异成绩。商学院学生艺术团由舞蹈团、合唱团以及话剧团组成，另有辩论队，皆具有较高的专业水平。在我校的&ldquo;五&middot;四&rdquo;文化艺术节中，商学院学生艺术团在舞蹈、曲艺小品、歌唱、主持、情景剧等分赛事中，均有不俗的表现。在2013年的&ldquo;五&middot;四&rdquo;文化艺术节舞蹈比赛中学院舞蹈团的《逐梦》获得群舞比赛一等奖，现代舞《等》获非群舞比赛比赛二等奖，而在2014年商学院延续辉煌，《挣脱雾霾》夺得群舞第一的好成绩，其专业水平得到了全校师生的广泛认可。此外，在2012年商学院健美操八人组夺得一等奖的光荣成绩。同样在&ldquo;一二&middot;九&rdquo;合唱比赛中，合唱团也带领同学们屡创佳绩。在2011年&ldquo;一二&middot;九&rdquo;合唱比赛中，商学院获得全场第一名、A组第一名、最佳舞台效果奖、最佳指挥四项大奖，当之无愧成为参赛队伍中的佼佼者。而学院话剧团作为唯一举办话剧专场的院级话剧团，每年都如期上演&ldquo;轩辕&rdquo;话剧，而2013年的话剧《捕鼠器》在海淀小剧场上演，现场座无虚席，受到了全校同学的热烈欢迎。此外，学院辩论队也多次在校级比赛中展现出高水准，并于2013年12月获中国人民大学第二十一届辩论赛冠军，辩论队队长李睿婕获最佳辩手的称号。</p>
+
+<p>商学院学生艺术团不仅注重自身专业技能水平的提高，更积极寻求走向社会、扩大演出规模、增强社会影响力的机会。目前，商学院团委正积极联系企业、事业单位，希望能建立商业演出、慈善参演、形象代言等更多形式的合作。</p>
+
+<p><strong>体育活动</strong></p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 商学院的体育活动分为参与校运动会、体育文化节、体育竞技比赛三大类，覆盖商学院本、硕、博、MBA学生及商学院教职工总计近4000人。商学院的体育健儿们在校级比赛中也表现优异，曾获得多次校运会团体总分冠军以及排球、篮球等各项甲级赛事前三甲的好成绩。商学院的体育特长生人数众多，设有专业的篮球队、足球队、排球队，具有较强的专业性与较高的技术水平。</p>
+
+<p><strong>校运动会</strong></p>
+
+<p>　　校运会是人大一项大型传统赛事。秋季学期是新生运动会，春季学期为各个年级均参加的校运动会。校运会不仅是运动健儿大展身手的舞台，也是各学院和同学之间增进交流、加深友谊的平台。每年校运会，商学院都会取得优异的成绩。2013年校运会上商学院包揽男子团体第一、女子团体第一、总分第一，成为当之无愧的&ldquo;三冠王&rdquo;。而在刚落幕的2013年校运动会上商学院斩获男子团体第一和道德风尚奖。</p>
+
+<p><strong>体育文化节</strong></p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 商学院自2007年起开始举办以&ldquo;承文化之传统，扬体育之精神&rdquo;为口号的体育文化节，包括跳绳、拔河及各种趣味体育活动。该活动露天举行，突破传统体育活动的场地限制，使得该活动的宣传效果更为显著。自举办以来，得到了商学院本科近40个班级的积极响应，并取得了学院领导、老师的大力支持。同时，这种活动形式更为各学院广泛借鉴，并得到了校领导的肯定。体育文化节将继续坚持突出趣味性与参与性的特色，也希望与各社会组织加强合作，将活动的影响力推上一个新的台阶。</p>
+
+<p><strong>体育竞技比赛</strong></p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 在校级体育竞技比赛中，商院在几乎所有竞技项目上都很有实力。近年来，商院男篮以毫无悬念的优势蝉联了最近两届篮甲冠军，商院游泳队更是占据了校队的半壁江山，女排则是连续两年遗憾地斩获亚军，商院羽毛球队则历史性地夺取了&ldquo;白羽惜别&rdquo;羽毛球赛的亚军，是学生代表队中名次最好的。而过去一直实力不济的男排也在4年之后重返甲级联赛，靠着不断进步的商院普通生实力以及商院渐浓的运动氛围，商院体育朝着更好的成绩大步向前。</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 而院内的体育竞技比赛也同样风生水起，商学院每年均会举办电子竞技比赛、&ldquo;商锐杯&rdquo;篮球赛、&ldquo;六合杯&rdquo;足球赛和全院羽毛球赛等各类竞技比赛，自2013年起商学院开始举办趣闻的&ldquo;双升&rdquo;比赛，比赛极大地丰富了广大师生的业余生活，受到一致好评。除了商学院学生及教职工外，经济学院、历史学院等其他学院学生也慕名而来参加比赛。商学院在举办各项赛事时注重与人民大学裁判协会等本校优势资源相结合，同时继续积极谋求与校外企业、媒体的合作。首届&ldquo;中晟杯&rdquo;电子竞技比赛由北京中晟有限公司独家冠名，在增强了赛事影响力的同时也提高了商家的知名度。商学院希望能与更多的社会组织建立友好合作关系，进一步丰富大赛形式，实现双方互利共赢。</p>
+
+<p><strong>校园文化</strong></p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 商学院学生组织每年都会开展数量众多的大学校园文化娱乐活动，这既能使同学们在其中放松身心、收获快乐，又能让大家通过这些活动扩大交际网络、结识更多朋友。近年来，在院领导、老师的关注之下，商学院学生的课余活动形势日趋多样、学生参与度逐年升高。</p>
+
+<p><strong>&ldquo;RBS爱商院&rdquo;人人网公共主页、微信主页平台</strong></p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 商学院团委紧跟时代潮流，根据网络新媒体平台逐步走红校园，展露出其在宣传领域独有优势这一特点，创新宣传方式、整合宣传资源，先后构建&ldquo;RBS爱商院&rdquo;人人网公共主页与微信主页平台。公共主页的建立，拓宽了传统媒体形式，建成更加便捷、高效、低耗的信息发布手段，完善我院多渠道、全方位、宽领域的宣传平台，也加强商学院学生内部交流与沟通，增进彼此了解。特别是微信主页平台，不仅向同学们展示丰富多彩的团学活动，还推送生活学习小tips。目前，平台的关注人数已达到1100人，累计发送图文消息280多条。在院内师生乃至全校师生中都产生了相当的影响力。</p>
+
+<p><strong>《商苑经纬》、《团学信息》</strong></p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 《商苑经纬》、《团学信息》自2006年创刊以来，每月初发行。覆盖面广泛，不仅全面覆盖我院本硕博学生4000多人，也会送至校内各机关部门及学生组织。</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 《商苑经纬》立足同学生活、关注社会热点、聚焦学术活动，《团学信息》集中报道团学青各类品牌活动，是商学院对外展示平台。《商苑经纬》和《团学信息》凭借优秀的稿件质量和精美的版面设计在全校范围内广受欢迎，得到了师生的一致好评，具有较高的知名度。我院团委也因此多次获得校&ldquo;优秀学生媒体&rdquo;称号。目前，我院团委正致力于对其进行进一步的改版与创新在让其更好地服务商学院师生、向全校展现商学院风采的同时，加强与企业的更为丰富有效的合作。</p>
+
+<p><strong>校园活动</strong></p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 商学院团委以学生需求为导向，打造贴心服务工程，组织开展了新生系列活动、毕业生系列活动、女生节系列活动等，针对不同学生群体开展丰富多彩的校园活动。其中新生系列活动涉及讲座、文体活动、新老生交流会等活动，帮助同学们很好的适应了大学的生活，吸引全院新生参与，获得广泛好评。而每年六月的毕业生系列活动则针对全院毕业生开展夏凉会、文化衫绘制、毕业照拍摄等诸多精彩活动。其中2013年的毕业生大联欢&ldquo;风之韵&rdquo;晚会，吸引了全院范围的毕业生和教师参与其中，由艺术团指导，毕业生们共准备了24个节目。女生节系列活动也在每年的发展中不断推陈出新，2014年的女生节的&ldquo;随手拍女神&rdquo;和&ldquo;RBS爱心蜡烛&rdquo;都让女生们十分惊喜，难忘。此外，商学院学生会生活部会定期在人人网公共主页上发表生活小贴士类日志，内容涉猎广泛，涵盖了学习生活、娱乐生活、健康生活、时尚生活等多个板块，并且，每周向商学院各班公邮发送一封生活小贴士专刊，覆盖范围广泛，商学院各级学生以及老师均参与其中。</p>
+
+<p><strong>校企联谊</strong></p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 商学院学生组织每年都会开展各类广受学生喜爱的联谊舞会、派对等交际活动，并举办&ldquo;男生节&rdquo;、&ldquo;女生节&rdquo;、&ldquo;商院风采晚会&rdquo;等特色活动。这些活动的参与度不断提高，覆盖学院本科各个年级，大量留学生也会参与其中。其校外合作性也不断增强，与清华大学、北京大学等高校建立了密切的合作关系。2013年10月我院协办并参与了第三届北京八大高校联谊晚会，进一步促进了各大高校间的友好关系。此外，商学院团委不断加强与企业的联系，寻找合作契机。曾成功与《昕薇》杂志合作举办了全国高校女生昕掌门活动；与北京稻香春食品有限责任公司、北京红螺食品有限公司、北京便宜坊烤鸭集团有限公司、北京聚德华天控股有限公司、北京翔达投资管理有限公司、北京隆福寺餐饮有限公司成功合作举办留学生美食节，活动的开展扩大了宣传范围，增强了企业的品牌效应。</p>
+
+<p><strong>组织建设</strong></p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 商学院学生团委、学生会、青年志愿者协会共有29个部门，在册成员约150人。商学院学生组织的成员成功地将自己的管理学科知识应用于学生组织管理与学生活动举办中，大大促进了组织管理的科学化，使学生工作的开展更加深入有效。商学院学生组织近年举办、承办了多项大型活动，成绩斐然。与此同时，商学院全院学生在学生组织和部门成员的带动和影响下，积极参与到学院举办的各项活动中，并将商学院的活动推广到全北京乃至全国。</p>
+
+<p><strong>&ldquo;华彩霓商&rdquo;党班团建设活动</strong></p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 学院每年均会举办一系列以纪念建党为主题的党班团活动，包括&ldquo;我为党旗添光彩&rdquo;学生征文比赛、党情党史知识竞赛和 &ldquo;华彩霓商&rdquo;党班团建设活动。系列活动各具特色，是学院在党班团融合工作上的新举措。其中，&ldquo;华彩霓商&rdquo; 党班团建设活动以项目责任制形式开展，各班通过竞标方式申请承办，促进全院师生参与其中。2012年的&ldquo;华彩霓商&rdquo;系列活动涉及微电影、模拟两会、环保知识竞赛等丰富的主题活动，吸引了全院师生共同参与，而2013年&ldquo;华彩霓商&rdquo;系列活动则立足与多样的志愿活动，与院青年志愿者协会携手，共同打造。此外，近年来，学院积极组织各党团支部、各班级深入社区，开展与基层群体的交流活动，不断扩大&ldquo;华彩霓商&rdquo;的规模，凸显品牌效应，将其运行模式由自主筹办逐步转变为内外协作。目前，学院希望继续协调相关社会资源，与企业、社区达成更广泛的合作关系，使学院活动规模不断扩大的同时也为企业赢得更好的宣传效果。</p>
+
+<p><strong>内部培训</strong></p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 学生组织每学期均会组织团学青内部培训活动，邀请到经验丰富的企业界成功人士以讲座形式为学生组织成员们进行培训指导。商学院学生组织与万学教育、中国日报、光明日报等多家机构建立了友好合作关系，万学教育机构的毛永丰先生、《光明日报》高教版主编练玉春博士以及国务院新闻办公室图片库签约摄影师毛岩政先生等众多业界成功人士以讲座形式为组织成员进行培训。在商学院团委的支持下，学生组织希望与各社会机构广泛合作，将企业人才战略引入校园。同时，学生组织还会举办&ldquo;团学青精英训练营&rdquo;系列活动，并记录汇总团学青各部门进行的部门内部培训。</p>
+
+<p><strong>职业发展护航计划 </strong></p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 商学院学生组织为其学生骨干、干部制作了学生干部实习信息档案表，用人单位可以通过表内记录的相关信息迅速了解学生干部的各项情况，从而挑选出适合相关工作岗位的学生。商学院团学青骨干活跃在著名的四大会计师事务所、银行系统、证券投资业等行业的工作岗位上。同时，学院更会定期推荐学生干部到企业实习，需求更多发展机会。2012年，商学院先后将学生干部推荐至各类企业以及政府机关部门。</p>
+
+<p><strong>志愿服务</strong></p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 中国人民大学商学院青年志愿者协会，简称商院青协，是中国人民大学商学院团委指导下的由自愿献身社会公益事业和社会保障事业的在校生组成的非盈利性学生组织。协会成立至今已有十余年的历史， 在志愿教育、社会关怀、绿色环保等方面的公益事业上成果斐然。与此同时，协会重视与校内外组织的合作，曾与世界500强企业的美国康明斯公司、德国拜耳医药公司、中国青年报、中国红十字会、乐与公益、绿色大学生论坛等知名企业及NGO合作开展&ldquo;康明斯杯&lsquo;益想天开&rsquo;首都大学生公益创新大赛&rdquo;、&ldquo;环境保护与消费主义在美国&rdquo;论坛、&ldquo;首都高校环境文化季&rdquo;等志愿活动。2013学年至今，已有累计1626人次参与活动，累计志愿服务时数达8036小时 ，志愿服务范围覆盖北京市各区县，暑期远程支教项目还延伸至河南省部分区县，活动规模仍在不断扩大中。</p>
+
+<p><strong>志愿教育项目</strong></p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 支教活动是我院青年志愿者协会重点志愿服务项目之一。常规支教活动保持每周4-6次的频率在北京市多所幼儿园、小学和中学中开展。经验丰富的支教团队使得各项活动的组织和开展井然有序，成果斐然。</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 常规支教项目内容丰富，形式多样：安外三条小学文艺类支教项目进行合唱、舞蹈教学；&ldquo;商科知识讲座&rdquo;深入浅出地讲解实用的经济学、商学知识；&ldquo;风华爱心希望小学支教项目&rdquo;分级教学，共同进步；&ldquo;阳光、博海双语幼儿园支教项目&rdquo;为小朋友们提供学习和生活帮助；&ldquo;蒲公英中学支教项目&rdquo;进行&ldquo;一对一&rdquo;式家教辅导；&ldquo;盲童学校支教项目&rdquo;与视力障碍儿童零距离沟通和交流；</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 除常规支教活动外，协会与北京桂馨慈善基金会合作，开展了&ldquo;书韵流芳&bull;爱满人间&rdquo;暑期远程支教项目。目前已经成功举办了第一季和第二季的活动，21名志愿者深入祖国山村，为农村教育及农村学校阅读资源的完善助力。在支教活动宣传过程中，商院青协教育部还举办了&ldquo;童真圆梦&bull;心愿认领&rdquo;系列活动，在全校范围内招募志愿者帮助孩子们达成新学期的心愿，并由暑期支教志愿者将&ldquo;心愿礼物&rdquo;带到山村，让孩子们体会到来自社会的关爱。在支教活动中，志愿者们通过为孩子们搭建书屋，讲授历史、地理、美术、音乐、英语、职业知识等精心准备的课程，并举办丰富多彩的活动，与孩子们一同度过愉快而难忘的时光。小小的心愿，大大的梦想，支教活动不仅让孩子们汲取了知识，开拓了视野，也让志愿者们收获了快乐与感动。 &ldquo;书韵流芳&rdquo;，将书韵带到乡村；&ldquo;爱满人间&rdquo;，把关爱送往山间。</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 在注重原有项目不断完善的同时，商院青协还致力于支教项目的持续创新。琉璃渠小学支教项目开设于2013年秋季学期，志愿服务面向北京市门头沟区琉璃渠小学四、五、六年级的小学生。项目开办至今已经形成了比较稳定的时间安排和教学流程,志愿者们的付出受到了琉璃渠小学师生的一致好评，志愿者们在为孩子们不断成长欣喜不已的同时，更为呈现一个更有意义的课堂的目标不断努力着。</p>
+
+<p><strong>社会关怀项目 </strong></p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 我院青年志愿者协会关怀类活动覆盖人群广、活动形式丰富多样。协会目前开展的社会关怀类项目包括流动儿童健康教育活动、太阳村特殊关怀活动、红十字应急救护培训活动、&ldquo;血色浪漫&rdquo;无偿献血活动、&ldquo;帮孤独症儿童走出困境&rdquo;之雨露嘉禾志愿关怀活动、寸草春晖敬老院活动等。</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 其中，红十字应急救护培训活动由商院青协社会关怀部与北京市海淀区红十字会合作开展，面向全校学生进行基本救护知识和应急技能培训。活动于每年秋季举办一次，通过开展应急救护培训，在学习理论的基础上，重点培养学员的动手操作能力，旨在提高大学生在突发事件和意外伤害事故中的避险应急和自救互救技能。</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 太阳村特殊关怀活动由商院青协社会关怀部组织志愿者前往太阳村，和服刑人员子女一起劳动和游戏，让孩子们感受到温暖，帮助他们健康地生活，慢慢帮助他们消除心中对社会的阴影，唤起他们对生活中美好事物的向往和追求，让他们重拾生命的热情，对未来充满希望，使他们立志成为善良的人和对社会有用的人。同时也培养大学生志愿者的社会责任感和关怀之心，提高志愿者自身修养。</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 雨露嘉禾志愿关怀活动&ldquo;博爱、尊重、平等、理解、接纳&rdquo;为宗旨，由协会组织招募志愿者前往北京雨露嘉禾儿童潜能科技开发中心帮助自闭症儿童。志愿者们和自闭症儿童一起唱歌、交流、游戏,教授他们简单的生活技能，帮助他们敞开心扉，走出困境，适应环境，真正融入社会。</p>
+
+<p><strong>绿色环保项目 </strong></p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 商院青协环保部秉承 &ldquo;宣传环保理念&middot;落实环保行动&rdquo;的宗旨，与社会环保组织及首都高校环保社团紧密联系，为商院学生了解环保知识、参与环保活动搭建平台。</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2013-2014年度，环保部在北京市环境保护宣传中心的指导下，承办了&ldquo;第九届首都高校环境文化季&rdquo;环保摄影大赛。本次活动形式新颖，共收到北京近30所高校、近千人投稿，受到校内外参与者的大力支持和广泛好评，最终本次环保摄影大赛获得&ldquo;第九届首都高校环境文化季&rdquo;最佳创新奖的殊荣。</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2014年，商院青协环保部与再生至尚大学生环保联盟合作，将废纸换再生纸活动加以改进创新，把同学们累积的废纸兑换成真正的环保再生制品。2014学年春季学期，废纸换再生纸活动累计志愿服务人次58人，近600名同学参与其中，兑换废纸约500公斤。同时，环保部与和平里第一小学合作，开展了环保教育活动，此项活动累计志愿服务人次23人，保持持续增长趋势。</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2014&ldquo;星空音乐会&rdquo;地球一小时特别活动结合WWF&ldquo;蓝天自造&rdquo;的活动主题，协会邀请校内爱乐人、星月空天文社、笛箫社、魔术协会等多个社团共同参与。活动宣传方式新颖多样，活动当天吸引校内外观众400余人到场并受到校内多家媒体报道。该项活动作为环保部的品牌活动，已成为校内的知名活动，反响良好，具有较大的影响力。</p>
+
+<p>&nbsp;</p>
+
+                       
+                        <div class="pull-right mt20">
+                            <!-- JiaThis Button BEGIN -->
+                            <div class="jiathis_style">
+                                <span class="jiathis_txt">分享到：</span>
+                                <a class="jiathis_button_icons_1"></a>
+                                <a class="jiathis_button_icons_2"></a>
+                                <a class="jiathis_button_icons_3"></a>
+                                <a class="jiathis_button_icons_4"></a>
+                                <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
+                                <a class="jiathis_counter_style"></a>
+                            </div>
+                            <script type="text/javascript" src="http://v3.jiathis.com/code/jia.js" charset="utf-8"></script>
+                            <!-- JiaThis Button END -->
+                        </div>
+                    </div>
+                </div>
+	            <div class="col-md-3 col-sm-4">
+	                    <ul class="grey-ul">
+	                        
+	                        <li ><a href="/cms/list/ztlm/?cat=76"  >优势专业</a></li>
+	                        
+	                        <li ><a href="/cms/list/ztlm/?cat=35"  >中法学院</a></li>
+	                        
+	                        <li ><a href="/cms/list/ztlm/?cat=36"  >国防生</a></li>
+	                        
+	                        <li ><a href="/cms/list/ztlm/?cat=37"   class="cur"   >商学院</a></li>
+	                        
+	                        <li ><a href="/cms/list/ztlm/?cat=38"  >信息学院</a></li>
+	                        
+	                        <li ><a href="/cms/list/ztlm/?cat=39"  >高礼英才直通车</a></li>
+	                        
+	                        <li ><a href="/cms/list/ztlm/?cat=40"  >PPE实验班</a></li>
+	                        
+	                        <li ><a href="/cms/list/ztlm/?cat=41"  >宽口径招生</a></li>
+	                        
+	                        <li ><a href="/cms/list/ztlm/?cat=43"  >高考特别</a></li>
+	                        
+	                        <li ><a href="/cms/list/ztlm/?cat=42"  >圆梦计划</a></li>
+	                        
+	                        <li ><a href="/cms/list/ztlm/?cat=44"  >关注招考制度改革</a></li>
+	                        
+	                    </ul>
+	
+	             </div>
+            </div>
+        </div>
+    </div>
+      
+    <div class="y_foot hidden-xs">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="t_col3">
+                        <h5>联系我们</h5>
+                        <div class="t_icon1">
+                            <i></i>
+                            <span>400-0123-517</span><br/>
+                        </div>
+                        <div class="t_icon2">
+                            <i></i>
+                            <span>zsb@ruc.edu.cn</span></br>
+                        </div>
+                        <div class="t_icon4">
+                            <i></i>
+                            <span>010-62511156(传真)</span></br>
+                        </div>
+                        <div class="t_icon3">
+                            <i></i>
+                            <span>北京市海淀区中关村大街59号<br/>知行F楼(北区食堂)六层</span></br>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="t_col3">
+                        <h5>关注我们</h5>
+                        <img src="/static/default/images/wechat.png" alt="">
+                        <p>扫描二维码关注我们</p>
+                        <p>微信公众号"人大阳光招生"</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="t_col3">
+                        <h5>学术公告</h5>
+                        
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="t_col3">
+                         <h5>快速链接
+                        <a target="_blank" href="http://211.71.30.15/index/index_main.action" style="margin-left: 40px;color: #999;font-weight: normal;font-size: 16px;">返回旧网站</a>
+                               <a target="_blank" href="http://211.71.30.15/index/index_main.action" >
+                                    <span class="icon-wrap">
+                                        <span class="icon icon-arrow_carrot-right_alt2"  style="color: #999"></span>
+                                    </span>
+                                </a>
+                        </h5>
+                        
+                                 
+                        <a href="/cms/item/1031.html" class="t_b" target = _blank>人大主页</a>
+                       
+                                 
+                        <a href="/cms/item/1032.html" class="t_b" target = _blank>人大新闻网</a>
+                       
+                                 
+                        <a href="/cms/item/1038.html" class="t_b" target = _blank>留学生招生</a>
+                       
+                                 
+                        <a href="/cms/item/1037.html" class="t_b" target = _blank>研究生招生</a>
+                       
+                                 
+                        <a href="/cms/item/1036.html" class="t_b" target = _blank>考生黄页</a>
+                       
+                                 
+                        <a href="/cms/item/1035.html" class="t_b" target = _blank>校园地图</a>
+                       
+                                 
+                        <a href="/cms/item/1034.html" class="t_b" target = _blank>校友总会</a>
+                       
+                                 
+                        <a href="/cms/item/1033.html" class="t_b" target = _blank>教育基金会</a>
+                       
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="y_bottom">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="t_info clearfix">
+                        <p>版权所有 Copyright© 中国人民大学本科生招生办公室   京ICP备05066828号-1</p>
+                        <div class="t_flogo">
+                            <a href="http://www.ruc.edu.cn/"><img src="/static/default/images/t_logo.png" alt=""></a>
+                            <a href="#" class="hidden-xs t_back">回顶部</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

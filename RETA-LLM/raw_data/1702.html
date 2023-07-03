@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>中国人民大学阳光招生信息平台</title>
+    <!-- Bootstrap -->
+    <link rel="shortcut icon" href="/static/default/images/48.ico"/>
+     <link rel="bookmark" href="/static/default/images/48.ico"/>
+    <link href="/static/default/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/static/default/css/layout.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="/static/default/css/style.css" type="text/css" media="screen">
+    <script src="/static/default/js/jquery.min.js"></script>
+
+    <script src="http://api.microyan.com/sidebar?id=3520"></script>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="../js/html5shiv.min.js"></script>
+    <script src="../js/respond.min.js"></script>
+    <![endif]-->
+    
+</head>
+<body>
+
+       <div class="head visible-lg">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 header clearfix">
+                    <a href="/cms/" class="logo"></a>
+                    <script language ="javascript">
+                        function ValidateValue(textbox)
+                        {
+                             var IllegalString = "\`~@#;,.!#$%^&*()+{}|\\:\"<>?-=/,\'";
+                             var textboxvalue = textbox.value;
+                             var index = textboxvalue.length - 1;
+
+                             var s = textbox.value.charAt(index);
+
+                             if(IllegalString.indexOf(s)>=0)
+                             {
+                                s = textboxvalue.substring(0,index);
+                                textbox.value = s;
+                             }
+                        }
+                    </script>
+                    <form method="get" action="/cms/item/">
+                        <div class="y_selbox hidden-xs">
+                            <div class="input-group">
+                                <input id="s" type="text" name="keyword" value="" class="form-control" placeholder="搜索" maxlength="50" onkeyup = "ValidateValue(this)">
+                              <span class="input-group-btn">
+                                <button class="btn btn-default" type="submit"></button>
+                              </span>
+                            </div>
+                        </div>
+                    </form>
+                    <ul class="nav_list hidden-xs">
+                     	
+                        <li>
+                            <a href="">最新动态</a>
+                             
+                            <div class="list_group">
+                                <div class="a-panel">
+			                       <a href="/cms/item/?cat=72&parent=1">招生动态</a>
+			                       <a href="/cms/item/?cat=9&parent=1">新闻聚焦</a>    
+                                </div>
+                            </div>
+                         
+                        </li>
+                        </li>
+                        
+                    	
+                        <li>
+                            <a href="">招生信息</a>
+                             
+                         <div class="list_group">
+                           <div class="a-panel">                                              
+	                       <a href="/cms/list/zszc/?cat=10">招生政策</a> 
+	                       <a href="javascript:void(0)" onclick="subgo()">报考指南</a> 
+	                       <!--  <a href="/cms/list/bkzn/">报考指南</a> -->
+	                       <a href="/cms/index/tslx/">特殊类型招生</a>                              
+                         </div>
+                          </div>
+                       
+                        </li>
+                        </li>
+                        
+                    	
+                        <li>
+                            <a href="">招生专业</a>
+                             
+	                    <div class="list_group"> 
+	                    <div class="a-panel">                                             
+	                      <a href="/cms/list/college/1/">学院介绍</a>  
+	                       <a href="/cms/list/professional/">专业目录</a>                            
+	                   </div>
+	                    </div>
+	                  
+                        </li>
+                        </li>
+                        
+                    	
+                        <li>
+                            <a href="">人大一览</a>
+                             
+                           <div class="list_group">
+                           <div class="a-panel">
+                              
+                              
+                             <a href="/cms/list/rdyx/?cat=15">人大影像</a> 
+ 
+                       			                            
+                              
+                                 
+                       			<a href="/cms/list/rdzz/?cat=16">人大之子</a>
+                       		                               
+                              
+                                                                              
+                                 <a href="/cms/item/?cat=17&parent=4">历史人大</a>  
+                                                             
+                              
+                                                                              
+                                 <a href="/cms/item/?cat=18&parent=4">学在人大</a>  
+                                                             
+                              
+                                                                              
+                                 <a href="/cms/item/?cat=20&parent=4">就业动态</a>  
+                                                             
+                              
+                                                                              
+                                 <a href="/cms/item/?cat=21&parent=4">奖惩助学</a>  
+                                                             
+                              
+                                                                              
+                                 <a href="/cms/item/?cat=22&parent=4">校园生活</a>  
+                                                             
+                              
+                                                                              
+                                 <a href="/cms/item/?cat=23&parent=4">国际交流</a>  
+                                                             
+                             
+                             </div>
+                            </div>
+                          
+                        </li>
+                        </li>
+                        
+                    	
+                        <li>
+                            <a href="">数据查询</a>
+                             
+                    <div class="list_group"> 
+                    <div class="a-panel">         
+                      <a href="/inquiry/admission/indexcms/">各专业分数线</a>                                     
+                       <a href="/inquiry/enrollplan/indexcms/">各省招生计划</a> 
+                      <a href="/cms/scores/ ">高考录取结果</a>                            
+                    </div>
+                    </div>                     
+                         
+                        </li>
+                        </li>
+                        
+                    	
+                        <li>
+                            <a href="">招生咨询</a>
+                             
+	                    <div class="list_group">   
+	                    <div class="a-panel">
+	                       <a href="/inquiry/enrollgroup/listcms/">各省招生组</a>                                              
+	                       <a href="/inquiry/comadvice/cmscreate/">常见咨询</a>     
+	                       <a href="/cms/index/zycp/">职业测评</a>                           
+	                    </div>
+	                    </div>
+	                 
+                        </li>
+                        </li>
+                        
+                    	
+                        <li>
+                            <a href="">公开公示</a>
+                             
+                           <div class="list_group">
+                           <div class="a-panel">
+                              
+                                                                              
+                                 <a href="/cms/item/?cat=30&parent=7">公示专栏</a>  
+                                                             
+                              
+                                                                              
+                                 <a href="/cms/item/?cat=31&parent=7">管理办法</a>  
+                                                             
+                              
+                                                                              
+                                 <a href="/cms/item/?cat=32&parent=7">纪检监督</a>  
+                                                             
+                             
+                             </div>
+                            </div>
+                          
+                        </li>
+                        </li>
+                        
+                      
+                    </ul>
+                    <a href="#" class="y_ipt_search visible-xs"></a>
+                    <a href="#" class="y_ipt_menu visible-xs"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 移动端头部 -->
+    <div class="headB hidden-lg">
+        <div class="container-fluid header">
+            <div class="row">
+                <div class="col-md-12 clearfix">
+                    <a href="/cms/" class="logo"></a>
+                    <a href="#" class="y_ipt_search"></a>
+                    <a href="#" class="y_ipt_menu"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 小分辨率右侧遮罩导航 -->
+    <!--  -->
+    <div class="y_top_menu hidden-lg">
+        <dl>
+         		
+             <dt><a href="#" class="rem_mes">最新动态</a>
+                                                                           
+                       <dd><a href="/cms/item/?cat=72&parent=1">招生动态</a></dd> 
+                       <dd><a href="/cms/item/?cat=9&parent=1">新闻聚焦</a></dd>                                    
+                              
+             </dt>
+           
+          		
+             <dt><a href="#" class="rem_mes">招生信息</a>
+                                                                            
+                       <dd><a href="/cms/list/zszc/?cat=10">招生政策</a></dd> 
+                       <dd><a href="javascript:void(0)" onclick="subgo()">报考指南</a></dd> 
+                      <!--   <dd><a href="/cms/list/bkzn/">报考指南</a></dd> -->
+                       <dd><a href="/cms/index/tslx/">特殊类型招生</a></dd>                               
+                              
+             </dt>
+           
+          		
+             <dt><a href="#" class="rem_mes">招生专业</a>
+                                                             
+                       <dd><a href="/cms/list/college/1/">学院介绍</a></dd>  
+                       <dd><a href="/cms/list/professional/">专业目录</a></dd>                             
+                              
+             </dt>
+           
+          		
+             <dt><a href="#" class="rem_mes">人大一览</a>
+               
+                    
+                        
+                          <dd><a href="/cms/list/rdyx/?cat=15">人大影像</a></dd>  
+                         
+                          
+                                                     
+                    
+                           
+                        <dd><a href="/cms/list/rdzz/?cat=16">人大之子</a></dd>                          
+                                                    
+                    
+                                                
+                       <dd><a href="/cms/item/?cat=17&parent=4">历史人大</a></dd>  
+                                                   
+                    
+                                                
+                       <dd><a href="/cms/item/?cat=18&parent=4">学在人大</a></dd>  
+                                                   
+                    
+                                                
+                       <dd><a href="/cms/item/?cat=20&parent=4">就业动态</a></dd>  
+                                                   
+                    
+                                                
+                       <dd><a href="/cms/item/?cat=21&parent=4">奖惩助学</a></dd>  
+                                                   
+                    
+                                                
+                       <dd><a href="/cms/item/?cat=22&parent=4">校园生活</a></dd>  
+                                                   
+                    
+                                                
+                       <dd><a href="/cms/item/?cat=23&parent=4">国际交流</a></dd>  
+                                                   
+                   
+                              
+             </dt>
+           
+          		
+             <dt><a href="#" class="rem_mes">数据查询</a>
+                       
+                       <dd><a href="/inquiry/admission/indexcms/">各专业分数线</a></dd>                                     
+                       <dd><a href="/inquiry/enrollplan/indexcms/">各省招生计划</a></dd> 
+                       <dd><a href="/cms/scores/ ">高考录取结果</a></dd>                                           
+                              
+             </dt>
+           
+          		
+             <dt><a href="#" class="rem_mes">招生咨询</a>
+                        
+                       <dd><a href="/inquiry/enrollgroup/listcms/">各省招生组</a></dd>                                     
+                       <dd><a href="/inquiry/comadvice/cmscreate/">常见咨询</a></dd> 
+                       <dd><a href="/cms/index/zycp/">职业测评</a></dd>                                            
+                              
+             </dt>
+           
+          		
+             <dt><a href="#" class="rem_mes">公开公示</a>
+               
+                    
+                                                
+                       <dd><a href="/cms/item/?cat=30&parent=7">公示专栏</a></dd>  
+                                                   
+                    
+                                                
+                       <dd><a href="/cms/item/?cat=31&parent=7">管理办法</a></dd>  
+                                                   
+                    
+                                                
+                       <dd><a href="/cms/item/?cat=32&parent=7">纪检监督</a></dd>  
+                                                   
+                   
+                              
+             </dt>
+           
+           	   
+        </dl>
+    </div>
+    <div class="clearfix"></div> 
+
+<script type="text/javascript">
+     //平台、设备和操作系统
+   function subgo() {
+    var system ={
+        win : false,
+        mac : false,
+        xll : false
+    };
+    //检测平台
+    var p = navigator.platform;
+    system.win = p.indexOf("Win") == 0;
+    system.mac = p.indexOf("Mac") == 0;
+    system.x11 = (p == "X11") || (p.indexOf("Linux") == 0);
+    //跳转语句，如果是手机访问就自动跳转到wap.baidu.com页面
+    /*
+    if(system.win||system.mac||system.xll){
+        window.location.href="/cms/list/bkzn/ ";
+
+    }else{
+        window.location.href="/cms/list/bkzn/phone/ ";
+    }
+    */
+    window.location.href="/cms/list/bkzn/phone/ "; 
+ }   
+</script>  
+<script type="text/javascript">
+        $(function(){
+            $('.y_ipt_menu').click(function(){
+                if($(this).hasClass('open')){
+                    $(this).removeClass('open');
+                    $('.y_top_menu').animate({width: '0'},200);
+                }else{
+                    $(this).addClass('open');
+                    $('.y_top_menu').animate({width: '210px'},200);
+                }
+
+            });
+            $('dt a.rem_mes').bind('click', function() {
+                if($('dd').is(':visible')){
+                     $('dd').hide(); 
+                } else{
+                    $('dd').show();
+                }
+        });
+        });
+</script>     
+    <div class="y_tit_box">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 header">
+                    <h1 class="y_tit">伦理学</h1>
+                    <span class="y_des"></span>
+                    <div class="r-title hidden-xs">
+                    
+                        <span class="grey-hint-sm">更新时间：2019-06-12</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 主体 -->
+    <div class="container content" >
+        <div class="content-inner">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="article">
+                       <p></p><p style="text-align:center;text-indent:32px;line-height:26px"><strong><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">伦理学是一种道德理性智慧</span></strong></p><p style="text-align:center;text-indent:28px"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">葛晨虹</span></p><p style="text-align:center;text-indent:28px"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">一、伦理学表达一种道德理性智慧</span></p><p style="text-indent:28px"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;"><span style="font-size: 14px; font-family: 方正书宋_GBK;">在众多学科中有一门叫做伦理学。伦理学是关乎善</span>“<span style="font-size: 14px; font-family: 方正书宋_GBK;">应然</span>”<span style="font-size: 14px; font-family: 方正书宋_GBK;">的学科。许多经典作家都认为</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">人类主要是通过</span>“<span style="font-size: 14px; font-family: 方正书宋_GBK;">真</span>”“<span style="font-size: 14px; font-family: 方正书宋_GBK;">善</span>”“<span style="font-size: 14px; font-family: 方正书宋_GBK;">美</span>”<span style="font-size: 14px; font-family: 方正书宋_GBK;">三种方式来把握世界的。</span>“<span style="font-size: 14px; font-family: 方正书宋_GBK;">真</span>”<span style="font-size: 14px; font-family: 方正书宋_GBK;">属于事实范畴的话语表达方式</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">如</span>“<span style="font-size: 14px; font-family: 方正书宋_GBK;">这是一支好笔</span>”“<span style="font-size: 14px; font-family: 方正书宋_GBK;">美国经济比日本经济增速快</span>”<span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">这是在做一种事实判断。而</span>“<span style="font-size: 14px; font-family: 方正书宋_GBK;">善</span>”<span style="font-size: 14px; font-family: 方正书宋_GBK;">和</span>“<span style="font-size: 14px; font-family: 方正书宋_GBK;">美</span>”<span style="font-size: 14px; font-family: 方正书宋_GBK;">多和价值范畴表达相关</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">如</span>“<span style="font-size: 14px; font-family: 方正书宋_GBK;">这些花真好看</span>”“<span style="font-size: 14px; font-family: 方正书宋_GBK;">有些城市规划得非常漂亮</span>”<span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">这是在做一种审美判断</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">而</span>“<span style="font-size: 14px; font-family: 方正书宋_GBK;">这是一个好人</span>”“<span style="font-size: 14px; font-family: 方正书宋_GBK;">让一部分人先富起来</span>”<span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">是在做一种应然的价值判断。事实上</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">在人类思想史上</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">善的追求总被理解为内含着对</span>“<span style="font-size: 14px; font-family: 方正书宋_GBK;">应然</span>”<span style="font-size: 14px; font-family: 方正书宋_GBK;">的幸福生活的向往。</span>——<span style="font-size: 14px; font-family: 方正书宋_GBK;">人应当过一种怎样的生活</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">什么是好生活</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">;</span>——<span style="font-size: 14px; font-family: 方正书宋_GBK;">为了好生活我们应当怎么做</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">;</span>——<span style="font-size: 14px; font-family: 方正书宋_GBK;">人应当成为怎样的人。这些自古希腊或中国古代思想家那里就生出的问题</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">都和</span>“<span style="font-size: 14px; font-family: 方正书宋_GBK;">应当</span>”<span style="font-size: 14px; font-family: 方正书宋_GBK;">价值理性智慧相关。今天我们追求社会的公正、公平、自由、民主、和谐、幸福、诚信、友善等</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">都和善</span>——<span style="font-size: 14px; font-family: 方正书宋_GBK;">伦理学的</span>“<span style="font-size: 14px; font-family: 方正书宋_GBK;">应然</span>”<span style="font-size: 14px; font-family: 方正书宋_GBK;">有关。</span></span></p><p style="text-align:center;text-indent:28px"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">二、伦理学何以必要</span></p><p style="text-indent:28px"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;"><span style="font-size: 14px; font-family: 方正书宋_GBK;">伦理学是一门非常重要的学科。伦理学的功能</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">概括而言是运用道德理性智慧为人类建构意义世界</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">为社会发展提供良善应然的价值设定。伦理</span>“<span style="font-size: 14px; font-family: 方正书宋_GBK;">应然</span>”<span style="font-size: 14px; font-family: 方正书宋_GBK;">最核心的功能即</span>“<span style="font-size: 14px; font-family: 方正书宋_GBK;">赋予人生活意义</span>”<span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">解决</span>“<span style="font-size: 14px; font-family: 方正书宋_GBK;">什么是好社会</span>”“<span style="font-size: 14px; font-family: 方正书宋_GBK;">人应当成为什么</span>”<span style="font-size: 14px; font-family: 方正书宋_GBK;">的问题。人类必须在把握世界的客体尺度的基础上</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">按照自身的主体尺度去建造我们所愿望的理想社会</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">同时人也必须赋予现实世界以意义</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">如此才可能超越或战胜现实世界的困难和有限。</span></span></p><p style="text-indent:28px"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;"><span style="font-size: 14px; font-family: 方正书宋_GBK;">有些人认为伦理学仅仅是关于调节利益关系时的道德自律以及人的品德的学科</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">这是一种认知误区。事实上伦理学作为一种道德理性智慧</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">除了人的品德问题</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">还关乎对一个良善社会的合理性的引导和把握。比如</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">经济领域的经济活动不仅是实证的物质活动</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">同时也必须合乎人们正义、善以及人性发展的价值追求。</span>“<span style="font-size: 14px; font-family: 方正书宋_GBK;">经济不仅受经济规律的控制</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">而且也是由人来决定的</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">在人的意愿和选择里总是有一个由期望、标准、观点以及道德想象所组成的合唱在起作用。</span>”</span><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">“<span style="font-size: 14px; font-family: 方正书宋_GBK;">看不见的手</span>”<span style="font-size: 14px; font-family: 方正书宋_GBK;">的经济规律</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">必须在</span>“<span style="font-size: 14px; font-family: 方正书宋_GBK;">看得见的手</span>”<span style="font-size: 14px; font-family: 方正书宋_GBK;">的善应然价值理性引导下才合理。</span></span></p><p style="text-indent:28px"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;"><span style="font-size: 14px; font-family: 方正书宋_GBK;">在政治领域</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">好制度、好的政策法规、好的治理方式、治理目标的实现</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">以及人们的幸福感和社会公正的把握</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">都离不开道德理性的价值把握。思想史上</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">无论是西方的柏拉图、亚里士多德、洛克、卢梭、黑格尔、罗尔斯等思想家们</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">还是中国的儒学传统文化</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">无不在强调社会政治的伦理应然意蕴。而</span>“<span style="font-size: 14px; font-family: 方正书宋_GBK;">法律的生命力在于永远力求执行在法律制度和法律规则中默示的实用的道德命令</span>”</span><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">。</span></p><p style="text-align:center;text-indent:28px"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">三、为什么应选择人民大学的伦理学专业</span></p><p style="text-indent:28px"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;"><span style="font-size: 14px; font-family: 方正书宋_GBK;">中国人民大学的伦理学科是国内唯一具有伦理学专业本、硕、博、博士后完整培养系列的学科点</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">也是新中国最早建立的伦理学学科点。</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">1960</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">年成立了伦理学教研室</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span> <span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">1987</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">年成立了伦理学研究所</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,1996</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">年成立了道德科学研究院</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,2000</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">年被教育部评定为人文社会科学重点研究基地。像人大伦理学这样既是国家重点学科、同时又有教育部伦理学重点研究基地的学科点</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">并不普遍。也由于有这样一些平台高地</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">人大伦理学也有了一些独特优势</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">如伦理学平台整合了国内伦理学界领军人物</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">先后成立了基地所属的伦理学理论研究所、中西伦理比较研究所、现实道德问题研究所、中国农村道德发展研究所、经济伦理研究所、企业伦理研究所、应用伦理研究所、法律伦理研究所、马克思主义伦理研究所</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">有效整合了伦理学界相关研究资源和实力</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">取得了大量科研成果。</span></span></p><p style="text-indent:28px"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;"><span style="font-size: 14px; font-family: 方正书宋_GBK;">人大伦理学具有较好的学术历史资源优势。在罗国杰、许启贤、宋希仁教授为代表的老一辈学者数十年努力下</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">中国人民大学的伦理学专业积累了较厚实的教学科研成果</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">罗国杰等教授的研究成果在新中国发展建设中产生了重要影响</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">他们编写的教材也影响了几代中国伦理学人的成长</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">人大伦理学由此在国内获得了较高学术地位和较大社会影响。目前人大伦理学科点凝聚了龚群、焦国成、姚新中、葛晨虹、肖群忠、曹刚、吴付来、李茂森、郭清香、杨伟清、张霄、刘玮、王福玲等一批有实力和潜力的专业人才。在今后发展中</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">人大伦理学也应进一步发挥传统优势</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">力争更多更好地产出学术精品和智库产品</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">更多更好地培养优秀的伦理学专业人才。</span></span></p><p style="text-indent:28px"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;"><span style="font-size: 14px; font-family: 方正书宋_GBK;">与学科共建的伦理学基地积极开展各种学术交流活动</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">每年组织的国内国际学术会议已成伦理学领域学术交流的重要平台。学科点还常设有伦理学学术论坛</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">邀请国内外著名教授讲学</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">国际性互派合作研究和访问的工作也按计划开展。和基地共建的伦理学重点学科</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">结合课题研究</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">吸收学生参加学科建设工作和课题研究</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">使学术研究与教学任务相互结合、转化</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">也为伦理学人才培养提供了有利的平台和条件。所培养的各层次人才在全国各单位发挥着重要的作用</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">推动了全国伦理学研究和社会道德建设。</span></span></p><p style="text-align:center;text-indent:28px"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">四、人大伦理学专业的学术传统、核心课程和毕业去向</span></p><p style="text-indent:28px"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;"><span style="font-size: 14px; font-family: 方正书宋_GBK;">人大伦理学专业的学术传统之一</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">即重视基础理论的学术研究</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">罗国杰、宋希仁、许启贤等前辈学者形成了注重建构伦理学理论基础和理论体系的学风传统</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">取得了诸多具有较高质量的学术成果</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">尤其在中西伦理思想史、伦理学原理、马克思主义伦理学等领域</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">理论积累较丰厚。人大伦理学研究的另一学术传统即关照社会现实</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">这是由伦理学的学科性质所决定的。伦理学是关于现实社会如何更使人幸福、人性如何更完善的学科</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">它不是</span>“<span style="font-size: 14px; font-family: 方正书宋_GBK;">纯粹理性</span>”<span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">而是</span>“<span style="font-size: 14px; font-family: 方正书宋_GBK;">实践理性</span>”<span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">其学科特点就是关照现实社会和人来做研究</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">所以人大伦理学在注重学术思想理论研究的同时</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">也关注社会热点和社会发展中的重大问题。社会建设以及发展中的道德问题、社会问题</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">需要来自伦理学的合理性的审视和应然引导。人大伦理学整合了一批知识广博、功底深厚、积极思考、理论到位、具有社会责任感和前沿目光的专家学者</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">在社会建设和咨政服务中起着积极的作用</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">人大伦理学也成了关注、研究社会的一个重要理论平台和思想智库。当然</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">人大伦理学也很注重人才培养</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">在注重学生的伦理智慧能力培养的同时</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">也重视人格品性素质能力的培养。</span></span></p><p style="text-indent:28px"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;"><span style="font-size: 14px; font-family: 方正书宋_GBK;">人大伦理学本科期间将会和如下核心课程群相遇</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">:</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">中国哲学思想史、西方哲学思想史、马克思主义哲学原理、伦理学原理、中国伦理思想史、西方伦理思想史、马克思主义伦理思想、伦理学前沿专题、应用伦理学、中西伦理文化比较、伦理经典名著选读等</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">除此之外还有逻辑学、美学、科技哲学、宗教学、政治哲学、管理哲学等</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">再就是伦理学专业内外海量的各色各样的选修课程群</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">供学生按照自己的学习兴趣和专业研究方向设计去精挑细选。</span></span></p><p style="text-indent:28px"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;"><span style="font-size: 14px; font-family: 方正书宋_GBK;">至于就业去向问题</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">就我所了解的情况看</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">伦理学专业毕业的人才就业岗位相对比较广泛</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">一些毕业生去了高校做教师或科研单位做研究</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">一些考取了公务员去了政府相关机构工作</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">一些去了媒体、出版社、企业等系统</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">还有一些同学选择在国内和在国外高校继续研读深造。另外想顺便再说一点</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">培根曾说</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">数学使人聪敏</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">历史使人深刻</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">哲学使人智慧。哲学领域中的伦理学作为真善美视域中专门研究善</span>“<span style="font-size: 14px; font-family: 方正书宋_GBK;">应然</span>”<span style="font-size: 14px; font-family: 方正书宋_GBK;">的学科</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">是一种典型的价值理性智慧。正如上面所已强调的</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">价值理性智慧是经济学、政治学、法律学、新闻学、公共管理学、社会学、文学等诸多人文社会科学都必须掌握的基础性知识功底</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">所以</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">此种专业基础和知识功底背景</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">不但不影响本科同学向其他人文社科专业的上升转型</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">在某种意义上</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">它还可为同学们的专业转型提供来自道德理性智慧的独特的思考能力和素质能力。</span></span></p><p><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;"><span style="font-size: 14px; font-family: 方正书宋_GBK; color: black;">&nbsp; &nbsp; &nbsp; &nbsp;欢迎各位同学积极报考人大伦理学专业</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif; color: black;">!</span>&nbsp;</span></p><p><span style="font-family: FZLTKHK--GBK1-0; color: rgb(35, 31, 32); font-variant-numeric: normal; font-variant-east-asian: normal; font-size: 14px;"><br style="font-variant-numeric: normal; font-variant-east-asian: normal; line-height: normal; text-align: -webkit-auto; white-space: normal; text-size-adjust: auto;"/><br/></span></p>
+                       
+                        <div class="pull-right mt20">
+                            <!-- JiaThis Button BEGIN -->
+                            <div class="jiathis_style">
+                                <span class="jiathis_txt">分享到：</span>
+                                <a class="jiathis_button_icons_1"></a>
+                                <a class="jiathis_button_icons_2"></a>
+                                <a class="jiathis_button_icons_3"></a>
+                                <a class="jiathis_button_icons_4"></a>
+                                <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
+                                <a class="jiathis_counter_style"></a>
+                            </div>
+                            <script type="text/javascript" src="http://v3.jiathis.com/code/jia.js" charset="utf-8"></script>
+                            <!-- JiaThis Button END -->
+                        </div>
+                    </div>
+                </div>
+                <!--  
+	            <div class="col-md-3 col-sm-4">
+                    <ul class="grey-ul">
+                      
+                    </ul>
+	
+	             </div>
+	           -->
+            </div>
+        </div>
+    </div>
+      
+    <div class="y_foot hidden-xs">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="t_col3">
+                        <h5>联系我们</h5>
+                        <div class="t_icon1">
+                            <i></i>
+                            <span>400-0123-517</span><br/>
+                        </div>
+                        <div class="t_icon2">
+                            <i></i>
+                            <span>zsb@ruc.edu.cn</span></br>
+                        </div>
+                        <div class="t_icon4">
+                            <i></i>
+                            <span>010-62511156(传真)</span></br>
+                        </div>
+                        <div class="t_icon3">
+                            <i></i>
+                            <span>北京市海淀区中关村大街59号<br/>知行F楼(北区食堂)六层</span></br>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="t_col3">
+                        <h5>关注我们</h5>
+                        <img src="/static/default/images/wechat.png" alt="">
+                        <p>扫描二维码关注我们</p>
+                        <p>微信公众号"人大阳光招生"</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="t_col3">
+                        <h5>学术公告</h5>
+                        
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="t_col3">
+                         <h5>快速链接
+                        <a target="_blank" href="http://211.71.30.15/index/index_main.action" style="margin-left: 40px;color: #999;font-weight: normal;font-size: 16px;">返回旧网站</a>
+                               <a target="_blank" href="http://211.71.30.15/index/index_main.action" >
+                                    <span class="icon-wrap">
+                                        <span class="icon icon-arrow_carrot-right_alt2"  style="color: #999"></span>
+                                    </span>
+                                </a>
+                        </h5>
+                        
+                                 
+                        <a href="/cms/item/1031.html" class="t_b" target = _blank>人大主页</a>
+                       
+                                 
+                        <a href="/cms/item/1032.html" class="t_b" target = _blank>人大新闻网</a>
+                       
+                                 
+                        <a href="/cms/item/1038.html" class="t_b" target = _blank>留学生招生</a>
+                       
+                                 
+                        <a href="/cms/item/1037.html" class="t_b" target = _blank>研究生招生</a>
+                       
+                                 
+                        <a href="/cms/item/1036.html" class="t_b" target = _blank>考生黄页</a>
+                       
+                                 
+                        <a href="/cms/item/1035.html" class="t_b" target = _blank>校园地图</a>
+                       
+                                 
+                        <a href="/cms/item/1034.html" class="t_b" target = _blank>校友总会</a>
+                       
+                                 
+                        <a href="/cms/item/1033.html" class="t_b" target = _blank>教育基金会</a>
+                       
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="y_bottom">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="t_info clearfix">
+                        <p>版权所有 Copyright© 中国人民大学本科生招生办公室   京ICP备05066828号-1</p>
+                        <div class="t_flogo">
+                            <a href="http://www.ruc.edu.cn/"><img src="/static/default/images/t_logo.png" alt=""></a>
+                            <a href="#" class="hidden-xs t_back">回顶部</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

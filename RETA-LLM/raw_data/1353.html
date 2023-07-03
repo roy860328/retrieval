@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>中国人民大学阳光招生信息平台</title>
+    <!-- Bootstrap -->
+    <link rel="shortcut icon" href="/static/default/images/48.ico"/>
+     <link rel="bookmark" href="/static/default/images/48.ico"/>
+    <link href="/static/default/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="/static/default/css/layout.css" type="text/css" media="screen">
+    <script src="/static/default/js/jquery.min.js"></script>
+    <link rel="stylesheet" href="/static/default/css/style.css" type="text/css" media="screen">
+    <script src="http://api.microyan.com/sidebar?id=3520"></script>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="../js/html5shiv.min.js"></script>
+    <script src="../js/respond.min.js"></script>
+    <![endif]-->
+    
+</head>
+<body>
+
+       <div class="head visible-lg">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 header clearfix">
+                    <a href="/cms/" class="logo"></a>
+                    <script language ="javascript">
+                        function ValidateValue(textbox)
+                        {
+                             var IllegalString = "\`~@#;,.!#$%^&*()+{}|\\:\"<>?-=/,\'";
+                             var textboxvalue = textbox.value;
+                             var index = textboxvalue.length - 1;
+
+                             var s = textbox.value.charAt(index);
+
+                             if(IllegalString.indexOf(s)>=0)
+                             {
+                                s = textboxvalue.substring(0,index);
+                                textbox.value = s;
+                             }
+                        }
+                    </script>
+                    <form method="get" action="/cms/item/">
+                        <div class="y_selbox hidden-xs">
+                            <div class="input-group">
+                                <input id="s" type="text" name="keyword" value="" class="form-control" placeholder="搜索" maxlength="50" onkeyup = "ValidateValue(this)">
+                              <span class="input-group-btn">
+                                <button class="btn btn-default" type="submit"></button>
+                              </span>
+                            </div>
+                        </div>
+                    </form>
+                    <ul class="nav_list hidden-xs">
+                     	
+                        <li>
+                            <a href="">最新动态</a>
+                             
+                            <div class="list_group">
+                                <div class="a-panel">
+			                       <a href="/cms/item/?cat=72&parent=1">招生动态</a>
+			                       <a href="/cms/item/?cat=9&parent=1">新闻聚焦</a>    
+                                </div>
+                            </div>
+                         
+                        </li>
+                        </li>
+                        
+                    	
+                        <li>
+                            <a href="">招生信息</a>
+                             
+                         <div class="list_group">
+                           <div class="a-panel">                                              
+	                       <a href="/cms/list/zszc/?cat=10">招生政策</a> 
+	                       <a href="javascript:void(0)" onclick="subgo()">报考指南</a> 
+	                       <!--  <a href="/cms/list/bkzn/">报考指南</a> -->
+	                       <a href="/cms/index/tslx/">特殊类型招生</a>                              
+                         </div>
+                          </div>
+                       
+                        </li>
+                        </li>
+                        
+                    	
+                        <li>
+                            <a href="">招生专业</a>
+                             
+	                    <div class="list_group"> 
+	                    <div class="a-panel">                                             
+	                      <a href="/cms/list/college/1/">学院介绍</a>  
+	                       <a href="/cms/list/professional/">专业目录</a>                            
+	                   </div>
+	                    </div>
+	                  
+                        </li>
+                        </li>
+                        
+                    	
+                        <li>
+                            <a href="">人大一览</a>
+                             
+                           <div class="list_group">
+                           <div class="a-panel">
+                              
+                              
+                             <a href="/cms/list/rdyx/?cat=15">人大影像</a> 
+ 
+                       			                            
+                              
+                                 
+                       			<a href="/cms/list/rdzz/?cat=16">人大之子</a>
+                       		                               
+                              
+                                                                              
+                                 <a href="/cms/item/?cat=17&parent=4">历史人大</a>  
+                                                             
+                              
+                                                                              
+                                 <a href="/cms/item/?cat=18&parent=4">学在人大</a>  
+                                                             
+                              
+                                                                              
+                                 <a href="/cms/item/?cat=20&parent=4">就业动态</a>  
+                                                             
+                              
+                                                                              
+                                 <a href="/cms/item/?cat=21&parent=4">奖惩助学</a>  
+                                                             
+                              
+                                                                              
+                                 <a href="/cms/item/?cat=22&parent=4">校园生活</a>  
+                                                             
+                              
+                                                                              
+                                 <a href="/cms/item/?cat=23&parent=4">国际交流</a>  
+                                                             
+                             
+                             </div>
+                            </div>
+                          
+                        </li>
+                        </li>
+                        
+                    	
+                        <li>
+                            <a href="">数据查询</a>
+                             
+                    <div class="list_group"> 
+                    <div class="a-panel">         
+                      <a href="/inquiry/admission/indexcms/">各专业分数线</a>                                     
+                       <a href="/inquiry/enrollplan/indexcms/">各省招生计划</a> 
+                      <a href="/cms/scores/ ">高考录取结果</a>                            
+                    </div>
+                    </div>                     
+                         
+                        </li>
+                        </li>
+                        
+                    	
+                        <li>
+                            <a href="">招生咨询</a>
+                             
+	                    <div class="list_group">   
+	                    <div class="a-panel">
+	                       <a href="/inquiry/enrollgroup/listcms/">各省招生组</a>                                              
+	                       <a href="/inquiry/comadvice/cmscreate/">常见咨询</a>     
+	                       <a href="/cms/index/zycp/">职业测评</a>                           
+	                    </div>
+	                    </div>
+	                 
+                        </li>
+                        </li>
+                        
+                    	
+                        <li>
+                            <a href="">公开公示</a>
+                             
+                           <div class="list_group">
+                           <div class="a-panel">
+                              
+                                                                              
+                                 <a href="/cms/item/?cat=30&parent=7">公示专栏</a>  
+                                                             
+                              
+                                                                              
+                                 <a href="/cms/item/?cat=31&parent=7">管理办法</a>  
+                                                             
+                              
+                                                                              
+                                 <a href="/cms/item/?cat=32&parent=7">纪检监督</a>  
+                                                             
+                             
+                             </div>
+                            </div>
+                          
+                        </li>
+                        </li>
+                        
+                      
+                    </ul>
+                    <a href="#" class="y_ipt_search visible-xs"></a>
+                    <a href="#" class="y_ipt_menu visible-xs"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 移动端头部 -->
+    <div class="headB hidden-lg">
+        <div class="container-fluid header">
+            <div class="row">
+                <div class="col-md-12 clearfix">
+                    <a href="/cms/" class="logo"></a>
+                    <a href="#" class="y_ipt_search"></a>
+                    <a href="#" class="y_ipt_menu"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 小分辨率右侧遮罩导航 -->
+    <!--  -->
+    <div class="y_top_menu hidden-lg">
+        <dl>
+         		
+             <dt><a href="#" class="rem_mes">最新动态</a>
+                                                                           
+                       <dd><a href="/cms/item/?cat=72&parent=1">招生动态</a></dd> 
+                       <dd><a href="/cms/item/?cat=9&parent=1">新闻聚焦</a></dd>                                    
+                              
+             </dt>
+           
+          		
+             <dt><a href="#" class="rem_mes">招生信息</a>
+                                                                            
+                       <dd><a href="/cms/list/zszc/?cat=10">招生政策</a></dd> 
+                       <dd><a href="javascript:void(0)" onclick="subgo()">报考指南</a></dd> 
+                      <!--   <dd><a href="/cms/list/bkzn/">报考指南</a></dd> -->
+                       <dd><a href="/cms/index/tslx/">特殊类型招生</a></dd>                               
+                              
+             </dt>
+           
+          		
+             <dt><a href="#" class="rem_mes">招生专业</a>
+                                                             
+                       <dd><a href="/cms/list/college/1/">学院介绍</a></dd>  
+                       <dd><a href="/cms/list/professional/">专业目录</a></dd>                             
+                              
+             </dt>
+           
+          		
+             <dt><a href="#" class="rem_mes">人大一览</a>
+               
+                    
+                        
+                          <dd><a href="/cms/list/rdyx/?cat=15">人大影像</a></dd>  
+                         
+                          
+                                                     
+                    
+                           
+                        <dd><a href="/cms/list/rdzz/?cat=16">人大之子</a></dd>                          
+                                                    
+                    
+                                                
+                       <dd><a href="/cms/item/?cat=17&parent=4">历史人大</a></dd>  
+                                                   
+                    
+                                                
+                       <dd><a href="/cms/item/?cat=18&parent=4">学在人大</a></dd>  
+                                                   
+                    
+                                                
+                       <dd><a href="/cms/item/?cat=20&parent=4">就业动态</a></dd>  
+                                                   
+                    
+                                                
+                       <dd><a href="/cms/item/?cat=21&parent=4">奖惩助学</a></dd>  
+                                                   
+                    
+                                                
+                       <dd><a href="/cms/item/?cat=22&parent=4">校园生活</a></dd>  
+                                                   
+                    
+                                                
+                       <dd><a href="/cms/item/?cat=23&parent=4">国际交流</a></dd>  
+                                                   
+                   
+                              
+             </dt>
+           
+          		
+             <dt><a href="#" class="rem_mes">数据查询</a>
+                       
+                       <dd><a href="/inquiry/admission/indexcms/">各专业分数线</a></dd>                                     
+                       <dd><a href="/inquiry/enrollplan/indexcms/">各省招生计划</a></dd> 
+                       <dd><a href="/cms/scores/ ">高考录取结果</a></dd>                                           
+                              
+             </dt>
+           
+          		
+             <dt><a href="#" class="rem_mes">招生咨询</a>
+                        
+                       <dd><a href="/inquiry/enrollgroup/listcms/">各省招生组</a></dd>                                     
+                       <dd><a href="/inquiry/comadvice/cmscreate/">常见咨询</a></dd> 
+                       <dd><a href="/cms/index/zycp/">职业测评</a></dd>                                            
+                              
+             </dt>
+           
+          		
+             <dt><a href="#" class="rem_mes">公开公示</a>
+               
+                    
+                                                
+                       <dd><a href="/cms/item/?cat=30&parent=7">公示专栏</a></dd>  
+                                                   
+                    
+                                                
+                       <dd><a href="/cms/item/?cat=31&parent=7">管理办法</a></dd>  
+                                                   
+                    
+                                                
+                       <dd><a href="/cms/item/?cat=32&parent=7">纪检监督</a></dd>  
+                                                   
+                   
+                              
+             </dt>
+           
+           	   
+        </dl>
+    </div>
+    <div class="clearfix"></div> 
+
+<script type="text/javascript">
+     //平台、设备和操作系统
+   function subgo() {
+    var system ={
+        win : false,
+        mac : false,
+        xll : false
+    };
+    //检测平台
+    var p = navigator.platform;
+    system.win = p.indexOf("Win") == 0;
+    system.mac = p.indexOf("Mac") == 0;
+    system.x11 = (p == "X11") || (p.indexOf("Linux") == 0);
+    //跳转语句，如果是手机访问就自动跳转到wap.baidu.com页面
+    /*
+    if(system.win||system.mac||system.xll){
+        window.location.href="/cms/list/bkzn/ ";
+
+    }else{
+        window.location.href="/cms/list/bkzn/phone/ ";
+    }
+    */
+    window.location.href="/cms/list/bkzn/phone/ "; 
+ }   
+</script>  
+<script type="text/javascript">
+        $(function(){
+            $('.y_ipt_menu').click(function(){
+                if($(this).hasClass('open')){
+                    $(this).removeClass('open');
+                    $('.y_top_menu').animate({width: '0'},200);
+                }else{
+                    $(this).addClass('open');
+                    $('.y_top_menu').animate({width: '210px'},200);
+                }
+
+            });
+            $('dt a.rem_mes').bind('click', function() {
+                if($('dd').is(':visible')){
+                     $('dd').hide(); 
+                } else{
+                    $('dd').show();
+                }
+        });
+        });
+</script>     
+    <div class="y_tit_box">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 header">
+                    <h1 class="y_tit">历史学院</h1>
+                    <span class="y_des"></span>
+                    <div class="r-title hidden-xs">
+                    
+                        <span class="grey-hint-sm">更新时间：2015-12-25</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 主体 -->
+    <div class="container content" >
+        <div class="content-inner">
+            <div class="row">
+                <div class="col-md-9 col-sm-8">
+                    <div class="article">
+                       <p style="text-align:center"><br/></p><p style="text-align: center;"><br/></p><p style="margin: 5px 0px; text-align: center; line-height: 1.5em;"><span style="font-size: 24px;font-family:&#39;微软雅黑&#39;,sans-serif">历史学院</span></p><p style="margin: 5px 0px; line-height: 1.5em;">&nbsp;</p><p style="margin: 5px 0px; text-indent: 32px; line-height: 1.5em;"><span style="font-size:14px;font-family:&#39;微软雅黑&#39;,sans-serif">中国人民大学的历史学科源自1937年成立的陕北公学，办学历史悠久，力量雄厚。中国人民大学历史学院由历史系、考古文博系、清史研究所和民国史研究院组成，学科门类齐全，学术成就显著，在国内外享有盛誉。历史学院致力于培养具有深厚人文底蕴、世界视野和扎实专业基础的史学专门人才，注重通识教育，理论联系实际，鼓励学生个性发展。</span></p><p style="margin: 5px 0px; text-indent: 32px; line-height: 1.5em;">&nbsp;</p><p style="margin: 5px 0px; text-indent: 32px; line-height: 1.5em;"><span style="color: rgb(255, 0, 0);"><strong><span style="font-size: 18px; font-family: 微软雅黑, sans-serif;">学院特色</span></strong></span></p><p style="margin: 5px 0px; text-indent: 32px; line-height: 1.5em;">&nbsp;</p><p style="margin: 5px 0px; text-indent: 32px; line-height: 1.5em;"><strong><span style="font-size:14px;font-family:&#39;微软雅黑&#39;,sans-serif">“世界一流学科”建设学科</span></strong></p><p style="margin: 5px 0px; text-indent: 32px; line-height: 1.5em;">&nbsp;</p><p style="margin: 5px 0px; text-indent: 32px; line-height: 1.5em;"><span style="font-size:14px;font-family:&#39;微软雅黑&#39;,sans-serif">学院拥有中国史、世界史、考古学3个一级学科本硕博学位授予权，中国古代史和中国近现代史两个“国家二级重点学科”。现有历史学、世界史、考古学3个本科招生专业，9个硕士学科点，8个博士学科点，4个博士后流动工作站。中国史学科2017年入选教育部“世界一流学科”建设名单。</span></p><p style="margin: 5px 0px; text-indent: 32px; line-height: 1.5em;"><span style="font-size:14px;font-family: &#39;微软雅黑&#39;,sans-serif">&nbsp;</span></p><p style="margin: 5px 0px; text-indent: 32px; line-height: 1.5em;"><strong><span style="font-size:14px;font-family:&#39;微软雅黑&#39;,sans-serif">国家级人才培养项目众多</span></strong></p><p style="margin: 5px 0px; text-indent: 32px; line-height: 1.5em;">&nbsp;</p><p style="margin: 5px 0px; text-indent: 32px; line-height: 1.5em;"><span style="font-size:14px;font-family:&#39;微软雅黑&#39;,sans-serif">学院是首批国家基础学科人才培养基地。 近年来又入选首批“国家级一流本科专业”建设点、“强基计划”、“基础学科拔尖学生培养计划2.0基地”，是国内历史学科国家级人才培养重大项目最多的历史学院系之一。</span></p><p style="margin: 5px 0px; text-indent: 32px; line-height: 1.5em;"><span style="font-size:14px;font-family: &#39;微软雅黑&#39;,sans-serif">&nbsp;</span></p><p style="margin: 5px 0px; text-indent: 32px; line-height: 1.5em;"><strong><span style="font-size:14px;font-family:&#39;微软雅黑&#39;,sans-serif">“教育部人文社会科学百所重点研究基地”</span></strong></p><p style="margin: 5px 0px; text-indent: 32px; line-height: 1.5em;">&nbsp;</p><p style="margin: 5px 0px; text-indent: 32px; line-height: 1.5em;"><span style="font-size:14px;font-family:&#39;微软雅黑&#39;,sans-serif">清史研究所为“教育部人文社会科学百所重点研 究基地”，现为国家清史纂修工程主要依托单位，戴逸先生担任工程首席专家。</span></p><p style="margin: 5px 0px; text-indent: 32px; line-height: 1.5em;"><span style="font-size:14px;font-family: &#39;微软雅黑&#39;,sans-serif">&nbsp;</span></p><p style="margin: 5px 0px; text-indent: 32px; line-height: 1.5em;"><strong><span style="font-size:14px;font-family:&#39;微软雅黑&#39;,sans-serif">全方位人才培养体系</span></strong></p><p style="margin: 5px 0px; text-indent: 32px; line-height: 1.5em;">&nbsp;</p><p style="margin: 5px 0px; text-indent: 32px; line-height: 1.5em;"><span style="font-size:14px;font-family:&#39;微软雅黑&#39;,sans-serif">学院高度重视本科教学综合改革，打通中国史、世界史和考古学三个一级学科，充分利用我校人文学科优势，建立起课堂教学、历史现场教学和课外指导有机结合的全方位人才培养体系，致力于培养通专结合、中西融合的跨学科高水平人才。</span></p><p style="margin: 5px 0px; text-indent: 32px; line-height: 1.5em;"><span style="font-size:14px;font-family: &#39;微软雅黑&#39;,sans-serif">&nbsp;</span></p><p style="margin: 5px 0px; text-indent: 32px; line-height: 1.5em;"><strong><span style="font-size:14px;font-family:&#39;微软雅黑&#39;,sans-serif">名师云集，教学相长</span></strong></p><p style="margin: 5px 0px; text-indent: 32px; line-height: 1.5em;">&nbsp;</p><p style="margin: 5px 0px; text-indent: 32px; line-height: 1.5em;"><span style="font-size:14px;font-family:&#39;微软雅黑&#39;,sans-serif">学院现有教师80人，其中教授35人，副教授32人，讲师13人，另有师资博士后3人。其中国家 级优秀人才17人，北京市教学名师3人。教师队伍结构合理，拥有一批年富力强、思想活跃，并在学界卓有影响的中青年学人。</span></p><p style="margin: 5px 0px; text-indent: 32px; line-height: 1.5em;"><span style="font-size:14px;font-family: &#39;微软雅黑&#39;,sans-serif">&nbsp;</span></p><p style="margin: 5px 0px; text-indent: 32px; line-height: 1.5em;"><span style="color: rgb(255, 0, 0);"><strong><span style="font-size: 18px; font-family: 微软雅黑, sans-serif;">人才培养</span></strong></span></p><p style="margin: 5px 0px; text-indent: 32px; line-height: 1.5em;"><span style="color: rgb(255, 0, 0);">&nbsp;</span></p><p style="margin: 5px 0px; text-indent: 32px; line-height: 1.5em;"><span style="font-size:14px;font-family:&#39;微软雅黑&#39;,sans-serif">第一学年，人文科学试验班学生在明德书院进行管理和大类培养，历史学院面向书院开设部类课程: 中国古代史通论、中国近现代史通论、世界史通论、考古学导论、数字人文与历史研究。第二学年，学生进入学院继续培养。</span></p><p style="margin: 5px 0px; text-indent: 32px; line-height: 1.5em;"><span style="font-size:14px;font-family: &#39;微软雅黑&#39;,sans-serif">&nbsp;</span></p><p style="margin: 5px 0px; text-indent: 32px; line-height: 1.5em;"><strong><span style="font-size:14px;font-family:&#39;微软雅黑&#39;,sans-serif">历史学专业</span></strong></p><p style="margin: 5px 0px; text-indent: 32px; line-height: 1.5em;">&nbsp;</p><p style="margin: 5px 0px; text-indent: 32px; line-height: 1.5em;"><span style="font-size:14px;font-family:&#39;微软雅黑&#39;,sans-serif">本专业旨在培养具有宏阔学术视野、厚重人文素养、实践能力出色的综合型专业人才。 核心课程：中国古代史、中国近现代史、中国当代史、中国历史文献学、中国史学史、史学理论、中国历史地理学、中国经济史、中国边疆民族史、中国思想文化史、田野考古学、学术训练与学术规范、史学论文阅读与写作等。</span></p><p style="margin: 5px 0px; text-indent: 32px; line-height: 1.5em;"><span style="font-size:14px;font-family: &#39;微软雅黑&#39;,sans-serif">&nbsp;</span></p><p style="margin: 5px 0px; text-indent: 32px; line-height: 1.5em;"><strong><span style="font-size:14px;font-family:&#39;微软雅黑&#39;,sans-serif">世界史专业</span></strong></p><p style="margin: 5px 0px; text-indent: 32px; line-height: 1.5em;">&nbsp;</p><p style="margin: 5px 0px; text-indent: 32px; line-height: 1.5em;"><span style="font-size:14px;font-family:&#39;微软雅黑&#39;,sans-serif">本专业旨在培养拥有扎实世界史知识、优秀外语应用能力和开阔国际视野的综合型专业人才。核心课程：世界上古史、世界中古史、世界近代史、世界现代史、世界当代史、星球史、史学论文阅读与写作、田野考古学、西方新史学、西方史学史等。</span></p><p style="margin: 5px 0px; text-indent: 32px; line-height: 1.5em;"><span style="font-size:14px;font-family: &#39;微软雅黑&#39;,sans-serif">&nbsp;</span></p><p style="margin: 5px 0px; text-indent: 32px; line-height: 1.5em;"><strong><span style="font-size:14px;font-family:&#39;微软雅黑&#39;,sans-serif">考古学专业</span></strong></p><p style="margin: 5px 0px; text-indent: 32px; line-height: 1.5em;">&nbsp;</p><p style="margin: 5px 0px; text-indent: 32px; line-height: 1.5em;"><span style="font-size:14px;font-family:&#39;微软雅黑&#39;,sans-serif">本专业旨在培养基础知识牢固、专业技能熟练、学术视野宽广的综合型考古文博和文化遗产专业人才。核心课程:石器时代考古、夏商周考古、秦汉考古、魏晋-宋元考古、考古学思想史、考古绘图、田野考古学、田野考古实习、考古技术、西方文明的起源等。</span></p><p style="margin: 5px 0px; text-indent: 32px; line-height: 1.5em;"><span style="font-size:14px;font-family: &#39;微软雅黑&#39;,sans-serif">&nbsp;</span></p><p style="margin: 5px 0px; text-indent: 32px; line-height: 1.5em;"><strong><span style="font-size:14px;font-family:&#39;微软雅黑&#39;,sans-serif">“政治学-历史学”双学士学位复合型人才培养项目</span></strong></p><p style="margin: 5px 0px; text-indent: 32px; line-height: 1.5em;">&nbsp;</p><p style="margin: 5px 0px; text-indent: 32px; line-height: 1.5em;"><span style="font-size:14px;font-family:&#39;微软雅黑&#39;,sans-serif">本专业融会贯通历史学、政治学两个专业，旨在打破因学科分立带来的思维局限，立志于培养适应新时代治国理政需求的复合型人才。</span></p><p style="margin: 5px 0px; text-indent: 32px; line-height: 1.5em;">&nbsp;</p><p style="margin: 5px 0px; text-indent: 32px; line-height: 1.5em;"><span style="font-size:14px;font-family:&#39;微软雅黑&#39;,sans-serif">课程由历史学院和国际关系学院联合开设，不仅有中国通史、世界通史、政治思想史、政治制度史等基础课程，还包括当代中国外交、全球政治经济与国家风险、中国政府与政治等前沿课程。</span></p><p style="margin: 5px 0px; text-indent: 32px; line-height: 1.5em;"><span style="font-size:14px;font-family: &#39;微软雅黑&#39;,sans-serif">&nbsp;</span></p><p style="margin: 5px 0px; text-indent: 32px; line-height: 1.5em;"><span style="color: rgb(255, 0, 0);"><strong><span style="font-size: 18px; font-family: 微软雅黑, sans-serif;">未来发展</span></strong></span></p><p style="margin: 5px 0px; text-indent: 32px; line-height: 1.5em;">&nbsp;</p><p style="margin: 5px 0px; text-indent: 32px; line-height: 1.5em;"><span style="font-size:14px;font-family:&#39;微软雅黑&#39;,sans-serif">历史学院已经培养了一千余名本科毕业生。一部分同学进入国内外名校继续攻读本专业或跨专业硕博士研究生，毕业后进入国内外高校、科研院所、文博机构从事学术研究工作；一部分同学进入党政机关、工商企业、金融机构、新闻出版以及其他新兴行业，成长为中坚力量。</span></p><p style="margin: 5px 0px; text-indent: 32px; line-height: 1.5em;"><span style="font-size:14px;font-family: &#39;微软雅黑&#39;,sans-serif">&nbsp;</span></p><p style="margin: 5px 0px; text-indent: 32px; line-height: 1.5em;"><span style="font-size:14px;font-family:&#39;微软雅黑&#39;,sans-serif">近年来，毕业生就业率一直居于全校前列。毕业生既有赴美国耶鲁大学、哥伦比亚大学、英国伦敦政治经济学院等海外名校继续深造，也有被中国石油集团、中国移动通信集团、中粮集团、中国建设银行、中国国家图书馆、中国国家博物馆等单位聘用。</span></p><p style="text-align:center"><span style="font-size:14px;font-family:&#39;微软雅黑&#39;,sans-serif"><img src="https://rdzs.ruc.edu.cn/media/rte/image/2022/11/21/20221121163217270.jpg" alt="历史.jpg" width="346" height="246" border="0" vspace="0" title="历史.jpg" style="font-family: 微软雅黑, sans-serif; font-size: 14px; text-indent: 32px; white-space: normal; width: 346px; height: 246px;"/></span></p><p style="margin: 5px 0px; text-indent: 32px; line-height: 1.5em;"><span style="font-size:14px;font-family:&#39;MS Gothic&#39;"></span></p><p style="margin: 5px 0px; line-height: 1.5em;">&nbsp;</p><p style="margin: 5px 0px; text-indent: 32px; line-height: 1.5em;"><span style="font-size: 18px; color: rgb(255, 0, 0);"><strong><span style="font-size: 18px; font-family: 微软雅黑, sans-serif;">精英校友</span></strong></span></p><p style="margin: 5px 0px; text-indent: 32px; line-height: 1.5em;">&nbsp;</p><p style="margin: 5px 0px; text-indent: 32px; line-height: 1.5em;"><span style="font-size:14px;font-family:&#39;微软雅黑&#39;,sans-serif">数十年来，历史学院培养了一大批优秀毕业生，在各行各业都创造了不凡的业绩。有的成长为著名学者，有的在党政机关担任重要职务，有的成为文化教育行业领军人物，有的成为商界精英。</span></p><p style="margin: 5px 0px; text-indent: 32px; line-height: 1.5em;">&nbsp;</p><p style="margin: 5px 0px; text-indent: 32px; line-height: 1.5em;">&nbsp;</p><p style="margin: 5px 0px; text-align: right; line-height: 1.5em;"><span style="font-size:14px;font-family: &#39;微软雅黑&#39;,sans-serif">官方网站: <a href="http://lsxy.ruc.edu.cn/" target="_blank">http://lsxy.ruc.edu.cn/</a></span></p><p style="margin: 5px 0px; text-align: right; line-height: 1.5em;"><span style="font-size:14px;font-family: &#39;微软雅黑&#39;,sans-serif">办公地址: 中国人民大学人文楼</span></p><p style="margin: 5px 0px; text-align: right; line-height: 1.5em;"><span style="font-size:14px;font-family: &#39;微软雅黑&#39;,sans-serif">办公电话: 010-62513258</span></p><p><br/></p>
+                       
+                        <div class="pull-right mt20">
+                            <!-- JiaThis Button BEGIN -->
+                            <div class="jiathis_style">
+                                <span class="jiathis_txt">分享到：</span>
+                                <a class="jiathis_button_icons_1"></a>
+                                <a class="jiathis_button_icons_2"></a>
+                                <a class="jiathis_button_icons_3"></a>
+                                <a class="jiathis_button_icons_4"></a>
+                                <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
+                                <a class="jiathis_counter_style"></a>
+                            </div>
+                            <script type="text/javascript" src="http://v3.jiathis.com/code/jia.js" charset="utf-8"></script>
+                            <!-- JiaThis Button END -->
+                        </div>
+                    </div>
+                </div>
+	            <div class="col-md-3 col-sm-4">
+                    <ul class="grey-ul">
+                    
+                        <li><a href="/cms/list/college/1/"  class="cur"   >  人文学部</a></li>
+
+                     
+                        <li><a href="/cms/list/college/2/" >  社会学部</a></li>
+
+                     
+                        <li><a href="/cms/list/college/3/" >  经济学部</a></li>
+
+                     
+                        <li><a href="/cms/list/college/4/" >  法政学部</a></li>
+
+                     
+                        <li><a href="/cms/list/college/5/" >  理工学部</a></li>
+
+                     
+                        <li><a href="/cms/list/college/6/" >  其它</a></li>
+
+                       
+                    </ul>
+	
+	             </div>
+            </div>
+        </div>
+    </div>
+      
+    <div class="y_foot hidden-xs">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="t_col3">
+                        <h5>联系我们</h5>
+                        <div class="t_icon1">
+                            <i></i>
+                            <span>400-0123-517</span><br/>
+                        </div>
+                        <div class="t_icon2">
+                            <i></i>
+                            <span>zsb@ruc.edu.cn</span></br>
+                        </div>
+                        <div class="t_icon4">
+                            <i></i>
+                            <span>010-62511156(传真)</span></br>
+                        </div>
+                        <div class="t_icon3">
+                            <i></i>
+                            <span>北京市海淀区中关村大街59号<br/>知行F楼(北区食堂)六层</span></br>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="t_col3">
+                        <h5>关注我们</h5>
+                        <img src="/static/default/images/wechat.png" alt="">
+                        <p>扫描二维码关注我们</p>
+                        <p>微信公众号"人大阳光招生"</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="t_col3">
+                        <h5>学术公告</h5>
+                        
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="t_col3">
+                         <h5>快速链接
+                        <a target="_blank" href="http://211.71.30.15/index/index_main.action" style="margin-left: 40px;color: #999;font-weight: normal;font-size: 16px;">返回旧网站</a>
+                               <a target="_blank" href="http://211.71.30.15/index/index_main.action" >
+                                    <span class="icon-wrap">
+                                        <span class="icon icon-arrow_carrot-right_alt2"  style="color: #999"></span>
+                                    </span>
+                                </a>
+                        </h5>
+                        
+                                 
+                        <a href="/cms/item/1031.html" class="t_b" target = _blank>人大主页</a>
+                       
+                                 
+                        <a href="/cms/item/1032.html" class="t_b" target = _blank>人大新闻网</a>
+                       
+                                 
+                        <a href="/cms/item/1038.html" class="t_b" target = _blank>留学生招生</a>
+                       
+                                 
+                        <a href="/cms/item/1037.html" class="t_b" target = _blank>研究生招生</a>
+                       
+                                 
+                        <a href="/cms/item/1036.html" class="t_b" target = _blank>考生黄页</a>
+                       
+                                 
+                        <a href="/cms/item/1035.html" class="t_b" target = _blank>校园地图</a>
+                       
+                                 
+                        <a href="/cms/item/1034.html" class="t_b" target = _blank>校友总会</a>
+                       
+                                 
+                        <a href="/cms/item/1033.html" class="t_b" target = _blank>教育基金会</a>
+                       
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="y_bottom">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="t_info clearfix">
+                        <p>版权所有 Copyright© 中国人民大学本科生招生办公室   京ICP备05066828号-1</p>
+                        <div class="t_flogo">
+                            <a href="http://www.ruc.edu.cn/"><img src="/static/default/images/t_logo.png" alt=""></a>
+                            <a href="#" class="hidden-xs t_back">回顶部</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

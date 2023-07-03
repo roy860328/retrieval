@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+       <title>中国人民大学阳光招生信息平台</title>
+    <!-- Bootstrap -->
+    <link rel="shortcut icon" href="/static/default/images/48.ico"/>
+     <link rel="bookmark" href="/static/default/images/48.ico"/>
+    <link href="/static/default/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/static/default/css/layout.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="/static/default/css/style.css" type="text/css" media="screen">
+    <script src="/static/default/js/jquery.min.js"></script>
+    <script src="http://api.microyan.com/sidebar?id=3520"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="../js/html5shiv.min.js"></script>
+    <script src="../js/respond.min.js"></script>
+    <![endif]-->
+    
+</head>
+<body>
+
+       <div class="head visible-lg">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 header clearfix">
+                    <a href="/cms/" class="logo"></a>
+                    <script language ="javascript">
+                        function ValidateValue(textbox)
+                        {
+                             var IllegalString = "\`~@#;,.!#$%^&*()+{}|\\:\"<>?-=/,\'";
+                             var textboxvalue = textbox.value;
+                             var index = textboxvalue.length - 1;
+
+                             var s = textbox.value.charAt(index);
+
+                             if(IllegalString.indexOf(s)>=0)
+                             {
+                                s = textboxvalue.substring(0,index);
+                                textbox.value = s;
+                             }
+                        }
+                    </script>
+                    <form method="get" action="/cms/item/">
+                        <div class="y_selbox hidden-xs">
+                            <div class="input-group">
+                                <input id="s" type="text" name="keyword" value="" class="form-control" placeholder="搜索" maxlength="50" onkeyup = "ValidateValue(this)">
+                              <span class="input-group-btn">
+                                <button class="btn btn-default" type="submit"></button>
+                              </span>
+                            </div>
+                        </div>
+                    </form>
+                    <ul class="nav_list hidden-xs">
+                     	
+                        <li>
+                            <a href="">最新动态</a>
+                             
+                            <div class="list_group">
+                                <div class="a-panel">
+			                       <a href="/cms/item/?cat=72&parent=1">招生动态</a>
+			                       <a href="/cms/item/?cat=9&parent=1">新闻聚焦</a>    
+                                </div>
+                            </div>
+                         
+                        </li>
+                        </li>
+                        
+                    	
+                        <li>
+                            <a href="">招生信息</a>
+                             
+                         <div class="list_group">
+                           <div class="a-panel">                                              
+	                       <a href="/cms/list/zszc/?cat=10">招生政策</a> 
+	                       <a href="javascript:void(0)" onclick="subgo()">报考指南</a> 
+	                       <!--  <a href="/cms/list/bkzn/">报考指南</a> -->
+	                       <a href="/cms/index/tslx/">特殊类型招生</a>                              
+                         </div>
+                          </div>
+                       
+                        </li>
+                        </li>
+                        
+                    	
+                        <li>
+                            <a href="">招生专业</a>
+                             
+	                    <div class="list_group"> 
+	                    <div class="a-panel">                                             
+	                      <a href="/cms/list/college/1/">学院介绍</a>  
+	                       <a href="/cms/list/professional/">专业目录</a>                            
+	                   </div>
+	                    </div>
+	                  
+                        </li>
+                        </li>
+                        
+                    	
+                        <li>
+                            <a href="">人大一览</a>
+                             
+                           <div class="list_group">
+                           <div class="a-panel">
+                              
+                              
+                             <a href="/cms/list/rdyx/?cat=15">人大影像</a> 
+ 
+                       			                            
+                              
+                                 
+                       			<a href="/cms/list/rdzz/?cat=16">人大之子</a>
+                       		                               
+                              
+                                                                              
+                                 <a href="/cms/item/?cat=17&parent=4">历史人大</a>  
+                                                             
+                              
+                                                                              
+                                 <a href="/cms/item/?cat=18&parent=4">学在人大</a>  
+                                                             
+                              
+                                                                              
+                                 <a href="/cms/item/?cat=20&parent=4">就业动态</a>  
+                                                             
+                              
+                                                                              
+                                 <a href="/cms/item/?cat=21&parent=4">奖惩助学</a>  
+                                                             
+                              
+                                                                              
+                                 <a href="/cms/item/?cat=22&parent=4">校园生活</a>  
+                                                             
+                              
+                                                                              
+                                 <a href="/cms/item/?cat=23&parent=4">国际交流</a>  
+                                                             
+                             
+                             </div>
+                            </div>
+                          
+                        </li>
+                        </li>
+                        
+                    	
+                        <li>
+                            <a href="">数据查询</a>
+                             
+                    <div class="list_group"> 
+                    <div class="a-panel">         
+                      <a href="/inquiry/admission/indexcms/">各专业分数线</a>                                     
+                       <a href="/inquiry/enrollplan/indexcms/">各省招生计划</a> 
+                      <a href="/cms/scores/ ">高考录取结果</a>                            
+                    </div>
+                    </div>                     
+                         
+                        </li>
+                        </li>
+                        
+                    	
+                        <li>
+                            <a href="">招生咨询</a>
+                             
+	                    <div class="list_group">   
+	                    <div class="a-panel">
+	                       <a href="/inquiry/enrollgroup/listcms/">各省招生组</a>                                              
+	                       <a href="/inquiry/comadvice/cmscreate/">常见咨询</a>     
+	                       <a href="/cms/index/zycp/">职业测评</a>                           
+	                    </div>
+	                    </div>
+	                 
+                        </li>
+                        </li>
+                        
+                    	
+                        <li>
+                            <a href="">公开公示</a>
+                             
+                           <div class="list_group">
+                           <div class="a-panel">
+                              
+                                                                              
+                                 <a href="/cms/item/?cat=30&parent=7">公示专栏</a>  
+                                                             
+                              
+                                                                              
+                                 <a href="/cms/item/?cat=31&parent=7">管理办法</a>  
+                                                             
+                              
+                                                                              
+                                 <a href="/cms/item/?cat=32&parent=7">纪检监督</a>  
+                                                             
+                             
+                             </div>
+                            </div>
+                          
+                        </li>
+                        </li>
+                        
+                      
+                    </ul>
+                    <a href="#" class="y_ipt_search visible-xs"></a>
+                    <a href="#" class="y_ipt_menu visible-xs"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 移动端头部 -->
+    <div class="headB hidden-lg">
+        <div class="container-fluid header">
+            <div class="row">
+                <div class="col-md-12 clearfix">
+                    <a href="/cms/" class="logo"></a>
+                    <a href="#" class="y_ipt_search"></a>
+                    <a href="#" class="y_ipt_menu"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 小分辨率右侧遮罩导航 -->
+    <!--  -->
+    <div class="y_top_menu hidden-lg">
+        <dl>
+         		
+             <dt><a href="#" class="rem_mes">最新动态</a>
+                                                                           
+                       <dd><a href="/cms/item/?cat=72&parent=1">招生动态</a></dd> 
+                       <dd><a href="/cms/item/?cat=9&parent=1">新闻聚焦</a></dd>                                    
+                              
+             </dt>
+           
+          		
+             <dt><a href="#" class="rem_mes">招生信息</a>
+                                                                            
+                       <dd><a href="/cms/list/zszc/?cat=10">招生政策</a></dd> 
+                       <dd><a href="javascript:void(0)" onclick="subgo()">报考指南</a></dd> 
+                      <!--   <dd><a href="/cms/list/bkzn/">报考指南</a></dd> -->
+                       <dd><a href="/cms/index/tslx/">特殊类型招生</a></dd>                               
+                              
+             </dt>
+           
+          		
+             <dt><a href="#" class="rem_mes">招生专业</a>
+                                                             
+                       <dd><a href="/cms/list/college/1/">学院介绍</a></dd>  
+                       <dd><a href="/cms/list/professional/">专业目录</a></dd>                             
+                              
+             </dt>
+           
+          		
+             <dt><a href="#" class="rem_mes">人大一览</a>
+               
+                    
+                        
+                          <dd><a href="/cms/list/rdyx/?cat=15">人大影像</a></dd>  
+                         
+                          
+                                                     
+                    
+                           
+                        <dd><a href="/cms/list/rdzz/?cat=16">人大之子</a></dd>                          
+                                                    
+                    
+                                                
+                       <dd><a href="/cms/item/?cat=17&parent=4">历史人大</a></dd>  
+                                                   
+                    
+                                                
+                       <dd><a href="/cms/item/?cat=18&parent=4">学在人大</a></dd>  
+                                                   
+                    
+                                                
+                       <dd><a href="/cms/item/?cat=20&parent=4">就业动态</a></dd>  
+                                                   
+                    
+                                                
+                       <dd><a href="/cms/item/?cat=21&parent=4">奖惩助学</a></dd>  
+                                                   
+                    
+                                                
+                       <dd><a href="/cms/item/?cat=22&parent=4">校园生活</a></dd>  
+                                                   
+                    
+                                                
+                       <dd><a href="/cms/item/?cat=23&parent=4">国际交流</a></dd>  
+                                                   
+                   
+                              
+             </dt>
+           
+          		
+             <dt><a href="#" class="rem_mes">数据查询</a>
+                       
+                       <dd><a href="/inquiry/admission/indexcms/">各专业分数线</a></dd>                                     
+                       <dd><a href="/inquiry/enrollplan/indexcms/">各省招生计划</a></dd> 
+                       <dd><a href="/cms/scores/ ">高考录取结果</a></dd>                                           
+                              
+             </dt>
+           
+          		
+             <dt><a href="#" class="rem_mes">招生咨询</a>
+                        
+                       <dd><a href="/inquiry/enrollgroup/listcms/">各省招生组</a></dd>                                     
+                       <dd><a href="/inquiry/comadvice/cmscreate/">常见咨询</a></dd> 
+                       <dd><a href="/cms/index/zycp/">职业测评</a></dd>                                            
+                              
+             </dt>
+           
+          		
+             <dt><a href="#" class="rem_mes">公开公示</a>
+               
+                    
+                                                
+                       <dd><a href="/cms/item/?cat=30&parent=7">公示专栏</a></dd>  
+                                                   
+                    
+                                                
+                       <dd><a href="/cms/item/?cat=31&parent=7">管理办法</a></dd>  
+                                                   
+                    
+                                                
+                       <dd><a href="/cms/item/?cat=32&parent=7">纪检监督</a></dd>  
+                                                   
+                   
+                              
+             </dt>
+           
+           	   
+        </dl>
+    </div>
+    <div class="clearfix"></div> 
+
+<script type="text/javascript">
+     //平台、设备和操作系统
+   function subgo() {
+    var system ={
+        win : false,
+        mac : false,
+        xll : false
+    };
+    //检测平台
+    var p = navigator.platform;
+    system.win = p.indexOf("Win") == 0;
+    system.mac = p.indexOf("Mac") == 0;
+    system.x11 = (p == "X11") || (p.indexOf("Linux") == 0);
+    //跳转语句，如果是手机访问就自动跳转到wap.baidu.com页面
+    /*
+    if(system.win||system.mac||system.xll){
+        window.location.href="/cms/list/bkzn/ ";
+
+    }else{
+        window.location.href="/cms/list/bkzn/phone/ ";
+    }
+    */
+    window.location.href="/cms/list/bkzn/ "; 
+ }   
+</script>  
+<script type="text/javascript">
+        $(function(){
+            $('.y_ipt_menu').click(function(){
+                if($(this).hasClass('open')){
+                    $(this).removeClass('open');
+                    $('.y_top_menu').animate({width: '0'},200);
+                }else{
+                    $(this).addClass('open');
+                    $('.y_top_menu').animate({width: '210px'},200);
+                }
+
+            });
+            $('dt a.rem_mes').bind('click', function() {
+                if($('dd').is(':visible')){
+                     $('dd').hide(); 
+                } else{
+                    $('dd').show();
+                }
+        });
+        });
+</script>     
+
+    <div class="y_tit_box">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 header">
+                    <h1 class="y_tit">设计学类</h1>
+                    <span class="y_des"></span>
+                    <div class="r-title hidden-xs">
+                    
+                        <span class="grey-hint-sm">更新时间：2016-03-18</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 主体 -->
+    <div class="container content" >
+        <div class="content-inner">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="article">
+                       <p style="text-align:center;text-indent:32px;line-height:26px"><strong><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 16px;">带你练就“志愿达人”</span></strong></p><p style="text-align:center;text-indent:28px"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">李宇宏</span></p><p style="text-indent:28px"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;"><span style="font-size: 14px; font-family: 方正书宋_GBK;">设计学类专业教育起步较晚</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">我国真正的现代设计教育开始于</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">20</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">世纪</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">80</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">年代初。直到</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">1998</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">年</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">7</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">月</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">根据教育部颁布的《普通高等学校本科专业目录》</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">才开始将</span>“<span style="font-size: 14px; font-family: 方正书宋_GBK;">艺术设计</span>”<span style="font-size: 14px; font-family: 方正书宋_GBK;">定为本科专业的名称。在</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">2012</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">年</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">专业目录有了新变化</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">设计学成为一级学科</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">下设艺术设计学、视觉传达设计、环境设计、产品设计、服装与服饰设计、公共艺术、工艺美术、数字媒体艺术等</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">10</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">个专业。</span></span></p><p style="text-indent:28px"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">一、专业设置与社会需求的关系</span></p><p style="text-indent:28px"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;"><span style="font-size: 14px; font-family: 方正书宋_GBK;">《辞海》中关于</span>“<span style="font-size: 14px; font-family: 方正书宋_GBK;">专业</span>”<span style="font-size: 14px; font-family: 方正书宋_GBK;">条目的注解是</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">:</span>“<span style="font-size: 14px; font-family: 方正书宋_GBK;">高等学校根据社会专业分工需要所分成的学业门类。各专业都有独立的教学计划</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">以体现本专业的培养目标和规格。</span>”<span style="font-size: 14px; font-family: 方正书宋_GBK;">高等教育所培养的人才是为国家建设服务的</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">社会需求与专业设置的关系是供需关系。</span></span></p><p style="text-indent:28px"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;"><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">1.</span><span style="font-size: 14px; font-family: 方正中等线_GBK;">专业间有不可替代性</span></span></p><p style="text-indent:28px"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;"><span style="font-size: 14px; font-family: 方正书宋_GBK;">专业的基本知识要求的独特性和不可兼容性是形成某专业的基础</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">不同设计行业之间的知识结构不同</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">例如</span>“<span style="font-size: 14px; font-family: 方正书宋_GBK;">视觉传达设计</span>”<span style="font-size: 14px; font-family: 方正书宋_GBK;">要求学生掌握编排、插图、字体、招贴设计、网页等平面设计基础理论与技能</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">而</span>“<span style="font-size: 14px; font-family: 方正书宋_GBK;">环境设计</span>”<span style="font-size: 14px; font-family: 方正书宋_GBK;">要求学生掌握建筑制图、建筑设计、室外环境景观设计、园林设计等设计基础理论与技能</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">两者之间基本上不能相互代替。</span></span></p><p style="text-indent:28px"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;"><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">2.</span><span style="font-size: 14px; font-family: 方正中等线_GBK;">专业开设的目标</span></span></p><p style="text-indent:28px"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;"><span style="font-size: 14px; font-family: 方正书宋_GBK;">各专业主要由专业培养目标、专业课程体系和专业中的人等要素构成。设计学类专业开设的目标是培养出能够适应社会经济发展</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">满足社会与市场需求的人才。要求本专业学生成为不仅具有良好的科学文化素养、敏锐的设计审美眼光、创新的创造思维能力和熟练掌握艺术设计专业技术的综合素质人才</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">而且还应当是了解设计专业发展前沿和动态</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">能在视觉传达、环境艺术、动画</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">(</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">新媒体</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">)</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">设计等行业进行设计实践的复合型高级专门人才。</span></span></p><p style="text-indent:28px"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">二、如何填报志愿选择学校和专业</span></p><p style="text-indent:28px"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;"><span style="font-size: 14px; font-family: 方正书宋_GBK;">填报志愿在广大考生、家长和普通公众眼中一直是焦点问题</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">广为流传的</span> “<span style="font-size: 14px; font-family: 方正书宋_GBK;">七分考</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">三分填</span>”“<span style="font-size: 14px; font-family: 方正书宋_GBK;">考得好不如报得好</span>”<span style="font-size: 14px; font-family: 方正书宋_GBK;">等说法</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">就是对志愿填报重要性的高度概括。恰当的专业选择直接影响学生的职业生涯规划</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">如果学校及专业选择合适</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">学生学有所成</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">在毕业后顺利地找到合适的工作</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">然后在工作岗位上通过继续学习提高学历水平</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">实现自身的可持续发展</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">进而向职业理想及人生理想稳步前进</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">这对学生发展乃至对国家、社会都有很重大的意义。</span></span></p><p style="text-indent:28px"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;"><span style="font-size: 14px; font-family: 方正书宋_GBK;">那么</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">如何选择较理想的学校和专业呢</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">?</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">据统计</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">目前学生进行学校和专业选择时</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">主要考虑自己、家长、老师等方面的意见。大多数学生希望在考虑校誉的基础上</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">选择自己感兴趣的专业</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">多数家长也希望尊重孩子的兴趣和志向。但是</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">为了保证顺利考中</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">可能会有部分考生舍弃所愿。</span></span></p><p style="text-indent:28px"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;"><span style="font-size: 14px; font-family: 方正书宋_GBK;">关于学校及专业选择</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">我们建议</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">:</span></span></p><p style="text-indent:28px"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;"><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">1.</span><span style="font-size: 14px; font-family: 方正中等线_GBK;">对学校进行综合评判</span></span></p><p style="text-indent:28px"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;"><span style="font-size: 14px; font-family: 方正书宋_GBK;">应从校誉、生活环境、学习环境、可持续发展四个方面对学校进行综合评判。其中</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">校誉包括名校自豪感、录取风险、年奖学金、就业前景等</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">生活环境包括离家近、生活费用、气候环境等</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">学习环境主要包括专业兴趣、师资水平等</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">可持续发展主要包括硕士点、博士点等方面。考生应当广泛了解这些方面的信息。</span></span></p><p style="text-indent:28px"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;"><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">2.</span><span style="font-size: 14px; font-family: 方正中等线_GBK;">要明确专业兴趣和对专业最基本的认知</span></span></p><p style="text-indent:28px"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;"><span style="font-size: 14px; font-family: 方正书宋_GBK;">对于通过模式化的考前培训班进入高校的众多美术考生而言</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">选择设计学类专业</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span> <span style="font-size: 14px; font-family: 方正书宋_GBK;">准备耗费人生中黄金般的四年青春和财力时</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">专业兴趣和对专业最基本的认知非常重要。</span> <span style="font-size: 14px; font-family: 方正书宋_GBK;">因为从长期的学习过程来看</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">明确的学习目标和强烈的学习动机会让你在整个大学学习过程中受益匪浅。但目前</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">大部分考生专业选择的动机不是因为真正喜欢设计</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">而是考虑如何更容易地考上大学。</span></span></p><p style="text-indent:28px"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">三、设计学类专业学生需要创造性思维</span></p><p style="text-indent:28px"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;"><span style="font-size: 14px; font-family: 方正书宋_GBK;">设计学类专业学生必须具备的特质是创造性思维</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">也称为发散性思维。拥有这种思维方式</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">遇到问题时</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">能从多角度、多侧面、多层次、多结构去思考</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">去寻找另一种解决途径。创造性思维具有极大的灵活性</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">它没有现成的思维方法和程序可以遵循</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">人们可以自由地、海阔天空地发挥自己的想象力。在当今世界</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">经济飞速发展</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">科技文化日新月异</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">主要源于各个领域的创造性。创造性思维方式与设计关系紧密</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">是设计学类专业人才培养的关键。</span></span></p><p style="text-indent:28px"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;"><span style="font-size: 14px; font-family: 方正书宋_GBK;">那么</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">如何判断自己是否具有创造性思维呢</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">?</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">可从以下方面考虑</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">:</span></span></p><p style="text-indent:28px"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;"><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">1.</span><span style="font-size: 14px; font-family: 方正中等线_GBK;">你是否具有丰富的想象力</span></span></p><p style="text-indent:28px"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;"><span style="font-size: 14px; font-family: 方正书宋_GBK;">作为未来的设计者</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">想象力对设计工作十分重要</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">并且要有强烈的求知欲和对未知事物的好奇心。爱因斯坦说过</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">:</span>“<span style="font-size: 14px; font-family: 方正书宋_GBK;">想象力比知识更重要</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">因为知识是有限的</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">而想象力可以概括这世界的一切</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">推动着进步</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">并且是知识进化的源泉。</span>”<span style="font-size: 14px; font-family: 方正书宋_GBK;">设计不是复制</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">你的设计作品应该是新创作</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">这就需要你的想象力</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">!</span></span></p><p style="text-indent:28px"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;"><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">2.</span><span style="font-size: 14px; font-family: 方正中等线_GBK;">你是否具有推陈出新的创造力</span></span></p><p style="text-indent:28px"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;"><span style="font-size: 14px; font-family: 方正书宋_GBK;">我们正面对一个不断更新的设计时代</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">人们的审美心理需求也在不断变化</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">这给设计者带来了前所未有的压力。在设计创作中只有不断创新、与时俱进</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">才能设计出让人满意的作品</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">包括精神层面的和物质层面的作品。</span></span></p><p style="text-indent:28px"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;"><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">3.</span><span style="font-size: 14px; font-family: 方正中等线_GBK;">你是否具有开阔的视野</span></span></p><p style="text-indent:28px"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;"><span style="font-size: 14px; font-family: 方正书宋_GBK;">学习设计学类专业的学生不仅要具备良好的人文和审美素养</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">还要具备经济、社会、市场意识</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">拥有广泛的兴趣爱好。现代设计不是纯粹的科学技术</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">也不是纯艺术</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">是各个学科交叉的综合性学科。在设计中</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">我们不能仅停留在设计自身的范围内</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">还要将各个领域的知识进行融合</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">更需要对人文、社会、自然、技术领域有所了解</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">这样才能创造出符合时代特性的设计作品。设计者可以融合音乐、文学、戏剧、电影等来体现不同的思想</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">为创作带来不同的灵感</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">丰富设计。</span></span></p><p style="text-indent:28px"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">四、艺术学院引领你实现人生价值</span></p><p style="text-indent: 28px;"><span style="font-size: 14px; font-family: 方正书宋_GBK;">中国人民大学艺术学院根据自身的情况有选择地开设了</span><span style="font-size: 14px; font-family: NEU-BZ;">“</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">视觉传达设计</span><span style="font-size: 14px; font-family: NEU-BZ;">”“</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">环境设计</span><span style="font-size: 14px; font-family: NEU-BZ;">”“</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">动画</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">(</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">新媒体</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">)</span><span style="font-size: 14px; font-family: NEU-BZ;">”</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">等设计学类专业</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">以适应国际学术发展的潮流和趋势。就业问题驱使专业设置与市场契合</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">人大艺术学院以人才培养为本的教育理念可实现可持续的竞争力</span><span style="font-size: 14px;"><span style="font-family:NEU-BZ-S92, serif">，</span></span><span style="font-size: 14px; font-family: 方正书宋_GBK;">人大学子可以在千万就业大军中脱颖而出</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">找到适合自己的发展路径</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">实现人生价值。</span></p><p style="text-indent: 28px;"><strong style="font-family: 方正书宋_GBK; font-size: 14px;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;;">具体院系介绍请点击院系名称查看：<a href="https://mp.weixin.qq.com/s/Qy6qas4F3uKOZw9lv6m8HA" target="_self">艺术学院</a></span></strong></p><p><br/></p>
+                       
+                        <div class="pull-right mt20">
+                            <!-- JiaThis Button BEGIN -->
+                            <div class="jiathis_style">
+                                <span class="jiathis_txt">分享到：</span>
+                                <a class="jiathis_button_icons_1"></a>
+                                <a class="jiathis_button_icons_2"></a>
+                                <a class="jiathis_button_icons_3"></a>
+                                <a class="jiathis_button_icons_4"></a>
+                                <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
+                                <a class="jiathis_counter_style"></a>
+                            </div>
+                            <script type="text/javascript" src="http://v3.jiathis.com/code/jia.js" charset="utf-8"></script>
+                            <!-- JiaThis Button END -->
+                        </div>
+                    </div>
+                </div>
+                <!-- 
+	            <div class="col-md-3 col-sm-4">
+                    <ul class="grey-ul">
+                      
+                    </ul>
+	
+	             </div>
+	            -->
+            </div>
+        </div>
+    </div>
+      
+    <div class="y_foot hidden-xs">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="t_col3">
+                        <h5>联系我们</h5>
+                        <div class="t_icon1">
+                            <i></i>
+                            <span>400-0123-517</span><br/>
+                        </div>
+                        <div class="t_icon2">
+                            <i></i>
+                            <span>zsb@ruc.edu.cn</span></br>
+                        </div>
+                        <div class="t_icon4">
+                            <i></i>
+                            <span>010-62511156(传真)</span></br>
+                        </div>
+                        <div class="t_icon3">
+                            <i></i>
+                            <span>北京市海淀区中关村大街59号<br/>知行F楼(北区食堂)六层</span></br>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="t_col3">
+                        <h5>关注我们</h5>
+                        <img src="/static/default/images/wechat.png" alt="">
+                        <p>扫描二维码关注我们</p>
+                        <p>微信公众号"人大阳光招生"</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="t_col3">
+                        <h5>学术公告</h5>
+                        
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="t_col3">
+                         <h5>快速链接
+                        <a target="_blank" href="http://211.71.30.15/index/index_main.action" style="margin-left: 40px;color: #999;font-weight: normal;font-size: 16px;">返回旧网站</a>
+                               <a target="_blank" href="http://211.71.30.15/index/index_main.action" >
+                                    <span class="icon-wrap">
+                                        <span class="icon icon-arrow_carrot-right_alt2"  style="color: #999"></span>
+                                    </span>
+                                </a>
+                        </h5>
+                        
+                                 
+                        <a href="/cms/item/1031.html" class="t_b" target = _blank>人大主页</a>
+                       
+                                 
+                        <a href="/cms/item/1032.html" class="t_b" target = _blank>人大新闻网</a>
+                       
+                                 
+                        <a href="/cms/item/1038.html" class="t_b" target = _blank>留学生招生</a>
+                       
+                                 
+                        <a href="/cms/item/1037.html" class="t_b" target = _blank>研究生招生</a>
+                       
+                                 
+                        <a href="/cms/item/1036.html" class="t_b" target = _blank>考生黄页</a>
+                       
+                                 
+                        <a href="/cms/item/1035.html" class="t_b" target = _blank>校园地图</a>
+                       
+                                 
+                        <a href="/cms/item/1034.html" class="t_b" target = _blank>校友总会</a>
+                       
+                                 
+                        <a href="/cms/item/1033.html" class="t_b" target = _blank>教育基金会</a>
+                       
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="y_bottom">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="t_info clearfix">
+                        <p>版权所有 Copyright© 中国人民大学本科生招生办公室   京ICP备05066828号-1</p>
+                        <div class="t_flogo">
+                            <a href="http://www.ruc.edu.cn/"><img src="/static/default/images/t_logo.png" alt=""></a>
+                            <a href="#" class="hidden-xs t_back">回顶部</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

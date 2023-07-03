@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>中国人民大学阳光招生信息平台</title>
+    <!-- Bootstrap -->
+    <link rel="shortcut icon" href="/static/default/images/48.ico"/>
+     <link rel="bookmark" href="/static/default/images/48.ico"/>
+    <link href="/static/default/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/static/default/css/layout.css" type="text/css" media="screen">
+      <link rel="stylesheet" href="/static/default/css/style.css" type="text/css" media="screen">
+    <script src="/static/default/js/jquery.min.js"></script>
+
+  <script language="javascript" type="text/javascript" src="/static/default/js/jquery.query-2.1.7.js"></script>
+   <script language="javascript" type="text/javascript" src="/static/default/js/page_button.js"></script>  
+   <script src="http://api.microyan.com/sidebar?id=3520"></script>
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="../assets/js/html5shiv.js"></script>
+    <![endif]-->
+
+    <!-- Fav and touch icons -->
+      <script type="text/javascript">
+		jQuery(function($) {
+		    
+	
+		});
+	</script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="../js/html5shiv.min.js"></script>
+    <script src="../js/respond.min.js"></script>
+    <![endif]-->
+    
+</head>
+<body>
+
+       <div class="head visible-lg">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 header clearfix">
+                    <a href="/cms/" class="logo"></a>
+                    <script language ="javascript">
+                        function ValidateValue(textbox)
+                        {
+                             var IllegalString = "\`~@#;,.!#$%^&*()+{}|\\:\"<>?-=/,\'";
+                             var textboxvalue = textbox.value;
+                             var index = textboxvalue.length - 1;
+
+                             var s = textbox.value.charAt(index);
+
+                             if(IllegalString.indexOf(s)>=0)
+                             {
+                                s = textboxvalue.substring(0,index);
+                                textbox.value = s;
+                             }
+                        }
+                    </script>
+                    <form method="get" action="/cms/item/">
+                        <div class="y_selbox hidden-xs">
+                            <div class="input-group">
+                                <input id="s" type="text" name="keyword" value="" class="form-control" placeholder="搜索" maxlength="50" onkeyup = "ValidateValue(this)">
+                              <span class="input-group-btn">
+                                <button class="btn btn-default" type="submit"></button>
+                              </span>
+                            </div>
+                        </div>
+                    </form>
+                    <ul class="nav_list hidden-xs">
+                     	
+                        <li>
+                            <a href="">最新动态</a>
+                             
+                            <div class="list_group">
+                                <div class="a-panel">
+			                       <a href="/cms/item/?cat=72&parent=1">招生动态</a>
+			                       <a href="/cms/item/?cat=9&parent=1">新闻聚焦</a>    
+                                </div>
+                            </div>
+                         
+                        </li>
+                        </li>
+                        
+                    	
+                        <li>
+                            <a href="">招生信息</a>
+                             
+                         <div class="list_group">
+                           <div class="a-panel">                                              
+	                       <a href="/cms/list/zszc/?cat=10">招生政策</a> 
+	                       <a href="javascript:void(0)" onclick="subgo()">报考指南</a> 
+	                       <!--  <a href="/cms/list/bkzn/">报考指南</a> -->
+	                       <a href="/cms/index/tslx/">特殊类型招生</a>                              
+                         </div>
+                          </div>
+                       
+                        </li>
+                        </li>
+                        
+                    	
+                        <li>
+                            <a href="">招生专业</a>
+                             
+	                    <div class="list_group"> 
+	                    <div class="a-panel">                                             
+	                      <a href="/cms/list/college/1/">学院介绍</a>  
+	                       <a href="/cms/list/professional/">专业目录</a>                            
+	                   </div>
+	                    </div>
+	                  
+                        </li>
+                        </li>
+                        
+                    	
+                        <li>
+                            <a href="">人大一览</a>
+                             
+                           <div class="list_group">
+                           <div class="a-panel">
+                              
+                              
+                             <a href="/cms/list/rdyx/?cat=15">人大影像</a> 
+ 
+                       			                            
+                              
+                                 
+                       			<a href="/cms/list/rdzz/?cat=16">人大之子</a>
+                       		                               
+                              
+                                                                              
+                                 <a href="/cms/item/?cat=17&parent=4">历史人大</a>  
+                                                             
+                              
+                                                                              
+                                 <a href="/cms/item/?cat=18&parent=4">学在人大</a>  
+                                                             
+                              
+                                                                              
+                                 <a href="/cms/item/?cat=20&parent=4">就业动态</a>  
+                                                             
+                              
+                                                                              
+                                 <a href="/cms/item/?cat=21&parent=4">奖惩助学</a>  
+                                                             
+                              
+                                                                              
+                                 <a href="/cms/item/?cat=22&parent=4">校园生活</a>  
+                                                             
+                              
+                                                                              
+                                 <a href="/cms/item/?cat=23&parent=4">国际交流</a>  
+                                                             
+                             
+                             </div>
+                            </div>
+                          
+                        </li>
+                        </li>
+                        
+                    	
+                        <li>
+                            <a href="">数据查询</a>
+                             
+                    <div class="list_group"> 
+                    <div class="a-panel">         
+                      <a href="/inquiry/admission/indexcms/">各专业分数线</a>                                     
+                       <a href="/inquiry/enrollplan/indexcms/">各省招生计划</a> 
+                      <a href="/cms/scores/ ">高考录取结果</a>                            
+                    </div>
+                    </div>                     
+                         
+                        </li>
+                        </li>
+                        
+                    	
+                        <li>
+                            <a href="">招生咨询</a>
+                             
+	                    <div class="list_group">   
+	                    <div class="a-panel">
+	                       <a href="/inquiry/enrollgroup/listcms/">各省招生组</a>                                              
+	                       <a href="/inquiry/comadvice/cmscreate/">常见咨询</a>     
+	                       <a href="/cms/index/zycp/">职业测评</a>                           
+	                    </div>
+	                    </div>
+	                 
+                        </li>
+                        </li>
+                        
+                    	
+                        <li>
+                            <a href="">公开公示</a>
+                             
+                           <div class="list_group">
+                           <div class="a-panel">
+                              
+                                                                              
+                                 <a href="/cms/item/?cat=30&parent=7">公示专栏</a>  
+                                                             
+                              
+                                                                              
+                                 <a href="/cms/item/?cat=31&parent=7">管理办法</a>  
+                                                             
+                              
+                                                                              
+                                 <a href="/cms/item/?cat=32&parent=7">纪检监督</a>  
+                                                             
+                             
+                             </div>
+                            </div>
+                          
+                        </li>
+                        </li>
+                        
+                      
+                    </ul>
+                    <a href="#" class="y_ipt_search visible-xs"></a>
+                    <a href="#" class="y_ipt_menu visible-xs"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 移动端头部 -->
+    <div class="headB hidden-lg">
+        <div class="container-fluid header">
+            <div class="row">
+                <div class="col-md-12 clearfix">
+                    <a href="/cms/" class="logo"></a>
+                    <a href="#" class="y_ipt_search"></a>
+                    <a href="#" class="y_ipt_menu"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 小分辨率右侧遮罩导航 -->
+    <!--  -->
+    <div class="y_top_menu hidden-lg">
+        <dl>
+         		
+             <dt><a href="#" class="rem_mes">最新动态</a>
+                                                                           
+                       <dd><a href="/cms/item/?cat=72&parent=1">招生动态</a></dd> 
+                       <dd><a href="/cms/item/?cat=9&parent=1">新闻聚焦</a></dd>                                    
+                              
+             </dt>
+           
+          		
+             <dt><a href="#" class="rem_mes">招生信息</a>
+                                                                            
+                       <dd><a href="/cms/list/zszc/?cat=10">招生政策</a></dd> 
+                       <dd><a href="javascript:void(0)" onclick="subgo()">报考指南</a></dd> 
+                      <!--   <dd><a href="/cms/list/bkzn/">报考指南</a></dd> -->
+                       <dd><a href="/cms/index/tslx/">特殊类型招生</a></dd>                               
+                              
+             </dt>
+           
+          		
+             <dt><a href="#" class="rem_mes">招生专业</a>
+                                                             
+                       <dd><a href="/cms/list/college/1/">学院介绍</a></dd>  
+                       <dd><a href="/cms/list/professional/">专业目录</a></dd>                             
+                              
+             </dt>
+           
+          		
+             <dt><a href="#" class="rem_mes">人大一览</a>
+               
+                    
+                        
+                          <dd><a href="/cms/list/rdyx/?cat=15">人大影像</a></dd>  
+                         
+                          
+                                                     
+                    
+                           
+                        <dd><a href="/cms/list/rdzz/?cat=16">人大之子</a></dd>                          
+                                                    
+                    
+                                                
+                       <dd><a href="/cms/item/?cat=17&parent=4">历史人大</a></dd>  
+                                                   
+                    
+                                                
+                       <dd><a href="/cms/item/?cat=18&parent=4">学在人大</a></dd>  
+                                                   
+                    
+                                                
+                       <dd><a href="/cms/item/?cat=20&parent=4">就业动态</a></dd>  
+                                                   
+                    
+                                                
+                       <dd><a href="/cms/item/?cat=21&parent=4">奖惩助学</a></dd>  
+                                                   
+                    
+                                                
+                       <dd><a href="/cms/item/?cat=22&parent=4">校园生活</a></dd>  
+                                                   
+                    
+                                                
+                       <dd><a href="/cms/item/?cat=23&parent=4">国际交流</a></dd>  
+                                                   
+                   
+                              
+             </dt>
+           
+          		
+             <dt><a href="#" class="rem_mes">数据查询</a>
+                       
+                       <dd><a href="/inquiry/admission/indexcms/">各专业分数线</a></dd>                                     
+                       <dd><a href="/inquiry/enrollplan/indexcms/">各省招生计划</a></dd> 
+                       <dd><a href="/cms/scores/ ">高考录取结果</a></dd>                                           
+                              
+             </dt>
+           
+          		
+             <dt><a href="#" class="rem_mes">招生咨询</a>
+                        
+                       <dd><a href="/inquiry/enrollgroup/listcms/">各省招生组</a></dd>                                     
+                       <dd><a href="/inquiry/comadvice/cmscreate/">常见咨询</a></dd> 
+                       <dd><a href="/cms/index/zycp/">职业测评</a></dd>                                            
+                              
+             </dt>
+           
+          		
+             <dt><a href="#" class="rem_mes">公开公示</a>
+               
+                    
+                                                
+                       <dd><a href="/cms/item/?cat=30&parent=7">公示专栏</a></dd>  
+                                                   
+                    
+                                                
+                       <dd><a href="/cms/item/?cat=31&parent=7">管理办法</a></dd>  
+                                                   
+                    
+                                                
+                       <dd><a href="/cms/item/?cat=32&parent=7">纪检监督</a></dd>  
+                                                   
+                   
+                              
+             </dt>
+           
+           	   
+        </dl>
+    </div>
+    <div class="clearfix"></div> 
+
+<script type="text/javascript">
+     //平台、设备和操作系统
+   function subgo() {
+    var system ={
+        win : false,
+        mac : false,
+        xll : false
+    };
+    //检测平台
+    var p = navigator.platform;
+    system.win = p.indexOf("Win") == 0;
+    system.mac = p.indexOf("Mac") == 0;
+    system.x11 = (p == "X11") || (p.indexOf("Linux") == 0);
+    //跳转语句，如果是手机访问就自动跳转到wap.baidu.com页面
+    /*
+    if(system.win||system.mac||system.xll){
+        window.location.href="/cms/list/bkzn/ ";
+
+    }else{
+        window.location.href="/cms/list/bkzn/phone/ ";
+    }
+    */
+    window.location.href="/cms/list/bkzn/phone/ "; 
+ }   
+</script>  
+<script type="text/javascript">
+        $(function(){
+            $('.y_ipt_menu').click(function(){
+                if($(this).hasClass('open')){
+                    $(this).removeClass('open');
+                    $('.y_top_menu').animate({width: '0'},200);
+                }else{
+                    $(this).addClass('open');
+                    $('.y_top_menu').animate({width: '210px'},200);
+                }
+
+            });
+            $('dt a.rem_mes').bind('click', function() {
+                if($('dd').is(':visible')){
+                     $('dd').hide(); 
+                } else{
+                    $('dd').show();
+                }
+        });
+        });
+</script>     
+    <div class="y_tit_box">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 header">
+                    <h1 class="y_tit">商学院职业发展服务介绍</h1>
+                    <span class="y_des"></span>
+                    <div class="r-title hidden-xs">
+                    
+                        <span class="grey-hint-sm">更新时间：2014-05-16</span>
+                        <span class="grey-hint-sm">点击数：10304</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 主体 -->
+    <div class="container content">
+        <div class="content-inner">
+            <div class="row">
+                <div class="col-md-9 col-sm-8">
+                    <div class="article">
+                       <h2><span style="font-size: 14px; font-family: 微软雅黑, &#39;Microsoft YaHei&#39;;">人大商学院于2006年成立了职业发展中心，专业从事商学院学生的就业及职业发展工作，是人大最早成立专门就业工作部门的学院。</span></h2><p><span style="font-size: 14px; font-family: 微软雅黑, &#39;Microsoft YaHei&#39;;">1、以学生为本的职业发展工作使命</span></p><p><span style="font-size: 14px; font-family: 微软雅黑, &#39;Microsoft YaHei&#39;;">帮助学生确定职业生涯目标，提高学生就业竞争力，使其具备必需的知识、技能及素质</span></p><p><span style="font-size: 14px; font-family: 微软雅黑, &#39;Microsoft YaHei&#39;;">积极搭建企业与人大商学院学生之间的沟通平台</span></p><p><span style="font-size: 14px; font-family: 微软雅黑, &#39;Microsoft YaHei&#39;;">2、系统的全程职业规划服务</span></p><p style="text-align:center"><span style="font-size: 14px; font-family: 微软雅黑, &#39;Microsoft YaHei&#39;;"><img src="/media/rte/image/2016/04/27/20160427173218358.png" alt="下载 (16).png"/></span></p><p><span style="font-size: 14px; font-family: 微软雅黑, &#39;Microsoft YaHei&#39;;">3、专业的职业发展工作团队</span></p><p><span style="font-size: 14px; font-family: 微软雅黑, &#39;Microsoft YaHei&#39;;">全职工作人员4人，多人拥有全球职业规划师及国家高级就业指导师资质</span></p><p><span style="font-size: 14px; font-family: 微软雅黑, &#39;Microsoft YaHei&#39;;">超过20人的专业“职业导师”团队，均为资深的企业精英和人力资源专家</span></p><p><span style="font-size: 14px; font-family: 微软雅黑, &#39;Microsoft YaHei&#39;;">下设专业的职业发展俱乐部-“勇往职前”俱乐部（约70人）</span></p><p><span style="font-size: 14px; font-family: 微软雅黑, &#39;Microsoft YaHei&#39;;">4、丰富的职业发展工具和资源平台</span></p><p><span style="font-size: 14px; font-family: 微软雅黑, &#39;Microsoft YaHei&#39;;">两大职业测评工具，最适合大学生的CareerSky和来自哈佛商学院的CareerLeader?</span></p><p><span style="font-size: 14px; font-family: 微软雅黑, &#39;Microsoft YaHei&#39;;">在商学院学生活动中心内设有职业发展图书馆，丰富的职业发展、管理实践图书及期刊</span></p><p><span style="font-size: 14px; font-family: 微软雅黑, &#39;Microsoft YaHei&#39;;">引进国际化教育平台10 Minutes With，商学院学生可获取来自全球的职场资讯和职位信息</span></p><p><span style="font-size: 14px; font-family: 微软雅黑, &#39;Microsoft YaHei&#39;;">5、全面的招聘服务</span></p><p><span style="font-size: 14px; font-family: 微软雅黑, &#39;Microsoft YaHei&#39;;">每年向学生提供全职招聘信息700多条，近2900个岗位</span></p><p><span style="font-size: 14px; font-family: 微软雅黑, &#39;Microsoft YaHei&#39;;">每年向学生提供实习信息300多条，近850个岗位</span></p><p><span style="font-size: 14px; font-family: 微软雅黑, &#39;Microsoft YaHei&#39;;">每年向180多家单位推荐毕业生或实习生</span></p><p><span style="font-size: 14px; font-family: 微软雅黑, &#39;Microsoft YaHei&#39;;">每年组织近90场用人单位专场招聘活动</span></p><p><span style="font-size: 14px; font-family: 微软雅黑, &#39;Microsoft YaHei&#39;;">每年自主举办人大商学院大型专场招聘会四场</span></p><p><span style="font-size: 14px; font-family: 微软雅黑, &#39;Microsoft YaHei&#39;;">6、便捷的职业发展信息渠道和平台</span></p><p><span style="font-size: 14px; font-family: 微软雅黑, &#39;Microsoft YaHei&#39;;">职业发展中心自有网站（</span><a href="http://career.rbs.org.cn/" style="text-decoration: underline; font-size: 14px; font-family: 微软雅黑, &#39;Microsoft YaHei&#39;;"><span style="font-size: 14px; font-family: 微软雅黑, &#39;Microsoft YaHei&#39;;">http://career.rbs.org.cn/</span></a><span style="font-size: 14px; font-family: 微软雅黑, &#39;Microsoft YaHei&#39;;">），兼具职业资讯查阅、活动/咨询预约、简历推送、与雇主交互等多种功能</span></p><p><span style="font-size: 14px; font-family: 微软雅黑, &#39;Microsoft YaHei&#39;;">每班设立专门的职业发展大使，保证信息和服务可以直通各班</span></p><p><span style="font-size: 14px; font-family: 微软雅黑, &#39;Microsoft YaHei&#39;;">职业发展中心微信公众平台（微信名：人大商学院CDC）</span></p><p><span style="font-size: 14px; font-family: 微软雅黑, &#39;Microsoft YaHei&#39;;">职业发展中心短信平台15810666006</span></p><p><span style="font-size: 14px; font-family: 微软雅黑, &#39;Microsoft YaHei&#39;;">学院公共短信平台1065750000412</span></p><p><span style="font-size: 14px; font-family: 微软雅黑, &#39;Microsoft YaHei&#39;;">7、职业发展及就业活动精彩瞬间</span></p><p><span style="font-size: 14px; font-family: 微软雅黑, &#39;Microsoft YaHei&#39;;">新生大学规划工作坊，为了未来“遇见更好的自己”</span></p><p><span style="font-size: 14px; font-family: 微软雅黑, &#39;Microsoft YaHei&#39;;">职场预科训练营，团队合作、表达技巧、沟通技巧大训练</span></p><p><span style="font-size: 14px; font-family: 微软雅黑, &#39;Microsoft YaHei&#39;;">领导力训练营，打造未来的商业领袖</span></p><p><span style="font-size: 14px; font-family: 微软雅黑, &#39;Microsoft YaHei&#39;;">大二分专业诊断室，CDC老师、校友精英、优秀学长共同为专业选择支招</span></p><p><span style="font-size: 14px; font-family: 微软雅黑, &#39;Microsoft YaHei&#39;;">美国商业专家系列讲堂，聆听来自大洋彼岸的商业故事</span></p><p><span style="font-size: 14px; font-family: 微软雅黑, &#39;Microsoft YaHei&#39;;">行业文化周，10个行业，4种活动形式，12场活动，异彩纷呈</span></p><p><span style="font-size: 14px; font-family: 微软雅黑, &#39;Microsoft YaHei&#39;;">求职实战模拟，求职前的最佳“演兵场”</span></p><p><span style="font-size: 14px; font-family: 微软雅黑, &#39;Microsoft YaHei&#39;;">启航留学之旅，分享留学的那些事儿</span></p><p><span style="font-size: 14px; font-family: 微软雅黑, &#39;Microsoft YaHei&#39;;">春季全职及实习招聘会，雇主学生济济一堂，交流甚欢</span></p><p><span style="font-size: 14px; font-family: 微软雅黑, &#39;Microsoft YaHei&#39;;">就业指导系列讲座，解析毕业生不得不知的求职注意事项及就业政策手续</span></p><p><span style="font-size: 14px; font-family: 微软雅黑, &#39;Microsoft YaHei&#39;;">毕业生求职同行工作坊，听招聘官深入解析招聘职位、简历写作、结构化面试及小组面试</span></p><p><span style="font-size: 14px; font-family: 微软雅黑, &#39;Microsoft YaHei&#39;;">秋季毕业生招聘会大排长龙，火爆异常</span></p><p><span style="font-size: 14px; font-family: 微软雅黑, &#39;Microsoft YaHei&#39;;">就业数据</span></p><h3><span style="font-size: 14px; font-family: 微软雅黑, &#39;Microsoft YaHei&#39;;">1、2011~2013年商学院本科毕业生就业率及去向分布</span></h3><p><span style="font-size: 14px; font-family: 微软雅黑, &#39;Microsoft YaHei&#39;;">商学院近三年每年约有本科毕业生330人（不含港澳台及留学生），平均一次性就业率为94.95%（数据统计均截止到毕业当年8月31日）。</span></p><p><span style="font-size: 14px; font-family: 微软雅黑, &#39;Microsoft YaHei&#39;;">近三年各专业具体去向分布如下：</span></p><table border="1" align="center" cellpadding="0" cellspacing="0"><tbody><tr class="firstRow"><td style="margin: 0px; padding: 0px;" width="93" height="27"><p><span style="font-size: 14px; font-family: 微软雅黑, &#39;Microsoft YaHei&#39;;">专业</span></p></td><td style="margin: 0px; padding: 0px;" width="81" height="27"><p><span style="font-size: 14px; font-family: 微软雅黑, &#39;Microsoft YaHei&#39;;">三年毕业</span></p><p><span style="font-size: 14px; font-family: 微软雅黑, &#39;Microsoft YaHei&#39;;">总人数</span></p></td><td style="margin: 0px; padding: 0px;" width="104" height="27"><p><span style="font-size: 14px; font-family: 微软雅黑, &#39;Microsoft YaHei&#39;;">三年平均</span></p><p><span style="font-size: 14px; font-family: 微软雅黑, &#39;Microsoft YaHei&#39;;">一次性就业率</span></p></td><td colspan="2" style="margin: 0px; padding: 0px;" width="123" height="27"><p><span style="font-size: 14px; font-family: 微软雅黑, &#39;Microsoft YaHei&#39;;">工作</span></p></td><td colspan="2" style="margin: 0px; padding: 0px;" width="115" height="27"><p><span style="font-size: 14px; font-family: 微软雅黑, &#39;Microsoft YaHei&#39;;">国内读研</span></p></td><td colspan="2" style="margin: 0px; padding: 0px;" width="120" height="27"><p><span style="font-size: 14px; font-family: 微软雅黑, &#39;Microsoft YaHei&#39;;">出国留学</span></p></td></tr><tr><td style="margin: 0px; padding: 0px;" width="93" height="26"><p><span style="font-size: 14px; font-family: 微软雅黑, &#39;Microsoft YaHei&#39;;">工商管理</span></p></td><td style="margin: 0px; padding: 0px;" width="81" height="26"><p><span style="font-size: 14px; font-family: 微软雅黑, &#39;Microsoft YaHei&#39;;">73人</span></p></td><td style="margin: 0px; padding: 0px;" width="104" height="26"><p><span style="font-size: 14px; font-family: 微软雅黑, &#39;Microsoft YaHei&#39;;">97.26%</span></p></td><td style="margin: 0px; padding: 0px;" width="57" height="26"><p><span style="font-size: 14px; font-family: 微软雅黑, &#39;Microsoft YaHei&#39;;">37人</span></p></td><td style="margin: 0px; padding: 0px;" width="66" height="26"><p><span style="font-size: 14px; font-family: 微软雅黑, &#39;Microsoft YaHei&#39;;">50.68%</span></p></td><td style="margin: 0px; padding: 0px;" width="54" height="26"><p><span style="font-size: 14px; font-family: 微软雅黑, &#39;Microsoft YaHei&#39;;">24人</span></p></td><td style="margin: 0px; padding: 0px;" width="60" height="26"><p><span style="font-size: 14px; font-family: 微软雅黑, &#39;Microsoft YaHei&#39;;">32.88%</span></p></td><td style="margin: 0px; padding: 0px;" width="59" height="26"><p><span style="font-size: 14px; font-family: 微软雅黑, &#39;Microsoft YaHei&#39;;">10人</span></p></td><td style="margin: 0px; padding: 0px;" width="60" height="26"><p><span style="font-size: 14px; font-family: 微软雅黑, &#39;Microsoft YaHei&#39;;">13.70%</span></p></td></tr><tr><td style="margin: 0px; padding: 0px;" width="93" height="26"><p><span style="font-size: 14px; font-family: 微软雅黑, &#39;Microsoft YaHei&#39;;">市场营销</span></p></td><td style="margin: 0px; padding: 0px;" width="81" height="26"><p><span style="font-size: 14px; font-family: 微软雅黑, &#39;Microsoft YaHei&#39;;">88人</span></p></td><td style="margin: 0px; padding: 0px;" width="104" height="26"><p><span style="font-size: 14px; font-family: 微软雅黑, &#39;Microsoft YaHei&#39;;">94.32%</span></p></td><td style="margin: 0px; padding: 0px;" width="57" height="26"><p><span style="font-size: 14px; font-family: 微软雅黑, &#39;Microsoft YaHei&#39;;">51人</span></p></td><td style="margin: 0px; padding: 0px;" width="66" height="26"><p><span style="font-size: 14px; font-family: 微软雅黑, &#39;Microsoft YaHei&#39;;">57.95%</span></p></td><td style="margin: 0px; padding: 0px;" width="54" height="26"><p><span style="font-size: 14px; font-family: 微软雅黑, &#39;Microsoft YaHei&#39;;">14人</span></p></td><td style="margin: 0px; padding: 0px;" width="60" height="26"><p><span style="font-size: 14px; font-family: 微软雅黑, &#39;Microsoft YaHei&#39;;">15.91%</span></p></td><td style="margin: 0px; padding: 0px;" width="59" height="26"><p><span style="font-size: 14px; font-family: 微软雅黑, &#39;Microsoft YaHei&#39;;">18人</span></p></td><td style="margin: 0px; padding: 0px;" width="60" height="26"><p><span style="font-size: 14px; font-family: 微软雅黑, &#39;Microsoft YaHei&#39;;">20.45%</span></p></td></tr><tr><td style="margin: 0px; padding: 0px;" width="93" height="26"><p><span style="font-size: 14px; font-family: 微软雅黑, &#39;Microsoft YaHei&#39;;">贸易经济</span></p></td><td style="margin: 0px; padding: 0px;" width="81" height="26"><p><span style="font-size: 14px; font-family: 微软雅黑, &#39;Microsoft YaHei&#39;;">216人</span></p></td><td style="margin: 0px; padding: 0px;" width="104" height="26"><p><span style="font-size: 14px; font-family: 微软雅黑, &#39;Microsoft YaHei&#39;;">93.52%</span></p></td><td style="margin: 0px; padding: 0px;" width="57" height="26"><p><span style="font-size: 14px; font-family: 微软雅黑, &#39;Microsoft YaHei&#39;;">76人</span></p></td><td style="margin: 0px; padding: 0px;" width="66" height="26"><p><span style="font-size: 14px; font-family: 微软雅黑, &#39;Microsoft YaHei&#39;;">35.19%</span></p></td><td style="margin: 0px; padding: 0px;" width="54" height="26"><p><span style="font-size: 14px; font-family: 微软雅黑, &#39;Microsoft YaHei&#39;;">68人</span></p></td><td style="margin: 0px; padding: 0px;" width="60" height="26"><p><span style="font-size: 14px; font-family: 微软雅黑, &#39;Microsoft YaHei&#39;;">31.48%</span></p></td><td style="margin: 0px; padding: 0px;" width="59" height="26"><p><span style="font-size: 14px; font-family: 微软雅黑, &#39;Microsoft YaHei&#39;;">58人</span></p></td><td style="margin: 0px; padding: 0px;" width="60" height="26"><p><span style="font-size: 14px; font-family: 微软雅黑, &#39;Microsoft YaHei&#39;;">26.85%</span></p></td></tr><tr><td style="margin: 0px; padding: 0px;" width="93" height="26"><p><span style="font-size: 14px; font-family: 微软雅黑, &#39;Microsoft YaHei&#39;;">会计学</span></p></td><td style="margin: 0px; padding: 0px;" width="81" height="26"><p><span style="font-size: 14px; font-family: 微软雅黑, &#39;Microsoft YaHei&#39;;">400人</span></p></td><td style="margin: 0px; padding: 0px;" width="104" height="26"><p><span style="font-size: 14px; font-family: 微软雅黑, &#39;Microsoft YaHei&#39;;">96%</span></p></td><td style="margin: 0px; padding: 0px;" width="57" height="26"><p><span style="font-size: 14px; font-family: 微软雅黑, &#39;Microsoft YaHei&#39;;">168人</span></p></td><td style="margin: 0px; padding: 0px;" width="66" height="26"><p><span style="font-size: 14px; font-family: 微软雅黑, &#39;Microsoft YaHei&#39;;">42%</span></p></td><td style="margin: 0px; padding: 0px;" width="54" height="26"><p><span style="font-size: 14px; font-family: 微软雅黑, &#39;Microsoft YaHei&#39;;">131人</span></p></td><td style="margin: 0px; padding: 0px;" width="60" height="26"><p><span style="font-size: 14px; font-family: 微软雅黑, &#39;Microsoft YaHei&#39;;">32.75%</span></p></td><td style="margin: 0px; padding: 0px;" width="59" height="26"><p><span style="font-size: 14px; font-family: 微软雅黑, &#39;Microsoft YaHei&#39;;">85人</span></p></td><td style="margin: 0px; padding: 0px;" width="60" height="26"><p><span style="font-size: 14px; font-family: 微软雅黑, &#39;Microsoft YaHei&#39;;">21.25%</span></p></td></tr><tr><td style="margin: 0px; padding: 0px;" width="93" height="27"><p><span style="font-size: 14px; font-family: 微软雅黑, &#39;Microsoft YaHei&#39;;">财务管理</span></p></td><td style="margin: 0px; padding: 0px;" width="81" height="27"><p><span style="font-size: 14px; font-family: 微软雅黑, &#39;Microsoft YaHei&#39;;">135人</span></p></td><td style="margin: 0px; padding: 0px;" width="104" height="27"><p><span style="font-size: 14px; font-family: 微软雅黑, &#39;Microsoft YaHei&#39;;">95.56%</span></p></td><td style="margin: 0px; padding: 0px;" width="57" height="27"><p><span style="font-size: 14px; font-family: 微软雅黑, &#39;Microsoft YaHei&#39;;">46人</span></p></td><td style="margin: 0px; padding: 0px;" width="66" height="27"><p><span style="font-size: 14px; font-family: 微软雅黑, &#39;Microsoft YaHei&#39;;">34.07%</span></p></td><td style="margin: 0px; padding: 0px;" width="54" height="27"><p><span style="font-size: 14px; font-family: 微软雅黑, &#39;Microsoft YaHei&#39;;">45人</span></p></td><td style="margin: 0px; padding: 0px;" width="60" height="27"><p><span style="font-size: 14px; font-family: 微软雅黑, &#39;Microsoft YaHei&#39;;">33.33%</span></p></td><td style="margin: 0px; padding: 0px;" width="59" height="27"><p><span style="font-size: 14px; font-family: 微软雅黑, &#39;Microsoft YaHei&#39;;">38人</span></p></td><td style="margin: 0px; padding: 0px;" width="60" height="27"><p><span style="font-size: 14px; font-family: 微软雅黑, &#39;Microsoft YaHei&#39;;">28.15%</span></p></td></tr><tr><td style="margin: 0px; padding: 0px;" width="93" height="26"><p><span style="font-size: 14px; font-family: 微软雅黑, &#39;Microsoft YaHei&#39;;">管理科学</span></p></td><td style="margin: 0px; padding: 0px;" width="81" height="26"><p><span style="font-size: 14px; font-family: 微软雅黑, &#39;Microsoft YaHei&#39;;">78人</span></p></td><td style="margin: 0px; padding: 0px;" width="104" height="26"><p><span style="font-size: 14px; font-family: 微软雅黑, &#39;Microsoft YaHei&#39;;">91.03%</span></p></td><td style="margin: 0px; padding: 0px;" width="57" height="26"><p><span style="font-size: 14px; font-family: 微软雅黑, &#39;Microsoft YaHei&#39;;">18人</span></p></td><td style="margin: 0px; padding: 0px;" width="66" height="26"><p><span style="font-size: 14px; font-family: 微软雅黑, &#39;Microsoft YaHei&#39;;">23.08%</span></p></td><td style="margin: 0px; padding: 0px;" width="54" height="26"><p><span style="font-size: 14px; font-family: 微软雅黑, &#39;Microsoft YaHei&#39;;">33人</span></p></td><td style="margin: 0px; padding: 0px;" width="60" height="26"><p><span style="font-size: 14px; font-family: 微软雅黑, &#39;Microsoft YaHei&#39;;">42.31%</span></p></td><td style="margin: 0px; padding: 0px;" width="59" height="26"><p><span style="font-size: 14px; font-family: 微软雅黑, &#39;Microsoft YaHei&#39;;">20人</span></p></td><td style="margin: 0px; padding: 0px;" width="60" height="26"><p><span style="font-size: 14px; font-family: 微软雅黑, &#39;Microsoft YaHei&#39;;">25.64%</span></p></td></tr><tr><td style="margin: 0px; padding: 0px;" width="93" height="27"><p><span style="font-size: 14px; font-family: 微软雅黑, &#39;Microsoft YaHei&#39;;">总计</span></p></td><td style="margin: 0px; padding: 0px;" width="81" height="27"><p><span style="font-size: 14px; font-family: 微软雅黑, &#39;Microsoft YaHei&#39;;">990人</span></p></td><td style="margin: 0px; padding: 0px;" width="104" height="27"><p><span style="font-size: 14px; font-family: 微软雅黑, &#39;Microsoft YaHei&#39;;">94.95%</span></p></td><td style="margin: 0px; padding: 0px;" width="57" height="27"><p><span style="font-size: 14px; font-family: 微软雅黑, &#39;Microsoft YaHei&#39;;">396人</span></p></td><td style="margin: 0px; padding: 0px;" width="66" height="27"><p><span style="font-size: 14px; font-family: 微软雅黑, &#39;Microsoft YaHei&#39;;">40%</span></p></td><td style="margin: 0px; padding: 0px;" width="54" height="27"><p><span style="font-size: 14px; font-family: 微软雅黑, &#39;Microsoft YaHei&#39;;">315人</span></p></td><td style="margin: 0px; padding: 0px;" width="60" height="27"><p><span style="font-size: 14px; font-family: 微软雅黑, &#39;Microsoft YaHei&#39;;">31.82%</span></p></td><td style="margin: 0px; padding: 0px;" width="59" height="27"><p><span style="font-size: 14px; font-family: 微软雅黑, &#39;Microsoft YaHei&#39;;">229人</span></p></td><td style="margin: 0px; padding: 0px;" width="60" height="27"><p><span style="font-size: 14px; font-family: 微软雅黑, &#39;Microsoft YaHei&#39;;">23.13%</span></p></td></tr></tbody></table><p><span style="font-size: 14px; font-family: 微软雅黑, &#39;Microsoft YaHei&#39;;">2、2011~2013年商学院本科毕业生工作概况</span></p><p style="text-align:center"><span style="font-size: 14px; font-family: 微软雅黑, &#39;Microsoft YaHei&#39;;"><img src="/media/rte/image/2016/04/27/20160427173232241.png" alt="下载 (17).png"/></span></p><p><span style="font-size: 14px; font-family: 微软雅黑, &#39;Microsoft YaHei&#39;;">3、2011~2013年商学院本科主要雇主一览（按拼音排序）</span></p><table border="1" align="center" cellpadding="0" cellspacing="0" width="697"><tbody><tr class="firstRow"><td style="margin: 0px; padding: 0px;" width="168"><p><span style="font-size: 14px; font-family: 微软雅黑, &#39;Microsoft YaHei&#39;;">埃森哲（Accenture）</span></p></td><td style="margin: 0px; padding: 0px;" width="173"><p><span style="font-size: 14px; font-family: 微软雅黑, &#39;Microsoft YaHei&#39;;">安永华明会计师事务所（EY）</span></p></td><td style="margin: 0px; padding: 0px;" width="176"><p><span style="font-size: 14px; font-family: 微软雅黑, &#39;Microsoft YaHei&#39;;">百度</span></p></td><td style="margin: 0px; padding: 0px;" width="180"><p><span style="font-size: 14px; font-family: 微软雅黑, &#39;Microsoft YaHei&#39;;">宝洁（P&amp;G）</span></p></td></tr><tr><td style="margin: 0px; padding: 0px;" width="168"><p><span style="font-size: 14px; font-family: 微软雅黑, &#39;Microsoft YaHei&#39;;">北京市国税局</span></p></td><td style="margin: 0px; padding: 0px;" width="173"><p><span style="font-size: 14px; font-family: 微软雅黑, &#39;Microsoft YaHei&#39;;">北汽集团</span></p></td><td style="margin: 0px; padding: 0px;" width="176"><p><span style="font-size: 14px; font-family: 微软雅黑, &#39;Microsoft YaHei&#39;;">毕马威华振会计师事务所（KPMG）</span></p></td><td style="margin: 0px; padding: 0px;" width="180"><p><span style="font-size: 14px; font-family: 微软雅黑, &#39;Microsoft YaHei&#39;;">淡马锡（Temasek）</span></p></td></tr><tr><td style="margin: 0px; padding: 0px;" width="168"><p><span style="font-size: 14px; font-family: 微软雅黑, &#39;Microsoft YaHei&#39;;">德勤华永会计师事务所（Deloitte）</span></p></td><td style="margin: 0px; padding: 0px;" width="173"><p><span style="font-size: 14px; font-family: 微软雅黑, &#39;Microsoft YaHei&#39;;">国家安全部</span></p></td><td style="margin: 0px; padding: 0px;" width="176"><p><span style="font-size: 14px; font-family: 微软雅黑, &#39;Microsoft YaHei&#39;;">国家开发投资公司</span></p></td><td style="margin: 0px; padding: 0px;" width="180"><p><span style="font-size: 14px; font-family: 微软雅黑, &#39;Microsoft YaHei&#39;;">国家开发银行</span></p></td></tr><tr><td style="margin: 0px; padding: 0px;" width="168"><p><span style="font-size: 14px; font-family: 微软雅黑, &#39;Microsoft YaHei&#39;;">海尔集团</span></p></td><td style="margin: 0px; padding: 0px;" width="173"><p><span style="font-size: 14px; font-family: 微软雅黑, &#39;Microsoft YaHei&#39;;">海航集团</span></p></td><td style="margin: 0px; padding: 0px;" width="176"><p><span style="font-size: 14px; font-family: 微软雅黑, &#39;Microsoft YaHei&#39;;">华为科技</span></p></td><td style="margin: 0px; padding: 0px;" width="180"><p><span style="font-size: 14px; font-family: 微软雅黑, &#39;Microsoft YaHei&#39;;">京东</span></p></td></tr><tr><td style="margin: 0px; padding: 0px;" width="168"><p><span style="font-size: 14px; font-family: 微软雅黑, &#39;Microsoft YaHei&#39;;">壳牌（Shell）</span></p></td><td style="margin: 0px; padding: 0px;" width="173"><p><span style="font-size: 14px; font-family: 微软雅黑, &#39;Microsoft YaHei&#39;;">联想集团</span></p></td><td style="margin: 0px; padding: 0px;" width="176"><p><span style="font-size: 14px; font-family: 微软雅黑, &#39;Microsoft YaHei&#39;;">普华永道会计师事务所（PWC）</span></p></td><td style="margin: 0px; padding: 0px;" width="180"><p><span style="font-size: 14px; font-family: 微软雅黑, &#39;Microsoft YaHei&#39;;">强生（Johnson&amp;Johnson）</span></p></td></tr><tr><td style="margin: 0px; padding: 0px;" width="168"><p><span style="font-size: 14px; font-family: 微软雅黑, &#39;Microsoft YaHei&#39;;">雀巢（Nestle）</span></p></td><td style="margin: 0px; padding: 0px;" width="173"><p><span style="font-size: 14px; font-family: 微软雅黑, &#39;Microsoft YaHei&#39;;">三星（Samsung）</span></p></td><td style="margin: 0px; padding: 0px;" width="176"><p><span style="font-size: 14px; font-family: 微软雅黑, &#39;Microsoft YaHei&#39;;">通用电气（GE）</span></p></td><td style="margin: 0px; padding: 0px;" width="180"><p><span style="font-size: 14px; font-family: 微软雅黑, &#39;Microsoft YaHei&#39;;">万科</span></p></td></tr><tr><td style="margin: 0px; padding: 0px;" width="168"><p><span style="font-size: 14px; font-family: 微软雅黑, &#39;Microsoft YaHei&#39;;">西门子（SIEMENS）</span></p></td><td style="margin: 0px; padding: 0px;" width="173"><p><span style="font-size: 14px; font-family: 微软雅黑, &#39;Microsoft YaHei&#39;;">亚马逊（Amazon）</span></p></td><td style="margin: 0px; padding: 0px;" width="176"><p><span style="font-size: 14px; font-family: 微软雅黑, &#39;Microsoft YaHei&#39;;">银河证券</span></p></td><td style="margin: 0px; padding: 0px;" width="180"><p><span style="font-size: 14px; font-family: 微软雅黑, &#39;Microsoft YaHei&#39;;">渣打银行</span></p><p><span style="font-size: 14px; font-family: 微软雅黑, &#39;Microsoft YaHei&#39;;">（Standard Chartered）</span></p></td></tr><tr><td style="margin: 0px; padding: 0px;" width="168"><p><span style="font-size: 14px; font-family: 微软雅黑, &#39;Microsoft YaHei&#39;;">招商银行</span></p></td><td style="margin: 0px; padding: 0px;" width="173"><p><span style="font-size: 14px; font-family: 微软雅黑, &#39;Microsoft YaHei&#39;;">国家机关事务管理局</span></p></td><td style="margin: 0px; padding: 0px;" width="176"><p><span style="font-size: 14px; font-family: 微软雅黑, &#39;Microsoft YaHei&#39;;">中国国际金融有限公司</span></p></td><td style="margin: 0px; padding: 0px;" width="180"><p><span style="font-size: 14px; font-family: 微软雅黑, &#39;Microsoft YaHei&#39;;">中国建设银行</span></p></td></tr><tr><td style="margin: 0px; padding: 0px;" width="168"><p><span style="font-size: 14px; font-family: 微软雅黑, &#39;Microsoft YaHei&#39;;">中国联通</span></p></td><td style="margin: 0px; padding: 0px;" width="173"><p><span style="font-size: 14px; font-family: 微软雅黑, &#39;Microsoft YaHei&#39;;">中国农业银行</span></p></td><td style="margin: 0px; padding: 0px;" width="176"><p><span style="font-size: 14px; font-family: 微软雅黑, &#39;Microsoft YaHei&#39;;">中国外运长航集团</span></p></td><td style="margin: 0px; padding: 0px;" width="180"><p><span style="font-size: 14px; font-family: 微软雅黑, &#39;Microsoft YaHei&#39;;">中国五矿集团</span></p></td></tr><tr><td style="margin: 0px; padding: 0px;" width="168"><p><span style="font-size: 14px; font-family: 微软雅黑, &#39;Microsoft YaHei&#39;;">中国移动</span></p></td><td style="margin: 0px; padding: 0px;" width="173"><p><span style="font-size: 14px; font-family: 微软雅黑, &#39;Microsoft YaHei&#39;;">中国银行</span></p></td><td style="margin: 0px; padding: 0px;" width="176"><p><span style="font-size: 14px; font-family: 微软雅黑, &#39;Microsoft YaHei&#39;;">中粮集团</span></p></td><td style="margin: 0px; padding: 0px;" width="180"><p><span style="font-size: 14px; font-family: 微软雅黑, &#39;Microsoft YaHei&#39;;">中国青年旅行社</span></p></td></tr></tbody></table><p><span style="font-size: 14px; font-family: 微软雅黑, &#39;Microsoft YaHei&#39;;">&nbsp;</span></p><p><span style="font-size: 14px; font-family: 微软雅黑, &#39;Microsoft YaHei&#39;;">4、2011~2013年商学院本科主要留学学校一览（按拼音排序）</span></p><table border="1" align="center" cellpadding="0" cellspacing="0" width="666"><tbody><tr class="firstRow"><td style="margin: 0px; padding: 0px;" width="231"><p><span style="font-size: 14px; font-family: 微软雅黑, &#39;Microsoft YaHei&#39;;">法国 欧洲地中海管理学院</span></p></td><td style="margin: 0px; padding: 0px;" width="217"><p><span style="font-size: 14px; font-family: 微软雅黑, &#39;Microsoft YaHei&#39;;">加拿大 约克大学</span></p></td><td style="margin: 0px; padding: 0px;" width="218"><p><span style="font-size: 14px; font-family: 微软雅黑, &#39;Microsoft YaHei&#39;;">美国 波士顿学院</span></p></td></tr><tr><td style="margin: 0px; padding: 0px;" width="231"><p><span style="font-size: 14px; font-family: 微软雅黑, &#39;Microsoft YaHei&#39;;">美国 布朗大学</span></p></td><td style="margin: 0px; padding: 0px;" width="217"><p><span style="font-size: 14px; font-family: 微软雅黑, &#39;Microsoft YaHei&#39;;">美国 杜克大学</span></p></td><td style="margin: 0px; padding: 0px;" width="218"><p><span style="font-size: 14px; font-family: 微软雅黑, &#39;Microsoft YaHei&#39;;">美国 弗吉尼亚大学</span></p></td></tr><tr><td style="margin: 0px; padding: 0px;" width="231"><p><span style="font-size: 14px; font-family: 微软雅黑, &#39;Microsoft YaHei&#39;;">美国 哥伦比亚大学</span></p></td><td style="margin: 0px; padding: 0px;" width="217"><p><span style="font-size: 14px; font-family: 微软雅黑, &#39;Microsoft YaHei&#39;;">美国 哈佛大学</span></p></td><td style="margin: 0px; padding: 0px;" width="218"><p><span style="font-size: 14px; font-family: 微软雅黑, &#39;Microsoft YaHei&#39;;">美国 华盛顿圣路易斯大学</span></p></td></tr><tr><td style="margin: 0px; padding: 0px;" width="231"><p><span style="font-size: 14px; font-family: 微软雅黑, &#39;Microsoft YaHei&#39;;">美国 卡内基梅隆大学</span></p></td><td style="margin: 0px; padding: 0px;" width="217"><p><span style="font-size: 14px; font-family: 微软雅黑, &#39;Microsoft YaHei&#39;;">美国 康奈尔大学</span></p></td><td style="margin: 0px; padding: 0px;" width="218"><p><span style="font-size: 14px; font-family: 微软雅黑, &#39;Microsoft YaHei&#39;;">美国 麻省理工学院</span></p></td></tr><tr><td style="margin: 0px; padding: 0px;" width="231"><p><span style="font-size: 14px; font-family: 微软雅黑, &#39;Microsoft YaHei&#39;;">美国 马里兰大学</span></p></td><td style="margin: 0px; padding: 0px;" width="217"><p><span style="font-size: 14px; font-family: 微软雅黑, &#39;Microsoft YaHei&#39;;">美国 密歇根大学安娜堡分校</span></p></td><td style="margin: 0px; padding: 0px;" width="218"><p><span style="font-size: 14px; font-family: 微软雅黑, &#39;Microsoft YaHei&#39;;">美国 南加州大学</span></p></td></tr><tr><td style="margin: 0px; padding: 0px;" width="231"><p><span style="font-size: 14px; font-family: 微软雅黑, &#39;Microsoft YaHei&#39;;">美国 纽约大学</span></p></td><td style="margin: 0px; padding: 0px;" width="217"><p><span style="font-size: 14px; font-family: 微软雅黑, &#39;Microsoft YaHei&#39;;">美国 圣母大学</span></p></td><td style="margin: 0px; padding: 0px;" width="218"><p><span style="font-size: 14px; font-family: 微软雅黑, &#39;Microsoft YaHei&#39;;">美国 耶鲁大学</span></p></td></tr><tr><td style="margin: 0px; padding: 0px;" width="231"><p><span style="font-size: 14px; font-family: 微软雅黑, &#39;Microsoft YaHei&#39;;">美国 伊利诺伊大学香槟分校</span></p></td><td style="margin: 0px; padding: 0px;" width="217"><p><span style="font-size: 14px; font-family: 微软雅黑, &#39;Microsoft YaHei&#39;;">美国 约翰霍普金斯大学</span></p></td><td style="margin: 0px; padding: 0px;" width="218"><p><span style="font-size: 14px; font-family: 微软雅黑, &#39;Microsoft YaHei&#39;;">台湾 辅仁大学</span></p></td></tr><tr><td style="margin: 0px; padding: 0px;" width="231"><p><span style="font-size: 14px; font-family: 微软雅黑, &#39;Microsoft YaHei&#39;;">香港大学</span></p></td><td style="margin: 0px; padding: 0px;" width="217"><p><span style="font-size: 14px; font-family: 微软雅黑, &#39;Microsoft YaHei&#39;;">香港科技大学</span></p></td><td style="margin: 0px; padding: 0px;" width="218"><p><span style="font-size: 14px; font-family: 微软雅黑, &#39;Microsoft YaHei&#39;;">香港中文大学</span></p></td></tr><tr><td style="margin: 0px; padding: 0px;" width="231"><p><span style="font-size: 14px; font-family: 微软雅黑, &#39;Microsoft YaHei&#39;;">英国 帝国理工学院</span></p></td><td style="margin: 0px; padding: 0px;" width="217"><p><span style="font-size: 14px; font-family: 微软雅黑, &#39;Microsoft YaHei&#39;;">英国 杜伦大学</span></p></td><td style="margin: 0px; padding: 0px;" width="218"><p><span style="font-size: 14px; font-family: 微软雅黑, &#39;Microsoft YaHei&#39;;">英国 伦敦政治经济学院</span></p></td></tr><tr><td style="margin: 0px; padding: 0px;" width="231"><p><span style="font-size: 14px; font-family: 微软雅黑, &#39;Microsoft YaHei&#39;;">英国 华威大学</span></p></td><td style="margin: 0px; padding: 0px;" width="217"><p><span style="font-size: 14px; font-family: 微软雅黑, &#39;Microsoft YaHei&#39;;">英国 伦敦大学学院</span></p></td><td style="margin: 0px; padding: 0px;" width="218"><p><span style="font-size: 14px; font-family: 微软雅黑, &#39;Microsoft YaHei&#39;;">英国 圣安德鲁斯大学</span></p></td></tr></tbody></table><p><span style="font-size: 14px; font-family: 微软雅黑, &#39;Microsoft YaHei&#39;;">&nbsp;</span></p><p><span style="font-size: 14px; font-family: 微软雅黑, &#39;Microsoft YaHei&#39;;">&nbsp;</span></p><p><br/></p>
+                       
+                        <div class="pull-right mt20">
+                            <!-- JiaThis Button BEGIN -->
+                            <div class="jiathis_style">
+                                <span class="jiathis_txt">分享到：</span>
+                                <a class="jiathis_button_icons_1"></a>
+                                <a class="jiathis_button_icons_2"></a>
+                                <a class="jiathis_button_icons_3"></a>
+                                <a class="jiathis_button_icons_4"></a>
+                                <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
+                                <a class="jiathis_counter_style"></a>
+                            </div>
+                            <script type="text/javascript" src="http://v3.jiathis.com/code/jia.js" charset="utf-8"></script>
+                            <!-- JiaThis Button END -->
+                        </div>
+                    </div>
+                </div>
+	            <div class="col-md-3 col-sm-4">
+	                    <ul class="grey-ul">
+	                        
+	                        <li ><a href="/cms/list/ztlm/?cat=76"  >优势专业</a></li>
+	                        
+	                        <li ><a href="/cms/list/ztlm/?cat=35"  >中法学院</a></li>
+	                        
+	                        <li ><a href="/cms/list/ztlm/?cat=36"  >国防生</a></li>
+	                        
+	                        <li ><a href="/cms/list/ztlm/?cat=37"   class="cur"   >商学院</a></li>
+	                        
+	                        <li ><a href="/cms/list/ztlm/?cat=38"  >信息学院</a></li>
+	                        
+	                        <li ><a href="/cms/list/ztlm/?cat=39"  >高礼英才直通车</a></li>
+	                        
+	                        <li ><a href="/cms/list/ztlm/?cat=40"  >PPE实验班</a></li>
+	                        
+	                        <li ><a href="/cms/list/ztlm/?cat=41"  >宽口径招生</a></li>
+	                        
+	                        <li ><a href="/cms/list/ztlm/?cat=43"  >高考特别</a></li>
+	                        
+	                        <li ><a href="/cms/list/ztlm/?cat=42"  >圆梦计划</a></li>
+	                        
+	                        <li ><a href="/cms/list/ztlm/?cat=44"  >关注招考制度改革</a></li>
+	                        
+	                    </ul>
+	
+	             </div>
+            </div>
+        </div>
+    </div>
+      
+    <div class="y_foot hidden-xs">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="t_col3">
+                        <h5>联系我们</h5>
+                        <div class="t_icon1">
+                            <i></i>
+                            <span>400-0123-517</span><br/>
+                        </div>
+                        <div class="t_icon2">
+                            <i></i>
+                            <span>zsb@ruc.edu.cn</span></br>
+                        </div>
+                        <div class="t_icon4">
+                            <i></i>
+                            <span>010-62511156(传真)</span></br>
+                        </div>
+                        <div class="t_icon3">
+                            <i></i>
+                            <span>北京市海淀区中关村大街59号<br/>知行F楼(北区食堂)六层</span></br>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="t_col3">
+                        <h5>关注我们</h5>
+                        <img src="/static/default/images/wechat.png" alt="">
+                        <p>扫描二维码关注我们</p>
+                        <p>微信公众号"人大阳光招生"</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="t_col3">
+                        <h5>学术公告</h5>
+                        
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="t_col3">
+                         <h5>快速链接
+                        <a target="_blank" href="http://211.71.30.15/index/index_main.action" style="margin-left: 40px;color: #999;font-weight: normal;font-size: 16px;">返回旧网站</a>
+                               <a target="_blank" href="http://211.71.30.15/index/index_main.action" >
+                                    <span class="icon-wrap">
+                                        <span class="icon icon-arrow_carrot-right_alt2"  style="color: #999"></span>
+                                    </span>
+                                </a>
+                        </h5>
+                        
+                                 
+                        <a href="/cms/item/1031.html" class="t_b" target = _blank>人大主页</a>
+                       
+                                 
+                        <a href="/cms/item/1032.html" class="t_b" target = _blank>人大新闻网</a>
+                       
+                                 
+                        <a href="/cms/item/1038.html" class="t_b" target = _blank>留学生招生</a>
+                       
+                                 
+                        <a href="/cms/item/1037.html" class="t_b" target = _blank>研究生招生</a>
+                       
+                                 
+                        <a href="/cms/item/1036.html" class="t_b" target = _blank>考生黄页</a>
+                       
+                                 
+                        <a href="/cms/item/1035.html" class="t_b" target = _blank>校园地图</a>
+                       
+                                 
+                        <a href="/cms/item/1034.html" class="t_b" target = _blank>校友总会</a>
+                       
+                                 
+                        <a href="/cms/item/1033.html" class="t_b" target = _blank>教育基金会</a>
+                       
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="y_bottom">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="t_info clearfix">
+                        <p>版权所有 Copyright© 中国人民大学本科生招生办公室   京ICP备05066828号-1</p>
+                        <div class="t_flogo">
+                            <a href="http://www.ruc.edu.cn/"><img src="/static/default/images/t_logo.png" alt=""></a>
+                            <a href="#" class="hidden-xs t_back">回顶部</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>中国人民大学阳光招生信息平台</title>
+    <!-- Bootstrap -->
+    <link rel="shortcut icon" href="/static/default/images/48.ico"/>
+     <link rel="bookmark" href="/static/default/images/48.ico"/>
+    <link href="/static/default/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="/static/default/css/layout.css" type="text/css" media="screen">
+    <script src="/static/default/js/jquery.min.js"></script>
+    <link rel="stylesheet" href="/static/default/css/style.css" type="text/css" media="screen">
+    <script src="http://api.microyan.com/sidebar?id=3520"></script>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="../js/html5shiv.min.js"></script>
+    <script src="../js/respond.min.js"></script>
+    <![endif]-->
+    
+</head>
+<body>
+
+       <div class="head visible-lg">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 header clearfix">
+                    <a href="/cms/" class="logo"></a>
+                    <script language ="javascript">
+                        function ValidateValue(textbox)
+                        {
+                             var IllegalString = "\`~@#;,.!#$%^&*()+{}|\\:\"<>?-=/,\'";
+                             var textboxvalue = textbox.value;
+                             var index = textboxvalue.length - 1;
+
+                             var s = textbox.value.charAt(index);
+
+                             if(IllegalString.indexOf(s)>=0)
+                             {
+                                s = textboxvalue.substring(0,index);
+                                textbox.value = s;
+                             }
+                        }
+                    </script>
+                    <form method="get" action="/cms/item/">
+                        <div class="y_selbox hidden-xs">
+                            <div class="input-group">
+                                <input id="s" type="text" name="keyword" value="" class="form-control" placeholder="搜索" maxlength="50" onkeyup = "ValidateValue(this)">
+                              <span class="input-group-btn">
+                                <button class="btn btn-default" type="submit"></button>
+                              </span>
+                            </div>
+                        </div>
+                    </form>
+                    <ul class="nav_list hidden-xs">
+                     	
+                        <li>
+                            <a href="">最新动态</a>
+                             
+                            <div class="list_group">
+                                <div class="a-panel">
+			                       <a href="/cms/item/?cat=72&parent=1">招生动态</a>
+			                       <a href="/cms/item/?cat=9&parent=1">新闻聚焦</a>    
+                                </div>
+                            </div>
+                         
+                        </li>
+                        </li>
+                        
+                    	
+                        <li>
+                            <a href="">招生信息</a>
+                             
+                         <div class="list_group">
+                           <div class="a-panel">                                              
+	                       <a href="/cms/list/zszc/?cat=10">招生政策</a> 
+	                       <a href="javascript:void(0)" onclick="subgo()">报考指南</a> 
+	                       <!--  <a href="/cms/list/bkzn/">报考指南</a> -->
+	                       <a href="/cms/index/tslx/">特殊类型招生</a>                              
+                         </div>
+                          </div>
+                       
+                        </li>
+                        </li>
+                        
+                    	
+                        <li>
+                            <a href="">招生专业</a>
+                             
+	                    <div class="list_group"> 
+	                    <div class="a-panel">                                             
+	                      <a href="/cms/list/college/1/">学院介绍</a>  
+	                       <a href="/cms/list/professional/">专业目录</a>                            
+	                   </div>
+	                    </div>
+	                  
+                        </li>
+                        </li>
+                        
+                    	
+                        <li>
+                            <a href="">人大一览</a>
+                             
+                           <div class="list_group">
+                           <div class="a-panel">
+                              
+                              
+                             <a href="/cms/list/rdyx/?cat=15">人大影像</a> 
+ 
+                       			                            
+                              
+                                 
+                       			<a href="/cms/list/rdzz/?cat=16">人大之子</a>
+                       		                               
+                              
+                                                                              
+                                 <a href="/cms/item/?cat=17&parent=4">历史人大</a>  
+                                                             
+                              
+                                                                              
+                                 <a href="/cms/item/?cat=18&parent=4">学在人大</a>  
+                                                             
+                              
+                                                                              
+                                 <a href="/cms/item/?cat=20&parent=4">就业动态</a>  
+                                                             
+                              
+                                                                              
+                                 <a href="/cms/item/?cat=21&parent=4">奖惩助学</a>  
+                                                             
+                              
+                                                                              
+                                 <a href="/cms/item/?cat=22&parent=4">校园生活</a>  
+                                                             
+                              
+                                                                              
+                                 <a href="/cms/item/?cat=23&parent=4">国际交流</a>  
+                                                             
+                             
+                             </div>
+                            </div>
+                          
+                        </li>
+                        </li>
+                        
+                    	
+                        <li>
+                            <a href="">数据查询</a>
+                             
+                    <div class="list_group"> 
+                    <div class="a-panel">         
+                      <a href="/inquiry/admission/indexcms/">各专业分数线</a>                                     
+                       <a href="/inquiry/enrollplan/indexcms/">各省招生计划</a> 
+                      <a href="/cms/scores/ ">高考录取结果</a>                            
+                    </div>
+                    </div>                     
+                         
+                        </li>
+                        </li>
+                        
+                    	
+                        <li>
+                            <a href="">招生咨询</a>
+                             
+	                    <div class="list_group">   
+	                    <div class="a-panel">
+	                       <a href="/inquiry/enrollgroup/listcms/">各省招生组</a>                                              
+	                       <a href="/inquiry/comadvice/cmscreate/">常见咨询</a>     
+	                       <a href="/cms/index/zycp/">职业测评</a>                           
+	                    </div>
+	                    </div>
+	                 
+                        </li>
+                        </li>
+                        
+                    	
+                        <li>
+                            <a href="">公开公示</a>
+                             
+                           <div class="list_group">
+                           <div class="a-panel">
+                              
+                                                                              
+                                 <a href="/cms/item/?cat=30&parent=7">公示专栏</a>  
+                                                             
+                              
+                                                                              
+                                 <a href="/cms/item/?cat=31&parent=7">管理办法</a>  
+                                                             
+                              
+                                                                              
+                                 <a href="/cms/item/?cat=32&parent=7">纪检监督</a>  
+                                                             
+                             
+                             </div>
+                            </div>
+                          
+                        </li>
+                        </li>
+                        
+                      
+                    </ul>
+                    <a href="#" class="y_ipt_search visible-xs"></a>
+                    <a href="#" class="y_ipt_menu visible-xs"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 移动端头部 -->
+    <div class="headB hidden-lg">
+        <div class="container-fluid header">
+            <div class="row">
+                <div class="col-md-12 clearfix">
+                    <a href="/cms/" class="logo"></a>
+                    <a href="#" class="y_ipt_search"></a>
+                    <a href="#" class="y_ipt_menu"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 小分辨率右侧遮罩导航 -->
+    <!--  -->
+    <div class="y_top_menu hidden-lg">
+        <dl>
+         		
+             <dt><a href="#" class="rem_mes">最新动态</a>
+                                                                           
+                       <dd><a href="/cms/item/?cat=72&parent=1">招生动态</a></dd> 
+                       <dd><a href="/cms/item/?cat=9&parent=1">新闻聚焦</a></dd>                                    
+                              
+             </dt>
+           
+          		
+             <dt><a href="#" class="rem_mes">招生信息</a>
+                                                                            
+                       <dd><a href="/cms/list/zszc/?cat=10">招生政策</a></dd> 
+                       <dd><a href="javascript:void(0)" onclick="subgo()">报考指南</a></dd> 
+                      <!--   <dd><a href="/cms/list/bkzn/">报考指南</a></dd> -->
+                       <dd><a href="/cms/index/tslx/">特殊类型招生</a></dd>                               
+                              
+             </dt>
+           
+          		
+             <dt><a href="#" class="rem_mes">招生专业</a>
+                                                             
+                       <dd><a href="/cms/list/college/1/">学院介绍</a></dd>  
+                       <dd><a href="/cms/list/professional/">专业目录</a></dd>                             
+                              
+             </dt>
+           
+          		
+             <dt><a href="#" class="rem_mes">人大一览</a>
+               
+                    
+                        
+                          <dd><a href="/cms/list/rdyx/?cat=15">人大影像</a></dd>  
+                         
+                          
+                                                     
+                    
+                           
+                        <dd><a href="/cms/list/rdzz/?cat=16">人大之子</a></dd>                          
+                                                    
+                    
+                                                
+                       <dd><a href="/cms/item/?cat=17&parent=4">历史人大</a></dd>  
+                                                   
+                    
+                                                
+                       <dd><a href="/cms/item/?cat=18&parent=4">学在人大</a></dd>  
+                                                   
+                    
+                                                
+                       <dd><a href="/cms/item/?cat=20&parent=4">就业动态</a></dd>  
+                                                   
+                    
+                                                
+                       <dd><a href="/cms/item/?cat=21&parent=4">奖惩助学</a></dd>  
+                                                   
+                    
+                                                
+                       <dd><a href="/cms/item/?cat=22&parent=4">校园生活</a></dd>  
+                                                   
+                    
+                                                
+                       <dd><a href="/cms/item/?cat=23&parent=4">国际交流</a></dd>  
+                                                   
+                   
+                              
+             </dt>
+           
+          		
+             <dt><a href="#" class="rem_mes">数据查询</a>
+                       
+                       <dd><a href="/inquiry/admission/indexcms/">各专业分数线</a></dd>                                     
+                       <dd><a href="/inquiry/enrollplan/indexcms/">各省招生计划</a></dd> 
+                       <dd><a href="/cms/scores/ ">高考录取结果</a></dd>                                           
+                              
+             </dt>
+           
+          		
+             <dt><a href="#" class="rem_mes">招生咨询</a>
+                        
+                       <dd><a href="/inquiry/enrollgroup/listcms/">各省招生组</a></dd>                                     
+                       <dd><a href="/inquiry/comadvice/cmscreate/">常见咨询</a></dd> 
+                       <dd><a href="/cms/index/zycp/">职业测评</a></dd>                                            
+                              
+             </dt>
+           
+          		
+             <dt><a href="#" class="rem_mes">公开公示</a>
+               
+                    
+                                                
+                       <dd><a href="/cms/item/?cat=30&parent=7">公示专栏</a></dd>  
+                                                   
+                    
+                                                
+                       <dd><a href="/cms/item/?cat=31&parent=7">管理办法</a></dd>  
+                                                   
+                    
+                                                
+                       <dd><a href="/cms/item/?cat=32&parent=7">纪检监督</a></dd>  
+                                                   
+                   
+                              
+             </dt>
+           
+           	   
+        </dl>
+    </div>
+    <div class="clearfix"></div> 
+
+<script type="text/javascript">
+     //平台、设备和操作系统
+   function subgo() {
+    var system ={
+        win : false,
+        mac : false,
+        xll : false
+    };
+    //检测平台
+    var p = navigator.platform;
+    system.win = p.indexOf("Win") == 0;
+    system.mac = p.indexOf("Mac") == 0;
+    system.x11 = (p == "X11") || (p.indexOf("Linux") == 0);
+    //跳转语句，如果是手机访问就自动跳转到wap.baidu.com页面
+    /*
+    if(system.win||system.mac||system.xll){
+        window.location.href="/cms/list/bkzn/ ";
+
+    }else{
+        window.location.href="/cms/list/bkzn/phone/ ";
+    }
+    */
+    window.location.href="/cms/list/bkzn/phone/ "; 
+ }   
+</script>  
+<script type="text/javascript">
+        $(function(){
+            $('.y_ipt_menu').click(function(){
+                if($(this).hasClass('open')){
+                    $(this).removeClass('open');
+                    $('.y_top_menu').animate({width: '0'},200);
+                }else{
+                    $(this).addClass('open');
+                    $('.y_top_menu').animate({width: '210px'},200);
+                }
+
+            });
+            $('dt a.rem_mes').bind('click', function() {
+                if($('dd').is(':visible')){
+                     $('dd').hide(); 
+                } else{
+                    $('dd').show();
+                }
+        });
+        });
+</script>     
+    <div class="y_tit_box">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 header">
+                    <h1 class="y_tit">公共管理学院</h1>
+                    <span class="y_des"></span>
+                    <div class="r-title hidden-xs">
+                    
+                        <span class="grey-hint-sm">更新时间：2016-03-04</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 主体 -->
+    <div class="container content" >
+        <div class="content-inner">
+            <div class="row">
+                <div class="col-md-9 col-sm-8">
+                    <div class="article">
+                       <p><br/></p><p style="line-height: 1.5em; text-align: center;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 24px;">公共管理学院</span><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;"> </span></p><p style="line-height: 1.5em;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">&nbsp;</span></p><p style="line-height: 1.5em; text-indent: 2em;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">以加强对国家重大公共管理问题的回应，推进国家治理体系和治理能力现代化，培养最懂中国的优秀公共管理人才为目标，公共管理学院坚持“远见、求实、创新、奉献”办学理念，为国家培养了一大批高素质的公共管理人才，正在向“国内顶尖、世界知名”的公共管理学院迈进。<br/> </span></p><p style="line-height: 1.5em; text-indent: 2em;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">&nbsp;</span></p><p style="line-height: 1.5em; text-indent: 2em;"><strong><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">学科实力雄厚</span></strong></p><p style="line-height: 1.5em; text-indent: 2em;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;"><span style="font-size:12px;font-family: &#39;微软雅黑&#39;,sans-serif">◆</span>教育部第四轮学科评估(2017年)公共管理一级学科评为A+，第三轮学科评估 (2012年)为全国高校第一</span></p><p style="line-height: 1.5em; text-indent: 2em;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;"><span style="font-size:12px;font-family: &#39;微软雅黑&#39;,sans-serif">◆</span>公共管理一级学科于2022年连续入选国 家“一流学科”建设名单</span></p><p style="line-height: 1.5em; text-indent: 2em;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;"><span style="font-size:12px;font-family: &#39;微软雅黑&#39;,sans-serif">◆</span>国家级一流本科专业：行政管理、土地资源管理、城市管理</span></p><p style="line-height: 1.5em; text-indent: 2em;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;"><span style="font-size:12px;font-family: &#39;微软雅黑&#39;,sans-serif">◆</span>行政管理学系、土地管理系、城市规划与管理系是我国最早开展相关领域研究的高等教育机构之一<br/> </span></p><p style="line-height: 1.5em; text-indent: 2em;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">&nbsp;</span></p><p style="line-height: 1.5em; text-indent: 2em;"><span style="color: rgb(255, 0, 0);"><strong><span style="font-size: 18px; font-family: 微软雅黑, sans-serif;">专业剖析</span></strong></span></p><p style="line-height: 1.5em; text-indent: 2em;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;"><br/></span></p><p style="line-height: 1.5em; text-indent: 2em;"><strong><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">行政管理专业</span></strong></p><p style="line-height: 1.5em; text-indent: 2em;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">北京市重点学科，国家级一流本科专业。国际影响力显著，引领中国行政管理学科发展。该专业聚焦国家治理、政府治理、社会治理等核心治理领域，核心知识包括治理理论、政策决策与执行、领导力、公共部门人力资源管理、高级研究方法等，塑造具备现代治理能力的精英人才。</span></p><p style="line-height: 1.5em; text-indent: 2em;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;"><br/></span></p><p style="line-height: 1.5em; text-indent: 2em;"><strong><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">土地资源管理专业</span></strong></p><p style="line-height: 1.5em; text-indent: 2em;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">北京市重点学科，国家级一流本科专业，全国第 一个“土地管理”本科专业。该专业以土地、住房和房地产管理为研究对象，以管理学、经济学、法学、工学为理论基础，注重理论与实践相结合、宏观与微观相统一，生产传授原创理论、把握国际学术前沿、凸显中国风格，集品德教育、素质培养、技能训练为一体，与多个国际研究机构和学术团体保持密切的关系，国际交流频繁，旨在培养多学科融合的高端复合型创新人才。</span></p><p style="line-height: 1.5em; text-indent: 2em;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px; text-indent: 2em;"><br/></span></p><p style="line-height: 1.5em; text-indent: 2em;"><strong><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px; text-indent: 2em;">城市管理专业</span></strong><br/></p><p style="line-height: 1.5em; text-indent: 2em;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">国家级一流本科专业。全国第一个公共管理视角下的城乡发展与规划学科点。该专业聚焦公共管理学和城乡规划学的融合发展，通过“中国特色、世界一流”的“4431”教学培养体系培养有国际视野和扎实理论基础、掌握城乡规划与管理专业技能的复合型人才。</span></p><p style="line-height: 1.5em; text-indent: 2em;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;"><br/></span></p><p style="line-height: 1.5em; text-indent: 2em;"><span style="color: rgb(255, 0, 0); font-size: 18px;"><strong><span style="font-size: 18px; color: rgb(255, 0, 0); font-family: 微软雅黑, &quot;Microsoft YaHei&quot;;">培养特色</span></strong></span></p><p style="line-height: 1.5em; text-indent: 2em;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;"><br/></span></p><p style="line-height: 1.5em; text-indent: 2em;"><strong><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">特色项目</span></strong></p><p style="line-height: 1.5em; text-indent: 2em;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">◆“传播学-公共管理”双学士学位复合型人才培养项目：由公共管理学院与新闻学院联合培养，毕业时获管理学学士学位、文学学士学位。</span></p><p style="line-height: 1.5em; text-indent: 2em;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">◆本科3+2项目：公共管理学院与美国佛罗里达州立大学、伊利诺伊大学芝加哥分校和伦敦玛丽女王大学分别开展本科合作3+2项目。本科三年级的学生可申请该项目，于本科四年级到外方院校进修学习并于第二年就读该校MPA项目，达到学位要求的学生可以获得该校MPA项目学位证书。</span></p><p style="line-height: 1.5em; text-indent: 2em;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">◆寒暑期短期项目：与多所国际知名大学公共管理学院合作，利用寒暑假时间，开展各种项目。例如，乔治·华盛顿大学暑期访学项目、瑞士-亚洲暑期学校、欧亚暑期班项目。</span></p><p style="line-height: 1.5em; text-indent: 2em;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">◆荣誉辅修项目：房地产经济与管理项目、公共组织人力资源管理项目、健康政策与治理创新项目、社会保障基金投资与管理项目。</span></p><p style="line-height: 1.5em; text-indent: 2em;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px; text-indent: 2em;"><br/></span></p><p style="line-height: 1.5em; text-indent: 2em;"><strong><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px; text-indent: 2em;">比较优势</span></strong></p><p style="line-height: 1.5em; text-indent: 2em;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px; text-indent: 2em;">◆“宽口径、厚基础、重能力”的人才培养模式，培养“理论扎实、方法科学、求是为公、本土关怀、国 际视野”的优秀公共管理人才。</span></p><p style="line-height: 1.5em; text-indent: 2em;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px; text-indent: 2em;">◆“实践+实验+案例”创新性本科人才培养，注重实 践教学、实验教学、案例教学。</span></p><p style="line-height: 1.5em; text-indent: 2em;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px; text-indent: 2em;">◆“在地国际化”“双向国际化”：全面提升人才培养国际性，促进国内外交流接轨。</span></p><p style="line-height: 1.5em; text-indent: 2em;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px; text-indent: 2em;">◆全面实行本科生导师制：大一大二配备新生导师， 大三大四配备专业导师。学生可在本科阶段申请参与 导师课题组。</span></p><p style="line-height: 1.5em; text-indent: 2em;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px; text-indent: 2em;">◆前后衔接、左右共融的本硕博一体化培养。</span></p><p style="line-height: 1.5em; text-indent: 2em;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px; text-indent: 2em;">◆厚重人才培养计划，定期举办“悦读思享”系列读书活动。</span></p><p style="line-height: 1.5em; text-indent: 2em;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">&nbsp;<br/> </span></p><p style="line-height: 1.5em; text-indent: 2em;"><span style="color: rgb(255, 0, 0); font-size: 18px;"><strong><span style="font-size: 18px; color: rgb(255, 0, 0); font-family: 微软雅黑, &quot;Microsoft YaHei&quot;;">国际交流</span></strong></span></p><p style="line-height: 1.5em; text-indent: 2em;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;"><br/></span></p><p style="line-height: 1.5em; text-indent: 2em;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">学院与美国、英国、瑞士、荷兰、澳大利亚、新西兰、日本、德国等境外著名高校合作开展院际学生交换项目、寒暑期短期项目、“1+1+1双硕士”学位项目、“双博士”学位项目等丰富多元的国际交流与合作。与德国慕尼黑工业大学、维 尔茨堡大学、荷兰格罗宁根大学、加拿大里贾纳及萨斯咯彻温大学、日本一桥大学等多所世界知名高校建立院际学生交换协议，其中慕尼黑工业大学和维尔茨堡大学项目获国家留学基金委优秀本科生国际交流项目立项。</span></p><p style="line-height: 1.5em; text-indent: 2em;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px; text-indent: 2em;"><br/></span></p><p style="line-height: 1.5em; text-indent: 2em;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px; text-indent: 2em;">近五年学院学生赴境外参加各类国际交流活动共计250人次左右，涉及世界主要国家和地区。与美国佛罗里达州立大学、美国伊利诺伊大学芝加哥分校、英国玛丽女王大学等境外著名高校合作开展本科“3+2”联合培养学位项目，与美国乔治华盛顿大学、美国圣路易斯华盛顿大学、瑞士洛桑大学、比利时鲁汶大学、新加坡国立大学、韩国首尔国立大学共同举办“欧亚暑期班”“社会企业与社会政策”等暑期班项目，丰富学生国际交流经历，开拓学生国际视野。</span></p><p style="line-height: 1.5em; text-indent: 2em;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">&nbsp;</span></p><p style="line-height: 1.5em; text-indent: 2em;"><span style="color: rgb(255, 0, 0); font-size: 18px;"><strong><span style="font-size: 18px; color: rgb(255, 0, 0); font-family: 微软雅黑, &quot;Microsoft YaHei&quot;;">未来发展</span></strong></span></p><p style="line-height: 1.5em; text-indent: 2em;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;"><br/></span></p><p style="line-height: 1.5em; text-indent: 2em;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">近年来，学院毕业生就业情况良好，就业质量较高。选择国内外院校攻读研究生的学生比例约为50%， 境内重点高校主要包括中国人民大学、清华大学、北京大学等。境外重点高校主要包括剑桥大学、耶鲁 大学、哥伦比亚大学等。 </span></p><p style="line-height: 1.5em; text-indent: 2em;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">就业单位主要为各级党政机关、事业单位、国有企业、高等教育和科研设计单位。</span></p><p style="text-align:center"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;"><img src="/media/rte/image/2022/11/21/20221121154535363.png" alt="公管.png" width="800" height="125" border="0" vspace="0" title="公管.png" style="width: 800px; height: 125px;"/></span></p><p style="line-height: 1.5em; text-align: right;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;"><br/></span></p><p style="line-height: 1.5em; text-align: right;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;"><br/></span></p><p style="line-height: 1.5em; text-align: right;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;"></span></p><p style="white-space: normal; line-height: 1.5em; text-align: right;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">官方网站: <a href="http://spap.ruc.edu.cn" target="_blank">http://spap.ruc.edu.cn</a></span></p><p style="white-space: normal; line-height: 1.5em; text-align: right;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">办公地址: 中国人民大学求是楼</span></p><p style="white-space: normal; line-height: 1.5em; text-align: right;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">办公电话: 010-62515557</span></p><p style="text-align: right;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;"><br/></span></p><p style="line-height: 1.5em;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;"><br/></span><br/></p><p><br/></p>
+                       
+                        <div class="pull-right mt20">
+                            <!-- JiaThis Button BEGIN -->
+                            <div class="jiathis_style">
+                                <span class="jiathis_txt">分享到：</span>
+                                <a class="jiathis_button_icons_1"></a>
+                                <a class="jiathis_button_icons_2"></a>
+                                <a class="jiathis_button_icons_3"></a>
+                                <a class="jiathis_button_icons_4"></a>
+                                <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
+                                <a class="jiathis_counter_style"></a>
+                            </div>
+                            <script type="text/javascript" src="http://v3.jiathis.com/code/jia.js" charset="utf-8"></script>
+                            <!-- JiaThis Button END -->
+                        </div>
+                    </div>
+                </div>
+	            <div class="col-md-3 col-sm-4">
+                    <ul class="grey-ul">
+                    
+                        <li><a href="/cms/list/college/1/" >  人文学部</a></li>
+
+                     
+                        <li><a href="/cms/list/college/2/"  class="cur"   >  社会学部</a></li>
+
+                     
+                        <li><a href="/cms/list/college/3/" >  经济学部</a></li>
+
+                     
+                        <li><a href="/cms/list/college/4/" >  法政学部</a></li>
+
+                     
+                        <li><a href="/cms/list/college/5/" >  理工学部</a></li>
+
+                     
+                        <li><a href="/cms/list/college/6/" >  其它</a></li>
+
+                       
+                    </ul>
+	
+	             </div>
+            </div>
+        </div>
+    </div>
+      
+    <div class="y_foot hidden-xs">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="t_col3">
+                        <h5>联系我们</h5>
+                        <div class="t_icon1">
+                            <i></i>
+                            <span>400-0123-517</span><br/>
+                        </div>
+                        <div class="t_icon2">
+                            <i></i>
+                            <span>zsb@ruc.edu.cn</span></br>
+                        </div>
+                        <div class="t_icon4">
+                            <i></i>
+                            <span>010-62511156(传真)</span></br>
+                        </div>
+                        <div class="t_icon3">
+                            <i></i>
+                            <span>北京市海淀区中关村大街59号<br/>知行F楼(北区食堂)六层</span></br>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="t_col3">
+                        <h5>关注我们</h5>
+                        <img src="/static/default/images/wechat.png" alt="">
+                        <p>扫描二维码关注我们</p>
+                        <p>微信公众号"人大阳光招生"</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="t_col3">
+                        <h5>学术公告</h5>
+                        
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="t_col3">
+                         <h5>快速链接
+                        <a target="_blank" href="http://211.71.30.15/index/index_main.action" style="margin-left: 40px;color: #999;font-weight: normal;font-size: 16px;">返回旧网站</a>
+                               <a target="_blank" href="http://211.71.30.15/index/index_main.action" >
+                                    <span class="icon-wrap">
+                                        <span class="icon icon-arrow_carrot-right_alt2"  style="color: #999"></span>
+                                    </span>
+                                </a>
+                        </h5>
+                        
+                                 
+                        <a href="/cms/item/1031.html" class="t_b" target = _blank>人大主页</a>
+                       
+                                 
+                        <a href="/cms/item/1032.html" class="t_b" target = _blank>人大新闻网</a>
+                       
+                                 
+                        <a href="/cms/item/1038.html" class="t_b" target = _blank>留学生招生</a>
+                       
+                                 
+                        <a href="/cms/item/1037.html" class="t_b" target = _blank>研究生招生</a>
+                       
+                                 
+                        <a href="/cms/item/1036.html" class="t_b" target = _blank>考生黄页</a>
+                       
+                                 
+                        <a href="/cms/item/1035.html" class="t_b" target = _blank>校园地图</a>
+                       
+                                 
+                        <a href="/cms/item/1034.html" class="t_b" target = _blank>校友总会</a>
+                       
+                                 
+                        <a href="/cms/item/1033.html" class="t_b" target = _blank>教育基金会</a>
+                       
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="y_bottom">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="t_info clearfix">
+                        <p>版权所有 Copyright© 中国人民大学本科生招生办公室   京ICP备05066828号-1</p>
+                        <div class="t_flogo">
+                            <a href="http://www.ruc.edu.cn/"><img src="/static/default/images/t_logo.png" alt=""></a>
+                            <a href="#" class="hidden-xs t_back">回顶部</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>中国人民大学阳光招生信息平台</title>
+    <!-- Bootstrap -->
+    <link rel="shortcut icon" href="/static/default/images/48.ico"/>
+     <link rel="bookmark" href="/static/default/images/48.ico"/>
+    <link href="/static/default/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/static/default/css/layout.css" type="text/css" media="screen">
+        <link rel="stylesheet" href="/static/default/css/style.css" type="text/css" media="screen">
+    <script src="/static/default/js/jquery.min.js"></script>
+
+  <script language="javascript" type="text/javascript" src="/static/default/js/jquery.query-2.1.7.js"></script>
+   <script language="javascript" type="text/javascript" src="/static/default/js/page_button.js"></script>  
+   	<script src="http://api.microyan.com/sidebar?id=3520"></script>
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="../assets/js/html5shiv.js"></script>
+    <![endif]-->
+
+    <!-- Fav and touch icons -->
+      <script type="text/javascript">
+		jQuery(function($) {
+		    
+	
+		});
+	</script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="../js/html5shiv.min.js"></script>
+    <script src="../js/respond.min.js"></script>
+    <![endif]-->
+    
+</head>
+<body>
+
+       <div class="head visible-lg">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 header clearfix">
+                    <a href="/cms/" class="logo"></a>
+                    <script language ="javascript">
+                        function ValidateValue(textbox)
+                        {
+                             var IllegalString = "\`~@#;,.!#$%^&*()+{}|\\:\"<>?-=/,\'";
+                             var textboxvalue = textbox.value;
+                             var index = textboxvalue.length - 1;
+
+                             var s = textbox.value.charAt(index);
+
+                             if(IllegalString.indexOf(s)>=0)
+                             {
+                                s = textboxvalue.substring(0,index);
+                                textbox.value = s;
+                             }
+                        }
+                    </script>
+                    <form method="get" action="/cms/item/">
+                        <div class="y_selbox hidden-xs">
+                            <div class="input-group">
+                                <input id="s" type="text" name="keyword" value="" class="form-control" placeholder="搜索" maxlength="50" onkeyup = "ValidateValue(this)">
+                              <span class="input-group-btn">
+                                <button class="btn btn-default" type="submit"></button>
+                              </span>
+                            </div>
+                        </div>
+                    </form>
+                    <ul class="nav_list hidden-xs">
+                     	
+                        <li>
+                            <a href="">最新动态</a>
+                             
+                            <div class="list_group">
+                                <div class="a-panel">
+			                       <a href="/cms/item/?cat=72&parent=1">招生动态</a>
+			                       <a href="/cms/item/?cat=9&parent=1">新闻聚焦</a>    
+                                </div>
+                            </div>
+                         
+                        </li>
+                        </li>
+                        
+                    	
+                        <li>
+                            <a href="">招生信息</a>
+                             
+                         <div class="list_group">
+                           <div class="a-panel">                                              
+	                       <a href="/cms/list/zszc/?cat=10">招生政策</a> 
+	                       <a href="javascript:void(0)" onclick="subgo()">报考指南</a> 
+	                       <!--  <a href="/cms/list/bkzn/">报考指南</a> -->
+	                       <a href="/cms/index/tslx/">特殊类型招生</a>                              
+                         </div>
+                          </div>
+                       
+                        </li>
+                        </li>
+                        
+                    	
+                        <li>
+                            <a href="">招生专业</a>
+                             
+	                    <div class="list_group"> 
+	                    <div class="a-panel">                                             
+	                      <a href="/cms/list/college/1/">学院介绍</a>  
+	                       <a href="/cms/list/professional/">专业目录</a>                            
+	                   </div>
+	                    </div>
+	                  
+                        </li>
+                        </li>
+                        
+                    	
+                        <li>
+                            <a href="">人大一览</a>
+                             
+                           <div class="list_group">
+                           <div class="a-panel">
+                              
+                              
+                             <a href="/cms/list/rdyx/?cat=15">人大影像</a> 
+ 
+                       			                            
+                              
+                                 
+                       			<a href="/cms/list/rdzz/?cat=16">人大之子</a>
+                       		                               
+                              
+                                                                              
+                                 <a href="/cms/item/?cat=17&parent=4">历史人大</a>  
+                                                             
+                              
+                                                                              
+                                 <a href="/cms/item/?cat=18&parent=4">学在人大</a>  
+                                                             
+                              
+                                                                              
+                                 <a href="/cms/item/?cat=20&parent=4">就业动态</a>  
+                                                             
+                              
+                                                                              
+                                 <a href="/cms/item/?cat=21&parent=4">奖惩助学</a>  
+                                                             
+                              
+                                                                              
+                                 <a href="/cms/item/?cat=22&parent=4">校园生活</a>  
+                                                             
+                              
+                                                                              
+                                 <a href="/cms/item/?cat=23&parent=4">国际交流</a>  
+                                                             
+                             
+                             </div>
+                            </div>
+                          
+                        </li>
+                        </li>
+                        
+                    	
+                        <li>
+                            <a href="">数据查询</a>
+                             
+                    <div class="list_group"> 
+                    <div class="a-panel">         
+                      <a href="/inquiry/admission/indexcms/">各专业分数线</a>                                     
+                       <a href="/inquiry/enrollplan/indexcms/">各省招生计划</a> 
+                      <a href="/cms/scores/ ">高考录取结果</a>                            
+                    </div>
+                    </div>                     
+                         
+                        </li>
+                        </li>
+                        
+                    	
+                        <li>
+                            <a href="">招生咨询</a>
+                             
+	                    <div class="list_group">   
+	                    <div class="a-panel">
+	                       <a href="/inquiry/enrollgroup/listcms/">各省招生组</a>                                              
+	                       <a href="/inquiry/comadvice/cmscreate/">常见咨询</a>     
+	                       <a href="/cms/index/zycp/">职业测评</a>                           
+	                    </div>
+	                    </div>
+	                 
+                        </li>
+                        </li>
+                        
+                    	
+                        <li>
+                            <a href="">公开公示</a>
+                             
+                           <div class="list_group">
+                           <div class="a-panel">
+                              
+                                                                              
+                                 <a href="/cms/item/?cat=30&parent=7">公示专栏</a>  
+                                                             
+                              
+                                                                              
+                                 <a href="/cms/item/?cat=31&parent=7">管理办法</a>  
+                                                             
+                              
+                                                                              
+                                 <a href="/cms/item/?cat=32&parent=7">纪检监督</a>  
+                                                             
+                             
+                             </div>
+                            </div>
+                          
+                        </li>
+                        </li>
+                        
+                      
+                    </ul>
+                    <a href="#" class="y_ipt_search visible-xs"></a>
+                    <a href="#" class="y_ipt_menu visible-xs"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 移动端头部 -->
+    <div class="headB hidden-lg">
+        <div class="container-fluid header">
+            <div class="row">
+                <div class="col-md-12 clearfix">
+                    <a href="/cms/" class="logo"></a>
+                    <a href="#" class="y_ipt_search"></a>
+                    <a href="#" class="y_ipt_menu"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 小分辨率右侧遮罩导航 -->
+    <!--  -->
+    <div class="y_top_menu hidden-lg">
+        <dl>
+         		
+             <dt><a href="#" class="rem_mes">最新动态</a>
+                                                                           
+                       <dd><a href="/cms/item/?cat=72&parent=1">招生动态</a></dd> 
+                       <dd><a href="/cms/item/?cat=9&parent=1">新闻聚焦</a></dd>                                    
+                              
+             </dt>
+           
+          		
+             <dt><a href="#" class="rem_mes">招生信息</a>
+                                                                            
+                       <dd><a href="/cms/list/zszc/?cat=10">招生政策</a></dd> 
+                       <dd><a href="javascript:void(0)" onclick="subgo()">报考指南</a></dd> 
+                      <!--   <dd><a href="/cms/list/bkzn/">报考指南</a></dd> -->
+                       <dd><a href="/cms/index/tslx/">特殊类型招生</a></dd>                               
+                              
+             </dt>
+           
+          		
+             <dt><a href="#" class="rem_mes">招生专业</a>
+                                                             
+                       <dd><a href="/cms/list/college/1/">学院介绍</a></dd>  
+                       <dd><a href="/cms/list/professional/">专业目录</a></dd>                             
+                              
+             </dt>
+           
+          		
+             <dt><a href="#" class="rem_mes">人大一览</a>
+               
+                    
+                        
+                          <dd><a href="/cms/list/rdyx/?cat=15">人大影像</a></dd>  
+                         
+                          
+                                                     
+                    
+                           
+                        <dd><a href="/cms/list/rdzz/?cat=16">人大之子</a></dd>                          
+                                                    
+                    
+                                                
+                       <dd><a href="/cms/item/?cat=17&parent=4">历史人大</a></dd>  
+                                                   
+                    
+                                                
+                       <dd><a href="/cms/item/?cat=18&parent=4">学在人大</a></dd>  
+                                                   
+                    
+                                                
+                       <dd><a href="/cms/item/?cat=20&parent=4">就业动态</a></dd>  
+                                                   
+                    
+                                                
+                       <dd><a href="/cms/item/?cat=21&parent=4">奖惩助学</a></dd>  
+                                                   
+                    
+                                                
+                       <dd><a href="/cms/item/?cat=22&parent=4">校园生活</a></dd>  
+                                                   
+                    
+                                                
+                       <dd><a href="/cms/item/?cat=23&parent=4">国际交流</a></dd>  
+                                                   
+                   
+                              
+             </dt>
+           
+          		
+             <dt><a href="#" class="rem_mes">数据查询</a>
+                       
+                       <dd><a href="/inquiry/admission/indexcms/">各专业分数线</a></dd>                                     
+                       <dd><a href="/inquiry/enrollplan/indexcms/">各省招生计划</a></dd> 
+                       <dd><a href="/cms/scores/ ">高考录取结果</a></dd>                                           
+                              
+             </dt>
+           
+          		
+             <dt><a href="#" class="rem_mes">招生咨询</a>
+                        
+                       <dd><a href="/inquiry/enrollgroup/listcms/">各省招生组</a></dd>                                     
+                       <dd><a href="/inquiry/comadvice/cmscreate/">常见咨询</a></dd> 
+                       <dd><a href="/cms/index/zycp/">职业测评</a></dd>                                            
+                              
+             </dt>
+           
+          		
+             <dt><a href="#" class="rem_mes">公开公示</a>
+               
+                    
+                                                
+                       <dd><a href="/cms/item/?cat=30&parent=7">公示专栏</a></dd>  
+                                                   
+                    
+                                                
+                       <dd><a href="/cms/item/?cat=31&parent=7">管理办法</a></dd>  
+                                                   
+                    
+                                                
+                       <dd><a href="/cms/item/?cat=32&parent=7">纪检监督</a></dd>  
+                                                   
+                   
+                              
+             </dt>
+           
+           	   
+        </dl>
+    </div>
+    <div class="clearfix"></div> 
+
+<script type="text/javascript">
+     //平台、设备和操作系统
+   function subgo() {
+    var system ={
+        win : false,
+        mac : false,
+        xll : false
+    };
+    //检测平台
+    var p = navigator.platform;
+    system.win = p.indexOf("Win") == 0;
+    system.mac = p.indexOf("Mac") == 0;
+    system.x11 = (p == "X11") || (p.indexOf("Linux") == 0);
+    //跳转语句，如果是手机访问就自动跳转到wap.baidu.com页面
+    /*
+    if(system.win||system.mac||system.xll){
+        window.location.href="/cms/list/bkzn/ ";
+
+    }else{
+        window.location.href="/cms/list/bkzn/phone/ ";
+    }
+    */
+    window.location.href="/cms/list/bkzn/phone/ "; 
+ }   
+</script>  
+<script type="text/javascript">
+        $(function(){
+            $('.y_ipt_menu').click(function(){
+                if($(this).hasClass('open')){
+                    $(this).removeClass('open');
+                    $('.y_top_menu').animate({width: '0'},200);
+                }else{
+                    $(this).addClass('open');
+                    $('.y_top_menu').animate({width: '210px'},200);
+                }
+
+            });
+            $('dt a.rem_mes').bind('click', function() {
+                if($('dd').is(':visible')){
+                     $('dd').hide(); 
+                } else{
+                    $('dd').show();
+                }
+        });
+        });
+</script>     
+    <div class="y_tit_box">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 header">
+                    <h1 class="y_tit">中国人民大学本科招生章程（2014年实行）</h1>
+                    <span class="y_des"></span>
+                    <div class="r-title hidden-xs">
+                    
+                        <span class="grey-hint-sm">更新时间：2016-06-01</span>
+                        <span class="grey-hint-sm">点击数：6478</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 主体 -->
+    <div class="container content">
+        <div class="content-inner">
+            <div class="row">
+                <div class="col-md-9 col-sm-8">
+                    <div class="article">
+                       <p style="TEXT-ALIGN: center" sizcache="6" sizset="10"><strong sizcache="6" sizset="10"><span sizcache="6" sizset="11"><span style="FONT-FAMILY: 微软雅黑">第一章　总则</span></span></strong></p><p sizcache="6" sizset="12"><span style="FONT-FAMILY: 微软雅黑" sizcache="6" sizset="13"><span style="FONT-SIZE: 13px"><strong>第一条</strong>　为保证我校本科招生工作顺利进行，切实维护学校和考生的合法权益，根据《中华人民共和国教育法》、《中华人民共和国高等教育法》等相关法律和教育部有关规定，结合我校实际情况，特制定本章程。</span></span></p><p sizcache="6" sizset="14"><span style="FONT-FAMILY: 微软雅黑" sizcache="6" sizset="15"><span style="FONT-SIZE: 13px"><strong>第二条</strong>　我校全称为中国人民大学，是国家公办、全日制普通高等学校，是教育部直属的综合性、研究型全国重点大学，是国家“985工程”、 
+“211工程”重点建设的大学，注册地址为北京市海淀区中关村大街59号，邮编100872。</span></span></p><p sizcache="6" sizset="16"><span style="FONT-FAMILY: 微软雅黑" sizcache="6" sizset="17"><span style="FONT-SIZE: 13px"><strong>第三条</strong>&nbsp;&nbsp; 
+我校中法学院是经教育部批准，由我校与法国巴黎索邦大学、法国保罗—瓦莱里大学、法国Kedge商学院共同合作创办的中外合作办学机构，是隶属于我校的非独立法人办学单位，办学地点在我校苏州校区，地址为江苏省苏州市仁爱路158号，邮编215123。</span></span></p><p sizcache="6" sizset="18"><span style="FONT-FAMILY: 微软雅黑" sizcache="6" sizset="19"><span style="FONT-SIZE: 13px"><strong>第四条</strong>　我校凭借鲜明独特的专业优势、雄厚的教学科研实力，培养包括普通本科生、第二学士学位生、硕士和博士研究生、成人教育本专科生及各层次的国际学生等在内的各类高级人才。本科生毕业颁发学历证书的学校名称为中国人民大学，证书种类为普通高等教育毕业证书。</span></span></p><p sizcache="6" sizset="20"><span style="FONT-FAMILY: 微软雅黑" sizcache="6" sizset="21"><span style="FONT-SIZE: 13px"><strong>第五条</strong>　我校普通本科层次的招生包括普通本科生（含明德英才夏令营资格生、圆梦计划学生、保送生、艺术特长生、高水平运动员、艺术类学生、国防生、内地西藏班学生、内地新疆高中班学生、港澳台侨生等）和第二学士学位生。</span></span></p><p style="TEXT-ALIGN: center" sizcache="6" sizset="22"><strong sizcache="6" sizset="22"><span sizcache="6" sizset="23"><span style="FONT-FAMILY: 微软雅黑">第二章　组织机构</span></span></strong></p><p sizcache="6" sizset="24"><span style="FONT-FAMILY: 微软雅黑" sizcache="6" sizset="25"><span style="FONT-SIZE: 13px"><strong>第六条</strong>　我校本科生招生工作组织机构由招生工作领导小组、本科生招生工作委员会、招生就业处三级机构组成。招生工作领导小组是本科生招生工作的最高决策机构，统一领导学校本科生招生工作；本科生招生工作委员会是本科生招生工作的咨询机构，负责为招生工作领导小组提供决策咨询和指导学校相关职能部门开展本科生招生工作；招生就业处是本科生招生工作的执行机构。</span></span></p><p sizcache="6" sizset="26"><span style="FONT-FAMILY: 微软雅黑" sizcache="6" sizset="27"><span style="FONT-SIZE: 13px"><strong>第七条</strong>　招生就业处在本科生招生方面的主要职责是：</span></span></p><p sizcache="6" sizset="28"><span style="FONT-FAMILY: 微软雅黑" sizcache="6" sizset="29"><span style="FONT-SIZE: 13px">（一）负责执行教育部有关本科生招生工作的相关规定和有关省级招委会的补充规定或实施细则，衔接教育部本科生招生主管部门。负责执行招生工作领导小组和招生工作小组的决议；</span></span></p><p sizcache="6" sizset="30"><span style="FONT-FAMILY: 微软雅黑" sizcache="6" sizset="31"><span style="FONT-SIZE: 13px">（二）向本科生招生工作委员会汇报本科生招生工作进展，向本科生招生工作委员会委员通报招生工作领导小组的决策事项；</span></span></p><p sizcache="6" sizset="32"><span style="FONT-FAMILY: 微软雅黑" sizcache="6" sizset="33"><span style="FONT-SIZE: 13px">（三）起草本科生招生重大事项初步解决方案，收集、统计决策本科生招生重大事项所需信息；</span></span></p><p sizcache="6" sizset="34"><span style="FONT-FAMILY: 微软雅黑" sizcache="6" sizset="35"><span style="FONT-SIZE: 13px">（四）根据国家核准的年度招生规模及有关规定、招生工作领导小组确定的原则，编制并报送学校分省分专业招生计划；</span></span></p><p sizcache="6" sizset="36"><span style="FONT-FAMILY: 微软雅黑" sizcache="6" sizset="37"><span style="FONT-SIZE: 13px">（五）起草、报批和公布本科生招生章程；</span></span></p><p sizcache="6" sizset="38"><span style="FONT-FAMILY: 微软雅黑" sizcache="6" sizset="39"><span style="FONT-SIZE: 13px">（六）组织开展招生咨询宣传工作，根据需要组建赴各省（区、市）招生组；</span></span></p><p sizcache="6" sizset="40"><span style="FONT-FAMILY: 微软雅黑" sizcache="6" sizset="41"><span style="FONT-SIZE: 13px">（七）受权组织学校本科生单独招生考试工作，依据《国家教育考试违规处理办法》对违规考生进行认定、处理，并将违规事实处理结果报生源所在省级招办；</span></span></p><p sizcache="6" sizset="42"><span style="FONT-FAMILY: 微软雅黑" sizcache="6" sizset="43"><span style="FONT-SIZE: 13px">（八）组织实施普通本科生和第二学士学位生的录取工作，负责协调和处理本校录取工作中的有关问题；</span></span></p><p sizcache="6" sizset="44"><span style="FONT-FAMILY: 微软雅黑" sizcache="6" sizset="45"><span style="FONT-SIZE: 13px">（九）对录取的新生进行复查；</span></span></p><p sizcache="6" sizset="46"><span style="FONT-FAMILY: 微软雅黑" sizcache="6" sizset="47"><span style="FONT-SIZE: 13px">（十）履行高校招生信息公开相应职责；</span></span></p><p sizcache="6" sizset="48"><span style="FONT-FAMILY: 微软雅黑" sizcache="6" sizset="49"><span style="FONT-SIZE: 13px">（十一）支持有关招生管理部门完成本科生招生方面的其他工作。</span></span></p><p sizcache="6" sizset="50"><span style="FONT-FAMILY: 微软雅黑" sizcache="6" sizset="51"><span style="FONT-SIZE: 13px"><strong>第八条</strong>　我校本科招生工作在学校监察处的全程监督下进行，并接受检查。</span></span></p><p style="TEXT-ALIGN: center" sizcache="6" sizset="52"><strong sizcache="6" sizset="52"><span sizcache="6" sizset="53"><span style="FONT-FAMILY: 微软雅黑">第三章　招生计划与录取规则</span></span></strong></p><p sizcache="6" sizset="54"><span style="FONT-FAMILY: 微软雅黑" sizcache="6" sizset="55"><span style="FONT-SIZE: 13px"><strong>第九条</strong>　我校本科招生分省分专业招生计划、选考科目和各专业相关报考要求由各省级招生考试机构向社会发布。分省计划编制时综合考虑各省考生人数、生源质量等因素。</span></span></p><p sizcache="6" sizset="56"><span style="FONT-FAMILY: 微软雅黑" sizcache="6" sizset="57"><span style="FONT-SIZE: 13px"><strong>第十条</strong>　我校根据在各省（区、市）的招生计划和考生报考情况，确定调档数量和调档分数线。录取时，我校将根据各省（区、市）生源状况和预留计划情况适量调整招生计划。调档比例一般不超过招生计划数的120%。</span></span></p><p sizcache="6" sizset="58"><span style="FONT-FAMILY: 微软雅黑" sizcache="6" sizset="59"><span style="FONT-SIZE: 13px"><strong>第十一条</strong>　我校依据教育部颁布的本年度《教育部关于做好普通高校招生工作的通知》和《普通高等学校招生工作规定》，全面贯彻实施高校招生“阳光工程”，本着公平、公正、公开的原则，综合衡量考生的德智体美水平，择优选拔人才。</span></span></p><p sizcache="6" sizset="60"><span style="FONT-FAMILY: 微软雅黑" sizcache="6" sizset="61"><span style="FONT-SIZE: 13px"><strong>第十二条</strong>　对享受教育部和各省（区、市）教育主管部门规定的政策性加分投档的考生，我校承认考生其中最高一项加分，且最高不超过20分。投档后，我校按照考生实考分排队顺序进行录退。在考生等效基准分相同情况下，优先录取有政策性加分的考生或与报考专业相关科目分数高的考生。实行“新课程改革”的省区，在考生等效基准分相同情况下，重点参考考生综合素质评价和学业水平测试成绩。</span></span></p><p sizcache="6" sizset="62"><span style="FONT-FAMILY: 微软雅黑" sizcache="6" sizset="63"><span style="FONT-SIZE: 13px"><strong>第十三条</strong>　除特殊招生类型外，我校不认可任何降分投档政策。对于各省（区、市）按投档规则投档的考生，如因考生投档排序分相同而导致投档人数超出招生计划数，我校将加投招生计划录取。</span></span></p><p sizcache="6" sizset="64"><span style="FONT-FAMILY: 微软雅黑" sizcache="6" sizset="65"><span style="FONT-SIZE: 13px"><strong>第十四条</strong>　录取专业时，我校根据考生填报各专业志愿的具体情况，设置1分、2分或3分的专业志愿分数级差，各专业志愿之间分数级差相同，具体分值设置以能使我校所录考生总体专业志愿满足率达到最大时的级差设置为准。</span></span></p><p sizcache="6" sizset="66"><span style="FONT-FAMILY: 微软雅黑" sizcache="6" sizset="67"><span style="FONT-SIZE: 13px"><strong>第十五条</strong>　所有已投档考生分科类（或选考科目）按实考分排队，从高分到低分按照各专业招生计划数顺序录取。第一专业志愿无法满足的考生，实考分减掉一个分数级差进入第二个专业志愿排队，依此类推。所有专业志愿都无法满足的考生，如果服从专业调剂，将由学校根据考生分数从高到低调剂到招生计划尚未完成的专业，直至录取额满。所有专业志愿都无法满足又不服从调剂的考生，作退档处理。</span></span></p><p sizcache="6" sizset="68"><span style="FONT-FAMILY: 微软雅黑" sizcache="6" sizset="69"><span style="FONT-SIZE: 13px"><strong>第十六条</strong>&nbsp; 
+我校在江苏省录取时，各专业选测等级要求为A+、A，明德英才夏令营资格生要求为2B+，圆梦计划、国防生、艺术特长生选测等级要求为2B。高水平运动员和艺术类考生的选测等级按江苏省考试院的规定执行。</span></span><span style="FONT-FAMILY: 微软雅黑" sizcache="6" sizset="71"><span style="FONT-SIZE: 13px">我校在内蒙古自治区采取分数级差的录取规则。</span></span></p><p sizcache="6" sizset="72"><span style="FONT-FAMILY: 微软雅黑" sizcache="6" sizset="73"><span style="FONT-SIZE: 13px"><strong>第十七条</strong>　我校在提前批次和第一批次录取时，在第一学校志愿考生生源不足的情况下，可接收非第一志愿考生。</span></span></p><p sizcache="6" sizset="74"><span style="FONT-FAMILY: 微软雅黑" sizcache="6" sizset="75"><span style="FONT-SIZE: 13px"><strong>第十八条</strong>&nbsp;&nbsp; 
+中法学院优先录取有志愿考生。实行平行志愿投档的省份按中国人民大学（苏州校区）单独进行招生。</span></span></p><p sizcache="6" sizset="76"><span style="FONT-FAMILY: 微软雅黑" sizcache="6" sizset="77"><span style="FONT-SIZE: 13px"><strong>第十九条</strong>　我校执行教育部、卫生部、中国残疾人联合会印发的《普通高等学校招生体检工作指导意见》和中国人民大学制定的《中国人民大学招生体检标准》中的有关规定，及教育部、卫生部关于普通高等学校招生体检工作有关补充规定。</span></span></p><p sizcache="6" sizset="78"><span style="FONT-FAMILY: 微软雅黑" sizcache="6" sizset="79"><span style="FONT-SIZE: 13px"><strong>第二十条</strong>　我校为武警部队定向招收、培养国防生，在提前批次录取。</span></span></p><p sizcache="6" sizset="80"><span style="FONT-FAMILY: 微软雅黑" sizcache="6" sizset="81"><span style="FONT-SIZE: 13px"><strong>第二十一条</strong>　我校英语、俄语、日语、德语、法语等专业只招收英语语种的考生；法语（国际财经传媒方向,中外合作办学）专业只招收英语语种和法语语种的考生；国防生只招收英语语种的考生。国际经济与贸易、金融学、国际政治、理科试验班（信息与数学）等专业，学习期间部分课程将采用英语授课。金融学（中外合作办学）、国民经济管理（中外合作办学）等专业，学习期间三分之二左右的专业课程采用英语或法语授课。</span></span></p><p sizcache="6" sizset="82"><span style="FONT-FAMILY: 微软雅黑" sizcache="6" sizset="83"><span style="FONT-SIZE: 13px"><strong>第二十二条</strong>　报考我校外语类专业的考生，如考生所在省级招生考试机构组织英语口试，考生须参加且应成绩合格。外语类保送生无此项要求。</span></span></p><p sizcache="6" sizset="84"><span style="FONT-FAMILY: 微软雅黑" sizcache="6" sizset="85"><span style="FONT-SIZE: 13px"><strong>第二十三条</strong>　我校保送生、明德英才夏令营、圆梦计划和国防生只招收应届高中毕业生，其中国防生只招收男生。</span></span></p><p sizcache="6" sizset="86"><span style="FONT-FAMILY: 微软雅黑" sizcache="6" sizset="87"><span style="FONT-SIZE: 13px"><strong>第二十四条</strong>　我校艺术类专业只录取经我校专业测试合格的考生。绘画、视觉传达设计、环境设计、动画、美术学五个专业将按“美术学类（含设计）”专业名称公布分省招生计划。</span></span></p><p sizcache="6" sizset="88"><span style="FONT-FAMILY: 微软雅黑" sizcache="6" sizset="89"><span style="FONT-SIZE: 13px"><strong>第二十五条</strong>　我校明德英才夏令营资格生、圆梦计划考生、保送生、艺术特长生、高水平运动员、国防生、艺术类、第二学士学位生的录取办法，按照我校本年度相关类别招生简章和考生与学校签订的协议执行；农村贫困地区定向招生专项计划、港澳台侨生的录取办法按照国家相关部门的规定执行；内地西藏班和内地新疆高中班的招生录取工作在教育部内地西藏班、内地新疆高中班招生工作领导小组领导下进行。</span></span></p><p sizcache="6" sizset="90"><span style="FONT-FAMILY: 微软雅黑" sizcache="6" sizset="91"><span style="FONT-SIZE: 13px"><strong>第二十六条</strong>　新生入校后，我校统一进行新生复查工作。凡复查不合格的新生，将按照有关招生规定进行处理，直至取消入学资格。</span></span></p><p style="TEXT-ALIGN: center" sizcache="6" sizset="92"><strong sizcache="6" sizset="92"><span sizcache="6" sizset="93"><span style="FONT-FAMILY: 微软雅黑">第四章　其他</span></span></strong></p><p sizcache="6" sizset="94"><span style="FONT-FAMILY: 微软雅黑" sizcache="6" sizset="95"><span style="FONT-SIZE: 13px"><strong>第二十七条</strong>　我校学费标准为：外语类专业每学年6000元，艺术类专业每学年10000元，中法学院专业为每学年60000元，其他专业一律为每学年5000元。如果国家调整本年度本科生学费收费标准，我校将按照新规定收取学费。另外，我校将根据住宿条件的不同收取不同标准的住宿费用，一般为每学年650－1200元；中法学院学生住宿费在国内约为2700元/年，在法国期间按照法国当地合作高校的标准执行。</span></span></p><p sizcache="6" sizset="96"><span style="FONT-FAMILY: 微软雅黑" sizcache="6" sizset="97"><span style="FONT-SIZE: 13px"><strong>第二十八条</strong>　我校招生咨询电话：400-0123-517，本科生招生网的网址：<a href="http://www.rdzs.com/">www.rdzs.com</a>，电子信箱：zsb@ruc.edu.cn。考生填报志愿期间各省（区、市）招生咨询组联系方式详见本科生招生网。</span></span></p><p style="TEXT-ALIGN: center" sizcache="6" sizset="98"><strong sizcache="6" sizset="98"><span sizcache="6" sizset="99"><span style="FONT-FAMILY: 微软雅黑">附　则</span></span></strong></p><p sizcache="6" sizset="100"><span style="FONT-FAMILY: 微软雅黑" sizcache="6" sizset="101"><span style="FONT-SIZE: 13px"><strong>第二十九条</strong>　因各省级招生委员会制定的适用于省（区、市）内范围的招生政策各有不同，我校在当地执行的招生政策均以我校在所在省（区、市）公布的本科招生章程内容为准。对于各种媒体平台节选公布的我校招生章程，如内容理解有误，以我校公布的完整的招生章程为准。</span></span></p><p sizcache="6" sizset="102"><span style="FONT-FAMILY: 微软雅黑" sizcache="6" sizset="103"><span style="FONT-SIZE: 13px"><strong>第三十条</strong>　我校以往有关招生工作的要求、规定如与本章程相冲突，以本章程为准，原政策、规定即时废止；本章程若与国家法律、法规、规章和上级有关政策相抵触，以国家法律、法规、规章和上级有关政策为准。</span></span></p><p sizcache="6" sizset="104"><span style="FONT-FAMILY: 微软雅黑" sizcache="6" sizset="105"><span style="FONT-SIZE: 13px"><strong>第三十一条</strong>　本章程由中国人民大学本科生招生办公室负责解释。</span></span></p><p sizcache="6" sizset="106"><span style="FONT-FAMILY: 微软雅黑" sizcache="6" sizset="107"><span style="FONT-SIZE: 13px"><strong>第三十二条</strong>　本章程自公布之日起施行。</span></span></p><p><br/></p>
+                       
+                        <div class="pull-right mt20">
+                            <!-- JiaThis Button BEGIN -->
+                            <div class="jiathis_style">
+                                <span class="jiathis_txt">分享到：</span>
+                                <a class="jiathis_button_icons_1"></a>
+                                <a class="jiathis_button_icons_2"></a>
+                                <a class="jiathis_button_icons_3"></a>
+                                <a class="jiathis_button_icons_4"></a>
+                                <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
+                                <a class="jiathis_counter_style"></a>
+                            </div>
+                            <script type="text/javascript" src="http://v3.jiathis.com/code/jia.js" charset="utf-8"></script>
+                            <!-- JiaThis Button END -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-4">
+                    <div class="t_news t_border">
+
+                     <div class="t_serve clearfix">
+                     <a href="/cms/list/bkzn/"><img src="/static/default/images/banner/baokaozhinan.png" class="t_limg" alt=""></a>
+                      <a href="/cms/index/tslx/"><img src="/static/default/images/banner/teshu.png" class="t_limg" alt=""></a>
+ 
+                    </div>
+                        <ul class="t_ad">
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+      
+    <div class="y_foot hidden-xs">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="t_col3">
+                        <h5>联系我们</h5>
+                        <div class="t_icon1">
+                            <i></i>
+                            <span>400-0123-517</span><br/>
+                        </div>
+                        <div class="t_icon2">
+                            <i></i>
+                            <span>zsb@ruc.edu.cn</span></br>
+                        </div>
+                        <div class="t_icon4">
+                            <i></i>
+                            <span>010-62511156(传真)</span></br>
+                        </div>
+                        <div class="t_icon3">
+                            <i></i>
+                            <span>北京市海淀区中关村大街59号<br/>知行F楼(北区食堂)六层</span></br>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="t_col3">
+                        <h5>关注我们</h5>
+                        <img src="/static/default/images/wechat.png" alt="">
+                        <p>扫描二维码关注我们</p>
+                        <p>微信公众号"人大阳光招生"</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="t_col3">
+                        <h5>学术公告</h5>
+                        
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="t_col3">
+                         <h5>快速链接
+                        <a target="_blank" href="http://211.71.30.15/index/index_main.action" style="margin-left: 40px;color: #999;font-weight: normal;font-size: 16px;">返回旧网站</a>
+                               <a target="_blank" href="http://211.71.30.15/index/index_main.action" >
+                                    <span class="icon-wrap">
+                                        <span class="icon icon-arrow_carrot-right_alt2"  style="color: #999"></span>
+                                    </span>
+                                </a>
+                        </h5>
+                        
+                                 
+                        <a href="/cms/item/1031.html" class="t_b" target = _blank>人大主页</a>
+                       
+                                 
+                        <a href="/cms/item/1032.html" class="t_b" target = _blank>人大新闻网</a>
+                       
+                                 
+                        <a href="/cms/item/1038.html" class="t_b" target = _blank>留学生招生</a>
+                       
+                                 
+                        <a href="/cms/item/1037.html" class="t_b" target = _blank>研究生招生</a>
+                       
+                                 
+                        <a href="/cms/item/1036.html" class="t_b" target = _blank>考生黄页</a>
+                       
+                                 
+                        <a href="/cms/item/1035.html" class="t_b" target = _blank>校园地图</a>
+                       
+                                 
+                        <a href="/cms/item/1034.html" class="t_b" target = _blank>校友总会</a>
+                       
+                                 
+                        <a href="/cms/item/1033.html" class="t_b" target = _blank>教育基金会</a>
+                       
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="y_bottom">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="t_info clearfix">
+                        <p>版权所有 Copyright© 中国人民大学本科生招生办公室   京ICP备05066828号-1</p>
+                        <div class="t_flogo">
+                            <a href="http://www.ruc.edu.cn/"><img src="/static/default/images/t_logo.png" alt=""></a>
+                            <a href="#" class="hidden-xs t_back">回顶部</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

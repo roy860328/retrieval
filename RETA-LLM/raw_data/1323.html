@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>中国人民大学阳光招生信息平台</title>
+    <!-- Bootstrap -->
+    <link rel="shortcut icon" href="/static/default/images/48.ico"/>
+     <link rel="bookmark" href="/static/default/images/48.ico"/>
+    <link href="/static/default/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/static/default/css/layout.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="/static/default/css/style.css" type="text/css" media="screen">
+    <script src="/static/default/js/jquery.min.js"></script>
+
+    <script src="http://api.microyan.com/sidebar?id=3520"></script>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="../js/html5shiv.min.js"></script>
+    <script src="../js/respond.min.js"></script>
+    <![endif]-->
+    
+</head>
+<body>
+
+       <div class="head visible-lg">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 header clearfix">
+                    <a href="/cms/" class="logo"></a>
+                    <script language ="javascript">
+                        function ValidateValue(textbox)
+                        {
+                             var IllegalString = "\`~@#;,.!#$%^&*()+{}|\\:\"<>?-=/,\'";
+                             var textboxvalue = textbox.value;
+                             var index = textboxvalue.length - 1;
+
+                             var s = textbox.value.charAt(index);
+
+                             if(IllegalString.indexOf(s)>=0)
+                             {
+                                s = textboxvalue.substring(0,index);
+                                textbox.value = s;
+                             }
+                        }
+                    </script>
+                    <form method="get" action="/cms/item/">
+                        <div class="y_selbox hidden-xs">
+                            <div class="input-group">
+                                <input id="s" type="text" name="keyword" value="" class="form-control" placeholder="搜索" maxlength="50" onkeyup = "ValidateValue(this)">
+                              <span class="input-group-btn">
+                                <button class="btn btn-default" type="submit"></button>
+                              </span>
+                            </div>
+                        </div>
+                    </form>
+                    <ul class="nav_list hidden-xs">
+                     	
+                        <li>
+                            <a href="">最新动态</a>
+                             
+                            <div class="list_group">
+                                <div class="a-panel">
+			                       <a href="/cms/item/?cat=72&parent=1">招生动态</a>
+			                       <a href="/cms/item/?cat=9&parent=1">新闻聚焦</a>    
+                                </div>
+                            </div>
+                         
+                        </li>
+                        </li>
+                        
+                    	
+                        <li>
+                            <a href="">招生信息</a>
+                             
+                         <div class="list_group">
+                           <div class="a-panel">                                              
+	                       <a href="/cms/list/zszc/?cat=10">招生政策</a> 
+	                       <a href="javascript:void(0)" onclick="subgo()">报考指南</a> 
+	                       <!--  <a href="/cms/list/bkzn/">报考指南</a> -->
+	                       <a href="/cms/index/tslx/">特殊类型招生</a>                              
+                         </div>
+                          </div>
+                       
+                        </li>
+                        </li>
+                        
+                    	
+                        <li>
+                            <a href="">招生专业</a>
+                             
+	                    <div class="list_group"> 
+	                    <div class="a-panel">                                             
+	                      <a href="/cms/list/college/1/">学院介绍</a>  
+	                       <a href="/cms/list/professional/">专业目录</a>                            
+	                   </div>
+	                    </div>
+	                  
+                        </li>
+                        </li>
+                        
+                    	
+                        <li>
+                            <a href="">人大一览</a>
+                             
+                           <div class="list_group">
+                           <div class="a-panel">
+                              
+                              
+                             <a href="/cms/list/rdyx/?cat=15">人大影像</a> 
+ 
+                       			                            
+                              
+                                 
+                       			<a href="/cms/list/rdzz/?cat=16">人大之子</a>
+                       		                               
+                              
+                                                                              
+                                 <a href="/cms/item/?cat=17&parent=4">历史人大</a>  
+                                                             
+                              
+                                                                              
+                                 <a href="/cms/item/?cat=18&parent=4">学在人大</a>  
+                                                             
+                              
+                                                                              
+                                 <a href="/cms/item/?cat=20&parent=4">就业动态</a>  
+                                                             
+                              
+                                                                              
+                                 <a href="/cms/item/?cat=21&parent=4">奖惩助学</a>  
+                                                             
+                              
+                                                                              
+                                 <a href="/cms/item/?cat=22&parent=4">校园生活</a>  
+                                                             
+                              
+                                                                              
+                                 <a href="/cms/item/?cat=23&parent=4">国际交流</a>  
+                                                             
+                             
+                             </div>
+                            </div>
+                          
+                        </li>
+                        </li>
+                        
+                    	
+                        <li>
+                            <a href="">数据查询</a>
+                             
+                    <div class="list_group"> 
+                    <div class="a-panel">         
+                      <a href="/inquiry/admission/indexcms/">各专业分数线</a>                                     
+                       <a href="/inquiry/enrollplan/indexcms/">各省招生计划</a> 
+                      <a href="/cms/scores/ ">高考录取结果</a>                            
+                    </div>
+                    </div>                     
+                         
+                        </li>
+                        </li>
+                        
+                    	
+                        <li>
+                            <a href="">招生咨询</a>
+                             
+	                    <div class="list_group">   
+	                    <div class="a-panel">
+	                       <a href="/inquiry/enrollgroup/listcms/">各省招生组</a>                                              
+	                       <a href="/inquiry/comadvice/cmscreate/">常见咨询</a>     
+	                       <a href="/cms/index/zycp/">职业测评</a>                           
+	                    </div>
+	                    </div>
+	                 
+                        </li>
+                        </li>
+                        
+                    	
+                        <li>
+                            <a href="">公开公示</a>
+                             
+                           <div class="list_group">
+                           <div class="a-panel">
+                              
+                                                                              
+                                 <a href="/cms/item/?cat=30&parent=7">公示专栏</a>  
+                                                             
+                              
+                                                                              
+                                 <a href="/cms/item/?cat=31&parent=7">管理办法</a>  
+                                                             
+                              
+                                                                              
+                                 <a href="/cms/item/?cat=32&parent=7">纪检监督</a>  
+                                                             
+                             
+                             </div>
+                            </div>
+                          
+                        </li>
+                        </li>
+                        
+                      
+                    </ul>
+                    <a href="#" class="y_ipt_search visible-xs"></a>
+                    <a href="#" class="y_ipt_menu visible-xs"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 移动端头部 -->
+    <div class="headB hidden-lg">
+        <div class="container-fluid header">
+            <div class="row">
+                <div class="col-md-12 clearfix">
+                    <a href="/cms/" class="logo"></a>
+                    <a href="#" class="y_ipt_search"></a>
+                    <a href="#" class="y_ipt_menu"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 小分辨率右侧遮罩导航 -->
+    <!--  -->
+    <div class="y_top_menu hidden-lg">
+        <dl>
+         		
+             <dt><a href="#" class="rem_mes">最新动态</a>
+                                                                           
+                       <dd><a href="/cms/item/?cat=72&parent=1">招生动态</a></dd> 
+                       <dd><a href="/cms/item/?cat=9&parent=1">新闻聚焦</a></dd>                                    
+                              
+             </dt>
+           
+          		
+             <dt><a href="#" class="rem_mes">招生信息</a>
+                                                                            
+                       <dd><a href="/cms/list/zszc/?cat=10">招生政策</a></dd> 
+                       <dd><a href="javascript:void(0)" onclick="subgo()">报考指南</a></dd> 
+                      <!--   <dd><a href="/cms/list/bkzn/">报考指南</a></dd> -->
+                       <dd><a href="/cms/index/tslx/">特殊类型招生</a></dd>                               
+                              
+             </dt>
+           
+          		
+             <dt><a href="#" class="rem_mes">招生专业</a>
+                                                             
+                       <dd><a href="/cms/list/college/1/">学院介绍</a></dd>  
+                       <dd><a href="/cms/list/professional/">专业目录</a></dd>                             
+                              
+             </dt>
+           
+          		
+             <dt><a href="#" class="rem_mes">人大一览</a>
+               
+                    
+                        
+                          <dd><a href="/cms/list/rdyx/?cat=15">人大影像</a></dd>  
+                         
+                          
+                                                     
+                    
+                           
+                        <dd><a href="/cms/list/rdzz/?cat=16">人大之子</a></dd>                          
+                                                    
+                    
+                                                
+                       <dd><a href="/cms/item/?cat=17&parent=4">历史人大</a></dd>  
+                                                   
+                    
+                                                
+                       <dd><a href="/cms/item/?cat=18&parent=4">学在人大</a></dd>  
+                                                   
+                    
+                                                
+                       <dd><a href="/cms/item/?cat=20&parent=4">就业动态</a></dd>  
+                                                   
+                    
+                                                
+                       <dd><a href="/cms/item/?cat=21&parent=4">奖惩助学</a></dd>  
+                                                   
+                    
+                                                
+                       <dd><a href="/cms/item/?cat=22&parent=4">校园生活</a></dd>  
+                                                   
+                    
+                                                
+                       <dd><a href="/cms/item/?cat=23&parent=4">国际交流</a></dd>  
+                                                   
+                   
+                              
+             </dt>
+           
+          		
+             <dt><a href="#" class="rem_mes">数据查询</a>
+                       
+                       <dd><a href="/inquiry/admission/indexcms/">各专业分数线</a></dd>                                     
+                       <dd><a href="/inquiry/enrollplan/indexcms/">各省招生计划</a></dd> 
+                       <dd><a href="/cms/scores/ ">高考录取结果</a></dd>                                           
+                              
+             </dt>
+           
+          		
+             <dt><a href="#" class="rem_mes">招生咨询</a>
+                        
+                       <dd><a href="/inquiry/enrollgroup/listcms/">各省招生组</a></dd>                                     
+                       <dd><a href="/inquiry/comadvice/cmscreate/">常见咨询</a></dd> 
+                       <dd><a href="/cms/index/zycp/">职业测评</a></dd>                                            
+                              
+             </dt>
+           
+          		
+             <dt><a href="#" class="rem_mes">公开公示</a>
+               
+                    
+                                                
+                       <dd><a href="/cms/item/?cat=30&parent=7">公示专栏</a></dd>  
+                                                   
+                    
+                                                
+                       <dd><a href="/cms/item/?cat=31&parent=7">管理办法</a></dd>  
+                                                   
+                    
+                                                
+                       <dd><a href="/cms/item/?cat=32&parent=7">纪检监督</a></dd>  
+                                                   
+                   
+                              
+             </dt>
+           
+           	   
+        </dl>
+    </div>
+    <div class="clearfix"></div> 
+
+<script type="text/javascript">
+     //平台、设备和操作系统
+   function subgo() {
+    var system ={
+        win : false,
+        mac : false,
+        xll : false
+    };
+    //检测平台
+    var p = navigator.platform;
+    system.win = p.indexOf("Win") == 0;
+    system.mac = p.indexOf("Mac") == 0;
+    system.x11 = (p == "X11") || (p.indexOf("Linux") == 0);
+    //跳转语句，如果是手机访问就自动跳转到wap.baidu.com页面
+    /*
+    if(system.win||system.mac||system.xll){
+        window.location.href="/cms/list/bkzn/ ";
+
+    }else{
+        window.location.href="/cms/list/bkzn/phone/ ";
+    }
+    */
+    window.location.href="/cms/list/bkzn/phone/ "; 
+ }   
+</script>  
+<script type="text/javascript">
+        $(function(){
+            $('.y_ipt_menu').click(function(){
+                if($(this).hasClass('open')){
+                    $(this).removeClass('open');
+                    $('.y_top_menu').animate({width: '0'},200);
+                }else{
+                    $(this).addClass('open');
+                    $('.y_top_menu').animate({width: '210px'},200);
+                }
+
+            });
+            $('dt a.rem_mes').bind('click', function() {
+                if($('dd').is(':visible')){
+                     $('dd').hide(); 
+                } else{
+                    $('dd').show();
+                }
+        });
+        });
+</script>     
+    <div class="y_tit_box">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 header">
+                    <h1 class="y_tit">信息管理与信息系统</h1>
+                    <span class="y_des"></span>
+                    <div class="r-title hidden-xs">
+                    
+                        <span class="grey-hint-sm">更新时间：2019-06-12</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 主体 -->
+    <div class="container content" >
+        <div class="content-inner">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="article">
+                       <p><span style="color: rgb(35, 31, 32); font-variant-numeric: normal; font-variant-east-asian: normal; font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;"></span></p><p style="text-align:center;text-indent:32px;line-height:26px"><strong><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;"><span style="font-size: 16px; font-family: 方正小标宋_GBK;">复合型人才的摇篮</span><span style="font-size: 16px; font-family: NEU-BZ-S92, serif;">:</span><span style="font-size: 16px; font-family: 方正小标宋_GBK;">信息管理与信息系统专业</span></span></strong></p><p style="text-align:center;text-indent:28px"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">左美云</span></p><p style="text-indent:28px"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">“<span style="font-size: 14px; font-family: 方正书宋_GBK;">我们的增值税率如果从</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">6%</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">调整到</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">5%,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">国家总的税收会有什么变化</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">?</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">国家财政收入会增加还是减少</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">?</span>”<span style="font-size: 14px; font-family: 方正书宋_GBK;">这是国家税务总局和财政部官员的问题。</span>“<span style="font-size: 14px; font-family: 方正书宋_GBK;">王经理</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">我们企业主打产品的价格如果从下月</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">1</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">日起下调</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">10%,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">对我们的利润有什么影响</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">?</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">你能否半小时后给我一个分析报告</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">?</span>”<span style="font-size: 14px; font-family: 方正书宋_GBK;">这是企业</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">CEO</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">的问题。</span>“<span style="font-size: 14px; font-family: 方正书宋_GBK;">我想赶晚上</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">8</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">点的火车回家</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">我坐地铁应该几点出发</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">路线如何选择</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">?</span>”<span style="font-size: 14px; font-family: 方正书宋_GBK;">这是我们个人的问题。你能解决这些问题吗</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">?</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">你知道什么工具能解决这些问题吗</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">?</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">你知道哪个专业的学生专门解决以上问题吗</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">?</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">对于最后一个问题的回答很响亮</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">:</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">信息管理与信息系统专业</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">!</span></span></p><p style="text-indent:28px"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;"><span style="font-size: 14px; font-family: 方正书宋_GBK;">解决以上问题离不开信息的收集、管理和决策模型的建立</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">以及软件硬件等系统的运用。实际上</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">我们的日常生活已经离不开信息系统了</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">:</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">我们到餐馆就餐</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">可以在餐桌上对照旁边的触摸显示屏自助点餐</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">并且可以实时了解食材的加工进度</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">还可以催菜</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">;</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">我们可以网上点餐</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">外卖小哥会如约而至</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">我们可以实时了解这些外卖小哥所在的位置和行进路线</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">;</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">我们去医院看病</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">医生看完后可以在医生处自动缴费或刷卡缴费</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">我们刚到药房</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">需要的药品就已经配齐</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">并且这些药品是通过自动拣选系统放置到你的配药篮筐中的</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">;</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">我们去超市购物</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">可以自助扫码结算</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">甚至系统可以提醒我们最近含糖食物购买过多</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">需要适当控制</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">;</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">我们通过网络听歌</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">听歌软件可以分析我们过去的一年中主要听了什么歌、是什么性格的人</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">然后问我们</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">想改变吗</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">?</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">来</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">根据你的选择听这些歌曲</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">;</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">我们看新闻</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">相关软件不但会推送那些我们关注的新闻</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">也会推送那些对我们有用但我们可能还没有意识到应该去关注的新闻</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">我们边看新闻</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">边可以就新闻内容与其他看客一起互动</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">交流各自的感受</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">;</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">我们去外地旅游</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">可以寻找到志同道合的拼车驴友</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">如果身体不舒服在当地看病</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">可以实现异地病历的调阅和医保费用的结算</span>……<span style="font-size: 14px; font-family: 方正书宋_GBK;">你知道以上随时随地出现的信息系统主要是哪个专业学生的杰作吗</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">?</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">信息管理与信息系统专业</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">!</span></span></p><p style="text-indent:28px"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;"><span style="font-size: 14px; font-family: 方正书宋_GBK;">我们这个专业的学生既会了解用户的需求</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">也会分析用户的需求</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">并将这些需求翻译成技术用语</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">和计算机相关专业同学一起</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">将它们变成软件、硬件、网络</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">最后形成一个能够和其他系统互联互通的系统。我们知道汉堡分为三层</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">上下两层是面包</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">中间一层是脆脆的蔬菜和酥酥的肉片。对应业务需求的经济管理专业看上去很美</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">是最上一层的面包</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">;</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">对应技术实现的计算机专业很厚实</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">是最下一层的面包</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">;</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">而我们信息管理与信息系统专业是中间最好吃的那一层</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">它培养上通经济管理、下懂信息技术</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">是既能与领导层自如对话</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">又能和技术人员顺畅交流的复合型人才。</span></span></p><p style="text-indent:28px"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;"><span style="font-size: 14px; font-family: 方正书宋_GBK;">所以</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">我们这个专业的学生很辛苦也很快乐</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">既要学经济学知识</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">又要学管理学知识</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">;</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">既要学计算机软硬件知识</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">特别是编程知识</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">又要学大量的数学统计模型和管理决策模型</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">;</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">学不好就是四不像</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">学好了就是复合型人才。我们信息管理与信息系统专业的同学既有能文的</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">也有能武的</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">也有文武双全的。所谓能文的</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">就是谈判沟通能力和项目管理能力很强</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">可以做项目经理、管理咨询师、系统分析师、监理工程师、系统审计师等</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">;</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">所谓能武的</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">就是编程开发能力和数学建模能力很强</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">可以做高级程序员、系统设计师、系统架构师、数据分析师等</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">;</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">所谓能文能武</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">就是上述两种能力都很强</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">可以游刃有余、根据自己不同职业生涯阶段的兴趣选择自己理想的角色。</span></span></p><p style="text-indent:28px"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;"><span style="font-size: 14px; font-family: 方正书宋_GBK;">我们这个专业既强调系统的开发</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">又强调系统的应用。我们不仅要学会自己开发一个小系统或者与团队合作开发一个较大的系统</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">提升我们的编程实现能力</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">;</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">我们还会问</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">各种手机应用市场</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">(</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">如</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">Apple</span> <span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">Store)</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">里有几十万种应用</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">哪些应用真正能安装在用户的手机里</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">?</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">哪些应用会真正打开</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">?</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">哪些应用用户会经常使用</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">?</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">这就是我们这个专业的信息系统采纳、使用和持续使用问题。我们关注用户的行为模式、关心与用户的人机界面和人机交互</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">我们不但关心是否有用、是否好用</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">我们还关心用户是否爱用、是否用得起。我们这个专业的学生</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">除了要学习培养方案中规定的必修课程外</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">我们还鼓励同学们业余时间多看看哲学方面的书</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">提高自己的思辨能力</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">;</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">多看看心理学方面的书</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">了解用户的心理</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">;</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">多看看跨文化的书</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">为跨境信息系统或电子商务建设或运作做一些知识上的准备。</span></span></p><p style="text-indent:28px"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;"><span style="font-size: 14px; font-family: 方正书宋_GBK;">我们中国人民大学是研究型大学</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">我们希望学生能够将国家关注的问题与我们的专业结合起来做一些探索性研究</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">比如如何用信息系统支持雾霾问题的解决</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">?</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">如何支持交通管理和优化来缓解道路拥堵</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">?</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">信息管理与信息系统专业是一个各行各业都能用得到的专业。我们鼓励同学们热爱我们的专业</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">在我们专业继续攻读硕士、博士。当然</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">如果同学们想进入别的领域深造</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">在我们信息管理与信息系统专业读本科也是一个非常理想的选择</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">因为你既有好的数理基础</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">有好的系统开发能力</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">又有一定的经济管理知识</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">还有综合的系统思想</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">可以很好地衔接其他拟深造的专业。</span></span></p><p style="text-indent:28px"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;"><span style="font-size: 14px; font-family: 方正书宋_GBK;">目前大数据、智能技术、移动计算、物联网、云计算等</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">(</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">即通常所说的缩略语</span>“<span style="font-size: 14px; font-family: 方正书宋_GBK;">大智移物云</span>”<span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">)</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">发展迅速</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">影响深远</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">已经使我们信息管理与信息系统学科成为社会的显学</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">也使信息管理与信息系统专业成为社会关注度极高的专业之一。现在恐怕</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">10</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">岁以上的人没有不了解微信的</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">微信就是一个典型的信息系统。微信能做多少事</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">?</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">微信聊天、微信支付、微信小应用</span>……<span style="font-size: 14px; font-family: 方正书宋_GBK;">你还可以畅想其他应用。</span></span></p><p style="text-indent:28px"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;"><span style="font-size: 14px; font-family: 方正书宋_GBK;">这个专业的应用有很多传奇。除了微信</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">你知道还有与微信类似功能的排名第二的产品么</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">?</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">你知道梅特卡夫法则么</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">?</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">梅特卡夫法则就是赢家通吃的数学表达式。然而</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">未来就是微信的天下吗</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">?</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">曾记否</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">微博也作为一类社交网络系统曾经红火过。那么</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">下一代微信是什么</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">?</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">再过十年你猜自己还会用微信么</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">?</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">信息管理与信息系统专业与时俱进</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">下一代、下两代的微信也许就在你未来的</span>“<span style="font-size: 14px; font-family: 方正书宋_GBK;">创</span>”<span style="font-size: 14px; font-family: 方正书宋_GBK;">想和创造中。</span></span></p><p><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;"><span style="font-size: 14px; font-family: 方正书宋_GBK; color: black;">&nbsp; &nbsp; &nbsp; &nbsp;这个专业的应用很新潮</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif; color: black;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK; color: black;">有很多新名词。你知道</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif; color: black;">MIS</span><span style="font-size: 14px; font-family: 方正书宋_GBK; color: black;">、</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif; color: black;">ERP</span><span style="font-size: 14px; font-family: 方正书宋_GBK; color: black;">、</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif; color: black;">B2B</span><span style="font-size: 14px; font-family: 方正书宋_GBK; color: black;">、</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif; color: black;">B2C</span><span style="font-size: 14px; font-family: 方正书宋_GBK; color: black;">、</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif; color: black;">C2C</span><span style="font-size: 14px; font-family: 方正书宋_GBK; color: black;">、</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif; color: black;">C2B</span><span style="font-size: 14px; font-family: 方正书宋_GBK; color: black;">、</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif; color: black;">O2O</span><span style="font-size: 14px; font-family: 方正书宋_GBK; color: black;">、</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif; color: black;">P2P</span><span style="font-size: 14px; font-family: 方正书宋_GBK; color: black;">吗</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif; color: black;">?</span><span style="font-size: 14px; font-family: 方正书宋_GBK; color: black;">知道</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif; color: black;">!</span><span style="font-size: 14px; font-family: 方正书宋_GBK; color: black;">那么好</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif; color: black;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK; color: black;">来我们人大信息学院</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif; color: black;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK; color: black;">我们一起来</span><span style="font-size: 14px; font-family: NEU-BZ; color: black;">“</span><span style="font-size: 14px; font-family: 方正书宋_GBK; color: black;">创</span><span style="font-size: 14px; font-family: NEU-BZ; color: black;">”</span><span style="font-size: 14px; font-family: 方正书宋_GBK; color: black;">想和研究经得起历史考验的新词</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif; color: black;">!</span><span style="font-size: 14px; font-family: 方正书宋_GBK; color: black;">不知道</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif; color: black;">!</span><span style="font-size: 14px; font-family: 方正书宋_GBK; color: black;">嗯</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif; color: black;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK; color: black;">来我们人大信息学院</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif; color: black;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK; color: black;">相信你也会很快成为信息社会的弄潮儿</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif; color: black;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK; color: black;">对这些新词如数家珍</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif; color: black;">!</span><span style="font-size: 14px; font-family: 方正书宋_GBK; color: black;">我发自内心地热爱这个专业</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif; color: black;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK; color: black;">我自豪我在这个专业任教</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif; color: black;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK; color: black;">我诚挚地欢迎你的到来</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif; color: black;">!</span>&nbsp;</span></p><p><span style="color: rgb(35, 31, 32); font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-variant-numeric: normal; font-variant-east-asian: normal; font-size: 14px;"><br style="font-variant-numeric: normal; font-variant-east-asian: normal; line-height: normal; text-align: -webkit-auto; white-space: normal; text-size-adjust: auto;"/><br/></span></p>
+                       
+                        <div class="pull-right mt20">
+                            <!-- JiaThis Button BEGIN -->
+                            <div class="jiathis_style">
+                                <span class="jiathis_txt">分享到：</span>
+                                <a class="jiathis_button_icons_1"></a>
+                                <a class="jiathis_button_icons_2"></a>
+                                <a class="jiathis_button_icons_3"></a>
+                                <a class="jiathis_button_icons_4"></a>
+                                <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
+                                <a class="jiathis_counter_style"></a>
+                            </div>
+                            <script type="text/javascript" src="http://v3.jiathis.com/code/jia.js" charset="utf-8"></script>
+                            <!-- JiaThis Button END -->
+                        </div>
+                    </div>
+                </div>
+                <!--  
+	            <div class="col-md-3 col-sm-4">
+                    <ul class="grey-ul">
+                      
+                    </ul>
+	
+	             </div>
+	           -->
+            </div>
+        </div>
+    </div>
+      
+    <div class="y_foot hidden-xs">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="t_col3">
+                        <h5>联系我们</h5>
+                        <div class="t_icon1">
+                            <i></i>
+                            <span>400-0123-517</span><br/>
+                        </div>
+                        <div class="t_icon2">
+                            <i></i>
+                            <span>zsb@ruc.edu.cn</span></br>
+                        </div>
+                        <div class="t_icon4">
+                            <i></i>
+                            <span>010-62511156(传真)</span></br>
+                        </div>
+                        <div class="t_icon3">
+                            <i></i>
+                            <span>北京市海淀区中关村大街59号<br/>知行F楼(北区食堂)六层</span></br>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="t_col3">
+                        <h5>关注我们</h5>
+                        <img src="/static/default/images/wechat.png" alt="">
+                        <p>扫描二维码关注我们</p>
+                        <p>微信公众号"人大阳光招生"</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="t_col3">
+                        <h5>学术公告</h5>
+                        
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="t_col3">
+                         <h5>快速链接
+                        <a target="_blank" href="http://211.71.30.15/index/index_main.action" style="margin-left: 40px;color: #999;font-weight: normal;font-size: 16px;">返回旧网站</a>
+                               <a target="_blank" href="http://211.71.30.15/index/index_main.action" >
+                                    <span class="icon-wrap">
+                                        <span class="icon icon-arrow_carrot-right_alt2"  style="color: #999"></span>
+                                    </span>
+                                </a>
+                        </h5>
+                        
+                                 
+                        <a href="/cms/item/1031.html" class="t_b" target = _blank>人大主页</a>
+                       
+                                 
+                        <a href="/cms/item/1032.html" class="t_b" target = _blank>人大新闻网</a>
+                       
+                                 
+                        <a href="/cms/item/1038.html" class="t_b" target = _blank>留学生招生</a>
+                       
+                                 
+                        <a href="/cms/item/1037.html" class="t_b" target = _blank>研究生招生</a>
+                       
+                                 
+                        <a href="/cms/item/1036.html" class="t_b" target = _blank>考生黄页</a>
+                       
+                                 
+                        <a href="/cms/item/1035.html" class="t_b" target = _blank>校园地图</a>
+                       
+                                 
+                        <a href="/cms/item/1034.html" class="t_b" target = _blank>校友总会</a>
+                       
+                                 
+                        <a href="/cms/item/1033.html" class="t_b" target = _blank>教育基金会</a>
+                       
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="y_bottom">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="t_info clearfix">
+                        <p>版权所有 Copyright© 中国人民大学本科生招生办公室   京ICP备05066828号-1</p>
+                        <div class="t_flogo">
+                            <a href="http://www.ruc.edu.cn/"><img src="/static/default/images/t_logo.png" alt=""></a>
+                            <a href="#" class="hidden-xs t_back">回顶部</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

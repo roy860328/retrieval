@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+       <title>中国人民大学阳光招生信息平台</title>
+    <!-- Bootstrap -->
+    <link rel="shortcut icon" href="/static/default/images/48.ico"/>
+     <link rel="bookmark" href="/static/default/images/48.ico"/>
+    <link href="/static/default/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/static/default/css/layout.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="/static/default/css/style.css" type="text/css" media="screen">
+    <script src="/static/default/js/jquery.min.js"></script>
+    <script src="http://api.microyan.com/sidebar?id=3520"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="../js/html5shiv.min.js"></script>
+    <script src="../js/respond.min.js"></script>
+    <![endif]-->
+    
+</head>
+<body>
+
+       <div class="head visible-lg">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 header clearfix">
+                    <a href="/cms/" class="logo"></a>
+                    <script language ="javascript">
+                        function ValidateValue(textbox)
+                        {
+                             var IllegalString = "\`~@#;,.!#$%^&*()+{}|\\:\"<>?-=/,\'";
+                             var textboxvalue = textbox.value;
+                             var index = textboxvalue.length - 1;
+
+                             var s = textbox.value.charAt(index);
+
+                             if(IllegalString.indexOf(s)>=0)
+                             {
+                                s = textboxvalue.substring(0,index);
+                                textbox.value = s;
+                             }
+                        }
+                    </script>
+                    <form method="get" action="/cms/item/">
+                        <div class="y_selbox hidden-xs">
+                            <div class="input-group">
+                                <input id="s" type="text" name="keyword" value="" class="form-control" placeholder="搜索" maxlength="50" onkeyup = "ValidateValue(this)">
+                              <span class="input-group-btn">
+                                <button class="btn btn-default" type="submit"></button>
+                              </span>
+                            </div>
+                        </div>
+                    </form>
+                    <ul class="nav_list hidden-xs">
+                     	
+                        <li>
+                            <a href="">最新动态</a>
+                             
+                            <div class="list_group">
+                                <div class="a-panel">
+			                       <a href="/cms/item/?cat=72&parent=1">招生动态</a>
+			                       <a href="/cms/item/?cat=9&parent=1">新闻聚焦</a>    
+                                </div>
+                            </div>
+                         
+                        </li>
+                        </li>
+                        
+                    	
+                        <li>
+                            <a href="">招生信息</a>
+                             
+                         <div class="list_group">
+                           <div class="a-panel">                                              
+	                       <a href="/cms/list/zszc/?cat=10">招生政策</a> 
+	                       <a href="javascript:void(0)" onclick="subgo()">报考指南</a> 
+	                       <!--  <a href="/cms/list/bkzn/">报考指南</a> -->
+	                       <a href="/cms/index/tslx/">特殊类型招生</a>                              
+                         </div>
+                          </div>
+                       
+                        </li>
+                        </li>
+                        
+                    	
+                        <li>
+                            <a href="">招生专业</a>
+                             
+	                    <div class="list_group"> 
+	                    <div class="a-panel">                                             
+	                      <a href="/cms/list/college/1/">学院介绍</a>  
+	                       <a href="/cms/list/professional/">专业目录</a>                            
+	                   </div>
+	                    </div>
+	                  
+                        </li>
+                        </li>
+                        
+                    	
+                        <li>
+                            <a href="">人大一览</a>
+                             
+                           <div class="list_group">
+                           <div class="a-panel">
+                              
+                              
+                             <a href="/cms/list/rdyx/?cat=15">人大影像</a> 
+ 
+                       			                            
+                              
+                                 
+                       			<a href="/cms/list/rdzz/?cat=16">人大之子</a>
+                       		                               
+                              
+                                                                              
+                                 <a href="/cms/item/?cat=17&parent=4">历史人大</a>  
+                                                             
+                              
+                                                                              
+                                 <a href="/cms/item/?cat=18&parent=4">学在人大</a>  
+                                                             
+                              
+                                                                              
+                                 <a href="/cms/item/?cat=20&parent=4">就业动态</a>  
+                                                             
+                              
+                                                                              
+                                 <a href="/cms/item/?cat=21&parent=4">奖惩助学</a>  
+                                                             
+                              
+                                                                              
+                                 <a href="/cms/item/?cat=22&parent=4">校园生活</a>  
+                                                             
+                              
+                                                                              
+                                 <a href="/cms/item/?cat=23&parent=4">国际交流</a>  
+                                                             
+                             
+                             </div>
+                            </div>
+                          
+                        </li>
+                        </li>
+                        
+                    	
+                        <li>
+                            <a href="">数据查询</a>
+                             
+                    <div class="list_group"> 
+                    <div class="a-panel">         
+                      <a href="/inquiry/admission/indexcms/">各专业分数线</a>                                     
+                       <a href="/inquiry/enrollplan/indexcms/">各省招生计划</a> 
+                      <a href="/cms/scores/ ">高考录取结果</a>                            
+                    </div>
+                    </div>                     
+                         
+                        </li>
+                        </li>
+                        
+                    	
+                        <li>
+                            <a href="">招生咨询</a>
+                             
+	                    <div class="list_group">   
+	                    <div class="a-panel">
+	                       <a href="/inquiry/enrollgroup/listcms/">各省招生组</a>                                              
+	                       <a href="/inquiry/comadvice/cmscreate/">常见咨询</a>     
+	                       <a href="/cms/index/zycp/">职业测评</a>                           
+	                    </div>
+	                    </div>
+	                 
+                        </li>
+                        </li>
+                        
+                    	
+                        <li>
+                            <a href="">公开公示</a>
+                             
+                           <div class="list_group">
+                           <div class="a-panel">
+                              
+                                                                              
+                                 <a href="/cms/item/?cat=30&parent=7">公示专栏</a>  
+                                                             
+                              
+                                                                              
+                                 <a href="/cms/item/?cat=31&parent=7">管理办法</a>  
+                                                             
+                              
+                                                                              
+                                 <a href="/cms/item/?cat=32&parent=7">纪检监督</a>  
+                                                             
+                             
+                             </div>
+                            </div>
+                          
+                        </li>
+                        </li>
+                        
+                      
+                    </ul>
+                    <a href="#" class="y_ipt_search visible-xs"></a>
+                    <a href="#" class="y_ipt_menu visible-xs"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 移动端头部 -->
+    <div class="headB hidden-lg">
+        <div class="container-fluid header">
+            <div class="row">
+                <div class="col-md-12 clearfix">
+                    <a href="/cms/" class="logo"></a>
+                    <a href="#" class="y_ipt_search"></a>
+                    <a href="#" class="y_ipt_menu"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 小分辨率右侧遮罩导航 -->
+    <!--  -->
+    <div class="y_top_menu hidden-lg">
+        <dl>
+         		
+             <dt><a href="#" class="rem_mes">最新动态</a>
+                                                                           
+                       <dd><a href="/cms/item/?cat=72&parent=1">招生动态</a></dd> 
+                       <dd><a href="/cms/item/?cat=9&parent=1">新闻聚焦</a></dd>                                    
+                              
+             </dt>
+           
+          		
+             <dt><a href="#" class="rem_mes">招生信息</a>
+                                                                            
+                       <dd><a href="/cms/list/zszc/?cat=10">招生政策</a></dd> 
+                       <dd><a href="javascript:void(0)" onclick="subgo()">报考指南</a></dd> 
+                      <!--   <dd><a href="/cms/list/bkzn/">报考指南</a></dd> -->
+                       <dd><a href="/cms/index/tslx/">特殊类型招生</a></dd>                               
+                              
+             </dt>
+           
+          		
+             <dt><a href="#" class="rem_mes">招生专业</a>
+                                                             
+                       <dd><a href="/cms/list/college/1/">学院介绍</a></dd>  
+                       <dd><a href="/cms/list/professional/">专业目录</a></dd>                             
+                              
+             </dt>
+           
+          		
+             <dt><a href="#" class="rem_mes">人大一览</a>
+               
+                    
+                        
+                          <dd><a href="/cms/list/rdyx/?cat=15">人大影像</a></dd>  
+                         
+                          
+                                                     
+                    
+                           
+                        <dd><a href="/cms/list/rdzz/?cat=16">人大之子</a></dd>                          
+                                                    
+                    
+                                                
+                       <dd><a href="/cms/item/?cat=17&parent=4">历史人大</a></dd>  
+                                                   
+                    
+                                                
+                       <dd><a href="/cms/item/?cat=18&parent=4">学在人大</a></dd>  
+                                                   
+                    
+                                                
+                       <dd><a href="/cms/item/?cat=20&parent=4">就业动态</a></dd>  
+                                                   
+                    
+                                                
+                       <dd><a href="/cms/item/?cat=21&parent=4">奖惩助学</a></dd>  
+                                                   
+                    
+                                                
+                       <dd><a href="/cms/item/?cat=22&parent=4">校园生活</a></dd>  
+                                                   
+                    
+                                                
+                       <dd><a href="/cms/item/?cat=23&parent=4">国际交流</a></dd>  
+                                                   
+                   
+                              
+             </dt>
+           
+          		
+             <dt><a href="#" class="rem_mes">数据查询</a>
+                       
+                       <dd><a href="/inquiry/admission/indexcms/">各专业分数线</a></dd>                                     
+                       <dd><a href="/inquiry/enrollplan/indexcms/">各省招生计划</a></dd> 
+                       <dd><a href="/cms/scores/ ">高考录取结果</a></dd>                                           
+                              
+             </dt>
+           
+          		
+             <dt><a href="#" class="rem_mes">招生咨询</a>
+                        
+                       <dd><a href="/inquiry/enrollgroup/listcms/">各省招生组</a></dd>                                     
+                       <dd><a href="/inquiry/comadvice/cmscreate/">常见咨询</a></dd> 
+                       <dd><a href="/cms/index/zycp/">职业测评</a></dd>                                            
+                              
+             </dt>
+           
+          		
+             <dt><a href="#" class="rem_mes">公开公示</a>
+               
+                    
+                                                
+                       <dd><a href="/cms/item/?cat=30&parent=7">公示专栏</a></dd>  
+                                                   
+                    
+                                                
+                       <dd><a href="/cms/item/?cat=31&parent=7">管理办法</a></dd>  
+                                                   
+                    
+                                                
+                       <dd><a href="/cms/item/?cat=32&parent=7">纪检监督</a></dd>  
+                                                   
+                   
+                              
+             </dt>
+           
+           	   
+        </dl>
+    </div>
+    <div class="clearfix"></div> 
+
+<script type="text/javascript">
+     //平台、设备和操作系统
+   function subgo() {
+    var system ={
+        win : false,
+        mac : false,
+        xll : false
+    };
+    //检测平台
+    var p = navigator.platform;
+    system.win = p.indexOf("Win") == 0;
+    system.mac = p.indexOf("Mac") == 0;
+    system.x11 = (p == "X11") || (p.indexOf("Linux") == 0);
+    //跳转语句，如果是手机访问就自动跳转到wap.baidu.com页面
+    /*
+    if(system.win||system.mac||system.xll){
+        window.location.href="/cms/list/bkzn/ ";
+
+    }else{
+        window.location.href="/cms/list/bkzn/phone/ ";
+    }
+    */
+    window.location.href="/cms/list/bkzn/ "; 
+ }   
+</script>  
+<script type="text/javascript">
+        $(function(){
+            $('.y_ipt_menu').click(function(){
+                if($(this).hasClass('open')){
+                    $(this).removeClass('open');
+                    $('.y_top_menu').animate({width: '0'},200);
+                }else{
+                    $(this).addClass('open');
+                    $('.y_top_menu').animate({width: '210px'},200);
+                }
+
+            });
+            $('dt a.rem_mes').bind('click', function() {
+                if($('dd').is(':visible')){
+                     $('dd').hide(); 
+                } else{
+                    $('dd').show();
+                }
+        });
+        });
+</script>     
+
+    <div class="y_tit_box">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 header">
+                    <h1 class="y_tit">数学与应用数学（中外合作办学）</h1>
+                    <span class="y_des"></span>
+                    <div class="r-title hidden-xs">
+                    
+                        <span class="grey-hint-sm">更新时间：2021-06-06</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 主体 -->
+    <div class="container content" >
+        <div class="content-inner">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="article">
+                       <p style="white-space: normal; text-align: center; text-indent: 32px; line-height: 26px;"><strong><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">漫谈数学与应用数学</span></strong></p><p style="white-space: normal; text-align: center; text-indent: 28px;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;"><span style="font-family: 方正楷体_GBK;">孟</span>　<span style="font-family: 方正楷体_GBK;">岩</span></span></p><p style="white-space: normal; text-indent: 28px;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;"><span style="font-family: 方正书宋_GBK;">培根曾提出</span>“<span style="font-family: 方正书宋_GBK;">数学是打开科学大门的钥匙</span>”<span style="font-family: 方正书宋_GBK;">。那么</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">数学到底是什么</span><span style="font-family: NEU-BZ-S92, serif;">?</span><span style="font-family: 方正书宋_GBK;">在数学发展史上</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">无数的数学家曾给出过答案。时至今日</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">总结起来</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">可以说数学是研究数、量的关系和空间形式的一个庞大科学体系</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">是一门具有高度的抽象性、严密的逻辑性和广泛的应用性的重要基础学科。它包含纯粹数学和应用数学以及这二者与其他学科的交叉部分。它是一切自然科学的基础</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">也是一切重大技术发展的基础。同时</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">数学也是一种文化</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">在人类文明的发展进程中起到重要的推动作用。</span></span></p><p style="white-space: normal; text-indent: 28px;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;"><span style="font-family: 方正书宋_GBK;">数学的起源从计数开始。在远古时代</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">出于生存的本能</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">人类就有了数的概念</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">最简单的例子就是他们能够区分出多与少。逐渐地</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">人类才有了明确的数的概念</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">例如部族首领知道部族中共有多少人。经过时间极为漫长的发展</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">在大约公元前</span><span style="font-family: NEU-BZ-S92, serif;">3000</span><span style="font-family: 方正书宋_GBK;">年</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">终于出现了书写计数和相应的数系</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">这使得数的书写和数与数之间的运算成为可能</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">在此基础上初等算术便发展起来了。此时的数学还处于萌芽时期</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">数学知识还是零散的</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">并没有推理演绎。</span></span></p><p style="white-space: normal; text-indent: 28px;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;"><span style="font-family: 方正书宋_GBK;">从公元前</span><span style="font-family: NEU-BZ-S92, serif;">6</span><span style="font-family: 方正书宋_GBK;">世纪开始</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">才开始出现比较系统的数学知识体系并具有比较抽象的演绎体系</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">比如在古希腊的《几何原本》中</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">把人们公认的一些事实列成定义和公理</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">以形式逻辑的方法</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">用这些定义和公理来研究各种几何图形的性质</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">建立了一套从公理、定义出发</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">论证命题得到定理的几何学论证方法。而这本书</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">也就成了欧式几何的奠基之作</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">成为用公理化方法建立数学演绎体系的典范之一。</span></span></p><p style="white-space: normal; text-indent: 28px;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;"><span style="font-family: 方正书宋_GBK;">进入</span><span style="font-family: NEU-BZ-S92, serif;">17</span><span style="font-family: 方正书宋_GBK;">世纪以后</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">出现了各种各样的数学理论</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">其中我们重点介绍的是解析几何与微积分。</span><span style="font-family: NEU-BZ-S92, serif;">17</span><span style="font-family: 方正书宋_GBK;">世纪上半叶</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">解析几何的发明既将代数方法应用于几何的问题中</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">又将变量引入了数学当中</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">为微积分的创立开辟了道路。需要指出的是</span><span style="font-family: NEU-BZ-S92, serif;">,17</span><span style="font-family: 方正书宋_GBK;">世纪以前的数学基本上是关于常量的数学</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">解析几何的发明是变量数学的第一个里程碑。而</span><span style="font-family: NEU-BZ-S92, serif;">17</span><span style="font-family: 方正书宋_GBK;">世纪出现在物理学、天文学、光学等领域中的问题以及几何学发展的需要也为微积分的创立提供了深刻的背景。在</span><span style="font-family: NEU-BZ-S92, serif;">17</span><span style="font-family: 方正书宋_GBK;">世纪下半叶</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">牛顿和莱布尼茨各自独立地创立了微积分。</span><span style="font-family: NEU-BZ-S92, serif;">18</span><span style="font-family: 方正书宋_GBK;">世纪到</span><span style="font-family: NEU-BZ-S92, serif;">19</span><span style="font-family: 方正书宋_GBK;">世纪</span><span style="font-family: NEU-BZ-S92, serif;">20</span><span style="font-family: 方正书宋_GBK;">年代</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">微积分得到了进一步的发展和完善</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">并获得了十分广泛的应用</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">形成了新的数学分支</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">比如常微分方程、偏微分方程、变分法等。</span></span></p><p style="white-space: normal; text-indent: 28px;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;"><span style="font-family: NEU-BZ-S92, serif;">19</span><span style="font-family: 方正书宋_GBK;">世纪</span><span style="font-family: NEU-BZ-S92, serif;">20</span><span style="font-family: 方正书宋_GBK;">年代到</span><span style="font-family: NEU-BZ-S92, serif;">20</span><span style="font-family: 方正书宋_GBK;">世纪</span><span style="font-family: NEU-BZ-S92, serif;">40</span><span style="font-family: 方正书宋_GBK;">年代可视为近代数学时期</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">主要的数学成就有微积分基础的严格化、近世代数的产生、非欧几何的诞生和集合论的创立等。到</span><span style="font-family: NEU-BZ-S92, serif;">20</span><span style="font-family: 方正书宋_GBK;">世纪上半叶建立了以抽象、结构化和综合化为主要特点的五个学科</span><span style="font-family: NEU-BZ-S92, serif;">:</span><span style="font-family: 方正书宋_GBK;">数理逻辑、测度和积分论、抽象代数、拓扑学和泛函分析。目前</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">大学阶段数学系的主要数学课程</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">如微积分、复变函数、实变函数、泛函分析、线性代数、概率统计等基本都来源于</span><span style="font-family: NEU-BZ-S92, serif;">17</span><span style="font-family: 方正书宋_GBK;">世纪以后到</span><span style="font-family: NEU-BZ-S92, serif;">20</span><span style="font-family: 方正书宋_GBK;">世纪</span><span style="font-family: NEU-BZ-S92, serif;">40</span><span style="font-family: 方正书宋_GBK;">年代这段时期。</span></span></p><p style="white-space: normal; text-indent: 28px;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;"><span style="font-family: NEU-BZ-S92, serif;">20</span><span style="font-family: 方正书宋_GBK;">世纪的第二次世界大战促使一大批数学家运用数学知识为战争服务</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">并在这个过程中产生了应用数学。</span><span style="font-family: NEU-BZ-S92, serif;">20</span><span style="font-family: 方正书宋_GBK;">世纪中后期又有许多数学分支诞生</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">如运筹学、密码学、控制论等。而以数学理论为基础的计算机的发明使得数学有了十分广泛的应用。</span></span></p><p style="white-space: normal; text-indent: 28px;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;"><span style="font-family: 方正书宋_GBK;">数学发展至今</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">已经成为一个分支众多、结构复杂的知识体系</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">并且仍然在不断发展中。数学研究有两个大的范畴</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">即基础数学</span><span style="font-family: NEU-BZ-S92, serif;">(</span><span style="font-family: 方正书宋_GBK;">也称纯粹数学</span><span style="font-family: NEU-BZ-S92, serif;">)</span><span style="font-family: 方正书宋_GBK;">和应用数学。那么区分它们的标准是什么呢</span><span style="font-family: NEU-BZ-S92, serif;">?</span>&nbsp;<span style="font-family: 方正书宋_GBK;">简而言之</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">主要看其问题的直接来源是客观实际还是数学内部。由数学内部矛盾引出的问题发展起来的数学分支属于纯粹数学</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">问题来自客观世界的属于应用数学</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">然而还有些问题的界限并非十分明显。</span></span></p><p style="white-space: normal; text-indent: 28px;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;"><span style="font-family: 方正书宋_GBK;">基础数学主要包括代数与数论、几何与拓扑以及分析三大部分</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">是整个数学学科的理论基础。从数学发展史中我们可以看到</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">数学问题的最初产生来自客观世界</span><span style="font-family: NEU-BZ-S92, serif;">,</span>&nbsp;<span style="font-family: 方正书宋_GBK;">以解决实际问题为目的</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">之后则按其自身的规律发展</span><span style="font-family: NEU-BZ-S92, serif;">,</span>&nbsp;<span style="font-family: 方正书宋_GBK;">以至于原来的实际背景被淡化</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">逐渐地脱离了原来的问题成为逻辑上完整的体系。发现问题</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">提出问题</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">从特殊现象出发</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">归纳成抽象理论并加以推广是基础数学发展的主要模式。在这种模式下</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">基础数学的每个领域都形成了独特的方法和技巧。而当多个领域中的概念、方法和技巧相互结合在一起时</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">有时会给数学家们带来意外的惊喜</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">这当中最为著名的例子之一就是几何分析的发展。几何分析是几何与偏微分方程交叉产生的研究领域</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">它真正独立成为基础数学的一个主流学科主要由于丘成桐及其合作者在</span><span style="font-family: NEU-BZ-S92, serif;">20</span><span style="font-family: 方正书宋_GBK;">世纪</span><span style="font-family: NEU-BZ-S92, serif;">70</span><span style="font-family: 方正书宋_GBK;">年代的工作</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">这些成就改变了人们对于微分方程在微分几何中的作用的看法。而丘成桐本人也于</span><span style="font-family: NEU-BZ-S92, serif;">1982</span><span style="font-family: 方正书宋_GBK;">年获得了数学菲尔兹奖。</span></span></p><p style="white-space: normal; text-indent: 28px;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;"><span style="font-family: 方正书宋_GBK;">也许有人会怀疑</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">基础数学只专注于数学自身的发展和逻辑上的完整性是否能够使得基础数学的研究保持持久的活力。对于此</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">我们可以借用怀特海德的一句评价</span><span style="font-family: NEU-BZ-S92, serif;">:</span>“<span style="font-family: 方正书宋_GBK;">纯粹数学的现代发展可以说是人类精神最原始的创新。</span>”<span style="font-family: 方正书宋_GBK;">基础数学的研究特性使得基础数学的发展空间能够得到进一步的拓宽</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">并为数学的实际应用提供了更好的储备与依据。好的数学终究会得到应用</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">比如整体微分几何的领袖之一陈省身</span><span style="font-family: NEU-BZ-S92, serif;">20</span><span style="font-family: 方正书宋_GBK;">世纪</span><span style="font-family: NEU-BZ-S92, serif;">40</span><span style="font-family: 方正书宋_GBK;">年代研究的纤维丛理论就成为</span><span style="font-family: NEU-BZ-S92, serif;">20</span><span style="font-family: 方正书宋_GBK;">世纪</span><span style="font-family: NEU-BZ-S92, serif;">70</span><span style="font-family: 方正书宋_GBK;">年代杨振宁等物理学家发现规范场的数学工具。</span></span></p><p style="white-space: normal; text-indent: 28px;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;"><span style="font-family: 方正书宋_GBK;">现代数学研究的另一个研究范畴为应用数学</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">它主要通过建立数学模型分析解决自然科学、社会科学以及工程技术中的实际问题</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">并在这一过程中逐步形成新的数学理论和方法</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">包括微分方程与动力系统、概率论、组合论以及运筹学等研究领域。</span></span></p><p style="white-space: normal; text-indent: 28px;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;"><span style="font-family: 方正书宋_GBK;">一方面</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">自然科学和社会科学中不断涌现的问题为应用数学的发展提供了重要的源泉。伽利略曾说</span><span style="font-family: NEU-BZ-S92, serif;">:</span>“<span style="font-family: 方正书宋_GBK;">自然界这部巨著仅可以被那些懂得它的语言的人读懂</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">而这种语言就是数学。</span>”<span style="font-family: 方正书宋_GBK;">牛顿就是为了研究天体运动规律而发明了微积分</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">这经常被人们称为应用数学的最高典范。现在</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">微积分已经成为几乎所有近代科学的基础。</span></span></p><p style="white-space: normal; text-indent: 28px;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;"><span style="font-family: 方正书宋_GBK;">另一方面</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">应用数学的发展也推动了科学和社会的进步。数学对自然科学的发展具有深远的影响。比如</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">当代任何一门成熟科学的研究都需要用数学语言来描述</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">在相应的数学模型的框架下来表达解决问题的思想和方法。数学的发展还促进了技术领域的进步。电子计算机的发明以及当今计算技术的发展均以数学为基础。从飞行器的模拟设计到医学扫描诊断</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">从互联网的搜索技术到信息安全技术</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">这些技术的发展都需要数学研究成果的支持。而应用数学在经济金融领域同样也发挥着不可忽视的重要作用。各种现代经济理论的建立均以数学作为基本工具</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">力图用数学的理论来描述经济发展规律。事实上</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">许多经济学家本身就是数学家</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">比如诺贝尔经济学奖获得者纳什就是出色的数学家。</span></span></p><p style="white-space: normal; text-indent: 28px;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;"><span style="font-family: 方正书宋_GBK;">需要指出的是</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">数学不仅具有科学性</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">还具有艺术性。罗素曾说</span><span style="font-family: NEU-BZ-S92, serif;">:</span>“<span style="font-family: 方正书宋_GBK;">数学</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">如果正确地看</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">不但拥有真理</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">而且也具有至高无上的美。</span>”<span style="font-family: 方正书宋_GBK;">数学的美主要表现在它的抽象性、简洁性和对称性</span><span style="font-family: NEU-BZ-S92, serif;">,</span><span style="font-family: 方正书宋_GBK;">还体现在数学内部的和谐与统一。希望有更多的人能够理解与欣赏数学的美。</span></span></p><p style="white-space: normal; text-indent: 28px;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;"><span style="font-family: 方正书宋_GBK;"><strong style="font-family: NEU-BZ-S92, serif; font-size: 14px; text-indent: 28px; white-space: normal;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;;">具体院系介绍请点击院系名称查看：<a href="https://mp.weixin.qq.com/s/b9E4Pmrm5QptPsrcFnnEKg" target="_self">中法学院</a></span></strong></span></span></p><p style="white-space: normal;"><span style="font-family: FZLTKHK--GBK1-0; color: rgb(35, 31, 32); font-variant-numeric: normal; font-variant-east-asian: normal; font-size: 14px;"><span style="font-size: 9pt; font-variant-numeric: normal; font-variant-east-asian: normal;"></span><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 9pt; font-variant-numeric: normal; font-variant-east-asian: normal;"></span><br style="font-variant-numeric: normal; font-variant-east-asian: normal; line-height: normal; text-align: -webkit-auto; text-size-adjust: auto;"/></span></p><p><br/></p>
+                       
+                        <div class="pull-right mt20">
+                            <!-- JiaThis Button BEGIN -->
+                            <div class="jiathis_style">
+                                <span class="jiathis_txt">分享到：</span>
+                                <a class="jiathis_button_icons_1"></a>
+                                <a class="jiathis_button_icons_2"></a>
+                                <a class="jiathis_button_icons_3"></a>
+                                <a class="jiathis_button_icons_4"></a>
+                                <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
+                                <a class="jiathis_counter_style"></a>
+                            </div>
+                            <script type="text/javascript" src="http://v3.jiathis.com/code/jia.js" charset="utf-8"></script>
+                            <!-- JiaThis Button END -->
+                        </div>
+                    </div>
+                </div>
+                <!-- 
+	            <div class="col-md-3 col-sm-4">
+                    <ul class="grey-ul">
+                      
+                    </ul>
+	
+	             </div>
+	            -->
+            </div>
+        </div>
+    </div>
+      
+    <div class="y_foot hidden-xs">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="t_col3">
+                        <h5>联系我们</h5>
+                        <div class="t_icon1">
+                            <i></i>
+                            <span>400-0123-517</span><br/>
+                        </div>
+                        <div class="t_icon2">
+                            <i></i>
+                            <span>zsb@ruc.edu.cn</span></br>
+                        </div>
+                        <div class="t_icon4">
+                            <i></i>
+                            <span>010-62511156(传真)</span></br>
+                        </div>
+                        <div class="t_icon3">
+                            <i></i>
+                            <span>北京市海淀区中关村大街59号<br/>知行F楼(北区食堂)六层</span></br>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="t_col3">
+                        <h5>关注我们</h5>
+                        <img src="/static/default/images/wechat.png" alt="">
+                        <p>扫描二维码关注我们</p>
+                        <p>微信公众号"人大阳光招生"</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="t_col3">
+                        <h5>学术公告</h5>
+                        
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="t_col3">
+                         <h5>快速链接
+                        <a target="_blank" href="http://211.71.30.15/index/index_main.action" style="margin-left: 40px;color: #999;font-weight: normal;font-size: 16px;">返回旧网站</a>
+                               <a target="_blank" href="http://211.71.30.15/index/index_main.action" >
+                                    <span class="icon-wrap">
+                                        <span class="icon icon-arrow_carrot-right_alt2"  style="color: #999"></span>
+                                    </span>
+                                </a>
+                        </h5>
+                        
+                                 
+                        <a href="/cms/item/1031.html" class="t_b" target = _blank>人大主页</a>
+                       
+                                 
+                        <a href="/cms/item/1032.html" class="t_b" target = _blank>人大新闻网</a>
+                       
+                                 
+                        <a href="/cms/item/1038.html" class="t_b" target = _blank>留学生招生</a>
+                       
+                                 
+                        <a href="/cms/item/1037.html" class="t_b" target = _blank>研究生招生</a>
+                       
+                                 
+                        <a href="/cms/item/1036.html" class="t_b" target = _blank>考生黄页</a>
+                       
+                                 
+                        <a href="/cms/item/1035.html" class="t_b" target = _blank>校园地图</a>
+                       
+                                 
+                        <a href="/cms/item/1034.html" class="t_b" target = _blank>校友总会</a>
+                       
+                                 
+                        <a href="/cms/item/1033.html" class="t_b" target = _blank>教育基金会</a>
+                       
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="y_bottom">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="t_info clearfix">
+                        <p>版权所有 Copyright© 中国人民大学本科生招生办公室   京ICP备05066828号-1</p>
+                        <div class="t_flogo">
+                            <a href="http://www.ruc.edu.cn/"><img src="/static/default/images/t_logo.png" alt=""></a>
+                            <a href="#" class="hidden-xs t_back">回顶部</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

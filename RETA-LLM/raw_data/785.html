@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>中国人民大学阳光招生信息平台</title>
+    <!-- Bootstrap -->
+    <link rel="shortcut icon" href="/static/default/images/48.ico"/>
+     <link rel="bookmark" href="/static/default/images/48.ico"/>
+    <link href="/static/default/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/static/default/css/layout.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="/static/default/css/style.css" type="text/css" media="screen">
+    <script src="/static/default/js/jquery.min.js"></script>
+
+    <script src="http://api.microyan.com/sidebar?id=3520"></script>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="../js/html5shiv.min.js"></script>
+    <script src="../js/respond.min.js"></script>
+    <![endif]-->
+    
+</head>
+<body>
+
+       <div class="head visible-lg">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 header clearfix">
+                    <a href="/cms/" class="logo"></a>
+                    <script language ="javascript">
+                        function ValidateValue(textbox)
+                        {
+                             var IllegalString = "\`~@#;,.!#$%^&*()+{}|\\:\"<>?-=/,\'";
+                             var textboxvalue = textbox.value;
+                             var index = textboxvalue.length - 1;
+
+                             var s = textbox.value.charAt(index);
+
+                             if(IllegalString.indexOf(s)>=0)
+                             {
+                                s = textboxvalue.substring(0,index);
+                                textbox.value = s;
+                             }
+                        }
+                    </script>
+                    <form method="get" action="/cms/item/">
+                        <div class="y_selbox hidden-xs">
+                            <div class="input-group">
+                                <input id="s" type="text" name="keyword" value="" class="form-control" placeholder="搜索" maxlength="50" onkeyup = "ValidateValue(this)">
+                              <span class="input-group-btn">
+                                <button class="btn btn-default" type="submit"></button>
+                              </span>
+                            </div>
+                        </div>
+                    </form>
+                    <ul class="nav_list hidden-xs">
+                     	
+                        <li>
+                            <a href="">最新动态</a>
+                             
+                            <div class="list_group">
+                                <div class="a-panel">
+			                       <a href="/cms/item/?cat=72&parent=1">招生动态</a>
+			                       <a href="/cms/item/?cat=9&parent=1">新闻聚焦</a>    
+                                </div>
+                            </div>
+                         
+                        </li>
+                        </li>
+                        
+                    	
+                        <li>
+                            <a href="">招生信息</a>
+                             
+                         <div class="list_group">
+                           <div class="a-panel">                                              
+	                       <a href="/cms/list/zszc/?cat=10">招生政策</a> 
+	                       <a href="javascript:void(0)" onclick="subgo()">报考指南</a> 
+	                       <!--  <a href="/cms/list/bkzn/">报考指南</a> -->
+	                       <a href="/cms/index/tslx/">特殊类型招生</a>                              
+                         </div>
+                          </div>
+                       
+                        </li>
+                        </li>
+                        
+                    	
+                        <li>
+                            <a href="">招生专业</a>
+                             
+	                    <div class="list_group"> 
+	                    <div class="a-panel">                                             
+	                      <a href="/cms/list/college/1/">学院介绍</a>  
+	                       <a href="/cms/list/professional/">专业目录</a>                            
+	                   </div>
+	                    </div>
+	                  
+                        </li>
+                        </li>
+                        
+                    	
+                        <li>
+                            <a href="">人大一览</a>
+                             
+                           <div class="list_group">
+                           <div class="a-panel">
+                              
+                              
+                             <a href="/cms/list/rdyx/?cat=15">人大影像</a> 
+ 
+                       			                            
+                              
+                                 
+                       			<a href="/cms/list/rdzz/?cat=16">人大之子</a>
+                       		                               
+                              
+                                                                              
+                                 <a href="/cms/item/?cat=17&parent=4">历史人大</a>  
+                                                             
+                              
+                                                                              
+                                 <a href="/cms/item/?cat=18&parent=4">学在人大</a>  
+                                                             
+                              
+                                                                              
+                                 <a href="/cms/item/?cat=20&parent=4">就业动态</a>  
+                                                             
+                              
+                                                                              
+                                 <a href="/cms/item/?cat=21&parent=4">奖惩助学</a>  
+                                                             
+                              
+                                                                              
+                                 <a href="/cms/item/?cat=22&parent=4">校园生活</a>  
+                                                             
+                              
+                                                                              
+                                 <a href="/cms/item/?cat=23&parent=4">国际交流</a>  
+                                                             
+                             
+                             </div>
+                            </div>
+                          
+                        </li>
+                        </li>
+                        
+                    	
+                        <li>
+                            <a href="">数据查询</a>
+                             
+                    <div class="list_group"> 
+                    <div class="a-panel">         
+                      <a href="/inquiry/admission/indexcms/">各专业分数线</a>                                     
+                       <a href="/inquiry/enrollplan/indexcms/">各省招生计划</a> 
+                      <a href="/cms/scores/ ">高考录取结果</a>                            
+                    </div>
+                    </div>                     
+                         
+                        </li>
+                        </li>
+                        
+                    	
+                        <li>
+                            <a href="">招生咨询</a>
+                             
+	                    <div class="list_group">   
+	                    <div class="a-panel">
+	                       <a href="/inquiry/enrollgroup/listcms/">各省招生组</a>                                              
+	                       <a href="/inquiry/comadvice/cmscreate/">常见咨询</a>     
+	                       <a href="/cms/index/zycp/">职业测评</a>                           
+	                    </div>
+	                    </div>
+	                 
+                        </li>
+                        </li>
+                        
+                    	
+                        <li>
+                            <a href="">公开公示</a>
+                             
+                           <div class="list_group">
+                           <div class="a-panel">
+                              
+                                                                              
+                                 <a href="/cms/item/?cat=30&parent=7">公示专栏</a>  
+                                                             
+                              
+                                                                              
+                                 <a href="/cms/item/?cat=31&parent=7">管理办法</a>  
+                                                             
+                              
+                                                                              
+                                 <a href="/cms/item/?cat=32&parent=7">纪检监督</a>  
+                                                             
+                             
+                             </div>
+                            </div>
+                          
+                        </li>
+                        </li>
+                        
+                      
+                    </ul>
+                    <a href="#" class="y_ipt_search visible-xs"></a>
+                    <a href="#" class="y_ipt_menu visible-xs"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 移动端头部 -->
+    <div class="headB hidden-lg">
+        <div class="container-fluid header">
+            <div class="row">
+                <div class="col-md-12 clearfix">
+                    <a href="/cms/" class="logo"></a>
+                    <a href="#" class="y_ipt_search"></a>
+                    <a href="#" class="y_ipt_menu"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 小分辨率右侧遮罩导航 -->
+    <!--  -->
+    <div class="y_top_menu hidden-lg">
+        <dl>
+         		
+             <dt><a href="#" class="rem_mes">最新动态</a>
+                                                                           
+                       <dd><a href="/cms/item/?cat=72&parent=1">招生动态</a></dd> 
+                       <dd><a href="/cms/item/?cat=9&parent=1">新闻聚焦</a></dd>                                    
+                              
+             </dt>
+           
+          		
+             <dt><a href="#" class="rem_mes">招生信息</a>
+                                                                            
+                       <dd><a href="/cms/list/zszc/?cat=10">招生政策</a></dd> 
+                       <dd><a href="javascript:void(0)" onclick="subgo()">报考指南</a></dd> 
+                      <!--   <dd><a href="/cms/list/bkzn/">报考指南</a></dd> -->
+                       <dd><a href="/cms/index/tslx/">特殊类型招生</a></dd>                               
+                              
+             </dt>
+           
+          		
+             <dt><a href="#" class="rem_mes">招生专业</a>
+                                                             
+                       <dd><a href="/cms/list/college/1/">学院介绍</a></dd>  
+                       <dd><a href="/cms/list/professional/">专业目录</a></dd>                             
+                              
+             </dt>
+           
+          		
+             <dt><a href="#" class="rem_mes">人大一览</a>
+               
+                    
+                        
+                          <dd><a href="/cms/list/rdyx/?cat=15">人大影像</a></dd>  
+                         
+                          
+                                                     
+                    
+                           
+                        <dd><a href="/cms/list/rdzz/?cat=16">人大之子</a></dd>                          
+                                                    
+                    
+                                                
+                       <dd><a href="/cms/item/?cat=17&parent=4">历史人大</a></dd>  
+                                                   
+                    
+                                                
+                       <dd><a href="/cms/item/?cat=18&parent=4">学在人大</a></dd>  
+                                                   
+                    
+                                                
+                       <dd><a href="/cms/item/?cat=20&parent=4">就业动态</a></dd>  
+                                                   
+                    
+                                                
+                       <dd><a href="/cms/item/?cat=21&parent=4">奖惩助学</a></dd>  
+                                                   
+                    
+                                                
+                       <dd><a href="/cms/item/?cat=22&parent=4">校园生活</a></dd>  
+                                                   
+                    
+                                                
+                       <dd><a href="/cms/item/?cat=23&parent=4">国际交流</a></dd>  
+                                                   
+                   
+                              
+             </dt>
+           
+          		
+             <dt><a href="#" class="rem_mes">数据查询</a>
+                       
+                       <dd><a href="/inquiry/admission/indexcms/">各专业分数线</a></dd>                                     
+                       <dd><a href="/inquiry/enrollplan/indexcms/">各省招生计划</a></dd> 
+                       <dd><a href="/cms/scores/ ">高考录取结果</a></dd>                                           
+                              
+             </dt>
+           
+          		
+             <dt><a href="#" class="rem_mes">招生咨询</a>
+                        
+                       <dd><a href="/inquiry/enrollgroup/listcms/">各省招生组</a></dd>                                     
+                       <dd><a href="/inquiry/comadvice/cmscreate/">常见咨询</a></dd> 
+                       <dd><a href="/cms/index/zycp/">职业测评</a></dd>                                            
+                              
+             </dt>
+           
+          		
+             <dt><a href="#" class="rem_mes">公开公示</a>
+               
+                    
+                                                
+                       <dd><a href="/cms/item/?cat=30&parent=7">公示专栏</a></dd>  
+                                                   
+                    
+                                                
+                       <dd><a href="/cms/item/?cat=31&parent=7">管理办法</a></dd>  
+                                                   
+                    
+                                                
+                       <dd><a href="/cms/item/?cat=32&parent=7">纪检监督</a></dd>  
+                                                   
+                   
+                              
+             </dt>
+           
+           	   
+        </dl>
+    </div>
+    <div class="clearfix"></div> 
+
+<script type="text/javascript">
+     //平台、设备和操作系统
+   function subgo() {
+    var system ={
+        win : false,
+        mac : false,
+        xll : false
+    };
+    //检测平台
+    var p = navigator.platform;
+    system.win = p.indexOf("Win") == 0;
+    system.mac = p.indexOf("Mac") == 0;
+    system.x11 = (p == "X11") || (p.indexOf("Linux") == 0);
+    //跳转语句，如果是手机访问就自动跳转到wap.baidu.com页面
+    /*
+    if(system.win||system.mac||system.xll){
+        window.location.href="/cms/list/bkzn/ ";
+
+    }else{
+        window.location.href="/cms/list/bkzn/phone/ ";
+    }
+    */
+    window.location.href="/cms/list/bkzn/ "; 
+ }   
+</script>  
+<script type="text/javascript">
+        $(function(){
+            $('.y_ipt_menu').click(function(){
+                if($(this).hasClass('open')){
+                    $(this).removeClass('open');
+                    $('.y_top_menu').animate({width: '0'},200);
+                }else{
+                    $(this).addClass('open');
+                    $('.y_top_menu').animate({width: '210px'},200);
+                }
+
+            });
+            $('dt a.rem_mes').bind('click', function() {
+                if($('dd').is(':visible')){
+                     $('dd').hide(); 
+                } else{
+                    $('dd').show();
+                }
+        });
+        });
+</script>     
+
+    <div class="y_tit_box">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 header">
+                    <h1 class="y_tit">软件工程</h1>
+                    <span class="y_des"></span>
+                    <div class="r-title hidden-xs">
+                    
+                        <span class="grey-hint-sm">更新时间：2019-06-12</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 主体 -->
+    <div class="container content" >
+        <div class="content-inner">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="article">
+                       <p style="text-align:center;text-indent:32px;line-height:26px"><strong><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 16px;">软件工程:学以致用,改变生活</span></strong></p><p style="text-align:center;text-indent:28px"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">柴云鹏</span></p><p style="text-indent:28px"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;"><span style="font-size: 14px; font-family: 方正书宋_GBK;">什么是现代生活呢</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">?</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">人们住在安装着自动控制空调的家里</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">;</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">上班开着自动挡的小车</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">或者乘坐自动挡的公交车</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">或者乘坐地铁</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">;</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">购物可以网上买</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">也可以在商场通过刷卡、支付宝、微信等渠道付费消费</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">各种商品的质量、产地可以通过标签追踪</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">等等。外出人生地不熟</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">吃饭怎么办</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">?</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">随时可以用手机搜一下感兴趣的饭店</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">导航一下就过去了</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">还有一些系统能够根据说话或动作完成使用者提出的要求。这些现代生活的场景林林总总</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">数不胜数。那么这些便捷生活的后面会用到很多东西</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">其中计算机及其相关技术则是不可或缺的。比如恒温空调</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">在设定温度后</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">它的温度感应器随时测试温度并报告给内置的程序控制模块决定降温、升温</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">还是不动。说到各种支付手段</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">最终都要和银行账户关联</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">这些都不是通过手工</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">而是通过计算机系统来完成的。这些计算机系统的建设和运行大多需要计算机软件来支持。没有了计算机</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">生活将停留在过去</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">那是完全不同的样子。</span></span></p><p style="text-align:center;text-indent:13px"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 7px;">●</span> <span style="font-size: 14px; font-family: 方正黑体_GBK;">专业的内容核心是计算机软件相关能力的培养</span></span></p><p style="text-indent:28px"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;"><span style="font-size: 14px; font-family: 方正书宋_GBK;">学生毕业时所得的分数只是数字</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">更重要的是后面所隐藏的能力。在工作中</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">脱颖而出主要靠的是实力</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">也可以理解为能力。软件工程专业的核心任务就是学习、掌握、运用和研究各种设计、制造、维护和改进现代计算机系统的各种知识、方法和技术</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">培养发现和解决各类相关问题的能力。</span></span></p><p style="text-indent:28px"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;"><span style="font-size: 14px; font-family: 方正书宋_GBK;">比如要实现简单的恒温控制</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">必然需要掌握具体的软件编程知识和技术</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">设计并实现控制程序</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">它能够设置温度判定条件</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">根据检测到的温度的变化选择不同的处理并反馈给控制设备。比如在建设某个支付系统时需要很多人员参与</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">工作要按照项目来进行工程化管理</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">那么网络技术、软件工程、项目管理等有关的知识和技术的运用</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">也是不可或缺的。如果希望在某个网站上找到热点新闻或事件以及判断它们之间是否关联</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">就需要信息检索和数据挖掘的相关知识和技术。比如在网站服务系统中统计对不同新闻的阅读次数或人数</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">来显示各条新闻的热点程度。</span></span></p><p style="text-indent:28px"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;"><span style="font-size: 14px; font-family: 方正书宋_GBK;">除了能够设计和制造计算机系统之外</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">还要想方设法改进它。比如同样是支付系统或购票系统</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">有的可以同时满足几千人使用</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">而有的则只能供几百或几十人使用。分析系统与实现方法间的差别</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">可能需要对这些不同的知识、原理、技术等的充分掌握和运用</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">还可能需要其他的知识</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">比如数学、物理、外语、法律、管理等方面的知识</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">从而形成系统设计与研发能力、项目管理能力。通过专业学习和训练</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">具有设计和制造计算机软件系统的各种相关能力的同学</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">在现代生活的各种竞争中就可能拔得头筹。</span></span></p><p style="text-align:center;text-indent:13px"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 7px;">●</span> <span style="font-size: 14px; font-family: 方正黑体_GBK;">学好这个专业要有计算思维</span></span></p><p style="text-indent:28px"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;"><span style="font-size: 14px; font-family: 方正书宋_GBK;">中国有句老话</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">叫</span>“<span style="font-size: 14px; font-family: 方正书宋_GBK;">心之官则思</span>”<span style="font-size: 14px; font-family: 方正书宋_GBK;">。这里实际上讲的是思考的重要性。那么要学好软件工程专业应该怎么做呢</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">?</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">一个观点是</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">:</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">计算是一种思维能力</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">计算就如同读写能力一样</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">是人必须掌握的基本能力之一。计算思维</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">(Computing</span> <span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">Thinking)</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">是每个人的基本技能</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">并不仅仅属于计算机科学家。在阅读、写作和算术之外</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">应当将计算思维加到每个孩子应该掌握的能力中去。培养计算思维会极大地帮助你学好计算机专业。</span></span></p><p style="text-indent:28px"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;"><span style="font-size: 14px; font-family: 方正书宋_GBK;">计算思维这个貌似抽象的术语是什么意思呢</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">?</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">它就是让我们如同计算机专家一样进行思维</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">或者说掌握他们解决问题的方法</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">!</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">就是让我们知道什么是可计算的</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">什么事情计算机做得比人好</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">什么事情人比计算机做得好</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">!</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">软件工程专业会教你这种判断力</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">并且用计算机软件的方法控制计算机如你所愿地做复杂的事。</span></span></p><p style="text-align:center;text-indent:13px"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 7px;">●</span> <span style="font-size: 14px; font-family: 方正黑体_GBK;">玩转数据提供给你设计和改变生活的钥匙</span></span></p><p style="text-indent: 28px;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;"><span style="font-size: 14px; font-family: 方正书宋_GBK;">最后要说的是</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">:</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">软件工程</span>≠<span style="font-size: 14px; font-family: 方正书宋_GBK;">编程</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">!</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">许多人认为软件工程没什么基础研究</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">只是工程而已。但事实上</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">新的需求不断涌现</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">新的问题和方法层出不穷</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">特别是现代生活可以说是一个数字时代</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">生活的方方面面都是数字化的。比如智能手机中的各种内容都是数字的</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">不同种类的数据使用和维护的技术都会有所不同</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">一个微信就有</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">N</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">多的功能</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">那么如何适应它、丰富它、利用它</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">?</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">这些都为计算机专业的发展和壮大带来了大量的机遇和挑战。诸多的例子已经证明</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">有很好的计算机软件专业基础之后再去学习其他学科</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">(</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">任何学科</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">!)</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">将更容易获得成功</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">!</span></span></p>
+                       
+                        <div class="pull-right mt20">
+                            <!-- JiaThis Button BEGIN -->
+                            <div class="jiathis_style">
+                                <span class="jiathis_txt">分享到：</span>
+                                <a class="jiathis_button_icons_1"></a>
+                                <a class="jiathis_button_icons_2"></a>
+                                <a class="jiathis_button_icons_3"></a>
+                                <a class="jiathis_button_icons_4"></a>
+                                <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
+                                <a class="jiathis_counter_style"></a>
+                            </div>
+                            <script type="text/javascript" src="http://v3.jiathis.com/code/jia.js" charset="utf-8"></script>
+                            <!-- JiaThis Button END -->
+                        </div>
+                    </div>
+                </div>
+                <!--  
+	            <div class="col-md-3 col-sm-4">
+                    <ul class="grey-ul">
+                      
+                    </ul>
+	
+	             </div>
+	           -->
+            </div>
+        </div>
+    </div>
+      
+    <div class="y_foot hidden-xs">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="t_col3">
+                        <h5>联系我们</h5>
+                        <div class="t_icon1">
+                            <i></i>
+                            <span>400-0123-517</span><br/>
+                        </div>
+                        <div class="t_icon2">
+                            <i></i>
+                            <span>zsb@ruc.edu.cn</span></br>
+                        </div>
+                        <div class="t_icon4">
+                            <i></i>
+                            <span>010-62511156(传真)</span></br>
+                        </div>
+                        <div class="t_icon3">
+                            <i></i>
+                            <span>北京市海淀区中关村大街59号<br/>知行F楼(北区食堂)六层</span></br>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="t_col3">
+                        <h5>关注我们</h5>
+                        <img src="/static/default/images/wechat.png" alt="">
+                        <p>扫描二维码关注我们</p>
+                        <p>微信公众号"人大阳光招生"</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="t_col3">
+                        <h5>学术公告</h5>
+                        
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="t_col3">
+                         <h5>快速链接
+                        <a target="_blank" href="http://211.71.30.15/index/index_main.action" style="margin-left: 40px;color: #999;font-weight: normal;font-size: 16px;">返回旧网站</a>
+                               <a target="_blank" href="http://211.71.30.15/index/index_main.action" >
+                                    <span class="icon-wrap">
+                                        <span class="icon icon-arrow_carrot-right_alt2"  style="color: #999"></span>
+                                    </span>
+                                </a>
+                        </h5>
+                        
+                                 
+                        <a href="/cms/item/1031.html" class="t_b" target = _blank>人大主页</a>
+                       
+                                 
+                        <a href="/cms/item/1032.html" class="t_b" target = _blank>人大新闻网</a>
+                       
+                                 
+                        <a href="/cms/item/1038.html" class="t_b" target = _blank>留学生招生</a>
+                       
+                                 
+                        <a href="/cms/item/1037.html" class="t_b" target = _blank>研究生招生</a>
+                       
+                                 
+                        <a href="/cms/item/1036.html" class="t_b" target = _blank>考生黄页</a>
+                       
+                                 
+                        <a href="/cms/item/1035.html" class="t_b" target = _blank>校园地图</a>
+                       
+                                 
+                        <a href="/cms/item/1034.html" class="t_b" target = _blank>校友总会</a>
+                       
+                                 
+                        <a href="/cms/item/1033.html" class="t_b" target = _blank>教育基金会</a>
+                       
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="y_bottom">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="t_info clearfix">
+                        <p>版权所有 Copyright© 中国人民大学本科生招生办公室   京ICP备05066828号-1</p>
+                        <div class="t_flogo">
+                            <a href="http://www.ruc.edu.cn/"><img src="/static/default/images/t_logo.png" alt=""></a>
+                            <a href="#" class="hidden-xs t_back">回顶部</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

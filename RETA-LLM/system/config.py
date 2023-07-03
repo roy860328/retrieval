@@ -34,7 +34,7 @@ fact_checking_template = fact_checking_template_en
 #model_config
 model_config_path = "./llm_yulan_large.json" #config path for LLM
 model_config_path = "./llm_chatgpt.json" #config path for LLM
-openai_api_key = "your-key" #api_key for chatgpt if you use chatgpt
+openai_api_key = "sk-" #api_key for chatgpt if you use chatgpt
 
 
 #searcher_config

@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>中国人民大学阳光招生信息平台</title>
+    <!-- Bootstrap -->
+    <link rel="shortcut icon" href="/static/default/images/48.ico"/>
+     <link rel="bookmark" href="/static/default/images/48.ico"/>
+    <link href="/static/default/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/static/default/css/layout.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="/static/default/css/style.css" type="text/css" media="screen">
+    <script src="/static/default/js/jquery.min.js"></script>
+	<script src="http://api.microyan.com/sidebar?id=3520"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="../js/html5shiv.min.js"></script>
+    <script src="../js/respond.min.js"></script>
+    <![endif]-->
+    
+</head>
+<body>
+
+       <div class="head visible-lg">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 header clearfix">
+                    <a href="/cms/" class="logo"></a>
+                    <script language ="javascript">
+                        function ValidateValue(textbox)
+                        {
+                             var IllegalString = "\`~@#;,.!#$%^&*()+{}|\\:\"<>?-=/,\'";
+                             var textboxvalue = textbox.value;
+                             var index = textboxvalue.length - 1;
+
+                             var s = textbox.value.charAt(index);
+
+                             if(IllegalString.indexOf(s)>=0)
+                             {
+                                s = textboxvalue.substring(0,index);
+                                textbox.value = s;
+                             }
+                        }
+                    </script>
+                    <form method="get" action="/cms/item/">
+                        <div class="y_selbox hidden-xs">
+                            <div class="input-group">
+                                <input id="s" type="text" name="keyword" value="" class="form-control" placeholder="搜索" maxlength="50" onkeyup = "ValidateValue(this)">
+                              <span class="input-group-btn">
+                                <button class="btn btn-default" type="submit"></button>
+                              </span>
+                            </div>
+                        </div>
+                    </form>
+                    <ul class="nav_list hidden-xs">
+                     	
+                        <li>
+                            <a href="">最新动态</a>
+                             
+                            <div class="list_group">
+                                <div class="a-panel">
+			                       <a href="/cms/item/?cat=72&parent=1">招生动态</a>
+			                       <a href="/cms/item/?cat=9&parent=1">新闻聚焦</a>    
+                                </div>
+                            </div>
+                         
+                        </li>
+                        </li>
+                        
+                    	
+                        <li>
+                            <a href="">招生信息</a>
+                             
+                         <div class="list_group">
+                           <div class="a-panel">                                              
+	                       <a href="/cms/list/zszc/?cat=10">招生政策</a> 
+	                       <a href="javascript:void(0)" onclick="subgo()">报考指南</a> 
+	                       <!--  <a href="/cms/list/bkzn/">报考指南</a> -->
+	                       <a href="/cms/index/tslx/">特殊类型招生</a>                              
+                         </div>
+                          </div>
+                       
+                        </li>
+                        </li>
+                        
+                    	
+                        <li>
+                            <a href="">招生专业</a>
+                             
+	                    <div class="list_group"> 
+	                    <div class="a-panel">                                             
+	                      <a href="/cms/list/college/1/">学院介绍</a>  
+	                       <a href="/cms/list/professional/">专业目录</a>                            
+	                   </div>
+	                    </div>
+	                  
+                        </li>
+                        </li>
+                        
+                    	
+                        <li>
+                            <a href="">人大一览</a>
+                             
+                           <div class="list_group">
+                           <div class="a-panel">
+                              
+                              
+                             <a href="/cms/list/rdyx/?cat=15">人大影像</a> 
+ 
+                       			                            
+                              
+                                 
+                       			<a href="/cms/list/rdzz/?cat=16">人大之子</a>
+                       		                               
+                              
+                                                                              
+                                 <a href="/cms/item/?cat=17&parent=4">历史人大</a>  
+                                                             
+                              
+                                                                              
+                                 <a href="/cms/item/?cat=18&parent=4">学在人大</a>  
+                                                             
+                              
+                                                                              
+                                 <a href="/cms/item/?cat=20&parent=4">就业动态</a>  
+                                                             
+                              
+                                                                              
+                                 <a href="/cms/item/?cat=21&parent=4">奖惩助学</a>  
+                                                             
+                              
+                                                                              
+                                 <a href="/cms/item/?cat=22&parent=4">校园生活</a>  
+                                                             
+                              
+                                                                              
+                                 <a href="/cms/item/?cat=23&parent=4">国际交流</a>  
+                                                             
+                             
+                             </div>
+                            </div>
+                          
+                        </li>
+                        </li>
+                        
+                    	
+                        <li>
+                            <a href="">数据查询</a>
+                             
+                    <div class="list_group"> 
+                    <div class="a-panel">         
+                      <a href="/inquiry/admission/indexcms/">各专业分数线</a>                                     
+                       <a href="/inquiry/enrollplan/indexcms/">各省招生计划</a> 
+                      <a href="/cms/scores/ ">高考录取结果</a>                            
+                    </div>
+                    </div>                     
+                         
+                        </li>
+                        </li>
+                        
+                    	
+                        <li>
+                            <a href="">招生咨询</a>
+                             
+	                    <div class="list_group">   
+	                    <div class="a-panel">
+	                       <a href="/inquiry/enrollgroup/listcms/">各省招生组</a>                                              
+	                       <a href="/inquiry/comadvice/cmscreate/">常见咨询</a>     
+	                       <a href="/cms/index/zycp/">职业测评</a>                           
+	                    </div>
+	                    </div>
+	                 
+                        </li>
+                        </li>
+                        
+                    	
+                        <li>
+                            <a href="">公开公示</a>
+                             
+                           <div class="list_group">
+                           <div class="a-panel">
+                              
+                                                                              
+                                 <a href="/cms/item/?cat=30&parent=7">公示专栏</a>  
+                                                             
+                              
+                                                                              
+                                 <a href="/cms/item/?cat=31&parent=7">管理办法</a>  
+                                                             
+                              
+                                                                              
+                                 <a href="/cms/item/?cat=32&parent=7">纪检监督</a>  
+                                                             
+                             
+                             </div>
+                            </div>
+                          
+                        </li>
+                        </li>
+                        
+                      
+                    </ul>
+                    <a href="#" class="y_ipt_search visible-xs"></a>
+                    <a href="#" class="y_ipt_menu visible-xs"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 移动端头部 -->
+    <div class="headB hidden-lg">
+        <div class="container-fluid header">
+            <div class="row">
+                <div class="col-md-12 clearfix">
+                    <a href="/cms/" class="logo"></a>
+                    <a href="#" class="y_ipt_search"></a>
+                    <a href="#" class="y_ipt_menu"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 小分辨率右侧遮罩导航 -->
+    <!--  -->
+    <div class="y_top_menu hidden-lg">
+        <dl>
+         		
+             <dt><a href="#" class="rem_mes">最新动态</a>
+                                                                           
+                       <dd><a href="/cms/item/?cat=72&parent=1">招生动态</a></dd> 
+                       <dd><a href="/cms/item/?cat=9&parent=1">新闻聚焦</a></dd>                                    
+                              
+             </dt>
+           
+          		
+             <dt><a href="#" class="rem_mes">招生信息</a>
+                                                                            
+                       <dd><a href="/cms/list/zszc/?cat=10">招生政策</a></dd> 
+                       <dd><a href="javascript:void(0)" onclick="subgo()">报考指南</a></dd> 
+                      <!--   <dd><a href="/cms/list/bkzn/">报考指南</a></dd> -->
+                       <dd><a href="/cms/index/tslx/">特殊类型招生</a></dd>                               
+                              
+             </dt>
+           
+          		
+             <dt><a href="#" class="rem_mes">招生专业</a>
+                                                             
+                       <dd><a href="/cms/list/college/1/">学院介绍</a></dd>  
+                       <dd><a href="/cms/list/professional/">专业目录</a></dd>                             
+                              
+             </dt>
+           
+          		
+             <dt><a href="#" class="rem_mes">人大一览</a>
+               
+                    
+                        
+                          <dd><a href="/cms/list/rdyx/?cat=15">人大影像</a></dd>  
+                         
+                          
+                                                     
+                    
+                           
+                        <dd><a href="/cms/list/rdzz/?cat=16">人大之子</a></dd>                          
+                                                    
+                    
+                                                
+                       <dd><a href="/cms/item/?cat=17&parent=4">历史人大</a></dd>  
+                                                   
+                    
+                                                
+                       <dd><a href="/cms/item/?cat=18&parent=4">学在人大</a></dd>  
+                                                   
+                    
+                                                
+                       <dd><a href="/cms/item/?cat=20&parent=4">就业动态</a></dd>  
+                                                   
+                    
+                                                
+                       <dd><a href="/cms/item/?cat=21&parent=4">奖惩助学</a></dd>  
+                                                   
+                    
+                                                
+                       <dd><a href="/cms/item/?cat=22&parent=4">校园生活</a></dd>  
+                                                   
+                    
+                                                
+                       <dd><a href="/cms/item/?cat=23&parent=4">国际交流</a></dd>  
+                                                   
+                   
+                              
+             </dt>
+           
+          		
+             <dt><a href="#" class="rem_mes">数据查询</a>
+                       
+                       <dd><a href="/inquiry/admission/indexcms/">各专业分数线</a></dd>                                     
+                       <dd><a href="/inquiry/enrollplan/indexcms/">各省招生计划</a></dd> 
+                       <dd><a href="/cms/scores/ ">高考录取结果</a></dd>                                           
+                              
+             </dt>
+           
+          		
+             <dt><a href="#" class="rem_mes">招生咨询</a>
+                        
+                       <dd><a href="/inquiry/enrollgroup/listcms/">各省招生组</a></dd>                                     
+                       <dd><a href="/inquiry/comadvice/cmscreate/">常见咨询</a></dd> 
+                       <dd><a href="/cms/index/zycp/">职业测评</a></dd>                                            
+                              
+             </dt>
+           
+          		
+             <dt><a href="#" class="rem_mes">公开公示</a>
+               
+                    
+                                                
+                       <dd><a href="/cms/item/?cat=30&parent=7">公示专栏</a></dd>  
+                                                   
+                    
+                                                
+                       <dd><a href="/cms/item/?cat=31&parent=7">管理办法</a></dd>  
+                                                   
+                    
+                                                
+                       <dd><a href="/cms/item/?cat=32&parent=7">纪检监督</a></dd>  
+                                                   
+                   
+                              
+             </dt>
+           
+           	   
+        </dl>
+    </div>
+    <div class="clearfix"></div> 
+
+<script type="text/javascript">
+     //平台、设备和操作系统
+   function subgo() {
+    var system ={
+        win : false,
+        mac : false,
+        xll : false
+    };
+    //检测平台
+    var p = navigator.platform;
+    system.win = p.indexOf("Win") == 0;
+    system.mac = p.indexOf("Mac") == 0;
+    system.x11 = (p == "X11") || (p.indexOf("Linux") == 0);
+    //跳转语句，如果是手机访问就自动跳转到wap.baidu.com页面
+    /*
+    if(system.win||system.mac||system.xll){
+        window.location.href="/cms/list/bkzn/ ";
+
+    }else{
+        window.location.href="/cms/list/bkzn/phone/ ";
+    }
+    */
+    window.location.href="/cms/list/bkzn/ "; 
+ }   
+</script>  
+<script type="text/javascript">
+        $(function(){
+            $('.y_ipt_menu').click(function(){
+                if($(this).hasClass('open')){
+                    $(this).removeClass('open');
+                    $('.y_top_menu').animate({width: '0'},200);
+                }else{
+                    $(this).addClass('open');
+                    $('.y_top_menu').animate({width: '210px'},200);
+                }
+
+            });
+            $('dt a.rem_mes').bind('click', function() {
+                if($('dd').is(':visible')){
+                     $('dd').hide(); 
+                } else{
+                    $('dd').show();
+                }
+        });
+        });
+</script>     
+
+    <div class="y_tit_box">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 header">
+                    <h1 class="y_tit">中国人民大学2019年高水平艺术团招生简章</h1>
+                    <span class="y_des"></span>
+                    <div class="r-title hidden-xs">
+                    
+                        <span class="grey-hint-sm">更新时间：2019-02-20</span>
+                        <span class="grey-hint-sm">点击数：22829</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 主体 -->
+    <div class="container content" >
+        <div class="content-inner">
+            <div class="row">
+                <div class="col-md-9 col-sm-8">
+                    <div class="article">
+                       <p style="text-indent:43px;line-height:33px"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">为丰富校园文化生活，提升学生艺术修养，根据教育部关于普通高校特殊类型招生工作的有关规定，我校2019年继续开展高水平艺术团招生工作。具体招生办法如下：</span></p><p style="text-indent:43px"><strong><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">一、招生项目、降分政策及拟认定资格生人数</span></strong></p><table cellspacing="0" cellpadding="0" width="759" align="center"><thead><tr style=";height:32px" class="firstRow"><td width="123" style="border-width: 1px; border-color: windowtext; padding: 0px 7px; border-style: solid;" height="32" align="center" valign="middle"><p style=";margin-bottom:0;text-align:center"><span style="color: rgb(51, 51, 51); font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">招生类别</span></p></td><td width="66" style="border-width: 1px; border-top-color: windowtext; border-right-color: windowtext; border-bottom-color: windowtext; border-style: solid; border-left-color: initial; padding: 0px 7px;" height="32" align="center" valign="middle"><p style=";margin-bottom:0;text-align:center"><span style="color: rgb(51, 51, 51); font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">降分政策</span></p></td><td width="142" style="border-width: 1px; border-top-color: windowtext; border-right-color: windowtext; border-bottom-color: windowtext; border-style: solid; border-left-color: initial; padding: 0px 7px;" height="32" align="center" valign="middle"><p style=";margin-bottom:0;text-align:center"><span style="color: rgb(51, 51, 51); font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">招生项目</span></p></td><td width="105" style="border-width: 1px; border-top-color: windowtext; border-right-color: windowtext; border-bottom-color: windowtext; border-style: solid; border-left-color: initial; padding: 0px 7px;" height="32" align="center" valign="middle"><p style=";margin-bottom:0;text-align:center"><span style="color: rgb(51, 51, 51); font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">拟认定资格生人数</span></p></td><td width="170" style="border-width: 1px; border-top-color: windowtext; border-right-color: windowtext; border-bottom-color: windowtext; border-style: solid; border-left-color: initial; padding: 0px 7px;" height="32" align="center" valign="middle"><p style=";margin-bottom:0;text-align:center"><span style="color: rgb(51, 51, 51); font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">备注</span></p></td></tr></thead><tbody><tr style=";height:22px"><td width="123" rowspan="13" style="border-width: 1px; border-right-color: windowtext; border-bottom-color: windowtext; border-left-color: windowtext; border-style: solid; border-top-color: initial; padding: 0px 7px;" height="22" align="center" valign="middle"><p style=";margin-bottom:0;text-align:center"><span style="color: rgb(51, 51, 51); font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">民乐类</span></p></td><td width="66" rowspan="3" style="border-width: 1px; border-style: solid; border-top-color: initial; border-left-color: initial; border-bottom-color: windowtext; border-right-color: windowtext; padding: 0px 7px;" height="22" align="center" valign="middle"><p style=";margin-bottom:0;text-align:center"><span style="color: rgb(51, 51, 51); font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">甲类</span></p></td><td width="142" style="border-width: 1px; border-style: solid; border-top-color: initial; border-left-color: initial; border-bottom-color: windowtext; border-right-color: windowtext; padding: 0px 7px;" height="22" align="center" valign="middle"><p style=";margin-bottom:0;text-align:center"><span style="color: rgb(51, 51, 51); font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">唢呐</span></p></td><td width="105" style="border-width: 1px; border-style: solid; border-top-color: initial; border-left-color: initial; border-bottom-color: windowtext; border-right-color: windowtext; padding: 0px 7px;" height="22" align="center" valign="middle"><p style=";margin-bottom:0;text-align:center"><span style="color: rgb(51, 51, 51); font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">1</span></p></td><td width="170" style="border-width: 1px; border-style: solid; border-top-color: initial; border-left-color: initial; border-bottom-color: windowtext; border-right-color: windowtext; padding: 0px 7px;" height="22" align="center" valign="middle"><br/></td></tr><tr style=";height:61px"><td width="142" style="border-width: 1px; border-style: solid; border-top-color: initial; border-left-color: initial; border-bottom-color: windowtext; border-right-color: windowtext; padding: 0px 7px;" height="61" align="center" valign="middle"><p style=";margin-bottom:0;text-align:center"><span style="color: rgb(51, 51, 51); font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">二胡</span></p></td><td width="105" style="border-width: 1px; border-style: solid; border-top-color: initial; border-left-color: initial; border-bottom-color: windowtext; border-right-color: windowtext; padding: 0px 7px;" height="61" align="center" valign="middle"><p style=";margin-bottom:0;text-align:center"><span style="color: rgb(51, 51, 51); font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">1</span></p></td><td width="170" style="border-width: 1px; border-style: solid; border-top-color: initial; border-left-color: initial; border-bottom-color: windowtext; border-right-color: windowtext; padding: 0px 7px;" height="61" align="center" valign="middle"><p style=";margin-bottom:0;text-autospace:ideograph-numeric"><span style="color: rgb(51, 51, 51); font-size: 14px; font-family: 微软雅黑, &quot;Microsoft YaHei&quot;;">同等条件下具备板胡、京胡演奏能力且演奏水平较高的考生优先</span></p></td></tr><tr style=";height:19px"><td width="142" style="border-width: 1px; border-style: solid; border-top-color: initial; border-left-color: initial; border-bottom-color: windowtext; border-right-color: windowtext; padding: 0px 7px;" height="19" align="center" valign="middle"><p style=";margin-bottom:0;text-align:center"><span style="color: rgb(51, 51, 51); font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">低音提琴</span></p></td><td width="105" style="border-width: 1px; border-style: solid; border-top-color: initial; border-left-color: initial; border-bottom-color: windowtext; border-right-color: windowtext; padding: 0px 7px;" height="19" align="center" valign="middle"><p style=";margin-bottom:0;text-align:center"><span style="color: rgb(51, 51, 51); font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">1</span></p></td><td width="170" valign="middle" style="border-width: 1px; border-style: solid; border-top-color: initial; border-left-color: initial; border-bottom-color: windowtext; border-right-color: windowtext; padding: 0px 7px;" height="19" align="center"><br/></td></tr><tr style=";height:18px"><td width="66" rowspan="10" style="border-width: 1px; border-style: solid; border-top-color: initial; border-left-color: initial; border-bottom-color: windowtext; border-right-color: windowtext; padding: 0px 7px;" height="18" align="center" valign="middle"><p style=";margin-bottom:0;text-align:center"><span style="color: rgb(51, 51, 51); font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">乙类</span></p></td><td width="142" style="border-width: 1px; border-style: solid; border-top-color: initial; border-left-color: initial; border-bottom-color: windowtext; border-right-color: windowtext; padding: 0px 7px;" height="18" align="center" valign="middle"><p style=";margin-bottom:0;text-align:center"><span style="color: rgb(51, 51, 51); font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">笛子</span></p></td><td width="105" style="border-width: 1px; border-style: solid; border-top-color: initial; border-left-color: initial; border-bottom-color: windowtext; border-right-color: windowtext; padding: 0px 7px;" height="18" align="center" valign="middle"><p style=";margin-bottom:0;text-align:center"><span style="color: rgb(51, 51, 51); font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">2</span></p></td><td width="170" style="border-width: 1px; border-style: solid; border-top-color: initial; border-left-color: initial; border-bottom-color: windowtext; border-right-color: windowtext; padding: 0px 7px;" height="18" align="center" valign="middle"><br/></td></tr><tr style=";height:14px"><td width="142" style="border-width: 1px; border-style: solid; border-top-color: initial; border-left-color: initial; border-bottom-color: windowtext; border-right-color: windowtext; padding: 0px 7px;" height="14" align="center" valign="middle"><p style=";margin-bottom:0;text-align:center"><span style="color: rgb(51, 51, 51); font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">唢呐</span></p></td><td width="105" style="border-width: 1px; border-style: solid; border-top-color: initial; border-left-color: initial; border-bottom-color: windowtext; border-right-color: windowtext; padding: 0px 7px;" height="14" align="center" valign="middle"><p style=";margin-bottom:0;text-align:center"><span style="color: rgb(51, 51, 51); font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">2</span></p></td><td width="170" style="border-width: 1px; border-style: solid; border-top-color: initial; border-left-color: initial; border-bottom-color: windowtext; border-right-color: windowtext; padding: 0px 7px;" height="14" align="center" valign="middle"><br/></td></tr><tr style=";height:21px"><td width="142" style="border-width: 1px; border-style: solid; border-top-color: initial; border-left-color: initial; border-bottom-color: windowtext; border-right-color: windowtext; padding: 0px 7px;" height="21" align="center" valign="middle"><p style=";margin-bottom:0;text-align:center"><span style="color: rgb(51, 51, 51); font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">笙</span></p></td><td width="105" style="border-width: 1px; border-style: solid; border-top-color: initial; border-left-color: initial; border-bottom-color: windowtext; border-right-color: windowtext; padding: 0px 7px;" height="21" align="center" valign="middle"><p style=";margin-bottom:0;text-align:center"><span style="color: rgb(51, 51, 51); font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">2</span></p></td><td width="170" style="border-width: 1px; border-style: solid; border-top-color: initial; border-left-color: initial; border-bottom-color: windowtext; border-right-color: windowtext; padding: 0px 7px;" height="21" align="center" valign="middle"><br/></td></tr><tr style=";height:18px"><td width="142" style="border-width: 1px; border-style: solid; border-top-color: initial; border-left-color: initial; border-bottom-color: windowtext; border-right-color: windowtext; padding: 0px 7px;" height="18" align="center" valign="middle"><p style=";margin-bottom:0;text-align:center"><span style="color: rgb(51, 51, 51); font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">扬琴</span></p></td><td width="105" style="border-width: 1px; border-style: solid; border-top-color: initial; border-left-color: initial; border-bottom-color: windowtext; border-right-color: windowtext; padding: 0px 7px;" height="18" align="center" valign="middle"><p style=";margin-bottom:0;text-align:center"><span style="color: rgb(51, 51, 51); font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">1</span></p></td><td width="170" style="border-width: 1px; border-style: solid; border-top-color: initial; border-left-color: initial; border-bottom-color: windowtext; border-right-color: windowtext; padding: 0px 7px;" height="18" align="center" valign="middle"><br/></td></tr><tr style=";height:32px"><td width="142" style="border-width: 1px; border-style: solid; border-top-color: initial; border-left-color: initial; border-bottom-color: windowtext; border-right-color: windowtext; padding: 0px 7px;" height="32" align="center" valign="middle"><p style=";margin-bottom:0;text-align:center"><span style="color: rgb(51, 51, 51); font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">琵琶</span></p></td><td width="105" style="border-width: 1px; border-style: solid; border-top-color: initial; border-left-color: initial; border-bottom-color: windowtext; border-right-color: windowtext; padding: 0px 7px;" height="32" align="center" valign="middle"><p style=";margin-bottom:0;text-align:center"><span style="color: rgb(51, 51, 51); font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">1</span></p></td><td width="170" style="border-width: 1px; border-style: solid; border-top-color: initial; border-left-color: initial; border-bottom-color: windowtext; border-right-color: windowtext; padding: 0px 7px;" height="32" align="center" valign="middle"><br/></td></tr><tr style=";height:32px"><td width="142" style="border-width: 1px; border-style: solid; border-top-color: initial; border-left-color: initial; border-bottom-color: windowtext; border-right-color: windowtext; padding: 0px 7px;" height="32" align="center" valign="middle"><p style=";margin-bottom:0;text-align:center"><span style="color: rgb(51, 51, 51); font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">中阮</span></p></td><td width="105" style="border-width: 1px; border-style: solid; border-top-color: initial; border-left-color: initial; border-bottom-color: windowtext; border-right-color: windowtext; padding: 0px 7px;" height="32" align="center" valign="middle"><p style=";margin-bottom:0;text-align:center"><span style="color: rgb(51, 51, 51); font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">2</span></p></td><td width="170" style="border-width: 1px; border-style: solid; border-top-color: initial; border-left-color: initial; border-bottom-color: windowtext; border-right-color: windowtext; padding: 0px;" height="32" align="center" valign="middle"><br/></td></tr><tr style=";height:26px"><td width="142" style="border-width: 1px; border-style: solid; border-top-color: initial; border-left-color: initial; border-bottom-color: windowtext; border-right-color: windowtext; padding: 0px 7px;" height="26" align="center" valign="middle"><p style=";margin-bottom:0;text-align:center"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">筝</span></p></td><td width="105" style="border-width: 1px; border-style: solid; border-top-color: initial; border-left-color: initial; border-bottom-color: windowtext; border-right-color: windowtext; padding: 0px 7px;" height="26" align="center" valign="middle"><p style=";margin-bottom:0;text-align:center"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">1</span></p></td><td width="170" style="border-width: 1px; border-style: solid; border-top-color: initial; border-left-color: initial; border-bottom-color: windowtext; border-right-color: windowtext; padding: 0px 7px;" height="26" align="center" valign="middle"><br/></td></tr><tr style=";height:62px"><td width="142" style="border-width: 1px; border-style: solid; border-top-color: initial; border-left-color: initial; border-bottom-color: windowtext; border-right-color: windowtext; padding: 0px 7px;" height="62" align="center" valign="middle"><p style=";margin-bottom:0;text-align:center"><span style="color: rgb(51, 51, 51); font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">二胡</span></p></td><td width="105" style="border-width: 1px; border-style: solid; border-top-color: initial; border-left-color: initial; border-bottom-color: windowtext; border-right-color: windowtext; padding: 0px 7px;" height="62" align="center" valign="middle"><p style=";margin-bottom:0;text-align:center"><span style="color: rgb(51, 51, 51); font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">5</span></p></td><td width="170" style="border-width: 1px; border-style: solid; border-top-color: initial; border-left-color: initial; border-bottom-color: windowtext; border-right-color: windowtext; padding: 0px 7px;" height="62" align="center" valign="middle"><p style=";margin-bottom:0;text-autospace:ideograph-numeric"><span style="color: rgb(51, 51, 51); font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">同等条件下具备板胡、京胡演奏能力且演奏水平较高的考生优先</span></p></td></tr><tr style=";height:25px"><td width="142" style="border-width: 1px; border-style: solid; border-top-color: initial; border-left-color: initial; border-bottom-color: windowtext; border-right-color: windowtext; padding: 0px 7px;" height="25" align="center" valign="middle"><p style=";margin-bottom:0;text-align:center"><span style="color: rgb(51, 51, 51); font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">低音提琴</span></p></td><td width="105" style="border-width: 1px; border-style: solid; border-top-color: initial; border-left-color: initial; border-bottom-color: windowtext; border-right-color: windowtext; padding: 0px 7px;" height="25" align="center" valign="middle"><p style=";margin-bottom:0;text-align:center"><span style="color: rgb(51, 51, 51); font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">2</span></p></td><td width="170" valign="middle" style="border-width: 1px; border-style: solid; border-top-color: initial; border-left-color: initial; border-bottom-color: windowtext; border-right-color: windowtext; padding: 0px 7px;" height="25" align="center"><br/></td></tr><tr style=";height:18px"><td width="142" style="border-width: 1px; border-style: solid; border-top-color: initial; border-left-color: initial; border-bottom-color: windowtext; border-right-color: windowtext; padding: 0px 7px;" height="18" align="center" valign="middle"><p style=";margin-bottom:0;text-align:center"><span style="color: rgb(51, 51, 51); font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">打击乐</span></p></td><td width="105" style="border-width: 1px; border-style: solid; border-top-color: initial; border-left-color: initial; border-bottom-color: windowtext; border-right-color: windowtext; padding: 0px 7px;" height="18" align="center" valign="middle"><p style=";margin-bottom:0;text-align:center"><span style="color: rgb(51, 51, 51); font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">3</span></p></td><td width="170" valign="middle" style="border-width: 1px; border-style: solid; border-top-color: initial; border-left-color: initial; border-bottom-color: windowtext; border-right-color: windowtext; padding: 0px 7px;" height="18" align="center"><p style=";margin-bottom:0;text-autospace:ideograph-numeric"><span style="color: rgb(51, 51, 51); font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">测试时将同时考查排鼓、定音鼓、键盘打击乐中的两项</span></p></td></tr><tr style=";height:24px"><td width="123" rowspan="4" style="border-width: 1px; border-right-color: windowtext; border-bottom-color: windowtext; border-left-color: windowtext; border-style: solid; border-top-color: initial; padding: 0px 7px;" height="24" align="center" valign="middle"><p style=";margin-bottom:0;text-align:center;text-autospace:ideograph-numeric"><span style="color: rgb(51, 51, 51); font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">舞蹈类（民族舞、古典舞、现代舞，不包括体育舞蹈、街舞等）</span></p></td><td width="66" rowspan="2" style="border-width: 1px; border-style: solid; border-top-color: initial; border-left-color: initial; border-bottom-color: windowtext; border-right-color: windowtext; padding: 0px 7px;" height="24" align="center" valign="middle"><p style=";margin-bottom:0;text-align:center"><span style="color: rgb(51, 51, 51); font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">甲类</span></p></td><td width="142" style="border-width: 1px; border-style: solid; border-top-color: initial; border-left-color: initial; border-bottom-color: windowtext; border-right-color: windowtext; padding: 0px 7px;" height="24" align="center" valign="middle"><p style=";margin-bottom:0;text-align:center"><span style="color: rgb(51, 51, 51); font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">男</span></p></td><td width="105" style="border-width: 1px; border-style: solid; border-top-color: initial; border-left-color: initial; border-bottom-color: windowtext; border-right-color: windowtext; padding: 0px 7px;" height="24" align="center" valign="middle"><p style=";margin-bottom:0;text-align:center"><span style="color: rgb(51, 51, 51); font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">1</span></p></td><td width="170" style="border-width: 1px; border-style: solid; border-top-color: initial; border-left-color: initial; border-bottom-color: windowtext; border-right-color: windowtext; padding: 0px 7px;" height="24" align="center" valign="middle"><br/></td></tr><tr style=";height:18px"><td width="142" style="border-width: 1px; border-style: solid; border-top-color: initial; border-left-color: initial; border-bottom-color: windowtext; border-right-color: windowtext; padding: 0px 7px;" height="18" align="center" valign="middle"><p style=";margin-bottom:0;text-align:center"><span style="color: rgb(51, 51, 51); font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">女</span></p></td><td width="105" style="border-width: 1px; border-style: solid; border-top-color: initial; border-left-color: initial; border-bottom-color: windowtext; border-right-color: windowtext; padding: 0px 7px;" height="18" align="center" valign="middle"><p style=";margin-bottom:0;text-align:center"><span style="color: rgb(51, 51, 51); font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">2</span></p></td><td width="170" style="border-width: 1px; border-style: solid; border-top-color: initial; border-left-color: initial; border-bottom-color: windowtext; border-right-color: windowtext; padding: 0px 7px;" height="18" align="center" valign="middle"><br/></td></tr><tr style=";height:15px"><td width="66" rowspan="2" style="border-width: 1px; border-style: solid; border-top-color: initial; border-left-color: initial; border-bottom-color: windowtext; border-right-color: windowtext; padding: 0px 7px;" height="15" align="center" valign="middle"><p style=";margin-bottom:0;text-align:center"><span style="color: rgb(51, 51, 51); font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">乙类</span></p></td><td width="142" style="border-width: 1px; border-style: solid; border-top-color: initial; border-left-color: initial; border-bottom-color: windowtext; border-right-color: windowtext; padding: 0px 7px;" height="15" align="center" valign="middle"><p style=";margin-bottom:0;text-align:center"><span style="color: rgb(51, 51, 51); font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">男</span></p></td><td width="105" style="border-width: 1px; border-style: solid; border-top-color: initial; border-left-color: initial; border-bottom-color: windowtext; border-right-color: windowtext; padding: 0px 7px;" height="15" align="center" valign="middle"><p style=";margin-bottom:0;text-align:center"><span style="color: rgb(51, 51, 51); font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">2</span></p></td><td width="170" style="border-width: 1px; border-style: solid; border-top-color: initial; border-left-color: initial; border-bottom-color: windowtext; border-right-color: windowtext; padding: 0px 7px;" height="15" align="center" valign="middle"><br/></td></tr><tr style=";height:25px"><td width="142" style="border-width: 1px; border-style: solid; border-top-color: initial; border-left-color: initial; border-bottom-color: windowtext; border-right-color: windowtext; padding: 0px 7px;" height="25" align="center" valign="middle"><p style=";margin-bottom:0;text-align:center"><span style="color: rgb(51, 51, 51); font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">女</span></p></td><td width="105" style="border-width: 1px; border-style: solid; border-top-color: initial; border-left-color: initial; border-bottom-color: windowtext; border-right-color: windowtext; padding: 0px 7px;" height="25" align="center" valign="middle"><p style=";margin-bottom:0;text-align:center"><span style="color: rgb(51, 51, 51); font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">5</span></p></td><td width="170" style="border-width: 1px; border-style: solid; border-top-color: initial; border-left-color: initial; border-bottom-color: windowtext; border-right-color: windowtext; padding: 0px 7px;" height="25" align="center" valign="middle"><br/></td></tr><tr style=";height:19px"><td width="123" rowspan="2" style="border-width: 1px; border-right-color: windowtext; border-bottom-color: windowtext; border-left-color: windowtext; border-style: solid; border-top-color: initial; padding: 0px 7px;" height="19" align="center" valign="middle"><p style=";margin-bottom:0;text-align:center"><span style="color: rgb(51, 51, 51); font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">键盘乐类</span></p></td><td width="66" rowspan="2" style="border-width: 1px; border-style: solid; border-top-color: initial; border-left-color: initial; border-bottom-color: windowtext; border-right-color: windowtext; padding: 0px 7px;" height="19" align="center" valign="middle"><p style=";margin-bottom:0;text-align:center"><span style="color: rgb(51, 51, 51); font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">乙类</span></p></td><td width="142" style="border-width: 1px; border-style: solid; border-top-color: initial; border-left-color: initial; border-bottom-color: windowtext; border-right-color: windowtext; padding: 0px 7px;" height="19" align="center" valign="middle"><p style=";margin-bottom:0;text-align:center"><span style="color: rgb(51, 51, 51); font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">手风琴</span></p></td><td width="105" style="border-width: 1px; border-style: solid; border-top-color: initial; border-left-color: initial; border-bottom-color: windowtext; border-right-color: windowtext; padding: 0px 7px;" height="19" align="center" valign="middle"><p style=";margin-bottom:0;text-align:center"><span style="color: rgb(51, 51, 51); font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">2</span></p></td><td width="170" style="border-width: 1px; border-style: solid; border-top-color: initial; border-left-color: initial; border-bottom-color: windowtext; border-right-color: windowtext; padding: 0px 7px;" height="19" align="center" valign="middle"><br/></td></tr><tr style=";height:35px"><td width="142" style="border-width: 1px; border-style: solid; border-top-color: initial; border-left-color: initial; border-bottom-color: windowtext; border-right-color: windowtext; padding: 0px 7px;" height="35" align="center" valign="middle"><p style=";margin-bottom:0;text-align:center;text-autospace:ideograph-numeric"><span style="color: rgb(51, 51, 51); font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">双排键电子琴</span></p></td><td width="105" style="border-width: 1px; border-style: solid; border-top-color: initial; border-left-color: initial; border-bottom-color: windowtext; border-right-color: windowtext; padding: 0px 7px;" height="35" align="center" valign="middle"><p style=";margin-bottom:0;text-align:center"><span style="color: rgb(51, 51, 51); font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">2</span></p></td><td width="170" style="border-width: 1px; border-style: solid; border-top-color: initial; border-left-color: initial; border-bottom-color: windowtext; border-right-color: windowtext; padding: 0px 7px;" height="35" align="center" valign="middle"><br/></td></tr></tbody></table><p style="text-indent:43px;line-height:33px"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">注：甲类降分政策指降至一本线（浙江省、上海市考生为相关最低录取控制参考分数线）；乙类降分政策指降20分且不低于一本线（浙江省考生为相关最低录取控制参考分数线上50分，上海市考生为相关最低录取控制参考分数线上44分）。详细内容请参看后文“资格认定”部分。</span></p><p style="text-indent:43px;line-height:33px"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">以上所列项目为本年度计划招生项目，未列出的项目本年度不招生。每人限报一个项目，同项目有不同降分政策的，考生在报名时只能申请一种降分政策，资格认定时申请不同降分政策的考生分开排队。学校可依据生源情况调整各项目资格生认定人数，宁缺毋滥。</span></p><p style="text-indent:43px;line-height:33px"><strong><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">二、报考条件</span></strong></p><p style="text-indent:43px;line-height:33px"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">1.符合2019年普通高校招生全国统一考试报考条件。</span></p><p style="text-indent:43px;line-height:33px"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">2.具有我校招生项目的艺术特长、文化课成绩优良、身体健康。</span></p><p style="text-indent:43px;line-height:33px"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">3.若考生所在省（区、市）组织高水平艺术团统一专业测试，则考生须参加该测试且成绩合格。</span></p><p style="text-indent:43px;line-height:33px"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">4.其他要求：申请民乐类项目甲类降分政策的考生，须在中学阶段有至少1年以上乐团成员的经历。报考舞蹈类的考生，女生身高不低于162厘米，男生身高不低于172厘米。</span></p><p style="text-indent:43px;line-height:33px"><strong><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">三、日程安排</span></strong></p><p style="text-indent:43px;line-height:33px"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">1.报名：符合报考条件的考生，请登录教育部阳光高考网特殊类型招生报名平台进行报名（网址：http://gaokao.chsi.com.cn/gspystbm/）。报名时间自即日起至2019年3月1日结束。不接受现场报名。</span></p><p style="text-indent:43px;line-height:33px"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">报名材料包括：</span></p><p style="text-indent:43px;line-height:33px"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">（1）《中国人民大学2019年高水平艺术团招生报名表》。《报名表》要求考生所在中学签字盖章。</span></p><p style="text-indent:43px;line-height:33px"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">（2）视频资料：器乐类考生提供个人演奏视频资料；舞蹈类考生提供包括考生自选舞蹈剧目及基本功、技巧展示等内容的视频资料。视频资料必须是同期声录制，不得在后期进行任何修饰处理，不得在视频中透露任何考生个人信息（含姓名、省市、中学等）。请将视频资料以MP4格式发送至zsb@ruc.edu.cn，文件名及邮件主题为“项目-姓名-身份证号后六位”。</span></p><p style="text-indent:43px;line-height:33px"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">请务必检查视频资料内容、格式、发送方式是否符合上述要求。建议考生在邮件正文中同时提供网盘下载链接，作为申请材料备份。视频资料是否收到,均以邮件回复信息为准。<strong>因视频资料文件未收到或无法读取而影响初选的，责任由考生自负。</strong></span></p><p style="text-indent:43px;line-height:33px"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">（3）艺术水平证明材料：申请民乐类项目甲类降分政策的考生，须提交其在中学阶段有1年以上乐团成员经历的证明（证明应由乐团所属中学开具，签字盖章）。</span></p><p style="text-indent:43px;line-height:33px"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">考生应于网上报名截止前，将报名材料（1）、（3）以照片形式上传至报名系统（上传材料须保证清晰可读），将报名材料（2）发送至指定邮箱。</span></p><p style="text-indent:43px;line-height:33px"><span style="font-size: 14px; font-family: 微软雅黑, &quot;Microsoft YaHei&quot;;">2.初选：我校将根据学校艺术团发展需要和考生报名材料，组织专家进行初选后，确定入围测试名单。报名考生可于3月8日后登录网上报名系统查询初选结果。</span></p><p style="text-indent:43px;line-height:33px"><span style="font-size: 14px; font-family: 微软雅黑, &quot;Microsoft YaHei&quot;;">3.下载测试指南：入围测试的考生请于3月9-10日在网上报名系统中确认是否参加测试，下载《中国人民大学2019年高水平艺术团测试指南》。</span></p><p style="text-indent:43px;line-height:33px"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">在此期间，考生可在系统中选择专业测试时段。每半天考试时段名额有限，额满后不能再选。未在规定时间内选择的考生，我校将为其随机分配测试时段。测试时段经考生选择或学校分配后不可更改。</span></p><p style="text-indent:43px;line-height:33px"><span style="font-size: 14px; font-family: 微软雅黑, &quot;Microsoft YaHei&quot;;">4.打印准考证：3月12日在报名系统内打印准考证。测试安排见《测试指南》，具体测试时间、地点以准考证为准。</span></p><p style="text-indent:43px;line-height:33px"><span style="font-size: 14px; font-family: 微软雅黑, &quot;Microsoft YaHei&quot;;">5.文化课考试：3月15日</span></p><p style="text-indent:43px;line-height:33px"><span style="font-size: 14px; font-family: 微软雅黑, &quot;Microsoft YaHei&quot;;">6.艺术项目专业测试：3月16日</span></p><p style="text-indent:43px;line-height:33px"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;"><strong><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;;">注：</span></strong><strong><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;;">舞蹈考生于文化课考试前进行身高测量，身高不符合报名条件者，取消考试资格，详见《测试指南》。</span></strong></span></p><p style="text-indent:43px;line-height:33px"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;"><strong><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;;">考生须凭准考证、二代身份证原件参加文化课考试和艺术项目专业测试。</span></strong></span></p><p style="text-indent:43px;line-height:33px"><strong><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">四、测试选拔</span></strong></p><p style="text-indent:43px;line-height:32px"><span style="font-size: 14px; font-family: 微软雅黑, &quot;Microsoft YaHei&quot;;">1．文化课考试</span></p><p style="text-indent:43px;line-height:32px"><span style="font-size: 14px; font-family: 微软雅黑, &quot;Microsoft YaHei&quot;;">考试科目为语文、数学、英语。我校将根据考生文化课考试成绩总体情况划定文化课合格分数线。</span></p><p style="text-indent:43px;line-height:33px"><span style="font-size: 14px; font-family: 微软雅黑, &quot;Microsoft YaHei&quot;;">2.艺术项目专业测试</span></p><table cellspacing="0" cellpadding="0" width="813" style="width: 765px;" align="center"><thead><tr style=";height:22px" class="firstRow"><td width="78" style="padding: 0px; border-width: 1px; border-style: solid;" height="22"><p style="text-align:center;line-height:32px"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">招生项目</span></p></td><td width="129" style="padding: 0px; border-width: 1px; border-style: solid;" height="22"><p style="text-align:center;line-height:32px"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">专业测试方式</span></p></td><td width="239" style="padding: 0px; border-width: 1px; border-style: solid;" height="22"><p style="text-align:center;line-height:32px"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">专业测试内容</span></p></td><td width="204" style="padding: 0px; border-width: 1px; border-style: solid;" height="22"><p style="text-align:center;line-height:32px"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">备注</span></p></td></tr></thead><tbody><tr><td width="78" style="padding: 0px; border-width: 1px; border-style: solid;"><p style="text-align:center;line-height:32px"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">器乐类</span></p></td><td width="129" style="padding: 0px; border-width: 1px; border-style: solid;"><p style="text-align:center;line-height:32px"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">一次专业测试。测试时，拉帘进行。</span></p></td><td width="239" style="padding: 0px; border-width: 1px; border-style: solid;"><p style="line-height:32px"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">自选曲目或曲目片段一首，评委可根据情况要求考生演奏乐曲的全部或片段，表演限时4-6分钟。视奏一段。</span></p></td><td width="204" style="padding: 0px; border-width: 1px; border-style: solid;"><p style="line-height:32px"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">二胡项目考生测试时可兼展示板胡、京胡演奏曲目（片段）一首（则）；唢呐项目考生可兼展示高音唢呐、中音唢呐、管子演奏曲目（片段）一首（则）；笙项目考生可兼展示传统笙、高音键笙、中音笙、低音笙演奏曲目（片段）一首（则）；琵琶、中阮项目考生测试时可兼展示大阮、三弦演奏曲目（片段）一首（则）；打击乐项目考生同时考查排鼓、定音鼓、键盘打击乐中的两项。兼奏展示限时3分钟以内。</span></p></td></tr><tr><td width="78" style="padding: 0px; border-width: 1px; border-style: solid;"><p style="text-align:center;line-height:32px"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">舞蹈类</span></p></td><td width="129" style="padding: 0px; border-width: 1px; border-style: solid;"><p style="text-align:center;line-height:32px"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">一次专业测试。</span></p></td><td width="239" style="padding: 0px; border-width: 1px; border-style: solid;"><p style="line-height:32px"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">自选舞蹈一则，表演限时3-5分钟，基本功（跳、转、翻、技术组合、软开度、控制能力等）及模仿。</span></p></td><td width="204" style="padding: 0px; border-width: 1px; border-style: solid;"><br/></td></tr></tbody></table><p style="line-height:32px"><span style="font-family: 仿宋_GB2312; font-size: 14px;">&nbsp;<span style="font-size: 14px; font-family: 微软雅黑, &quot;Microsoft YaHei&quot;;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;3.专业测试用具、乐器及伴奏</span></span></p><p style="text-indent:43px;line-height:32px"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">考生须自带服装、乐器、伴奏文件U盘、道具等演出应用物品。舞蹈类考生须自备练功服。</span></p><p style="text-indent:43px;line-height:32px"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">我校在器乐类（打击乐）考场提供常用打击乐器（定音鼓、小军鼓、排鼓）；舞蹈考场提供音响设备，用于播放伴奏。请考生提前准备伴奏文件（用MP3格式保存于U盘中），将伴奏U盘及备份文件带至测试现场。器乐类考试不允许使用伴奏。</span></p><p style="text-indent:43px;line-height:32px"><span style="font-size: 14px; font-family: 微软雅黑, &quot;Microsoft YaHei&quot;;">4.资格认定</span></p><p style="text-indent:43px;line-height:32px"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">降分政策分为甲、乙两类。考生报名时，须在两类降分政策中申报一类且只可申报一类。</span></p><p style="text-indent:43px;line-height:32px"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">甲类：对于艺术水平特别拔尖的考生，给予高考成绩达到生源省份同科类一本录取控制线（对于合并本科批次的省份为省级招生考试机构划定的高校艺术团参考录取控制分数线，对于浙江省、上海市为相关最低录取控制参考分数线）的录取资格。</span></p><p style="text-indent:43px;line-height:32px"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">认定办法：根据拟认定人数，艺术项目专业测试成绩达到A级且文化课考试成绩合格的考生按<strong>艺术项目专业测试成绩</strong>从高到低顺次予以认定。</span></p><p style="text-indent:43px;line-height:32px"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">乙类：对于艺术水平突出的考生，给予高考成绩达到生源省份同科类一本录取控制线且在我校同科类最终模拟投档线下20分范围内（20分以750分制为前提，非750分制省份考生按比例折算）的录取资格。浙江省考生高考成绩须达到相关最低录取控制参考分数线上50分，上海市考生高考成绩须达到相关最低录取控制参考分数线上44分。</span></p><p style="text-indent:43px;line-height:32px"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">认定办法：根据拟认定人数，艺术项目专业测试成绩达到B级且文化课考试成绩合格的考生按<strong>文化课考试成绩</strong>从高到低顺次予以认定。</span></p><p style="text-indent:43px;line-height:32px"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">“高考成绩”指投档成绩（含政策性加分）。最终模拟投档线是由生源地省级招办按照本科一批招生所有高校在生源省（区、市）最终确定的投档比例测算生成。</span></p><p style="text-indent:43px;line-height:32px"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">我校将根据考生测试成绩总体情况划定各艺术项目专业测试A级、B级分数线及文化课考试合格分数线。艺术项目专业测试分数相同时，器乐类考生以视奏成绩高者优先，舞蹈类考生以基本功成绩高者优先。文化课考试成绩相同时，依次比较语文、数学、英语单科成绩。</span></p><p style="text-indent:43px;line-height:32px"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">资格生名单和录取标准由学校招生工作领导小组确定，并通过教育部“阳光高考”平台、省级招生机构网站、我校阳光招生信息平台等进行公示。公示出现异议者，我校有权在调查核实后，取消其资格。</span></p><p style="text-indent:43px;line-height:32px"><strong><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">五、录取办法</span></strong></p><p style="text-indent:43px;line-height:32px"><span style="font-size: 14px; font-family: 微软雅黑, &quot;Microsoft YaHei&quot;;">1.高水平艺术团资格生，须按照所在省级招生考试机构规定，参加2019年全国普通高校招生统一考试，并于高水平艺术团所在批次报考我校。</span></p><p style="text-indent:43px;line-height:32px"><span style="font-size: 14px; font-family: 微软雅黑, &quot;Microsoft YaHei&quot;;">2.符合我校报考条件的考生，录取时严格按照公示的资格生降分政策执行。</span></p><p style="text-indent:43px;line-height:32px"><span style="font-size: 14px; font-family: 微软雅黑, &quot;Microsoft YaHei&quot;;">3.被我校录取的高水平艺术团考生，根据其高考成绩和个人专业志愿，安排在我校非艺术专业学习，原则上应在所在省份公布的我校对应科类招生专业范围内。</span></p><p style="text-indent:43px;line-height:32px"><span style="font-size: 14px; font-family: 微软雅黑, &quot;Microsoft YaHei&quot;;">4.高水平艺术团所在具体批次以及对应批次高考成绩录取控制分数线以所在省份招生考试机构规定为准。</span></p><p style="text-indent:43px;line-height:32px"><strong><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">六、违规处理</span></strong></p><p style="text-indent:43px;line-height:33px"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">凡在考试中有作弊行为的考生，包括但不限于冒名顶替、伪造报名材料、在文化课考试中作弊等情形，均认定为在国家教育考试中作弊，取消相关考试的报名和录取资格，同时通报省级招生考试机构取消该生当年高考报名和录取资格。作弊行为涉嫌违反《中华人民共和国刑法》规定的，移交司法机关依法处理。</span></p><p style="text-indent:43px;line-height:32px"><strong><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">七、入学复查及在校期间管理</span></strong></p><p style="text-indent:43px;line-height:32px"><span style="font-size: 14px; font-family: 微软雅黑, &quot;Microsoft YaHei&quot;;">1.新生入校3个月内，我校将对新生进行材料复核和专业复测。对于复测不合格、入学前后两次测试成绩差异显著的考生，将组织专门调查。经查实属替考、违规录取、冒名顶替入学等违规情况的，一律取消该生录取资格，不予学籍电子注册，并通报考生所在地省级招生考试机构倒查追责。</span></p><p style="text-indent:43px;line-height:32px"><span style="font-size: 14px; font-family: 微软雅黑, &quot;Microsoft YaHei&quot;;">2.录取考生须接受所在院系和艺术团双重管理，既要按本专业培养方案完成专业学习任务，也要认真履行参加排练和演出的义务，遵守学生艺术团各项规定（包括部分器乐专业考生需兼团等规定）。</span></p><p style="text-indent:43px;line-height:32px"><span style="font-size: 14px; font-family: 微软雅黑, &quot;Microsoft YaHei&quot;;">3.我校将开设高水平艺术团活动情况公示专栏，公示艺术团成员名单及参加排练、演出、比赛和获得荣誉等情况，接受全校学生监督。</span></p><p style="text-indent:43px;line-height:32px"><span style="font-size: 14px; font-family: 微软雅黑, &quot;Microsoft YaHei&quot;;">4.未能完成艺术团学生培养方案或违反相关管理要求的学生，将依照学校相关规定予以退学处理。</span></p><p style="text-indent:43px;line-height:32px"><strong><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">八、联系方式</span></strong></p><p style="text-indent:43px;line-height:32px"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">阳光招生信息平台：http://rdzs.ruc.edu.cn</span></p><p style="text-indent:43px;line-height:32px"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">招办电子信箱:zsb@ruc.edu.cn</span></p><p style="text-indent:43px;line-height:32px"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">监察处电子信箱：rucjj@ruc.edu.cn</span></p><p style="text-indent:43px;line-height:32px"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">联系电话：</span></p><p style="text-indent:43px;line-height:32px"><span style="font-size: 14px; font-family: 微软雅黑, &quot;Microsoft YaHei&quot;;">400-0123-517（阳光招生热线，负责招生政策咨询）</span></p><p style="text-indent:43px;line-height:32px"><span style="font-size: 14px; font-family: 微软雅黑, &quot;Microsoft YaHei&quot;;">010－62511631（学生艺术团，负责学生管理、艺术专业方面咨询）</span></p><p style="text-indent:43px;line-height:32px"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">通讯地址：北京市海淀区中关村大街59号中国人民大学北区食堂六层本科生招生办公室</span></p><p style="text-indent:43px;line-height:32px"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">邮政编码：100872</span></p><p style="text-indent:43px;line-height:32px"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;"><strong><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;;">九、教育部关于普通高等学校招收高水平艺术团的有关规定均适用于我校高水平艺术团招生工作，本招生简章最终解释权属于中国人民大学本科生招生办公室。</span></strong></span></p><p style="text-align:right;line-height:32px"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">&nbsp;</span></p><p style="text-align:right;text-indent:43px;line-height:37px"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">中国人民大学本科生招生办公室</span></p><p style="margin-right:43px;text-align:right;text-indent:43px;line-height:37px"><span style="font-size: 14px; font-family: 微软雅黑, &quot;Microsoft YaHei&quot;;">2019年2月</span></p><p style="text-align:right;line-height:32px"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">&nbsp; </span></p><p><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">&nbsp;</span></p><p><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">&nbsp;</span></p><p><br/></p>
+                       
+                        <div class="pull-right mt20">
+                            <!-- JiaThis Button BEGIN -->
+                            <div class="jiathis_style">
+                                <span class="jiathis_txt">分享到：</span>
+                                <a class="jiathis_button_icons_1"></a>
+                                <a class="jiathis_button_icons_2"></a>
+                                <a class="jiathis_button_icons_3"></a>
+                                <a class="jiathis_button_icons_4"></a>
+                                <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
+                                <a class="jiathis_counter_style"></a>
+                            </div>
+                            <script type="text/javascript" src="http://v3.jiathis.com/code/jia.js" charset="utf-8"></script>
+                            <!-- JiaThis Button END -->
+                        </div>
+                    </div>
+                </div>
+            <div class="col-lg-3 col-md-4 col-sm-5 col-xs-12" style="margin-bottom:70px;">
+                <div class="t_news">
+                    <div class="btn_card">
+                        <div class="list">
+   							<div class="icon_panel"><a href="/cms/item/?cat=47&parent=12"><img src="/static/default/images/classic.png" alt=""></a><span>艺术类</span></div>
+                            <div class="icon_panel"><a href="/cms/item/?cat=50&parent=12"><img src="/static/default/images/baosong.png" alt=""></a><span>保送生</span></div>
+                            <div class="icon_panel"><a href="/cms/item/?cat=53&parent=12"><img src="/static/default/images/sport.png" alt=""></a><span>高水平运动队</span></div>
+                            <div class="icon_panel"><a href="/cms/item/?cat=62&parent=12"><img src="/static/default/images/hongkong.png" alt=""></a><span>港澳台侨招生</span></div>
+
+                            <div class="icon_panel"><a href="/cms/item/?cat=48&parent=12"><img src="/static/default/images/second.png" alt=""></a><span>二学位</span></div>
+                            <div class="icon_panel"><a href="/cms/item/?cat=51&parent=12"><img src="/static/default/images/army.png" alt=""></a><span>国防生</span></div>
+                            <div class="icon_panel"><a href="/cms/item/?cat=54&parent=12"><img src="/static/default/images/xizang.png" alt=""></a><span>内地新疆（西藏）班</span></div>
+                             <div class="icon_panel"><a href="/cms/item/?cat=61&parent=12"><img src="/static/default/images/poor.png" alt=""></a><span>圆梦计划及贫困专项</span></div>                          
+<!--
+                            <div class="icon_panel"><a href="/cms/item/?cat=49&parent=12"><img src="/static/default/images/zizhu.png" alt=""></a><span>adssadfdsaf</span></div>
+                            <div class="icon_panel"><a href="/cms/item/?cat=55&parent=12"><img src="/static/default/images/xinhan.png" alt=""></a><span>民考汉</span></div>
+-->
+<div class="icon_panel">
+                                <a href="/cms/item/?cat=79&parent=12"><img src="/static/default/images/qjjh.png" alt=""></a><span>强基计划</span>
+                            </div> 
+                            <div class="icon_panel"><a href="/cms/item/?cat=52&parent=12"><img src="/static/default/images/art.png" alt=""></a><span>高水平艺术团</span></div>                       
+                        </div>
+                    </div>
+                    <div class="t_serve clearfix">
+                       <a href="/cms/list/bkzn/"><img src="/static/default/images/banner/baokaozhinan.png" class="t_limg" alt="报考指南"></a>
+                        <a href="/cms/list/zszc/?cat=10"><img src="/static/default/images/banner/zhaoshengzhengce.png" class="t_limg" alt="招生政策"></a>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+      
+    <div class="y_foot hidden-xs">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="t_col3">
+                        <h5>联系我们</h5>
+                        <div class="t_icon1">
+                            <i></i>
+                            <span>400-0123-517</span><br/>
+                        </div>
+                        <div class="t_icon2">
+                            <i></i>
+                            <span>zsb@ruc.edu.cn</span></br>
+                        </div>
+                        <div class="t_icon4">
+                            <i></i>
+                            <span>010-62511156(传真)</span></br>
+                        </div>
+                        <div class="t_icon3">
+                            <i></i>
+                            <span>北京市海淀区中关村大街59号<br/>知行F楼(北区食堂)六层</span></br>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="t_col3">
+                        <h5>关注我们</h5>
+                        <img src="/static/default/images/wechat.png" alt="">
+                        <p>扫描二维码关注我们</p>
+                        <p>微信公众号"人大阳光招生"</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="t_col3">
+                        <h5>学术公告</h5>
+                        
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="t_col3">
+                         <h5>快速链接
+                        <a target="_blank" href="http://211.71.30.15/index/index_main.action" style="margin-left: 40px;color: #999;font-weight: normal;font-size: 16px;">返回旧网站</a>
+                               <a target="_blank" href="http://211.71.30.15/index/index_main.action" >
+                                    <span class="icon-wrap">
+                                        <span class="icon icon-arrow_carrot-right_alt2"  style="color: #999"></span>
+                                    </span>
+                                </a>
+                        </h5>
+                        
+                                 
+                        <a href="/cms/item/1031.html" class="t_b" target = _blank>人大主页</a>
+                       
+                                 
+                        <a href="/cms/item/1032.html" class="t_b" target = _blank>人大新闻网</a>
+                       
+                                 
+                        <a href="/cms/item/1038.html" class="t_b" target = _blank>留学生招生</a>
+                       
+                                 
+                        <a href="/cms/item/1037.html" class="t_b" target = _blank>研究生招生</a>
+                       
+                                 
+                        <a href="/cms/item/1036.html" class="t_b" target = _blank>考生黄页</a>
+                       
+                                 
+                        <a href="/cms/item/1035.html" class="t_b" target = _blank>校园地图</a>
+                       
+                                 
+                        <a href="/cms/item/1034.html" class="t_b" target = _blank>校友总会</a>
+                       
+                                 
+                        <a href="/cms/item/1033.html" class="t_b" target = _blank>教育基金会</a>
+                       
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="y_bottom">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="t_info clearfix">
+                        <p>版权所有 Copyright© 中国人民大学本科生招生办公室   京ICP备05066828号-1</p>
+                        <div class="t_flogo">
+                            <a href="http://www.ruc.edu.cn/"><img src="/static/default/images/t_logo.png" alt=""></a>
+                            <a href="#" class="hidden-xs t_back">回顶部</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

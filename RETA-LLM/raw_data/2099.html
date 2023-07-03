@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>中国人民大学阳光招生信息平台</title>
+    <!-- Bootstrap -->
+    <link rel="shortcut icon" href="/static/default/images/48.ico"/>
+     <link rel="bookmark" href="/static/default/images/48.ico"/>
+    <link href="/static/default/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/static/default/css/layout.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="/static/default/css/style.css" type="text/css" media="screen">
+    <script src="/static/default/js/jquery.min.js"></script>
+
+    <script src="http://api.microyan.com/sidebar?id=3520"></script>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="../js/html5shiv.min.js"></script>
+    <script src="../js/respond.min.js"></script>
+    <![endif]-->
+    
+</head>
+<body>
+
+       <div class="head visible-lg">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 header clearfix">
+                    <a href="/cms/" class="logo"></a>
+                    <script language ="javascript">
+                        function ValidateValue(textbox)
+                        {
+                             var IllegalString = "\`~@#;,.!#$%^&*()+{}|\\:\"<>?-=/,\'";
+                             var textboxvalue = textbox.value;
+                             var index = textboxvalue.length - 1;
+
+                             var s = textbox.value.charAt(index);
+
+                             if(IllegalString.indexOf(s)>=0)
+                             {
+                                s = textboxvalue.substring(0,index);
+                                textbox.value = s;
+                             }
+                        }
+                    </script>
+                    <form method="get" action="/cms/item/">
+                        <div class="y_selbox hidden-xs">
+                            <div class="input-group">
+                                <input id="s" type="text" name="keyword" value="" class="form-control" placeholder="搜索" maxlength="50" onkeyup = "ValidateValue(this)">
+                              <span class="input-group-btn">
+                                <button class="btn btn-default" type="submit"></button>
+                              </span>
+                            </div>
+                        </div>
+                    </form>
+                    <ul class="nav_list hidden-xs">
+                     	
+                        <li>
+                            <a href="">最新动态</a>
+                             
+                            <div class="list_group">
+                                <div class="a-panel">
+			                       <a href="/cms/item/?cat=72&parent=1">招生动态</a>
+			                       <a href="/cms/item/?cat=9&parent=1">新闻聚焦</a>    
+                                </div>
+                            </div>
+                         
+                        </li>
+                        </li>
+                        
+                    	
+                        <li>
+                            <a href="">招生信息</a>
+                             
+                         <div class="list_group">
+                           <div class="a-panel">                                              
+	                       <a href="/cms/list/zszc/?cat=10">招生政策</a> 
+	                       <a href="javascript:void(0)" onclick="subgo()">报考指南</a> 
+	                       <!--  <a href="/cms/list/bkzn/">报考指南</a> -->
+	                       <a href="/cms/index/tslx/">特殊类型招生</a>                              
+                         </div>
+                          </div>
+                       
+                        </li>
+                        </li>
+                        
+                    	
+                        <li>
+                            <a href="">招生专业</a>
+                             
+	                    <div class="list_group"> 
+	                    <div class="a-panel">                                             
+	                      <a href="/cms/list/college/1/">学院介绍</a>  
+	                       <a href="/cms/list/professional/">专业目录</a>                            
+	                   </div>
+	                    </div>
+	                  
+                        </li>
+                        </li>
+                        
+                    	
+                        <li>
+                            <a href="">人大一览</a>
+                             
+                           <div class="list_group">
+                           <div class="a-panel">
+                              
+                              
+                             <a href="/cms/list/rdyx/?cat=15">人大影像</a> 
+ 
+                       			                            
+                              
+                                 
+                       			<a href="/cms/list/rdzz/?cat=16">人大之子</a>
+                       		                               
+                              
+                                                                              
+                                 <a href="/cms/item/?cat=17&parent=4">历史人大</a>  
+                                                             
+                              
+                                                                              
+                                 <a href="/cms/item/?cat=18&parent=4">学在人大</a>  
+                                                             
+                              
+                                                                              
+                                 <a href="/cms/item/?cat=20&parent=4">就业动态</a>  
+                                                             
+                              
+                                                                              
+                                 <a href="/cms/item/?cat=21&parent=4">奖惩助学</a>  
+                                                             
+                              
+                                                                              
+                                 <a href="/cms/item/?cat=22&parent=4">校园生活</a>  
+                                                             
+                              
+                                                                              
+                                 <a href="/cms/item/?cat=23&parent=4">国际交流</a>  
+                                                             
+                             
+                             </div>
+                            </div>
+                          
+                        </li>
+                        </li>
+                        
+                    	
+                        <li>
+                            <a href="">数据查询</a>
+                             
+                    <div class="list_group"> 
+                    <div class="a-panel">         
+                      <a href="/inquiry/admission/indexcms/">各专业分数线</a>                                     
+                       <a href="/inquiry/enrollplan/indexcms/">各省招生计划</a> 
+                      <a href="/cms/scores/ ">高考录取结果</a>                            
+                    </div>
+                    </div>                     
+                         
+                        </li>
+                        </li>
+                        
+                    	
+                        <li>
+                            <a href="">招生咨询</a>
+                             
+	                    <div class="list_group">   
+	                    <div class="a-panel">
+	                       <a href="/inquiry/enrollgroup/listcms/">各省招生组</a>                                              
+	                       <a href="/inquiry/comadvice/cmscreate/">常见咨询</a>     
+	                       <a href="/cms/index/zycp/">职业测评</a>                           
+	                    </div>
+	                    </div>
+	                 
+                        </li>
+                        </li>
+                        
+                    	
+                        <li>
+                            <a href="">公开公示</a>
+                             
+                           <div class="list_group">
+                           <div class="a-panel">
+                              
+                                                                              
+                                 <a href="/cms/item/?cat=30&parent=7">公示专栏</a>  
+                                                             
+                              
+                                                                              
+                                 <a href="/cms/item/?cat=31&parent=7">管理办法</a>  
+                                                             
+                              
+                                                                              
+                                 <a href="/cms/item/?cat=32&parent=7">纪检监督</a>  
+                                                             
+                             
+                             </div>
+                            </div>
+                          
+                        </li>
+                        </li>
+                        
+                      
+                    </ul>
+                    <a href="#" class="y_ipt_search visible-xs"></a>
+                    <a href="#" class="y_ipt_menu visible-xs"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 移动端头部 -->
+    <div class="headB hidden-lg">
+        <div class="container-fluid header">
+            <div class="row">
+                <div class="col-md-12 clearfix">
+                    <a href="/cms/" class="logo"></a>
+                    <a href="#" class="y_ipt_search"></a>
+                    <a href="#" class="y_ipt_menu"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 小分辨率右侧遮罩导航 -->
+    <!--  -->
+    <div class="y_top_menu hidden-lg">
+        <dl>
+         		
+             <dt><a href="#" class="rem_mes">最新动态</a>
+                                                                           
+                       <dd><a href="/cms/item/?cat=72&parent=1">招生动态</a></dd> 
+                       <dd><a href="/cms/item/?cat=9&parent=1">新闻聚焦</a></dd>                                    
+                              
+             </dt>
+           
+          		
+             <dt><a href="#" class="rem_mes">招生信息</a>
+                                                                            
+                       <dd><a href="/cms/list/zszc/?cat=10">招生政策</a></dd> 
+                       <dd><a href="javascript:void(0)" onclick="subgo()">报考指南</a></dd> 
+                      <!--   <dd><a href="/cms/list/bkzn/">报考指南</a></dd> -->
+                       <dd><a href="/cms/index/tslx/">特殊类型招生</a></dd>                               
+                              
+             </dt>
+           
+          		
+             <dt><a href="#" class="rem_mes">招生专业</a>
+                                                             
+                       <dd><a href="/cms/list/college/1/">学院介绍</a></dd>  
+                       <dd><a href="/cms/list/professional/">专业目录</a></dd>                             
+                              
+             </dt>
+           
+          		
+             <dt><a href="#" class="rem_mes">人大一览</a>
+               
+                    
+                        
+                          <dd><a href="/cms/list/rdyx/?cat=15">人大影像</a></dd>  
+                         
+                          
+                                                     
+                    
+                           
+                        <dd><a href="/cms/list/rdzz/?cat=16">人大之子</a></dd>                          
+                                                    
+                    
+                                                
+                       <dd><a href="/cms/item/?cat=17&parent=4">历史人大</a></dd>  
+                                                   
+                    
+                                                
+                       <dd><a href="/cms/item/?cat=18&parent=4">学在人大</a></dd>  
+                                                   
+                    
+                                                
+                       <dd><a href="/cms/item/?cat=20&parent=4">就业动态</a></dd>  
+                                                   
+                    
+                                                
+                       <dd><a href="/cms/item/?cat=21&parent=4">奖惩助学</a></dd>  
+                                                   
+                    
+                                                
+                       <dd><a href="/cms/item/?cat=22&parent=4">校园生活</a></dd>  
+                                                   
+                    
+                                                
+                       <dd><a href="/cms/item/?cat=23&parent=4">国际交流</a></dd>  
+                                                   
+                   
+                              
+             </dt>
+           
+          		
+             <dt><a href="#" class="rem_mes">数据查询</a>
+                       
+                       <dd><a href="/inquiry/admission/indexcms/">各专业分数线</a></dd>                                     
+                       <dd><a href="/inquiry/enrollplan/indexcms/">各省招生计划</a></dd> 
+                       <dd><a href="/cms/scores/ ">高考录取结果</a></dd>                                           
+                              
+             </dt>
+           
+          		
+             <dt><a href="#" class="rem_mes">招生咨询</a>
+                        
+                       <dd><a href="/inquiry/enrollgroup/listcms/">各省招生组</a></dd>                                     
+                       <dd><a href="/inquiry/comadvice/cmscreate/">常见咨询</a></dd> 
+                       <dd><a href="/cms/index/zycp/">职业测评</a></dd>                                            
+                              
+             </dt>
+           
+          		
+             <dt><a href="#" class="rem_mes">公开公示</a>
+               
+                    
+                                                
+                       <dd><a href="/cms/item/?cat=30&parent=7">公示专栏</a></dd>  
+                                                   
+                    
+                                                
+                       <dd><a href="/cms/item/?cat=31&parent=7">管理办法</a></dd>  
+                                                   
+                    
+                                                
+                       <dd><a href="/cms/item/?cat=32&parent=7">纪检监督</a></dd>  
+                                                   
+                   
+                              
+             </dt>
+           
+           	   
+        </dl>
+    </div>
+    <div class="clearfix"></div> 
+
+<script type="text/javascript">
+     //平台、设备和操作系统
+   function subgo() {
+    var system ={
+        win : false,
+        mac : false,
+        xll : false
+    };
+    //检测平台
+    var p = navigator.platform;
+    system.win = p.indexOf("Win") == 0;
+    system.mac = p.indexOf("Mac") == 0;
+    system.x11 = (p == "X11") || (p.indexOf("Linux") == 0);
+    //跳转语句，如果是手机访问就自动跳转到wap.baidu.com页面
+    /*
+    if(system.win||system.mac||system.xll){
+        window.location.href="/cms/list/bkzn/ ";
+
+    }else{
+        window.location.href="/cms/list/bkzn/phone/ ";
+    }
+    */
+    window.location.href="/cms/list/bkzn/ "; 
+ }   
+</script>  
+<script type="text/javascript">
+        $(function(){
+            $('.y_ipt_menu').click(function(){
+                if($(this).hasClass('open')){
+                    $(this).removeClass('open');
+                    $('.y_top_menu').animate({width: '0'},200);
+                }else{
+                    $(this).addClass('open');
+                    $('.y_top_menu').animate({width: '210px'},200);
+                }
+
+            });
+            $('dt a.rem_mes').bind('click', function() {
+                if($('dd').is(':visible')){
+                     $('dd').hide(); 
+                } else{
+                    $('dd').show();
+                }
+        });
+        });
+</script>     
+
+    <div class="y_tit_box">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 header">
+                    <h1 class="y_tit">材料物理</h1>
+                    <span class="y_des"></span>
+                    <div class="r-title hidden-xs">
+                    
+                        <span class="grey-hint-sm">更新时间：2019-06-12</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 主体 -->
+    <div class="container content" >
+        <div class="content-inner">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="article">
+                       <p style="text-align:center;text-indent:32px;line-height:26px"><strong><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">材料与社会发展</span></strong></p><p style="text-align:center;text-indent:28px"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">陈珊珊</span></p><p style="text-indent:28px"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;"><span style="font-size: 14px; font-family: 方正书宋_GBK;">人体本身就是由材料构成的。人类社会每一种新材料的发现</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">都促成了人类社会发展的一次飞跃。从石器时代、青铜器时代到铁器时代</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">材料的发展往往都是每个时代发展进步的标志。钢铁是工业革命的关键原料</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">使得工程师可以修建铁路、制造蒸汽机和油轮。</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">20</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">世纪以来</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">因为材料科学和量子力学的突破发展</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">带来了硅芯片和信息革命</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">所以</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,20</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">世纪也常常被称为硅时代。今天</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">以集成电路为核心的电子信息产业迅速超过了以汽车、石油、钢铁为代表的传统工业成为第一大产业</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">成为改造和拉动传统产业迈向数字时代的强大动力。随着科学技术的发展</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">人类进入了新材料时代。所谓新材料</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">不仅包含新开发的具有优异性能和特殊功能的材料</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">也包括改进后性能明显提高和产生新功能的传统材料。在这个时代</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">各种新材料、新工艺、新方法不断出现</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">成为社会经济发展的重要支柱。信息、能源、生命、交通、环境、国防以及高科技对新材料的需求比以往更为迫切。</span></span></p><p style="text-indent:28px"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;"><span style="font-size: 14px; font-family: 方正书宋_GBK;">作为制造业的基石</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">本世纪新材料的种类、数量、性能与上个世纪相比都有了相当程度的发展。就纳米科技而言</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">碳纳米管、单层石墨烯等新型碳纳米材料在信息、能源、环境等领域获得了广泛的应用。半导体超晶格和量子点已经成为微电子学、光电子学的核心材料。零维的量子点材料电视也逐渐走进了人们的视线</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">进入普及期。就能源科技而言</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">可再生新能源对于新材料的探索提出了高要求</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">燃料电池、太阳能发电等都涉及大量材料科学问题。就新型信息科技而言</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">自旋电子学、光纤技术、半导体技术也极大程度地依赖材料的发展。</span></span></p><p style="text-indent:28px"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;"><span style="font-size: 14px; font-family: 方正书宋_GBK;">材料这么重要</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">那么材料物理专业到底学的是什么</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">?</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">我们以</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">2004</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">年横空出世的</span>“<span style="font-size: 14px; font-family: 方正书宋_GBK;">石墨烯</span>”<span style="font-size: 14px; font-family: 方正书宋_GBK;">纳米新材料为例来说明。这个材料从实验室被两位俄罗斯的科学家用胶带撕出来</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">以其独特的二维结构和优异的物理化学特性吸引了全球科学家的注意</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">并迅速在诸多应用领域崭露头角。短短十几年的时间里</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">石墨烯从科研人员口中的专业名词</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">到诺贝尔物理学奖</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">再成为了街头巷尾耳熟能详的名词</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">出现于科技新闻、股市信息甚至各种头条新闻里。国家工信部部署的</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">2017</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">年七大重点工作任务中</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">把石墨烯列入重点推动实施的新材料研发和应用重大工程。石墨烯新材料的发展</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">见证了一个新材料从发现、研究、发展到应用的整个历程</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">也代表了材料物理学科学习的四大领域</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">:</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">材料设计与计算模拟、材料制备与加工、材料结构与性能、材料性能与应用。</span></span></p><p style="text-indent:28px"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;"><span style="font-size: 14px; font-family: 方正书宋_GBK;">在发展新材料的初期</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">人们主要依靠计算材料科学来模拟设计新材料</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">并就加工过程和应用进行设计和评估</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">形成有针对性的深入探索和研发方向。材料制备一直是材料物理发展的前沿领域</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">是新材料及相关产业发展的基础和技术源泉。例如</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">石墨烯最早是用胶带将厚的石墨一层层剥离出来</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">最终利用光学显微镜</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">结合原子力显微镜寻找微米尺寸的单层石墨烯。随着制备新技术、新设备的开发和发展</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">现在人们已经可以产业化制备不同类型的石墨烯产品。进一步利用多种测试手段对制备好的石墨烯材料进行结构与性能表征</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">人们可以建立材料结构与性能的关系</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">探索材料成分、缺陷对性能的影响等。最终材料走向末端环节</span>——<span style="font-size: 14px; font-family: 方正书宋_GBK;">应用</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">例如石墨烯的导电、透明、高比表面积等特性</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">使得石墨烯可应用于超级电容器、透明电极、锂离子电池、传感器、功能涂料和聚合物纳米复合材料等方面</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">开辟了石墨烯材料的应用新时代。</span></span></p><p style="text-indent:28px"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;"><span style="font-size: 14px; font-family: 方正书宋_GBK;">由于材料种类繁多</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">不同类型材料的制备与加工方法有所不同</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">表征方法也种类繁多。发展材料新的设计方法、新的制备方法、新的表征技术、新的加工方法</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">提高材料新的使用性能</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">构成了材料物理不断向前发展的直接动力。</span></span></p><p style="text-indent:28px"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;"><span style="font-size: 14px; font-family: 方正书宋_GBK;">材料物理学科的基础性及交叉性很强</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">材料制备合成涉及化学知识</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">性能测试又侧重物理知识</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">理论分析还需要一定的数学知识。最近若干年又延伸到生物学、力学、医学、环境科学等一大批原本与材料科学关联不大的科学领域</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">印证了材料科学是一个既老骥伏枥又风华正茂的学科</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">其依然在出新、在发展、在成长。它与传统自然科学的区别是</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">材料物理在很大程度上是面向应用</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">为社会生活服务的学科</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">它不仅可以开展高端前沿的基础研究</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">也可以面向应用开发实用的产品。这也是材料物理的魅力所在。</span></span></p><p style="text-indent:28px"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;"><span style="font-size: 14px; font-family: 方正书宋_GBK;">中国人民大学材料物理专业依托于物理系</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">学科布局着重于发展新型功能材料的研究。经过十多年的发展</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">目前已建成了完备的材料设计与计算模拟、材料制备与加工、材料结构与物性、材料器件和应用等实验室</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">专注于新型功能材料探索</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">涉及纳米材料、石墨烯等二维材料、光电功能材料、高温超导材料和技术、透明陶瓷技术、微纳器件加工等领域。材料物理学团队有一批年轻的尖端人才</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">可以带领同学们领略材料物理的魅力</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">紧跟时代的发展</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">走在新材料探索和应用的前沿。</span></span></p><p style="text-indent: 28px;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;"><span style="font-size: 14px; font-family: 方正书宋_GBK;">从古至今</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">无论人类科技的发展是快还是慢</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">地球上物质的基本结构始终没有改变。但随着时代的发展</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">我们更了解物质</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">了解材料</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">也引来了材料的新时代。</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">21</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">世纪会有更多、更好、更经济的新材料问世</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">适应各种制造业的需要</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">顺应社会的发展</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">改变我们的生活。</span></span></p>
+                       
+                        <div class="pull-right mt20">
+                            <!-- JiaThis Button BEGIN -->
+                            <div class="jiathis_style">
+                                <span class="jiathis_txt">分享到：</span>
+                                <a class="jiathis_button_icons_1"></a>
+                                <a class="jiathis_button_icons_2"></a>
+                                <a class="jiathis_button_icons_3"></a>
+                                <a class="jiathis_button_icons_4"></a>
+                                <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
+                                <a class="jiathis_counter_style"></a>
+                            </div>
+                            <script type="text/javascript" src="http://v3.jiathis.com/code/jia.js" charset="utf-8"></script>
+                            <!-- JiaThis Button END -->
+                        </div>
+                    </div>
+                </div>
+                <!--  
+	            <div class="col-md-3 col-sm-4">
+                    <ul class="grey-ul">
+                      
+                    </ul>
+	
+	             </div>
+	           -->
+            </div>
+        </div>
+    </div>
+      
+    <div class="y_foot hidden-xs">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="t_col3">
+                        <h5>联系我们</h5>
+                        <div class="t_icon1">
+                            <i></i>
+                            <span>400-0123-517</span><br/>
+                        </div>
+                        <div class="t_icon2">
+                            <i></i>
+                            <span>zsb@ruc.edu.cn</span></br>
+                        </div>
+                        <div class="t_icon4">
+                            <i></i>
+                            <span>010-62511156(传真)</span></br>
+                        </div>
+                        <div class="t_icon3">
+                            <i></i>
+                            <span>北京市海淀区中关村大街59号<br/>知行F楼(北区食堂)六层</span></br>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="t_col3">
+                        <h5>关注我们</h5>
+                        <img src="/static/default/images/wechat.png" alt="">
+                        <p>扫描二维码关注我们</p>
+                        <p>微信公众号"人大阳光招生"</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="t_col3">
+                        <h5>学术公告</h5>
+                        
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="t_col3">
+                         <h5>快速链接
+                        <a target="_blank" href="http://211.71.30.15/index/index_main.action" style="margin-left: 40px;color: #999;font-weight: normal;font-size: 16px;">返回旧网站</a>
+                               <a target="_blank" href="http://211.71.30.15/index/index_main.action" >
+                                    <span class="icon-wrap">
+                                        <span class="icon icon-arrow_carrot-right_alt2"  style="color: #999"></span>
+                                    </span>
+                                </a>
+                        </h5>
+                        
+                                 
+                        <a href="/cms/item/1031.html" class="t_b" target = _blank>人大主页</a>
+                       
+                                 
+                        <a href="/cms/item/1032.html" class="t_b" target = _blank>人大新闻网</a>
+                       
+                                 
+                        <a href="/cms/item/1038.html" class="t_b" target = _blank>留学生招生</a>
+                       
+                                 
+                        <a href="/cms/item/1037.html" class="t_b" target = _blank>研究生招生</a>
+                       
+                                 
+                        <a href="/cms/item/1036.html" class="t_b" target = _blank>考生黄页</a>
+                       
+                                 
+                        <a href="/cms/item/1035.html" class="t_b" target = _blank>校园地图</a>
+                       
+                                 
+                        <a href="/cms/item/1034.html" class="t_b" target = _blank>校友总会</a>
+                       
+                                 
+                        <a href="/cms/item/1033.html" class="t_b" target = _blank>教育基金会</a>
+                       
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="y_bottom">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="t_info clearfix">
+                        <p>版权所有 Copyright© 中国人民大学本科生招生办公室   京ICP备05066828号-1</p>
+                        <div class="t_flogo">
+                            <a href="http://www.ruc.edu.cn/"><img src="/static/default/images/t_logo.png" alt=""></a>
+                            <a href="#" class="hidden-xs t_back">回顶部</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>中国人民大学阳光招生信息平台</title>
+    <!-- Bootstrap -->
+    <link rel="shortcut icon" href="/static/default/images/48.ico"/>
+     <link rel="bookmark" href="/static/default/images/48.ico"/>
+    <link href="/static/default/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/static/default/css/layout.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="/static/default/css/style.css" type="text/css" media="screen">
+    <script src="/static/default/js/jquery.min.js"></script>
+
+    <script src="http://api.microyan.com/sidebar?id=3520"></script>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="../js/html5shiv.min.js"></script>
+    <script src="../js/respond.min.js"></script>
+    <![endif]-->
+    
+</head>
+<body>
+
+       <div class="head visible-lg">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 header clearfix">
+                    <a href="/cms/" class="logo"></a>
+                    <script language ="javascript">
+                        function ValidateValue(textbox)
+                        {
+                             var IllegalString = "\`~@#;,.!#$%^&*()+{}|\\:\"<>?-=/,\'";
+                             var textboxvalue = textbox.value;
+                             var index = textboxvalue.length - 1;
+
+                             var s = textbox.value.charAt(index);
+
+                             if(IllegalString.indexOf(s)>=0)
+                             {
+                                s = textboxvalue.substring(0,index);
+                                textbox.value = s;
+                             }
+                        }
+                    </script>
+                    <form method="get" action="/cms/item/">
+                        <div class="y_selbox hidden-xs">
+                            <div class="input-group">
+                                <input id="s" type="text" name="keyword" value="" class="form-control" placeholder="搜索" maxlength="50" onkeyup = "ValidateValue(this)">
+                              <span class="input-group-btn">
+                                <button class="btn btn-default" type="submit"></button>
+                              </span>
+                            </div>
+                        </div>
+                    </form>
+                    <ul class="nav_list hidden-xs">
+                     	
+                        <li>
+                            <a href="">最新动态</a>
+                             
+                            <div class="list_group">
+                                <div class="a-panel">
+			                       <a href="/cms/item/?cat=72&parent=1">招生动态</a>
+			                       <a href="/cms/item/?cat=9&parent=1">新闻聚焦</a>    
+                                </div>
+                            </div>
+                         
+                        </li>
+                        </li>
+                        
+                    	
+                        <li>
+                            <a href="">招生信息</a>
+                             
+                         <div class="list_group">
+                           <div class="a-panel">                                              
+	                       <a href="/cms/list/zszc/?cat=10">招生政策</a> 
+	                       <a href="javascript:void(0)" onclick="subgo()">报考指南</a> 
+	                       <!--  <a href="/cms/list/bkzn/">报考指南</a> -->
+	                       <a href="/cms/index/tslx/">特殊类型招生</a>                              
+                         </div>
+                          </div>
+                       
+                        </li>
+                        </li>
+                        
+                    	
+                        <li>
+                            <a href="">招生专业</a>
+                             
+	                    <div class="list_group"> 
+	                    <div class="a-panel">                                             
+	                      <a href="/cms/list/college/1/">学院介绍</a>  
+	                       <a href="/cms/list/professional/">专业目录</a>                            
+	                   </div>
+	                    </div>
+	                  
+                        </li>
+                        </li>
+                        
+                    	
+                        <li>
+                            <a href="">人大一览</a>
+                             
+                           <div class="list_group">
+                           <div class="a-panel">
+                              
+                              
+                             <a href="/cms/list/rdyx/?cat=15">人大影像</a> 
+ 
+                       			                            
+                              
+                                 
+                       			<a href="/cms/list/rdzz/?cat=16">人大之子</a>
+                       		                               
+                              
+                                                                              
+                                 <a href="/cms/item/?cat=17&parent=4">历史人大</a>  
+                                                             
+                              
+                                                                              
+                                 <a href="/cms/item/?cat=18&parent=4">学在人大</a>  
+                                                             
+                              
+                                                                              
+                                 <a href="/cms/item/?cat=20&parent=4">就业动态</a>  
+                                                             
+                              
+                                                                              
+                                 <a href="/cms/item/?cat=21&parent=4">奖惩助学</a>  
+                                                             
+                              
+                                                                              
+                                 <a href="/cms/item/?cat=22&parent=4">校园生活</a>  
+                                                             
+                              
+                                                                              
+                                 <a href="/cms/item/?cat=23&parent=4">国际交流</a>  
+                                                             
+                             
+                             </div>
+                            </div>
+                          
+                        </li>
+                        </li>
+                        
+                    	
+                        <li>
+                            <a href="">数据查询</a>
+                             
+                    <div class="list_group"> 
+                    <div class="a-panel">         
+                      <a href="/inquiry/admission/indexcms/">各专业分数线</a>                                     
+                       <a href="/inquiry/enrollplan/indexcms/">各省招生计划</a> 
+                      <a href="/cms/scores/ ">高考录取结果</a>                            
+                    </div>
+                    </div>                     
+                         
+                        </li>
+                        </li>
+                        
+                    	
+                        <li>
+                            <a href="">招生咨询</a>
+                             
+	                    <div class="list_group">   
+	                    <div class="a-panel">
+	                       <a href="/inquiry/enrollgroup/listcms/">各省招生组</a>                                              
+	                       <a href="/inquiry/comadvice/cmscreate/">常见咨询</a>     
+	                       <a href="/cms/index/zycp/">职业测评</a>                           
+	                    </div>
+	                    </div>
+	                 
+                        </li>
+                        </li>
+                        
+                    	
+                        <li>
+                            <a href="">公开公示</a>
+                             
+                           <div class="list_group">
+                           <div class="a-panel">
+                              
+                                                                              
+                                 <a href="/cms/item/?cat=30&parent=7">公示专栏</a>  
+                                                             
+                              
+                                                                              
+                                 <a href="/cms/item/?cat=31&parent=7">管理办法</a>  
+                                                             
+                              
+                                                                              
+                                 <a href="/cms/item/?cat=32&parent=7">纪检监督</a>  
+                                                             
+                             
+                             </div>
+                            </div>
+                          
+                        </li>
+                        </li>
+                        
+                      
+                    </ul>
+                    <a href="#" class="y_ipt_search visible-xs"></a>
+                    <a href="#" class="y_ipt_menu visible-xs"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 移动端头部 -->
+    <div class="headB hidden-lg">
+        <div class="container-fluid header">
+            <div class="row">
+                <div class="col-md-12 clearfix">
+                    <a href="/cms/" class="logo"></a>
+                    <a href="#" class="y_ipt_search"></a>
+                    <a href="#" class="y_ipt_menu"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 小分辨率右侧遮罩导航 -->
+    <!--  -->
+    <div class="y_top_menu hidden-lg">
+        <dl>
+         		
+             <dt><a href="#" class="rem_mes">最新动态</a>
+                                                                           
+                       <dd><a href="/cms/item/?cat=72&parent=1">招生动态</a></dd> 
+                       <dd><a href="/cms/item/?cat=9&parent=1">新闻聚焦</a></dd>                                    
+                              
+             </dt>
+           
+          		
+             <dt><a href="#" class="rem_mes">招生信息</a>
+                                                                            
+                       <dd><a href="/cms/list/zszc/?cat=10">招生政策</a></dd> 
+                       <dd><a href="javascript:void(0)" onclick="subgo()">报考指南</a></dd> 
+                      <!--   <dd><a href="/cms/list/bkzn/">报考指南</a></dd> -->
+                       <dd><a href="/cms/index/tslx/">特殊类型招生</a></dd>                               
+                              
+             </dt>
+           
+          		
+             <dt><a href="#" class="rem_mes">招生专业</a>
+                                                             
+                       <dd><a href="/cms/list/college/1/">学院介绍</a></dd>  
+                       <dd><a href="/cms/list/professional/">专业目录</a></dd>                             
+                              
+             </dt>
+           
+          		
+             <dt><a href="#" class="rem_mes">人大一览</a>
+               
+                    
+                        
+                          <dd><a href="/cms/list/rdyx/?cat=15">人大影像</a></dd>  
+                         
+                          
+                                                     
+                    
+                           
+                        <dd><a href="/cms/list/rdzz/?cat=16">人大之子</a></dd>                          
+                                                    
+                    
+                                                
+                       <dd><a href="/cms/item/?cat=17&parent=4">历史人大</a></dd>  
+                                                   
+                    
+                                                
+                       <dd><a href="/cms/item/?cat=18&parent=4">学在人大</a></dd>  
+                                                   
+                    
+                                                
+                       <dd><a href="/cms/item/?cat=20&parent=4">就业动态</a></dd>  
+                                                   
+                    
+                                                
+                       <dd><a href="/cms/item/?cat=21&parent=4">奖惩助学</a></dd>  
+                                                   
+                    
+                                                
+                       <dd><a href="/cms/item/?cat=22&parent=4">校园生活</a></dd>  
+                                                   
+                    
+                                                
+                       <dd><a href="/cms/item/?cat=23&parent=4">国际交流</a></dd>  
+                                                   
+                   
+                              
+             </dt>
+           
+          		
+             <dt><a href="#" class="rem_mes">数据查询</a>
+                       
+                       <dd><a href="/inquiry/admission/indexcms/">各专业分数线</a></dd>                                     
+                       <dd><a href="/inquiry/enrollplan/indexcms/">各省招生计划</a></dd> 
+                       <dd><a href="/cms/scores/ ">高考录取结果</a></dd>                                           
+                              
+             </dt>
+           
+          		
+             <dt><a href="#" class="rem_mes">招生咨询</a>
+                        
+                       <dd><a href="/inquiry/enrollgroup/listcms/">各省招生组</a></dd>                                     
+                       <dd><a href="/inquiry/comadvice/cmscreate/">常见咨询</a></dd> 
+                       <dd><a href="/cms/index/zycp/">职业测评</a></dd>                                            
+                              
+             </dt>
+           
+          		
+             <dt><a href="#" class="rem_mes">公开公示</a>
+               
+                    
+                                                
+                       <dd><a href="/cms/item/?cat=30&parent=7">公示专栏</a></dd>  
+                                                   
+                    
+                                                
+                       <dd><a href="/cms/item/?cat=31&parent=7">管理办法</a></dd>  
+                                                   
+                    
+                                                
+                       <dd><a href="/cms/item/?cat=32&parent=7">纪检监督</a></dd>  
+                                                   
+                   
+                              
+             </dt>
+           
+           	   
+        </dl>
+    </div>
+    <div class="clearfix"></div> 
+
+<script type="text/javascript">
+     //平台、设备和操作系统
+   function subgo() {
+    var system ={
+        win : false,
+        mac : false,
+        xll : false
+    };
+    //检测平台
+    var p = navigator.platform;
+    system.win = p.indexOf("Win") == 0;
+    system.mac = p.indexOf("Mac") == 0;
+    system.x11 = (p == "X11") || (p.indexOf("Linux") == 0);
+    //跳转语句，如果是手机访问就自动跳转到wap.baidu.com页面
+    /*
+    if(system.win||system.mac||system.xll){
+        window.location.href="/cms/list/bkzn/ ";
+
+    }else{
+        window.location.href="/cms/list/bkzn/phone/ ";
+    }
+    */
+    window.location.href="/cms/list/bkzn/ "; 
+ }   
+</script>  
+<script type="text/javascript">
+        $(function(){
+            $('.y_ipt_menu').click(function(){
+                if($(this).hasClass('open')){
+                    $(this).removeClass('open');
+                    $('.y_top_menu').animate({width: '0'},200);
+                }else{
+                    $(this).addClass('open');
+                    $('.y_top_menu').animate({width: '210px'},200);
+                }
+
+            });
+            $('dt a.rem_mes').bind('click', function() {
+                if($('dd').is(':visible')){
+                     $('dd').hide(); 
+                } else{
+                    $('dd').show();
+                }
+        });
+        });
+</script>     
+
+    <div class="y_tit_box">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 header">
+                    <h1 class="y_tit">政治学与行政学</h1>
+                    <span class="y_des"></span>
+                    <div class="r-title hidden-xs">
+                    
+                        <span class="grey-hint-sm">更新时间：2016-03-04</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 主体 -->
+    <div class="container content" >
+        <div class="content-inner">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="article">
+                       <p style="text-align:center;text-indent:32px;line-height:26px"><strong><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 16px;">政治学何谓?政治学何为?</span></strong></p><p style="text-align:center;text-indent:28px"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">张广生</span></p><p style="text-indent:28px"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">　　<span style="font-size: 14px; font-family: 方正书宋_GBK;">什么是政治的知识与技艺呢</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">?</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">这种知识与技艺又与人类生活有着什么样的关系呢</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">?</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">古代中国人和古代希腊人在这一问题的认识上似乎是相契的。《大学》开篇说</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">:</span>“<span style="font-size: 14px; font-family: 方正书宋_GBK;">大学之道</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">在明明德</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">在亲民</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">在止于至善</span>”<span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">意思是</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">伟大的学术以修己治人的实践为</span>“<span style="font-size: 14px; font-family: 方正书宋_GBK;">功夫</span>”<span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">以人伦生活的至善为</span>“<span style="font-size: 14px; font-family: 方正书宋_GBK;">目的</span>”<span style="font-size: 14px; font-family: 方正书宋_GBK;">。柏拉图在《政治家》中说</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">:</span>“<span style="font-size: 14px; font-family: 方正书宋_GBK;">那支配着其他全部技艺并监护着法律和国家中所有事物</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">同时把它们编织在一起的技艺</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">我们可以依其职责把它称作</span>‘<span style="font-size: 14px; font-family: 方正书宋_GBK;">政治的技艺</span>’<span style="font-size: 14px; font-family: 方正书宋_GBK;">。</span>”<span style="font-size: 14px; font-family: 方正书宋_GBK;">柏拉图通过把政治技艺类比为</span>“<span style="font-size: 14px; font-family: 方正书宋_GBK;">编织技艺</span>”<span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">不仅强调了政治知识与技艺所具有的超越于诸如赚钱技艺、医药技艺之上的全局视野</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">而且明确指示了这种</span>“<span style="font-size: 14px; font-family: 方正书宋_GBK;">护国者技艺</span>”<span style="font-size: 14px; font-family: 方正书宋_GBK;">依其本性而拥有的支配其他技艺的高贵地位。亚里士多德在《尼各马可伦理学》中论证道</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">:</span>“<span style="font-size: 14px; font-family: 方正书宋_GBK;">如果</span>‘<span style="font-size: 14px; font-family: 方正书宋_GBK;">最高的善</span>’<span style="font-size: 14px; font-family: 方正书宋_GBK;">是最权威的科学或最伟大技艺的对象</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">那么</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span>‘<span style="font-size: 14px; font-family: 方正书宋_GBK;">政治学</span>’<span style="font-size: 14px; font-family: 方正书宋_GBK;">就是这门最权威的科学</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">因为</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">正是这门科学规定了在城邦中应该研究哪些科学</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">哪部分公民应该学习哪部分知识</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">以及学到何种程度。</span>”<span style="font-size: 14px; font-family: 方正书宋_GBK;">亚里士多德的意思是</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">既然每种知识和技艺都指向某种</span>“<span style="font-size: 14px; font-family: 方正书宋_GBK;">善</span>”<span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">既然</span>“<span style="font-size: 14px; font-family: 方正书宋_GBK;">善</span>”<span style="font-size: 14px; font-family: 方正书宋_GBK;">有差等</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">既然政治学以属人的</span>“<span style="font-size: 14px; font-family: 方正书宋_GBK;">至善</span>”<span style="font-size: 14px; font-family: 方正书宋_GBK;">为目的</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">那么</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">政治学就是属人的知识与技艺中的</span>“<span style="font-size: 14px; font-family: 方正书宋_GBK;">最高学问</span>”<span style="font-size: 14px; font-family: 方正书宋_GBK;">。</span></span></p><p style="text-indent:28px"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;"><span style="font-size: 14px; font-family: 方正书宋_GBK;">的确</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">只要生活在高级文明之中</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">无论人们对</span>“<span style="font-size: 14px; font-family: 方正书宋_GBK;">人</span>”<span style="font-size: 14px; font-family: 方正书宋_GBK;">与</span>“<span style="font-size: 14px; font-family: 方正书宋_GBK;">国</span>”<span style="font-size: 14px; font-family: 方正书宋_GBK;">之间的关系持积极还是消极的态度</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">他们都无法否认的是</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">人的</span>“<span style="font-size: 14px; font-family: 方正书宋_GBK;">天性</span>”<span style="font-size: 14px; font-family: 方正书宋_GBK;">与</span>“<span style="font-size: 14px; font-family: 方正书宋_GBK;">天德</span>”<span style="font-size: 14px; font-family: 方正书宋_GBK;">与国的</span>“<span style="font-size: 14px; font-family: 方正书宋_GBK;">势位</span>”<span style="font-size: 14px; font-family: 方正书宋_GBK;">与</span>“<span style="font-size: 14px; font-family: 方正书宋_GBK;">利用</span>”<span style="font-size: 14px; font-family: 方正书宋_GBK;">之间的离合</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">必然关乎</span>“<span style="font-size: 14px; font-family: 方正书宋_GBK;">群</span>”<span style="font-size: 14px; font-family: 方正书宋_GBK;">与</span>“<span style="font-size: 14px; font-family: 方正书宋_GBK;">己</span>”<span style="font-size: 14px; font-family: 方正书宋_GBK;">的幸福。当《庄子》里道家人物面对自己时代的中国之天下发出</span>“<span style="font-size: 14px; font-family: 方正书宋_GBK;">窃钩者诛</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">窃国者为诸侯</span>”<span style="font-size: 14px; font-family: 方正书宋_GBK;">的</span>“<span style="font-size: 14px; font-family: 方正书宋_GBK;">愤世</span>”<span style="font-size: 14px; font-family: 方正书宋_GBK;">之叹时</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">正如柏拉图《理想国》中智术师人物面对希腊世界说出</span>“<span style="font-size: 14px; font-family: 方正书宋_GBK;">正义就是强者的利益</span>”<span style="font-size: 14px; font-family: 方正书宋_GBK;">这种</span>“<span style="font-size: 14px; font-family: 方正书宋_GBK;">嫉俗</span>”<span style="font-size: 14px; font-family: 方正书宋_GBK;">之语时</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">这正是年轻人感愤于世势衰颓</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">对老年人</span>“<span style="font-size: 14px; font-family: 方正书宋_GBK;">德位</span>‘<span style="font-size: 14px; font-family: 方正书宋_GBK;">应该</span>’<span style="font-size: 14px; font-family: 方正书宋_GBK;">合一</span>”“<span style="font-size: 14px; font-family: 方正书宋_GBK;">正义与幸福</span>‘<span style="font-size: 14px; font-family: 方正书宋_GBK;">自然</span>’<span style="font-size: 14px; font-family: 方正书宋_GBK;">一致</span>”<span style="font-size: 14px; font-family: 方正书宋_GBK;">的教诲充满怀疑的时刻。面对中国世界</span>“<span style="font-size: 14px; font-family: 方正书宋_GBK;">礼崩乐坏</span>”<span style="font-size: 14px; font-family: 方正书宋_GBK;">的局面</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">孔子承先启后</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">引领其门徒</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">把对衰败的礼法习俗的否思和重建人伦差序的担当精神结合起来</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">用感通群己伦类的自然仁德呼应贯通天人的圣王政教</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">;</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">遭逢希腊文明的衰落</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">苏格拉底和柏拉图回应的方式则是</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">把年轻人对</span>“<span style="font-size: 14px; font-family: 方正书宋_GBK;">不义</span>”<span style="font-size: 14px; font-family: 方正书宋_GBK;">的愤怒当作契机</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">邀请他们一起建构</span>“<span style="font-size: 14px; font-family: 方正书宋_GBK;">自然</span>”<span style="font-size: 14px; font-family: 方正书宋_GBK;">意义上</span>“<span style="font-size: 14px; font-family: 方正书宋_GBK;">最好的国家</span>”<span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">以期获得重建正当的群己生活的智慧。无论孔子式的</span>“<span style="font-size: 14px; font-family: 方正书宋_GBK;">德位合一</span>”<span style="font-size: 14px; font-family: 方正书宋_GBK;">的礼法筹划</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">还是苏格拉底式的</span>“<span style="font-size: 14px; font-family: 方正书宋_GBK;">正义与幸福</span>”<span style="font-size: 14px; font-family: 方正书宋_GBK;">相一致的政教方略</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">都把国家建设的目标设定为某种伦理与政治生活合一的、自我节制的共同体。</span></span></p><p style="text-indent:28px"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;"><span style="font-size: 14px; font-family: 方正书宋_GBK;">与苏格拉底、柏拉图式的政教合一国家只在城邦规模的历史现实中找到自己的影像不同</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">孔子及其门徒的伦理</span>—<span style="font-size: 14px; font-family: 方正书宋_GBK;">政治学说则对中国大一统的</span>“<span style="font-size: 14px; font-family: 方正书宋_GBK;">超级国家</span>”<span style="font-size: 14px; font-family: 方正书宋_GBK;">的建构发挥了深远的塑造作用。正因如此</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">那位受过良好西方古典教育的耶稣会士利玛窦才感叹</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">自己目睹的中国不仅仅是世界上最富庶的国家和军事力量超强的国家</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">而且是由</span>“<span style="font-size: 14px; font-family: 方正书宋_GBK;">哲学家</span>”<span style="font-size: 14px; font-family: 方正书宋_GBK;">阶层统治的、不事对外扩张的高度节制的</span>“<span style="font-size: 14px; font-family: 方正书宋_GBK;">内向国家</span>”<span style="font-size: 14px; font-family: 方正书宋_GBK;">。然而</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,19</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">世纪中叶以来</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">与现代西方的相遇给中国的发展道路带来了巨大的挑战</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">在西方冲击下</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">无论传统中国在区别西式现代民族</span>—<span style="font-size: 14px; font-family: 方正书宋_GBK;">国家的意义上被称作</span>“<span style="font-size: 14px; font-family: 方正书宋_GBK;">帝国</span>”“<span style="font-size: 14px; font-family: 方正书宋_GBK;">天下</span>—<span style="font-size: 14px; font-family: 方正书宋_GBK;">国家</span>”<span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">还是</span>“<span style="font-size: 14px; font-family: 方正书宋_GBK;">文明</span>—<span style="font-size: 14px; font-family: 方正书宋_GBK;">国家</span>”<span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">总之</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">中国</span>“<span style="font-size: 14px; font-family: 方正书宋_GBK;">以国家兼天下的</span>”<span style="font-size: 14px; font-family: 方正书宋_GBK;">传统秩序难以安立了。因为天下大势已变</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">列强环伺</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">所以</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">正如康有为在《上清帝第二书》中所作的历史时势与战略判断</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">:</span>“<span style="font-size: 14px; font-family: 方正书宋_GBK;">今之为治</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">当以开创之势治天下</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">不当以守成之势治天下</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">;</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">当以列国并立之势治天下</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">不当以一统垂裳之势治天下。</span>”<span style="font-size: 14px; font-family: 方正书宋_GBK;">一切率由旧章当然是不合时宜了</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">问题是</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">受到西方冲击的中国需要发生怎样的</span>“<span style="font-size: 14px; font-family: 方正书宋_GBK;">变易</span>”<span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">又要保持怎样的</span>“<span style="font-size: 14px; font-family: 方正书宋_GBK;">不易</span>”<span style="font-size: 14px; font-family: 方正书宋_GBK;">呢</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">?</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">在回应西方挑战的过程中</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">中国的国家形式发生了三次重要的演变</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">:</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">从君主和士大夫领导人民的国家</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">到军阀豪绅当家的国家</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">然后到革命政党领导人民的国家。</span></span></p><p style="text-indent:28px"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;"><span style="font-size: 14px; font-family: 方正书宋_GBK;">抽象估价中国的</span>“<span style="font-size: 14px; font-family: 方正书宋_GBK;">古今之变</span>”<span style="font-size: 14px; font-family: 方正书宋_GBK;">自然简单</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">那就是要保持那些</span>“<span style="font-size: 14px; font-family: 方正书宋_GBK;">好的</span>”<span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">改变那些</span>“<span style="font-size: 14px; font-family: 方正书宋_GBK;">不好的</span>”<span style="font-size: 14px; font-family: 方正书宋_GBK;">。问题是</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">对现代中国来说</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">如何评估列国政治的优劣短长和如何审视中国历代政治的得失是密切联系在一起的。中国发生的变化</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">既有出于</span>“<span style="font-size: 14px; font-family: 方正书宋_GBK;">利害</span>”<span style="font-size: 14px; font-family: 方正书宋_GBK;">的理由</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">也有出于</span>“<span style="font-size: 14px; font-family: 方正书宋_GBK;">是非</span>”<span style="font-size: 14px; font-family: 方正书宋_GBK;">的逻辑</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">但更进一步的问题是</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">应该用什么标准</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">应该由谁来判断这</span>“<span style="font-size: 14px; font-family: 方正书宋_GBK;">好的</span>”<span style="font-size: 14px; font-family: 方正书宋_GBK;">与</span>“<span style="font-size: 14px; font-family: 方正书宋_GBK;">不好的</span>”<span style="font-size: 14px; font-family: 方正书宋_GBK;">呢</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">?</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">如何继往开来</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">实现中国文明的复兴呢</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">?</span></span></p><p><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;"><span style="font-size: 14px; font-family: 方正书宋_GBK; color: black;">进行如此深刻的理论思考</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif; color: black;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK; color: black;">回应如此重大的现实关怀</span><span style="font-size: 14px; font-family: NEU-BZ; color: black;">——</span><span style="font-size: 14px; font-family: 方正书宋_GBK; color: black;">政治学正是这样一门历久而常新的学问。</span>&nbsp;</span></p><br/><p><br/></p>
+                       
+                        <div class="pull-right mt20">
+                            <!-- JiaThis Button BEGIN -->
+                            <div class="jiathis_style">
+                                <span class="jiathis_txt">分享到：</span>
+                                <a class="jiathis_button_icons_1"></a>
+                                <a class="jiathis_button_icons_2"></a>
+                                <a class="jiathis_button_icons_3"></a>
+                                <a class="jiathis_button_icons_4"></a>
+                                <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
+                                <a class="jiathis_counter_style"></a>
+                            </div>
+                            <script type="text/javascript" src="http://v3.jiathis.com/code/jia.js" charset="utf-8"></script>
+                            <!-- JiaThis Button END -->
+                        </div>
+                    </div>
+                </div>
+                <!--  
+	            <div class="col-md-3 col-sm-4">
+                    <ul class="grey-ul">
+                      
+                    </ul>
+	
+	             </div>
+	           -->
+            </div>
+        </div>
+    </div>
+      
+    <div class="y_foot hidden-xs">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="t_col3">
+                        <h5>联系我们</h5>
+                        <div class="t_icon1">
+                            <i></i>
+                            <span>400-0123-517</span><br/>
+                        </div>
+                        <div class="t_icon2">
+                            <i></i>
+                            <span>zsb@ruc.edu.cn</span></br>
+                        </div>
+                        <div class="t_icon4">
+                            <i></i>
+                            <span>010-62511156(传真)</span></br>
+                        </div>
+                        <div class="t_icon3">
+                            <i></i>
+                            <span>北京市海淀区中关村大街59号<br/>知行F楼(北区食堂)六层</span></br>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="t_col3">
+                        <h5>关注我们</h5>
+                        <img src="/static/default/images/wechat.png" alt="">
+                        <p>扫描二维码关注我们</p>
+                        <p>微信公众号"人大阳光招生"</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="t_col3">
+                        <h5>学术公告</h5>
+                        
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="t_col3">
+                         <h5>快速链接
+                        <a target="_blank" href="http://211.71.30.15/index/index_main.action" style="margin-left: 40px;color: #999;font-weight: normal;font-size: 16px;">返回旧网站</a>
+                               <a target="_blank" href="http://211.71.30.15/index/index_main.action" >
+                                    <span class="icon-wrap">
+                                        <span class="icon icon-arrow_carrot-right_alt2"  style="color: #999"></span>
+                                    </span>
+                                </a>
+                        </h5>
+                        
+                                 
+                        <a href="/cms/item/1031.html" class="t_b" target = _blank>人大主页</a>
+                       
+                                 
+                        <a href="/cms/item/1032.html" class="t_b" target = _blank>人大新闻网</a>
+                       
+                                 
+                        <a href="/cms/item/1038.html" class="t_b" target = _blank>留学生招生</a>
+                       
+                                 
+                        <a href="/cms/item/1037.html" class="t_b" target = _blank>研究生招生</a>
+                       
+                                 
+                        <a href="/cms/item/1036.html" class="t_b" target = _blank>考生黄页</a>
+                       
+                                 
+                        <a href="/cms/item/1035.html" class="t_b" target = _blank>校园地图</a>
+                       
+                                 
+                        <a href="/cms/item/1034.html" class="t_b" target = _blank>校友总会</a>
+                       
+                                 
+                        <a href="/cms/item/1033.html" class="t_b" target = _blank>教育基金会</a>
+                       
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="y_bottom">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="t_info clearfix">
+                        <p>版权所有 Copyright© 中国人民大学本科生招生办公室   京ICP备05066828号-1</p>
+                        <div class="t_flogo">
+                            <a href="http://www.ruc.edu.cn/"><img src="/static/default/images/t_logo.png" alt=""></a>
+                            <a href="#" class="hidden-xs t_back">回顶部</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

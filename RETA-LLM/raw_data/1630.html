@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>中国人民大学阳光招生信息平台</title>
+    <!-- Bootstrap -->
+    <link rel="shortcut icon" href="/static/default/images/48.ico"/>
+     <link rel="bookmark" href="/static/default/images/48.ico"/>
+    <link href="/static/default/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/static/default/css/layout.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="/static/default/css/style.css" type="text/css" media="screen">
+    <script src="/static/default/js/jquery.min.js"></script>
+
+    <script src="http://api.microyan.com/sidebar?id=3520"></script>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="../js/html5shiv.min.js"></script>
+    <script src="../js/respond.min.js"></script>
+    <![endif]-->
+    
+</head>
+<body>
+
+       <div class="head visible-lg">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 header clearfix">
+                    <a href="/cms/" class="logo"></a>
+                    <script language ="javascript">
+                        function ValidateValue(textbox)
+                        {
+                             var IllegalString = "\`~@#;,.!#$%^&*()+{}|\\:\"<>?-=/,\'";
+                             var textboxvalue = textbox.value;
+                             var index = textboxvalue.length - 1;
+
+                             var s = textbox.value.charAt(index);
+
+                             if(IllegalString.indexOf(s)>=0)
+                             {
+                                s = textboxvalue.substring(0,index);
+                                textbox.value = s;
+                             }
+                        }
+                    </script>
+                    <form method="get" action="/cms/item/">
+                        <div class="y_selbox hidden-xs">
+                            <div class="input-group">
+                                <input id="s" type="text" name="keyword" value="" class="form-control" placeholder="搜索" maxlength="50" onkeyup = "ValidateValue(this)">
+                              <span class="input-group-btn">
+                                <button class="btn btn-default" type="submit"></button>
+                              </span>
+                            </div>
+                        </div>
+                    </form>
+                    <ul class="nav_list hidden-xs">
+                     	
+                        <li>
+                            <a href="">最新动态</a>
+                             
+                            <div class="list_group">
+                                <div class="a-panel">
+			                       <a href="/cms/item/?cat=72&parent=1">招生动态</a>
+			                       <a href="/cms/item/?cat=9&parent=1">新闻聚焦</a>    
+                                </div>
+                            </div>
+                         
+                        </li>
+                        </li>
+                        
+                    	
+                        <li>
+                            <a href="">招生信息</a>
+                             
+                         <div class="list_group">
+                           <div class="a-panel">                                              
+	                       <a href="/cms/list/zszc/?cat=10">招生政策</a> 
+	                       <a href="javascript:void(0)" onclick="subgo()">报考指南</a> 
+	                       <!--  <a href="/cms/list/bkzn/">报考指南</a> -->
+	                       <a href="/cms/index/tslx/">特殊类型招生</a>                              
+                         </div>
+                          </div>
+                       
+                        </li>
+                        </li>
+                        
+                    	
+                        <li>
+                            <a href="">招生专业</a>
+                             
+	                    <div class="list_group"> 
+	                    <div class="a-panel">                                             
+	                      <a href="/cms/list/college/1/">学院介绍</a>  
+	                       <a href="/cms/list/professional/">专业目录</a>                            
+	                   </div>
+	                    </div>
+	                  
+                        </li>
+                        </li>
+                        
+                    	
+                        <li>
+                            <a href="">人大一览</a>
+                             
+                           <div class="list_group">
+                           <div class="a-panel">
+                              
+                              
+                             <a href="/cms/list/rdyx/?cat=15">人大影像</a> 
+ 
+                       			                            
+                              
+                                 
+                       			<a href="/cms/list/rdzz/?cat=16">人大之子</a>
+                       		                               
+                              
+                                                                              
+                                 <a href="/cms/item/?cat=17&parent=4">历史人大</a>  
+                                                             
+                              
+                                                                              
+                                 <a href="/cms/item/?cat=18&parent=4">学在人大</a>  
+                                                             
+                              
+                                                                              
+                                 <a href="/cms/item/?cat=20&parent=4">就业动态</a>  
+                                                             
+                              
+                                                                              
+                                 <a href="/cms/item/?cat=21&parent=4">奖惩助学</a>  
+                                                             
+                              
+                                                                              
+                                 <a href="/cms/item/?cat=22&parent=4">校园生活</a>  
+                                                             
+                              
+                                                                              
+                                 <a href="/cms/item/?cat=23&parent=4">国际交流</a>  
+                                                             
+                             
+                             </div>
+                            </div>
+                          
+                        </li>
+                        </li>
+                        
+                    	
+                        <li>
+                            <a href="">数据查询</a>
+                             
+                    <div class="list_group"> 
+                    <div class="a-panel">         
+                      <a href="/inquiry/admission/indexcms/">各专业分数线</a>                                     
+                       <a href="/inquiry/enrollplan/indexcms/">各省招生计划</a> 
+                      <a href="/cms/scores/ ">高考录取结果</a>                            
+                    </div>
+                    </div>                     
+                         
+                        </li>
+                        </li>
+                        
+                    	
+                        <li>
+                            <a href="">招生咨询</a>
+                             
+	                    <div class="list_group">   
+	                    <div class="a-panel">
+	                       <a href="/inquiry/enrollgroup/listcms/">各省招生组</a>                                              
+	                       <a href="/inquiry/comadvice/cmscreate/">常见咨询</a>     
+	                       <a href="/cms/index/zycp/">职业测评</a>                           
+	                    </div>
+	                    </div>
+	                 
+                        </li>
+                        </li>
+                        
+                    	
+                        <li>
+                            <a href="">公开公示</a>
+                             
+                           <div class="list_group">
+                           <div class="a-panel">
+                              
+                                                                              
+                                 <a href="/cms/item/?cat=30&parent=7">公示专栏</a>  
+                                                             
+                              
+                                                                              
+                                 <a href="/cms/item/?cat=31&parent=7">管理办法</a>  
+                                                             
+                              
+                                                                              
+                                 <a href="/cms/item/?cat=32&parent=7">纪检监督</a>  
+                                                             
+                             
+                             </div>
+                            </div>
+                          
+                        </li>
+                        </li>
+                        
+                      
+                    </ul>
+                    <a href="#" class="y_ipt_search visible-xs"></a>
+                    <a href="#" class="y_ipt_menu visible-xs"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 移动端头部 -->
+    <div class="headB hidden-lg">
+        <div class="container-fluid header">
+            <div class="row">
+                <div class="col-md-12 clearfix">
+                    <a href="/cms/" class="logo"></a>
+                    <a href="#" class="y_ipt_search"></a>
+                    <a href="#" class="y_ipt_menu"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 小分辨率右侧遮罩导航 -->
+    <!--  -->
+    <div class="y_top_menu hidden-lg">
+        <dl>
+         		
+             <dt><a href="#" class="rem_mes">最新动态</a>
+                                                                           
+                       <dd><a href="/cms/item/?cat=72&parent=1">招生动态</a></dd> 
+                       <dd><a href="/cms/item/?cat=9&parent=1">新闻聚焦</a></dd>                                    
+                              
+             </dt>
+           
+          		
+             <dt><a href="#" class="rem_mes">招生信息</a>
+                                                                            
+                       <dd><a href="/cms/list/zszc/?cat=10">招生政策</a></dd> 
+                       <dd><a href="javascript:void(0)" onclick="subgo()">报考指南</a></dd> 
+                      <!--   <dd><a href="/cms/list/bkzn/">报考指南</a></dd> -->
+                       <dd><a href="/cms/index/tslx/">特殊类型招生</a></dd>                               
+                              
+             </dt>
+           
+          		
+             <dt><a href="#" class="rem_mes">招生专业</a>
+                                                             
+                       <dd><a href="/cms/list/college/1/">学院介绍</a></dd>  
+                       <dd><a href="/cms/list/professional/">专业目录</a></dd>                             
+                              
+             </dt>
+           
+          		
+             <dt><a href="#" class="rem_mes">人大一览</a>
+               
+                    
+                        
+                          <dd><a href="/cms/list/rdyx/?cat=15">人大影像</a></dd>  
+                         
+                          
+                                                     
+                    
+                           
+                        <dd><a href="/cms/list/rdzz/?cat=16">人大之子</a></dd>                          
+                                                    
+                    
+                                                
+                       <dd><a href="/cms/item/?cat=17&parent=4">历史人大</a></dd>  
+                                                   
+                    
+                                                
+                       <dd><a href="/cms/item/?cat=18&parent=4">学在人大</a></dd>  
+                                                   
+                    
+                                                
+                       <dd><a href="/cms/item/?cat=20&parent=4">就业动态</a></dd>  
+                                                   
+                    
+                                                
+                       <dd><a href="/cms/item/?cat=21&parent=4">奖惩助学</a></dd>  
+                                                   
+                    
+                                                
+                       <dd><a href="/cms/item/?cat=22&parent=4">校园生活</a></dd>  
+                                                   
+                    
+                                                
+                       <dd><a href="/cms/item/?cat=23&parent=4">国际交流</a></dd>  
+                                                   
+                   
+                              
+             </dt>
+           
+          		
+             <dt><a href="#" class="rem_mes">数据查询</a>
+                       
+                       <dd><a href="/inquiry/admission/indexcms/">各专业分数线</a></dd>                                     
+                       <dd><a href="/inquiry/enrollplan/indexcms/">各省招生计划</a></dd> 
+                       <dd><a href="/cms/scores/ ">高考录取结果</a></dd>                                           
+                              
+             </dt>
+           
+          		
+             <dt><a href="#" class="rem_mes">招生咨询</a>
+                        
+                       <dd><a href="/inquiry/enrollgroup/listcms/">各省招生组</a></dd>                                     
+                       <dd><a href="/inquiry/comadvice/cmscreate/">常见咨询</a></dd> 
+                       <dd><a href="/cms/index/zycp/">职业测评</a></dd>                                            
+                              
+             </dt>
+           
+          		
+             <dt><a href="#" class="rem_mes">公开公示</a>
+               
+                    
+                                                
+                       <dd><a href="/cms/item/?cat=30&parent=7">公示专栏</a></dd>  
+                                                   
+                    
+                                                
+                       <dd><a href="/cms/item/?cat=31&parent=7">管理办法</a></dd>  
+                                                   
+                    
+                                                
+                       <dd><a href="/cms/item/?cat=32&parent=7">纪检监督</a></dd>  
+                                                   
+                   
+                              
+             </dt>
+           
+           	   
+        </dl>
+    </div>
+    <div class="clearfix"></div> 
+
+<script type="text/javascript">
+     //平台、设备和操作系统
+   function subgo() {
+    var system ={
+        win : false,
+        mac : false,
+        xll : false
+    };
+    //检测平台
+    var p = navigator.platform;
+    system.win = p.indexOf("Win") == 0;
+    system.mac = p.indexOf("Mac") == 0;
+    system.x11 = (p == "X11") || (p.indexOf("Linux") == 0);
+    //跳转语句，如果是手机访问就自动跳转到wap.baidu.com页面
+    /*
+    if(system.win||system.mac||system.xll){
+        window.location.href="/cms/list/bkzn/ ";
+
+    }else{
+        window.location.href="/cms/list/bkzn/phone/ ";
+    }
+    */
+    window.location.href="/cms/list/bkzn/phone/ "; 
+ }   
+</script>  
+<script type="text/javascript">
+        $(function(){
+            $('.y_ipt_menu').click(function(){
+                if($(this).hasClass('open')){
+                    $(this).removeClass('open');
+                    $('.y_top_menu').animate({width: '0'},200);
+                }else{
+                    $(this).addClass('open');
+                    $('.y_top_menu').animate({width: '210px'},200);
+                }
+
+            });
+            $('dt a.rem_mes').bind('click', function() {
+                if($('dd').is(':visible')){
+                     $('dd').hide(); 
+                } else{
+                    $('dd').show();
+                }
+        });
+        });
+</script>     
+    <div class="y_tit_box">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 header">
+                    <h1 class="y_tit">政治学、经济学与哲学（PPE实验班）</h1>
+                    <span class="y_des"></span>
+                    <div class="r-title hidden-xs">
+                    
+                        <span class="grey-hint-sm">更新时间：2019-06-12</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 主体 -->
+    <div class="container content" >
+        <div class="content-inner">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="article">
+                       <p><span style="color: rgb(35, 31, 32); font-variant-numeric: normal; font-variant-east-asian: normal; font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;"></span></p><p style="text-align:center;text-indent:32px;line-height:26px"><strong><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;"><span style="font-size: 16px; font-family: 方正小标宋_GBK;">作为理想主义者与行动主义者的</span><span style="font-size: 16px; font-family: NEU-HZ-S92, serif;">PPE</span></span></strong></p><p style="text-align:center;text-indent:28px"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">徐尚昆</span></p><p style="text-indent:28px"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;"><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">PPE(Philosophy,Politics</span> <span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">and</span> <span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">Economics;</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">哲学、政治学与经济学</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">)</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">对于国内同学而言</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">可能是个相对陌生的专业</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">因为中国大陆只有北京大学和中国人民大学两所高校直到最近几年来才开设这一本科专业。但</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">PPE</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">专业在全球学科体系和人才培养中却享有盛誉</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,PPE</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">首创于英国牛津大学</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">已有近百年历史</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">牛津大学</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">38</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">个独立学院中有</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">26</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">个学院招收</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">PPE</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">学生</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">伦敦政治经济学院、伦敦国王学院、华威大学、耶鲁大学、宾夕法尼亚大学、杜克大学等世界一流大学均开设该专业</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,PPE</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">专业凭借其卓越的培养模式和严苛的专业训练</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">造就了一大批政治精英与学术领军人物。</span></span></p><p style="text-indent:28px"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;"><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">PPE</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">专业设置的初衷</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">就是深刻认识到单一的学科视野已经无法为日趋复杂的现实世界提供令人满意的解释。正如我们所见</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">当前世界面临的一系列重大问题诸如生态危机、贫富差距、恐怖主义、区域冲突、生命伦理等都不是某一单一的学科可以认识和理解的</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">你很难说贫富差距是个经济学能解决的问题</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">你也不能说恐怖主义是个单纯的文化或政治问题。马克斯</span>·<span style="font-size: 14px; font-family: 方正书宋_GBK;">韦伯很早以前就认识到社会现象并不像自然现象那样可以建构出一些单因果的线性关系</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">而是存在一种</span>“<span style="font-size: 14px; font-family: 方正书宋_GBK;">多因多果</span>”<span style="font-size: 14px; font-family: 方正书宋_GBK;">的复杂性</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">这种复杂性的困难程度以及对这种复杂性的执着求解曾加剧了韦伯的精神危机</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">韦伯提出的著名的政治社会学分析框架</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">即</span>“<span style="font-size: 14px; font-family: 方正书宋_GBK;">政治</span>—<span style="font-size: 14px; font-family: 方正书宋_GBK;">经济</span>—<span style="font-size: 14px; font-family: 方正书宋_GBK;">价值</span>”<span style="font-size: 14px; font-family: 方正书宋_GBK;">三维分析模型</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">便是对复杂社会现象的一种解释方案。不难发现</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">韦伯的政治社会学三维分析模型与</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">PPE</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">的专业方向不谋而合</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">这或许并非巧合</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">而是因为</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">PPE</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">专业的使命就是要探索人类社会的非线性复杂关系</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">其初衷与韦伯的学术旨趣如出一辙。我们清醒地认识到</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">离开政治层面的探讨我们无从获得对经济问题的准确把握</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">离开经济分析同样无法获得对政治问题的深刻理解</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">而包括经济、政治在内的人类活动都脱离不了作为活动主体的人的观念、价值、意识形态以及深层的哲学思考。我们面对的经验世界和人类社会绝非像现有的学科部类那样能够做出严格的区隔和分块</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">只是人为的学科分割带来了视野的局限和理解的偏差。因此</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,PPE</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">专业主张用多学科和交叉学科的视野理解复杂多变的现实世界</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">倡导哲学、政治学和经济学三个学科内在逻辑的一贯性与交互性</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">打破因学科分割带来的视阈局限和对人类社会的片面认识。作为</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">20</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">世纪最杰出的思想家之一</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">哈耶克在谈及其专业道路选择时说</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">:</span>“<span style="font-size: 14px; font-family: 方正书宋_GBK;">我原本对生物学感兴趣</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">但一门哲学原理课改变了我的决定</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">哲学原理的授课老师在讲授亚里士多德时说</span>‘<span style="font-size: 14px; font-family: 方正书宋_GBK;">亚里士多德认为</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">伦理学包括三个部分</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">:</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">道德科学、政治学和经济学</span>’<span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">听了这番话</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">我的第一反应就是</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span>‘<span style="font-size: 14px; font-family: 方正书宋_GBK;">这正是我想要的</span>’”<span style="font-size: 14px; font-family: 方正书宋_GBK;">。哈耶克放弃了生物学以及单纯的经济学学习</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">而是对从哲学层面探讨经济与政治结构的互动问题产生了浓厚兴趣</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">并以巨大的道德勇气和毫不气馁的决心成就了其伟大的思想体系。从某种程度上来讲</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">哈耶克的学术道路和思想历程为</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">PPE</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">树立了典范。</span></span></p><p style="text-indent:28px"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;"><span style="font-size: 14px; font-family: 方正书宋_GBK;">我们可以遵照上述跨学科视野的思路为</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">PPE</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">提供一种专业图景</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">但许多人或许依然会疑惑</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">到底什么是</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">PPE?</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">可不幸的是</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">到目前为止</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">学术界也没有一个统一的</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">PPE</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">学科定义</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">(</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">虽然单纯从字面上理解也未尝不可</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">但这种理解很可能是肤浅的</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">)</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">。我们曾多次尝试给出答案</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">但每次都以失败告终</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">这种失败几乎是被注定了的</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">因为每一次言说都是对</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">PPE</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">未被言说的无限可能的剥夺。但我们还是愿意在这里分享另一种对</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">PPE</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">的理解</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">:</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">如果说经济学、政治学以及一切被细分的社会科学关注的是</span>“<span style="font-size: 14px; font-family: 方正书宋_GBK;">社会如何可能</span>”<span style="font-size: 14px; font-family: 方正书宋_GBK;">以及</span>“<span style="font-size: 14px; font-family: 方正书宋_GBK;">合作如何可能</span>”<span style="font-size: 14px; font-family: 方正书宋_GBK;">等经验世界的具体展开</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">那么</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,PPE</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">就是要通过对经验世界的强烈的介入来回答形而上学的难题</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">即</span>“<span style="font-size: 14px; font-family: 方正书宋_GBK;">何为美好生活</span>”<span style="font-size: 14px; font-family: 方正书宋_GBK;">以及</span>“<span style="font-size: 14px; font-family: 方正书宋_GBK;">何为理想社会</span>”<span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">如果说</span>“<span style="font-size: 14px; font-family: 方正书宋_GBK;">社会如何可能</span>”<span style="font-size: 14px; font-family: 方正书宋_GBK;">以及</span>“<span style="font-size: 14px; font-family: 方正书宋_GBK;">合作如何可能</span>”<span style="font-size: 14px; font-family: 方正书宋_GBK;">是一个认识论或方法论的问题</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">那么</span>“<span style="font-size: 14px; font-family: 方正书宋_GBK;">何为美好生活</span>”<span style="font-size: 14px; font-family: 方正书宋_GBK;">以及</span>“<span style="font-size: 14px; font-family: 方正书宋_GBK;">何为理想社会</span>”<span style="font-size: 14px; font-family: 方正书宋_GBK;">则是一个道德哲学的问题。如何将认识论与道德哲学结合起来</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">便成了</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">PPE</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">的核心使命</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">这就要求我们既要打破价值与事实二分的教条</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">在经验世界与道德哲学之间建立一种新的平衡</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">又要试图去把世界推向某一个方向</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">告诉人们</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">我们到底应该努力去争取一种什么样的理想社会。这当然不再是一个单纯的经济学或政治学的议题</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">也非哲学所能回答。在这样的意义上</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">我们说</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,PPE</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">不是哲学、政治学和经济学三个学科的简单组合</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">而是一种新的生成</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">在这种生成里</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">赋予了</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">PPE</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">新的生命与责任。</span></span></p><p style="text-indent:28px"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;"><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">PPE</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">学生要同时修读哲学、政治学和经济学三个学科的基础课程</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">哲学的基础课程包括形而上学、知识论、伦理学、逻辑与批判性思维、政治哲学</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">政治学主干课程包括中国政治思想史、西方政治思想史、外交学、国际关系、比较政治</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">经济学核心课程包括微观经济学、宏观经济学、计量经济学、政治经济学。在核心课程学习的基础上</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">学生根据自身的专业兴趣</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">确定特定的专业方向</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">有选择性地进行深入系统的专题研究。通过基础课程学习和专题研究</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,PPE</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">学生应该掌握扎实的理论基础与过硬的研究方法</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">培养社会科学研究的基本思维与能力</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">这种思维和能力包括高度抽象和概念能力、逻辑自洽论证的偏好以及批判反思的主体意识。此外</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,PPE</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">学生还应谨守</span>“<span style="font-size: 14px; font-family: 方正书宋_GBK;">明确的问题导向、强烈的现实关怀与严肃的专业精神</span>”<span style="font-size: 14px; font-family: 方正书宋_GBK;">三个基本原则。其中</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">明确的问题导向要求学生围绕某一特定的问题域开展系统深入的训练与研究</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">避免浅尝辄止、蜻蜓点水导致的全面的肤浅</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">;</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">强烈的现实关怀是指</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">PPE</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">学生要紧扣人类社会发展进程中的难题与困境</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">以一种担当的勇气和决心去谋求社会的进步与人类生活质量的改进</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">;</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">严肃的专业精神是指要摒弃好高骛远、眼高手低的幼稚</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">以脚踏实地、沉潜往复的钻研精神</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK;">培养一整套专业的素养和规范。</span></span></p><p><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;"><span style="font-size: 14px; font-family: 方正书宋_GBK; color: black;">&nbsp; &nbsp; &nbsp; &nbsp;如果同意上面的说法</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif; color: black;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK; color: black;">那么选择</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif; color: black;">PPE</span><span style="font-size: 14px; font-family: 方正书宋_GBK; color: black;">可能就不是个容易的决定</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif; color: black;">,</span> <span style="font-size: 14px; font-family: NEU-BZ-S92, serif; color: black;">PPE</span><span style="font-size: 14px; font-family: 方正书宋_GBK; color: black;">意味着超负荷的学习、海量的阅读、严格的自律、敏锐的问题意识、几近严酷的专业训练以及强大的内心。理想中的</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif; color: black;">PPE</span><span style="font-size: 14px; font-family: 方正书宋_GBK; color: black;">学生应该是这样的</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif; color: black;">:</span><span style="font-size: 14px; font-family: 方正书宋_GBK; color: black;">具有独立自主的个性</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif; color: black;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK; color: black;">强烈的价值信念</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif; color: black;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK; color: black;">敢于追求理想并积极承担责任的勇气。</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif; color: black;">PPE</span><span style="font-size: 14px; font-family: 方正书宋_GBK; color: black;">学生是一个理想主义者</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif; color: black;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK; color: black;">他有着对正义的秉持坚守以及对理想社会追求不可遏制的热情</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif; color: black;">;PPE</span><span style="font-size: 14px; font-family: 方正书宋_GBK; color: black;">学生是一个行动主义者</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif; color: black;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK; color: black;">他用他的实践试图去改进社会的效用、增进社会的福利</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif; color: black;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK; color: black;">只是</span><span style="font-size: 14px; font-family: NEU-BZ-S92, serif; color: black;">,</span><span style="font-size: 14px; font-family: 方正书宋_GBK; color: black;">这个行动主义者被赋予了价值与理想的光辉。</span>&nbsp;</span></p><p><span style="color: rgb(35, 31, 32); font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-variant-numeric: normal; font-variant-east-asian: normal; font-size: 14px;"><br style="font-variant-numeric: normal; font-variant-east-asian: normal; line-height: normal; text-align: -webkit-auto; white-space: normal; text-size-adjust: auto;"/><br/></span></p>
+                       
+                        <div class="pull-right mt20">
+                            <!-- JiaThis Button BEGIN -->
+                            <div class="jiathis_style">
+                                <span class="jiathis_txt">分享到：</span>
+                                <a class="jiathis_button_icons_1"></a>
+                                <a class="jiathis_button_icons_2"></a>
+                                <a class="jiathis_button_icons_3"></a>
+                                <a class="jiathis_button_icons_4"></a>
+                                <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
+                                <a class="jiathis_counter_style"></a>
+                            </div>
+                            <script type="text/javascript" src="http://v3.jiathis.com/code/jia.js" charset="utf-8"></script>
+                            <!-- JiaThis Button END -->
+                        </div>
+                    </div>
+                </div>
+                <!--  
+	            <div class="col-md-3 col-sm-4">
+                    <ul class="grey-ul">
+                      
+                    </ul>
+	
+	             </div>
+	           -->
+            </div>
+        </div>
+    </div>
+      
+    <div class="y_foot hidden-xs">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="t_col3">
+                        <h5>联系我们</h5>
+                        <div class="t_icon1">
+                            <i></i>
+                            <span>400-0123-517</span><br/>
+                        </div>
+                        <div class="t_icon2">
+                            <i></i>
+                            <span>zsb@ruc.edu.cn</span></br>
+                        </div>
+                        <div class="t_icon4">
+                            <i></i>
+                            <span>010-62511156(传真)</span></br>
+                        </div>
+                        <div class="t_icon3">
+                            <i></i>
+                            <span>北京市海淀区中关村大街59号<br/>知行F楼(北区食堂)六层</span></br>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="t_col3">
+                        <h5>关注我们</h5>
+                        <img src="/static/default/images/wechat.png" alt="">
+                        <p>扫描二维码关注我们</p>
+                        <p>微信公众号"人大阳光招生"</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="t_col3">
+                        <h5>学术公告</h5>
+                        
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="t_col3">
+                         <h5>快速链接
+                        <a target="_blank" href="http://211.71.30.15/index/index_main.action" style="margin-left: 40px;color: #999;font-weight: normal;font-size: 16px;">返回旧网站</a>
+                               <a target="_blank" href="http://211.71.30.15/index/index_main.action" >
+                                    <span class="icon-wrap">
+                                        <span class="icon icon-arrow_carrot-right_alt2"  style="color: #999"></span>
+                                    </span>
+                                </a>
+                        </h5>
+                        
+                                 
+                        <a href="/cms/item/1031.html" class="t_b" target = _blank>人大主页</a>
+                       
+                                 
+                        <a href="/cms/item/1032.html" class="t_b" target = _blank>人大新闻网</a>
+                       
+                                 
+                        <a href="/cms/item/1038.html" class="t_b" target = _blank>留学生招生</a>
+                       
+                                 
+                        <a href="/cms/item/1037.html" class="t_b" target = _blank>研究生招生</a>
+                       
+                                 
+                        <a href="/cms/item/1036.html" class="t_b" target = _blank>考生黄页</a>
+                       
+                                 
+                        <a href="/cms/item/1035.html" class="t_b" target = _blank>校园地图</a>
+                       
+                                 
+                        <a href="/cms/item/1034.html" class="t_b" target = _blank>校友总会</a>
+                       
+                                 
+                        <a href="/cms/item/1033.html" class="t_b" target = _blank>教育基金会</a>
+                       
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="y_bottom">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="t_info clearfix">
+                        <p>版权所有 Copyright© 中国人民大学本科生招生办公室   京ICP备05066828号-1</p>
+                        <div class="t_flogo">
+                            <a href="http://www.ruc.edu.cn/"><img src="/static/default/images/t_logo.png" alt=""></a>
+                            <a href="#" class="hidden-xs t_back">回顶部</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

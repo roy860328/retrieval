@@ -1,0 +1,1307 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+	<meta name="viewport" content="width=1440">
+	<meta http-equiv="X-UA-Compatible" content="edge" />
+	<link href="../css/style.css" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" href="../css/calendar.min.css">
+	<link rel="shortcut icon" href="../images/ruc/favicon.ico" type="image/x-icon">
+	<script src="../js/j3.js"></script>
+	<link rel="stylesheet" type="text/css" href="../js/swiper-3.4.2.min.css" />
+	<script type="text/javascript" src="../js/swiper-3.4.2.min.js"></script>
+	<style>
+		.labelBilateralchosefairLimit {
+			position: absolute;
+			top: -4px;
+			right: -8px;
+			font-size: 8px;
+			padding: 4px;
+			background: #428bca;
+			color: #fff;
+			border-top-right-radius: 10px;
+			border-bottom-left-radius: 10px;
+			transform: scale(0.7, 0.7);
+		}
+
+		.friendBox {
+			width: 100%;
+			height: auto;
+			background-color: #242933;
+			margin: 0 auto;
+			/*  padding: 56px 0; */
+			padding: 14px 0 30px 0;
+
+		}
+
+		.friendBox .friendWrap {
+			width: 1200px;
+			height: auto;
+			margin: 0 auto;
+		}
+
+		.friendBox .friendWrap .friendHead {
+			width: 100%;
+			height: auto;
+			margin: 0 auto;
+			text-align: center;
+			*zoom: 1;
+		}
+
+		.friendBox .friendWrap .friendHead:before,
+		.friendBox .friendWrap .friendHead:after {
+			content: "";
+			display: table;
+		}
+
+		.friendBox .friendWrap .friendHead:after {
+			clear: both;
+		}
+
+		.friendBox .friendWrap .friendHead .employmentHeadLabel {
+			width: 3px;
+			height: 18px;
+			background-color: #990000;
+			float: left;
+			margin-top: 2px;
+			margin-right: 4px;
+		}
+
+		.friendBox .friendWrap .friendHead .employmentHeadTit {
+			font-family: MicrosoftYaHei-Bold;
+			font-size: 20px;
+			line-height: 22px;
+			font-weight: 600;
+			letter-spacing: 0px;
+			color: #060a11;
+			float: left;
+		}
+
+		.friendBox .friendWrap .friendHead .employmentHeadTit span {
+			color: #990000;
+		}
+
+		.friendBox .friendWrap .friendList {
+			width: 100%;
+			height: auto;
+			margin: 30px auto 0;
+			*zoom: 1;
+			margin-left: 100px;
+		}
+
+		.friendBox .friendWrap .friendList:before,
+		.friendBox .friendWrap .friendList:after {
+			content: "";
+			display: table;
+		}
+
+		.friendBox .friendWrap .friendList:after {
+			clear: both;
+		}
+
+		.friendBox .friendWrap .friendList .friendItem {
+			width: auto;
+			height: auto;
+			float: left;
+			margin-bottom: 5px;
+			margin-right: 12px;
+		}
+
+		.friendBox .friendWrap .friendList .friendItem a {
+			width: 190px;
+			height: 72px;
+			font-family: MicrosoftYaHei;
+			font-weight: normal;
+			font-stretch: normal;
+			letter-spacing: 0px;
+		}
+
+		.friendBox .friendWrap .friendList .friendItem a img {
+			width: 190px;
+			height: 72px;
+		}
+
+		.friendBox .friendWrap .friendList .friendItem:last-child {
+			margin-right: 0;
+		}
+
+		.friendBox .friendWrap .friendList .friendItem:hover a {
+			opacity: 0.7;
+		}
+
+		.spanWrap {
+			width: 250px;
+			word-break: break-all;
+			white-space: nowrap;
+			text-overflow: ellipsis;
+			overflow: hidden;
+		}
+
+		.calendarWrap .calendar .nowInfo li a:hover {
+			color: #428bca !important;
+		}
+		.calendarWrap .calendar .nowInfo li .tit {
+			width: 60%;
+		}
+	</style>
+	<!--[if lt IE 10]>
+		<script type="text/javascript" src="../js/j1.js"></script>
+		<link rel="stylesheet" type="text/css" href="../css/plugs/swiper.css" />
+		<script type="text/javascript" src="../js/swiper.js"></script>
+		<script type="text/javascript" src="../js/html5shiv.js"></script>
+		<style>
+			#banner{
+				float: left;
+			}
+			.labelBilateralchosefairLimit {
+				position: absolute;
+				top: 0;
+				right:0;
+				font-size: 8px;
+				padding: 4px;
+				background: #428bca;
+				color: #fff;
+				border-top-right-radius: 10px ;
+				border-bottom-left-radius: 10px ;
+			}
+			.biaoqianItemHover{
+				border: 1px solid #eee!important;
+			}
+			.leftlb .leftlistlb li{
+				line-height: 20px
+			}
+			.leftlb .leftlistlb {
+				margin-top: 0;
+			}
+		</style>
+		<script>
+			$(function(){
+				$('.biaoqianicon1:nth-child(3n)').css('margin-right','0');
+				$('.biaoqianicon2:nth-child(3n)').css('margin-right','0');
+			})
+		</script>
+	<![endif]-->
+	<!--[if lt IE 8]>
+		<style>
+			.leftlb .leftlistlb li{
+				line-height:30px
+			}
+			.leftlb .leftlistlb {
+				margin-top:10px;
+			}
+			.loginOther  a span{
+				margin-top:6px!important;
+				float:left!important;
+			}
+		</style>
+	<![endif]-->
+	<!-- 配置 -->
+	<script type="text/javascript" src="../js/init.js?v=1.3"></script>
+	<script type="text/javascript" src="../js/artTemplate.js"></script>
+	<script type="text/javascript" src="../js/util.js?v=1.3"></script>
+	<script type="text/javascript" src="../js/tplt.js?v=1.3"></script>
+	<script type="text/javascript" src="../js/pc_mobile_skip.js?v=1.3"></script>
+	<!-- jBox -->
+	<script type="text/javascript" src="../js/jBox/jBox.min.js"></script>
+	<link type="text/css" rel="stylesheet" href="../js/jBox/jBox.min.css" />
+</head>
+
+<body tag="_PAGEINDEX" objid="6001">
+	<!--导航-->
+	<div objid="6010" id="dh" style="z-index:100"></div>
+	<script>
+		$('#dh').load('./header.html?v=1.1')
+	</script>
+	<div objid="6013" id="banner" class="slideBox" style="margin-top: 60px;float:inherit;position: relative;">
+		<div class="bd">
+			<div id="bannerListPlace"></div>
+			<script id="bannerList" type="text/html">
+				{{if !isEmpty(bannerList)}}
+				<div class="swiper-container">
+					<ul class="swiper-wrapper">
+						{{each bannerList as value}}
+						<li class="swiper-slide">
+							<a href="{{value.linkurl}}">
+								<img src="{{value.pictureOne}}" width='100%' height='420px' />
+							</a>
+						</li>
+						{{/each}}
+					</ul>
+				</div>
+				{{/if}}
+			</script>
+		</div>
+		<!-- 下面是前/后按钮代码，如果不需要删除即可 -->
+		<div class="prev swiper-button-prev" href="javascript:;"></div>
+		<div class="next swiper-button-next" href="javascript:;"></div>
+		<style>
+			.prev {
+				position: absolute;
+				width: 32px;
+				height: 60px;
+				left: 100px;
+				top: 50%;
+				margin-top: -30px;
+				cursor: pointer;
+				opacity: 0.9;
+				z-index: 1000;
+				background: url(../images/indexw/left.png) center center no-repeat;
+			}
+
+			.next {
+				position: absolute;
+				width: 32px;
+				height: 60px;
+				right: 100px;
+				top: 50%;
+				margin-top: -30px;
+				cursor: pointer;
+				opacity: 0.9;
+				z-index: 1000;
+				background: url(../images/indexw/right.png) center center no-repeat;
+			}
+		</style>
+	</div>
+	<div class="loginMianWrap">
+		<div class="loginMian">
+			<div objid="6003" id="lanmurili" style="z-index: 6;width: 770px;position: relative;top:0;float: left;">
+				<!--登录入口-->
+				<div objid="6004" class="lanmu" style="margin-left: 0;">
+					<a href="/a/login_student" target="_blank">
+						<div objid="6005" class="biaoqianicon1" onmouseover="this.className='biaoqianicon2'"
+							onmouseout="this.className='biaoqianicon1'">
+							<img class="stuIcon" src="../images/ruc/icon_stu.png" alt="">
+							<span objid="6119" class="biaoqianfontC">我是学生</span><br />
+							<span objid="6120" class="biaoqianfontE">Student</span>
+						</div>
+					</a>
+					<a href="/a/login_corporation" target="_blank">
+						<div objid="6006" class="biaoqianicon1" onmouseover="this.className='biaoqianicon2'"
+							onmouseout="this.className='biaoqianicon1'">
+							<img class="stuIcon" src="../images/ruc/icon_ent.png" alt="">
+							<span objid="6121" class="biaoqianfontC">我是企业</span><br />
+							<span objid="6122" class="biaoqianfontE">Enterprise</span>
+						</div>
+					</a>
+					<a href="/a/login_teacher" target="_blank">
+						<div objid="6007" class="biaoqianicon1" onmouseover="this.className='biaoqianicon2'"
+							onmouseout="this.className='biaoqianicon1'" style="margin-right: 0;">
+							<img class="stuIcon" src="../images/ruc/icon_alu.png" alt="">
+							<!--/toLoginPage.action?empLogin.userType=1 -->
+							<span objid="6123" class="biaoqianfontC">我是学院</span><br />
+							<span objid="6124" class="biaoqianfontE">Alumnus</span>
+						</div>
+					</a>
+				</div>
+				<style>
+					.loginOther {
+						width: 120px;
+						height: 28px;
+						background-color: #368fd7;
+						border-radius: 14px;
+						float: left;
+						margin-top: 30px;
+						margin-left: 15px;
+					}
+
+					.collegeOther {
+						width: 120px;
+						height: 28px;
+						background-color: #368fd7;
+						border-radius: 14px;
+						float: right;
+						margin-top: 30px;
+						margin-right: 110px;
+					}
+
+					.loginOther a {
+						display: inline-block;
+					}
+
+					.loginOther a img {
+						float: left;
+						width: 11px;
+						height: 12px;
+						margin-top: 8px;
+						margin-right: 4px;
+					}
+
+					.loginOther a span {
+						font-family: MicrosoftYaHei;
+						font-size: 12px;
+						font-weight: normal;
+						font-stretch: normal;
+						line-height: 12px;
+						letter-spacing: 0px;
+						color: #ffffff;
+					}
+
+					.loginOther:hover {
+						background-color: #6eade1;
+					}
+				</style>
+			</div>
+			<!--日历-->
+			<div class="calendarWrap" style="float: right;position: relative;margin-top: -120px;z-index: 8;">
+				<div objid="6008" class="calendar" id="calendar" style="z-index:2"></div>
+			</div>
+			<div style="clear: both;"></div>
+		</div>
+	</div>
+	<div class="mainWrap">
+		<!--四个栏目-->
+		<div objid="6014" class="fourcolumns">
+			<table objid="6002" width="1180" border="0" align="center" cellpadding="0" cellspacing="0" class="kuang">
+				<tr>
+					<td width="774">
+						<!--左侧三个栏目-->
+						<div objid="6015" class="biaoqianlan">
+							<div objid="6016" class="biaoqianbt">
+								<div objid="6017" id="mouse1" class="biaoqian1"
+									onmouseover="$(this).addClass('biaoqian2')"
+									onmouseout="$(this).removeClass('biaoqian2')">
+									<span objid="6129" class="biaoqianfont">招聘信息</span>
+									<span objid="6130" class="biaoqianmore">
+										<a target="_blank" href="recruitmentinfoList.html">更多>></a>
+									</span>
+								</div>
+								<div objid="6018" id="mouse2" class="biaoqian1"
+									onmouseover="$(this).addClass('biaoqian2')"
+									onmouseout="$(this).removeClass('biaoqian2')">
+									<span objid="6131" class="biaoqianfont">双选会</span>
+									<span objid="6132" class="biaoqianmore">
+										<a target="_blank" href="./bilateralchosefairList.html?type=4">更多>></a>
+									</span>
+								</div>
+								<div objid="6018" id="mouse4" class="biaoqian1"
+									onmouseover="$(this).addClass('biaoqian2')"
+									onmouseout="$(this).removeClass('biaoqian2')">
+									<span objid="6131" class="biaoqianfont">宣讲会</span>
+									<span objid="6132" class="biaoqianmore">
+										<a target="_blank" href="./recruitmentFairList.html?type=4">更多>></a>
+									</span>
+								</div>
+								<div objid="6019" id="mouse3" class="biaoqian1"
+									onmouseover="$(this).addClass('biaoqian2')"
+									onmouseout="$(this).removeClass('biaoqian2')">
+									<span objid="6133" class="biaoqianfont">通知公告</span>
+									<span objid="6134" class="biaoqianmore">
+										<a target="_blank" class="newsHref" href="#">更多>></a>
+									</span>
+								</div>
+							</div>
+							<div class="leftlb" id="dis1">
+								<div id="recruitmentPlace"></div>
+								<script id="recruitment" type="text/html">
+									{{if !isEmpty(recruitment)}}
+									<div class="biaoqianList">
+										{{each recruitment as item index}}
+										{{if index < 2}}
+										<div class="biaoqianItem">
+											<div class="biaoqianTits"><a title="{{item.title}}" href="{{item.url}}">{{item.title}}</a></div>
+											<div class="biaoqianWrap">
+												<div class="comLogoWrap">
+													<div style="display:table-cell;vertical-align:middle">
+														<img class="comLogo"
+															src="{{item.corporationinfo.logoUrl?item.corporationinfo.logoUrl:'../images/frontPage/defaultImg.png'}}"
+															alt="" style="max-width:132px;max-height:82px;">
+													</div>
+												</div>
+												<div class="comWrap">
+													{{if !isEmpty(item.corporationinfo.corporationNatureValue)}}
+													{{if item.corporationinfo.corporationScaleValue}}
+													<div class="comDesc">{{item.corporationinfo.corporationScaleValue}}</div>
+													{{else}}
+													<div class="comDesc">{{item.corporationinfo.corporationNatureValue}} |
+														{{item.corporationinfo.corporationScaleValue}}</div>
+													{{/if}}
+													{{else}}
+													{{if !isEmpty(item.corporationinfo.corporationScaleValu)}}
+													<div class="comDesc">{{item.corporationinfo.corporationScaleValue}}</div>
+													{{else}}
+													<div class="comDesc">暂无</div>
+													{{/if}}
+													{{/if}}
+													<div class="comName">{{item.corporationinfo.name}}</div>
+													{{if !isEmpty(item.startTime)}}
+													<div class="comdate">{{item.startTime.slice(0,10)}}</div>
+													{{/if}}
+												</div>
+											</div>
+										</div>
+										{{/if}}
+										{{/each}}
+									</div>
+									{{/if}}
+									<div objid="6026" class="leftlist">
+										<!-- 第一个列表 -->
+										<div objid="6027" class="leftlistlb">
+											{{if !isEmpty(recruitment)}}
+											<ul objid="6064">
+												{{each recruitment as items index}}
+												{{if index< 8 && index>1}}
+												<li>
+													{{if !isEmpty(items.startTime)}}
+													<span objid="6137" style="float:left"
+														class="leftlistlbtime">{{items.startTime.slice(5,10)}}</span>
+													{{else}}
+													<span objid="6137" class="leftlistlbtime"></span>
+													{{/if}}
+													<a title="{{items.title}}" href="{{items.url}}">{{items.title}}</a>
+												</li>
+												{{/if}}
+												{{/each}}
+											</ul>
+											{{/if}}
+										</div>
+										<!-- 第二个列表 -->
+										<div objid="6028" class="leftlistlb">
+											{{if !isEmpty(recruitment)}}
+											<ul objid="6064">
+												{{each recruitment as items index}}
+												{{if index<14 && index>7}}
+												<li>
+													{{if !isEmpty(items.startTime)}}
+													<span style="float:left" objid="6137"
+														class="leftlistlbtime">{{items.startTime.slice(5,10)}}</span>
+													{{else}}
+													<span objid="6137" class="leftlistlbtime"></span>
+													{{/if}}
+													<a title="{{items.title}}" href="{{items.url}}">{{items.title}}</a>
+												</li>
+												{{/if}}
+												{{/each}}
+											</ul>
+											{{/if}}
+										</div>
+									</div>
+								</script>
+							</div>
+							<div class="leftlb" id="dis2" style="display: none;">
+								<div id="doubleMeetingPlace"></div>
+								<script id="doubleMeeting" type="text/html">
+									{{if !isEmpty(doubleMeeting)}}
+									<div class="biaoqianList">
+										{{each doubleMeeting as item index}}
+										{{if index< 6 }}
+										<div class="biaoqianItem biaoqianItemHover" style="height:auto;padding:18px 16px;position:relative">
+											{{if item.holdStatus==0}}
+											<div class="labelBilateralchosefairLimit">即将开始</div>
+											{{else if item.holdStatus=='进行中'}}
+											<div class="labelBilateralchosefairLimit">火热进行中</div>
+											{{else if item.holdStatus=='已结束'}}
+											<div class="labelBilateralchosefairLimit">已举办</div>
+											{{else}}
+											<div class="labelBilateralchosefairLimit">{{item.holdStatus}}</div>
+											{{/if}}
+											
+											<div class="time">
+												<span class="hour"> {{item.startTime.slice(11,16)}}</span>
+												<span class="date">
+													{{timestamp(item.ajaxStartTime)}}
+												</span>
+											</div>
+											<div class="biaoqianTit">
+												<a href="{{item.url}}" title="{{item.title}}" target="_blank">{{item.title}}</a>
+											</div>
+											<div style="width:70%;text-align:left;color:#999999;font-size:14px;margin-top:6px;margin-left:8px;float:left"
+												class="comdate"><img src="../images/indexw/addInd.png" alt="">
+												{{item.place}}
+											</div>
+										</div>
+										{{/if}}
+										{{/each}}
+									</div>
+									{{/if}}
+								</script>
+							</div>
+							<div class="leftlb" id="dis4" style="display: none;">
+								<div id="lecturePlace"></div>
+								<script id="lecture" type="text/html">
+									{{if !isEmpty(lecture)}}
+									<div class="biaoqianList">
+										{{each lecture as item index}}
+										{{if index < 6 }}
+										<div class="biaoqianItem biaoqianItemHover" style="height:auto;padding:18px 16px;position: relative;">
+											{{if item.holdStatus==0}}
+											<div class="labelBilateralchosefairLimit">即将开始</div>
+											{{else if item.holdStatus==1}}
+											<div class="labelBilateralchosefairLimit">火热进行中</div>
+											{{else if item.holdStatus==2}}
+											<div class="labelBilateralchosefairLimit">已举办</div>
+											{{/if}}
+											<div class="time">
+												<span class="hour">{{item.startTime.slice(11,16)}}</span>
+												<span class="date">{{timestamp(item.ajaxStartTime)}}</span>
+											</div>
+											<div class="biaoqianTit">
+												<a href="{{item.url}}" title="{{item.title}}" target="_blank">{{item.title}}</a>
+											</div>
+											<div style="width:70%;text-align:left;color:#999999;font-size:14px;margin-top:6px;margin-left:8px;float:left"
+												class="comdate"><img src="../images/indexw/addInd.png" alt="">
+												{{ item.fieldExport }}
+											</div>
+										</div>
+										{{/if}}
+										{{/each}}
+									</div>
+									{{/if}}
+								</script>
+							</div>
+							<div class="leftlb" id="dis3" style="display: none;">
+								<div id="guidancePlace"></div>
+								<script id="guidance" type="text/html">
+									{{if !isEmpty(guidance[0])}}
+									<div objid="6021" class="leftbtlan">
+										<span objid="6135" class="pic"><img objid="6172" src="../images/shili.jpg"></span>
+										<div objid="6022" class="leftbt">
+											<div objid="6023" class="leftlbbt">
+												<div objid="6024" class="leftbtfont1">{{guidance[0][0].releaseDate.slice(5,10)}}</div>
+												<span objid="6136" class="leftbtfont2"><a objid="6081"
+														href="{{guidance[0][0].url}}">{{guidance[0][0].title}}</a></span>
+											</div>
+											<div objid="6025" class="leftbttxt"
+												style="display: -webkit-box; -webkit-line-clamp: 3;-webkit-box-orient: vertical; overflow : hidden;">
+												{{guidance[0][0].description}}
+											</div>
+										</div>
+									</div>
+									{{/if}}
+									<div objid="6026" class="leftlist">
+										<!-- 第一个列表 -->
+										<div objid="6027" class="leftlistlb">
+											{{if !isEmpty(guidance[0])}}
+											<ul objid="6064">
+												{{each guidance[0] as items index}}
+												{{if index< 7 && index>0}}
+												<li>
+													<span objid="6137" class="leftlistlbtime">{{items.releaseDate.slice(5,10)}}</span>
+													<a title="{{items.title}}" href="{{items.url}}">{{items.title}}</a>
+												</li>
+												{{/if}}
+												{{/each}}
+											</ul>
+											{{/if}}
+										</div>
+										<!-- 第二个列表 -->
+										<div objid="6028" class="leftlistlb">
+											{{if !isEmpty(guidance[0])}}
+											<ul objid="6064">
+												{{each guidance[0] as items index}}
+												{{if index<13 && index>6}}
+												<li>
+													<span objid="6137" class="leftlistlbtime">{{items.releaseDate.slice(5,10)}}</span>
+													<a title="{{items.title}}" href="{{items.url}}">{{items.title}}</a>
+												</li>
+												{{/if}}
+												{{/each}}
+											</ul>
+											{{/if}}
+										</div>
+									</div>
+								</script>
+							</div>
+							<style>
+								.biaoqianList {
+									overflow: hidden;
+									margin: 20px auto 0;
+									display: flex;
+									justify-content: space-between;
+									flex-wrap: wrap;
+								}
+
+								.biaoqianItem {
+									width: 330px;
+									height: 108px;
+									background-color: #ffffff;
+									border: 1px solid transparent;
+									box-shadow: 2px 2px 7px rgba(69, 88, 77, 0.23);
+									padding: 24px 20px;
+									margin: 2px 6px 20px 2px;
+									float: left;
+								}
+
+								.biaoqianItem .time {
+									width: 78px;
+									height: 68px;
+									float: left;
+									border: 1px dashed #428bca;
+									margin-right: 6px;
+								}
+
+								.time .hour {
+									color: #fff;
+									font-size: 18px;
+									background: #428bca;
+								}
+
+								.biaoqianItemHover:hover {
+									border: 1px solid #428bca;
+								}
+
+								.time span {
+									display: block;
+									text-align: center;
+									height: 34px;
+									font-size: 16px;
+									line-height: 34px;
+								}
+
+								.biaoqianTit a {
+									display: block;
+									width: 244px;
+									text-align: left;
+									height: 24px;
+									margin-top: 12px;
+									font-family: MicrosoftYaHei;
+									font-size: 16px;
+									font-weight: normal;
+									font-stretch: normal;
+									line-height: 18px;
+									letter-spacing: 0px;
+									text-align: left;
+									color: #333333;
+									overflow: hidden;
+									text-overflow: ellipsis;
+									white-space: nowrap;
+									float: right;
+								}
+
+								.biaoqianTit a:hover {
+									color: #428bca;
+								}
+
+								.biaoqianTits a {
+									display: block;
+									width: 100%;
+									text-align: left;
+									height: 20px;
+									font-family: MicrosoftYaHei;
+									font-size: 16px;
+									font-weight: normal;
+									font-stretch: normal;
+									line-height: 18px;
+									letter-spacing: 0px;
+									text-align: left;
+									color: #333333;
+									overflow: hidden;
+									text-overflow: ellipsis;
+									white-space: nowrap;
+								}
+
+								.biaoqianTits a:hover {
+									color: #428bca;
+								}
+
+								.biaoqianWrap {
+									overflow: hidden;
+									display: flex;
+									align-items: center;
+									justify-content: space-between;
+									margin-top: 15px;
+								}
+
+								.comLogoWrap {
+									width: 132px;
+									height: 82px;
+									background-color: #ffffff;
+									float: left;
+									display: table;
+								}
+
+								.comLogo {
+									max-width: 132px;
+									max-height: 82px;
+									vertical-align: center;
+								}
+
+								.comWrap {
+									width: 183px;
+									height: 82px;
+									float: right;
+								}
+
+								.comWrap .comDesc {
+									font-family: MicrosoftYaHei;
+									font-size: 12px;
+									font-weight: normal;
+									font-stretch: normal;
+									line-height: 14px;
+									letter-spacing: 0px;
+									color: #666666;
+									padding-bottom: 8px;
+									border-bottom: 1px solid #dddddd;
+									text-align: left;
+								}
+
+								.comWrap .comName {
+									font-family: MicrosoftYaHei;
+									font-size: 14px;
+									font-weight: normal;
+									font-stretch: normal;
+									line-height: 16px;
+									letter-spacing: 0px;
+									color: #333333;
+									height: 16px;
+									overflow: hidden;
+									text-overflow: ellipsis;
+									white-space: nowrap;
+									text-align: left;
+									margin-top: 10px;
+								}
+
+								.comWrap .comdate {
+									font-family: MicrosoftYaHei;
+									font-size: 12px;
+									font-weight: normal;
+									font-stretch: normal;
+									line-height: 14px;
+									letter-spacing: 0px;
+									color: #999999;
+									text-align: left;
+									margin-top: 10px;
+								}
+							</style>
+						</div>
+					</td>
+
+					<td width="406" align="right" valign="top">
+						<!--重要通知-->
+						<div objid="6029" class="zytzkuang"
+							style="float:right;width:384px;overflow: hidden;margin-top: 20px;margin-right: 0;">
+							<div id="newsWrapPlace"></div>
+							<script id="newsWrap" type="text/html">
+								<div objid="6030" class="zytzbt">
+									<div objid="6031" class="zytzbq">
+										<span objid="6149" class="zytzbticon"><img objid="6173" src="../images/icon5.jpg" /></span>
+										<span objid="6150" class="zytzbtfont">重要通知</span>
+									</div>
+									<div objid="6032" class="zytzbqmore"><a objparam="columnid:12,columnname:重要通知" tag="_column" objid="6094"
+											href="./newsList.html?id={{newsWrap.id}}">更多>></a></div>
+								</div>
+								<div objid="6033" class="zytzlist">
+									<ul objid="6066">
+										{{each newsWrap as item index}}
+										{{if index< 10 }}
+										<li>
+											<a objid="6095" title="{{item.title}}" href="{{item.url}}">{{item.title}}</a>
+											<span objid="6151" class="zytztime">{{item.releaseDate.slice(0,10)}}</span>
+										</li>
+										{{/if}}
+										{{/each}}
+									</ul>
+								</div>
+							</script>
+						</div>
+					</td>
+				</tr>
+			</table>
+		</div>
+	</div>
+	<!--日历-->
+	<style>
+		.mainWrap {
+			width: 1180px;
+			margin: 30px auto 0;
+			height: auto;
+			overflow: hidden;
+		}
+
+		.mainLeft {
+			width: 770px;
+			float: left;
+		}
+
+		.mainRight {
+			width: 388px;
+			float: right;
+		}
+
+		.biaoqianlan .biaoqian3 {
+			float: left;
+			height: 55px;
+			width: 256px;
+			float: left;
+			cursor: pointer;
+			background-image: url(../images/biaoqiandowen.jpg);
+			background-repeat: repeat-x;
+			background-position: center bottom;
+		}
+	</style>
+	<!-- <div objid="6034"  id="advertising"><a objid="6105"  href="#"><a objid="6106"  href="./newKnown.html" target="view_window"><img objid="6174"  src="../images/link1.png" width='auto' height='100%'/></a></a></div> -->
+
+	<div class="ruc-new">
+		<a href="./newKnown.html" class="ruc-new-a"></a>
+		<a href="./studyAbroad.html" class="ruc-new-a1"></a>
+		<div class="ruc-new-line">
+			<a href="./newKnown.html" target="_blank" class="ruc-new-img"></a>
+			<a href="./studyAbroad.html" target="_blank" class="ruc-new-img1"></a>
+			<!-- <div class="ruc-new-img"></div>
+			<div href="./studyAbroad.html" class="ruc-new-img1"></div> -->
+		</div>
+		<!-- <a href="./newKnown.html" class="ruc-new-img"></a>
+		<a href="./studyAbroad.html" class="ruc-new-img1"></a> -->
+	</div>
+	<style>
+		.ruc-new {
+			width: 100%;
+			height: 182px;
+			background: url(../images/indexw/bg-ruc1.png) center center no-repeat;
+			background-size: cover;
+			position: relative;
+		}
+
+		.ruc-new:hover::before {
+			width: 100%;
+			height: 182px;
+			content: "";
+			position: absolute;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			top: 0;
+			/* background-color: rgba(0, 0, 0, .5); */
+			background: url(../images/indexw/bg-ruc1-hover.png) center no-repeat;
+			background-size: cover;
+		}
+
+		.ruc-new-line {
+			position: absolute;
+			width: 2px;
+			height: 182px;
+			background: rgba(255, 255, 255, 0.56);
+			border-radius: 1px;
+			top: 0;
+			left: 50%;
+			transform: translate(-50%, 0);
+		}
+
+		.ruc-new-a {
+			position: absolute;
+			width: 50%;
+			height: 182px;
+			top: 0;
+			left: 0;
+			display: inline-block;
+			cursor: pointer;
+			/* transform: translate(-50%, 0); */
+		}
+
+		.ruc-new-a1 {
+			position: absolute;
+			width: 50%;
+			height: 182px;
+			top: 0;
+			right: 0;
+			display: inline-block;
+			cursor: pointer;
+		}
+
+		.ruc-new-img {
+			width: 259px;
+			height: 75px;
+			background: url(../images/indexw/jy-ruc.png) no-repeat;
+			background-size: cover;
+			display: inline-block;
+			cursor: pointer;
+			position: absolute;
+			top: 53.5px;
+			right: 100px;
+			z-index: 99;
+		}
+
+		/* .ruc-new-img:hover {
+			width: 259px;
+			height: 75px;
+			background: url(../images/indexw/jy-ruc-hover.png) no-repeat;
+			background-size: cover;
+			display: inline-block;
+			cursor: pointer;
+			position: absolute;
+			top: 53.5px;
+			right: 113px;
+			z-index: 99;
+		} */
+
+		/* .ruc-new-img:hover.ruc-new::before {
+			width: 100%;
+			height: 182px;
+			content: "";
+			position: absolute;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			top: 0;
+			background: url(../images/indexw/bg-ruc1-hover.png) center no-repeat;
+			background-size: cover;
+			z-index: 2
+		} */
+
+		.ruc-new-img1 {
+			width: 431px;
+			height: 75px;
+			background: url(../images/indexw/lx-ruc1.png) no-repeat;
+			background-size: cover;
+			display: inline-block;
+			cursor: pointer;
+			position: absolute;
+			top: 53.5px;
+			/* left: 55%; */
+			/* left: 113px; */
+			left: 100px;
+			z-index: 99;
+		}
+
+		/* .ruc-new-img1:hover {
+			width: 385px;
+			height: 75px;
+			background: url(../images/indexw/lx-ruc-hover.png) no-repeat;
+			background-size: cover;
+			display: inline-block;
+			cursor: pointer;
+			position: absolute;
+			top: 53.5px;
+			left: 113px;
+			z-index: 99;
+		} */
+	</style>
+
+	<!--图片链接-->
+	<div objid="6035" class="linkkuang">
+		<div objid="6036" class="linklb">
+			<a objparam="columnid:8,columnname:就业沙龙" tag="_column" objid="6107" href="./trainActivities.html"><img
+					objid="6175" src="../images/ico7.png" /></a><br />
+			<span objid="6161" class="linklbfont1"><a objparam="columnid:8,columnname:就业沙龙" tag="_column" objid="6108"
+					href="./trainActivities.html">就业指导活动</a></span><br />
+			<span objid="6162" class="linklbfont2">学生职业发展第二课堂</span>
+		</div>
+		<div objid="6037" class="linklb"> <a objparam="columnid:13,columnname:leader计划" tag="_column" objid="6109"
+				href="./newsList.html?id=13"><img objid="6176" src="../images/ico6.png" alt="" /></a><br />
+			<span objid="6163" class="linklbfont1"><a objparam="columnid:13,columnname:leader计划" tag="_column"
+					objid="6110" href="./newsList.html?id=13">LEAD计划</a></span><br />
+			<span objid="6164" class="linklbfont2">学生职业生涯引领计划</span>
+		</div>
+		<div objid="6038" class="linklb"> <a objparam="columnid:10,columnname:职业测评" tag="_column" objid="6111"
+				href="/a/thirdAuthentication/careersky"><img objid="6177" src="../images/ico5.png" alt="" /></a><br />
+			<span objid="6165" class="linklbfont1"><a objparam="columnid:10,columnname:职业测评" tag="_column" objid="6112"
+					href="/a/thirdAuthentication/careersky">职业评测</a></span><br />
+			<span objid="6166" class="linklbfont2">科学合理进行职业规划</span>
+		</div>
+		<div objid="6039" class="linklb"> <a objparam="columnid:7,columnname:资料下载" tag="_column" objid="6113"
+				href="./newsList.html?id=7"><img objid="6178" src="../images/download.png" alt="" /></a><br />
+			<span objid="6167" class="linklbfont1"><a objparam="columnid:7,columnname:资料下载" tag="_column" objid="6114"
+					href="./newsList.html?id=7">资料下载</a></span><br />
+			<span objid="6168" class="linklbfont2">学生就业相关资料下载</span>
+		</div>
+	</div>
+	<!--友情链接-->
+	<div class="friendBox">
+		<div class="friendWrap">
+			<!-- <div class="friendHead">
+				<div class="employmentHeadLabel"></div>
+				<div class="employmentHeadTit"> <span>友情</span>链接</div>
+			</div> -->
+			<div id="partnersPlace"></div>
+			<script id="partners" type="text/html">
+				{{if !isEmpty(partners)}}
+				<div class="friendList">
+					{{each partners as value index}}
+					{{if index<5}}
+					<div class="friendItem">
+						<a href="{{value.href}}" target="_black" title="{{value.title}}" style="display: block;">
+							<img src="{{value.image}}" alt="">
+						</a>
+					</div>
+					{{/if}}
+					{{/each}}
+				</div>
+				{{/if}}
+			</script>
+		</div>
+	</div>
+	<div class="footWrap"></div>
+	<script>
+		$('.footWrap').load('./footer.html?v=022716')
+	</script>
+</body>
+
+</html>
+<style>
+	.biaoqianlan .biaoqianfont {
+		margin-left: 0px;
+	}
+
+	.biaoqianlan .biaoqian1 {
+		width: 192px;
+	}
+
+	.biaoqianlan .biaoqian1 {
+		width: 192px;
+	}
+</style>
+<div class="pageToTop"></div>
+<script src="../js/newDateFrontIndex.js"></script>
+<script type="text/javascript">
+	template.helper('typeToName', function (type) {
+		var names = {
+			'3': '空中宣讲会',
+			'4': '视频宣讲会',
+			'5': '校外云宣讲'
+		}
+		return names[type];
+	});
+	/**日期格式化*/
+	template.helper('timestamp', function (value) {
+		var date = new Date(value);
+		var y = date.getFullYear();
+		var m = date.getMonth() + 1;
+		m = m < 10 ? ('0' + m) : m;
+		var d = date.getDate();
+		d = d < 10 ? ('0' + d) : d;
+		return m + '月' + d + '日';
+	});
+	// 日历
+	$('#calendar').eCalendar({}, '/');
+	$(function () {
+		//banner
+		var bannerNum = {
+			num: 4,
+			type: 'pc_type'
+		}
+		$.ajax({
+			type: 'post',
+			url: $.url('f/ajaxHome/ajax_IndexSwiper'),
+			data: bannerNum,
+			dataType: "json",
+			success: function (res) {
+				if (res.state == 1) {
+					if (res.object) {
+						tplt.draw('bannerList', {
+							bannerList: res.object
+						});
+						if (parseInt($.IE.getVersion()) < 10) {
+							//ie9及以下版本
+							var swiper = new Swiper('.swiper-container', {
+								slidesPerView: 1,
+								loop: true,
+								autoplay: 5000,
+								prevButton: '.swiper-button-next',
+								nextButton: '.swiper-button-prev',
+								onSlideChangeEnd: function () {
+									if (this.resizeFix) {
+										this.resizeFix();
+									}
+								}
+							});
+						} else {
+							var swiper = new Swiper('.swiper-container', {
+								slidesPerView: 1,
+								loop: true,
+								prevButton: '.swiper-button-next',
+								nextButton: '.swiper-button-prev',
+								pagination: '.pagination'
+							});
+							$('.banner .pagination .swiper-pagination-switch').on('click',
+								function () {
+									var len = $(this).prevAll('.swiper-pagination-switch').length;
+									swiper.swipeTo(len, 700, false);
+								});
+						}
+					}
+				}
+			},
+			error: function (error) {}
+		})
+		//招聘信息
+		var dataArr1 = {
+			'num': 20
+		}
+		$.ajax({
+			type: 'post',
+			url: $.url('f/ajaxHome/ajax_findRecruitmentinfoLimitList'),
+			dataType: 'json',
+			data: dataArr1,
+			success: function (res) {
+				if (res.state == 1) {
+					tplt.draw('recruitment', {
+						recruitment: $.out(res, 'object') || []
+					});
+				}
+			},
+			error: function (error) {},
+			complete: function () {}
+		});
+		// 宣讲会
+		var dataArr4 = {
+			'num': 6,
+			'positionType': 1
+		}
+		$.ajax({
+			type: 'get',
+			url: $.url('f/ajaxHome/ajax_findRecruitmentFairLimitList'),
+			dataType: "json",
+			data: dataArr4,
+			beforeSend: function (xhr) {
+				// xhr.setRequestHeader("token",window._config.token);
+			},
+			success: function (res) {
+				if (res.state == 1) {
+					tplt.draw('lecture', {
+						lecture: $.out(res, 'object') || []
+					});
+				} else {
+					tplt.draw('lecture', {
+						lecture: []
+					});
+				}
+			},
+			error: function (error) {
+				console.log("发生错误：" + error)
+			}
+		});
+		//双选会
+		var dataArr3 = {
+			'num': 20
+		}
+		$.ajax({
+			type: 'get',
+			url: $.url('f/ajaxHome/ajax_findBilateralchosefairLimitList'),
+			dataType: "json",
+			data: dataArr3,
+			success: function (res) {
+				if (res.state == 1) {
+					tplt.draw('doubleMeeting', {
+						doubleMeeting: $.out(res, 'object') || []
+					});
+				}
+			},
+			error: function (error) {}
+		})
+
+		//友情链接
+		var headData = {
+			'categoryId': window._config.friendId,
+			'number': 10
+		};
+		$.ajax({
+			type: 'post',
+			url: $.url('f/newsCenter/ajax_link'),
+			data: headData,
+			dataType: "json",
+			beforeSend: function (xhr) {
+				// xhr.setRequestHeader("token", window._config.token);
+			},
+			success: function (res) {
+				console.log(res, 'link')
+				if (res.state == 1) {
+					tplt.draw('partners', {
+						partners: $.out(res, 'object') || []
+					});
+					$('.friendItem:nth-child(6n)').css('margin-right', '0')
+				} else {
+					tplt.draw('partners', {
+						partners: []
+					});
+				}
+			},
+			error: function (error) {
+				console.log("发生错误：" + error)
+			}
+		})
+
+		if (window._config.guidanceId) {
+			var newIds = []
+			for (var i = 0; i < window._config.guidanceId.length; i++) {
+				newIds.push(window._config.guidanceId[i].id)
+			}
+			var headData = {
+				'categoryIds': newIds.join(','),
+				'number': '20'
+			};
+			$.ajax({
+				type: 'post',
+				url: $.url('f/ajaxHome/ajax_cmsListByIds'),
+				data: headData,
+				dataType: "json",
+				success: function (res) {
+					if (res.state == 1) {
+						var object = res.object;
+						for (var i = 0; i < window._config.guidanceId.length; i++) {
+							object[i].id = window._config.guidanceId[i].id
+						}
+						$('.newsHref').attr('href', './newsList.html?id=' + window._config.guidanceId[
+							0].id)
+						tplt.draw('guidance', {
+							guidance: object
+						});
+						tplt.draw('newsWrap', {
+							newsWrap: object[1]
+						});
+					} else {
+						tplt.draw('guidance', {
+							guidance: []
+						});
+					}
+
+				},
+				error: function (error) {}
+			})
+		}
+		$("#mouse1").hover(function () {
+			$("#dis1").css("display", "block");
+			$("#dis2").css("display", "none");
+			$("#dis3").css("display", "none");
+			$("#dis4").css("display", "none");
+		});
+		$("#mouse2").hover(function () {
+			$("#dis2").css("display", "block");
+			$("#dis1").css("display", "none");
+			$("#dis3").css("display", "none");
+			$("#dis4").css("display", "none");
+		});
+		$("#mouse3").hover(function () {
+			$("#dis3").css("display", "block");
+			$("#dis4").css("display", "none");
+			$("#dis2").css("display", "none");
+			$("#dis1").css("display", "none");
+		});
+		$("#mouse4").hover(function () {
+			$("#dis4").css("display", "block");
+			$("#dis3").css("display", "none");
+			$("#dis2").css("display", "none");
+			$("#dis1").css("display", "none");
+		});
+
+		function IEVersion() {
+			var userAgent = navigator.userAgent; //取得浏览器的userAgent字符串  
+			var isIE = userAgent.indexOf("compatible") > -1 && userAgent.indexOf("MSIE") > -1; //判断是否IE<11浏览器  
+			var isEdge = userAgent.indexOf("Edge") > -1 && !isIE; //判断是否IE的Edge浏览器  
+			var isIE11 = userAgent.indexOf('Trident') > -1 && userAgent.indexOf("rv:11.0") > -1;
+			if (isIE) {
+				var reIE = new RegExp("MSIE (\\d+\\.\\d+);");
+				reIE.test(userAgent);
+				var fIEVersion = parseFloat(RegExp["$1"]);
+				if (fIEVersion == 7) {
+					return 7;
+				} else if (fIEVersion == 8) {
+					return 8;
+				} else if (fIEVersion == 9) {
+					return 9;
+				} else if (fIEVersion == 10) {
+					return 10;
+				} else {
+					return 6; //IE版本<=7
+				}
+			} else if (isEdge) {
+				return 'edge'; //edge
+			} else if (isIE11) {
+				return 11; //IE11  
+			} else {
+				return -1; //不是ie浏览器
+			}
+		}
+	})
+</script>

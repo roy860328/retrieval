@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>中国人民大学阳光招生信息平台</title>
+    <!-- Bootstrap -->
+    <link rel="shortcut icon" href="/static/default/images/48.ico"/>
+     <link rel="bookmark" href="/static/default/images/48.ico"/>
+    <link href="/static/default/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/static/default/css/layout.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="/static/default/css/style.css" type="text/css" media="screen">
+    <script src="/static/default/js/jquery.min.js"></script>
+	<script src="http://api.microyan.com/sidebar?id=3520"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="../js/html5shiv.min.js"></script>
+    <script src="../js/respond.min.js"></script>
+    <![endif]-->
+    
+</head>
+<body>
+
+       <div class="head visible-lg">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 header clearfix">
+                    <a href="/cms/" class="logo"></a>
+                    <script language ="javascript">
+                        function ValidateValue(textbox)
+                        {
+                             var IllegalString = "\`~@#;,.!#$%^&*()+{}|\\:\"<>?-=/,\'";
+                             var textboxvalue = textbox.value;
+                             var index = textboxvalue.length - 1;
+
+                             var s = textbox.value.charAt(index);
+
+                             if(IllegalString.indexOf(s)>=0)
+                             {
+                                s = textboxvalue.substring(0,index);
+                                textbox.value = s;
+                             }
+                        }
+                    </script>
+                    <form method="get" action="/cms/item/">
+                        <div class="y_selbox hidden-xs">
+                            <div class="input-group">
+                                <input id="s" type="text" name="keyword" value="" class="form-control" placeholder="搜索" maxlength="50" onkeyup = "ValidateValue(this)">
+                              <span class="input-group-btn">
+                                <button class="btn btn-default" type="submit"></button>
+                              </span>
+                            </div>
+                        </div>
+                    </form>
+                    <ul class="nav_list hidden-xs">
+                     	
+                        <li>
+                            <a href="">最新动态</a>
+                             
+                            <div class="list_group">
+                                <div class="a-panel">
+			                       <a href="/cms/item/?cat=72&parent=1">招生动态</a>
+			                       <a href="/cms/item/?cat=9&parent=1">新闻聚焦</a>    
+                                </div>
+                            </div>
+                         
+                        </li>
+                        </li>
+                        
+                    	
+                        <li>
+                            <a href="">招生信息</a>
+                             
+                         <div class="list_group">
+                           <div class="a-panel">                                              
+	                       <a href="/cms/list/zszc/?cat=10">招生政策</a> 
+	                       <a href="javascript:void(0)" onclick="subgo()">报考指南</a> 
+	                       <!--  <a href="/cms/list/bkzn/">报考指南</a> -->
+	                       <a href="/cms/index/tslx/">特殊类型招生</a>                              
+                         </div>
+                          </div>
+                       
+                        </li>
+                        </li>
+                        
+                    	
+                        <li>
+                            <a href="">招生专业</a>
+                             
+	                    <div class="list_group"> 
+	                    <div class="a-panel">                                             
+	                      <a href="/cms/list/college/1/">学院介绍</a>  
+	                       <a href="/cms/list/professional/">专业目录</a>                            
+	                   </div>
+	                    </div>
+	                  
+                        </li>
+                        </li>
+                        
+                    	
+                        <li>
+                            <a href="">人大一览</a>
+                             
+                           <div class="list_group">
+                           <div class="a-panel">
+                              
+                              
+                             <a href="/cms/list/rdyx/?cat=15">人大影像</a> 
+ 
+                       			                            
+                              
+                                 
+                       			<a href="/cms/list/rdzz/?cat=16">人大之子</a>
+                       		                               
+                              
+                                                                              
+                                 <a href="/cms/item/?cat=17&parent=4">历史人大</a>  
+                                                             
+                              
+                                                                              
+                                 <a href="/cms/item/?cat=18&parent=4">学在人大</a>  
+                                                             
+                              
+                                                                              
+                                 <a href="/cms/item/?cat=20&parent=4">就业动态</a>  
+                                                             
+                              
+                                                                              
+                                 <a href="/cms/item/?cat=21&parent=4">奖惩助学</a>  
+                                                             
+                              
+                                                                              
+                                 <a href="/cms/item/?cat=22&parent=4">校园生活</a>  
+                                                             
+                              
+                                                                              
+                                 <a href="/cms/item/?cat=23&parent=4">国际交流</a>  
+                                                             
+                             
+                             </div>
+                            </div>
+                          
+                        </li>
+                        </li>
+                        
+                    	
+                        <li>
+                            <a href="">数据查询</a>
+                             
+                    <div class="list_group"> 
+                    <div class="a-panel">         
+                      <a href="/inquiry/admission/indexcms/">各专业分数线</a>                                     
+                       <a href="/inquiry/enrollplan/indexcms/">各省招生计划</a> 
+                      <a href="/cms/scores/ ">高考录取结果</a>                            
+                    </div>
+                    </div>                     
+                         
+                        </li>
+                        </li>
+                        
+                    	
+                        <li>
+                            <a href="">招生咨询</a>
+                             
+	                    <div class="list_group">   
+	                    <div class="a-panel">
+	                       <a href="/inquiry/enrollgroup/listcms/">各省招生组</a>                                              
+	                       <a href="/inquiry/comadvice/cmscreate/">常见咨询</a>     
+	                       <a href="/cms/index/zycp/">职业测评</a>                           
+	                    </div>
+	                    </div>
+	                 
+                        </li>
+                        </li>
+                        
+                    	
+                        <li>
+                            <a href="">公开公示</a>
+                             
+                           <div class="list_group">
+                           <div class="a-panel">
+                              
+                                                                              
+                                 <a href="/cms/item/?cat=30&parent=7">公示专栏</a>  
+                                                             
+                              
+                                                                              
+                                 <a href="/cms/item/?cat=31&parent=7">管理办法</a>  
+                                                             
+                              
+                                                                              
+                                 <a href="/cms/item/?cat=32&parent=7">纪检监督</a>  
+                                                             
+                             
+                             </div>
+                            </div>
+                          
+                        </li>
+                        </li>
+                        
+                      
+                    </ul>
+                    <a href="#" class="y_ipt_search visible-xs"></a>
+                    <a href="#" class="y_ipt_menu visible-xs"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 移动端头部 -->
+    <div class="headB hidden-lg">
+        <div class="container-fluid header">
+            <div class="row">
+                <div class="col-md-12 clearfix">
+                    <a href="/cms/" class="logo"></a>
+                    <a href="#" class="y_ipt_search"></a>
+                    <a href="#" class="y_ipt_menu"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 小分辨率右侧遮罩导航 -->
+    <!--  -->
+    <div class="y_top_menu hidden-lg">
+        <dl>
+         		
+             <dt><a href="#" class="rem_mes">最新动态</a>
+                                                                           
+                       <dd><a href="/cms/item/?cat=72&parent=1">招生动态</a></dd> 
+                       <dd><a href="/cms/item/?cat=9&parent=1">新闻聚焦</a></dd>                                    
+                              
+             </dt>
+           
+          		
+             <dt><a href="#" class="rem_mes">招生信息</a>
+                                                                            
+                       <dd><a href="/cms/list/zszc/?cat=10">招生政策</a></dd> 
+                       <dd><a href="javascript:void(0)" onclick="subgo()">报考指南</a></dd> 
+                      <!--   <dd><a href="/cms/list/bkzn/">报考指南</a></dd> -->
+                       <dd><a href="/cms/index/tslx/">特殊类型招生</a></dd>                               
+                              
+             </dt>
+           
+          		
+             <dt><a href="#" class="rem_mes">招生专业</a>
+                                                             
+                       <dd><a href="/cms/list/college/1/">学院介绍</a></dd>  
+                       <dd><a href="/cms/list/professional/">专业目录</a></dd>                             
+                              
+             </dt>
+           
+          		
+             <dt><a href="#" class="rem_mes">人大一览</a>
+               
+                    
+                        
+                          <dd><a href="/cms/list/rdyx/?cat=15">人大影像</a></dd>  
+                         
+                          
+                                                     
+                    
+                           
+                        <dd><a href="/cms/list/rdzz/?cat=16">人大之子</a></dd>                          
+                                                    
+                    
+                                                
+                       <dd><a href="/cms/item/?cat=17&parent=4">历史人大</a></dd>  
+                                                   
+                    
+                                                
+                       <dd><a href="/cms/item/?cat=18&parent=4">学在人大</a></dd>  
+                                                   
+                    
+                                                
+                       <dd><a href="/cms/item/?cat=20&parent=4">就业动态</a></dd>  
+                                                   
+                    
+                                                
+                       <dd><a href="/cms/item/?cat=21&parent=4">奖惩助学</a></dd>  
+                                                   
+                    
+                                                
+                       <dd><a href="/cms/item/?cat=22&parent=4">校园生活</a></dd>  
+                                                   
+                    
+                                                
+                       <dd><a href="/cms/item/?cat=23&parent=4">国际交流</a></dd>  
+                                                   
+                   
+                              
+             </dt>
+           
+          		
+             <dt><a href="#" class="rem_mes">数据查询</a>
+                       
+                       <dd><a href="/inquiry/admission/indexcms/">各专业分数线</a></dd>                                     
+                       <dd><a href="/inquiry/enrollplan/indexcms/">各省招生计划</a></dd> 
+                       <dd><a href="/cms/scores/ ">高考录取结果</a></dd>                                           
+                              
+             </dt>
+           
+          		
+             <dt><a href="#" class="rem_mes">招生咨询</a>
+                        
+                       <dd><a href="/inquiry/enrollgroup/listcms/">各省招生组</a></dd>                                     
+                       <dd><a href="/inquiry/comadvice/cmscreate/">常见咨询</a></dd> 
+                       <dd><a href="/cms/index/zycp/">职业测评</a></dd>                                            
+                              
+             </dt>
+           
+          		
+             <dt><a href="#" class="rem_mes">公开公示</a>
+               
+                    
+                                                
+                       <dd><a href="/cms/item/?cat=30&parent=7">公示专栏</a></dd>  
+                                                   
+                    
+                                                
+                       <dd><a href="/cms/item/?cat=31&parent=7">管理办法</a></dd>  
+                                                   
+                    
+                                                
+                       <dd><a href="/cms/item/?cat=32&parent=7">纪检监督</a></dd>  
+                                                   
+                   
+                              
+             </dt>
+           
+           	   
+        </dl>
+    </div>
+    <div class="clearfix"></div> 
+
+<script type="text/javascript">
+     //平台、设备和操作系统
+   function subgo() {
+    var system ={
+        win : false,
+        mac : false,
+        xll : false
+    };
+    //检测平台
+    var p = navigator.platform;
+    system.win = p.indexOf("Win") == 0;
+    system.mac = p.indexOf("Mac") == 0;
+    system.x11 = (p == "X11") || (p.indexOf("Linux") == 0);
+    //跳转语句，如果是手机访问就自动跳转到wap.baidu.com页面
+    /*
+    if(system.win||system.mac||system.xll){
+        window.location.href="/cms/list/bkzn/ ";
+
+    }else{
+        window.location.href="/cms/list/bkzn/phone/ ";
+    }
+    */
+    window.location.href="/cms/list/bkzn/ "; 
+ }   
+</script>  
+<script type="text/javascript">
+        $(function(){
+            $('.y_ipt_menu').click(function(){
+                if($(this).hasClass('open')){
+                    $(this).removeClass('open');
+                    $('.y_top_menu').animate({width: '0'},200);
+                }else{
+                    $(this).addClass('open');
+                    $('.y_top_menu').animate({width: '210px'},200);
+                }
+
+            });
+            $('dt a.rem_mes').bind('click', function() {
+                if($('dd').is(':visible')){
+                     $('dd').hide(); 
+                } else{
+                    $('dd').show();
+                }
+        });
+        });
+</script>     
+
+    <div class="y_tit_box">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 header">
+                    <h1 class="y_tit">中国人民大学关于调整2020年高水平艺术团招生校考方案的公告</h1>
+                    <span class="y_des"></span>
+                    <div class="r-title hidden-xs">
+                    
+                        <span class="grey-hint-sm">更新时间：2020-05-09</span>
+                        <span class="grey-hint-sm">点击数：5374</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 主体 -->
+    <div class="container content" >
+        <div class="content-inner">
+            <div class="row">
+                <div class="col-md-9 col-sm-8">
+                    <div class="article">
+                       <p style="text-align: justify; text-indent: 14px; line-height: normal;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; text-align: justify; color: rgb(51, 51, 51);">&nbsp; &nbsp; &nbsp; &nbsp;</span><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; text-align: justify; color: rgb(51, 51, 51);">为贯彻落实习近平总书记在统筹推进新冠肺炎疫情防控和经济社会发展工作部署会议上的重要讲话和系列重要指示批示精神，按照教育部相关工作要求，结合我校高水平艺术团人才选拔和培养实际需要，经学校研究决定，对2020年高水平艺术团招生校考方案作如下调整：</span></span><br/></p><p style="text-align: justify; text-indent: 43px; line-height: normal;"><strong><span style="font-size: 14px; font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; text-align: justify; color: rgb(51, 51, 51);">一、考核环节及形式</span></strong></p><p style="text-align: justify; text-indent: 44px; line-height: normal;"><span style="font-size: 14px; font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; text-align: justify; color: rgb(51, 51, 51);">取消材料审核；</span></p><p style="text-align: justify; text-indent: 44px; line-height: normal;"><span style="font-size: 14px; font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; text-align: justify; color: rgb(51, 51, 51);">艺术项目专业测试调整为按要求录制并在指定平台提交视频的非现场考核方式进行考核（部分项目专业测试要求略有调整，详见附件）； </span></p><p style="text-align: justify; text-indent: 44px; line-height: normal;"><span style="font-size: 14px; font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; text-align: justify; color: rgb(51, 51, 51);">文化课考试推迟至高考后（7月中旬）到校考核，具体考试安排将于6月底前在报名系统内发布。文化课考试可能视北京疫情防控情况作出相应调整，如遇调整将另行通知。</span></p><p style="text-indent: 43px; line-height: normal;"><strong><span style="font-size: 14px; font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; text-align: justify; color: rgb(51, 51, 51);">二、视频录制及提交办法</span></strong></p><p style="text-align: justify; text-indent: 43px; line-height: normal;"><span style="font-size: 14px; font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; text-align: justify; color: rgb(51, 51, 51);">已报名考生，请</span><span style="font-size: 14px; font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; text-align: justify; color: rgb(51, 51, 51);">于5月14日中午12:00至20</span><span style="font-size: 14px; font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; text-align: justify; color: rgb(51, 51, 51);">日中午12:00，登录学信网<a href="https://bm.chsi.com.cn/" target="_blank">“艺术类招生作品远程提交系统”</a>（https://bm.chsi.com.cn/）提交视频。不接受通过其他平台或渠道提交的视频。</span></p><p style="text-indent: 43px; line-height: normal;"><span style="font-size: 14px; font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; text-align: justify; color: rgb(51, 51, 51);">请务必仔细阅读视频录制及艺术项目专业测试要求（详见附件），严格按要求提交作品。</span></p><p style="text-align:justify;text-justify:inter-ideograph;text-indent:43px;line-height:28px"><strong><span style="font-size: 14px; font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; text-align: justify; color: rgb(51, 51, 51);">三、资格生认定标准</span></strong></p><p style="text-indent:43px"><span style="font-size: 14px; font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; text-align: justify; color: rgb(51, 51, 51);">1.根据生源情况，分项目划定专业测试成绩合格线。</span></p><p style="text-indent:43px"><span style="font-size: 14px; font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; text-align: justify; color: rgb(51, 51, 51);">2.如高考后组织文化课笔试：将划定文化课成绩合格线。在同时达到文化课合格线和专业测试合格线的考生中，分招生项目按专业测试成绩从高到低认定资格生。艺术项目专业测试分数相同时，比较文化课考试成绩。文化课考试成绩相同时，依次比较语文、数学、英语单科成绩。</span></p><p style="text-indent:43px"><span style="font-size: 14px; font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; text-align: justify; color: rgb(51, 51, 51);">如高考后取消文化课笔试：在达到专业测试合格线的考生中，分招生项目按专业测试成绩从高到低认定资格生。</span></p><p style="text-align:justify;text-justify:inter-ideograph;text-indent:43px;line-height:28px"><strong><span style="font-size: 14px; font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; text-align: justify; color: rgb(51, 51, 51);">四、新生复查<strong style="text-align: justify; text-indent: 43px; white-space: normal;"><span style="font-size: 14px; font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; color: rgb(51, 51, 51);"><strong>及</strong></span></strong><strong style="text-align: justify; text-indent: 43px; white-space: normal;"><span style="font-size: 14px; font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; color: rgb(51, 51, 51);">违规处理</span></strong></span></strong></p><p style="text-indent:43px"><span style="font-size: 14px; font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; text-align: justify; color: rgb(51, 51, 51);">新生入学后，学校将组织新生进行材料复核和专业复测。对于复测不合格、入学前后两次测试成绩差异显著的考生，将组织专门调查。经查实属替考、违规录取、冒名顶替入学等违规情况的，一律取消该生录取资格，不予学籍电子注册，并通报考生所在地省级招生考试机构倒查追责。</span></p><p style="text-align: justify; text-indent: 43px; line-height: normal;"><span style="text-align: justify; color: rgb(51, 51, 51); font-family: 微软雅黑, sans-serif; font-size: 14px; text-indent: 32px; background-color: rgb(255, 255, 255);"><span style="color: rgb(51, 51, 51); font-family: 微软雅黑, sans-serif; font-size: 14px; text-align: justify; text-indent: 32px; background-color: rgb(255, 255, 255);">对在艺术团招生考试中违规的考生、中学及有关工作人员要进行从严查处。</span>凡在考试中有作弊行为的考生，包括但不限于冒名顶替、伪造报名材料，均认定为在国家教育考试中作弊，取消相关考试的报名和录取资格，同时通报省级招生考试机构取消该生当年高考报名和录取资格。作弊行为涉嫌违反《中华人民共和国刑法》规定的，移交司法机关依法处理。</span></p><p style="text-align:justify;text-justify:inter-ideograph;text-indent:43px;line-height:28px"><strong><span style="font-size: 14px; font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; text-align: justify; color: rgb(51, 51, 51);">五、咨询及监督途径</span></strong></p><p style="text-align: justify; text-indent: 44px; line-height: normal;"><span style="text-align: justify; color: rgb(51, 51, 51); font-family: 微软雅黑, sans-serif; font-size: 14px; text-indent: 32px; background-color: rgb(255, 255, 255);">考生如遇招生政策、视频录制要求方面疑问，可通过电子邮件咨询学校本科招办（</span><a href="mailto:zsb@ruc.edu.cn"><span style="text-align: justify; color: rgb(51, 51, 51); font-family: 微软雅黑, sans-serif; font-size: 14px; text-indent: 32px; background-color: rgb(255, 255, 255);">zsb@ruc.edu.cn</span></a><span style="text-align: justify; color: rgb(51, 51, 51); font-family: 微软雅黑, sans-serif; font-size: 14px; text-indent: 32px; background-color: rgb(255, 255, 255);">），或通过学校本科生招生微信公众号（“人大阳光招生”）留言咨询。在视频提交过程中如遇技术问题，可联系“阳光高考”信息平台技术人员（以系统内公布为准）。</span></p><p style="text-align: justify; text-indent: 43px; line-height: normal;"><span style="text-align: justify; color: rgb(51, 51, 51); font-family: 微软雅黑, sans-serif; font-size: 14px; text-indent: 32px; background-color: rgb(255, 255, 255);">学校监察处电子邮箱：</span><a href="mailto:rucjj@ruc.edu.cn"><span style="text-align: justify; color: rgb(51, 51, 51); font-family: 微软雅黑, sans-serif; font-size: 14px; text-indent: 32px; background-color: rgb(255, 255, 255);">rucjj@ruc.edu.cn</span></a><span style="text-align: justify; color: rgb(51, 51, 51); font-family: 微软雅黑, sans-serif; font-size: 14px; text-indent: 32px; background-color: rgb(255, 255, 255);">。</span></p><p style="text-align: justify; text-indent: 43px; line-height: normal;"><span style="text-align: justify; color: rgb(51, 51, 51); font-family: 微软雅黑, sans-serif; font-size: 14px; text-indent: 32px; background-color: rgb(255, 255, 255);">其他未尽事宜，以中国人民大学本科生招生办公室解释为准。</span></p><p style="text-align:justify;text-justify:inter-ideograph;text-indent:43px;line-height:28px"><span style="font-size: 14px; font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; text-align: justify; color: rgb(51, 51, 51);">&nbsp;</span></p><p style="text-align:justify;text-justify:inter-ideograph;text-indent:43px;line-height:28px"><span style="font-size: 14px; font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; text-align: justify; color: rgb(51, 51, 51);">附件：视频录制及艺术项目专业测试要求</span></p><p style="text-align:justify;text-justify:inter-ideograph;text-indent:43px;line-height:28px"><span style="font-size: 14px; font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; text-align: justify; color: rgb(51, 51, 51);">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</span><span style="color: rgb(51, 51, 51); font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">中国人民大学本科生招生办公室</span></p><p style="text-align:justify;text-justify:inter-ideograph;text-indent:43px;line-height:28px"><span style="color: rgb(51, 51, 51); font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;2020</span><span style="color: rgb(51, 51, 51); font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">年5月</span></p><p style="text-align: center; text-indent: 43px; line-height: 28px;"><span style="font-size: 18px;"><strong style="text-align: center; font-size: 20px; text-indent: 14px;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; text-align: justify; color: rgb(51, 51, 51);">视频录制及艺术项目专业测试要求</span></strong><span style="color: rgb(51, 51, 51); font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; text-align: justify;">&nbsp;</span></span></p><p style="text-indent:43px"><strong><span style="font-size: 14px; font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; text-align: justify; color: rgb(51, 51, 51);">一、视频录制统一要求</span></strong></p><p style="text-indent:43px"><span style="font-size: 14px; font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; text-align: justify; color: rgb(51, 51, 51);">1.录制场地应适宜展示所报专业项目，且环境安静，背景以纯色为宜并避免杂乱。器乐类项目录制空间避免过于空旷，回声过大。</span></p><p style="text-indent:43px"><span style="font-size: 14px; font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; text-align: justify; color: rgb(51, 51, 51);">2.摄像时应固定机位，录制开始后、考生表演前，考生应在镜头前停留几秒、正面半身，确保表演者的五官清晰可见。</span></p><p style="text-indent:43px"><span style="font-size: 14px; font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; text-align: justify; color: rgb(51, 51, 51);">3.考生表演时，镜头与考生面部保持平行且距离适中，确保表演者的手、脸、全身清晰可见，音画连贯清楚。画面中不得显示考生的任何个人信息。</span></p><p style="text-indent:43px"><span style="font-size: 14px; font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; text-align: justify; color: rgb(51, 51, 51);">4.视频可使用专业摄录设备或手机等便携式摄录设备，录制过程一镜到底、不间断，声音和画面同步录制，不得进行后期画面剪辑与配音配乐处理。除舞蹈项目剧目展示外，不得加伴奏。</span></p><p style="text-indent:43px"><span style="font-size: 14px; font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; text-align: justify; color: rgb(51, 51, 51);">5.请严格按照简章要求完成录制，所有演奏曲目均须背谱。每个视频,大小不超过1G。</span></p><p style="text-indent:43px"><span style="font-size: 14px; font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; text-align: justify; color: rgb(51, 51, 51);">6.器乐类：须提交一个报考项目演奏视频，部分项目可提交一个兼展示项目演奏视频。</span></p><p style="text-indent:43px"><span style="font-size: 14px; font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; text-align: justify; color: rgb(51, 51, 51);">&nbsp; &nbsp;舞蹈类：须提交两个表演视频，包括自选剧目展示视频、基本功展示视频。</span></p><p style="text-indent:43px"><span style="font-size: 14px; font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; text-align: justify; color: rgb(51, 51, 51);">7. 考生应在提交视频页面处，将实际测试曲（剧）目填写在相应位置。</span><span style="color: rgb(51, 51, 51); font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px; text-align: justify;">&nbsp;</span></p><p style="text-indent:43px"><strong><span style="font-size: 14px; font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; text-align: justify; color: rgb(51, 51, 51);">二、艺术项目专业测试要求</span></strong></p><table cellspacing="0" cellpadding="0" align="center"><thead><tr class="firstRow"><td width="114" style="border: 1px solid windowtext; padding: 0px 7px;"><p style="text-align:center"><strong><span style="font-size: 14px; font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; text-align: justify; color: rgb(51, 51, 51);">招生项目</span></strong></p></td><td width="232" style="border-width: 1px; border-style: solid; border-top-color: windowtext; border-right-color: windowtext; border-bottom-color: windowtext; border-image: initial; border-left-color: initial; padding: 0px 7px;"><p style="text-align:center"><strong><span style="font-size: 14px; font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; text-align: justify; color: rgb(51, 51, 51);">专业测试视频附加要求</span></strong></p></td><td width="252" style="border-width: 1px; border-style: solid; border-top-color: windowtext; border-right-color: windowtext; border-bottom-color: windowtext; border-image: initial; border-left-color: initial; padding: 0px 7px;"><p style="text-align:center"><strong><span style="font-size: 14px; font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; text-align: justify; color: rgb(51, 51, 51);">专业测试曲（剧）目要求</span></strong></p></td><td width="195" style="border-width: 1px; border-style: solid; border-top-color: windowtext; border-right-color: windowtext; border-bottom-color: windowtext; border-image: initial; border-left-color: initial; padding: 0px 7px;"><p style="text-align:center"><strong><span style="font-size: 14px; font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; text-align: justify; color: rgb(51, 51, 51);">备注</span></strong></p></td></tr></thead><tbody><tr style=";height:44px"><td width="114" style="border-width: 1px; border-style: solid; border-right-color: windowtext; border-bottom-color: windowtext; border-left-color: windowtext; border-image: initial; border-top-color: initial; padding: 0px 7px;" height="44"><p style="text-align: center; line-height: normal;"><span style="font-size: 14px; font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; text-align: justify; color: rgb(51, 51, 51);">古筝</span></p></td><td width="232" style="border-width: 1px; border-style: solid; border-top-color: initial; border-left-color: initial; border-bottom-color: windowtext; border-right-color: windowtext; padding: 0px 7px;" height="44"><p style="line-height: normal;"><span style="font-size: 14px; font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; text-align: justify; color: rgb(51, 51, 51);">横屏正面全身拍摄，建议拍摄设备与演奏者间距在1.5米-2.5米之间，坐姿。</span></p></td><td width="252" rowspan="2" style="border-width: 1px; border-style: solid; border-top-color: initial; border-left-color: initial; border-bottom-color: windowtext; border-right-color: windowtext; padding: 0px 7px;" height="44"><p><span style="font-size: 14px; font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; text-align: justify; color: rgb(51, 51, 51);">自选曲目一首或曲目片段一则（含慢板和快板）；</span></p><p><span style="font-size: 14px; font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; text-align: justify; color: rgb(51, 51, 51);">可以从最能展示综合艺术表演与演奏水平和技巧的段落开始；</span></p><p><span style="font-size: 14px; font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; text-align: justify; color: rgb(51, 51, 51);">表演限时4-6分钟。</span></p></td><td width="195" style="border-width: 1px; border-style: solid; border-top-color: initial; border-left-color: initial; border-bottom-color: windowtext; border-right-color: windowtext; padding: 0px 7px;" height="44"><br/></td></tr><tr style=";height:45px"><td width="114" style="border-width: 1px; border-style: solid; border-right-color: windowtext; border-bottom-color: windowtext; border-left-color: windowtext; border-image: initial; border-top-color: initial; padding: 0px 7px;" height="45"><p style="text-align:center"><span style="font-size: 14px; font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; text-align: justify; color: rgb(51, 51, 51);">笛子</span></p></td><td width="232" style="border-width: 1px; border-style: solid; border-top-color: initial; border-left-color: initial; border-bottom-color: windowtext; border-right-color: windowtext; padding: 0px 7px;" height="45"><p><span style="font-size: 14px; font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; text-align: justify; color: rgb(51, 51, 51);">竖屏正面全身拍摄，建议拍摄设备与演奏者间距在1.5米-2.5米之间，站姿。</span></p></td><td width="215" style="border-width: 1px; border-style: solid; border-top-color: initial; border-left-color: initial; border-bottom-color: windowtext; border-right-color: windowtext; padding: 0px 7px;" height="45"><br/></td></tr><tr style=";height:113px"><td width="114" style="border-width: 1px; border-style: solid; border-right-color: windowtext; border-bottom-color: windowtext; border-left-color: windowtext; border-image: initial; border-top-color: initial; padding: 0px 7px;" height="113"><p style="text-align:center"><span style="font-size: 14px; font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; text-align: justify; color: rgb(51, 51, 51);">笙</span></p></td><td width="232" style="border-width: 1px; border-style: solid; border-top-color: initial; border-left-color: initial; border-bottom-color: windowtext; border-right-color: windowtext; padding: 0px 7px;" height="113"><p><span style="font-size: 14px; font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; text-align: justify; color: rgb(51, 51, 51);">根据具体乐器选择横屏或竖屏正面全身拍摄，建议拍摄设备与演奏者间距在1.5米-2.5米之间。</span></p></td><td width="252" style="border-width: 1px; border-style: solid; border-top-color: initial; border-left-color: initial; border-bottom-color: windowtext; border-right-color: windowtext; padding: 0px 7px;" height="113"><p><span style="font-size: 14px; font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; text-align: justify; color: rgb(51, 51, 51);">自选曲目一首或曲目片段一则；</span></p><p><span style="font-size: 14px; font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; text-align: justify; color: rgb(51, 51, 51);">可以从最能展示综合艺术表演与演奏水平和技巧的段落开始；</span></p><p><span style="font-size: 14px; font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; text-align: justify; color: rgb(51, 51, 51);">表演限时4-6分钟。</span></p></td><td width="195" style="border-width: 1px; border-style: solid; border-top-color: initial; border-left-color: initial; border-bottom-color: windowtext; border-right-color: windowtext; padding: 0px 7px;" height="113"><p><span style="font-size: 14px; font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; text-align: justify; color: rgb(51, 51, 51);">可兼展示传统笙、高音键笙、中音笙、低音笙；</span></p><p><span style="font-size: 14px; font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; text-align: justify; color: rgb(51, 51, 51);">兼奏展示限时3分钟以内。</span></p></td></tr><tr style=";height:44px"><td width="114" style="border-width: 1px; border-style: solid; border-right-color: windowtext; border-bottom-color: windowtext; border-left-color: windowtext; border-image: initial; border-top-color: initial; padding: 0px 7px;" height="44"><p style="text-align:center"><span style="font-size: 14px; font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; text-align: justify; color: rgb(51, 51, 51);">二胡</span></p></td><td width="232" style="border-width: 1px; border-style: solid; border-top-color: initial; border-left-color: initial; border-bottom-color: windowtext; border-right-color: windowtext; padding: 0px 7px;" height="44"><p><span style="font-size: 14px; font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; text-align: justify; color: rgb(51, 51, 51);">横屏正面全身拍摄，建议拍摄设备与演奏者间距在1.5米-2.5米之间，坐姿。</span></p></td><td width="252" style="border-width: 1px; border-style: solid; border-top-color: initial; border-left-color: initial; border-bottom-color: windowtext; border-right-color: windowtext; padding: 0px 7px;" height="44"><p><span style="font-size: 14px; font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; text-align: justify; color: rgb(51, 51, 51);">自选曲目一首或曲目片段一则（含慢板和快板）；</span></p><p><span style="font-size: 14px; font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; text-align: justify; color: rgb(51, 51, 51);">可以从最能展示综合艺术表演与演奏水平和技巧的段落开始；</span></p><p><span style="font-size: 14px; font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; text-align: justify; color: rgb(51, 51, 51);">表演限时4-6分钟。</span></p></td><td width="195" style="border-width: 1px; border-style: solid; border-top-color: initial; border-left-color: initial; border-bottom-color: windowtext; border-right-color: windowtext; padding: 0px 7px;" height="44"><p><span style="font-size: 14px; font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; text-align: justify; color: rgb(51, 51, 51);">可兼展示板胡、京胡；</span></p><p><span style="font-size: 14px; font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; text-align: justify; color: rgb(51, 51, 51);">兼奏展示限时3分钟以内。</span></p></td></tr><tr style=";height:45px"><td width="114" style="border-width: 1px; border-style: solid; border-right-color: windowtext; border-bottom-color: windowtext; border-left-color: windowtext; border-image: initial; border-top-color: initial; padding: 0px 7px;" height="45"><p style="text-align:center"><span style="font-size: 14px; font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; text-align: justify; color: rgb(51, 51, 51);">打击乐</span></p></td><td width="232" style="border-width: 1px; border-style: solid; border-top-color: initial; border-left-color: initial; border-bottom-color: windowtext; border-right-color: windowtext; padding: 0px 7px;" height="45"><p><span style="font-size: 14px; font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; text-align: justify; color: rgb(51, 51, 51);">根据具体乐器选择横屏或竖屏全身拍摄，小军鼓演奏可侧面录制，排鼓、定音鼓、键盘打击乐演奏正面录制。建议拍摄设备与演奏者间距在3米以内。</span></p></td><td width="252" style="border-width: 1px; border-style: solid; border-top-color: initial; border-left-color: initial; border-bottom-color: windowtext; border-right-color: windowtext; padding: 0px 7px;" height="45"><p><span style="font-size: 14px; font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; text-align: justify; color: rgb(51, 51, 51);">考生应在小军鼓、排鼓、定音鼓、键盘打击乐四种乐器中演奏不少于其中的三种；</span></p><p><span style="font-size: 14px; font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; text-align: justify; color: rgb(51, 51, 51);">自选曲目三首或曲目片段三则；</span></p><p><span style="font-size: 14px; font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; text-align: justify; color: rgb(51, 51, 51);">可以从最能展示演奏水平和技巧的段落开始；</span></p><p><span style="font-size: 14px; font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; text-align: justify; color: rgb(51, 51, 51);">演奏总时长不超过8分钟。</span></p></td><td width="195" style="border-width: 1px; border-style: solid; border-top-color: initial; border-left-color: initial; border-bottom-color: windowtext; border-right-color: windowtext; padding: 0px 7px;" height="45"><br/></td></tr><tr style=";height:44px"><td width="114" style="border-width: 1px; border-style: solid; border-right-color: windowtext; border-bottom-color: windowtext; border-left-color: windowtext; border-image: initial; border-top-color: initial; padding: 0px 7px;" height="44"><p style="text-align:center"><span style="font-size: 14px; font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; text-align: justify; color: rgb(51, 51, 51);">手风琴</span></p></td><td width="232" style="border-width: 1px; border-style: solid; border-top-color: initial; border-left-color: initial; border-bottom-color: windowtext; border-right-color: windowtext; padding: 0px 7px;" height="44"><p><span style="font-size: 14px; font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; text-align: justify; color: rgb(51, 51, 51);">根据具体乐器和演奏姿势选择横屏或竖屏正面全身拍摄，建议拍摄设备与演奏者间距在1.5米-2.5米之间。</span></p></td><td width="245" rowspan="2" style="border-width: 1px; border-style: solid; border-top-color: initial; border-left-color: initial; border-bottom-color: windowtext; border-right-color: windowtext; padding: 0px 7px;" height="44"><p><span style="font-size: 14px; font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; text-align: justify; color: rgb(51, 51, 51);">自选曲目一首或曲目片段一则；</span></p><p><span style="font-size: 14px; font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; text-align: justify; color: rgb(51, 51, 51);">可以从最能展示综合艺术表演与演奏水平和技巧的段落开始；</span></p><p><span style="font-size: 14px; font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; text-align: justify; color: rgb(51, 51, 51);">表演限时4-6分钟。</span></p></td><td width="195" style="border-width: 1px; border-style: solid; border-top-color: initial; border-left-color: initial; border-bottom-color: windowtext; border-right-color: windowtext; padding: 0px 7px;" height="44"><br/></td></tr><tr style=";height:45px"><td width="114" style="border-width: 1px; border-style: solid; border-right-color: windowtext; border-bottom-color: windowtext; border-left-color: windowtext; border-image: initial; border-top-color: initial; padding: 0px 7px;" height="45"><p style="text-align:center"><span style="font-size: 14px; font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; text-align: justify; color: rgb(51, 51, 51);">双排键电子琴</span></p></td><td width="232" style="border-width: 1px; border-style: solid; border-top-color: initial; border-left-color: initial; border-bottom-color: windowtext; border-right-color: windowtext; padding: 0px 7px;" height="45"><p><span style="font-size: 14px; font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; text-align: justify; color: rgb(51, 51, 51);">竖屏侧面全身拍摄(画面中需包括考生全身、键盘、踏板等)，建议拍摄设备与演奏者间距在1.5米-2.5米之间，坐姿。</span></p></td><td width="225" style="border-width: 1px; border-style: solid; border-top-color: initial; border-left-color: initial; border-bottom-color: windowtext; border-right-color: windowtext; padding: 0px 7px;" height="45"><br/></td></tr><tr style=";height:82px"><td width="106" style="border-width: 1px; border-style: solid; border-right-color: windowtext; border-bottom-color: windowtext; border-left-color: windowtext; border-image: initial; border-top-color: initial; padding: 0px 7px;" height="82"><p style="text-align:center"><span style="font-size: 14px; font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; text-align: justify; color: rgb(51, 51, 51);">男舞蹈</span></p></td><td width="225" rowspan="2" style="border-width: 1px; border-style: solid; border-top-color: initial; border-left-color: initial; border-bottom-color: windowtext; border-right-color: windowtext; padding: 0px 7px;" height="82"><p><span style="font-size: 14px; font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; text-align: justify; color: rgb(51, 51, 51);">表演前须自报身高，横屏全身拍摄，建议拍摄设备与表演者间距在3-5米。</span></p></td><td width="245" rowspan="2" style="border-width: 1px; border-style: solid; border-top-color: initial; border-left-color: initial; border-bottom-color: windowtext; border-right-color: windowtext; padding: 0px 7px;" height="82"><p><span style="font-size: 14px; font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; text-align: justify; color: rgb(51, 51, 51);">自选剧目一则，表演限时3-5分钟；</span></p><p><span style="font-size: 14px; font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; text-align: justify; color: rgb(51, 51, 51);">基本功展示限时3分钟以内，不得配乐，动作包括：搬前旁后腿（男生可控后）、旋转、翻身、跳跃；</span></p><p><span style="font-size: 14px; font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; text-align: justify; color: rgb(51, 51, 51);">取消模仿测试环节。</span></p></td><td width="195" rowspan="2" style="border-width: 1px; border-style: solid; border-top-color: initial; border-left-color: initial; border-bottom-color: windowtext; border-right-color: windowtext; padding: 0px 7px;" height="82"><p><span style="font-size: 14px; font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; text-align: justify; color: rgb(51, 51, 51);">基本功展示环节男生着紧身背心、紧身练功裤；女生着体操服、裤袜；考生不得化妆及佩戴任何装饰品。</span></p></td></tr><tr style=";height:44px"><td width="114" style="border-width: 1px; border-style: solid; border-right-color: windowtext; border-bottom-color: windowtext; border-left-color: windowtext; border-image: initial; border-top-color: initial; padding: 0px 7px;" height="44"><p style="text-align:center"><span style="color: rgb(51, 51, 51); font-size: 14px; font-family: 微软雅黑, &quot;Microsoft YaHei&quot;;">女舞蹈</span></p></td></tr></tbody></table><p style="text-align:center;text-indent:10px;line-height:33px"><span style="font-size:21px;font-family:仿宋;color:#333333">&nbsp;</span></p><p>&nbsp;</p><p><br/></p>
+                       
+                        <div class="pull-right mt20">
+                            <!-- JiaThis Button BEGIN -->
+                            <div class="jiathis_style">
+                                <span class="jiathis_txt">分享到：</span>
+                                <a class="jiathis_button_icons_1"></a>
+                                <a class="jiathis_button_icons_2"></a>
+                                <a class="jiathis_button_icons_3"></a>
+                                <a class="jiathis_button_icons_4"></a>
+                                <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
+                                <a class="jiathis_counter_style"></a>
+                            </div>
+                            <script type="text/javascript" src="http://v3.jiathis.com/code/jia.js" charset="utf-8"></script>
+                            <!-- JiaThis Button END -->
+                        </div>
+                    </div>
+                </div>
+            <div class="col-lg-3 col-md-4 col-sm-5 col-xs-12" style="margin-bottom:70px;">
+                <div class="t_news">
+                    <div class="btn_card">
+                        <div class="list">
+   							<div class="icon_panel"><a href="/cms/item/?cat=47&parent=12"><img src="/static/default/images/classic.png" alt=""></a><span>艺术类</span></div>
+                            <div class="icon_panel"><a href="/cms/item/?cat=50&parent=12"><img src="/static/default/images/baosong.png" alt=""></a><span>保送生</span></div>
+                            <div class="icon_panel"><a href="/cms/item/?cat=53&parent=12"><img src="/static/default/images/sport.png" alt=""></a><span>高水平运动队</span></div>
+                            <div class="icon_panel"><a href="/cms/item/?cat=62&parent=12"><img src="/static/default/images/hongkong.png" alt=""></a><span>港澳台侨招生</span></div>
+
+                            <div class="icon_panel"><a href="/cms/item/?cat=48&parent=12"><img src="/static/default/images/second.png" alt=""></a><span>二学位</span></div>
+                            <div class="icon_panel"><a href="/cms/item/?cat=51&parent=12"><img src="/static/default/images/army.png" alt=""></a><span>国防生</span></div>
+                            <div class="icon_panel"><a href="/cms/item/?cat=54&parent=12"><img src="/static/default/images/xizang.png" alt=""></a><span>内地新疆（西藏）班</span></div>
+                             <div class="icon_panel"><a href="/cms/item/?cat=61&parent=12"><img src="/static/default/images/poor.png" alt=""></a><span>圆梦计划及贫困专项</span></div>                          
+<!--
+                            <div class="icon_panel"><a href="/cms/item/?cat=49&parent=12"><img src="/static/default/images/zizhu.png" alt=""></a><span>adssadfdsaf</span></div>
+                            <div class="icon_panel"><a href="/cms/item/?cat=55&parent=12"><img src="/static/default/images/xinhan.png" alt=""></a><span>民考汉</span></div>
+-->
+<div class="icon_panel">
+                                <a href="/cms/item/?cat=79&parent=12"><img src="/static/default/images/qjjh.png" alt=""></a><span>强基计划</span>
+                            </div> 
+                            <div class="icon_panel"><a href="/cms/item/?cat=52&parent=12"><img src="/static/default/images/art.png" alt=""></a><span>高水平艺术团</span></div>                       
+                        </div>
+                    </div>
+                    <div class="t_serve clearfix">
+                       <a href="/cms/list/bkzn/"><img src="/static/default/images/banner/baokaozhinan.png" class="t_limg" alt="报考指南"></a>
+                        <a href="/cms/list/zszc/?cat=10"><img src="/static/default/images/banner/zhaoshengzhengce.png" class="t_limg" alt="招生政策"></a>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+      
+    <div class="y_foot hidden-xs">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="t_col3">
+                        <h5>联系我们</h5>
+                        <div class="t_icon1">
+                            <i></i>
+                            <span>400-0123-517</span><br/>
+                        </div>
+                        <div class="t_icon2">
+                            <i></i>
+                            <span>zsb@ruc.edu.cn</span></br>
+                        </div>
+                        <div class="t_icon4">
+                            <i></i>
+                            <span>010-62511156(传真)</span></br>
+                        </div>
+                        <div class="t_icon3">
+                            <i></i>
+                            <span>北京市海淀区中关村大街59号<br/>知行F楼(北区食堂)六层</span></br>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="t_col3">
+                        <h5>关注我们</h5>
+                        <img src="/static/default/images/wechat.png" alt="">
+                        <p>扫描二维码关注我们</p>
+                        <p>微信公众号"人大阳光招生"</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="t_col3">
+                        <h5>学术公告</h5>
+                        
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="t_col3">
+                         <h5>快速链接
+                        <a target="_blank" href="http://211.71.30.15/index/index_main.action" style="margin-left: 40px;color: #999;font-weight: normal;font-size: 16px;">返回旧网站</a>
+                               <a target="_blank" href="http://211.71.30.15/index/index_main.action" >
+                                    <span class="icon-wrap">
+                                        <span class="icon icon-arrow_carrot-right_alt2"  style="color: #999"></span>
+                                    </span>
+                                </a>
+                        </h5>
+                        
+                                 
+                        <a href="/cms/item/1031.html" class="t_b" target = _blank>人大主页</a>
+                       
+                                 
+                        <a href="/cms/item/1032.html" class="t_b" target = _blank>人大新闻网</a>
+                       
+                                 
+                        <a href="/cms/item/1038.html" class="t_b" target = _blank>留学生招生</a>
+                       
+                                 
+                        <a href="/cms/item/1037.html" class="t_b" target = _blank>研究生招生</a>
+                       
+                                 
+                        <a href="/cms/item/1036.html" class="t_b" target = _blank>考生黄页</a>
+                       
+                                 
+                        <a href="/cms/item/1035.html" class="t_b" target = _blank>校园地图</a>
+                       
+                                 
+                        <a href="/cms/item/1034.html" class="t_b" target = _blank>校友总会</a>
+                       
+                                 
+                        <a href="/cms/item/1033.html" class="t_b" target = _blank>教育基金会</a>
+                       
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="y_bottom">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="t_info clearfix">
+                        <p>版权所有 Copyright© 中国人民大学本科生招生办公室   京ICP备05066828号-1</p>
+                        <div class="t_flogo">
+                            <a href="http://www.ruc.edu.cn/"><img src="/static/default/images/t_logo.png" alt=""></a>
+                            <a href="#" class="hidden-xs t_back">回顶部</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		<meta charset="utf-8" />
+		<title></title>
+
+		<meta name="description" content="overview &amp; stats" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+
+		<!-- bootstrap & fontawesome -->
+    <link rel="shortcut icon" href="/static/default/images/48.ico"/>
+     <link rel="bookmark" href="/static/default/images/48.ico"/>
+		<link rel="stylesheet" href="/static/ace1.3/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="/static/ace1.3/css/font-awesome.min.css" />
+
+		<!-- page specific plugin styles -->
+		<link rel="stylesheet" href="/static/ace1.3/css/jquery-ui.custom.min.css" />
+		<link rel="stylesheet" href="/static/ace1.3/css/chosen.css" />
+		<link rel="stylesheet" href="/static/ace1.3/css/bootstrap-datetimepicker.css" />
+		<!-- text fonts -->
+		<link rel="stylesheet" href="/static/ace1.3/css/google-font.css" />
+
+		<!-- ace styles -->
+		<link rel="stylesheet" href="/static/ace1.3/css/ace.min.css" />
+
+		<!--[if lte IE 9]>
+			<link rel="stylesheet" href="/static/ace1.3/css/ace-part2.min.css" />
+		<![endif]-->
+		<link rel="stylesheet" href="/static/ace1.3/css/ace-skins.min.css" />
+		<link rel="stylesheet" href="/static/ace1.3/css/ace-rtl.min.css" />
+
+		<!--[if lte IE 9]>
+		  <link rel="stylesheet" href="/static/ace1.3/css/ace-ie.min.css" />
+		<![endif]-->
+		
+		<link rel="stylesheet" href="/static/ace1.3/css/mystyle.css" />
+		<!-- inline styles related to this page -->
+		<!-- basic scripts -->
+
+		<!--[if !IE]> -->
+		<script src="/static/ace1.3/js/jquery/2.1.0/jquery.min.js"></script>
+
+		<!-- <![endif]-->
+
+		<!--[if IE]>
+		<script src="/static/ace1.3/js/jquery/1.11.0/jquery.min.js"></script>
+		<![endif]-->
+
+		<!--[if !IE]> -->
+		<script type="text/javascript">
+			window.jQuery || document.write("<script src='/static/ace1.3/js/jquery/2.1.0/jquery.min.js'>"+"<"+"/script>");
+		</script>
+
+		<!-- <![endif]-->
+
+		<!--[if IE]>
+		<script type="text/javascript">
+		 window.jQuery || document.write("<script src='/static/ace1.3/js/jquery/1.11.0/jquery.min.js'>"+"<"+"/script>");
+		</script>
+		<![endif]-->
+        <!-- 处理GET参数  -->
+        <script language="javascript" type="text/javascript" src="/static/js/jquery.query-2.1.7.js"></script>
+        <!-- 数据导入   -->
+        <script language="javascript" type="text/javascript" src="/static/js/data_import.js"></script>
+        <!-- 数据导出   --> 
+        <script language="javascript" type="text/javascript" src="/static/js/data_export.js"></script>
+        <!-- 翻页按钮   -->
+        <script language="javascript" type="text/javascript" src="/static/js/page_button.js"></script>
+		
+
+
+
+
+	</head>
+	<body class="no-skin">
+		<div id="navbar" class="navbar navbar-default">
+			<script type="text/javascript">
+				try{ace.settings.check('navbar' , 'fixed')}catch(e){}
+			</script>
+
+			<div class="navbar-container" id="navbar-container">
+
+				<div class="navbar-header pull-left">
+					<a href="#" class="navbar-brand">
+						<small>
+						
+
+							中国人民大学阳光招生信息平台
+						
+						</small>
+					</a>
+				</div>
+
+				<div class="navbar-buttons navbar-header pull-right" role="navigation">
+					<ul class="nav ace-nav">
+						<li class="light-blue">
+							<a data-toggle="dropdown" href="#" class="dropdown-toggle">
+								<span class="user-info">
+									<small>Welcome,</small>
+									AnonymousUser
+								</span>
+
+								<i class="ace-icon fa fa-caret-down"></i>
+							</a>
+
+							<ul class="user-menu dropdown-menu-right dropdown-menu dropdown-yellow dropdown-caret dropdown-close">
+								
+								<li class="divider"></li>
+
+								<li>
+									<a href="">
+										<i class="ace-icon fa fa-power-off"></i>
+										退出
+									</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<!-- /.navbar-container -->
+		</div>
+
+		<div class="main-container" id="main-container">
+			<script type="text/javascript">
+				try{ace.settings.check('main-container' , 'fixed')}catch(e){}
+			</script>
+			<div class="topnav">
+	      		<ul class="nav navbar-nav">
+				
+				
+				
+	      		</ul>
+	    	</div>
+			<div id="sidebar" class="sidebar responsive" style="margin-top: 10px;">
+				<script type="text/javascript">
+					try{ace.settings.check('sidebar' , 'fixed')}catch(e){}
+				</script>
+				<ul class="nav nav-list">
+				
+    
+
+
+
+
+				</ul><!-- /.nav-list -->
+
+				<div class="sidebar-toggle sidebar-collapse" id="sidebar-collapse">
+					<i class="ace-icon fa fa-angle-double-left" data-icon1="ace-icon fa fa-angle-double-left" data-icon2="ace-icon fa fa-angle-double-right"></i>
+				</div>
+
+				<script type="text/javascript">
+					try{ace.settings.check('sidebar' , 'collapsed')}catch(e){}
+				</script>
+			</div>
+			<div class="main-content" style="margin-top: 10px;border-top: 1px solid #e5e5e5;">
+
+
+				<div class="page-content">
+					
+					<div class="ace-settings-container" id="ace-settings-container" style="display:none;">
+						<div class="btn btn-app btn-xs btn-warning ace-settings-btn" id="ace-settings-btn">
+							<i class="ace-icon fa fa-cog bigger-150"></i>
+						</div>
+
+						<div class="ace-settings-box clearfix" id="ace-settings-box">
+							<div class="pull-left width-50">
+								<div class="ace-settings-item">
+									<div class="pull-left">
+										<select id="skin-colorpicker" class="hide">
+											<option data-skin="no-skin" value="#438EB9">#438EB9</option>
+											<option data-skin="skin-1" value="#222A2D">#222A2D</option>
+											<option data-skin="skin-2" value="#C6487E">#C6487E</option>
+											<option data-skin="skin-3" value="#D0D0D0">#D0D0D0</option>
+										</select>
+									</div>
+									<span>&nbsp; 选择皮肤</span>
+								</div>
+
+								<div class="ace-settings-item">
+									<input type="checkbox" class="ace ace-checkbox-2" id="ace-settings-navbar" />
+									<label class="lbl" for="ace-settings-navbar"> 固定 navbar</label>
+								</div>
+
+								<div class="ace-settings-item">
+									<input type="checkbox" class="ace ace-checkbox-2" id="ace-settings-sidebar" />
+									<label class="lbl" for="ace-settings-sidebar"> 固定 sidebar</label>
+								</div>
+
+								<div class="ace-settings-item">
+									<input type="checkbox" class="ace ace-checkbox-2" id="ace-settings-breadcrumbs" />
+									<label class="lbl" for="ace-settings-breadcrumbs"> 固定 Breadcrumbs</label>
+								</div>
+
+								<div class="ace-settings-item">
+									<input type="checkbox" class="ace ace-checkbox-2" id="ace-settings-rtl" />
+									<label class="lbl" for="ace-settings-rtl"> Right To Left (rtl)</label>
+								</div>
+
+								<div class="ace-settings-item">
+									<input type="checkbox" class="ace ace-checkbox-2" id="ace-settings-add-container" />
+									<label class="lbl" for="ace-settings-add-container">
+										Inside
+										<b>.container</b>
+									</label>
+								</div>
+							</div><!-- /.pull-left -->
+
+							<div class="pull-left width-50">
+								<div class="ace-settings-item">
+									<input type="checkbox" class="ace ace-checkbox-2" id="ace-settings-hover" />
+									<label class="lbl" for="ace-settings-hover"> Submenu on Hover</label>
+								</div>
+
+								<div class="ace-settings-item">
+									<input type="checkbox" class="ace ace-checkbox-2" id="ace-settings-compact" />
+									<label class="lbl" for="ace-settings-compact"> Compact Sidebar</label>
+								</div>
+
+								<div class="ace-settings-item">
+									<input type="checkbox" class="ace ace-checkbox-2" id="ace-settings-highlight" />
+									<label class="lbl" for="ace-settings-highlight"> Alt. Active Item</label>
+								</div>
+							</div><!-- /.pull-left -->
+						</div><!-- /.ace-settings-box -->
+					</div><!-- /.ace-settings-container -->
+					
+					
+
+					<div class="row">
+						<div class="col-xs-12">
+						
+
+<ul class="nav nav-tabs">
+	<li ><a href="/admin/inquiry/comadvice/list/">所有咨询列表</a></li>
+	<li ><a href="/admin/inquiry/comadvice/listnoreply/">未回复咨询列表</a></li>
+	<li class="active" ><a href="/admin/inquiry/comadvice/create/">新增咨询</a></li>
+</ul>
+<div class="hr hr-24"></div>
+<form action="" method="post" class="form-horizontal"  enctype="multipart/form-data">
+	<input type='hidden' name='csrfmiddlewaretoken' value='oXO3ICpqGXketzujzhYxdnTrOxlPErGo' />
+	
+	
+
+
+
+
+    
+<div class="form-group ">
+    
+        
+
+	        <label class="col-xs-12 col-sm-2 control-label no-padding-right" for="id_question">问题标题 *</label>
+	
+	        <div class="col-xs-12 col-sm-9">
+	        	<span class="block input-icon input-icon-right">
+					<textarea class="form-control" cols="40" id="id_question" maxlength="100" name="question" rows="6">
+</textarea>
+					
+					
+				</span>
+	
+	        </div>
+	        
+	        
+	        
+	        
+	        
+        
+    
+</div>
+
+
+    
+<div class="form-group ">
+    
+        
+
+	        <label class="col-xs-12 col-sm-2 control-label no-padding-right" for="id_asktime">咨询时间</label>
+	
+	        <div class="col-xs-12 col-sm-9">
+	        	<span class="block input-icon input-icon-right">
+					<input class="form-control" id="id_asktime" name="asktime" type="text" value="2022-07-20 13:54:54.641216" />
+					
+					
+				</span>
+	
+	        </div>
+	        
+	        
+	        
+	        
+	        
+        
+    
+</div>
+
+
+    
+<div class="form-group ">
+    
+        
+
+	        <label class="col-xs-12 col-sm-2 control-label no-padding-right" for="id_answer">答复 *</label>
+	
+	        <div class="col-xs-12 col-sm-9">
+	        	<span class="block input-icon input-icon-right">
+					<textarea class="form-control" cols="40" id="id_answer" maxlength="500" name="answer" rows="10" style="height: 200px">
+</textarea>
+					
+					
+				</span>
+	
+	        </div>
+	        
+	        
+	        
+	        
+	        
+        
+    
+</div>
+
+
+
+
+	<div class="hr hr-24"></div>
+	
+	<div class="wizard-actions center">
+		<button type="submit" class="btn btn-primary">保存</button>
+		<button type="reset" class="btn">取 消</button>
+	</div>
+	
+</form>
+
+
+						</div><!-- /.col -->
+					</div><!-- /.row -->
+				</div><!-- /.page-content -->
+			</div><!-- /.main-content -->
+
+			<div class="footer">
+				<div class="footer-inner">
+					<div class="footer-content">
+						<span class="bigger-120">
+							<span class="blue bolder">阳光招生</span>
+							 © 2015-2018
+						</span>
+
+					</div>
+				</div>
+			</div>
+
+			<a href="#" id="btn-scroll-up" class="btn-scroll-up btn btn-sm btn-inverse">
+				<i class="ace-icon fa fa-angle-double-up icon-only bigger-110"></i>
+			</a>
+		</div><!-- /.main-container -->
+		
+
+		<!-- ace settings handler -->
+		<script src="/static/ace1.3/js/ace-extra.min.js"></script>
+
+		<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+
+		<!--[if lte IE 8]>
+		<script src="/static/ace1.3/js/html5shiv.js"></script>
+		<script src="/static/ace1.3/js/respond.min.js"></script>
+		<![endif]-->
+		
+
+		<script type="text/javascript">
+			if('ontouchstart' in document.documentElement) document.write("<script src='/static/ace1.3/js/jquery.mobile.custom.min.js'>"+"<"+"/script>");
+		</script>
+		<script src="/static/ace1.3/js/bootstrap.min.js"></script>
+
+		<!-- page specific plugin scripts -->
+
+		<!--[if lte IE 8]>
+		  <script src="/static/ace1.3/js/excanvas.min.js"></script>
+		<![endif]-->
+		<script src="/static/ace1.3/js/jquery-ui.min.js"></script>
+		<script src="/static/ace1.3/js/jquery-ui.custom.min.js"></script>
+		<script src="/static/ace1.3/js/jquery.ui.touch-punch.min.js"></script>
+		<script src="/static/ace1.3/js/chosen.jquery.min.js"></script>
+		<script src="/static/ace1.3/js/jquery.easypiechart.min.js"></script>
+		<script src="/static/ace1.3/js/jquery.sparkline.min.js"></script>
+		<script src="/static/ace1.3/js/date-time/moment.min.js"></script>
+		<script src="/static/ace1.3/js/date-time/zh-cn.js"></script>
+		<script src="/static/ace1.3/js/date-time/bootstrap-datetimepicker.min.js"></script>
+
+		<!-- ace scripts -->
+		<script src="/static/ace1.3/js/ace-elements.min.js"></script>
+		<script src="/static/ace1.3/js/ace.min.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+		<script type="text/javascript">
+			jQuery(function($) {
+				$('.chosen-select').chosen({allow_single_deselect:true,search_contains:true}); 
+				$(window).on('resize.chosen', function() {
+					var w = $('.chosen-select').parent().width();
+					$('.chosen-select').next().css({'width':w});
+				}).trigger('resize.chosen');
+				
+				$('.datetime-picker').datetimepicker();
+				$('.autocomplete').each(function(){
+				
+					var name = ($(this).attr("name"));
+					$(this).autocomplete({
+				        source:function(request,response){
+				            $.ajax({
+				                type: "GET",
+				                cache: true,
+				                dataType:"json",
+				                data:{'str_startswith':$("#id_"+name).val()},
+				                url:"/get_" + name + "/",
+				                success:function(data){
+				                    datae=data['row'];
+				                    response(datae);
+				                    }
+				            });
+				        },
+				        
+				        minLength:1,
+				        mustMatch:true,
+				        focus:function(event,ui){
+				            $("#id_"+name).val(ui.item.label);
+				
+				        },
+				        select:function(event,ui){
+				            $("#id_"+name).val(ui.item.label);
+				            return false;
+				
+				        }
+				    });
+			    });
+			    
+		
+			});
+		  if(window.ActiveXObject)
+		    {
+		        var browser=navigator.appName 
+		        var b_version=navigator.appVersion 
+		        var version=b_version.split(";"); 
+		        var trim_Version=version[1].replace(/[ ]/g,""); 
+		        if(browser=="Microsoft Internet Explorer" && trim_Version=="MSIE6.0") 
+		        { 
+		        window.location.href="/error/"
+		        }
+		    }
+		</script>
+		
+	</body>
+</html>
