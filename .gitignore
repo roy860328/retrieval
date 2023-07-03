@@ -1,2 +1,2 @@
 **/.cache/torch/*
-# RETA-LLM/system/
+RETA-LLM/system/config.py
