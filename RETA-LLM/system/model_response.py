@@ -29,4 +29,6 @@ def chatgpt_response(input_text):
                 {"role": "user", "content": input_text}]
             )
     response_text = completion["choices"][0]['message']['content']
+    print(f"ChatCompletion: {input_text}")
+    print(f"ChatCompletion: {response_text}")
     return response_text

@@ -37,7 +37,7 @@ def predict(input, history=[], history_rewrite_input=[], history_url=[]):
     with container:
         #display historical conversation
         if len(history) > 0:
-            for i, (query, reference, response) in enumerate(history):
+            for i, (query, _reference, response) in enumerate(history):
                 response = response + "\n" +"Reference URL:\n" + history_url[i]
                 message(query, avatar_style="big-smile", key=str(i) + "_user")
                 message(response, avatar_style="bottts", key=str(i))
@@ -58,6 +58,9 @@ def predict(input, history=[], history_rewrite_input=[], history_url=[]):
 
         history.append((input, reference, output))
         st.write("##### Reference URL:\n" + urls)
+    print(history)
+    print(history_rewrite_input)
+    print(history_url)
     return history, history_rewrite_input, history_url
 
 
